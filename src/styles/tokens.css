@@ -1,0 +1,119 @@
+/* FICHIER GÉNÉRÉ par scripts/generate-tokens.mjs à partir de tokens.json.
+   Ne pas modifier à la main : lancer `npm run tokens`. */
+
+@theme static {
+  /* On repart de zéro pour les couleurs : seules celles de la marque existent. */
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-or: #BF9140;
+  --color-bronze: #8A6420;
+  --color-champagne: #F1E2BA;
+  --color-creme: #F9ECCE;
+  --color-anthracite: #1E1E20;
+  --color-bleu-nuit: #10203A;
+  --color-gris-chaud: #5C5650;
+  --color-blanc: #FFFFFF;
+  --color-story-cote-des-bar: #1B86B8;
+  --color-story-riceys: #C2416A;
+  --color-story-montgueux: #E2A62A;
+  --color-story-villenauxe: #4F8F3F;
+  --color-story-accords: #C8452B;
+  --color-story-art: #5B4A9E;
+  --color-story-bulles: #D9771F;
+  --color-story-regions: #2A9D8F;
+  --color-story-evenements: #8E1F3B;
+  --color-theme-femmes: #9C3D74;
+  --color-theme-bio: #5C9E31;
+  --color-theme-biodynamie: #2E5E4E;
+  --color-theme-rares: #8A6420;
+  --color-theme-millesimes: #10203A;
+  --color-theme-coteaux: #8B4A2B;
+  --color-theme-rose-riceys: #C2416A;
+  --color-cepage-noir: #3B2A5A;
+  --color-cepage-blanc: #A8952E;
+  --color-cepage-gris: #B5677D;
+
+  --font-serif: var(--font-vollkorn), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --spacing-space-1: 8px;
+  --spacing-space-2: 16px;
+  --spacing-space-3: 24px;
+  --spacing-space-4: 40px;
+  --spacing-space-5: 64px;
+
+  --radius-photo: 0px;
+  --radius-etiquette: 4px;
+  --radius-carte: 12px;
+  --radius-rond: 9999px;
+}
+
+@utility text-titre-logo {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 1.6rem + 4.6vw, 4.5rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@utility text-titre-post {
+  font-family: var(--font-serif);
+  font-size: clamp(2.125rem, 1.6rem + 2.2vw, 3rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+@utility text-titre-section {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 1.3rem + 0.8vw, 1.75rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+@utility text-accroche {
+  font-family: var(--font-serif);
+  font-size: clamp(1.375rem, 1.15rem + 0.9vw, 1.75rem);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+@utility text-corps {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+@utility text-traduction {
+  font-family: var(--font-serif);
+  font-size: 0.75em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@utility text-legende {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility text-bandeau {
+  font-family: var(--font-sans);
+  font-size: clamp(1.25rem, 0.9rem + 1.5vw, 2rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+@utility text-sur-titre {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
