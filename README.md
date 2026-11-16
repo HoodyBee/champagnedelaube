@@ -14,7 +14,9 @@ npm install
 npm run dev
 ```
 
-Puis ouvrez http://localhost:3000 dans votre navigateur.
+Puis ouvrez http://localhost:3000 dans votre navigateur. Le Studio Sanity (administration des contenus) est sur http://localhost:3000/studio.
+
+Avant le premier lancement, copiez `.env.example` en `.env.local` et remplissez l'identifiant de votre projet Sanity.
 
 ## Où se trouve quoi
 
@@ -25,8 +27,24 @@ Puis ouvrez http://localhost:3000 dans votre navigateur.
 | `scripts/generate-tokens.mjs` | Transforme `tokens.json` en `src/styles/tokens.css` (lancé automatiquement). |
 | `public/brand/` | Logos, terroirs, thèmes, pictos et cépages officiels (ne jamais les retoucher). |
 | `src/lib/brand.ts` | Registre des fichiers de marque : c'est ici qu'on bascule un PNG vers son SVG. |
-| `src/app/` | Les pages du site. |
+| `src/app/[locale]/` | Les pages du site, une version par langue. |
+| `src/app/studio/` | Le Studio Sanity intégré (/studio). |
+| `src/app/api/revalidate/` | Reçoit l'alerte de Sanity à chaque publication et met le site à jour. |
+| `src/i18n/routing.ts` | Langues, langues publiées dans Google et URL traduites. |
+| `messages/*.json` | Petits textes de l'interface (menus, boutons) dans chaque langue. |
+| `src/sanity/schemaTypes/` | Les champs du Studio (vignerons, terroirs, offres, événements, pages). |
+| `sanity.config.ts` | Configuration du Studio. |
 | `src/components/` | Les briques réutilisables (badges, en-tête, pied de page…). |
+
+## Langues
+
+- Français par défaut (URL sans préfixe), puis `/en/`, `/nl/`, `/it/`.
+- Un texte non traduit s'affiche en anglais, puis en français.
+- Le néerlandais et l'italien sont prêts mais **cachés de Google** tant qu'ils ne sont pas traduits. Pour publier une langue, ajoutez-la à `indexedLocales` dans `src/i18n/routing.ts`.
+
+## Fonds (décision novembre 2026)
+
+Fond principal `blanc`. Touches de chaleur : classe `surface-chaude` (fond `creme-clair` + filet doré `filet`). Le `creme` d'origine est réservé au logo et à de rares accents.
 
 ## Modifier la charte
 
