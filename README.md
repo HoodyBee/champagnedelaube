@@ -1,2 +1,48 @@
-# champagnedelaube
-Nouveau site Champagne de l'Aube
+# Champagne de l'Aube — site web
+
+Refonte de [champagnedelaube.fr](https://www.champagnedelaube.fr) : Next.js, Tailwind CSS, Sanity (à venir), hébergé sur Netlify.
+
+## Lancer le site sur votre ordinateur
+
+Prérequis : [Node.js](https://nodejs.org) version 22 ou plus.
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+Puis ouvrez http://localhost:3000 dans votre navigateur.
+
+## Où se trouve quoi
+
+| Dossier / fichier | Rôle |
+| --- | --- |
+| `BRAND_BOOK.md` | Le brand book : il fait foi. |
+| `tokens.json` | **Source unique** des couleurs, polices, espacements et arrondis. |
+| `scripts/generate-tokens.mjs` | Transforme `tokens.json` en `src/styles/tokens.css` (lancé automatiquement). |
+| `public/brand/` | Logos, terroirs, thèmes, pictos et cépages officiels (ne jamais les retoucher). |
+| `src/lib/brand.ts` | Registre des fichiers de marque : c'est ici qu'on bascule un PNG vers son SVG. |
+| `src/app/` | Les pages du site. |
+| `src/components/` | Les briques réutilisables (badges, en-tête, pied de page…). |
+
+## Modifier la charte
+
+1. Modifiez la valeur dans `tokens.json`.
+2. Lancez `npm run tokens` (ou relancez `npm run dev`).
+
+## Remplacer une vignette PNG par un SVG
+
+1. Déposez le SVG dans le même dossier, avec le même nom (ex. `public/brand/pictos/bio.svg`).
+2. Dans `src/lib/brand.ts`, changez `bio.png` en `bio.svg`. Si le SVG est le picto seul (sans fond ni texte), remplacez aussi `vignette(...)` par un objet avec `format: "picto"` : le site l'affichera alors en blanc dans une pastille ronde de sa couleur, avec son nom à côté.
+
+## Classes utiles (charte)
+
+- Couleurs : `bg-creme`, `text-anthracite`, `text-bronze`, `bg-or`, `bg-story-riceys`, `bg-theme-bio`, `bg-cepage-noir`…
+- Textes : `text-titre-logo`, `text-titre-post`, `text-titre-section`, `text-accroche`, `text-corps`, `text-traduction`, `text-bandeau`, `text-sur-titre`, `text-legende`.
+- Espacements : `p-space-1` (8 px) à `p-space-5` (64 px), idem pour `m-`, `gap-`…
+- Arrondis : `rounded-photo` (0), `rounded-etiquette` (4 px), `rounded-carte` (12 px), `rounded-rond`.
+
+Rappels : `or` ne sert jamais pour du texte (utiliser `bronze`) ; Inter (`font-sans`) uniquement en petites capitales espacées.

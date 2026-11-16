@@ -1,0 +1,50 @@
+@import "tailwindcss";
+/* Couleurs, polices, espacements, arrondis et styles de texte de la charte.
+   Généré depuis tokens.json : voir scripts/generate-tokens.mjs. */
+@import "../styles/tokens.css";
+
+@layer base {
+  html {
+    background-color: var(--color-creme);
+    color: var(--color-anthracite);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Texte courant : Vollkorn Medium 16 px, interligne 1,55 (style "corps"). */
+  body {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 500;
+  }
+
+  /* Liens dorés lisibles : bronze (4,6:1 sur crème), jamais "or" pour du texte. */
+  a {
+    color: inherit;
+    text-underline-offset: 0.2em;
+  }
+
+  /* Contour de focus visible pour la navigation au clavier. */
+  :focus-visible {
+    outline: 2px solid var(--color-bronze);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: var(--color-champagne);
+    color: var(--color-anthracite);
+  }
+}
+
+/* Accessibilité : si le visiteur a demandé moins d'animations, on les coupe. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
