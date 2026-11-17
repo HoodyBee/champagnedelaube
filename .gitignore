@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Modèle des variables (sans secrets) à copier en .env.local
+!.env.example

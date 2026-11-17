@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "siteName": "Champagne de l'Aube",
+    "tagline": "Terroirs & émotions",
+    "defaultTitle": "Champagne de l'Aube — Terroirs & émotions",
+    "defaultDescription": "Faire découvrir le champagne aubois, vigneron par vigneron : Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+  },
+  "nav": {
+    "home": "Accueil",
+    "terroirs": "Terroirs",
+    "vignerons": "Vignerons",
+    "tasting": "Dégustations à Troyes",
+    "pro": "Espace Pro",
+    "proChr": "Hôtels, restaurants et cavistes",
+    "proCse": "CSE et cadeaux d'entreprise",
+    "proVignerons": "Vignerons : devenez partenaire",
+    "recettes": "Accords mets et champagne",
+    "toutSavoir": "Tout savoir sur le champagne",
+    "contact": "Contact"
+  },
+  "langSwitcher": {
+    "label": "Choisir la langue",
+    "fallbackNotice": "Cette page n'est pas encore traduite : elle s'affiche en anglais."
+  },
+  "legal": {
+    "health": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.",
+    "sponsored": "Collaboration commerciale",
+    "legalNotice": "Mentions légales",
+    "privacy": "Politique de confidentialité"
+  },
+  "charte": {
+    "eyebrow": "Site en construction · Contrôle de la charte",
+    "title": "Le champagne de l'Aube, vigneron par vigneron",
+    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site.",
+    "otherLanguages": "Cette page dans les autres langues"
+  }
+}

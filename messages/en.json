@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "siteName": "Champagne de l'Aube",
+    "tagline": "Terroirs & emotions",
+    "defaultTitle": "Champagne de l'Aube — Terroirs & emotions",
+    "defaultDescription": "Discover the champagnes of the Aube, one winemaker at a time: Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+  },
+  "nav": {
+    "home": "Home",
+    "terroirs": "Terroirs",
+    "vignerons": "Winemakers",
+    "tasting": "Tastings in Troyes",
+    "pro": "Professionals",
+    "proChr": "Hotels, restaurants and wine shops",
+    "proCse": "Corporate gifts and events",
+    "proVignerons": "Winemakers: become a partner",
+    "recettes": "Food and champagne pairings",
+    "toutSavoir": "All about champagne",
+    "contact": "Contact"
+  },
+  "langSwitcher": {
+    "label": "Choose language",
+    "fallbackNotice": "This page has not been translated yet: it is shown in English."
+  },
+  "legal": {
+    "health": "Alcohol abuse is dangerous for your health. Please drink responsibly.",
+    "sponsored": "Paid partnership",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy policy"
+  },
+  "charte": {
+    "eyebrow": "Under construction · Brand guidelines check",
+    "title": "The champagnes of the Aube, one winemaker at a time",
+    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website.",
+    "otherLanguages": "This page in other languages"
+  }
+}

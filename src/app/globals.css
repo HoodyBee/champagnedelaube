@@ -4,8 +4,9 @@
 @import "../styles/tokens.css";
 
 @layer base {
+  /* Fond principal : blanc. Le crème d'origine est réservé au logo et à de rares accents. */
   html {
-    background-color: var(--color-creme);
+    background-color: var(--color-blanc);
     color: var(--color-anthracite);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -35,6 +36,13 @@
     background-color: var(--color-champagne);
     color: var(--color-anthracite);
   }
+}
+
+/* Touche de chaleur : fond crème très clair, toujours bordé d'un filet doré
+   pour se détacher du blanc. Utilisation : class="surface-chaude rounded-carte". */
+@utility surface-chaude {
+  background-color: var(--color-creme-clair);
+  border: 1px solid var(--color-filet);
 }
 
 /* Accessibilité : si le visiteur a demandé moins d'animations, on les coupe. */

@@ -2,6 +2,8 @@
 
 > Ce fichier rassemble le brand book complet de la marque. Les valeurs exactes (couleurs, tailles, espacements, arrondis) sont aussi dans `tokens.json`, à côté de ce fichier.
 >
+> **Fonds du site (décision novembre 2026)** : le fond principal des pages est le `blanc` (#FFFFFF). Les touches de chaleur (sections, cartes, encadrés) utilisent `creme-clair` (#FEFCF7), toujours bordé d'un fin `filet` doré (#EFE6D2, 0,5 à 1 px). Le `creme` d'origine (#F9ECCE) reste réservé au logo et à de rares accents. Le texte doré reste en `bronze` (5,4:1 sur blanc).
+>
 > **Précision pour le site** : la section Typographie fait foi. Vollkorn sert à tout ce qui se lit (titres ET texte courant). Inter est réservé aux petites capitales espacées (bandeau « DE L'AUBE », sur-titres, étiquettes, dates). Dans `tokens.json`, le style `corps` est classé avec Inter : c'est une incohérence, suivre la section Typographie (Vollkorn Medium).
 
 ---
