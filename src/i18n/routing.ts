@@ -115,3 +115,6 @@ export type AppPathname = keyof typeof routing.pathnames;
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
+
+/** Pages sans paramètre (utilisables directement dans un lien de menu). */
+export type StaticPathname = Exclude<AppPathname, `${string}[${string}`>;

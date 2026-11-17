@@ -16,11 +16,19 @@
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "allTerroirs": "Les terroirs de l'Aube",
+    "contents": "Découvrir",
+    "homeLink": "Champagne de l'Aube, retour à l'accueil"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
-    "fallbackNotice": "Cette page n'est pas encore traduite : elle s'affiche en anglais."
+    "fallbackNotice": "Cette page n'est pas encore traduite : elle s'affiche en anglais.",
+    "current": "Langue : {language}"
   },
   "legal": {
     "health": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.",
@@ -31,7 +39,25 @@
   "charte": {
     "eyebrow": "Site en construction · Contrôle de la charte",
     "title": "Le champagne de l'Aube, vigneron par vigneron",
-    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site.",
-    "otherLanguages": "Cette page dans les autres langues"
+    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site."
+  },
+  "footer": {
+    "discover": "Découvrir",
+    "pro": "Espace Pro",
+    "contact": "Nous joindre",
+    "emailLabel": "Écrire à",
+    "phoneLabel": "Appeler le",
+    "instagramLabel": "Suivre sur Instagram",
+    "location": "Troyes · Aube",
+    "legalNav": "Informations légales"
+  },
+  "ageGate": {
+    "eyebrow": "Bienvenue",
+    "title": "Avez-vous l'âge légal pour découvrir le champagne ?",
+    "text": "Ce site présente des vins de Champagne. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
+    "confirm": "J'ai 18 ans ou plus",
+    "deny": "Je n'ai pas 18 ans",
+    "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",
+    "remember": "Votre réponse est mémorisée pendant un an dans un cookie technique, sans aucun suivi."
   }
 }

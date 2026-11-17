@@ -16,11 +16,19 @@
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "allTerroirs": "The terroirs of the Aube",
+    "contents": "Discover",
+    "homeLink": "Champagne de l'Aube, back to home page"
   },
   "langSwitcher": {
     "label": "Choose language",
-    "fallbackNotice": "This page has not been translated yet: it is shown in English."
+    "fallbackNotice": "This page has not been translated yet: it is shown in English.",
+    "current": "Language: {language}"
   },
   "legal": {
     "health": "Alcohol abuse is dangerous for your health. Please drink responsibly.",
@@ -31,7 +39,25 @@
   "charte": {
     "eyebrow": "Under construction · Brand guidelines check",
     "title": "The champagnes of the Aube, one winemaker at a time",
-    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website.",
-    "otherLanguages": "This page in other languages"
+    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website."
+  },
+  "footer": {
+    "discover": "Discover",
+    "pro": "Professionals",
+    "contact": "Get in touch",
+    "emailLabel": "Email",
+    "phoneLabel": "Call",
+    "instagramLabel": "Follow on Instagram",
+    "location": "Troyes · Aube · France",
+    "legalNav": "Legal information"
+  },
+  "ageGate": {
+    "eyebrow": "Welcome",
+    "title": "Are you of legal drinking age?",
+    "text": "This website is about Champagne wines. To visit it, you must be of legal drinking age in your country (18 in France).",
+    "confirm": "I am of legal drinking age",
+    "deny": "I am under age",
+    "denied": "Thank you for your honesty. This website is for adults only: come back and see us later!",
+    "remember": "Your answer is stored for one year in a technical cookie, with no tracking."
   }
 }

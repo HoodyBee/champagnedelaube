@@ -3,8 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BrandBadge } from "@/components/brand/BrandBadge";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
-import { Link } from "@/i18n/navigation";
-import { localeNames, routing, type Locale } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
 import { cepages, logos, pictos, terroirs } from "@/lib/brand";
 import tokens from "../../../tokens.json";
 
@@ -44,41 +43,20 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
   const tLegal = await getTranslations("legal");
 
   return (
-    <main className="mx-auto max-w-5xl px-space-2 py-space-5 sm:px-space-4">
+    <div className="mx-auto max-w-5xl px-space-2 py-space-5 sm:px-space-4">
       <header className="flex flex-col items-center text-center">
         <Image
-          src={logos.principal.src}
-          alt={logos.principal.alt}
-          width={280}
-          height={280}
+          src={logos.rondBandeau.src}
+          alt={logos.rondBandeau.alt}
+          width={260}
+          height={260}
           priority
-          sizes="280px"
+          sizes="260px"
         />
         <p className="mt-space-3 text-sur-titre text-bronze">{t("eyebrow")}</p>
         <h1 className="mt-space-2 text-titre-post">{t("title")}</h1>
         <p className="mt-space-2 max-w-prose text-gris-chaud">{t("intro")}</p>
 
-        <nav aria-label={t("otherLanguages")} className="mt-space-3">
-          <ul className="flex flex-wrap justify-center gap-space-1">
-            {routing.locales.map((l) => (
-              <li key={l}>
-                <Link
-                  href="/"
-                  locale={l}
-                  lang={l}
-                  aria-current={l === locale ? "page" : undefined}
-                  className={`inline-block rounded-etiquette border px-space-2 py-space-1 text-sur-titre ${
-                    l === locale
-                      ? "border-anthracite bg-anthracite text-blanc"
-                      : "border-filet text-anthracite hover:border-bronze"
-                  }`}
-                >
-                  {localeNames[l]}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </header>
 
       <section className="mt-space-5" aria-labelledby="typo">
@@ -174,9 +152,6 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
         </ul>
       </section>
 
-      <footer className="mt-space-5 border-t border-filet pt-space-3 text-center">
-        <p className="text-legende text-gris-chaud">{tLegal("health")}</p>
-      </footer>
-    </main>
+    </div>
   );
 }

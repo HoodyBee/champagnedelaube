@@ -2,7 +2,11 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AgeGate } from "@/components/layout/AgeGate";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 import { routing } from "@/i18n/routing";
+import { ageGateScript } from "@/lib/age-gate";
 import { SITE_URL } from "@/i18n/metadata";
 import { inter, vollkorn } from "@/styles/fonts";
 import "../globals.css";
@@ -35,10 +39,32 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   // Indique la langue à next-intl pour que les pages restent statiques (rapides).
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "nav" });
+
   return (
-    <html lang={locale} className={`${vollkorn.variable} ${inter.variable}`}>
+    // suppressHydrationWarning : le script de vérification de l'âge peut ajouter
+    // un attribut sur <html> avant l'affichage, c'est voulu.
+    <html lang={locale} className={`${vollkorn.variable} ${inter.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: ageGateScript }} />
+      </head>
       <body className="min-h-dvh">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <div id="site" className="flex min-h-dvh flex-col">
+            <a
+              href="#contenu"
+              className="sr-only z-50 rounded-etiquette bg-anthracite px-space-2 py-space-1 text-blanc focus:not-sr-only focus:fixed focus:left-space-2 focus:top-space-2"
+            >
+              {t("skipToContent")}
+            </a>
+            <Header />
+            <main id="contenu" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          <AgeGate />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
