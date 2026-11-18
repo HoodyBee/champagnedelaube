@@ -3,12 +3,16 @@
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
+import { Flag } from "@/components/icons/Flag";
 import { Link, usePathname } from "@/i18n/navigation";
 import { localeNames, routing, type Locale } from "@/i18n/routing";
 
 type Props = {
-  /** "menu" : liste déroulante (en-tête) ; "inline" : liste de boutons (menu mobile, vérification d'âge). */
-  variant?: "menu" | "inline";
+  /** "menu" : liste déroulante (en-tête) ; "inline" : liste de boutons (menu mobile,
+   *  vérification d'âge) ; "footer" : drapeaux sur fond sombre (pied de page). */
+  variant?: "menu" | "inline" | "footer";
+  /** Titre accessible de la liste (variantes "inline" et "footer"). */
+  label?: string;
   onNavigate?: () => void;
 };
 
@@ -16,7 +20,7 @@ type Props = {
  * Sélecteur de langue. Chaque langue est un vrai lien (bon pour Google), qui
  * mène à la même page traduite : /vignerons/ -> /en/winemakers/.
  */
-export function LanguageSwitcher({ variant = "menu", onNavigate }: Props) {
+export function LanguageSwitcher({ variant = "menu", onNavigate, label }: Props) {
   const t = useTranslations("langSwitcher");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
@@ -60,7 +64,11 @@ export function LanguageSwitcher({ variant = "menu", onNavigate }: Props) {
         onNavigate?.();
       }}
       className={
-        variant === "inline"
+        variant === "footer"
+          ? `inline-flex min-h-11 items-center gap-space-1 rounded-etiquette border px-space-2 text-sur-titre transition-colors ${
+              l === locale ? "border-or text-blanc" : "border-blanc/20 text-blanc hover:border-champagne"
+            }`
+          : variant === "inline"
           ? `inline-flex min-h-11 items-center rounded-etiquette border px-space-2 text-sur-titre transition-colors ${
               l === locale
                 ? "border-anthracite bg-anthracite text-blanc"
@@ -71,14 +79,22 @@ export function LanguageSwitcher({ variant = "menu", onNavigate }: Props) {
             }`
       }
     >
-      {variant === "inline" ? l.toUpperCase() : localeNames[l]}
+      {variant === "footer" && <Flag locale={l} />}
+      {variant === "menu" ? (
+        localeNames[l]
+      ) : (
+        <>
+          <span aria-hidden="true">{l.toUpperCase()}</span>
+          <span className="sr-only">{localeNames[l]}</span>
+        </>
+      )}
       {variant === "menu" && <span className="text-sur-titre text-gris-chaud">{l.toUpperCase()}</span>}
     </Link>
   ));
 
-  if (variant === "inline") {
+  if (variant !== "menu") {
     return (
-      <nav aria-label={t("label")}>
+      <nav aria-label={label ?? t("label")}>
         <ul className="flex flex-wrap gap-space-1">
           {links.map((link) => (
             <li key={link.key}>{link}</li>

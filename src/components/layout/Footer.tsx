@@ -1,16 +1,19 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
+import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
-import { contentPages, proPages, telHref, terroirPages } from "@/lib/site";
+import { contentPages, proPages, siteCredit, telHref, terroirPages } from "@/lib/site";
 import { localize } from "@/sanity/lib/i18n";
-import { getReglages } from "@/sanity/queries";
+import { getReglages, socialLinks } from "@/sanity/queries";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 /**
  * Pied de page : fond anthracite, logo rond (posé sur sa pastille crème, ce que
- * le brand book autorise sur fond sombre), liens, coordonnées et mention sanitaire.
+ * le brand book autorise sur fond sombre), liens, coordonnées, réseaux, langues,
+ * mention sanitaire et crédit.
  */
 export async function Footer() {
   const locale = (await getLocale()) as Locale;
@@ -18,10 +21,11 @@ export async function Footer() {
   const tNav = await getTranslations("nav");
   const tLegal = await getTranslations("legal");
   const tMeta = await getTranslations("meta");
+  const tSocial = await getTranslations("social");
   const reglages = await getReglages();
 
-  const promesse = localize(reglages.promesse, locale) ?? tMeta("defaultDescription");
   const signature = localize(reglages.signature, locale) ?? tMeta("tagline");
+  const showPhone = reglages.afficherTelephone === true && !!reglages.telephone;
 
   return (
     <footer className="bg-anthracite text-blanc">
@@ -35,8 +39,7 @@ export async function Footer() {
             sizes="240px"
             className="h-60 w-60"
           />
-          <p className="mt-space-3 max-w-xs text-creme">{promesse}</p>
-          <p className="mt-space-1 text-sur-titre text-or">{signature}</p>
+          <p className="mt-space-3 max-w-xs text-accroche text-creme">{signature}</p>
         </div>
 
         <FooterColumn title={t("discover")}>
@@ -57,30 +60,41 @@ export async function Footer() {
           <FooterLink href="/contact">{tNav("contact")}</FooterLink>
         </FooterColumn>
 
-        <FooterColumn title={t("contact")}>
-          <li>
-            <a href={`mailto:${reglages.email}`} className="footer-link" aria-label={`${t("emailLabel")} ${reglages.email}`}>
-              {reglages.email}
-            </a>
-          </li>
-          <li>
-            <a href={telHref(reglages.telephone)} className="footer-link" aria-label={`${t("phoneLabel")} ${reglages.telephone}`}>
-              {reglages.telephone}
-            </a>
-          </li>
-          <li>
-            <a
-              href={`https://www.instagram.com/${reglages.instagram}/`}
-              className="footer-link"
-              rel="noopener"
-              target="_blank"
-              aria-label={`${t("instagramLabel")} : @${reglages.instagram}`}
-            >
-              @{reglages.instagram}
-            </a>
-          </li>
-          <li className="pt-space-1 text-creme">{t("location")}</li>
-        </FooterColumn>
+        <div>
+          <FooterColumn title={t("contact")}>
+            <li>
+              <a href={`mailto:${reglages.email}`} className="footer-link" aria-label={`${t("emailLabel")} ${reglages.email}`}>
+                {reglages.email}
+              </a>
+            </li>
+            {showPhone && (
+              <li>
+                <a href={telHref(reglages.telephone!)} className="footer-link" aria-label={`${t("phoneLabel")} ${reglages.telephone}`}>
+                  {reglages.telephone}
+                </a>
+              </li>
+            )}
+            <li className="text-creme">{t("location")}</li>
+          </FooterColumn>
+          <SocialLinks
+            links={socialLinks(reglages)}
+            labels={{
+              label: tSocial("label"),
+              instagram: tSocial("instagram"),
+              facebook: tSocial("facebook"),
+              linkedin: tSocial("linkedin"),
+            }}
+            className="-ml-3 mt-space-2"
+            linkClassName="text-blanc hover:text-champagne"
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-space-2 pb-space-4 sm:px-space-4">
+        <p className="text-sur-titre text-or">{t("languages")}</p>
+        <div className="mt-space-2">
+          <LanguageSwitcher variant="footer" label={t("languages")} />
+        </div>
       </div>
 
       <div className="border-t border-blanc/15">
@@ -94,6 +108,12 @@ export async function Footer() {
             </ul>
           </nav>
         </div>
+        <p className="mx-auto max-w-7xl px-space-2 pb-space-3 text-legende text-creme sm:px-space-4">
+          {t("credit")}{" "}
+          <a href={siteCredit.url} target="_blank" rel="noopener" className="footer-link underline">
+            {siteCredit.name}
+          </a>
+        </p>
       </div>
     </footer>
   );

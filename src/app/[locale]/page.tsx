@@ -28,7 +28,7 @@ const terroirColors = [
   ["story-cote-des-bar", "Côte des Bar"],
   ["story-riceys", "Les Riceys"],
   ["story-montgueux", "Montgueux"],
-  ["story-villenauxe", "Villenauxe"],
+  ["story-villenauxe", "Villenauxe-la-Grande"],
 ] as const;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
@@ -64,15 +64,15 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
         <div className="surface-chaude mt-space-3 space-y-space-2 rounded-carte p-space-3 sm:p-space-4">
           <p className="text-titre-logo">Champagne</p>
           <p className="inline-block bg-or px-space-2 py-space-1 text-bandeau text-blanc">De l&apos;Aube</p>
-          <p className="text-sur-titre text-bronze">Côte des Bar · Les Riceys · Montgueux · Villenauxe</p>
+          <p className="text-sur-titre text-bronze">Côte des Bar · Les Riceys · Montgueux · Villenauxe-la-Grande</p>
           <p className="text-accroche">Et si le plus beau champagne se cachait au sud ?</p>
           <p className="text-corps max-w-prose">
             Texte courant en Vollkorn Medium, 16 px, interligne 1,55. Une idée par phrase. Des mots simples :
             vif, gourmand, minéral.
           </p>
           <p className="text-corps">
-            Terroirs &amp; émotions
-            <span className="block text-traduction text-gris-chaud">Terroirs &amp; emotions</span>
+            Terroirs et champagnes de caractère
+            <span className="block text-traduction text-gris-chaud">Terroirs and champagnes of character</span>
           </p>
           <p className="text-legende text-gris-chaud">{tLegal("health")}</p>
         </div>

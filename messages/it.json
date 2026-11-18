@@ -1,1 +1,8 @@
-{ "langSwitcher": { "label": "Scegli la lingua" } }
+{
+  "nav": {
+    "tasting": "Le nostre degustazioni"
+  },
+  "langSwitcher": {
+    "label": "Scegli la lingua"
+  }
+}

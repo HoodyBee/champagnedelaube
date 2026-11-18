@@ -40,9 +40,9 @@ Avant le premier lancement, copiez `.env.example` en `.env.local` et remplissez 
 
 ## Langues
 
-- Français par défaut (URL sans préfixe), puis `/en/`, `/nl/`, `/it/`.
+- Français par défaut (URL sans préfixe), puis `/en/`, `/nl/`, `/it/`, `/de/`.
 - Un texte non traduit s'affiche en anglais, puis en français.
-- Le néerlandais et l'italien sont prêts mais **cachés de Google** tant qu'ils ne sont pas traduits. Pour publier une langue, ajoutez-la à `indexedLocales` dans `src/i18n/routing.ts`.
+- Le néerlandais, l'italien et l'allemand sont prêts mais **cachés de Google** tant qu'ils ne sont pas traduits. Pour publier une langue, ajoutez-la à `indexedLocales` dans `src/i18n/routing.ts`.
 
 ## Fonds (décision novembre 2026)
 

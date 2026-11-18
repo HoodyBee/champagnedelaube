@@ -5,7 +5,7 @@ import { requireFr } from "../objects/localized";
 /** Pages fixes du site. L'adresse (URL) est fixée par le site pour préserver le référencement. */
 export const pagesFixes = [
   { title: "Vignerons (page liste)", value: "vignerons" },
-  { title: "Dégustations à Troyes (œnotourisme)", value: "tasting-troyes" },
+  { title: "Nos dégustations (œnotourisme, /tasting-troyes/)", value: "tasting-troyes" },
   { title: "Espace Pro : hôtels, restaurants et cavistes", value: "pro-chr" },
   { title: "Espace Pro : CSE et cadeaux d'entreprise", value: "pro-cse" },
   { title: "Espace Pro : vignerons, devenez partenaire", value: "pro-vignerons" },

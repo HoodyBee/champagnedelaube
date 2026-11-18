@@ -1,7 +1,7 @@
 import { defineField, defineType, type Rule } from "sanity";
 
 // Champs traduits : chaque texte existe en français (obligatoire), anglais,
-// néerlandais et italien. Le néerlandais et l'italien sont rangés dans un volet
+// néerlandais, italien et allemand. Ces trois dernières langues sont rangées dans un volet
 // replié « Autres langues » pour garder le Studio simple.
 
 const languages = [
@@ -9,12 +9,15 @@ const languages = [
   { id: "en", title: "Anglais" },
   { id: "nl", title: "Néerlandais" },
   { id: "it", title: "Italien" },
+  { id: "de", title: "Allemand" },
 ] as const;
+
+const otherLanguages: string[] = ["nl", "it", "de"];
 
 const fieldsets = [
   {
     name: "autres",
-    title: "Autres langues (néerlandais, italien)",
+    title: "Autres langues (néerlandais, italien, allemand)",
     options: { collapsible: true, collapsed: true },
   },
 ];
@@ -35,7 +38,7 @@ function localizedType(
         name: lang.id,
         title: lang.title,
         type,
-        fieldset: lang.id === "nl" || lang.id === "it" ? "autres" : undefined,
+        fieldset: otherLanguages.includes(lang.id) ? "autres" : undefined,
         ...extra,
       }),
     ),
@@ -45,7 +48,7 @@ function localizedType(
 export const localeString = localizedType("localeString", "Texte court traduit", "string");
 export const localeText = localizedType("localeText", "Texte traduit", "text", { rows: 4 });
 
-/** Texte enrichi (paragraphes, intertitres, listes, liens) en 4 langues. */
+/** Texte enrichi (paragraphes, intertitres, listes, liens) en 5 langues. */
 export const localeRichText = defineType({
   name: "localeRichText",
   title: "Texte enrichi traduit",
@@ -56,7 +59,7 @@ export const localeRichText = defineType({
       name: lang.id,
       title: lang.title,
       type: "richText",
-      fieldset: lang.id === "nl" || lang.id === "it" ? "autres" : undefined,
+      fieldset: otherLanguages.includes(lang.id) ? "autres" : undefined,
     }),
   ),
 });

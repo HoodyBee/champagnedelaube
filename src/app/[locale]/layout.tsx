@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { routing } from "@/i18n/routing";
 import { ageGateScript } from "@/lib/age-gate";
+import { getReglages, socialLinks } from "@/sanity/queries";
 import { SITE_URL } from "@/i18n/metadata";
 import { inter, vollkorn } from "@/styles/fonts";
 import "../globals.css";
@@ -40,6 +41,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "nav" });
+  const reglages = await getReglages();
 
   return (
     // suppressHydrationWarning : le script de vérification de l'âge peut ajouter
@@ -57,7 +59,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             >
               {t("skipToContent")}
             </a>
-            <Header />
+            <Header social={socialLinks(reglages)} />
             <main id="contenu" className="flex-1">
               {children}
             </main>

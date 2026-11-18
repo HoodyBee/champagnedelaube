@@ -1,15 +1,15 @@
 {
   "meta": {
     "siteName": "Champagne de l'Aube",
-    "tagline": "Terroirs & émotions",
-    "defaultTitle": "Champagne de l'Aube — Terroirs & émotions",
-    "defaultDescription": "Faire découvrir le champagne aubois, vigneron par vigneron : Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+    "tagline": "Terroirs et champagnes de caractère",
+    "defaultTitle": "Champagne de l'Aube — Terroirs et champagnes de caractère",
+    "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
     "home": "Accueil",
     "terroirs": "Terroirs",
     "vignerons": "Vignerons",
-    "tasting": "Dégustations à Troyes",
+    "tasting": "Nos dégustations",
     "pro": "Espace Pro",
     "proChr": "Hôtels, restaurants et cavistes",
     "proCse": "CSE et cadeaux d'entreprise",
@@ -23,7 +23,8 @@
     "closeMenu": "Fermer le menu",
     "allTerroirs": "Les terroirs de l'Aube",
     "contents": "Découvrir",
-    "homeLink": "Champagne de l'Aube, retour à l'accueil"
+    "homeLink": "Champagne de l'Aube, retour à l'accueil",
+    "terroirBand": "Les terroirs de l'Aube"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -38,7 +39,7 @@
   },
   "charte": {
     "eyebrow": "Site en construction · Contrôle de la charte",
-    "title": "Le champagne de l'Aube, vigneron par vigneron",
+    "title": "Terroirs et champagnes de caractère",
     "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site."
   },
   "footer": {
@@ -46,10 +47,11 @@
     "pro": "Espace Pro",
     "contact": "Nous joindre",
     "emailLabel": "Écrire à",
-    "phoneLabel": "Appeler le",
-    "instagramLabel": "Suivre sur Instagram",
     "location": "Troyes · Aube",
-    "legalNav": "Informations légales"
+    "legalNav": "Informations légales",
+    "phoneLabel": "Appeler le",
+    "languages": "Langues du site",
+    "credit": "Site internet réalisé par"
   },
   "ageGate": {
     "eyebrow": "Bienvenue",
@@ -59,5 +61,11 @@
     "deny": "Je n'ai pas 18 ans",
     "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",
     "remember": "Votre réponse est mémorisée pendant un an dans un cookie technique, sans aucun suivi."
+  },
+  "social": {
+    "label": "Réseaux sociaux",
+    "instagram": "Champagne de l'Aube sur Instagram",
+    "facebook": "Champagne de l'Aube sur Facebook",
+    "linkedin": "Champagne de l'Aube sur LinkedIn"
   }
 }

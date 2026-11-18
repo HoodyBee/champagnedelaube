@@ -1,15 +1,15 @@
 {
   "meta": {
     "siteName": "Champagne de l'Aube",
-    "tagline": "Terroirs & emotions",
-    "defaultTitle": "Champagne de l'Aube — Terroirs & emotions",
-    "defaultDescription": "Discover the champagnes of the Aube, one winemaker at a time: Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+    "tagline": "Terroirs and champagnes of character",
+    "defaultTitle": "Champagne de l'Aube — Terroirs and champagnes of character",
+    "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
     "home": "Home",
     "terroirs": "Terroirs",
     "vignerons": "Winemakers",
-    "tasting": "Tastings in Troyes",
+    "tasting": "Our tastings",
     "pro": "Professionals",
     "proChr": "Hotels, restaurants and wine shops",
     "proCse": "Corporate gifts and events",
@@ -23,7 +23,8 @@
     "closeMenu": "Close menu",
     "allTerroirs": "The terroirs of the Aube",
     "contents": "Discover",
-    "homeLink": "Champagne de l'Aube, back to home page"
+    "homeLink": "Champagne de l'Aube, back to home page",
+    "terroirBand": "The terroirs of the Aube"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -38,7 +39,7 @@
   },
   "charte": {
     "eyebrow": "Under construction · Brand guidelines check",
-    "title": "The champagnes of the Aube, one winemaker at a time",
+    "title": "Terroirs and champagnes of character",
     "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website."
   },
   "footer": {
@@ -46,10 +47,11 @@
     "pro": "Professionals",
     "contact": "Get in touch",
     "emailLabel": "Email",
-    "phoneLabel": "Call",
-    "instagramLabel": "Follow on Instagram",
     "location": "Troyes · Aube · France",
-    "legalNav": "Legal information"
+    "legalNav": "Legal information",
+    "phoneLabel": "Call",
+    "languages": "Website languages",
+    "credit": "Website by"
   },
   "ageGate": {
     "eyebrow": "Welcome",
@@ -59,5 +61,11 @@
     "deny": "I am under age",
     "denied": "Thank you for your honesty. This website is for adults only: come back and see us later!",
     "remember": "Your answer is stored for one year in a technical cookie, with no tracking."
+  },
+  "social": {
+    "label": "Social media",
+    "instagram": "Champagne de l'Aube on Instagram",
+    "facebook": "Champagne de l'Aube on Facebook",
+    "linkedin": "Champagne de l'Aube on LinkedIn"
   }
 }

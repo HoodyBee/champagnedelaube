@@ -45,6 +45,16 @@
   border: 1px solid var(--color-filet);
 }
 
+/* Sur-titre en petite taille (bandeau des terroirs) : Inter, capitales espacées. */
+@utility text-sur-titre-petit {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 /* Liens du pied de page (fond anthracite). */
 @utility footer-link {
   color: var(--color-blanc);

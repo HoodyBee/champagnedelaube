@@ -4,19 +4,37 @@ import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
 import { contentPages, proPages, terroirPages, type NavKey } from "@/lib/site";
+import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
 type Item = { href: AppPathname; label: string; color?: string };
 
-/** En-tête du site : logo (avatar), navigation, Espace Pro, langue. */
-export function Header() {
+/** En-tête du site : logo (avatar), navigation, Espace Pro, réseaux, langue, bandeau des terroirs. */
+export function Header({ social }: { social: Social }) {
   const t = useTranslations("nav");
+  const tSocial = useTranslations("social");
+  const socialLabels = {
+    label: tSocial("label"),
+    instagram: tSocial("instagram"),
+    facebook: tSocial("facebook"),
+    linkedin: tSocial("linkedin"),
+  };
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // Le bandeau des terroirs se replie dès que l'on fait défiler la page.
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const terroirItems: Item[] = terroirPages.map((p) => ({
     href: p.href,
@@ -40,7 +58,7 @@ export function Header() {
 
   return (
     <MotionConfig reducedMotion="user">
-      <header className="sticky top-0 z-40 border-b border-filet bg-blanc/95 backdrop-blur-sm">
+      <header className="sticky top-0 z-40 border-b border-filet bg-creme-clair/95 backdrop-blur-sm">
         <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4">
           <Link href="/" aria-label={t("homeLink")} className="flex shrink-0 items-center gap-space-1">
             <Image
@@ -79,6 +97,12 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-space-1">
+            <SocialLinks
+              links={social}
+              labels={socialLabels}
+              className="hidden xl:flex"
+              linkClassName="text-anthracite hover:text-bronze"
+            />
             <div className="hidden lg:block">
               <LanguageSwitcher />
             </div>
@@ -102,6 +126,33 @@ export function Header() {
           </div>
         </div>
 
+        {/* Bandeau des 4 terroirs : ordinateur uniquement, replié au défilement. */}
+        <div
+          inert={scrolled}
+          className={`hidden overflow-hidden border-t border-filet transition-[max-height,opacity] duration-300 ease-out lg:block ${
+            scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100"
+          }`}
+        >
+          <nav aria-label={t("terroirBand")}>
+            <ul className="mx-auto flex h-9 max-w-7xl items-center justify-center gap-space-1 px-space-4">
+              {terroirItems.map((item, i) => (
+                <li key={item.href} className="flex items-center gap-space-1">
+                  {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud">·</span>}
+                  <Link
+                    href={item.href}
+                    aria-current={isActive(item.href) ? "page" : undefined}
+                    className={`inline-flex items-center gap-[6px] py-1 text-sur-titre-petit transition-colors hover:text-bronze ${
+                      isActive(item.href) ? "text-bronze" : "text-gris-chaud"
+                    }`}
+                  >
+                    <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </header>
 
       {/* En dehors du <header> : son effet de flou empêcherait le panneau de couvrir l'écran. */}
@@ -122,6 +173,7 @@ export function Header() {
         ]}
         contact={{ href: "/contact", label: t("contact") }}
         isActive={isActive}
+        social={<SocialLinks links={social} labels={socialLabels} className="-ml-3" linkClassName="text-anthracite hover:text-bronze" />}
       />
     </MotionConfig>
   );
@@ -260,7 +312,9 @@ function MobileMenu({
   groups,
   contact,
   isActive,
+  social,
 }: {
+  social: ReactNode;
   open: boolean;
   onClose: () => void;
   groups: { title: string; items: Item[] }[];
@@ -328,6 +382,7 @@ function MobileMenu({
             <div className="mt-space-3">
               <LanguageSwitcher variant="inline" onNavigate={onClose} />
             </div>
+            <div className="mt-space-2">{social}</div>
           </nav>
         </motion.div>
       )}
