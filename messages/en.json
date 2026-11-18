@@ -54,7 +54,7 @@
   "ageGate": {
     "eyebrow": "Welcome",
     "title": "Are you of legal drinking age?",
-    "text": "This website is about Champagne wines. To visit it, you must be of legal drinking age in your country (18 in France).",
+    "text": "This website presents alcoholic beverages. To visit it, you must be of legal drinking age in your country (18 in France).",
     "confirm": "I am of legal drinking age",
     "deny": "I am under age",
     "denied": "Thank you for your honesty. This website is for adults only: come back and see us later!",

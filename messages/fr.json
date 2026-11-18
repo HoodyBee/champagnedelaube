@@ -53,8 +53,8 @@
   },
   "ageGate": {
     "eyebrow": "Bienvenue",
-    "title": "Avez-vous l'âge légal pour découvrir le champagne ?",
-    "text": "Ce site présente des vins de Champagne. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
+    "title": "Avez-vous l'âge légal pour consommer de l'alcool ?",
+    "text": "Ce site présente des boissons alcoolisées. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
     "confirm": "J'ai 18 ans ou plus",
     "deny": "Je n'ai pas 18 ans",
     "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",

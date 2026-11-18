@@ -53,8 +53,8 @@
   },
   "ageGate": {
     "eyebrow": "Willkommen",
-    "title": "Haben Sie das gesetzliche Mindestalter, um Champagner zu entdecken?",
-    "text": "Diese Website stellt Champagnerweine vor. Um sie zu besuchen, müssen Sie in Ihrem Land das gesetzliche Mindestalter für den Konsum von Alkohol erreicht haben (18 Jahre in Frankreich).",
+    "title": "Haben Sie das gesetzliche Mindestalter für den Konsum von Alkohol?",
+    "text": "Diese Website stellt alkoholische Getränke vor. Um sie zu besuchen, müssen Sie in Ihrem Land das gesetzliche Mindestalter für den Konsum von Alkohol erreicht haben (18 Jahre in Frankreich).",
     "confirm": "Ich bin 18 Jahre oder älter",
     "deny": "Ich bin unter 18",
     "denied": "Danke für Ihre Ehrlichkeit. Diese Website ist nur für Erwachsene bestimmt: Besuchen Sie uns später wieder!",

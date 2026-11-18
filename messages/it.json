@@ -53,8 +53,8 @@
   },
   "ageGate": {
     "eyebrow": "Benvenuti",
-    "title": "Avete l'età legale per scoprire lo champagne?",
-    "text": "Questo sito presenta vini di Champagne. Per consultarlo dovete avere l'età legale per consumare alcolici nel vostro paese (18 anni in Francia).",
+    "title": "Avete l'età legale per consumare alcolici?",
+    "text": "Questo sito presenta bevande alcoliche. Per consultarlo dovete avere l'età legale per consumare alcolici nel vostro paese (18 anni in Francia).",
     "confirm": "Ho 18 anni o più",
     "deny": "Non ho 18 anni",
     "denied": "Grazie per la vostra sincerità. Questo sito è riservato ai maggiorenni: tornate a trovarci più avanti!",
