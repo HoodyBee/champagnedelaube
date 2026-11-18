@@ -21,14 +21,12 @@
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "allTerroirs": "The terroirs of the Aube",
     "contents": "Discover",
     "homeLink": "Champagne de l'Aube, back to home page",
     "terroirBand": "The terroirs of the Aube"
   },
   "langSwitcher": {
     "label": "Choose language",
-    "fallbackNotice": "This page has not been translated yet: it is shown in English.",
     "current": "Language: {language}"
   },
   "legal": {

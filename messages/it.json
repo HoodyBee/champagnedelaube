@@ -1,8 +1,69 @@
 {
+  "meta": {
+    "siteName": "Champagne de l'Aube",
+    "tagline": "Terroir e champagne di carattere",
+    "defaultTitle": "Champagne de l'Aube — Terroir e champagne di carattere",
+    "defaultDescription": "Scoprite lo champagne dell'Aube e i suoi vignaioli: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
+  },
   "nav": {
-    "tasting": "Le nostre degustazioni"
+    "home": "Home",
+    "terroirs": "Terroir",
+    "vignerons": "Vignaioli",
+    "tasting": "Le nostre degustazioni",
+    "pro": "Professionisti",
+    "proChr": "Hotel, ristoranti ed enoteche",
+    "proCse": "Regali ed eventi aziendali",
+    "proVignerons": "Vignaioli: diventate partner",
+    "recettes": "Abbinamenti cibo e champagne",
+    "toutSavoir": "Tutto sullo champagne",
+    "contact": "Contatti",
+    "skipToContent": "Vai al contenuto",
+    "mainNav": "Navigazione principale",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
+    "contents": "Scoprire",
+    "homeLink": "Champagne de l'Aube, torna alla home page",
+    "terroirBand": "I terroir dell'Aube"
   },
   "langSwitcher": {
-    "label": "Scegli la lingua"
+    "label": "Scegli la lingua",
+    "current": "Lingua: {language}"
+  },
+  "legal": {
+    "health": "L'abuso di alcol è pericoloso per la salute. Bevi responsabilmente.",
+    "sponsored": "Collaborazione commerciale",
+    "legalNotice": "Note legali",
+    "privacy": "Informativa sulla privacy"
+  },
+  "charte": {
+    "eyebrow": "Sito in costruzione · Verifica dell'identità visiva",
+    "title": "Terroir e champagne di carattere",
+    "intro": "Questa pagina provvisoria mostra i colori, i caratteri e i pittogrammi del marchio come saranno utilizzati nel nuovo sito."
+  },
+  "footer": {
+    "discover": "Scoprire",
+    "pro": "Professionisti",
+    "contact": "Contattaci",
+    "emailLabel": "Scrivi a",
+    "location": "Troyes · Aube · Francia",
+    "legalNav": "Informazioni legali",
+    "phoneLabel": "Chiama il",
+    "languages": "Lingue del sito",
+    "credit": "Sito realizzato da"
+  },
+  "ageGate": {
+    "eyebrow": "Benvenuti",
+    "title": "Avete l'età legale per scoprire lo champagne?",
+    "text": "Questo sito presenta vini di Champagne. Per consultarlo dovete avere l'età legale per consumare alcolici nel vostro paese (18 anni in Francia).",
+    "confirm": "Ho 18 anni o più",
+    "deny": "Non ho 18 anni",
+    "denied": "Grazie per la vostra sincerità. Questo sito è riservato ai maggiorenni: tornate a trovarci più avanti!",
+    "remember": "La vostra risposta viene conservata per un anno in un cookie tecnico, senza alcun tracciamento."
+  },
+  "social": {
+    "label": "Social network",
+    "instagram": "Champagne de l'Aube su Instagram",
+    "facebook": "Champagne de l'Aube su Facebook",
+    "linkedin": "Champagne de l'Aube su LinkedIn"
   }
 }

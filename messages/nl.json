@@ -1,8 +1,69 @@
 {
+  "meta": {
+    "siteName": "Champagne de l'Aube",
+    "tagline": "Terroirs en champagnes met karakter",
+    "defaultTitle": "Champagne de l'Aube — Terroirs en champagnes met karakter",
+    "defaultDescription": "Ontdek de champagne uit de Aube en zijn wijnmakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
+  },
   "nav": {
-    "tasting": "Onze proeverijen"
+    "home": "Home",
+    "terroirs": "Terroirs",
+    "vignerons": "Wijnmakers",
+    "tasting": "Onze proeverijen",
+    "pro": "Professionals",
+    "proChr": "Hotels, restaurants en wijnhandels",
+    "proCse": "Relatiegeschenken en bedrijfsevenementen",
+    "proVignerons": "Wijnmakers: word partner",
+    "recettes": "Champagne en gerechten",
+    "toutSavoir": "Alles over champagne",
+    "contact": "Contact",
+    "skipToContent": "Naar de inhoud",
+    "mainNav": "Hoofdnavigatie",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "contents": "Ontdekken",
+    "homeLink": "Champagne de l'Aube, terug naar de homepage",
+    "terroirBand": "De terroirs van de Aube"
   },
   "langSwitcher": {
-    "label": "Kies een taal"
+    "label": "Kies een taal",
+    "current": "Taal: {language}"
+  },
+  "legal": {
+    "health": "Overmatig alcoholgebruik is schadelijk voor de gezondheid. Geniet met mate.",
+    "sponsored": "Betaalde samenwerking",
+    "legalNotice": "Juridische informatie",
+    "privacy": "Privacybeleid"
+  },
+  "charte": {
+    "eyebrow": "Website in aanbouw · Controle van de huisstijl",
+    "title": "Terroirs en champagnes met karakter",
+    "intro": "Deze tijdelijke pagina toont de kleuren, lettertypen en pictogrammen van het merk zoals ze op de nieuwe website gebruikt zullen worden."
+  },
+  "footer": {
+    "discover": "Ontdekken",
+    "pro": "Professionals",
+    "contact": "Contact opnemen",
+    "emailLabel": "E-mail naar",
+    "location": "Troyes · Aube · Frankrijk",
+    "legalNav": "Juridische informatie",
+    "phoneLabel": "Bel",
+    "languages": "Talen van de website",
+    "credit": "Website gemaakt door"
+  },
+  "ageGate": {
+    "eyebrow": "Welkom",
+    "title": "Heeft u de wettelijke leeftijd om champagne te ontdekken?",
+    "text": "Deze website gaat over champagnewijnen. Om hem te bezoeken moet u de wettelijke leeftijd hebben om alcohol te drinken in uw land (18 jaar in Frankrijk).",
+    "confirm": "Ik ben 18 jaar of ouder",
+    "deny": "Ik ben jonger dan 18",
+    "denied": "Bedankt voor uw eerlijkheid. Deze website is alleen voor volwassenen: kom later nog eens terug!",
+    "remember": "Uw antwoord wordt een jaar lang bewaard in een technische cookie, zonder enige tracking."
+  },
+  "social": {
+    "label": "Sociale media",
+    "instagram": "Champagne de l'Aube op Instagram",
+    "facebook": "Champagne de l'Aube op Facebook",
+    "linkedin": "Champagne de l'Aube op LinkedIn"
   }
 }
