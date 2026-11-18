@@ -37,6 +37,15 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
 
+    // Le terroir de l'Aube (page centrale, nouvelle)
+    "/le-terroir-de-laube": {
+      fr: "/le-terroir-de-laube",
+      en: "/the-aube-terroir",
+      nl: "/het-terroir-van-de-aube",
+      it: "/il-terroir-dellaube",
+      de: "/das-terroir-der-aube",
+    },
+
     // Terroirs
     "/la-cote-des-bar": "/la-cote-des-bar",
     "/les-riceys": "/les-riceys",
@@ -59,8 +68,27 @@ export const routing = defineRouting({
       de: "/winzer/[slug]",
     },
 
-    // Œnotourisme (URL historique déjà en anglais)
+    // Espace Particuliers (URL historique, déjà en anglais) et ses expériences
     "/tasting-troyes": "/tasting-troyes",
+    "/tasting-troyes/[slug]": "/tasting-troyes/[slug]",
+
+    // Champagne pour mariage (nouvelle page, référencement « champagne mariage Troyes »)
+    "/champagne-mariage-troyes": {
+      fr: "/champagne-mariage-troyes",
+      en: "/wedding-champagne-troyes",
+      nl: "/champagne-voor-bruiloft-troyes",
+      it: "/champagne-per-matrimonio-troyes",
+      de: "/hochzeitschampagner-troyes",
+    },
+
+    // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
+    "/ou-trouver-nos-pepites": {
+      fr: "/ou-trouver-nos-pepites",
+      en: "/where-to-find-our-gems",
+      nl: "/waar-vind-je-onze-parels",
+      it: "/dove-trovare-le-nostre-perle",
+      de: "/wo-sie-unsere-perlen-finden",
+    },
 
     // Espace Pro
     "/champagne-hotel-restaurants-et-cavistes": {

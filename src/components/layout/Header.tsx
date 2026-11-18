@@ -8,7 +8,7 @@ import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
-import { contentPages, proPages, terroirPages, type NavKey } from "@/lib/site";
+import { nav, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -36,15 +36,15 @@ export function Header({ social }: { social: Social }) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const toItem = (p: { key: NavKey; href: AppPathname }): Item => ({ href: p.href, label: t(p.key) });
   const terroirItems: Item[] = terroirPages.map((p) => ({
     href: p.href,
     label: p.label,
     color: `var(--color-${terroirs[p.key].color})`,
   }));
-  const toItems = (pages: { key: NavKey; href: AppPathname }[]): Item[] =>
-    pages.map((p) => ({ href: p.href, label: t(p.key) }));
-  const proItems = toItems(proPages);
-  const discoverItems = toItems(contentPages);
+  const terroirMenu: Item[] = [toItem(nav.terroirHub), ...terroirItems];
+  const proItems = nav.pro.map(toItem);
+  const particuliersItems = nav.particuliers.map(toItem);
 
   const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
   const isGroupActive = (items: Item[]) => items.some((i) => isActive(i.href));
@@ -59,7 +59,7 @@ export function Header({ social }: { social: Social }) {
   return (
     <MotionConfig reducedMotion="user">
       <header className="sticky top-0 z-40 border-b border-filet bg-creme-clair/95 backdrop-blur-sm">
-        <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4">
+        <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4 2xl:max-w-[1440px]">
           <Link href="/" aria-label={t("homeLink")} className="flex shrink-0 items-center gap-space-1">
             <Image
               src={logos.avatar.src}
@@ -70,28 +70,28 @@ export function Header({ social }: { social: Social }) {
               priority
               className="h-12 w-12"
             />
-            <span className="text-[1.125rem] font-bold leading-tight lg:hidden xl:inline">
+            <span className="whitespace-nowrap text-[1.125rem] font-bold leading-tight">
               Champagne de l&apos;Aube
             </span>
           </Link>
 
           {/* Navigation ordinateur */}
-          <nav aria-label={t("mainNav")} className="hidden lg:block">
-            <ul className="flex items-center gap-space-1 xl:gap-space-2">
+          <nav aria-label={t("mainNav")} className="hidden xl:block">
+            <ul className="flex items-center gap-1 2xl:gap-space-2">
               <li>
-                <Dropdown label={t("terroirs")} items={terroirItems} active={isGroupActive(terroirItems)} isActive={isActive} />
+                <Dropdown label={t("terroirHub")} items={terroirMenu} active={isGroupActive(terroirMenu)} isActive={isActive} />
               </li>
               <li>
-                <NavLink href="/vignerons" active={isActive("/vignerons")}>{t("vignerons")}</NavLink>
+                <NavLink href={nav.vignerons.href} active={isActive(nav.vignerons.href)}>{t("vignerons")}</NavLink>
               </li>
               <li>
-                <NavLink href="/tasting-troyes" active={isActive("/tasting-troyes")}>{t("tasting")}</NavLink>
+                <Dropdown label={t("pro")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} />
               </li>
               <li>
-                <Dropdown label={t("contents")} items={discoverItems} active={isGroupActive(discoverItems)} isActive={isActive} />
+                <NavLink href={nav.entreprises.href} active={isActive(nav.entreprises.href)}>{t("entreprises")}</NavLink>
               </li>
               <li>
-                <Dropdown label={t("pro")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
+                <Dropdown label={t("particuliers")} items={particuliersItems} active={isGroupActive(particuliersItems)} isActive={isActive} align="right" />
               </li>
             </ul>
           </nav>
@@ -100,22 +100,22 @@ export function Header({ social }: { social: Social }) {
             <SocialLinks
               links={social}
               labels={socialLabels}
-              className="hidden xl:flex"
+              className="hidden 2xl:flex"
               linkClassName="text-anthracite hover:text-bronze"
             />
-            <div className="hidden lg:block">
+            <div className="hidden xl:block">
               <LanguageSwitcher />
             </div>
             <Link
               href="/contact"
               aria-current={isActive("/contact") ? "page" : undefined}
-              className="hidden min-h-11 items-center rounded-etiquette bg-anthracite px-space-2 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit lg:inline-flex"
+              className="hidden min-h-11 items-center rounded-etiquette bg-anthracite px-space-2 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit xl:inline-flex"
             >
               {t("contact")}
             </Link>
             <button
               type="button"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-etiquette text-anthracite lg:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-etiquette text-anthracite xl:hidden"
               aria-expanded={mobileOpen}
               aria-controls="menu-mobile"
               aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
@@ -160,16 +160,11 @@ export function Header({ social }: { social: Social }) {
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
         groups={[
-          { title: t("terroirs"), items: terroirItems },
-          {
-            title: t("contents"),
-            items: [
-              { href: "/vignerons", label: t("vignerons") },
-              { href: "/tasting-troyes", label: t("tasting") },
-              ...discoverItems,
-            ],
-          },
+          { title: t("terroirHub"), items: terroirMenu },
+          { items: [toItem(nav.vignerons)] },
           { title: t("pro"), items: proItems },
+          { items: [toItem(nav.entreprises)] },
+          { title: t("particuliers"), items: particuliersItems },
         ]}
         contact={{ href: "/contact", label: t("contact") }}
         isActive={isActive}
@@ -184,7 +179,7 @@ function NavLink({ href, active, children }: { href: AppPathname; active: boolea
     <Link
       href={href}
       aria-current={active ? "page" : undefined}
-      className={`inline-flex min-h-11 items-center px-space-1 transition-colors hover:text-bronze ${
+      className={`inline-flex min-h-11 items-center whitespace-nowrap px-space-1 transition-colors hover:text-bronze ${
         active ? "text-bronze underline decoration-or decoration-2 underline-offset-8" : ""
       }`}
     >
@@ -263,7 +258,7 @@ function Dropdown({
           }
           setOpen((v) => !v);
         }}
-        className={`inline-flex min-h-11 items-center gap-1 px-space-1 transition-colors hover:text-bronze ${
+        className={`inline-flex min-h-11 items-center gap-1 whitespace-nowrap px-space-1 transition-colors hover:text-bronze ${
           active ? "text-bronze" : ""
         }`}
       >
@@ -317,7 +312,7 @@ function MobileMenu({
   social: ReactNode;
   open: boolean;
   onClose: () => void;
-  groups: { title: string; items: Item[] }[];
+  groups: { title?: string; items: Item[] }[];
   contact: Item;
   isActive: (href: AppPathname) => boolean;
 }) {
@@ -345,13 +340,13 @@ function MobileMenu({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto bg-blanc lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto bg-blanc xl:hidden"
         >
           <nav aria-label={t("mainNav")} className="mx-auto max-w-xl px-space-2 pb-space-5 pt-space-3 sm:px-space-4">
             {groups.map((group) => (
-              <div key={group.title} className="border-b border-filet py-space-2">
-                <p className="text-sur-titre text-bronze">{group.title}</p>
-                <ul className="mt-space-1">
+              <div key={group.title ?? group.items[0].href} className="border-b border-filet py-space-2">
+                {group.title && <p className="text-sur-titre text-bronze">{group.title}</p>}
+                <ul className={group.title ? "mt-space-1" : ""}>
                   {group.items.map((item) => (
                     <li key={item.href}>
                       <Link

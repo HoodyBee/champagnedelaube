@@ -2,7 +2,7 @@ import { NextStudio } from "next-sanity/studio";
 import config from "../../../../sanity.config";
 import { isSanityConfigured } from "@/sanity/env";
 
-// Le Studio Sanity, intégré au site : https://www.champagnedelaube.fr/studio
+// Le Studio Sanity, intégré au site : https://champagnedelaube.fr/studio
 export { metadata, viewport } from "next-sanity/studio";
 
 export default function StudioPage() {

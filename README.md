@@ -1,6 +1,6 @@
 # Champagne de l'Aube — site web
 
-Refonte de [champagnedelaube.fr](https://www.champagnedelaube.fr) : Next.js, Tailwind CSS, Sanity (à venir), hébergé sur Netlify.
+Refonte de [champagnedelaube.fr](https://champagnedelaube.fr) : Next.js, Tailwind CSS, Sanity, hébergé sur Netlify.
 
 ## Lancer le site sur votre ordinateur
 
@@ -50,6 +50,17 @@ Avant le premier lancement, copiez `.env.example` en `.env.local` et remplissez 
 ## Fonds (décision novembre 2026)
 
 Fond principal `blanc`. Touches de chaleur : classe `surface-chaude` (fond `creme-clair` + filet doré `filet`). Le `creme` d'origine est réservé au logo et à de rares accents.
+
+## Formulaires
+
+- 9 formulaires, tous définis dans `src/lib/forms/definitions.ts` (grille tarifaire Pro, dégustation en établissement, vigneron partenaire, devis entreprise, brochure CSE, réservation d'expérience, conseil événement, inscription événement, contact).
+- Un seul composant `LeadForm` et une seule fonction d'envoi (`src/app/actions/forms.ts`) : validation, case « 18 ans ou plus » obligatoire, mention RGPD, anti-spam (champ piège, délai minimal, limite par adresse IP, Cloudflare Turnstile si configuré).
+- Envoi par **Resend** à l'adresse « Adresse qui reçoit les formulaires » des Réglages du site, avec « Répondre » directement au visiteur, et accusé de réception au visiteur dans sa langue.
+- Variables à régler sur Netlify : voir `.env.example`. Sans `RESEND_API_KEY`, le formulaire affiche un message invitant à écrire à contact@champagnedelaube.fr.
+
+## Vocabulaire
+
+`npm run check:i18n` (lancé avant chaque build) bloque aussi les expressions interdites par la stratégie : « sans intermédiaire », « maison de champagne » (et leurs équivalents dans les 4 autres langues).
 
 ## Vérification de l'âge
 

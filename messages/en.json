@@ -6,13 +6,9 @@
     "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "home": "Home",
-    "terroirs": "Terroirs",
-    "vignerons": "Winemakers",
+    "vignerons": "Our winemakers",
     "tasting": "Our tastings",
-    "pro": "Professionals",
-    "proChr": "Hotels, restaurants and wine shops",
-    "proCse": "Corporate gifts and events",
+    "proChr": "Restaurants, wine shops and hotels",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
@@ -21,9 +17,13 @@
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "contents": "Discover",
     "homeLink": "Champagne de l'Aube, back to home page",
-    "terroirBand": "The terroirs of the Aube"
+    "terroirBand": "The terroirs of the Aube",
+    "terroirHub": "The Aube terroir",
+    "pro": "Professionals",
+    "entreprises": "Companies",
+    "particuliers": "Private clients",
+    "mariage": "Wedding champagne"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -42,14 +42,14 @@
   },
   "footer": {
     "discover": "Discover",
-    "pro": "Professionals",
     "contact": "Get in touch",
     "emailLabel": "Email",
     "location": "Troyes · Aube · France",
     "legalNav": "Legal information",
     "phoneLabel": "Call",
     "languages": "Website languages",
-    "credit": "Website by"
+    "credit": "Website by",
+    "offers": "Our services"
   },
   "ageGate": {
     "eyebrow": "Welcome",
@@ -65,5 +65,183 @@
     "instagram": "Champagne de l'Aube on Instagram",
     "facebook": "Champagne de l'Aube on Facebook",
     "linkedin": "Champagne de l'Aube on LinkedIn"
+  },
+  "ui": {
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "photoSoon": "Photo coming soon",
+    "peopleRange": "{min} to {max} people",
+    "peopleMax": "Up to {max} people",
+    "hostedBy": "Hosted by {name}",
+    "priceFrom": "From <strong>€{price}</strong> per person",
+    "priceOnRequest": "On request",
+    "bookExperience": "Book this experience",
+    "discoverDomain": "Discover the estate",
+    "faqTitle": "Frequently asked questions",
+    "tag": {
+      "nouveau": "New",
+      "places-limitees": "Limited places",
+      "sur-mesure": "Tailor-made"
+    }
+  },
+  "home": {
+    "heroTitre": "Winemaker champagnes from the Côte des Bar and the Aube",
+    "pro": {
+      "surTitre": "Restaurants · Wine shops · Hotels",
+      "titre": "Professionals",
+      "texte": "A selection of Aube estates for your wine list, at direct estate prices, with a single point of contact.",
+      "bouton": "Go to the Pro area"
+    },
+    "entreprises": {
+      "surTitre": "Gift boxes · Workshops · Team building",
+      "titre": "Companies & corporate gifts",
+      "texte": "Gift boxes from Aube winemakers and terroir discovery workshops for your teams and clients.",
+      "bouton": "Corporate offers"
+    },
+    "particuliers": {
+      "surTitre": "Workshops · Advice · Events",
+      "titre": "Private clients",
+      "texte": "Workshops in Troyes to discover the winemakers of the Aube, and advice to help you choose your cuvées.",
+      "bouton": "Private clients area"
+    },
+    "chiffres": {
+      "terroirs": "Aube terroirs",
+      "domaines": "estates at most in the selection",
+      "personnes": "people per workshop",
+      "duree": "per tasting workshop"
+    }
+  },
+  "pro": {
+    "arguments": {
+      "tarifs": {
+        "titre": "Direct estate prices",
+        "texte": "You buy at the price set by each estate."
+      },
+      "interlocuteur": {
+        "titre": "Single point of contact",
+        "texte": "One contact for several estates: selection, samples and follow-up."
+      },
+      "degustation": {
+        "titre": "On-site tasting",
+        "texte": "I come and present the cuvées to your team, at your venue."
+      }
+    }
+  },
+  "forms": {
+    "fields": {
+      "etablissement": "Name of your business",
+      "typeEtablissement": "Type of business",
+      "nom": "First and last name",
+      "email": "Email",
+      "telephone": "Phone",
+      "ville": "Town",
+      "message": "Your message",
+      "dateSouhaitee": "Preferred date",
+      "domaine": "Name of the estate",
+      "village": "Village",
+      "entreprise": "Company",
+      "typeDemande": "Your request",
+      "quantite": "Number of gift boxes or participants",
+      "effectif": "Number of employees",
+      "participants": "Number of people",
+      "typeEvenement": "Type of event",
+      "dateEvenement": "Date of the event",
+      "invites": "Number of guests",
+      "places": "Number of places",
+      "sujet": "Your request is about"
+    },
+    "options": {
+      "typeEtablissement": {
+        "restaurant": "Restaurant",
+        "caviste": "Wine shop",
+        "hotel": "Hotel",
+        "bar": "Wine bar",
+        "epicerie": "Delicatessen",
+        "traiteur": "Caterer, events",
+        "autre": "Other"
+      },
+      "typeDemande": {
+        "coffrets": "Gift boxes & staff offers",
+        "animation": "Workshop & team building",
+        "les-deux": "Both"
+      },
+      "typeEvenement": {
+        "mariage": "Wedding",
+        "bapteme": "Christening",
+        "anniversaire": "Birthday",
+        "finAnnee": "End-of-year holidays",
+        "autre": "Other"
+      },
+      "sujet": {
+        "pro": "Restaurant, wine shop, hotel",
+        "entreprise": "Company",
+        "particulier": "Workshop or private event",
+        "vigneron": "I am a winemaker",
+        "autre": "Other"
+      }
+    },
+    "titles": {
+      "grillePro": "Pro price list request",
+      "degustationPro": "On-site tasting request",
+      "partenaireVigneron": "Partner winemaker application",
+      "devisEntreprise": "Corporate quote request",
+      "brochureCse": "Corporate brochure request",
+      "reservationExperience": "Booking request",
+      "conseilEvenement": "Event advice request",
+      "inscriptionEvenement": "Event registration",
+      "contact": "Contact message"
+    },
+    "submit": {
+      "grillePro": "Get the price list",
+      "degustationPro": "Request a tasting",
+      "partenaireVigneron": "Send my application",
+      "devisEntreprise": "Request my quote",
+      "brochureCse": "Get the brochure",
+      "reservationExperience": "Send my booking request",
+      "conseilEvenement": "Ask for advice",
+      "inscriptionEvenement": "Register",
+      "contact": "Send the message"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "This email address does not look valid.",
+      "tel": "This phone number does not look valid.",
+      "number": "Please enter a valid number.",
+      "date": "Please enter a valid date.",
+      "tooLong": "This text is too long.",
+      "majeur": "Please tick this box to continue: this service is for adults only.",
+      "emailOrPhone": "Please give at least an email or a phone number so I can reply.",
+      "invalid": "Some fields need correcting, see below.",
+      "spam": "Your request could not be sent. Please wait a few seconds and try again.",
+      "captcha": "The anti-spam check failed. Please try again.",
+      "rate": "Too many requests in a short time. Please try again in a few minutes.",
+      "config": "Sending is temporarily unavailable. Please email me directly at contact@champagnedelaube.fr.",
+      "send": "A technical problem prevented sending. Please try again, or email contact@champagnedelaube.fr."
+    },
+    "choose": "Choose…",
+    "majeur": "I certify that I am 18 or older",
+    "requiredHint": "* Required fields.",
+    "rgpd": "Your details are only used to reply to your request and are never sold. Learn more: <link>privacy policy</link>.",
+    "sending": "Sending…",
+    "success": {
+      "title": "Thank you, your request has been sent.",
+      "text": "I will reply to you personally as soon as possible.",
+      "download": "Download the brochure (PDF)",
+      "brochureByEmail": "I will email you the brochure very soon."
+    },
+    "ack": {
+      "subject": "Champagne de l'Aube: we have received your request",
+      "hello": "Hello,",
+      "body": "Thank you for your message ({form}). I have received it and will reply to you personally as soon as possible.",
+      "brochure": "Your brochure is available here:",
+      "signature": "Speak soon,\nJulien Mineo"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to me: I will reply personally.",
+    "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for winemaker champagnes from the Aube.",
+    "details": "Details",
+    "formTitle": "Send a message"
   }
 }

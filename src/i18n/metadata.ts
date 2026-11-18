@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { getPathname } from "./navigation";
 import { defaultLocale, indexedLocales, type AppPathname, type Locale } from "./routing";
 
-export const SITE_URL = "https://www.champagnedelaube.fr";
+// Domaine principal SANS « www » : c'est la version que Google connaît déjà.
+export const SITE_URL = "https://champagnedelaube.fr";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 

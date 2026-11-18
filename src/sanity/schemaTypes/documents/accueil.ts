@@ -1,6 +1,24 @@
-import { icon } from "../../icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
+import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
+
+/** Une des 3 entrées de l'accueil (Professionnels / Entreprises / Particuliers). */
+const entree = (name: string, title: string, description: string) =>
+  defineField({
+    name,
+    title,
+    description,
+    type: "object",
+    group: "entrees",
+    options: { collapsible: true, collapsed: false },
+    fields: [
+      defineField({ name: "surTitre", title: "Sur-titre", type: "localeString" }),
+      defineField({ name: "titre", title: "Titre", type: "localeString", validation: requireFr }),
+      defineField({ name: "texte", title: "Texte", type: "localeText" }),
+      defineField({ name: "bouton", title: "Texte du bouton", type: "localeString" }),
+      defineField({ name: "image", title: "Photo", type: "imageAvecAlt" }),
+    ],
+  });
 
 /** Page d'accueil (document unique). */
 export const accueil = defineType({
@@ -9,30 +27,14 @@ export const accueil = defineType({
   type: "document",
   icon: icon("home"),
   groups: [
-    { name: "hero", title: "Grande image d'ouverture", default: true },
-    { name: "concept", title: "Concept" },
-    { name: "parcours", title: "Les 3 parcours" },
+    { name: "hero", title: "Ouverture", default: true },
+    { name: "entrees", title: "Les 3 entrées" },
+    { name: "sections", title: "Terroir et vignerons" },
     { name: "reassurance", title: "Réassurance" },
     { name: "seo", title: "Référencement" },
   ],
   fields: [
-    defineField({
-      name: "heroSurTitre",
-      title: "Sur-titre",
-      description: "Petite ligne en capitales au-dessus du titre. Ex. : Côte des Bar · Les Riceys · Montgueux · Villenauxe-la-Grande.",
-      type: "localeString",
-      group: "hero",
-    }),
-    defineField({
-      name: "heroTitre",
-      title: "Titre principal (H1)",
-      description: "6 mots maximum.",
-      type: "localeString",
-      group: "hero",
-      validation: requireFr,
-    }),
-    defineField({ name: "heroAccroche", title: "Accroche", type: "localeText", group: "hero" }),
-    defineField({ name: "heroImage", title: "Photo d'ouverture", type: "imageAvecAlt", group: "hero" }),
+    defineField({ name: "hero", title: "Ouverture", type: "hero", group: "hero" }),
     defineField({
       name: "heroVideo",
       title: "Vidéo d'ouverture (facultatif)",
@@ -41,64 +43,40 @@ export const accueil = defineType({
       options: { accept: "video/mp4" },
       group: "hero",
     }),
-    defineField({ name: "conceptTitre", title: "Titre", type: "localeString", group: "concept" }),
-    defineField({ name: "conceptTexte", title: "Texte", type: "localeRichText", group: "concept" }),
-    defineField({ name: "conceptImage", title: "Photo", type: "imageAvecAlt", group: "concept" }),
     defineField({
-      name: "parcours",
-      title: "Parcours",
-      description: "« Je veux déguster », « Je suis un professionnel », « Je suis vigneron ».",
+      name: "chiffres",
+      title: "Bandeau de chiffres clés (sous l'ouverture)",
       type: "array",
-      group: "parcours",
-      validation: (rule) => rule.max(3),
-      of: [
-        defineArrayMember({
-          type: "object",
-          name: "parcoursItem",
-          title: "Parcours",
-          fields: [
-            defineField({ name: "titre", title: "Titre", type: "localeString", validation: requireFr }),
-            defineField({ name: "texte", title: "Texte", type: "localeText" }),
-            defineField({ name: "bouton", title: "Texte du bouton", type: "localeString" }),
-            defineField({
-              name: "destination",
-              title: "Page de destination",
-              type: "string",
-              options: {
-                list: [
-                  { title: "Nos dégustations", value: "/tasting-troyes" },
-                  { title: "Espace Pro : hôtels, restaurants, cavistes", value: "/champagne-hotel-restaurants-et-cavistes" },
-                  { title: "Espace Pro : CSE et entreprises", value: "/cse-et-cadeaux-dentreprise" },
-                  { title: "Vignerons : devenez partenaire", value: "/vignerons-de-laube-devenez-partenaire-de-nos-degustations" },
-                  { title: "Vignerons partenaires", value: "/vignerons" },
-                  { title: "Contact", value: "/contact" },
-                ],
-              },
-            }),
-            defineField({ name: "image", title: "Photo", type: "imageAvecAlt" }),
-          ],
-          preview: { select: { title: "titre.fr", media: "image" } },
-        }),
-      ],
+      group: "hero",
+      validation: (r) => r.max(4),
+      of: [defineArrayMember({ type: "chiffre" })],
     }),
+
+    entree("entreePro", "Entrée 1 : Professionnels", "Bouton vers l'Espace Pro (restaurants, cavistes, hôtels)."),
+    entree("entreeEntreprises", "Entrée 2 : Entreprises & CSE", "Bouton vers la page Entreprises & CSE."),
+    entree("entreeParticuliers", "Entrée 3 : Particuliers", "Bouton vers l'espace Particuliers (/tasting-troyes/)."),
+
+    defineField({ name: "terroir", title: "Section « Le terroir de l'Aube »", type: "blocTexte", group: "sections" }),
+    defineField({ name: "vigneronsTitre", title: "Titre de la section vignerons", type: "localeString", group: "sections" }),
+    defineField({ name: "vigneronsIntro", title: "Introduction de la section vignerons", type: "localeText", group: "sections" }),
+    defineField({
+      name: "vigneronsSelection",
+      title: "Vignerons mis en avant",
+      description: "3 à 6 domaines. Laissez vide pour afficher automatiquement les premiers partenaires.",
+      type: "array",
+      group: "sections",
+      validation: (r) => r.max(6),
+      of: [defineArrayMember({ type: "reference", to: [{ type: "vigneron" }] })],
+    }),
+
     defineField({
       name: "reassurance",
       title: "Points de réassurance",
-      description: "Courtes phrases qui rassurent. Ex. : « Des petits comités de 6 à 13 personnes ».",
+      description: "Ex. : « Interlocuteur unique », « Tarifs directs domaine », « Vignerons indépendants ».",
       type: "array",
       group: "reassurance",
-      of: [
-        defineArrayMember({
-          type: "object",
-          name: "reassuranceItem",
-          title: "Point",
-          fields: [
-            defineField({ name: "titre", title: "Titre", type: "localeString", validation: requireFr }),
-            defineField({ name: "texte", title: "Texte", type: "localeText" }),
-          ],
-          preview: { select: { title: "titre.fr" } },
-        }),
-      ],
+      validation: (r) => r.max(4),
+      of: [defineArrayMember({ type: "argument" })],
     }),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],

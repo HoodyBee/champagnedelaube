@@ -6,13 +6,9 @@
     "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "home": "Accueil",
-    "terroirs": "Terroirs",
-    "vignerons": "Vignerons",
+    "vignerons": "Nos vignerons",
     "tasting": "Nos dégustations",
-    "pro": "Espace Pro",
-    "proChr": "Hôtels, restaurants et cavistes",
-    "proCse": "CSE et cadeaux d'entreprise",
+    "proChr": "Restaurants, cavistes et hôtels",
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
@@ -21,9 +17,13 @@
     "mainNav": "Navigation principale",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
-    "contents": "Découvrir",
     "homeLink": "Champagne de l'Aube, retour à l'accueil",
-    "terroirBand": "Les terroirs de l'Aube"
+    "terroirBand": "Les terroirs de l'Aube",
+    "terroirHub": "Le terroir de l'Aube",
+    "pro": "Professionnels",
+    "entreprises": "Entreprises & CSE",
+    "particuliers": "Particuliers",
+    "mariage": "Champagne pour mariage"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -42,14 +42,14 @@
   },
   "footer": {
     "discover": "Découvrir",
-    "pro": "Espace Pro",
     "contact": "Nous joindre",
     "emailLabel": "Écrire à",
     "location": "Troyes · Aube",
     "legalNav": "Informations légales",
     "phoneLabel": "Appeler le",
     "languages": "Langues du site",
-    "credit": "Site internet réalisé par"
+    "credit": "Site internet réalisé par",
+    "offers": "Nos offres"
   },
   "ageGate": {
     "eyebrow": "Bienvenue",
@@ -65,5 +65,183 @@
     "instagram": "Champagne de l'Aube sur Instagram",
     "facebook": "Champagne de l'Aube sur Facebook",
     "linkedin": "Champagne de l'Aube sur LinkedIn"
+  },
+  "ui": {
+    "home": "Accueil",
+    "breadcrumb": "Fil d'Ariane",
+    "photoSoon": "Photo à venir",
+    "peopleRange": "{min} à {max} pers.",
+    "peopleMax": "Jusqu'à {max} pers.",
+    "hostedBy": "Animé par {name}",
+    "priceFrom": "À partir de <strong>{price} €</strong> / pers.",
+    "priceOnRequest": "Sur demande",
+    "bookExperience": "Réserver cette expérience",
+    "discoverDomain": "Découvrir le domaine",
+    "faqTitle": "Questions fréquentes",
+    "tag": {
+      "nouveau": "Nouveau",
+      "places-limitees": "Places limitées",
+      "sur-mesure": "Sur-mesure"
+    }
+  },
+  "home": {
+    "heroTitre": "Les champagnes de vignerons de la Côte des Bar et de l'Aube",
+    "pro": {
+      "surTitre": "Restaurants · Cavistes · Hôtels",
+      "titre": "Professionnels",
+      "texte": "Une sélection de domaines de l'Aube pour votre carte des vins, aux tarifs directs domaine, avec un interlocuteur unique.",
+      "bouton": "Accéder à l'Espace Pro"
+    },
+    "entreprises": {
+      "surTitre": "Coffrets · Animations · Team building",
+      "titre": "Entreprises & CSE",
+      "texte": "Coffrets de vignerons de l'Aube et ateliers de découverte du terroir pour vos équipes et vos clients.",
+      "bouton": "Offres entreprises & CSE"
+    },
+    "particuliers": {
+      "surTitre": "Ateliers · Conseils · Événements",
+      "titre": "Particuliers",
+      "texte": "Des ateliers à Troyes pour découvrir les vignerons de l'Aube, et des conseils pour choisir vos cuvées.",
+      "bouton": "Espace particuliers"
+    },
+    "chiffres": {
+      "terroirs": "terroirs de l'Aube",
+      "domaines": "domaines au maximum dans la sélection",
+      "personnes": "personnes par atelier",
+      "duree": "par atelier de dégustation"
+    }
+  },
+  "pro": {
+    "arguments": {
+      "tarifs": {
+        "titre": "Tarifs directs domaine",
+        "texte": "Vous achetez au tarif pratiqué par chaque domaine."
+      },
+      "interlocuteur": {
+        "titre": "Interlocuteur unique",
+        "texte": "Un seul contact pour plusieurs domaines : sélection, échantillons et suivi."
+      },
+      "degustation": {
+        "titre": "Dégustation sur place",
+        "texte": "Je viens présenter les cuvées à votre équipe, dans votre établissement."
+      }
+    }
+  },
+  "forms": {
+    "fields": {
+      "etablissement": "Nom de l'établissement",
+      "typeEtablissement": "Type d'établissement",
+      "nom": "Prénom et nom",
+      "email": "E-mail",
+      "telephone": "Téléphone",
+      "ville": "Ville",
+      "message": "Votre message",
+      "dateSouhaitee": "Date souhaitée",
+      "domaine": "Nom du domaine",
+      "village": "Village",
+      "entreprise": "Entreprise",
+      "typeDemande": "Votre demande",
+      "quantite": "Nombre de coffrets ou de participants",
+      "effectif": "Effectif de l'entreprise",
+      "participants": "Nombre de personnes",
+      "typeEvenement": "Type d'événement",
+      "dateEvenement": "Date de l'événement",
+      "invites": "Nombre d'invités",
+      "places": "Nombre de places",
+      "sujet": "Votre demande concerne"
+    },
+    "options": {
+      "typeEtablissement": {
+        "restaurant": "Restaurant",
+        "caviste": "Caviste",
+        "hotel": "Hôtel",
+        "bar": "Bar à vins",
+        "epicerie": "Épicerie fine",
+        "traiteur": "Traiteur, événementiel",
+        "autre": "Autre"
+      },
+      "typeDemande": {
+        "coffrets": "Coffrets cadeaux & offres CSE",
+        "animation": "Animation & team building",
+        "les-deux": "Les deux"
+      },
+      "typeEvenement": {
+        "mariage": "Mariage",
+        "bapteme": "Baptême",
+        "anniversaire": "Anniversaire",
+        "finAnnee": "Fêtes de fin d'année",
+        "autre": "Autre"
+      },
+      "sujet": {
+        "pro": "Restaurant, caviste, hôtel",
+        "entreprise": "Entreprise ou CSE",
+        "particulier": "Atelier ou événement privé",
+        "vigneron": "Je suis vigneron",
+        "autre": "Autre"
+      }
+    },
+    "titles": {
+      "grillePro": "Demande de grille tarifaire Pro",
+      "degustationPro": "Demande de dégustation en établissement",
+      "partenaireVigneron": "Candidature vigneron partenaire",
+      "devisEntreprise": "Demande de devis entreprise",
+      "brochureCse": "Demande de brochure CSE",
+      "reservationExperience": "Demande de réservation",
+      "conseilEvenement": "Demande de conseil pour un événement",
+      "inscriptionEvenement": "Inscription à un événement",
+      "contact": "Message de contact"
+    },
+    "submit": {
+      "grillePro": "Recevoir la grille tarifaire",
+      "degustationPro": "Demander une dégustation",
+      "partenaireVigneron": "Envoyer ma candidature",
+      "devisEntreprise": "Demander mon devis",
+      "brochureCse": "Recevoir la brochure",
+      "reservationExperience": "Envoyer ma demande de réservation",
+      "conseilEvenement": "Demander conseil",
+      "inscriptionEvenement": "M'inscrire",
+      "contact": "Envoyer le message"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "email": "Cette adresse e-mail ne semble pas valide.",
+      "tel": "Ce numéro de téléphone ne semble pas valide.",
+      "number": "Indiquez un nombre valide.",
+      "date": "Indiquez une date valide.",
+      "tooLong": "Ce texte est trop long.",
+      "majeur": "Cochez cette case pour continuer : ce service est réservé aux personnes majeures.",
+      "emailOrPhone": "Indiquez au moins un e-mail ou un téléphone pour que je puisse vous répondre.",
+      "invalid": "Certains champs sont à corriger, voir ci-dessous.",
+      "spam": "Votre demande n'a pas pu être envoyée. Merci de patienter quelques secondes puis de réessayer.",
+      "captcha": "La vérification anti-robot n'a pas abouti. Merci de réessayer.",
+      "rate": "Trop de demandes en peu de temps. Merci de réessayer dans quelques minutes.",
+      "config": "L'envoi est momentanément indisponible. Écrivez-moi directement à contact@champagnedelaube.fr.",
+      "send": "Un problème technique a empêché l'envoi. Merci de réessayer, ou d'écrire à contact@champagnedelaube.fr."
+    },
+    "choose": "Choisir…",
+    "majeur": "Je certifie avoir 18 ans ou plus",
+    "requiredHint": "* Champs obligatoires.",
+    "rgpd": "Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. En savoir plus : <link>politique de confidentialité</link>.",
+    "sending": "Envoi en cours…",
+    "success": {
+      "title": "Merci, votre demande est bien envoyée.",
+      "text": "Je vous réponds personnellement dans les meilleurs délais.",
+      "download": "Télécharger la brochure (PDF)",
+      "brochureByEmail": "Je vous envoie la brochure par e-mail très prochainement."
+    },
+    "ack": {
+      "subject": "Champagne de l'Aube : votre demande est bien reçue",
+      "hello": "Bonjour,",
+      "body": "Merci pour votre message ({form}). Je l'ai bien reçu et je vous réponds personnellement dans les meilleurs délais.",
+      "brochure": "Votre brochure est disponible ici :",
+      "signature": "À très bientôt,\nJulien Mineo"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "Une question sur une cuvée, une dégustation, un coffret ou un partenariat ? Écrivez-moi : je vous réponds personnellement.",
+    "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de vignerons de l'Aube.",
+    "details": "Coordonnées",
+    "formTitle": "Envoyer un message"
   }
 }
