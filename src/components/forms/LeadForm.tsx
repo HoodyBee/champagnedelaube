@@ -21,13 +21,8 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
   const pathname = usePathname();
   const uid = useId();
   const [state, action, pending] = useActionState<FormState, FormData>(submitLead, { status: "idle" });
-  const startedAtRef = useRef<HTMLInputElement>(null);
   const statusRef = useRef<HTMLDivElement>(null);
 
-  // Heure d'ouverture du formulaire (anti-robot : un humain met plus de 2,5 secondes).
-  useEffect(() => {
-    if (startedAtRef.current && !startedAtRef.current.value) startedAtRef.current.value = String(Date.now());
-  }, [state]);
   // Après l'envoi, le message de résultat reçoit le focus (lecteurs d'écran, clavier).
   useEffect(() => {
     if (state.status !== "idle") statusRef.current?.focus();
@@ -38,6 +33,7 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
       <div ref={statusRef} tabIndex={-1} role="status" className={`surface-chaude rounded-carte p-space-3 outline-none sm:p-space-4 ${className}`}>
         <p className="text-accroche">{t("success.title")}</p>
         <p className="mt-space-1 text-gris-chaud">{t("success.text")}</p>
+        {state.newsletter && <p className="mt-space-2 text-gris-chaud">{t("success.newsletter")}</p>}
         {formId === "brochureCse" && (
           state.downloadUrl ? (
             <a href={state.downloadUrl} target="_blank" rel="noopener" className={buttonClass("primaire", "mt-space-3")}>
@@ -59,12 +55,12 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
 
   return (
     // La clé change à chaque réponse : le formulaire se réaffiche avec les valeurs saisies.
-    <form key={state.nonce ?? 0} action={action} noValidate className={`grid gap-space-2 sm:grid-cols-2 ${className}`} aria-describedby={`${uid}-required`}>
+    <form key={state.nonce ?? 0} action={action} noValidate className={`grid gap-space-2 sm:grid-cols-2 ${className}`} aria-describedby={`${uid}-required`} onFocusCapture={startOnInteraction}>
       <input type="hidden" name="_form" value={formId} />
       <input type="hidden" name="_locale" value={locale} />
       <input type="hidden" name="_page" value={pathname} />
       <input type="hidden" name="_context" value={context ?? ""} />
-      <input ref={startedAtRef} type="hidden" name={STARTED_AT} defaultValue={value(STARTED_AT)} />
+      <input ref={markStart} type="hidden" name={STARTED_AT} defaultValue={value(STARTED_AT)} />
       {/* Piège à robots : invisible pour les humains. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
         <label>
@@ -152,6 +148,19 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         )}
       </div>
 
+      {/* Actualités : facultatif, décoché par défaut (consentement explicite, RGPD). */}
+      <div className="sm:col-span-2">
+        <label className="flex cursor-pointer items-start gap-space-1">
+          <input
+            type="checkbox"
+            name="newsletter"
+            defaultChecked={value("newsletter") === "on"}
+            className="mt-1 h-5 w-5 shrink-0 accent-anthracite"
+          />
+          <span>{t("newsletterOptIn")}</span>
+        </label>
+      </div>
+
       {TURNSTILE_SITE_KEY && (
         <div className="sm:col-span-2">
           <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="lazyOnload" />
@@ -176,4 +185,18 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
       </div>
     </form>
   );
+}
+
+/**
+ * Anti-robot : note l'heure à laquelle le formulaire apparaît (un humain met plus de
+ * 2 secondes à le remplir). Une « ref » de rappel fonctionne aussi quand Next.js a
+ * préparé la page à l'avance, contrairement à un useEffect.
+ */
+function markStart(el: HTMLInputElement | null) {
+  if (el && !el.value) el.value = String(Date.now());
+}
+
+/** Filet de sécurité : au plus tard, le minuteur démarre à la première interaction avec le formulaire. */
+function startOnInteraction(e: React.FocusEvent<HTMLFormElement>) {
+  markStart(e.currentTarget.elements.namedItem(STARTED_AT) as HTMLInputElement | null);
 }

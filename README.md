@@ -51,12 +51,30 @@ Avant le premier lancement, copiez `.env.example` en `.env.local` et remplissez 
 
 Fond principal `blanc`. Touches de chaleur : classe `surface-chaude` (fond `creme-clair` + filet doré `filet`). Le `creme` d'origine est réservé au logo et à de rares accents.
 
-## Formulaires
+## Formulaires, contacts et newsletter (Brevo)
 
-- 9 formulaires, tous définis dans `src/lib/forms/definitions.ts` (grille tarifaire Pro, dégustation en établissement, vigneron partenaire, devis entreprise, brochure CSE, réservation d'expérience, conseil événement, inscription événement, contact).
-- Un seul composant `LeadForm` et une seule fonction d'envoi (`src/app/actions/forms.ts`) : validation, case « 18 ans ou plus » obligatoire, mention RGPD, anti-spam (champ piège, délai minimal, limite par adresse IP, Cloudflare Turnstile si configuré).
-- Envoi par **Resend** à l'adresse « Adresse qui reçoit les formulaires » des Réglages du site, avec « Répondre » directement au visiteur, et accusé de réception au visiteur dans sa langue.
-- Variables à régler sur Netlify : voir `.env.example`. Sans `RESEND_API_KEY`, le formulaire affiche un message invitant à écrire à contact@champagnedelaube.fr.
+**Formulaires** : 9 formulaires définis dans `src/lib/forms/definitions.ts`, un seul composant `LeadForm` et une seule fonction d'envoi (`src/app/actions/forms.ts`). Chaque formulaire a la case « 18 ans ou plus » (obligatoire), la case « actualités » (facultative, décochée), la mention RGPD et l'anti-spam (champ piège, délai minimal, limite par adresse IP, Cloudflare Turnstile si configuré).
+
+À chaque demande, via **Brevo** :
+1. vous recevez un e-mail (en français) à l'« Adresse qui reçoit les formulaires » des Réglages du site ; « Répondre » écrit au visiteur ;
+2. le visiteur devient un **contact Brevo**, classé dans la liste de son profil (Professionnels, Entreprises & CSE, Particuliers, Vignerons), avec sa langue (`LANGUE`), la page d'origine (`PAGE_ORIGINE`), son profil (`PROFIL`) et son établissement (`ETABLISSEMENT`) ;
+3. il reçoit un accusé de réception dans sa langue ;
+4. s'il a coché la case « actualités », il reçoit en plus l'e-mail de **double confirmation** de la newsletter.
+
+**Newsletter** : bandeau refermable au-dessus de l'en-tête → page `/newsletter/`, et formulaire dans le pied de page. Même parcours : e-mail + 18 ans + consentement → e-mail de confirmation (lien signé, valable 7 jours) → page de confirmation avec un bouton → le contact est ajouté à la liste **Newsletter** (attribut `NEWSLETTER_CONSENTEMENT` = date). **N'envoyez vos campagnes qu'à la liste « Newsletter »** : les autres listes contiennent des personnes qui n'ont pas demandé la newsletter.
+
+Les 5 listes (dossier « Site internet ») et les 5 attributs sont **créés automatiquement** dans Brevo s'ils n'existent pas.
+
+**Tâche hebdomadaire** (`netlify/functions/brevo-keepalive.mts`, chaque lundi à 7 h UTC) : utilise la clé (Brevo la désactive après 90 jours sans usage), vérifie l'accès aux contacts et l'envoi (mode « bac à sable », rien n'est envoyé), et la date d'expiration. En cas de problème : e-mail d'alerte via Brevo et, en secours, notification du formulaire Netlify « alerte-technique ». Lancement manuel : Netlify → Logs → Functions → `brevo-keepalive` → Run now.
+
+### Renouveler la clé Brevo (avant le 18 novembre 2027, ou si vous recevez une alerte)
+1. Brevo → menu en haut à droite (votre nom) → **SMTP & API** → onglet **API Keys** → **Generate a new API key**. Nom : `site-netlify-AAAA`. Si Brevo propose des droits restreints : **Transactional emails** et **Contacts** uniquement.
+2. Copiez la clé (elle ne s'affiche qu'une fois).
+3. Netlify → **Project configuration** → **Environment variables** → `BREVO_API_KEY` → **Edit** → collez la nouvelle clé → **Save**.
+4. Toujours dans Netlify, mettez à jour `BREVO_KEY_EXPIRES` avec la nouvelle date d'expiration indiquée par Brevo (format AAAA-MM-JJ).
+5. **Deploys** → **Trigger deploy** → **Deploy project** (les variables ne sont prises en compte qu'au déploiement suivant).
+6. Vérifiez : Netlify → Logs → Functions → `brevo-keepalive` → **Run now** : le journal doit afficher `"ok":true`.
+7. Dans Brevo, supprimez l'ancienne clé.
 
 ## Vocabulaire
 

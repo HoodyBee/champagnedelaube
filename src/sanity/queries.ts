@@ -1,4 +1,4 @@
-import { defineQuery } from "next-sanity";
+import { defineQuery, type PortableTextBlock } from "next-sanity";
 import { defaultContact } from "@/lib/site";
 import { sanityFetch } from "./lib/fetch";
 import type { Localized } from "./lib/i18n";
@@ -49,13 +49,14 @@ export type PageDoc = {
   titre?: Localized;
   surTitre?: Localized;
   intro?: Localized;
+  contenu?: Localized<PortableTextBlock[]>;
   seo?: { title?: Localized; description?: Localized; noIndex?: boolean };
 };
 
 /** Une « page fixe » saisie dans le Studio (Contact, Mentions légales…), par sa clé. */
 export async function getPage(cle: string): Promise<PageDoc | null> {
   return sanityFetch<PageDoc>({
-    query: defineQuery(`*[_type == "page" && cle == $cle][0]{ titre, surTitre, intro, seo }`),
+    query: defineQuery(`*[_type == "page" && cle == $cle][0]{ titre, surTitre, intro, contenu, seo }`),
     params: { cle },
     tags: ["page"],
   });

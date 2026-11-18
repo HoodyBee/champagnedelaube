@@ -11,6 +11,8 @@ import { DomaineCard } from "@/components/ui/DomaineCard";
 import { EntreeCard } from "@/components/ui/EntreeCard";
 import { ExperienceCard } from "@/components/ui/ExperienceCard";
 import { Section } from "@/components/ui/Section";
+import { LeadForm } from "@/components/forms/LeadForm";
+import { formIds } from "@/lib/forms/definitions";
 import { nav } from "@/lib/site";
 import tokens from "../../../tokens.json";
 
@@ -70,6 +72,7 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
   const tHome = await getTranslations("home");
   const tPro = await getTranslations("pro.arguments");
   const tUi = await getTranslations("ui");
+  const tForms = await getTranslations("forms");
 
   return (
     <div className="mx-auto max-w-5xl px-space-2 py-space-5 sm:px-space-4">
@@ -227,6 +230,22 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
           <div className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-4">
             <DomaineCard domaine={{ slug: "moutard-dangin", nom: "Champagne Moutard-Dangin", village: "Polisy", terroir: "cote-des-bar", philosophie: philosophies.moutard[locale] }} />
             <DomaineCard domaine={{ slug: "mennetrier", nom: "Champagne Mennetrier", village: "Arrentières", terroir: "cote-des-bar", philosophie: philosophies.mennetrier[locale], labels: ["HVE", "Viticulture durable en Champagne"] }} />
+          </div>
+        </Section>
+        {/* Aperçu temporaire des 9 formulaires (tests avant leur mise en page aux étapes 6 et 7). */}
+        <Section titre="Formulaires (aperçu de test)" align="gauche">
+          <div className="space-y-space-2">
+            {formIds.map((id) => (
+              <details key={id} id={`form-${id}`} className="surface-chaude rounded-carte p-space-3">
+                <summary className="cursor-pointer text-[1.25rem] font-bold">{tForms(`titles.${id}`)}</summary>
+                <div className="mt-space-3">
+                  <LeadForm
+                    formId={id}
+                    context={id === "reservationExperience" ? "L'Atelier Découverte" : id === "inscriptionEvenement" ? "[Événement de test]" : undefined}
+                  />
+                </div>
+              </details>
+            ))}
           </div>
         </Section>
       </div>

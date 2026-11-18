@@ -129,6 +129,16 @@ export const routing = defineRouting({
       de: "/alles-ueber-champagner",
     },
 
+    // Newsletter (inscription et confirmation)
+    "/newsletter": { fr: "/newsletter", en: "/newsletter", nl: "/nieuwsbrief", it: "/newsletter", de: "/newsletter" },
+    "/newsletter/confirmation": {
+      fr: "/newsletter/confirmation",
+      en: "/newsletter/confirmation",
+      nl: "/nieuwsbrief/bevestiging",
+      it: "/newsletter/conferma",
+      de: "/newsletter/bestaetigung",
+    },
+
     // Contact et légal
     "/contact": { fr: "/contact", en: "/contact", nl: "/contact", it: "/contatti", de: "/kontakt" },
     "/mentions-legales": {

@@ -1,10 +1,11 @@
 // Les formulaires du site. Chaque formulaire n'est qu'une liste de champs :
-// la mise en page, la validation, l'anti-spam et l'envoi par e-mail (Resend)
+// la mise en page, la validation, l'anti-spam et l'envoi par e-mail (Brevo)
 // sont communs (src/components/forms/LeadForm.tsx et src/app/actions/forms.ts).
 // Les libellés sont dans messages/*.json, rubrique "forms".
 //
 // Tous les formulaires ont en plus, automatiquement : la case « Je certifie avoir
-// 18 ans ou plus » (obligatoire), la mention RGPD et la protection anti-spam.
+// 18 ans ou plus » (obligatoire), la case facultative d'inscription aux
+// actualités (décochée par défaut), la mention RGPD et la protection anti-spam.
 
 export type FieldType = "text" | "email" | "tel" | "textarea" | "number" | "date" | "select";
 
@@ -23,6 +24,11 @@ export type FieldDef = {
 
 export type FormDef = {
   fields: readonly FieldDef[];
+  /**
+   * Liste Brevo dans laquelle la personne est classée. "sujet" : selon le champ
+   * « Votre demande concerne » (formulaire de contact).
+   */
+  profil: "pro" | "entreprises" | "particuliers" | "vignerons" | "sujet";
   /** "emailOuTelephone" : au moins l'un des deux est demandé (formulaires particuliers). */
   contact: "email" | "emailOuTelephone";
 };
@@ -42,6 +48,7 @@ const typeEtablissement: FieldDef = {
 export const forms = {
   /** Espace Pro : « Demander la grille tarifaire Pro ». */
   grillePro: {
+    profil: "pro",
     contact: "email",
     fields: [
       { name: "etablissement", type: "text", required: true, half: true, autoComplete: "organization" },
@@ -55,6 +62,7 @@ export const forms = {
   },
   /** Espace Pro : « Organiser une dégustation dans mon établissement ». */
   degustationPro: {
+    profil: "pro",
     contact: "email",
     fields: [
       { name: "etablissement", type: "text", required: true, half: true, autoComplete: "organization" },
@@ -69,6 +77,7 @@ export const forms = {
   },
   /** Vignerons : devenez partenaire. */
   partenaireVigneron: {
+    profil: "vignerons",
     contact: "email",
     fields: [
       { name: "domaine", type: "text", required: true, half: true, autoComplete: "organization" },
@@ -81,6 +90,7 @@ export const forms = {
   },
   /** Entreprises & CSE : « Demander un devis sur-mesure ». */
   devisEntreprise: {
+    profil: "entreprises",
     contact: "email",
     fields: [
       { name: "entreprise", type: "text", required: true, half: true, autoComplete: "organization" },
@@ -95,6 +105,7 @@ export const forms = {
   },
   /** Entreprises & CSE : « Obtenir la brochure CSE ». */
   brochureCse: {
+    profil: "entreprises",
     contact: "email",
     fields: [
       { name: "entreprise", type: "text", required: true, half: true, autoComplete: "organization" },
@@ -105,6 +116,7 @@ export const forms = {
   },
   /** Particuliers : « Réserver cette expérience » (sans paiement en ligne). */
   reservationExperience: {
+    profil: "particuliers",
     contact: "emailOuTelephone",
     fields: [
       nom,
@@ -117,6 +129,7 @@ export const forms = {
   },
   /** Particuliers : « Demander conseil pour mon événement » (mariage, baptême…). */
   conseilEvenement: {
+    profil: "particuliers",
     contact: "emailOuTelephone",
     fields: [
       { name: "typeEvenement", type: "select", required: true, half: true, options: ["mariage", "bapteme", "anniversaire", "finAnnee", "autre"] },
@@ -130,11 +143,13 @@ export const forms = {
   },
   /** Événement ponctuel : inscription. */
   inscriptionEvenement: {
+    profil: "particuliers",
     contact: "email",
     fields: [nom, email(), telephone(), { name: "places", type: "number", required: true, half: true, min: 1, max: 50 }, message()],
   },
   /** Page Contact. */
   contact: {
+    profil: "sujet",
     contact: "email",
     fields: [
       nom,
@@ -153,4 +168,13 @@ export const isFormId = (v: unknown): v is FormId => typeof v === "string" && v 
 /** Noms techniques des champs cachés communs. */
 export const HONEYPOT = "site_web";
 export const STARTED_AT = "_t";
-export const MIN_FILL_MS = 2500;
+export const MIN_FILL_MS = 2000;
+
+/** Liste Brevo selon le sujet choisi dans le formulaire de contact. */
+export const profilParSujet: Record<string, "pro" | "entreprises" | "particuliers" | "vignerons"> = {
+  pro: "pro",
+  entreprise: "entreprises",
+  particulier: "particuliers",
+  vigneron: "vignerons",
+  autre: "particuliers",
+};

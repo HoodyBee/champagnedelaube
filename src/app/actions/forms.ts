@@ -1,11 +1,12 @@
 "use server";
 
-import { headers } from "next/headers";
 import { getTranslations } from "next-intl/server";
-import { Resend } from "resend";
-import { forms, HONEYPOT, isFormId, MIN_FILL_MS, STARTED_AT, type FieldDef, type FormId } from "@/lib/forms/definitions";
-import { schemaFor } from "@/lib/forms/schema";
 import { defaultLocale, isLocale, type Locale } from "@/i18n/routing";
+import { BrevoError, describe, isBrevoConfigured, sendEmail, upsertContact, type BrevoListKey } from "@/lib/brevo";
+import { forms, HONEYPOT, isFormId, MIN_FILL_MS, profilParSujet, STARTED_AT, type FieldDef, type FormId } from "@/lib/forms/definitions";
+import { clientIp, rateLimited, verifyTurnstile } from "@/lib/forms/guard";
+import { schemaFor } from "@/lib/forms/schema";
+import { sendNewsletterConfirmation } from "@/lib/newsletter";
 import { getBrochureUrl, getReglages } from "@/sanity/queries";
 
 export type FormState = {
@@ -16,35 +17,15 @@ export type FormState = {
   message?: "invalid" | "spam" | "captcha" | "rate" | "config" | "send";
   /** Lien de téléchargement (brochure CSE). */
   downloadUrl?: string;
+  /** Vrai si un e-mail de confirmation d'inscription aux actualités a été envoyé. */
+  newsletter?: boolean;
   /** Valeurs saisies, renvoyées en cas d'erreur pour ne rien faire perdre au visiteur. */
   values?: Record<string, string>;
   /** Change à chaque réponse : permet de réafficher le formulaire avec ces valeurs. */
   nonce?: number;
 };
 
-// Limite simple : 5 envois par adresse IP toutes les 10 minutes (par serveur).
-const hits = new Map<string, number[]>();
-function rateLimited(ip: string) {
-  const now = Date.now();
-  const recent = (hits.get(ip) ?? []).filter((t) => now - t < 10 * 60_000);
-  recent.push(now);
-  hits.set(ip, recent);
-  return recent.length > 5;
-}
-
-async function verifyTurnstile(token: string | null, ip: string) {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true; // anti-spam Cloudflare pas encore configuré : honeypot + délai seulement
-  if (!token) return false;
-  const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-    method: "POST",
-    body: new URLSearchParams({ secret, response: token, remoteip: ip }),
-  });
-  const data = (await res.json().catch(() => ({}))) as { success?: boolean };
-  return data.success === true;
-}
-
-/** Reçoit un formulaire du site, le vérifie et l'envoie par e-mail. */
+/** Reçoit un formulaire du site, le vérifie, l'envoie par e-mail (Brevo) et enregistre le contact. */
 export async function submitLead(_prev: FormState, formData: FormData): Promise<FormState> {
   const formId = formData.get("_form");
   const localeRaw = String(formData.get("_locale") ?? "");
@@ -55,6 +36,7 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   const values: Record<string, string> = {};
   for (const f of forms[formId].fields as readonly FieldDef[]) values[f.name] = String(formData.get(f.name) ?? "").slice(0, 4000);
   if (formData.get("majeur")) values.majeur = "on";
+  if (formData.get("newsletter")) values.newsletter = "on";
   values[STARTED_AT] = String(formData.get(STARTED_AT) ?? "");
   const fail = (state: Omit<FormState, "status" | "values" | "nonce">): FormState => ({ status: "error", values, nonce: Date.now(), ...state });
 
@@ -63,77 +45,89 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   // 2. Anti-spam : formulaire rempli trop vite pour un humain.
   const startedAt = Number(formData.get(STARTED_AT));
   if (!startedAt || Date.now() - startedAt < MIN_FILL_MS) return fail({ message: "spam" });
-
-  const h = await headers();
-  const ip = (h.get("x-nf-client-connection-ip") ?? h.get("x-forwarded-for") ?? "").split(",")[0].trim() || "inconnue";
+  const ip = await clientIp();
   if (rateLimited(ip)) return fail({ message: "rate" });
   // 3. Anti-spam : vérification Cloudflare Turnstile (si configurée).
-  if (!(await verifyTurnstile(formData.get("cf-turnstile-response") as string | null, ip))) {
-    return fail({ message: "captcha" });
-  }
+  if (!(await verifyTurnstile(formData.get("cf-turnstile-response") as string | null, ip))) return fail({ message: "captcha" });
 
   // 4. Validation des champs.
-  const raw: Record<string, unknown> = { ...values, majeur: values.majeur };
-  const parsed = schemaFor(formId).safeParse(raw);
+  const parsed = schemaFor(formId).safeParse(values);
+  const errors: Record<string, string> = {};
   if (!parsed.success) {
-    const errors: Record<string, string> = {};
-    for (const issue of parsed.error.issues) {
-      const key = String(issue.path[0] ?? "form");
-      errors[key] ??= issue.message;
-    }
-    return fail({ message: "invalid", errors });
+    for (const issue of parsed.error.issues) errors[String(issue.path[0] ?? "form")] ??= issue.message;
   }
+  // Inscription aux actualités demandée sans e-mail : impossible de confirmer.
+  if (values.newsletter && !values.email) errors.email ??= "emailForNewsletter";
+  if (!parsed.success || Object.keys(errors).length) return fail({ message: "invalid", errors });
   const data = parsed.data as Record<string, string | number | undefined>;
+
   const context = String(formData.get("_context") ?? "").slice(0, 200);
   const page = String(formData.get("_page") ?? "").slice(0, 300);
+  const visitorEmail = typeof data.email === "string" ? data.email : undefined;
+  const wantsNewsletter = values.newsletter === "on" && !!visitorEmail;
 
-  // 5. Envoi des e-mails.
+  // 5. Envois.
   const reglages = await getReglages();
-  const to = reglages.emailsFormulaires || reglages.email;
+  const ownerAddress = reglages.emailsFormulaires || reglages.email;
   const brochureUrl = formId === "brochureCse" ? await getBrochureUrl() : null;
+  const owner = await ownerEmail(formId, data, { locale, context, page, newsletter: wantsNewsletter });
 
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.RESEND_FROM || "Champagne de l'Aube <onboarding@resend.dev>";
-  const owner = await ownerEmail(formId, data, { locale, context, page });
-
-  if (!apiKey) {
+  if (!isBrevoConfigured()) {
     if (process.env.NODE_ENV !== "production") {
-      console.info(`[formulaire ${formId}] (Resend non configuré : e-mail non envoyé)\n${owner.text}`);
-      return { status: "success", downloadUrl: brochureUrl ?? undefined };
+      console.info(`[formulaire ${formId}] (Brevo non configuré : rien n'est envoyé)\n${owner.text}`);
+      return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter };
     }
-    console.error("[formulaire] RESEND_API_KEY manquante : demande non envoyée");
+    console.error("[formulaire] BREVO_API_KEY manquante : demande non envoyée");
     return fail({ message: "config" });
   }
 
-  const resend = new Resend(apiKey);
-  const visitorEmail = typeof data.email === "string" ? data.email : undefined;
-  const sent = await resend.emails.send({
-    from,
-    to,
-    replyTo: visitorEmail,
-    subject: owner.subject,
-    text: owner.text,
-  });
-  if (sent.error) {
-    console.error("[formulaire] Envoi impossible :", sent.error);
-    return fail({ message: "send" });
+  // 5a. Notification à Champagne de l'Aube : indispensable, sinon la demande est perdue.
+  try {
+    await sendEmail({ to: ownerAddress, replyTo: visitorEmail, subject: owner.subject, text: owner.text });
+  } catch (e) {
+    console.error("[formulaire] Notification non envoyée :", describe(e));
+    return fail({ message: e instanceof BrevoError && e.status === 401 ? "config" : "send" });
   }
 
-  // Accusé de réception au visiteur, dans sa langue (un échec ici ne bloque pas la demande).
+  // Les étapes suivantes ne doivent jamais faire échouer la demande du visiteur.
   if (visitorEmail) {
+    // 5b. Contact Brevo, classé selon le profil.
+    const profil: BrevoListKey =
+      forms[formId].profil === "sujet" ? (profilParSujet[String(data.sujet)] ?? "particuliers") : forms[formId].profil;
+    await upsertContact({
+      email: visitorEmail,
+      fullName: String(data.nom ?? ""),
+      lists: [profil],
+      attributes: {
+        LANGUE: locale.toUpperCase(),
+        PAGE_ORIGINE: page,
+        PROFIL: profil,
+        ETABLISSEMENT: String(data.etablissement ?? data.entreprise ?? data.domaine ?? "") || undefined,
+      },
+    }).catch((e) => console.error("[formulaire] Contact Brevo non enregistré :", describe(e)));
+
+    // 5c. Accusé de réception, dans la langue du visiteur.
     const ack = await visitorAck(formId, locale, brochureUrl);
-    const res = await resend.emails.send({ from, to: visitorEmail, replyTo: to, subject: ack.subject, text: ack.text });
-    if (res.error) console.warn("[formulaire] Accusé de réception non envoyé :", res.error);
+    await sendEmail({ to: visitorEmail, toName: String(data.nom ?? ""), replyTo: ownerAddress, subject: ack.subject, text: ack.text }).catch((e) =>
+      console.warn("[formulaire] Accusé de réception non envoyé :", describe(e)),
+    );
+
+    // 5d. Actualités : e-mail de double confirmation (inscription seulement après le clic).
+    if (wantsNewsletter) {
+      await sendNewsletterConfirmation({ email: visitorEmail, locale, page }).catch((e) =>
+        console.error("[formulaire] Confirmation newsletter non envoyée :", describe(e)),
+      );
+    }
   }
 
-  return { status: "success", downloadUrl: brochureUrl ?? undefined };
+  return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter };
 }
 
 /** E-mail reçu par Champagne de l'Aube (toujours en français). */
 async function ownerEmail(
   formId: FormId,
   data: Record<string, string | number | undefined>,
-  meta: { locale: Locale; context: string; page: string },
+  meta: { locale: Locale; context: string; page: string; newsletter: boolean },
 ) {
   const t = await getTranslations({ locale: "fr", namespace: "forms" });
   const lines: string[] = [];
@@ -152,7 +146,8 @@ async function ownerEmail(
       "",
       ...lines,
       "",
-      `Âge : la personne certifie avoir 18 ans ou plus.`,
+      "Âge : la personne certifie avoir 18 ans ou plus.",
+      `Actualités : ${meta.newsletter ? "souhaite les recevoir (e-mail de confirmation envoyé)" : "non"}`,
       `Langue du visiteur : ${meta.locale.toUpperCase()}`,
       meta.page ? `Page : ${meta.page}` : null,
       "",
