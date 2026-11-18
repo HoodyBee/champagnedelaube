@@ -52,7 +52,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       </head>
       <body className="min-h-dvh">
         <NextIntlClientProvider>
-          <div id="site" className="flex min-h-dvh flex-col">
+          {/* suppressHydrationWarning : le script de vérification de l'âge peut poser
+              l'attribut « inert » sur ce bloc avant que React ne démarre. */}
+          <div id="site" className="flex min-h-dvh flex-col" suppressHydrationWarning>
             <a
               href="#contenu"
               className="sr-only z-50 rounded-etiquette bg-anthracite px-space-2 py-space-1 text-blanc focus:not-sr-only focus:fixed focus:left-space-2 focus:top-space-2"
