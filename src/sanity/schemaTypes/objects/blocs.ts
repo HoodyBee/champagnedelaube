@@ -105,3 +105,14 @@ export const faqField = (group?: string) =>
     group,
     of: [defineArrayMember({ type: "faqItem" })],
   });
+
+/** Texte de l'ancien site WordPress, repris tel quel pour vous servir de base. Jamais affiché sur le site. */
+export const repriseField = (group?: string) =>
+  defineField({
+    name: "reprise",
+    title: "Texte de l'ancien site (à reprendre)",
+    description:
+      "Repris automatiquement depuis l'ancien site. Il n'est PAS affiché : copiez-en les passages utiles dans les champs ci-dessus (en les relisant pour la loi Évin), puis videz ce champ.",
+    type: "localeRichText",
+    group,
+  });

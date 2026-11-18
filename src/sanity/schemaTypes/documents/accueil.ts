@@ -1,5 +1,6 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
+import { repriseField } from "../objects/blocs";
 import { requireFr } from "../objects/localized";
 
 /** Une des 3 entrées de l'accueil (Professionnels / Entreprises / Particuliers). */
@@ -32,6 +33,7 @@ export const accueil = defineType({
     { name: "sections", title: "Terroir et vignerons" },
     { name: "reassurance", title: "Réassurance" },
     { name: "seo", title: "Référencement" },
+    { name: "reprise", title: "Ancien site" },
   ],
   fields: [
     defineField({ name: "hero", title: "Ouverture", type: "hero", group: "hero" }),
@@ -78,6 +80,7 @@ export const accueil = defineType({
       validation: (r) => r.max(4),
       of: [defineArrayMember({ type: "argument" })],
     }),
+    repriseField("reprise"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
   preview: { prepare: () => ({ title: "Page d'accueil" }) },

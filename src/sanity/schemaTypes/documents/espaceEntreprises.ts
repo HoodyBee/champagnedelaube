@@ -1,6 +1,6 @@
 import { defineField, defineType } from "sanity";
 import { icon } from "../../icons";
-import { faqField } from "../objects/blocs";
+import { faqField, repriseField } from "../objects/blocs";
 
 /** Entreprises, CSE & team building : /cse-et-cadeaux-dentreprise/ (document unique). */
 export const espaceEntreprises = defineType({
@@ -14,6 +14,7 @@ export const espaceEntreprises = defineType({
     { name: "brochure", title: "Brochure CSE" },
     { name: "faq", title: "Questions" },
     { name: "seo", title: "Référencement" },
+    { name: "reprise", title: "Ancien site" },
   ],
   fields: [
     defineField({ name: "hero", title: "Ouverture", type: "hero", group: "hero" }),
@@ -43,6 +44,7 @@ export const espaceEntreprises = defineType({
     defineField({ name: "brochureTitre", title: "Formulaire « Brochure CSE » : titre", type: "localeString", group: "brochure" }),
     defineField({ name: "brochureTexte", title: "Formulaire « Brochure CSE » : texte", type: "localeText", group: "brochure" }),
     faqField("faq"),
+    repriseField("reprise"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
   preview: { prepare: () => ({ title: "Entreprises & CSE" }) },
