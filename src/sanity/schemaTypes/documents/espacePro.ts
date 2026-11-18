@@ -1,6 +1,6 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
-import { faqField } from "../objects/blocs";
+import { faqField, repriseField } from "../objects/blocs";
 
 /** Espace Professionnels : /champagne-hotel-restaurants-et-cavistes/ (document unique). */
 export const espacePro = defineType({
@@ -15,6 +15,7 @@ export const espacePro = defineType({
     { name: "formulaires", title: "Formulaires" },
     { name: "faq", title: "Questions" },
     { name: "seo", title: "Référencement" },
+    { name: "reprise", title: "Ancien site" },
   ],
   fields: [
     defineField({ name: "hero", title: "Ouverture", type: "hero", group: "hero" }),
@@ -68,6 +69,7 @@ export const espacePro = defineType({
     defineField({ name: "degustationTitre", title: "Formulaire « Dégustation dans mon établissement » : titre", type: "localeString", group: "formulaires" }),
     defineField({ name: "degustationTexte", title: "Formulaire « Dégustation dans mon établissement » : texte", type: "localeText", group: "formulaires" }),
     faqField("faq"),
+    repriseField("reprise"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
   preview: { prepare: () => ({ title: "Espace Professionnels" }) },

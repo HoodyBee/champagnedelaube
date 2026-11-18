@@ -1,6 +1,6 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
-import { faqField } from "../objects/blocs";
+import { faqField, repriseField } from "../objects/blocs";
 
 /** Espace Particuliers : /tasting-troyes/ (document unique). */
 export const espaceParticuliers = defineType({
@@ -14,6 +14,7 @@ export const espaceParticuliers = defineType({
     { name: "evenements", title: "Événements privés" },
     { name: "faq", title: "Questions" },
     { name: "seo", title: "Référencement" },
+    { name: "reprise", title: "Ancien site" },
   ],
   fields: [
     defineField({ name: "hero", title: "Ouverture", type: "hero", group: "hero" }),
@@ -41,6 +42,7 @@ export const espaceParticuliers = defineType({
       group: "evenements",
     }),
     faqField("faq"),
+    repriseField("reprise"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
   preview: { prepare: () => ({ title: "Espace Particuliers" }) },
