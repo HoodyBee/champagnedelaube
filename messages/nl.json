@@ -6,13 +6,9 @@
     "defaultDescription": "Ontdek de champagne uit de Aube en zijn wijnmakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "home": "Home",
-    "terroirs": "Terroirs",
-    "vignerons": "Wijnmakers",
+    "vignerons": "Onze wijnmakers",
     "tasting": "Onze proeverijen",
-    "pro": "Professionals",
-    "proChr": "Hotels, restaurants en wijnhandels",
-    "proCse": "Relatiegeschenken en bedrijfsevenementen",
+    "proChr": "Restaurants, wijnhandels en hotels",
     "proVignerons": "Wijnmakers: word partner",
     "recettes": "Champagne en gerechten",
     "toutSavoir": "Alles over champagne",
@@ -21,9 +17,13 @@
     "mainNav": "Hoofdnavigatie",
     "openMenu": "Menu openen",
     "closeMenu": "Menu sluiten",
-    "contents": "Ontdekken",
     "homeLink": "Champagne de l'Aube, terug naar de homepage",
-    "terroirBand": "De terroirs van de Aube"
+    "terroirBand": "De terroirs van de Aube",
+    "terroirHub": "Het terroir van de Aube",
+    "pro": "Professionals",
+    "entreprises": "Bedrijven",
+    "particuliers": "Particulieren",
+    "mariage": "Champagne voor uw bruiloft"
   },
   "langSwitcher": {
     "label": "Kies een taal",
@@ -42,14 +42,14 @@
   },
   "footer": {
     "discover": "Ontdekken",
-    "pro": "Professionals",
     "contact": "Contact opnemen",
     "emailLabel": "E-mail naar",
     "location": "Troyes · Aube · Frankrijk",
     "legalNav": "Juridische informatie",
     "phoneLabel": "Bel",
     "languages": "Talen van de website",
-    "credit": "Website gemaakt door"
+    "credit": "Website gemaakt door",
+    "offers": "Ons aanbod"
   },
   "ageGate": {
     "eyebrow": "Welkom",
@@ -65,5 +65,290 @@
     "instagram": "Champagne de l'Aube op Instagram",
     "facebook": "Champagne de l'Aube op Facebook",
     "linkedin": "Champagne de l'Aube op LinkedIn"
+  },
+  "ui": {
+    "home": "Home",
+    "breadcrumb": "Kruimelpad",
+    "photoSoon": "Foto volgt",
+    "peopleRange": "{min} tot {max} pers.",
+    "peopleMax": "Tot {max} pers.",
+    "hostedBy": "Begeleid door {name}",
+    "priceFrom": "Vanaf <strong>€ {price}</strong> p.p.",
+    "priceOnRequest": "Op aanvraag",
+    "bookExperience": "Deze ervaring reserveren",
+    "discoverDomain": "Ontdek het domein",
+    "faqTitle": "Veelgestelde vragen",
+    "tag": {
+      "nouveau": "Nieuw",
+      "places-limitees": "Beperkt aantal plaatsen",
+      "sur-mesure": "Op maat"
+    }
+  },
+  "home": {
+    "heroTitre": "Champagnes van wijnmakers uit de Côte des Bar en de Aube",
+    "pro": {
+      "surTitre": "Restaurants · Wijnhandels · Hotels",
+      "titre": "Professionals",
+      "texte": "Een selectie domeinen uit de Aube voor uw wijnkaart, tegen directe domeinprijzen en met één aanspreekpunt.",
+      "bouton": "Naar de Pro-ruimte"
+    },
+    "entreprises": {
+      "surTitre": "Geschenkdozen · Workshops · Teambuilding",
+      "titre": "Bedrijven & relatiegeschenken",
+      "texte": "Geschenkdozen van wijnmakers uit de Aube en workshops om het terroir te ontdekken, voor uw teams en klanten.",
+      "bouton": "Aanbod voor bedrijven"
+    },
+    "particuliers": {
+      "surTitre": "Workshops · Advies · Evenementen",
+      "titre": "Particulieren",
+      "texte": "Workshops in Troyes om de wijnmakers van de Aube te ontdekken, en advies om uw cuvées te kiezen.",
+      "bouton": "Ruimte voor particulieren"
+    },
+    "chiffres": {
+      "terroirs": "terroirs van de Aube",
+      "domaines": "domeinen maximaal in de selectie",
+      "personnes": "personen per workshop",
+      "duree": "per proeverij"
+    }
+  },
+  "pro": {
+    "arguments": {
+      "tarifs": {
+        "titre": "Directe domeinprijzen",
+        "texte": "U koopt tegen de prijs die elk domein hanteert."
+      },
+      "interlocuteur": {
+        "titre": "Eén aanspreekpunt",
+        "texte": "Eén contactpersoon voor meerdere domeinen: selectie, stalen en opvolging."
+      },
+      "degustation": {
+        "titre": "Proeverij ter plaatse",
+        "texte": "Ik kom de cuvées voorstellen aan uw team, in uw zaak."
+      }
+    }
+  },
+  "forms": {
+    "fields": {
+      "etablissement": "Naam van uw zaak",
+      "typeEtablissement": "Type zaak",
+      "nom": "Voor- en achternaam",
+      "email": "E-mail",
+      "telephone": "Telefoon",
+      "ville": "Plaats",
+      "message": "Uw bericht",
+      "dateSouhaitee": "Gewenste datum",
+      "domaine": "Naam van het domein",
+      "village": "Dorp",
+      "entreprise": "Bedrijf",
+      "typeDemande": "Uw aanvraag",
+      "quantite": "Aantal geschenkdozen of deelnemers",
+      "effectif": "Aantal medewerkers",
+      "participants": "Aantal personen",
+      "typeEvenement": "Soort evenement",
+      "dateEvenement": "Datum van het evenement",
+      "invites": "Aantal gasten",
+      "places": "Aantal plaatsen",
+      "sujet": "Uw vraag gaat over"
+    },
+    "options": {
+      "typeEtablissement": {
+        "restaurant": "Restaurant",
+        "caviste": "Wijnhandel",
+        "hotel": "Hotel",
+        "bar": "Wijnbar",
+        "epicerie": "Delicatessenzaak",
+        "traiteur": "Traiteur, evenementen",
+        "autre": "Andere"
+      },
+      "typeDemande": {
+        "coffrets": "Geschenkdozen & personeelsaanbod",
+        "animation": "Workshop & teambuilding",
+        "les-deux": "Beide"
+      },
+      "typeEvenement": {
+        "mariage": "Bruiloft",
+        "bapteme": "Doop",
+        "anniversaire": "Verjaardag",
+        "finAnnee": "Eindejaarsfeesten",
+        "autre": "Andere"
+      },
+      "sujet": {
+        "pro": "Restaurant, wijnhandel, hotel",
+        "entreprise": "Bedrijf",
+        "particulier": "Workshop of privé-evenement",
+        "vigneron": "Ik ben wijnmaker",
+        "autre": "Andere"
+      }
+    },
+    "titles": {
+      "grillePro": "Aanvraag pro-prijslijst",
+      "degustationPro": "Aanvraag proeverij in uw zaak",
+      "partenaireVigneron": "Aanvraag partner-wijnmaker",
+      "devisEntreprise": "Offerteaanvraag voor bedrijven",
+      "brochureCse": "Aanvraag bedrijfsbrochure",
+      "reservationExperience": "Reserveringsaanvraag",
+      "conseilEvenement": "Adviesaanvraag voor een evenement",
+      "inscriptionEvenement": "Inschrijving voor een evenement",
+      "contact": "Contactbericht"
+    },
+    "submit": {
+      "grillePro": "Prijslijst ontvangen",
+      "degustationPro": "Proeverij aanvragen",
+      "partenaireVigneron": "Aanvraag versturen",
+      "devisEntreprise": "Offerte aanvragen",
+      "brochureCse": "Brochure ontvangen",
+      "reservationExperience": "Reserveringsaanvraag versturen",
+      "conseilEvenement": "Advies vragen",
+      "inscriptionEvenement": "Inschrijven",
+      "contact": "Bericht versturen"
+    },
+    "errors": {
+      "required": "Dit veld is verplicht.",
+      "email": "Dit e-mailadres lijkt niet geldig.",
+      "tel": "Dit telefoonnummer lijkt niet geldig.",
+      "number": "Vul een geldig getal in.",
+      "date": "Vul een geldige datum in.",
+      "tooLong": "Deze tekst is te lang.",
+      "majeur": "Vink dit vakje aan om verder te gaan: deze dienst is alleen voor volwassenen.",
+      "emailOrPhone": "Vul minstens een e-mailadres of telefoonnummer in zodat ik kan antwoorden.",
+      "invalid": "Sommige velden moeten worden aangepast, zie hieronder.",
+      "spam": "Uw aanvraag kon niet worden verzonden. Wacht een paar seconden en probeer het opnieuw.",
+      "captcha": "De anti-spamcontrole is mislukt. Probeer het opnieuw.",
+      "rate": "Te veel aanvragen in korte tijd. Probeer het over enkele minuten opnieuw.",
+      "config": "Verzenden is tijdelijk niet mogelijk. Mail me rechtstreeks op contact@champagnedelaube.fr.",
+      "send": "Door een technisch probleem is het niet verzonden. Probeer het opnieuw of mail naar contact@champagnedelaube.fr.",
+      "emailForNewsletter": "Vul uw e-mailadres in om het nieuws te ontvangen."
+    },
+    "choose": "Kies…",
+    "majeur": "Ik verklaar dat ik 18 jaar of ouder ben",
+    "requiredHint": "* Verplichte velden.",
+    "rgpd": "Uw gegevens worden alleen gebruikt om op uw aanvraag te antwoorden en worden nooit verkocht. Meer info: <link>privacybeleid</link>.",
+    "sending": "Bezig met verzenden…",
+    "success": {
+      "title": "Bedankt, uw aanvraag is verzonden.",
+      "text": "Ik antwoord u zo snel mogelijk persoonlijk.",
+      "download": "Brochure downloaden (pdf)",
+      "brochureByEmail": "Ik stuur u de brochure binnenkort per e-mail.",
+      "newsletter": "Nog één stap om het nieuws te ontvangen: klik op de bevestigingslink die ik u net heb gemaild."
+    },
+    "ack": {
+      "subject": "Champagne de l'Aube: uw aanvraag is ontvangen",
+      "hello": "Goedendag,",
+      "body": "Bedankt voor uw bericht ({form}). Ik heb het goed ontvangen en antwoord u zo snel mogelijk persoonlijk.",
+      "brochure": "Uw brochure is hier beschikbaar:",
+      "signature": "Tot binnenkort,\nJulien Mineo"
+    },
+    "newsletterOptIn": "Ik wil het nieuws van Champagne de l'Aube ontvangen (wijnmakers, proeverijen, evenementen)."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "Een vraag over een cuvée, een proeverij, een geschenkdoos of een samenwerking? Schrijf me: ik antwoord u persoonlijk.",
+    "metaDescription": "Neem contact op met Champagne de l'Aube in Troyes: professionals, bedrijven, particulieren en wijnmakers. Eén aanspreekpunt voor champagnes van wijnmakers uit de Aube.",
+    "details": "Gegevens",
+    "formTitle": "Stuur een bericht"
+  },
+  "newsletter": {
+    "bar": {
+      "text": "Wijnmakers, proeverijen en evenementen in de Aube:",
+      "cta": "ontvang het nieuws",
+      "close": "Deze banner sluiten"
+    },
+    "surTitre": "Nieuwsbrief",
+    "title": "Nieuws van de wijnmakers uit de Aube",
+    "intro": "Ontvang per e-mail nieuws van de domeinen die ik volg, de data van de volgende proeverijen en de afspraken in de Aube.",
+    "metaDescription": "Schrijf u in voor het nieuws van Champagne de l'Aube: onafhankelijke wijnmakers uit de Côte des Bar en de Aube, proeverijen in Troyes, evenementen.",
+    "points": {
+      "vignerons": "Portretten en nieuws van onafhankelijke wijnmakers",
+      "degustations": "De data van de volgende proeverij-workshops in Troyes",
+      "evenements": "Afspraken en evenementen in de Aube"
+    },
+    "form": {
+      "email": "Uw e-mailadres",
+      "submit": "Inschrijven",
+      "sending": "Bezig met verzenden…",
+      "majeur": "Ik verklaar dat ik 18 jaar of ouder ben",
+      "consentement": "Ik ga akkoord met het ontvangen van nieuws van Champagne de l'Aube per e-mail. Uitschrijven kan altijd. <link>Privacybeleid</link>",
+      "doubleOptIn": "U ontvangt een e-mail om uw inschrijving te bevestigen."
+    },
+    "errors": {
+      "required": "Vul uw e-mailadres in.",
+      "email": "Dit e-mailadres lijkt niet geldig.",
+      "majeur": "Vink dit vakje aan: deze dienst is alleen voor volwassenen.",
+      "consentement": "Vink dit vakje aan om het nieuws te ontvangen.",
+      "invalid": "Sommige velden moeten worden aangepast.",
+      "spam": "Wacht een paar seconden en probeer het opnieuw.",
+      "rate": "Te veel aanvragen in korte tijd. Probeer het over enkele minuten opnieuw.",
+      "captcha": "De anti-spamcontrole is mislukt. Probeer het opnieuw.",
+      "config": "Inschrijven is tijdelijk niet mogelijk. Probeer het later opnieuw.",
+      "send": "Door een technisch probleem is het niet verzonden. Probeer het opnieuw."
+    },
+    "success": {
+      "title": "Controleer uw mailbox",
+      "text": "Ik heb net een e-mail gestuurd naar {email}. Klik op de link erin om uw inschrijving te bevestigen."
+    },
+    "confirm": {
+      "title": "Uw inschrijving bevestigen",
+      "intro": "Nog één klik om het nieuws van Champagne de l'Aube te ontvangen.",
+      "button": "Mijn inschrijving bevestigen",
+      "sending": "Bevestigen…",
+      "success": "Gelukt, bedankt!",
+      "successText": "Uw inschrijving is bevestigd. U kunt zich altijd uitschrijven via de link in elke e-mail.",
+      "invalid": "Deze bevestigingslink is niet geldig.",
+      "expired": "Deze bevestigingslink is verlopen.",
+      "error": "Door een technisch probleem is de bevestiging mislukt.",
+      "retry": "U kunt zich opnieuw inschrijven: u ontvangt een nieuwe link.",
+      "retryButton": "Opnieuw inschrijven",
+      "backHome": "Terug naar de homepage"
+    },
+    "email": {
+      "subject": "Bevestig uw inschrijving voor het nieuws van Champagne de l'Aube",
+      "hello": "Goedendag,",
+      "body": "Bedankt voor uw interesse in de wijnmakers uit de Aube! Klik op de link hieronder om uw inschrijving voor het nieuws van Champagne de l'Aube te bevestigen:",
+      "button": "Mijn inschrijving bevestigen",
+      "expiry": "Deze link is 7 dagen geldig.",
+      "ignore": "Heeft u dit niet aangevraagd? Negeer deze e-mail dan gewoon: u wordt niet ingeschreven.",
+      "signature": "Tot binnenkort,\nJulien Mineo · Champagne de l'Aube"
+    },
+    "footer": {
+      "surTitre": "Nieuwsbrief",
+      "title": "Nieuws van de wijnmakers uit de Aube",
+      "text": "Domeinen, proeverijen in Troyes en afspraken in de Aube, rechtstreeks in uw mailbox."
+    }
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "metaDescription": "Hoe Champagne de l'Aube uw persoonsgegevens verzamelt en beschermt: formulieren, nieuwsbrief, verwerkers (Brevo, Netlify), cookies en uw rechten.",
+    "updated": "Laatst bijgewerkt: november 2026",
+    "intro": "Deze pagina legt eenvoudig uit welke persoonsgegevens ik op deze website verzamel, waarom, met wie ze worden gedeeld en hoe u uw rechten kunt uitoefenen.",
+    "sections": {
+      "responsable": {
+        "title": "Verwerkingsverantwoordelijke",
+        "text": "Champagne de l'Aube, vertegenwoordigd door Julien Mineo, Troyes (Aube, Frankrijk). [AAN TE VULLEN: rechtsvorm, SIRET-nummer, postadres]\nContact: contact@champagnedelaube.fr"
+      },
+      "donnees": {
+        "title": "Verzamelde gegevens",
+        "text": "• Formulieren (offerte, reservering, inschrijving, contact): naam, e-mail en/of telefoon, zaak of bedrijf, plaats, aantal personen, gewenste datum, bericht.\n• Nieuwsbrief: e-mailadres, taal, inschrijvingspagina en datum van uw toestemming.\n• In alle gevallen: de bevestiging dat u 18 jaar of ouder bent, de taal van de website en de pagina vanwaar u schrijft."
+      },
+      "finalites": {
+        "title": "Waarom deze gegevens worden gebruikt",
+        "text": "• Om op uw aanvraag te antwoorden en een offerte of reservering voor te bereiden (precontractuele maatregelen).\n• Om ons contact op te volgen: uw gegevens worden bewaard in mijn adresboek (Brevo), ingedeeld per profiel (professional, bedrijf, particulier, wijnmaker) (gerechtvaardigd belang). U ontvangt daardoor niet automatisch de nieuwsbrief.\n• Om u nieuws te sturen, alleen als u daarom heeft gevraagd en dit heeft bevestigd via de link in de e-mail (toestemming).\n• Om de formulieren te beschermen tegen automatische verzendingen (gerechtvaardigd belang)."
+      },
+      "destinataires": {
+        "title": "Wie toegang heeft tot uw gegevens",
+        "text": "Uw gegevens worden nooit verkocht of verhuurd. Alleen Julien Mineo heeft er toegang toe, evenals deze technische dienstverleners (verwerkers), voor de behoeften van de website:\n• Brevo (Sendinblue SAS, Frankrijk): verzending van e-mails en adresboek. Gegevens gehost in de Europese Unie.\n• Netlify (Verenigde Staten): hosting van de website. Doorgiften gedekt door de modelcontractbepalingen van de Europese Commissie.\n• Sanity (Verenigde Staten): beheer van teksten en foto's van de website. Er worden geen formuliergegevens opgeslagen.\n• Cloudflare Turnstile (indien geactiveerd): bescherming van de formulieren tegen robots, zonder advertentiecookies."
+      },
+      "conservation": {
+        "title": "Hoe lang",
+        "text": "• Aanvragen en contacten: 3 jaar na ons laatste contact, daarna verwijderd.\n• Nieuwsbrief: tot u zich uitschrijft (elke e-mail bevat een link). Het bewijs van uw toestemming wordt bewaard zolang u ingeschreven bent."
+      },
+      "droits": {
+        "title": "Uw rechten",
+        "text": "U kunt op elk moment uw gegevens inzien, laten corrigeren of verwijderen, bezwaar maken tegen het gebruik, het gebruik beperken, een kopie opvragen of uw toestemming voor de nieuwsbrief intrekken. Schrijf gewoon naar contact@champagnedelaube.fr.\nAls u vindt dat uw rechten niet worden gerespecteerd, kunt u een klacht indienen bij de Franse toezichthouder CNIL (www.cnil.fr)."
+      },
+      "cookies": {
+        "title": "Cookies en opslag in de browser",
+        "text": "Deze website gebruikt geen advertentie- of statistiekcookies. Ze slaat alleen noodzakelijke technische informatie op in uw browser:\n• cda_age (cookie en lokale opslag, 1 jaar): uw antwoord op de leeftijdscontrole;\n• NEXT_LOCALE (cookie, tijdens het bezoek): de gekozen taal;\n• cda_nl_bar (lokale opslag): de nieuwsbanner die u heeft gesloten."
+      }
+    }
   }
 }

@@ -11,6 +11,7 @@ export const reglages = defineType({
   groups: [
     { name: "general", title: "Général", default: true },
     { name: "contact", title: "Coordonnées" },
+    { name: "pages", title: "Pages" },
     { name: "seo", title: "Référencement" },
   ],
   fields: [
@@ -84,6 +85,15 @@ export const reglages = defineType({
       group: "contact",
       initialValue: "contact@champagnedelaube.fr",
       validation: (rule) => rule.required().email(),
+    }),
+    defineField({
+      name: "pepitesActive",
+      title: "Afficher la page « Où trouver nos pépites ? »",
+      description:
+        "Éteint : la page est invisible (introuvable, hors de Google et du plan du site). Allumez-le quand la carte des partenaires est prête.",
+      type: "boolean",
+      group: "pages",
+      initialValue: false,
     }),
     defineField({
       name: "seo",

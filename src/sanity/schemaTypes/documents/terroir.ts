@@ -1,6 +1,6 @@
 import { icon } from "../../icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
-import { terroirs } from "../../../lib/brand";
+import { cepages, terroirs } from "../../../lib/brand";
 import { requireFr } from "../objects/localized";
 
 /** Les 4 terroirs de l'Aube. Leur adresse (URL) et leur couleur sont fixées par le site. */
@@ -82,6 +82,23 @@ export const terroir = defineType({
       options: { layout: "tags" },
     }),
     defineField({ name: "contenu", title: "Texte de la page", type: "localeRichText", group: "contenu" }),
+    defineField({ name: "sols", title: "Sols et géologie", type: "localeText", group: "contenu" }),
+    defineField({
+      name: "cepagesDominants",
+      title: "Cépages dominants",
+      type: "array",
+      group: "contenu",
+      of: [defineArrayMember({ type: "string" })],
+      options: { list: Object.entries(cepages).map(([value, c]) => ({ title: c.label, value })) },
+    }),
+    defineField({
+      name: "secteurs",
+      title: "Secteurs (facultatif)",
+      description: "Ex. pour la Côte des Bar : le Barséquanais et le Barsuraubois.",
+      type: "array",
+      group: "contenu",
+      of: [defineArrayMember({ type: "blocTexte" })],
+    }),
     defineField({
       name: "galerie",
       title: "Galerie photos",

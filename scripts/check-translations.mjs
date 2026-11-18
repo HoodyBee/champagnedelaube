@@ -1,4 +1,6 @@
-// Vérifie que chaque texte de l'interface existe dans TOUTES les langues.
+// 1. Vérifie que chaque texte de l'interface existe dans TOUTES les langues.
+// 2. Vérifie qu'aucune expression interdite par la stratégie de marque n'apparaît
+//    dans les textes du site (messages/*.json et code source).
 // Référence : messages/fr.json. Lancé automatiquement avant chaque build :
 // s'il manque une traduction, le build s'arrête avec la liste des textes à traduire.
 
@@ -32,8 +34,43 @@ for (const locale of locales.slice(1)) {
   problems += missing.length + extra.length;
 }
 
+// --- Expressions interdites ------------------------------------------------
+// Champagne de l'Aube est apporteur d'affaires : jamais « sans intermédiaire »,
+// jamais « maison de champagne ». Arguments autorisés : « interlocuteur unique »,
+// « tarifs directs domaine », « sélection de vignerons indépendants ».
+import { readdirSync, statSync } from "node:fs";
+const forbidden = [
+  /sans\s+interm[ée]diaire/i,
+  /maisons?\s+de\s+champagne/i,
+  /without\s+(any\s+)?(an\s+)?intermediar/i,
+  /no\s+middlem[ae]n/i,
+  /champagne\s+house/i,
+  /zonder\s+tussenpersoon/i,
+  /champagnehuis/i,
+  /senza\s+intermediar/i,
+  /casa\s+(di|dello)\s+champagne/i,
+  /ohne\s+zwischenh[äa]ndler/i,
+  /champagnerhaus/i,
+];
+function walk(dir) {
+  return readdirSync(dir).flatMap((name) => {
+    const p = resolve(dir, name);
+    return statSync(p).isDirectory() ? walk(p) : /\.(json|tsx?)$/.test(name) ? [p] : [];
+  });
+}
+for (const file of [...walk(resolve(root, "messages")), ...walk(resolve(root, "src"))]) {
+  const text = readFileSync(file, "utf8");
+  for (const re of forbidden) {
+    const m = text.match(re);
+    if (m) {
+      console.error(`✗ Expression interdite « ${m[0]} » dans ${file.replace(root + "/", "")}`);
+      problems++;
+    }
+  }
+}
+
 if (problems > 0) {
-  console.error(`\n${problems} problème(s) de traduction. Complétez les fichiers messages/*.json.`);
+  console.error(`\n${problems} problème(s) : complétez les traductions ou reformulez les expressions interdites.`);
   process.exit(1);
 }
-console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${locales.length} langues`);
+console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${locales.length} langues · aucune expression interdite`);

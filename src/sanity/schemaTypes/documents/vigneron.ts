@@ -85,6 +85,14 @@ export const vigneron = defineType({
       group: "identite",
       initialValue: false,
     }),
+    defineField({
+      name: "espacePro",
+      title: "Afficher dans l'Espace Pro",
+      description: "Le domaine apparaît dans le portfolio présenté aux restaurants et cavistes (sans aucun prix).",
+      type: "boolean",
+      group: "identite",
+      initialValue: true,
+    }),
     defineField({ name: "logo", title: "Logo du domaine", type: "imageAvecAlt", group: "identite" }),
     defineField({ name: "siteWeb", title: "Site internet", type: "url", group: "identite" }),
     defineField({ name: "instagram", title: "Instagram (sans le @)", type: "string", group: "identite" }),
@@ -97,6 +105,13 @@ export const vigneron = defineType({
       initialValue: 10,
     }),
 
+    defineField({
+      name: "philosophie",
+      title: "Philosophie (2 ou 3 phrases)",
+      description: "Affichée sur la carte du domaine dans l'Espace Pro et la page Nos vignerons. Les gens avant les étiquettes.",
+      type: "localeText",
+      group: "histoire",
+    }),
     defineField({ name: "intro", title: "Introduction", type: "localeText", group: "histoire" }),
     defineField({
       name: "personnes",
@@ -158,7 +173,14 @@ export const vigneron = defineType({
       options: { layout: "tags" },
     }),
 
-    defineField({ name: "image", title: "Photo principale", type: "imageAvecAlt", group: "photos" }),
+    defineField({
+      name: "portrait",
+      title: "Portrait du vigneron (photo de la carte)",
+      description: "Le vigneron dans ses vignes ou son chai, format vertical de préférence.",
+      type: "imageAvecAlt",
+      group: "photos",
+    }),
+    defineField({ name: "image", title: "Photo principale (paysage, domaine)", type: "imageAvecAlt", group: "photos" }),
     defineField({
       name: "galerie",
       title: "Galerie",
@@ -174,5 +196,5 @@ export const vigneron = defineType({
     { title: "Ordre d'affichage", name: "ordre", by: [{ field: "ordre", direction: "asc" }] },
     { title: "Nom", name: "nom", by: [{ field: "nom", direction: "asc" }] },
   ],
-  preview: { select: { title: "nom", subtitle: "village", media: "image" } },
+  preview: { select: { title: "nom", subtitle: "village", media: "portrait" } },
 });

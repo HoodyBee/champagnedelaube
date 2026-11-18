@@ -65,6 +65,11 @@
   }
 }
 
+/* Bandeau newsletter refermé (choix mémorisé). */
+html[data-nl-bar="hidden"] .nl-bar {
+  display: none;
+}
+
 /* Vérification de l'âge : masquée par défaut, affichée par le script
    (src/lib/age-gate.ts) si le visiteur n'a pas encore répondu. */
 .age-gate {

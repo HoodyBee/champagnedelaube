@@ -5,9 +5,10 @@ import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
-import { contentPages, proPages, siteCredit, telHref, terroirPages } from "@/lib/site";
+import { contentPages, nav, siteCredit, telHref, terroirPages } from "@/lib/site";
 import { localize } from "@/sanity/lib/i18n";
 import { getReglages, socialLinks } from "@/sanity/queries";
+import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 /**
@@ -22,6 +23,7 @@ export async function Footer() {
   const tLegal = await getTranslations("legal");
   const tMeta = await getTranslations("meta");
   const tSocial = await getTranslations("social");
+  const tNews = await getTranslations("newsletter.footer");
   const reglages = await getReglages();
 
   const signature = localize(reglages.signature, locale) ?? tMeta("tagline");
@@ -29,6 +31,18 @@ export async function Footer() {
 
   return (
     <footer className="bg-anthracite text-blanc">
+      {/* Inscription aux actualités */}
+      <div className="border-b border-blanc/15">
+        <div className="mx-auto grid max-w-7xl gap-space-3 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-space-5">
+          <div>
+            <h2 className="text-sur-titre text-or">{tNews("surTitre")}</h2>
+            <p className="mt-space-1 text-accroche text-creme">{tNews("title")}</p>
+            <p className="mt-space-1 text-blanc/90">{tNews("text")}</p>
+          </div>
+          <NewsletterForm variant="sombre" />
+        </div>
+      </div>
+
       <div className="mx-auto grid max-w-7xl gap-space-4 px-space-2 py-space-5 sm:px-space-4 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
           <Image
@@ -43,21 +57,25 @@ export async function Footer() {
         </div>
 
         <FooterColumn title={t("discover")}>
+          <FooterLink href={nav.terroirHub.href}>{tNav("terroirHub")}</FooterLink>
           {terroirPages.map((p) => (
             <FooterLink key={p.href} href={p.href}>{p.label}</FooterLink>
           ))}
-          <FooterLink href="/vignerons">{tNav("vignerons")}</FooterLink>
-          <FooterLink href="/tasting-troyes">{tNav("tasting")}</FooterLink>
+          <FooterLink href={nav.vignerons.href}>{tNav("vignerons")}</FooterLink>
           {contentPages.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
         </FooterColumn>
 
-        <FooterColumn title={t("pro")}>
-          {proPages.map((p) => (
+        <FooterColumn title={t("offers")}>
+          {nav.pro.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
-          <FooterLink href="/contact">{tNav("contact")}</FooterLink>
+          <FooterLink href={nav.entreprises.href}>{tNav("entreprises")}</FooterLink>
+          {nav.particuliers.map((p) => (
+            <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
+          ))}
+          <FooterLink href={nav.contact.href}>{tNav("contact")}</FooterLink>
         </FooterColumn>
 
         <div>

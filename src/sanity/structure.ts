@@ -1,24 +1,29 @@
-import type { StructureResolver } from "sanity/structure";
+import type { StructureBuilder, StructureResolver } from "sanity/structure";
 
-// Organisation du menu de gauche du Studio.
+/** Un document unique (ex. Page d'accueil), ouvert directement au clic. */
+const singleton = (S: StructureBuilder, type: string, title: string) =>
+  S.listItem().title(title).id(type).child(S.document().schemaType(type).documentId(type).title(title));
+
+// Organisation du menu de gauche du Studio, dans l'ordre du site.
 export const structure: StructureResolver = (S) =>
   S.list()
     .title("Contenus")
     .items([
-      S.listItem()
-        .title("Page d'accueil")
-        .id("accueil")
-        .child(S.document().schemaType("accueil").documentId("accueil").title("Page d'accueil")),
-      S.documentTypeListItem("page").title("Pages"),
+      singleton(S, "accueil", "Page d'accueil"),
       S.divider(),
+      singleton(S, "espacePro", "Espace Professionnels"),
+      singleton(S, "espaceEntreprises", "Entreprises & CSE"),
+      singleton(S, "espaceParticuliers", "Espace Particuliers"),
+      S.documentTypeListItem("experience").title("Expériences (particuliers)"),
+      S.documentTypeListItem("evenement").title("Événements à venir"),
+      S.divider(),
+      singleton(S, "terroirAube", "Le terroir de l'Aube"),
       S.documentTypeListItem("terroir").title("Terroirs"),
       S.documentTypeListItem("vigneron").title("Vignerons"),
       S.divider(),
-      S.documentTypeListItem("offre").title("Offres œnotourisme"),
-      S.documentTypeListItem("evenement").title("Événements"),
+      S.documentTypeListItem("article").title("Articles (recettes, pédagogie)"),
+      S.documentTypeListItem("page").title("Autres pages"),
+      S.documentTypeListItem("partenaire").title("Partenaires « pépites »"),
       S.divider(),
-      S.listItem()
-        .title("Réglages du site")
-        .id("reglages")
-        .child(S.document().schemaType("reglages").documentId("reglages").title("Réglages du site")),
+      singleton(S, "reglages", "Réglages du site"),
     ]);

@@ -1,16 +1,16 @@
 import { icon } from "../../icons";
 import { defineField, defineType } from "sanity";
+import { faqField } from "../objects/blocs";
 import { requireFr } from "../objects/localized";
 
 /** Pages fixes du site. L'adresse (URL) est fixée par le site pour préserver le référencement. */
 export const pagesFixes = [
-  { title: "Vignerons (page liste)", value: "vignerons" },
-  { title: "Nos dégustations (œnotourisme, /tasting-troyes/)", value: "tasting-troyes" },
-  { title: "Espace Pro : hôtels, restaurants et cavistes", value: "pro-chr" },
-  { title: "Espace Pro : CSE et cadeaux d'entreprise", value: "pro-cse" },
-  { title: "Espace Pro : vignerons, devenez partenaire", value: "pro-vignerons" },
-  { title: "Recettes et accords mets-champagne", value: "recettes" },
+  { title: "Nos vignerons (page liste)", value: "vignerons" },
+  { title: "Vignerons : devenez partenaire", value: "pro-vignerons" },
+  { title: "Champagne pour mariage (Troyes)", value: "mariage" },
+  { title: "Recettes et accords mets-champagne (page liste)", value: "recettes" },
   { title: "Tout savoir sur le champagne", value: "tout-savoir" },
+  { title: "Où trouver nos pépites ? (page liste)", value: "pepites" },
   { title: "Contact", value: "contact" },
   { title: "Mentions légales", value: "mentions-legales" },
   { title: "Politique de confidentialité", value: "confidentialite" },
@@ -71,6 +71,7 @@ export const page = defineType({
       group: "contenu",
       initialValue: false,
     }),
+    faqField("contenu"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
   preview: {

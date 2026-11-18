@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Formulaires techniques</title></head>
+  <body>
+    <!--
+      Formulaire technique, invisible pour les visiteurs. Netlify le détecte au
+      déploiement : la tâche planifiée « brevo-keepalive » l'utilise pour vous
+      alerter si la clé Brevo ne fonctionne plus. Activez les notifications par
+      e-mail dans Netlify > Forms > alerte-technique > Form notifications.
+    -->
+    <form name="alerte-technique" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input name="bot-field">
+      <input name="sujet">
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

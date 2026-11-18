@@ -6,13 +6,9 @@
     "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "home": "Home",
-    "terroirs": "Terroirs",
-    "vignerons": "Winemakers",
+    "vignerons": "Our winemakers",
     "tasting": "Our tastings",
-    "pro": "Professionals",
-    "proChr": "Hotels, restaurants and wine shops",
-    "proCse": "Corporate gifts and events",
+    "proChr": "Restaurants, wine shops and hotels",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
@@ -21,9 +17,13 @@
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "contents": "Discover",
     "homeLink": "Champagne de l'Aube, back to home page",
-    "terroirBand": "The terroirs of the Aube"
+    "terroirBand": "The terroirs of the Aube",
+    "terroirHub": "The Aube terroir",
+    "pro": "Professionals",
+    "entreprises": "Companies",
+    "particuliers": "Private clients",
+    "mariage": "Wedding champagne"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -42,14 +42,14 @@
   },
   "footer": {
     "discover": "Discover",
-    "pro": "Professionals",
     "contact": "Get in touch",
     "emailLabel": "Email",
     "location": "Troyes · Aube · France",
     "legalNav": "Legal information",
     "phoneLabel": "Call",
     "languages": "Website languages",
-    "credit": "Website by"
+    "credit": "Website by",
+    "offers": "Our services"
   },
   "ageGate": {
     "eyebrow": "Welcome",
@@ -65,5 +65,290 @@
     "instagram": "Champagne de l'Aube on Instagram",
     "facebook": "Champagne de l'Aube on Facebook",
     "linkedin": "Champagne de l'Aube on LinkedIn"
+  },
+  "ui": {
+    "home": "Home",
+    "breadcrumb": "Breadcrumb",
+    "photoSoon": "Photo coming soon",
+    "peopleRange": "{min} to {max} people",
+    "peopleMax": "Up to {max} people",
+    "hostedBy": "Hosted by {name}",
+    "priceFrom": "From <strong>€{price}</strong> per person",
+    "priceOnRequest": "On request",
+    "bookExperience": "Book this experience",
+    "discoverDomain": "Discover the estate",
+    "faqTitle": "Frequently asked questions",
+    "tag": {
+      "nouveau": "New",
+      "places-limitees": "Limited places",
+      "sur-mesure": "Tailor-made"
+    }
+  },
+  "home": {
+    "heroTitre": "Winemaker champagnes from the Côte des Bar and the Aube",
+    "pro": {
+      "surTitre": "Restaurants · Wine shops · Hotels",
+      "titre": "Professionals",
+      "texte": "A selection of Aube estates for your wine list, at direct estate prices, with a single point of contact.",
+      "bouton": "Go to the Pro area"
+    },
+    "entreprises": {
+      "surTitre": "Gift boxes · Workshops · Team building",
+      "titre": "Companies & corporate gifts",
+      "texte": "Gift boxes from Aube winemakers and terroir discovery workshops for your teams and clients.",
+      "bouton": "Corporate offers"
+    },
+    "particuliers": {
+      "surTitre": "Workshops · Advice · Events",
+      "titre": "Private clients",
+      "texte": "Workshops in Troyes to discover the winemakers of the Aube, and advice to help you choose your cuvées.",
+      "bouton": "Private clients area"
+    },
+    "chiffres": {
+      "terroirs": "Aube terroirs",
+      "domaines": "estates at most in the selection",
+      "personnes": "people per workshop",
+      "duree": "per tasting workshop"
+    }
+  },
+  "pro": {
+    "arguments": {
+      "tarifs": {
+        "titre": "Direct estate prices",
+        "texte": "You buy at the price set by each estate."
+      },
+      "interlocuteur": {
+        "titre": "Single point of contact",
+        "texte": "One contact for several estates: selection, samples and follow-up."
+      },
+      "degustation": {
+        "titre": "On-site tasting",
+        "texte": "I come and present the cuvées to your team, at your venue."
+      }
+    }
+  },
+  "forms": {
+    "fields": {
+      "etablissement": "Name of your business",
+      "typeEtablissement": "Type of business",
+      "nom": "First and last name",
+      "email": "Email",
+      "telephone": "Phone",
+      "ville": "Town",
+      "message": "Your message",
+      "dateSouhaitee": "Preferred date",
+      "domaine": "Name of the estate",
+      "village": "Village",
+      "entreprise": "Company",
+      "typeDemande": "Your request",
+      "quantite": "Number of gift boxes or participants",
+      "effectif": "Number of employees",
+      "participants": "Number of people",
+      "typeEvenement": "Type of event",
+      "dateEvenement": "Date of the event",
+      "invites": "Number of guests",
+      "places": "Number of places",
+      "sujet": "Your request is about"
+    },
+    "options": {
+      "typeEtablissement": {
+        "restaurant": "Restaurant",
+        "caviste": "Wine shop",
+        "hotel": "Hotel",
+        "bar": "Wine bar",
+        "epicerie": "Delicatessen",
+        "traiteur": "Caterer, events",
+        "autre": "Other"
+      },
+      "typeDemande": {
+        "coffrets": "Gift boxes & staff offers",
+        "animation": "Workshop & team building",
+        "les-deux": "Both"
+      },
+      "typeEvenement": {
+        "mariage": "Wedding",
+        "bapteme": "Christening",
+        "anniversaire": "Birthday",
+        "finAnnee": "End-of-year holidays",
+        "autre": "Other"
+      },
+      "sujet": {
+        "pro": "Restaurant, wine shop, hotel",
+        "entreprise": "Company",
+        "particulier": "Workshop or private event",
+        "vigneron": "I am a winemaker",
+        "autre": "Other"
+      }
+    },
+    "titles": {
+      "grillePro": "Pro price list request",
+      "degustationPro": "On-site tasting request",
+      "partenaireVigneron": "Partner winemaker application",
+      "devisEntreprise": "Corporate quote request",
+      "brochureCse": "Corporate brochure request",
+      "reservationExperience": "Booking request",
+      "conseilEvenement": "Event advice request",
+      "inscriptionEvenement": "Event registration",
+      "contact": "Contact message"
+    },
+    "submit": {
+      "grillePro": "Get the price list",
+      "degustationPro": "Request a tasting",
+      "partenaireVigneron": "Send my application",
+      "devisEntreprise": "Request my quote",
+      "brochureCse": "Get the brochure",
+      "reservationExperience": "Send my booking request",
+      "conseilEvenement": "Ask for advice",
+      "inscriptionEvenement": "Register",
+      "contact": "Send the message"
+    },
+    "errors": {
+      "required": "This field is required.",
+      "email": "This email address does not look valid.",
+      "tel": "This phone number does not look valid.",
+      "number": "Please enter a valid number.",
+      "date": "Please enter a valid date.",
+      "tooLong": "This text is too long.",
+      "majeur": "Please tick this box to continue: this service is for adults only.",
+      "emailOrPhone": "Please give at least an email or a phone number so I can reply.",
+      "invalid": "Some fields need correcting, see below.",
+      "spam": "Your request could not be sent. Please wait a few seconds and try again.",
+      "captcha": "The anti-spam check failed. Please try again.",
+      "rate": "Too many requests in a short time. Please try again in a few minutes.",
+      "config": "Sending is temporarily unavailable. Please email me directly at contact@champagnedelaube.fr.",
+      "send": "A technical problem prevented sending. Please try again, or email contact@champagnedelaube.fr.",
+      "emailForNewsletter": "To receive the news, please enter your email address."
+    },
+    "choose": "Choose…",
+    "majeur": "I certify that I am 18 or older",
+    "requiredHint": "* Required fields.",
+    "rgpd": "Your details are only used to reply to your request and are never sold. Learn more: <link>privacy policy</link>.",
+    "sending": "Sending…",
+    "success": {
+      "title": "Thank you, your request has been sent.",
+      "text": "I will reply to you personally as soon as possible.",
+      "download": "Download the brochure (PDF)",
+      "brochureByEmail": "I will email you the brochure very soon.",
+      "newsletter": "One last step to receive the news: click the confirmation link I have just emailed you."
+    },
+    "ack": {
+      "subject": "Champagne de l'Aube: we have received your request",
+      "hello": "Hello,",
+      "body": "Thank you for your message ({form}). I have received it and will reply to you personally as soon as possible.",
+      "brochure": "Your brochure is available here:",
+      "signature": "Speak soon,\nJulien Mineo"
+    },
+    "newsletterOptIn": "I would like to receive news from Champagne de l'Aube (winemakers, tastings, events)."
+  },
+  "contactPage": {
+    "title": "Contact",
+    "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to me: I will reply personally.",
+    "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for winemaker champagnes from the Aube.",
+    "details": "Details",
+    "formTitle": "Send a message"
+  },
+  "newsletter": {
+    "bar": {
+      "text": "Winemakers, tastings and events in the Aube:",
+      "cta": "get the news",
+      "close": "Close this banner"
+    },
+    "surTitre": "Newsletter",
+    "title": "News from the winemakers of the Aube",
+    "intro": "Receive by email news from the estates I follow, the dates of upcoming tastings and events in the Aube.",
+    "metaDescription": "Sign up for news from Champagne de l'Aube: independent winemakers of the Côte des Bar and the Aube, tastings in Troyes, events.",
+    "points": {
+      "vignerons": "Portraits and news of independent winemakers",
+      "degustations": "Dates of upcoming tasting workshops in Troyes",
+      "evenements": "Get-togethers and events in the Aube"
+    },
+    "form": {
+      "email": "Your email address",
+      "submit": "Sign up",
+      "sending": "Sending…",
+      "majeur": "I certify that I am 18 or older",
+      "consentement": "I agree to receive news from Champagne de l'Aube by email. You can unsubscribe at any time. <link>Privacy policy</link>",
+      "doubleOptIn": "You will receive an email to confirm your subscription."
+    },
+    "errors": {
+      "required": "Please enter your email address.",
+      "email": "This email address does not look valid.",
+      "majeur": "Please tick this box: this service is for adults only.",
+      "consentement": "Please tick this box to receive the news.",
+      "invalid": "Some fields need correcting.",
+      "spam": "Please wait a few seconds and try again.",
+      "rate": "Too many requests in a short time. Please try again in a few minutes.",
+      "captcha": "The anti-spam check failed. Please try again.",
+      "config": "Sign-up is temporarily unavailable. Please try again later.",
+      "send": "A technical problem prevented sending. Please try again."
+    },
+    "success": {
+      "title": "Check your inbox",
+      "text": "I have just sent an email to {email}. Click the link inside to confirm your subscription."
+    },
+    "confirm": {
+      "title": "Confirm your subscription",
+      "intro": "One last click to receive news from Champagne de l'Aube.",
+      "button": "Confirm my subscription",
+      "sending": "Confirming…",
+      "success": "Done, thank you!",
+      "successText": "Your subscription is confirmed. You can unsubscribe at any time using the link in every email.",
+      "invalid": "This confirmation link is not valid.",
+      "expired": "This confirmation link has expired.",
+      "error": "A technical problem prevented the confirmation.",
+      "retry": "You can sign up again: a new link will be sent to you.",
+      "retryButton": "Sign up again",
+      "backHome": "Back to home page"
+    },
+    "email": {
+      "subject": "Confirm your subscription to Champagne de l'Aube news",
+      "hello": "Hello,",
+      "body": "Thank you for your interest in the winemakers of the Aube! To confirm your subscription to Champagne de l'Aube news, click the link below:",
+      "button": "Confirm my subscription",
+      "expiry": "This link is valid for 7 days.",
+      "ignore": "If you did not request this, simply ignore this email: you will not be subscribed.",
+      "signature": "Speak soon,\nJulien Mineo · Champagne de l'Aube"
+    },
+    "footer": {
+      "surTitre": "Newsletter",
+      "title": "News from the winemakers of the Aube",
+      "text": "Estates, tastings in Troyes and events in the Aube, straight to your inbox."
+    }
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "metaDescription": "How Champagne de l'Aube collects and protects your personal data: forms, newsletter, processors (Brevo, Netlify), cookies and your rights.",
+    "updated": "Last updated: November 2026",
+    "intro": "This page explains simply what personal data I collect on this website, why, who it is shared with and how to exercise your rights.",
+    "sections": {
+      "responsable": {
+        "title": "Data controller",
+        "text": "Champagne de l'Aube, represented by Julien Mineo, Troyes (Aube, France). [TO BE COMPLETED: legal status, SIRET number, postal address]\nContact: contact@champagnedelaube.fr"
+      },
+      "donnees": {
+        "title": "Data collected",
+        "text": "• Forms (quote, booking, registration, contact): name, email and/or phone, business or company, town, number of people, preferred date, message.\n• Newsletter: email address, language, sign-up page and date of your consent.\n• In all cases: confirmation that you are 18 or older, the website language and the page you are writing from."
+      },
+      "finalites": {
+        "title": "Why this data is used",
+        "text": "• To reply to your request and prepare a quote or booking (pre-contractual measures).\n• To follow up our exchange: your contact details are saved in my address book (Brevo), sorted by profile (professional, company, private client, winemaker) (legitimate interest). This does not subscribe you to the newsletter.\n• To send you news, only if you asked for it and confirmed by clicking the link received by email (consent).\n• To protect the forms against automated submissions (legitimate interest)."
+      },
+      "destinataires": {
+        "title": "Who has access to your data",
+        "text": "Your data is never sold or rented. Only Julien Mineo has access to it, along with these technical providers (processors), for the needs of the website:\n• Brevo (Sendinblue SAS, France): sending emails and address book. Data hosted in the European Union.\n• Netlify (United States): website hosting. Transfers covered by the European Commission's standard contractual clauses.\n• Sanity (United States): management of the website's texts and photos. No form data is stored there.\n• Cloudflare Turnstile (if enabled): anti-bot protection for the forms, without advertising cookies."
+      },
+      "conservation": {
+        "title": "How long",
+        "text": "• Requests and contacts: 3 years after our last exchange, then deleted.\n• Newsletter: until you unsubscribe (a link is included in every email). Proof of your consent is kept as long as you are subscribed."
+      },
+      "droits": {
+        "title": "Your rights",
+        "text": "At any time you can access your data, have it corrected or deleted, object to its use, restrict its use, obtain a copy, or withdraw your consent to the newsletter. Simply write to contact@champagnedelaube.fr.\nIf you believe your rights are not respected, you can lodge a complaint with the French data protection authority, the CNIL (www.cnil.fr)."
+      },
+      "cookies": {
+        "title": "Cookies and browser storage",
+        "text": "This website uses no advertising or audience measurement cookies. It only stores essential technical information in your browser:\n• cda_age (cookie and local storage, 1 year): your answer to the age check;\n• NEXT_LOCALE (cookie, for the visit): the chosen language;\n• cda_nl_bar (local storage): the news banner you closed."
+      }
+    }
   }
 }
