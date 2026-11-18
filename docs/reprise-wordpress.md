@@ -36,7 +36,7 @@ Les boutons de l'ancien site (« Accords Mets et Champagne »…) ont été gard
 - Espace Particuliers, onglet « Ancien site » : photo de banque d'images d'une **soirée avec verres levés** — scène festive à éviter (loi Évin, brand book).
 - Terroir Montgueux : la photo principale montre des **maisons à pans de bois de Troyes**, pas Montgueux.
 - Photos de banque d'images (tracteur vu du ciel, coffrets, table gastronomique, mains dans les vignes) : à remplacer par vos photos quand vous en aurez.
-- Entreprises & CSE, onglet « Ancien site » : l'adresse indiquée est julien@detectezmoi.com — à remplacer par contact@champagnedelaube.fr si vous reprenez ce passage.
+- L'ancienne adresse e-mail de l'agence, présente dans les anciens textes (Entreprises & CSE, Particuliers, Pro, Vignerons partenaires), a été remplacée partout par contact@champagnedelaube.fr (12 occurrences, liens compris).
 
 ## 2. Passages à réécrire (loi Évin)
 
