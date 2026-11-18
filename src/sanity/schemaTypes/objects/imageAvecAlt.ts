@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import { warnMissingTranslations } from "./localized";
 
 /** Image avec texte alternatif traduit (accessibilité et référencement). */
 export const imageAvecAlt = defineType({
@@ -15,12 +16,14 @@ export const imageAvecAlt = defineType({
       description:
         "Décrivez simplement ce que montre la photo, comme à quelqu'un qui ne la voit pas. Ex. : « Corinne Moutard dans ses vignes à Polisy ».",
       type: "localeString",
-      validation: (rule) =>
+      validation: (rule) => [
         rule.custom((value: { fr?: string } | undefined, ctx) => {
           const parent = ctx.parent as { asset?: unknown } | undefined;
           if (parent?.asset && !value?.fr) return "Ajoutez une description en français.";
           return true;
         }),
+        warnMissingTranslations(rule),
+      ],
     }),
     defineField({
       name: "credit",

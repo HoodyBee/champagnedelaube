@@ -35,16 +35,25 @@ Avant le premier lancement, copiez `.env.example` en `.env.local` et remplissez 
 | `src/sanity/schemaTypes/` | Les champs du Studio (vignerons, terroirs, offres, événements, pages). |
 | `sanity.config.ts` | Configuration du Studio. |
 | `src/components/` | Les briques réutilisables (badges, en-tête, pied de page…). |
+| `src/components/layout/` | En-tête, sélecteur de langue, pied de page, vérification de l'âge. |
+| `src/lib/site.ts` | Menus (terroirs, Espace Pro, contenus) et coordonnées par défaut. |
 
 ## Langues
 
-- Français par défaut (URL sans préfixe), puis `/en/`, `/nl/`, `/it/`.
-- Un texte non traduit s'affiche en anglais, puis en français.
-- Le néerlandais et l'italien sont prêts mais **cachés de Google** tant qu'ils ne sont pas traduits. Pour publier une langue, ajoutez-la à `indexedLocales` dans `src/i18n/routing.ts`.
+- 5 langues : français par défaut (URL sans préfixe), puis `/en/`, `/nl/`, `/it/`, `/de/`.
+- **Règle : tout le site est traduit dans les 5 langues, tout le temps.**
+  - Textes de l'interface (menus, boutons, fenêtre d'âge…) : `messages/fr.json`, `en.json`, `nl.json`, `it.json`, `de.json`. Avant chaque build, `npm run check:i18n` vérifie qu'aucun texte ne manque ; s'il en manque un, le build s'arrête et indique lequel.
+  - Contenus du Studio : chaque champ traduit affiche les 5 langues. Un avertissement orange « Traduction à compléter » apparaît tant qu'une langue est vide (la publication reste possible).
+- Sécurité : un texte encore vide s'affiche en anglais, puis en français.
+- Langues ouvertes à Google : `indexedLocales` dans `src/i18n/routing.ts` (aujourd'hui FR et EN ; NL, IT et DE seront ajoutées quand leurs contenus du Studio seront traduits).
 
 ## Fonds (décision novembre 2026)
 
 Fond principal `blanc`. Touches de chaleur : classe `surface-chaude` (fond `creme-clair` + filet doré `filet`). Le `creme` d'origine est réservé au logo et à de rares accents.
+
+## Vérification de l'âge
+
+Une fenêtre s'affiche à la première visite. La réponse est gardée un an dans le cookie technique `cda_age`. Pour la revoir pendant vos tests : ouvrez une fenêtre de navigation privée. Tout le contenu reste dans le HTML : Google indexe les pages normalement.
 
 ## Modifier la charte
 

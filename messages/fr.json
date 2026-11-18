@@ -1,26 +1,33 @@
 {
   "meta": {
     "siteName": "Champagne de l'Aube",
-    "tagline": "Terroirs & émotions",
-    "defaultTitle": "Champagne de l'Aube — Terroirs & émotions",
-    "defaultDescription": "Faire découvrir le champagne aubois, vigneron par vigneron : Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+    "tagline": "Terroirs et champagnes de caractère",
+    "defaultTitle": "Champagne de l'Aube — Terroirs et champagnes de caractère",
+    "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
     "home": "Accueil",
     "terroirs": "Terroirs",
     "vignerons": "Vignerons",
-    "tasting": "Dégustations à Troyes",
+    "tasting": "Nos dégustations",
     "pro": "Espace Pro",
     "proChr": "Hôtels, restaurants et cavistes",
     "proCse": "CSE et cadeaux d'entreprise",
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skipToContent": "Aller au contenu",
+    "mainNav": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "contents": "Découvrir",
+    "homeLink": "Champagne de l'Aube, retour à l'accueil",
+    "terroirBand": "Les terroirs de l'Aube"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
-    "fallbackNotice": "Cette page n'est pas encore traduite : elle s'affiche en anglais."
+    "current": "Langue : {language}"
   },
   "legal": {
     "health": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.",
@@ -30,8 +37,33 @@
   },
   "charte": {
     "eyebrow": "Site en construction · Contrôle de la charte",
-    "title": "Le champagne de l'Aube, vigneron par vigneron",
-    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site.",
-    "otherLanguages": "Cette page dans les autres langues"
+    "title": "Terroirs et champagnes de caractère",
+    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site."
+  },
+  "footer": {
+    "discover": "Découvrir",
+    "pro": "Espace Pro",
+    "contact": "Nous joindre",
+    "emailLabel": "Écrire à",
+    "location": "Troyes · Aube",
+    "legalNav": "Informations légales",
+    "phoneLabel": "Appeler le",
+    "languages": "Langues du site",
+    "credit": "Site internet réalisé par"
+  },
+  "ageGate": {
+    "eyebrow": "Bienvenue",
+    "title": "Avez-vous l'âge légal pour consommer de l'alcool ?",
+    "text": "Ce site présente des boissons alcoolisées. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
+    "confirm": "J'ai 18 ans ou plus",
+    "deny": "Je n'ai pas 18 ans",
+    "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",
+    "remember": "Votre réponse est mémorisée pendant un an dans un cookie technique, sans aucun suivi."
+  },
+  "social": {
+    "label": "Réseaux sociaux",
+    "instagram": "Champagne de l'Aube sur Instagram",
+    "facebook": "Champagne de l'Aube sur Facebook",
+    "linkedin": "Champagne de l'Aube sur LinkedIn"
   }
 }

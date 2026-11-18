@@ -3,8 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BrandBadge } from "@/components/brand/BrandBadge";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
-import { Link } from "@/i18n/navigation";
-import { localeNames, routing, type Locale } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
 import { cepages, logos, pictos, terroirs } from "@/lib/brand";
 import tokens from "../../../tokens.json";
 
@@ -29,7 +28,7 @@ const terroirColors = [
   ["story-cote-des-bar", "Côte des Bar"],
   ["story-riceys", "Les Riceys"],
   ["story-montgueux", "Montgueux"],
-  ["story-villenauxe", "Villenauxe"],
+  ["story-villenauxe", "Villenauxe-la-Grande"],
 ] as const;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
@@ -44,41 +43,20 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
   const tLegal = await getTranslations("legal");
 
   return (
-    <main className="mx-auto max-w-5xl px-space-2 py-space-5 sm:px-space-4">
+    <div className="mx-auto max-w-5xl px-space-2 py-space-5 sm:px-space-4">
       <header className="flex flex-col items-center text-center">
         <Image
-          src={logos.principal.src}
-          alt={logos.principal.alt}
-          width={280}
-          height={280}
+          src={logos.rondBandeau.src}
+          alt={logos.rondBandeau.alt}
+          width={260}
+          height={260}
           priority
-          sizes="280px"
+          sizes="260px"
         />
         <p className="mt-space-3 text-sur-titre text-bronze">{t("eyebrow")}</p>
         <h1 className="mt-space-2 text-titre-post">{t("title")}</h1>
         <p className="mt-space-2 max-w-prose text-gris-chaud">{t("intro")}</p>
 
-        <nav aria-label={t("otherLanguages")} className="mt-space-3">
-          <ul className="flex flex-wrap justify-center gap-space-1">
-            {routing.locales.map((l) => (
-              <li key={l}>
-                <Link
-                  href="/"
-                  locale={l}
-                  lang={l}
-                  aria-current={l === locale ? "page" : undefined}
-                  className={`inline-block rounded-etiquette border px-space-2 py-space-1 text-sur-titre ${
-                    l === locale
-                      ? "border-anthracite bg-anthracite text-blanc"
-                      : "border-filet text-anthracite hover:border-bronze"
-                  }`}
-                >
-                  {localeNames[l]}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </header>
 
       <section className="mt-space-5" aria-labelledby="typo">
@@ -86,15 +64,15 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
         <div className="surface-chaude mt-space-3 space-y-space-2 rounded-carte p-space-3 sm:p-space-4">
           <p className="text-titre-logo">Champagne</p>
           <p className="inline-block bg-or px-space-2 py-space-1 text-bandeau text-blanc">De l&apos;Aube</p>
-          <p className="text-sur-titre text-bronze">Côte des Bar · Les Riceys · Montgueux · Villenauxe</p>
+          <p className="text-sur-titre text-bronze">Côte des Bar · Les Riceys · Montgueux · Villenauxe-la-Grande</p>
           <p className="text-accroche">Et si le plus beau champagne se cachait au sud ?</p>
           <p className="text-corps max-w-prose">
             Texte courant en Vollkorn Medium, 16 px, interligne 1,55. Une idée par phrase. Des mots simples :
             vif, gourmand, minéral.
           </p>
           <p className="text-corps">
-            Terroirs &amp; émotions
-            <span className="block text-traduction text-gris-chaud">Terroirs &amp; emotions</span>
+            Terroirs et champagnes de caractère
+            <span className="block text-traduction text-gris-chaud">Terroirs and champagnes of character</span>
           </p>
           <p className="text-legende text-gris-chaud">{tLegal("health")}</p>
         </div>
@@ -174,9 +152,6 @@ export default async function CharteTemporaire({ params }: PageProps<"/[locale]"
         </ul>
       </section>
 
-      <footer className="mt-space-5 border-t border-filet pt-space-3 text-center">
-        <p className="text-legende text-gris-chaud">{tLegal("health")}</p>
-      </footer>
-    </main>
+    </div>
   );
 }

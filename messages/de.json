@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "siteName": "Champagne de l'Aube",
+    "tagline": "Terroirs und Champagner mit Charakter",
+    "defaultTitle": "Champagne de l'Aube — Terroirs und Champagner mit Charakter",
+    "defaultDescription": "Entdecken Sie den Champagner der Aube und seine Winzer: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
+  },
+  "nav": {
+    "home": "Startseite",
+    "terroirs": "Terroirs",
+    "vignerons": "Winzer",
+    "tasting": "Unsere Verkostungen",
+    "pro": "Für Profis",
+    "proChr": "Hotels, Restaurants und Weinhandlungen",
+    "proCse": "Firmengeschenke und Firmenevents",
+    "proVignerons": "Winzer: Partner werden",
+    "recettes": "Champagner und Speisen",
+    "toutSavoir": "Alles über Champagner",
+    "contact": "Kontakt",
+    "skipToContent": "Zum Inhalt springen",
+    "mainNav": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "contents": "Entdecken",
+    "homeLink": "Champagne de l'Aube, zurück zur Startseite",
+    "terroirBand": "Die Terroirs der Aube"
+  },
+  "langSwitcher": {
+    "label": "Sprache wählen",
+    "current": "Sprache: {language}"
+  },
+  "legal": {
+    "health": "Übermäßiger Alkoholkonsum ist gesundheitsschädlich. Bitte verantwortungsvoll genießen.",
+    "sponsored": "Bezahlte Kooperation",
+    "legalNotice": "Impressum",
+    "privacy": "Datenschutzerklärung"
+  },
+  "charte": {
+    "eyebrow": "Website im Aufbau · Prüfung des Erscheinungsbilds",
+    "title": "Terroirs und Champagner mit Charakter",
+    "intro": "Diese vorläufige Seite zeigt die Farben, Schriften und Piktogramme der Marke so, wie sie auf der neuen Website verwendet werden."
+  },
+  "footer": {
+    "discover": "Entdecken",
+    "pro": "Für Profis",
+    "contact": "Kontakt",
+    "emailLabel": "E-Mail an",
+    "location": "Troyes · Aube · Frankreich",
+    "legalNav": "Rechtliche Hinweise",
+    "phoneLabel": "Anrufen unter",
+    "languages": "Sprachen der Website",
+    "credit": "Website erstellt von"
+  },
+  "ageGate": {
+    "eyebrow": "Willkommen",
+    "title": "Haben Sie das gesetzliche Mindestalter für den Konsum von Alkohol?",
+    "text": "Diese Website stellt alkoholische Getränke vor. Um sie zu besuchen, müssen Sie in Ihrem Land das gesetzliche Mindestalter für den Konsum von Alkohol erreicht haben (18 Jahre in Frankreich).",
+    "confirm": "Ich bin 18 Jahre oder älter",
+    "deny": "Ich bin unter 18",
+    "denied": "Danke für Ihre Ehrlichkeit. Diese Website ist nur für Erwachsene bestimmt: Besuchen Sie uns später wieder!",
+    "remember": "Ihre Antwort wird ein Jahr lang in einem technischen Cookie gespeichert, ohne jegliches Tracking."
+  },
+  "social": {
+    "label": "Soziale Netzwerke",
+    "instagram": "Champagne de l'Aube auf Instagram",
+    "facebook": "Champagne de l'Aube auf Facebook",
+    "linkedin": "Champagne de l'Aube auf LinkedIn"
+  }
+}

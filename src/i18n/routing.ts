@@ -1,14 +1,14 @@
 import { defineRouting } from "next-intl/routing";
 
 // Langues du site. Le français est la langue par défaut : ses URL n'ont pas de
-// préfixe (/vignerons/), les autres langues en ont un (/en/winemakers/).
-export const locales = ["fr", "en", "nl", "it"] as const;
+// préfixe (/vignerons/), les autres langues en ont un (/en/winemakers/, /de/winzer/).
+export const locales = ["fr", "en", "nl", "it", "de"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "fr";
 
 /**
  * Langues dont les contenus sont rédigés et qui peuvent être indexées par Google.
- * Le néerlandais et l'italien existent déjà (structure prête), mais tant que leurs
+ * Le néerlandais, l'italien et l'allemand existent déjà (structure prête), mais tant que leurs
  * textes ne sont pas traduits, leurs pages affichent l'anglais en secours : on les
  * garde hors de Google (noindex, absentes du sitemap et des balises hreflang) pour
  * éviter le contenu dupliqué. Pour publier une langue, ajoutez-la ici.
@@ -20,6 +20,7 @@ export const localeNames: Record<Locale, string> = {
   en: "English",
   nl: "Nederlands",
   it: "Italiano",
+  de: "Deutsch",
 };
 
 export const routing = defineRouting({
@@ -48,12 +49,14 @@ export const routing = defineRouting({
       en: "/winemakers",
       nl: "/wijnmakers",
       it: "/vignaioli",
+      de: "/winzer",
     },
     "/vignerons/[slug]": {
       fr: "/vignerons/[slug]",
       en: "/winemakers/[slug]",
       nl: "/wijnmakers/[slug]",
       it: "/vignaioli/[slug]",
+      de: "/winzer/[slug]",
     },
 
     // Œnotourisme (URL historique déjà en anglais)
@@ -65,18 +68,21 @@ export const routing = defineRouting({
       en: "/champagne-for-hotels-restaurants-and-wine-shops",
       nl: "/champagne-voor-hotels-restaurants-en-wijnhandels",
       it: "/champagne-per-hotel-ristoranti-ed-enoteche",
+      de: "/champagner-fuer-hotels-restaurants-und-weinhandlungen",
     },
     "/cse-et-cadeaux-dentreprise": {
       fr: "/cse-et-cadeaux-dentreprise",
       en: "/corporate-gifts-and-events",
       nl: "/bedrijfsgeschenken-en-evenementen",
       it: "/regali-aziendali-ed-eventi",
+      de: "/firmengeschenke-und-firmenevents",
     },
     "/vignerons-de-laube-devenez-partenaire-de-nos-degustations": {
       fr: "/vignerons-de-laube-devenez-partenaire-de-nos-degustations",
       en: "/aube-winemakers-become-a-tasting-partner",
       nl: "/wijnmakers-uit-de-aube-word-partner",
       it: "/vignaioli-dellaube-diventate-partner",
+      de: "/winzer-der-aube-werden-sie-partner",
     },
 
     // Contenus
@@ -85,27 +91,31 @@ export const routing = defineRouting({
       en: "/champagne-food-pairing-recipes",
       nl: "/recepten-champagne-en-gerechten",
       it: "/ricette-abbinamenti-champagne",
+      de: "/rezepte-champagner-und-speisen",
     },
     "/tout-savoir-sur-le-champagne": {
       fr: "/tout-savoir-sur-le-champagne",
       en: "/all-about-champagne",
       nl: "/alles-over-champagne",
       it: "/tutto-sullo-champagne",
+      de: "/alles-ueber-champagner",
     },
 
     // Contact et légal
-    "/contact": { fr: "/contact", en: "/contact", nl: "/contact", it: "/contatti" },
+    "/contact": { fr: "/contact", en: "/contact", nl: "/contact", it: "/contatti", de: "/kontakt" },
     "/mentions-legales": {
       fr: "/mentions-legales",
       en: "/legal-notice",
       nl: "/juridische-informatie",
       it: "/note-legali",
+      de: "/impressum",
     },
     "/politique-de-confidentialite": {
       fr: "/politique-de-confidentialite",
       en: "/privacy-policy",
       nl: "/privacybeleid",
       it: "/informativa-sulla-privacy",
+      de: "/datenschutz",
     },
   },
 });
@@ -115,3 +125,6 @@ export type AppPathname = keyof typeof routing.pathnames;
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
+
+/** Pages sans paramètre (utilisables directement dans un lien de menu). */
+export type StaticPathname = Exclude<AppPathname, `${string}[${string}`>;

@@ -6,11 +6,12 @@
     "tokens": "node scripts/generate-tokens.mjs",
     "predev": "npm run tokens",
     "dev": "next dev",
-    "prebuild": "npm run tokens",
+    "prebuild": "npm run tokens && npm run check:i18n",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:i18n": "node scripts/check-translations.mjs"
   },
   "dependencies": {
     "@sanity/icons": "^5.4.0",

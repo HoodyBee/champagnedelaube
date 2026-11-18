@@ -80,7 +80,7 @@ export const terroirs = {
   "cote-des-bar": vignette("/brand/terroirs/cote-des-bar.png", "Côte des Bar", "story-cote-des-bar"),
   "les-riceys": vignette("/brand/terroirs/les-riceys.png", "Les Riceys", "story-riceys"),
   montgueux: vignette("/brand/terroirs/montgueux.png", "Montgueux", "story-montgueux"),
-  villenauxe: vignette("/brand/terroirs/villenauxe.png", "Villenauxe", "story-villenauxe"),
+  villenauxe: vignette("/brand/terroirs/villenauxe.png", "Villenauxe-la-Grande", "story-villenauxe"),
 } as const;
 
 // ---------------------------------------------------------------------------

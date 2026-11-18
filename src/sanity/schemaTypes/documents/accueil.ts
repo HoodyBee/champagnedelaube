@@ -19,7 +19,7 @@ export const accueil = defineType({
     defineField({
       name: "heroSurTitre",
       title: "Sur-titre",
-      description: "Petite ligne en capitales au-dessus du titre. Ex. : Côte des Bar · Les Riceys · Montgueux · Villenauxe.",
+      description: "Petite ligne en capitales au-dessus du titre. Ex. : Côte des Bar · Les Riceys · Montgueux · Villenauxe-la-Grande.",
       type: "localeString",
       group: "hero",
     }),
@@ -66,7 +66,7 @@ export const accueil = defineType({
               type: "string",
               options: {
                 list: [
-                  { title: "Dégustations à Troyes", value: "/tasting-troyes" },
+                  { title: "Nos dégustations", value: "/tasting-troyes" },
                   { title: "Espace Pro : hôtels, restaurants, cavistes", value: "/champagne-hotel-restaurants-et-cavistes" },
                   { title: "Espace Pro : CSE et entreprises", value: "/cse-et-cadeaux-dentreprise" },
                   { title: "Vignerons : devenez partenaire", value: "/vignerons-de-laube-devenez-partenaire-de-nos-degustations" },

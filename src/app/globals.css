@@ -45,6 +45,48 @@
   border: 1px solid var(--color-filet);
 }
 
+/* Sur-titre en petite taille (bandeau des terroirs) : Inter, capitales espacées. */
+@utility text-sur-titre-petit {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Liens du pied de page (fond anthracite). */
+@utility footer-link {
+  color: var(--color-blanc);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-champagne);
+    text-decoration: underline;
+  }
+}
+
+/* Vérification de l'âge : masquée par défaut, affichée par le script
+   (src/lib/age-gate.ts) si le visiteur n'a pas encore répondu. */
+.age-gate {
+  display: none;
+}
+html[data-age-gate="open"] {
+  overflow: hidden;
+}
+html[data-age-gate="open"] .age-gate {
+  display: flex;
+  animation: age-gate-in 0.3s ease-out;
+}
+html[data-age-gate="open"] .age-gate-panel {
+  animation: age-gate-panel-in 0.4s ease-out;
+}
+@keyframes age-gate-in {
+  from { opacity: 0; }
+}
+@keyframes age-gate-panel-in {
+  from { opacity: 0; transform: translateY(12px); }
+}
+
 /* Accessibilité : si le visiteur a demandé moins d'animations, on les coupe. */
 @media (prefers-reduced-motion: reduce) {
   *,

@@ -1,26 +1,33 @@
 {
   "meta": {
     "siteName": "Champagne de l'Aube",
-    "tagline": "Terroirs & emotions",
-    "defaultTitle": "Champagne de l'Aube — Terroirs & emotions",
-    "defaultDescription": "Discover the champagnes of the Aube, one winemaker at a time: Côte des Bar, Les Riceys, Montgueux, Villenauxe."
+    "tagline": "Terroirs and champagnes of character",
+    "defaultTitle": "Champagne de l'Aube — Terroirs and champagnes of character",
+    "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
     "home": "Home",
     "terroirs": "Terroirs",
     "vignerons": "Winemakers",
-    "tasting": "Tastings in Troyes",
+    "tasting": "Our tastings",
     "pro": "Professionals",
     "proChr": "Hotels, restaurants and wine shops",
     "proCse": "Corporate gifts and events",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
-    "contact": "Contact"
+    "contact": "Contact",
+    "skipToContent": "Skip to content",
+    "mainNav": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "contents": "Discover",
+    "homeLink": "Champagne de l'Aube, back to home page",
+    "terroirBand": "The terroirs of the Aube"
   },
   "langSwitcher": {
     "label": "Choose language",
-    "fallbackNotice": "This page has not been translated yet: it is shown in English."
+    "current": "Language: {language}"
   },
   "legal": {
     "health": "Alcohol abuse is dangerous for your health. Please drink responsibly.",
@@ -30,8 +37,33 @@
   },
   "charte": {
     "eyebrow": "Under construction · Brand guidelines check",
-    "title": "The champagnes of the Aube, one winemaker at a time",
-    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website.",
-    "otherLanguages": "This page in other languages"
+    "title": "Terroirs and champagnes of character",
+    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website."
+  },
+  "footer": {
+    "discover": "Discover",
+    "pro": "Professionals",
+    "contact": "Get in touch",
+    "emailLabel": "Email",
+    "location": "Troyes · Aube · France",
+    "legalNav": "Legal information",
+    "phoneLabel": "Call",
+    "languages": "Website languages",
+    "credit": "Website by"
+  },
+  "ageGate": {
+    "eyebrow": "Welcome",
+    "title": "Are you of legal drinking age?",
+    "text": "This website presents alcoholic beverages. To visit it, you must be of legal drinking age in your country (18 in France).",
+    "confirm": "I am of legal drinking age",
+    "deny": "I am under age",
+    "denied": "Thank you for your honesty. This website is for adults only: come back and see us later!",
+    "remember": "Your answer is stored for one year in a technical cookie, with no tracking."
+  },
+  "social": {
+    "label": "Social media",
+    "instagram": "Champagne de l'Aube on Instagram",
+    "facebook": "Champagne de l'Aube on Facebook",
+    "linkedin": "Champagne de l'Aube on LinkedIn"
   }
 }
