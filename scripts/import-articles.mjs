@@ -73,7 +73,7 @@ const api = (path, body) =>
   }).then(async (r) => (r.ok ? r.json() : Promise.reject(new Error(`${r.status} ${await r.text()}`))));
 
 const ids = docs.flatMap((d) => [d._id, d._id.replace("drafts.", "")]);
-const existants = await api(`/data/query/${DATASET}?query=${encodeURIComponent("*[_id in $ids]")}&$ids=${encodeURIComponent(JSON.stringify(ids))}`);
+const existants = await api(`/data/query/${DATASET}?perspective=raw&query=${encodeURIComponent("*[_id in $ids]")}&$ids=${encodeURIComponent(JSON.stringify(ids))}`);
 writeFileSync(resolve(root, "docs/import-articles-sauvegarde.json"), JSON.stringify(existants.result, null, 2));
 const mutations = docs.flatMap((d) => {
   const publie = existants.result.find((e) => e._id === d._id.replace("drafts.", ""));

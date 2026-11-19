@@ -712,5 +712,41 @@
       "rares": "The rare grapes",
       "nouveau": "The newcomer"
     }
+  },
+  "legalNoticePage": {
+    "title": "Legal notice",
+    "metaDescription": "Legal notice of champagnedelaube.fr: publisher, hosting, intellectual property and personal data.",
+    "updated": "Last updated: November 2026",
+    "sections": {
+      "editeur": {
+        "title": "Publisher",
+        "text": "The website champagnedelaube.fr is published by:\n• Name or company name: [TO BE COMPLETED]\n• Legal form: [TO BE COMPLETED]\n• Registered address: [TO BE COMPLETED], Troyes (Aube, France)\n• SIRET: [TO BE COMPLETED]\n• VAT number: [TO BE COMPLETED, if applicable]\n• Registration (RCS or RNE): [TO BE COMPLETED, if applicable]\n• Email: contact@champagnedelaube.fr\n• Phone: [TO BE COMPLETED]"
+      },
+      "directeur": {
+        "title": "Publication director",
+        "text": "[TO BE COMPLETED: first and last name of the publication director]"
+      },
+      "hebergement": {
+        "title": "Hosting",
+        "text": "The website is hosted by:\n• Netlify, Inc.: [TO BE COMPLETED: postal address given on netlify.com, Legal section]\nEditorial content and images are managed with Sanity (Sanity AS, Norway)."
+      },
+      "propriete": {
+        "title": "Intellectual property",
+        "text": "All content on this website (texts, photographs, logos, pictograms, layout) is protected by copyright. Any full or partial reproduction or reuse without prior written permission is prohibited.\nThe names and logos of the estates presented remain the property of their owners.\nPhoto credits: [TO BE COMPLETED]"
+      },
+      "donnees": {
+        "title": "Personal data",
+        "text": "Information sent through the forms is used only to reply to your requests. Details of the processing, its duration and your rights are given in our privacy policy."
+      },
+      "alcool": {
+        "title": "Sale and consumption of alcohol",
+        "text": "Alcohol abuse is dangerous for your health. Drink responsibly.\nThe sale of alcohol to minors is prohibited. This website is reserved for people aged 18 or over."
+      },
+      "credits": {
+        "title": "Website design",
+        "text": "Website created by Detectezmoi.com."
+      }
+    },
+    "privacyLink": "Read the privacy policy"
   }
 }

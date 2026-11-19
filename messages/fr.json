@@ -712,5 +712,41 @@
       "rares": "Les cépages rares",
       "nouveau": "Le nouveau venu"
     }
+  },
+  "legalNoticePage": {
+    "title": "Mentions légales",
+    "metaDescription": "Mentions légales du site champagnedelaube.fr : éditeur, hébergement, propriété intellectuelle et données personnelles.",
+    "updated": "Mise à jour : novembre 2026",
+    "sections": {
+      "editeur": {
+        "title": "Éditeur du site",
+        "text": "Le site champagnedelaube.fr est édité par :\n• Nom ou raison sociale : [À COMPLÉTER]\n• Statut juridique : [À COMPLÉTER : par exemple entrepreneur individuel, SAS, SARL…]\n• Adresse du siège : [À COMPLÉTER], Troyes (Aube, France)\n• SIRET : [À COMPLÉTER]\n• Numéro de TVA intracommunautaire : [À COMPLÉTER, si applicable]\n• Immatriculation (RCS ou RNE) : [À COMPLÉTER, si applicable]\n• E-mail : contact@champagnedelaube.fr\n• Téléphone : [À COMPLÉTER]"
+      },
+      "directeur": {
+        "title": "Directeur de la publication",
+        "text": "[À COMPLÉTER : prénom et nom du directeur de la publication]"
+      },
+      "hebergement": {
+        "title": "Hébergement",
+        "text": "Le site est hébergé par :\n• Netlify, Inc. : [À COMPLÉTER : adresse postale indiquée sur netlify.com, rubrique Legal]\nLes contenus éditoriaux et les images sont gérés avec Sanity (Sanity AS, Norvège)."
+      },
+      "propriete": {
+        "title": "Propriété intellectuelle",
+        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nCrédits photos : [À COMPLÉTER]"
+      },
+      "donnees": {
+        "title": "Données personnelles",
+        "text": "Les informations envoyées par les formulaires servent uniquement à répondre à vos demandes. Le détail des traitements, de leur durée et de vos droits figure dans notre politique de confidentialité."
+      },
+      "alcool": {
+        "title": "Vente et consommation d'alcool",
+        "text": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.\nLa vente d'alcool est interdite aux mineurs. Ce site est réservé aux personnes âgées de 18 ans ou plus."
+      },
+      "credits": {
+        "title": "Réalisation du site",
+        "text": "Site internet réalisé par Detectezmoi.com."
+      }
+    },
+    "privacyLink": "Consulter la politique de confidentialité"
   }
 }

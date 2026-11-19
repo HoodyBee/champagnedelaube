@@ -1,10 +1,9 @@
 import { defineField, defineType, type Rule } from "sanity";
 
 // Champs traduits : chaque texte existe dans les 5 langues du site — français
-// (obligatoire), anglais, néerlandais, italien et allemand. Si l'anglais ou le
-// néerlandais ou l'italien manque alors que le français est rempli, le Studio affiche
-// un avertissement orange (la publication reste possible). L'allemand, masqué sur
-// le site, est rangé dans un volet replié et facultatif.
+// (obligatoire), anglais, néerlandais, italien et allemand. Au lancement, seuls le
+// français et l'anglais sont actifs : un avertissement orange signale un anglais
+// manquant. Le néerlandais, l'italien et l'allemand sont rangés dans un volet replié.
 
 const languages = [
   { id: "fr", title: "Français" },
@@ -15,7 +14,7 @@ const languages = [
 ] as const;
 
 /** Langues facultatives (masquées sur le site) : volet replié, pas d'avertissement. */
-const optional = new Set(["de"]);
+const optional = new Set(["nl", "it", "de"]);
 
 const isFilled = (v: unknown) =>
   Array.isArray(v) ? v.length > 0 : typeof v === "string" ? v.trim() !== "" : v != null;
@@ -41,7 +40,7 @@ function localizedType(
     title,
     type: "object",
     validation: (rule) => warnMissingTranslations(rule as unknown as Rule) as unknown as typeof rule,
-    fieldsets: [{ name: "autres", title: "Allemand (facultatif, masqué sur le site)", options: { collapsible: true, collapsed: true } }],
+    fieldsets: [{ name: "autres", title: "Néerlandais, italien, allemand (facultatif, masqués sur le site)", options: { collapsible: true, collapsed: true } }],
     fields: languages.map((lang) =>
       defineField({
         name: lang.id,
