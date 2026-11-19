@@ -6,9 +6,9 @@
     "defaultDescription": "Ontdek de champagne uit de Aube en zijn wijnmakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Onze wijnmakers",
+    "vignerons": "Onze selectie",
     "tasting": "Onze proeverijen",
-    "proChr": "Restaurants, wijnhandels en hotels",
+    "proChr": "Horeca & wijnhandels",
     "proVignerons": "Wijnmakers: word partner",
     "recettes": "Champagne en gerechten",
     "toutSavoir": "Alles over champagne",
@@ -16,14 +16,17 @@
     "skipToContent": "Naar de inhoud",
     "mainNav": "Hoofdnavigatie",
     "openMenu": "Menu openen",
-    "closeMenu": "Menu sluiten",
+    "closeMenu": "Sluiten",
     "homeLink": "Champagne de l'Aube, terug naar de homepage",
     "terroirBand": "De terroirs van de Aube",
-    "terroirHub": "Het terroir van de Aube",
+    "terroirHub": "De terroirs van de Aube",
     "pro": "Professionals",
     "entreprises": "Bedrijven",
     "particuliers": "Particulieren",
-    "mariage": "Champagne voor uw bruiloft"
+    "mariage": "Uw grote gelegenheden",
+    "mag": "Le Mag",
+    "proCorporate": "Professionals & bedrijven",
+    "menu": "Menu"
   },
   "langSwitcher": {
     "label": "Kies een taal",
@@ -100,25 +103,32 @@
       "bouton": "Ruimte voor particulieren"
     },
     "chiffres": {
-      "terroirs": "terroirs van de Aube",
-      "domaines": "domeinen maximaal in de selectie",
-      "personnes": "personen per workshop",
-      "duree": "per proeverij"
+      "vignoble": {
+        "valeur": "≈ 8.000 ha",
+        "label": "de wijngaard van de Aube, een kwart van de Champagne"
+      },
+      "appellations": {
+        "valeur": "3 herkomstbenamingen",
+        "label": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      },
+      "pinot": {
+        "valeur": "80%",
+        "label": "pinot noir in de Côte des Bar"
+      },
+      "degustation": {
+        "valeur": "6 tot 13",
+        "label": "personen per proeverij, 1,5 uur lang"
+      }
     },
     "metaTitle": "Champagnes van wijnmakers uit de Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Een selectie onafhankelijke wijnmakers uit de Côte des Bar, Les Riceys, Montgueux en Villenauxe-la-Grande, met één aanspreekpunt in Troyes.",
     "heroIntro": "Een selectie onafhankelijke wijnmakers uit de Aube, voorgesteld door één aanspreekpunt in Troyes.",
     "heroCtaTerroir": "Ontdek het terroir",
-    "heroCtaVignerons": "Onze wijnmakers",
     "entreesTitre": "Voor wie?",
     "terroirSurTitre": "Het terroir",
     "terroirTitre": "De Côte des Bar en de Aube, in het zuiden van de Champagne",
     "terroirTexte": "De Aube telt vier terroirs. De Côte des Bar, op kimmeridgische mergel, is het land van de pinot noir. Les Riceys is het enige champagnedorp met drie appellations. Montgueux, een krijtheuvel aan de rand van Troyes, is het land van de chardonnay. Villenauxe-la-Grande kijkt uit op de Sézannais.",
     "terroirCta": "Ontdek het terroir van de Aube",
-    "vigneronsSurTitre": "De selectie",
-    "vigneronsTitre": "Onze wijnmakers",
-    "vigneronsIntro": "Onafhankelijke domeinen uit de Aube, voorgesteld via de mensen die ze maken.",
-    "vigneronsCta": "Al onze wijnmakers",
     "reassuranceTitre": "Waarom Champagne de l'Aube?",
     "reassurance": {
       "selection": {
@@ -176,7 +186,8 @@
       "dateEvenement": "Datum van het evenement",
       "invites": "Aantal gasten",
       "places": "Aantal plaatsen",
-      "sujet": "Uw vraag gaat over"
+      "sujet": "Uw vraag gaat over",
+      "profil": "U bent"
     },
     "options": {
       "typeEtablissement": {
@@ -206,6 +217,11 @@
         "particulier": "Workshop of privé-evenement",
         "vigneron": "Ik ben wijnmaker",
         "autre": "Andere"
+      },
+      "profil": {
+        "professionnel": "Een professional (restaurant, wijnhandel, hotel)",
+        "entreprise": "Een bedrijf of ondernemingsraad",
+        "particulier": "Een particulier"
       }
     },
     "titles": {
@@ -217,7 +233,8 @@
       "reservationExperience": "Reserveringsaanvraag",
       "conseilEvenement": "Adviesaanvraag voor een evenement",
       "inscriptionEvenement": "Inschrijving voor een evenement",
-      "contact": "Contactbericht"
+      "contact": "Contactbericht",
+      "catalogue": "Aanvraag van onze selectie (catalogus)"
     },
     "submit": {
       "grillePro": "Prijslijst ontvangen",
@@ -228,7 +245,8 @@
       "reservationExperience": "Reserveringsaanvraag versturen",
       "conseilEvenement": "Advies vragen",
       "inscriptionEvenement": "Inschrijven",
-      "contact": "Bericht versturen"
+      "contact": "Bericht versturen",
+      "catalogue": "Ontvang onze selectie"
     },
     "errors": {
       "required": "Dit veld is verplicht.",
@@ -257,14 +275,18 @@
       "text": "Ik antwoord u zo snel mogelijk persoonlijk.",
       "download": "Brochure downloaden (pdf)",
       "brochureByEmail": "Ik stuur u de brochure binnenkort per e-mail.",
-      "newsletter": "Nog één stap om het nieuws te ontvangen: klik op de bevestigingslink die ik u net heb gemaild."
+      "newsletter": "Nog één stap om het nieuws te ontvangen: klik op de bevestigingslink die ik u net heb gemaild.",
+      "catalogueSent": "Onze selectie is onderweg: u vindt ze binnen enkele minuten in uw mailbox.",
+      "catalogueSoon": "We mailen u onze selectie heel snel."
     },
     "ack": {
       "subject": "Champagne de l'Aube: uw aanvraag is ontvangen",
       "hello": "Goedendag,",
       "body": "Bedankt voor uw bericht ({form}). Ik heb het goed ontvangen en antwoord u zo snel mogelijk persoonlijk.",
       "brochure": "Uw brochure is hier beschikbaar:",
-      "signature": "Tot binnenkort,\nJulien Mineo"
+      "signature": "Tot binnenkort,\nJulien Mineo",
+      "catalogue": "Hier is onze huidige selectie, om hier te downloaden:",
+      "catalogueSoon": "We sturen u onze huidige selectie heel snel per e-mail."
     },
     "newsletterOptIn": "Ik wil het nieuws van Champagne de l'Aube ontvangen (wijnmakers, proeverijen, evenementen)."
   },
@@ -409,7 +431,7 @@
     "portfolioSurTitre": "De domeinen",
     "portfolioTitre": "De domeinen in de selectie",
     "portfolioIntro": "Een selectie van maximaal tien domeinen, complementair in terroir en druivenrassen. De prijzen staan in de pro-prijslijst, op aanvraag verstuurd.",
-    "portfolioCta": "Bekijk al onze wijnmakers",
+    "portfolioCta": "Bekijk onze hele selectie",
     "referencesTitre": "Zij vertrouwen ons",
     "grilleTitre": "De pro-prijslijst ontvangen",
     "grilleTexte": "Ik stuur u per e-mail de prijslijst van de domeinen in de selectie.",
@@ -420,10 +442,10 @@
     "partenaireCta": "Partner worden"
   },
   "vigneronsPage": {
-    "metaTitle": "Champagnes van onafhankelijke wijnmakers uit de Aube | Champagne de l'Aube",
+    "metaTitle": "Onze selectie wijnmakerschampagnes uit de Aube | Champagne de l'Aube",
     "metaDescription": "De onafhankelijke wijnmakers in de selectie van Champagne de l'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Hun dorpen, druivenrassen en methoden.",
     "surTitre": "Onafhankelijke wijnmakers",
-    "h1": "Onze wijnmakers",
+    "h1": "Onze selectie",
     "intro": "Onafhankelijke domeinen uit de Aube, gekozen om hun terroir en hun werk. Elke cuvée wordt voorgesteld via haar wijnmaker.",
     "filtres": "Domeinen filteren",
     "tous": "Alle",
@@ -469,5 +491,14 @@
     },
     "formTitre": "Stel mij uw domein voor",
     "formTexte": "Een paar woorden over uw domein en uw cuvées: ik neem contact met u op voor een bezoek aan het domein."
+  },
+  "selection": {
+    "surTitre": "Onze selectie",
+    "titre": "Onze selectie groeit met elke ontmoeting",
+    "texte": "Van de Côte des Bar tot Montgueux ontmoeten we elk seizoen nieuwe wijnmakers. Ontvang de huidige selectie per e-mail: de domeinen, hun dorpen, hun cuvées.",
+    "bouton": "Ontvang onze selectie",
+    "dialogTitre": "Ontvang onze selectie",
+    "dialogTexte": "De domeinen van het moment, hun dorpen en hun cuvées, in een document per e-mail.",
+    "fermer": "Sluiten"
   }
 }

@@ -108,7 +108,7 @@ export const vigneron = defineType({
     defineField({
       name: "philosophie",
       title: "Philosophie (2 ou 3 phrases)",
-      description: "Affichée sur la carte du domaine dans l'Espace Pro et la page Nos vignerons. Les gens avant les étiquettes.",
+      description: "Affichée sur la carte du domaine dans l'Espace Pro et la page Notre Sélection. Les gens avant les étiquettes.",
       type: "localeText",
       group: "histoire",
     }),

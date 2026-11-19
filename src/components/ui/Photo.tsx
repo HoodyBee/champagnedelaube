@@ -1,24 +1,23 @@
 import Image from "next/image";
-import { LineIcon } from "./LineIcon";
 import type { Img } from "./types";
 
 /**
  * Photo à angles droits (règle du brand book), recadrée au format demandé.
- * Sans image : un emplacement crème clair « Photo à venir » marqué [À COMPLÉTER].
+ * Sans image : un visuel provisoire crème clair au motif vitrail très discret.
  */
 export function Photo({
   image,
   ratio = "4/5",
   sizes,
   priority,
-  placeholderLabel,
   className = "",
 }: {
   image?: Img | null;
   ratio?: "4/5" | "4/3" | "3/2" | "16/9" | "1/1";
   sizes: string;
   priority?: boolean;
-  placeholderLabel: string;
+  /** Conservé pour compatibilité : le visuel provisoire n'affiche plus de texte. */
+  placeholderLabel?: string;
   className?: string;
 }) {
   return (
@@ -35,10 +34,8 @@ export function Photo({
           className="object-cover"
         />
       ) : (
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-space-1 border border-filet text-gris-chaud">
-          <LineIcon name="lieu" size={28} className="text-or" />
-          <span className="text-sur-titre-petit">[À COMPLÉTER] {placeholderLabel}</span>
-        </div>
+        // Visuel provisoire sobre (motif vitrail très discret), en attendant la photo.
+        <div data-photo-a-venir className="vitrail absolute inset-0 border border-filet" aria-hidden="true" />
       )}
     </div>
   );

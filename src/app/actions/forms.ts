@@ -3,11 +3,11 @@
 import { getTranslations } from "next-intl/server";
 import { defaultLocale, isLocale, type Locale } from "@/i18n/routing";
 import { BrevoError, describe, isBrevoConfigured, sendEmail, upsertContact, type BrevoListKey } from "@/lib/brevo";
-import { forms, HONEYPOT, isFormId, MIN_FILL_MS, profilParSujet, STARTED_AT, type FieldDef, type FormId } from "@/lib/forms/definitions";
+import { forms, HONEYPOT, isFormId, MIN_FILL_MS, profilParChoix, profilParSujet, STARTED_AT, type FieldDef, type FormId } from "@/lib/forms/definitions";
 import { clientIp, rateLimited, verifyTurnstile } from "@/lib/forms/guard";
 import { schemaFor } from "@/lib/forms/schema";
 import { sendNewsletterConfirmation } from "@/lib/newsletter";
-import { getBrochureUrl, getReglages } from "@/sanity/queries";
+import { getBrochureUrl, getCatalogueUrl, getReglages } from "@/sanity/queries";
 
 export type FormState = {
   status: "idle" | "success" | "error";
@@ -17,6 +17,8 @@ export type FormState = {
   message?: "invalid" | "spam" | "captcha" | "rate" | "config" | "send";
   /** Lien de téléchargement (brochure CSE). */
   downloadUrl?: string;
+  /** Vrai si le lien du catalogue PDF a été envoyé par e-mail (formulaire « catalogue »). */
+  catalogueSent?: boolean;
   /** Vrai si un e-mail de confirmation d'inscription aux actualités a été envoyé. */
   newsletter?: boolean;
   /** Valeurs saisies, renvoyées en cas d'erreur pour ne rien faire perdre au visiteur. */
@@ -70,12 +72,13 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   const reglages = await getReglages();
   const ownerAddress = reglages.emailsFormulaires || reglages.email;
   const brochureUrl = formId === "brochureCse" ? await getBrochureUrl() : null;
-  const owner = await ownerEmail(formId, data, { locale, context, page, newsletter: wantsNewsletter });
+  const catalogueUrl = formId === "catalogue" ? await getCatalogueUrl() : null;
+  const owner = await ownerEmail(formId, data, { locale, context, page, newsletter: wantsNewsletter, catalogueUrl });
 
   if (!isBrevoConfigured()) {
     if (process.env.NODE_ENV !== "production") {
       console.info(`[formulaire ${formId}] (Brevo non configuré : rien n'est envoyé)\n${owner.text}`);
-      return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter };
+      return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
     }
     console.error("[formulaire] BREVO_API_KEY manquante : demande non envoyée");
     return fail({ message: "config" });
@@ -92,8 +95,13 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   // Les étapes suivantes ne doivent jamais faire échouer la demande du visiteur.
   if (visitorEmail) {
     // 5b. Contact Brevo, classé selon le profil.
+    const def = forms[formId];
     const profil: BrevoListKey =
-      forms[formId].profil === "sujet" ? (profilParSujet[String(data.sujet)] ?? "particuliers") : forms[formId].profil;
+      def.profil === "sujet"
+        ? (profilParSujet[String(data.sujet)] ?? "particuliers")
+        : def.profil === "choix"
+          ? (profilParChoix[String(data.profil)] ?? "particuliers")
+          : def.profil;
     await upsertContact({
       email: visitorEmail,
       fullName: String(data.nom ?? ""),
@@ -107,7 +115,7 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
     }).catch((e) => console.error("[formulaire] Contact Brevo non enregistré :", describe(e)));
 
     // 5c. Accusé de réception, dans la langue du visiteur.
-    const ack = await visitorAck(formId, locale, brochureUrl);
+    const ack = await visitorAck(formId, locale, brochureUrl, catalogueUrl);
     await sendEmail({ to: visitorEmail, toName: String(data.nom ?? ""), replyTo: ownerAddress, subject: ack.subject, text: ack.text }).catch((e) =>
       console.warn("[formulaire] Accusé de réception non envoyé :", describe(e)),
     );
@@ -120,14 +128,14 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
     }
   }
 
-  return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter };
+  return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
 }
 
 /** E-mail reçu par Champagne de l'Aube (toujours en français). */
 async function ownerEmail(
   formId: FormId,
   data: Record<string, string | number | undefined>,
-  meta: { locale: Locale; context: string; page: string; newsletter: boolean },
+  meta: { locale: Locale; context: string; page: string; newsletter: boolean; catalogueUrl?: string | null },
 ) {
   const t = await getTranslations({ locale: "fr", namespace: "forms" });
   const lines: string[] = [];
@@ -147,6 +155,11 @@ async function ownerEmail(
       ...lines,
       "",
       "Âge : la personne certifie avoir 18 ans ou plus.",
+      formId === "catalogue"
+        ? meta.catalogueUrl
+          ? "Catalogue : le lien du PDF lui a été envoyé automatiquement."
+          : "Catalogue : aucun PDF n'est en ligne dans Sanity. Envoyez-le vous-même en répondant à ce message."
+        : null,
       `Actualités : ${meta.newsletter ? "souhaite les recevoir (e-mail de confirmation envoyé)" : "non"}`,
       `Langue du visiteur : ${meta.locale.toUpperCase()}`,
       meta.page ? `Page : ${meta.page}` : null,
@@ -159,7 +172,7 @@ async function ownerEmail(
 }
 
 /** Accusé de réception envoyé au visiteur, dans sa langue. */
-async function visitorAck(formId: FormId, locale: Locale, brochureUrl: string | null) {
+async function visitorAck(formId: FormId, locale: Locale, brochureUrl: string | null, catalogueUrl: string | null) {
   const t = await getTranslations({ locale, namespace: "forms" });
   const tLegal = await getTranslations({ locale, namespace: "legal" });
   return {
@@ -169,6 +182,7 @@ async function visitorAck(formId: FormId, locale: Locale, brochureUrl: string | 
       "",
       t("ack.body", { form: t(`titles.${formId}`) }),
       brochureUrl ? `\n${t("ack.brochure")}\n${brochureUrl}` : null,
+      formId === "catalogue" ? (catalogueUrl ? `\n${t("ack.catalogue")}\n${catalogueUrl}` : `\n${t("ack.catalogueSoon")}`) : null,
       "",
       t("ack.signature"),
       "Champagne de l'Aube · Troyes",

@@ -33,7 +33,7 @@ export function EntreeCard({
           className="mt-space-3 inline-flex items-center gap-space-1 text-sur-titre text-anthracite after:absolute after:inset-0 group-hover:text-bronze"
         >
           {bouton}
-          <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+          <span aria-hidden="true">→</span>
         </Link>
       </div>
     </article>

@@ -5,7 +5,7 @@ import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
-import { contentPages, nav, siteCredit, telHref, terroirPages } from "@/lib/site";
+import { contentPages, nav, proCorporate, siteCredit, telHref, terroirPages } from "@/lib/site";
 import { localize } from "@/sanity/lib/i18n";
 import { getReglages, socialLinks } from "@/sanity/queries";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
@@ -16,7 +16,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
  * le brand book autorise sur fond sombre), liens, coordonnées, réseaux, langues,
  * mention sanitaire et crédit.
  */
-export async function Footer() {
+export async function Footer({ locales }: { locales: readonly Locale[] }) {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("footer");
   const tNav = await getTranslations("nav");
@@ -62,16 +62,16 @@ export async function Footer() {
             <FooterLink key={p.href} href={p.href}>{p.label}</FooterLink>
           ))}
           <FooterLink href={nav.vignerons.href}>{tNav("vignerons")}</FooterLink>
+          <FooterLink href={nav.mag.href}>{tNav("mag")}</FooterLink>
           {contentPages.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
         </FooterColumn>
 
         <FooterColumn title={t("offers")}>
-          {nav.pro.map((p) => (
+          {proCorporate.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
-          <FooterLink href={nav.entreprises.href}>{tNav("entreprises")}</FooterLink>
           {nav.particuliers.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
@@ -111,7 +111,7 @@ export async function Footer() {
       <div className="mx-auto max-w-7xl px-space-2 pb-space-4 sm:px-space-4">
         <p className="text-sur-titre text-or">{t("languages")}</p>
         <div className="mt-space-2">
-          <LanguageSwitcher variant="footer" label={t("languages")} />
+          <LanguageSwitcher variant="footer" label={t("languages")} locales={locales} />
         </div>
       </div>
 

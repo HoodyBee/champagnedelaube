@@ -6,9 +6,9 @@
     "defaultDescription": "Entdecken Sie den Champagner der Aube und seine Winzer: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Unsere Winzer",
+    "vignerons": "Unsere Auswahl",
     "tasting": "Unsere Verkostungen",
-    "proChr": "Restaurants, Weinhandlungen und Hotels",
+    "proChr": "Gastronomie & Weinhandel",
     "proVignerons": "Winzer: Partner werden",
     "recettes": "Champagner und Speisen",
     "toutSavoir": "Alles über Champagner",
@@ -16,14 +16,17 @@
     "skipToContent": "Zum Inhalt springen",
     "mainNav": "Hauptnavigation",
     "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
+    "closeMenu": "Schließen",
     "homeLink": "Champagne de l'Aube, zurück zur Startseite",
     "terroirBand": "Die Terroirs der Aube",
-    "terroirHub": "Das Terroir der Aube",
+    "terroirHub": "Die Terroirs der Aube",
     "pro": "Für Profis",
     "entreprises": "Unternehmen",
     "particuliers": "Privatkunden",
-    "mariage": "Champagner für Hochzeiten"
+    "mariage": "Ihre großen Anlässe",
+    "mag": "Le Mag",
+    "proCorporate": "Fachhandel & Unternehmen",
+    "menu": "Menü"
   },
   "langSwitcher": {
     "label": "Sprache wählen",
@@ -100,25 +103,32 @@
       "bouton": "Bereich für Privatkunden"
     },
     "chiffres": {
-      "terroirs": "Terroirs der Aube",
-      "domaines": "Weingüter höchstens in der Auswahl",
-      "personnes": "Personen pro Workshop",
-      "duree": "pro Verkostungsworkshop"
+      "vignoble": {
+        "valeur": "≈ 8.000 ha",
+        "label": "die Rebfläche der Aube, ein Viertel der Champagne"
+      },
+      "appellations": {
+        "valeur": "3 Appellationen",
+        "label": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      },
+      "pinot": {
+        "valeur": "80 %",
+        "label": "Pinot Noir in der Côte des Bar"
+      },
+      "degustation": {
+        "valeur": "6 bis 13",
+        "label": "Personen pro Verkostung, 1,5 Stunden lang"
+      }
     },
     "metaTitle": "Winzerchampagner aus der Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Eine Auswahl unabhängiger Winzer aus der Côte des Bar, Les Riceys, Montgueux und Villenauxe-la-Grande, mit einem einzigen Ansprechpartner in Troyes.",
     "heroIntro": "Eine Auswahl unabhängiger Winzer der Aube, vorgestellt von einem einzigen Ansprechpartner in Troyes.",
     "heroCtaTerroir": "Das Terroir entdecken",
-    "heroCtaVignerons": "Unsere Winzer",
     "entreesTitre": "Für wen?",
     "terroirSurTitre": "Das Terroir",
     "terroirTitre": "Die Côte des Bar und die Aube, im Süden der Champagne",
     "terroirTexte": "Die Aube umfasst vier Terroirs. Die Côte des Bar mit ihren Kimmeridge-Mergeln ist das Land des Pinot Noir. Les Riceys ist das einzige Champagnerdorf mit drei Appellationen. Montgueux, ein Kreidehügel vor den Toren von Troyes, ist das Land des Chardonnay. Villenauxe-la-Grande blickt zum Sézannais.",
     "terroirCta": "Das Terroir der Aube entdecken",
-    "vigneronsSurTitre": "Die Auswahl",
-    "vigneronsTitre": "Unsere Winzer",
-    "vigneronsIntro": "Unabhängige Weingüter der Aube, vorgestellt durch die Menschen, die sie führen.",
-    "vigneronsCta": "Alle unsere Winzer",
     "reassuranceTitre": "Warum Champagne de l'Aube?",
     "reassurance": {
       "selection": {
@@ -176,7 +186,8 @@
       "dateEvenement": "Datum der Veranstaltung",
       "invites": "Anzahl Gäste",
       "places": "Anzahl Plätze",
-      "sujet": "Ihr Anliegen betrifft"
+      "sujet": "Ihr Anliegen betrifft",
+      "profil": "Sie sind"
     },
     "options": {
       "typeEtablissement": {
@@ -206,6 +217,11 @@
         "particulier": "Workshop oder private Feier",
         "vigneron": "Ich bin Winzer",
         "autre": "Sonstiges"
+      },
+      "profil": {
+        "professionnel": "Fachkunde (Restaurant, Weinhandel, Hotel)",
+        "entreprise": "Ein Unternehmen oder Betriebsrat",
+        "particulier": "Privatperson"
       }
     },
     "titles": {
@@ -217,7 +233,8 @@
       "reservationExperience": "Buchungsanfrage",
       "conseilEvenement": "Beratungsanfrage für eine Feier",
       "inscriptionEvenement": "Anmeldung zu einer Veranstaltung",
-      "contact": "Kontaktnachricht"
+      "contact": "Kontaktnachricht",
+      "catalogue": "Anfrage unserer Auswahl (Katalog)"
     },
     "submit": {
       "grillePro": "Preisliste erhalten",
@@ -228,7 +245,8 @@
       "reservationExperience": "Buchungsanfrage senden",
       "conseilEvenement": "Beratung anfragen",
       "inscriptionEvenement": "Anmelden",
-      "contact": "Nachricht senden"
+      "contact": "Nachricht senden",
+      "catalogue": "Unsere Auswahl erhalten"
     },
     "errors": {
       "required": "Dieses Feld ist erforderlich.",
@@ -257,14 +275,18 @@
       "text": "Ich antworte Ihnen so bald wie möglich persönlich.",
       "download": "Broschüre herunterladen (PDF)",
       "brochureByEmail": "Ich sende Ihnen die Broschüre in Kürze per E-Mail.",
-      "newsletter": "Noch ein Schritt, um die Neuigkeiten zu erhalten: Klicken Sie auf den Bestätigungslink, den ich Ihnen gerade gemailt habe."
+      "newsletter": "Noch ein Schritt, um die Neuigkeiten zu erhalten: Klicken Sie auf den Bestätigungslink, den ich Ihnen gerade gemailt habe.",
+      "catalogueSent": "Unsere Auswahl ist unterwegs: Sie finden sie in wenigen Minuten in Ihrem Postfach.",
+      "catalogueSoon": "Wir senden Ihnen unsere Auswahl in Kürze per E-Mail."
     },
     "ack": {
       "subject": "Champagne de l'Aube: Ihre Anfrage ist eingegangen",
       "hello": "Guten Tag,",
       "body": "Vielen Dank für Ihre Nachricht ({form}). Ich habe sie erhalten und antworte Ihnen so bald wie möglich persönlich.",
       "brochure": "Ihre Broschüre finden Sie hier:",
-      "signature": "Bis bald,\nJulien Mineo"
+      "signature": "Bis bald,\nJulien Mineo",
+      "catalogue": "Hier ist unsere aktuelle Auswahl zum Herunterladen:",
+      "catalogueSoon": "Wir senden Ihnen unsere aktuelle Auswahl in Kürze per E-Mail."
     },
     "newsletterOptIn": "Ich möchte die Neuigkeiten von Champagne de l'Aube erhalten (Winzer, Verkostungen, Veranstaltungen)."
   },
@@ -409,7 +431,7 @@
     "portfolioSurTitre": "Die Weingüter",
     "portfolioTitre": "Die Weingüter der Auswahl",
     "portfolioIntro": "Eine Auswahl von höchstens zehn Weingütern, die sich in Terroir und Rebsorten ergänzen. Die Preise stehen in der Profi-Preisliste, die auf Anfrage verschickt wird.",
-    "portfolioCta": "Alle unsere Winzer ansehen",
+    "portfolioCta": "Unsere ganze Auswahl ansehen",
     "referencesTitre": "Sie vertrauen uns",
     "grilleTitre": "Die Profi-Preisliste erhalten",
     "grilleTexte": "Ich sende Ihnen die Preisliste der Weingüter der Auswahl per E-Mail.",
@@ -420,10 +442,10 @@
     "partenaireCta": "Partner werden"
   },
   "vigneronsPage": {
-    "metaTitle": "Champagner unabhängiger Winzer der Aube | Champagne de l'Aube",
+    "metaTitle": "Unsere Auswahl an Winzerchampagner aus der Aube | Champagne de l'Aube",
     "metaDescription": "Die unabhängigen Winzer der Auswahl von Champagne de l'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Ihre Dörfer, Rebsorten und Methoden.",
     "surTitre": "Unabhängige Winzer",
-    "h1": "Unsere Winzer",
+    "h1": "Unsere Auswahl",
     "intro": "Unabhängige Weingüter der Aube, ausgewählt wegen ihres Terroirs und ihrer Arbeit. Jede Cuvée wird durch ihren Winzer vorgestellt.",
     "filtres": "Weingüter filtern",
     "tous": "Alle",
@@ -469,5 +491,14 @@
     },
     "formTitre": "Stellen Sie mir Ihr Weingut vor",
     "formTexte": "Ein paar Worte zu Ihrem Weingut und Ihren Cuvées: Ich melde mich für ein Treffen auf dem Weingut."
+  },
+  "selection": {
+    "surTitre": "Unsere Auswahl",
+    "titre": "Unsere Auswahl wächst mit jeder Begegnung",
+    "texte": "Von der Côte des Bar bis Montgueux lernen wir jede Saison neue Winzer kennen. Erhalten Sie die aktuelle Auswahl per E-Mail: die Weingüter, ihre Dörfer, ihre Cuvées.",
+    "bouton": "Unsere Auswahl erhalten",
+    "dialogTitre": "Erhalten Sie unsere Auswahl",
+    "dialogTexte": "Die Weingüter des Augenblicks, ihre Dörfer und ihre Cuvées, in einem Dokument per E-Mail.",
+    "fermer": "Schließen"
   }
 }

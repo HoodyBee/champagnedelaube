@@ -5,11 +5,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AgeGate } from "@/components/layout/AgeGate";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { Reveal } from "@/components/ui/Reveal";
 import { routing } from "@/i18n/routing";
 import { ageGateScript } from "@/lib/age-gate";
 import { newsletterBarScript } from "@/lib/newsletter-bar";
 import { NewsletterBar } from "@/components/newsletter/NewsletterBar";
-import { getReglages, socialLinks } from "@/sanity/queries";
+import { getActiveLocales, getReglages, socialLinks } from "@/sanity/queries";
 import { SITE_URL } from "@/i18n/metadata";
 import { inter, vollkorn } from "@/styles/fonts";
 import "../globals.css";
@@ -43,7 +44,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "nav" });
-  const reglages = await getReglages();
+  const [reglages, activeLocales] = await Promise.all([getReglages(), getActiveLocales()]);
 
   return (
     // suppressHydrationWarning : le script de vérification de l'âge peut ajouter
@@ -64,13 +65,14 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
               {t("skipToContent")}
             </a>
             <NewsletterBar />
-            <Header social={socialLinks(reglages)} />
+            <Header social={socialLinks(reglages)} locales={activeLocales} />
             <main id="contenu" className="flex-1">
               {children}
             </main>
-            <Footer />
+            <Footer locales={activeLocales} />
           </div>
-          <AgeGate />
+          <AgeGate locales={activeLocales} />
+          <Reveal />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -7,13 +7,13 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "fr";
 
 /**
- * Langues dont les contenus sont rédigés et qui peuvent être indexées par Google.
- * Le néerlandais, l'italien et l'allemand existent déjà (structure prête), mais tant que leurs
- * textes ne sont pas traduits, leurs pages affichent l'anglais en secours : on les
- * garde hors de Google (noindex, absentes du sitemap et des balises hreflang) pour
- * éviter le contenu dupliqué. Pour publier une langue, ajoutez-la ici.
+ * Langues actives par défaut : affichées dans les sélecteurs de langue et ouvertes
+ * à Google. Le réglage « Langues actives » des Réglages du site (Sanity) l'emporte.
+ * Les autres langues gardent leurs pages, leurs URL et leurs traductions, mais elles
+ * sont masquées des sélecteurs, en noindex et hors sitemap : on les réactive en
+ * cochant la langue dans Sanity.
  */
-export const indexedLocales: readonly Locale[] = ["fr", "en"];
+export const defaultActiveLocales: readonly Locale[] = ["fr", "en", "nl"];
 
 export const localeNames: Record<Locale, string> = {
   fr: "Français",
@@ -81,6 +81,8 @@ export const routing = defineRouting({
       de: "/hochzeitschampagner-troyes",
     },
 
+    // Le Mag (espace éditorial : tous les articles, par rubrique)
+    "/le-mag": "/le-mag",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
     "/ou-trouver-nos-pepites": {
       fr: "/ou-trouver-nos-pepites",

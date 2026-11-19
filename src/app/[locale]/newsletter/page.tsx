@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/newslett
   return {
     title: t("title"),
     description: t("metaDescription"),
-    alternates: localizedAlternates("/newsletter", locale),
-    robots: robotsFor(locale),
+    alternates: await localizedAlternates("/newsletter", locale),
+    robots: await robotsFor(locale),
   };
 }
 

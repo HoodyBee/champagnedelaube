@@ -27,16 +27,22 @@ export const hero = defineType({
   ],
 });
 
-/** Bandeau de chiffres clés (ex. « 12 domaines suivis »). */
+/** Bandeau de chiffres clés (ex. « ≈ 8 000 ha · le vignoble de l'Aube »). */
 export const chiffre = defineType({
   name: "chiffre",
   title: "Chiffre clé",
   type: "object",
   fields: [
-    defineField({ name: "valeur", title: "Chiffre", description: "Ex. : 12, +300, 6 à 13.", type: "string", validation: (r) => r.required() }),
-    defineField({ name: "label", title: "Légende", description: "Ex. : domaines indépendants suivis.", type: "localeString", validation: requireFr }),
+    defineField({
+      name: "valeur",
+      title: "Chiffre",
+      description: "Ex. : ≈ 8 000 ha, 3 appellations, 80 %, 6 à 13. Traduit, car l'écriture des nombres change d'une langue à l'autre (8 000 / 8,000).",
+      type: "localeString",
+      validation: requireFr,
+    }),
+    defineField({ name: "label", title: "Légende", description: "Ex. : le vignoble de l'Aube, un quart du vignoble champenois.", type: "localeString", validation: requireFr }),
   ],
-  preview: { select: { title: "valeur", subtitle: "label.fr" } },
+  preview: { select: { title: "valeur.fr", subtitle: "label.fr" } },
 });
 
 /** Argument avec picto (ex. « Tarifs directs domaine »). */

@@ -32,7 +32,9 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
     return (
       <div ref={statusRef} tabIndex={-1} role="status" className={`surface-chaude rounded-carte p-space-3 outline-none sm:p-space-4 ${className}`}>
         <p className="text-accroche">{t("success.title")}</p>
-        <p className="mt-space-1 text-gris-chaud">{t("success.text")}</p>
+        <p className="mt-space-1 text-gris-chaud">
+          {formId === "catalogue" ? t(state.catalogueSent ? "success.catalogueSent" : "success.catalogueSoon") : t("success.text")}
+        </p>
         {state.newsletter && <p className="mt-space-2 text-gris-chaud">{t("success.newsletter")}</p>}
         {formId === "brochureCse" && (
           state.downloadUrl ? (

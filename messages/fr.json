@@ -6,9 +6,9 @@
     "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Nos vignerons",
-    "tasting": "Nos dégustations",
-    "proChr": "Restaurants, cavistes et hôtels",
+    "vignerons": "Notre Sélection",
+    "tasting": "Nos Dégustations",
+    "proChr": "Professionnels (CHR, cavistes)",
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
@@ -16,14 +16,17 @@
     "skipToContent": "Aller au contenu",
     "mainNav": "Navigation principale",
     "openMenu": "Ouvrir le menu",
-    "closeMenu": "Fermer le menu",
+    "closeMenu": "Fermer",
     "homeLink": "Champagne de l'Aube, retour à l'accueil",
     "terroirBand": "Les terroirs de l'Aube",
-    "terroirHub": "Le terroir de l'Aube",
+    "terroirHub": "Les Terroirs Aubois",
     "pro": "Professionnels",
     "entreprises": "Entreprises & CSE",
     "particuliers": "Particuliers",
-    "mariage": "Champagne pour mariage"
+    "mariage": "Vos Grands Événements",
+    "mag": "Le Mag",
+    "proCorporate": "Espace Pro & Corporate",
+    "menu": "Menu"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -100,25 +103,32 @@
       "bouton": "Espace particuliers"
     },
     "chiffres": {
-      "terroirs": "terroirs de l'Aube",
-      "domaines": "domaines au maximum dans la sélection",
-      "personnes": "personnes par atelier",
-      "duree": "par atelier de dégustation"
+      "vignoble": {
+        "valeur": "≈ 8 000 ha",
+        "label": "le vignoble de l'Aube, un quart du vignoble champenois"
+      },
+      "appellations": {
+        "valeur": "3 appellations",
+        "label": "Champagne, Coteaux champenois, Rosé des Riceys"
+      },
+      "pinot": {
+        "valeur": "80 %",
+        "label": "de pinot noir en Côte des Bar"
+      },
+      "degustation": {
+        "valeur": "6 à 13",
+        "label": "personnes par dégustation, pendant 1 h 30"
+      }
     },
     "metaTitle": "Champagnes de vignerons de la Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
     "heroIntro": "Une sélection de vignerons indépendants de l'Aube, présentés par un interlocuteur unique, à Troyes.",
     "heroCtaTerroir": "Découvrir le terroir",
-    "heroCtaVignerons": "Nos vignerons",
     "entreesTitre": "Pour qui ?",
     "terroirSurTitre": "Le terroir",
     "terroirTitre": "La Côte des Bar et l'Aube, au sud de la Champagne",
     "terroirTexte": "L'Aube compte quatre terroirs. La Côte des Bar, sur ses marnes kimméridgiennes, est le pays du pinot noir. Les Riceys sont le seul village champenois à posséder trois appellations. Montgueux, colline de craie aux portes de Troyes, est la terre du chardonnay. Villenauxe-la-Grande regarde vers le Sézannais.",
     "terroirCta": "Découvrir le terroir de l'Aube",
-    "vigneronsSurTitre": "La sélection",
-    "vigneronsTitre": "Nos vignerons",
-    "vigneronsIntro": "Des domaines indépendants de l'Aube, présentés à travers ceux qui les font vivre.",
-    "vigneronsCta": "Tous nos vignerons",
     "reassuranceTitre": "Pourquoi Champagne de l'Aube ?",
     "reassurance": {
       "selection": {
@@ -176,7 +186,8 @@
       "dateEvenement": "Date de l'événement",
       "invites": "Nombre d'invités",
       "places": "Nombre de places",
-      "sujet": "Votre demande concerne"
+      "sujet": "Votre demande concerne",
+      "profil": "Vous êtes"
     },
     "options": {
       "typeEtablissement": {
@@ -206,6 +217,11 @@
         "particulier": "Atelier ou événement privé",
         "vigneron": "Je suis vigneron",
         "autre": "Autre"
+      },
+      "profil": {
+        "professionnel": "Un professionnel (restaurant, cave, hôtel)",
+        "entreprise": "Une entreprise ou un CSE",
+        "particulier": "Un particulier"
       }
     },
     "titles": {
@@ -217,7 +233,8 @@
       "reservationExperience": "Demande de réservation",
       "conseilEvenement": "Demande de conseil pour un événement",
       "inscriptionEvenement": "Inscription à un événement",
-      "contact": "Message de contact"
+      "contact": "Message de contact",
+      "catalogue": "Demande de notre sélection (catalogue)"
     },
     "submit": {
       "grillePro": "Recevoir la grille tarifaire",
@@ -228,7 +245,8 @@
       "reservationExperience": "Envoyer ma demande de réservation",
       "conseilEvenement": "Demander conseil",
       "inscriptionEvenement": "M'inscrire",
-      "contact": "Envoyer le message"
+      "contact": "Envoyer le message",
+      "catalogue": "Recevoir notre sélection"
     },
     "errors": {
       "required": "Ce champ est obligatoire.",
@@ -257,14 +275,18 @@
       "text": "Je vous réponds personnellement dans les meilleurs délais.",
       "download": "Télécharger la brochure (PDF)",
       "brochureByEmail": "Je vous envoie la brochure par e-mail très prochainement.",
-      "newsletter": "Pour recevoir les actualités, il reste une étape : cliquez sur le lien de confirmation que je viens de vous envoyer par e-mail."
+      "newsletter": "Pour recevoir les actualités, il reste une étape : cliquez sur le lien de confirmation que je viens de vous envoyer par e-mail.",
+      "catalogueSent": "Notre sélection est en route : vous la trouverez dans votre boîte mail d'ici quelques minutes.",
+      "catalogueSoon": "Nous vous envoyons notre sélection très vite par e-mail."
     },
     "ack": {
       "subject": "Champagne de l'Aube : votre demande est bien reçue",
       "hello": "Bonjour,",
       "body": "Merci pour votre message ({form}). Je l'ai bien reçu et je vous réponds personnellement dans les meilleurs délais.",
       "brochure": "Votre brochure est disponible ici :",
-      "signature": "À très bientôt,\nJulien Mineo"
+      "signature": "À très bientôt,\nJulien Mineo",
+      "catalogue": "Voici notre sélection du moment, à télécharger ici :",
+      "catalogueSoon": "Nous vous envoyons notre sélection du moment très vite, par retour d'e-mail."
     },
     "newsletterOptIn": "Je souhaite recevoir les actualités de Champagne de l'Aube (vignerons, dégustations, événements)."
   },
@@ -409,7 +431,7 @@
     "portfolioSurTitre": "Les domaines",
     "portfolioTitre": "Les domaines de la sélection",
     "portfolioIntro": "Une sélection de dix domaines au maximum, complémentaires par leurs terroirs et leurs cépages. Les tarifs figurent dans la grille Pro, envoyée sur demande.",
-    "portfolioCta": "Voir tous nos vignerons",
+    "portfolioCta": "Voir toute notre sélection",
     "referencesTitre": "Ils nous font confiance",
     "grilleTitre": "Recevoir la grille tarifaire Pro",
     "grilleTexte": "Je vous envoie par e-mail la grille tarifaire des domaines de la sélection.",
@@ -420,10 +442,10 @@
     "partenaireCta": "Devenir partenaire"
   },
   "vigneronsPage": {
-    "metaTitle": "Champagnes de vignerons indépendants de l'Aube | Champagne de l'Aube",
+    "metaTitle": "Notre sélection de champagnes de vignerons de l'Aube | Champagne de l'Aube",
     "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
     "surTitre": "Vignerons indépendants",
-    "h1": "Nos vignerons",
+    "h1": "Notre Sélection",
     "intro": "Des domaines indépendants de l'Aube, choisis pour leur terroir et leur travail. Chaque cuvée est présentée à travers son vigneron.",
     "filtres": "Filtrer les domaines",
     "tous": "Tous",
@@ -469,5 +491,14 @@
     },
     "formTitre": "Présentez-moi votre domaine",
     "formTexte": "Quelques mots sur votre domaine et vos cuvées : je vous recontacte pour une rencontre au domaine."
+  },
+  "selection": {
+    "surTitre": "Notre sélection",
+    "titre": "Notre sélection évolue au fil des rencontres",
+    "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
+    "bouton": "Recevoir notre sélection",
+    "dialogTitre": "Recevez notre sélection",
+    "dialogTexte": "Les domaines du moment, leurs villages et leurs cuvées, dans un document envoyé par e-mail.",
+    "fermer": "Fermer"
   }
 }

@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/contact"
   return {
     title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: localizedAlternates("/contact", locale),
-    robots: robotsFor(locale),
+    alternates: await localizedAlternates("/contact", locale),
+    robots: await robotsFor(locale),
   };
 }
 

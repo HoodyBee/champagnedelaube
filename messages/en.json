@@ -6,9 +6,9 @@
     "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Our winemakers",
-    "tasting": "Our tastings",
-    "proChr": "Restaurants, wine shops and hotels",
+    "vignerons": "Our Selection",
+    "tasting": "Our Tastings",
+    "proChr": "Restaurants, hotels & wine shops",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
@@ -16,14 +16,17 @@
     "skipToContent": "Skip to content",
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu",
+    "closeMenu": "Close",
     "homeLink": "Champagne de l'Aube, back to home page",
     "terroirBand": "The terroirs of the Aube",
-    "terroirHub": "The Aube terroir",
+    "terroirHub": "The Aube Terroirs",
     "pro": "Professionals",
     "entreprises": "Companies",
     "particuliers": "Private clients",
-    "mariage": "Wedding champagne"
+    "mariage": "Your Special Occasions",
+    "mag": "Le Mag",
+    "proCorporate": "Trade & Corporate",
+    "menu": "Menu"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -100,25 +103,32 @@
       "bouton": "Private clients area"
     },
     "chiffres": {
-      "terroirs": "Aube terroirs",
-      "domaines": "estates at most in the selection",
-      "personnes": "people per workshop",
-      "duree": "per tasting workshop"
+      "vignoble": {
+        "valeur": "≈ 8,000 ha",
+        "label": "the Aube vineyard, a quarter of the Champagne vineyard"
+      },
+      "appellations": {
+        "valeur": "3 appellations",
+        "label": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      },
+      "pinot": {
+        "valeur": "80%",
+        "label": "pinot noir in the Côte des Bar"
+      },
+      "degustation": {
+        "valeur": "6 to 13",
+        "label": "guests per tasting, for 1.5 hours"
+      }
     },
     "metaTitle": "Winemaker champagnes from the Côte des Bar | Champagne de l'Aube",
     "metaDescription": "A selection of independent winemakers from the Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande, with a single point of contact in Troyes.",
     "heroIntro": "A selection of independent winemakers from the Aube, presented by a single point of contact in Troyes.",
     "heroCtaTerroir": "Discover the terroir",
-    "heroCtaVignerons": "Our winemakers",
     "entreesTitre": "Who is it for?",
     "terroirSurTitre": "The terroir",
     "terroirTitre": "The Côte des Bar and the Aube, in the south of Champagne",
     "terroirTexte": "The Aube has four terroirs. The Côte des Bar, on its Kimmeridgian marls, is pinot noir country. Les Riceys is the only Champagne village with three appellations. Montgueux, a chalk hill on the edge of Troyes, is chardonnay land. Villenauxe-la-Grande looks towards the Sézannais.",
     "terroirCta": "Discover the Aube terroir",
-    "vigneronsSurTitre": "The selection",
-    "vigneronsTitre": "Our winemakers",
-    "vigneronsIntro": "Independent estates from the Aube, presented through the people who run them.",
-    "vigneronsCta": "All our winemakers",
     "reassuranceTitre": "Why Champagne de l'Aube?",
     "reassurance": {
       "selection": {
@@ -176,7 +186,8 @@
       "dateEvenement": "Date of the event",
       "invites": "Number of guests",
       "places": "Number of places",
-      "sujet": "Your request is about"
+      "sujet": "Your request is about",
+      "profil": "You are"
     },
     "options": {
       "typeEtablissement": {
@@ -206,6 +217,11 @@
         "particulier": "Workshop or private event",
         "vigneron": "I am a winemaker",
         "autre": "Other"
+      },
+      "profil": {
+        "professionnel": "A trade professional (restaurant, wine shop, hotel)",
+        "entreprise": "A company or works council",
+        "particulier": "A private customer"
       }
     },
     "titles": {
@@ -217,7 +233,8 @@
       "reservationExperience": "Booking request",
       "conseilEvenement": "Event advice request",
       "inscriptionEvenement": "Event registration",
-      "contact": "Contact message"
+      "contact": "Contact message",
+      "catalogue": "Request for our selection (catalogue)"
     },
     "submit": {
       "grillePro": "Get the price list",
@@ -228,7 +245,8 @@
       "reservationExperience": "Send my booking request",
       "conseilEvenement": "Ask for advice",
       "inscriptionEvenement": "Register",
-      "contact": "Send the message"
+      "contact": "Send the message",
+      "catalogue": "Receive our selection"
     },
     "errors": {
       "required": "This field is required.",
@@ -257,14 +275,18 @@
       "text": "I will reply to you personally as soon as possible.",
       "download": "Download the brochure (PDF)",
       "brochureByEmail": "I will email you the brochure very soon.",
-      "newsletter": "One last step to receive the news: click the confirmation link I have just emailed you."
+      "newsletter": "One last step to receive the news: click the confirmation link I have just emailed you.",
+      "catalogueSent": "Our selection is on its way: you will find it in your inbox within a few minutes.",
+      "catalogueSoon": "We will email you our selection very soon."
     },
     "ack": {
       "subject": "Champagne de l'Aube: we have received your request",
       "hello": "Hello,",
       "body": "Thank you for your message ({form}). I have received it and will reply to you personally as soon as possible.",
       "brochure": "Your brochure is available here:",
-      "signature": "Speak soon,\nJulien Mineo"
+      "signature": "Speak soon,\nJulien Mineo",
+      "catalogue": "Here is our current selection, to download here:",
+      "catalogueSoon": "We will send you our current selection very soon, by return email."
     },
     "newsletterOptIn": "I would like to receive news from Champagne de l'Aube (winemakers, tastings, events)."
   },
@@ -409,7 +431,7 @@
     "portfolioSurTitre": "The estates",
     "portfolioTitre": "The estates in the selection",
     "portfolioIntro": "A selection of ten estates at most, complementary in their terroirs and grape varieties. Prices are in the Pro price list, sent on request.",
-    "portfolioCta": "See all our winemakers",
+    "portfolioCta": "See our whole selection",
     "referencesTitre": "They trust us",
     "grilleTitre": "Get the Pro price list",
     "grilleTexte": "I will email you the price list of the estates in the selection.",
@@ -420,10 +442,10 @@
     "partenaireCta": "Become a partner"
   },
   "vigneronsPage": {
-    "metaTitle": "Champagnes from independent Aube winemakers | Champagne de l'Aube",
+    "metaTitle": "Our selection of Aube grower Champagnes | Champagne de l'Aube",
     "metaDescription": "The independent winemakers in the Champagne de l'Aube selection: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Their villages, grape varieties and methods.",
     "surTitre": "Independent winemakers",
-    "h1": "Our winemakers",
+    "h1": "Our Selection",
     "intro": "Independent estates from the Aube, chosen for their terroir and their work. Each cuvée is presented through its winemaker.",
     "filtres": "Filter the estates",
     "tous": "All",
@@ -469,5 +491,14 @@
     },
     "formTitre": "Tell me about your estate",
     "formTexte": "A few words about your estate and your cuvées: I will get back to you to arrange a visit to the estate."
+  },
+  "selection": {
+    "surTitre": "Our selection",
+    "titre": "Our selection grows with every encounter",
+    "texte": "From the Côte des Bar to Montgueux, we meet new winemakers every season. Receive our current selection by email: the estates, their villages, their cuvées.",
+    "bouton": "Receive our selection",
+    "dialogTitre": "Receive our selection",
+    "dialogTexte": "The estates of the moment, their villages and their cuvées, in a document sent by email.",
+    "fermer": "Close"
   }
 }

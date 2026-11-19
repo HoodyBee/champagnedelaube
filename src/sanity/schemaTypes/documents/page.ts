@@ -5,7 +5,7 @@ import { requireFr } from "../objects/localized";
 
 /** Pages fixes du site. L'adresse (URL) est fixée par le site pour préserver le référencement. */
 export const pagesFixes = [
-  { title: "Nos vignerons (page liste)", value: "vignerons" },
+  { title: "Notre Sélection (page liste)", value: "vignerons" },
   { title: "Vignerons : devenez partenaire", value: "pro-vignerons" },
   { title: "Champagne pour mariage (Troyes)", value: "mariage" },
   { title: "Recettes et accords mets-champagne (page liste)", value: "recettes" },

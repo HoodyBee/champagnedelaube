@@ -1,9 +1,10 @@
 import { defineField, defineType, type Rule } from "sanity";
 
 // Champs traduits : chaque texte existe dans les 5 langues du site — français
-// (obligatoire), anglais, néerlandais, italien et allemand. Tout le site doit être
-// traduit : si une langue manque alors que le français est rempli, le Studio
-// affiche un avertissement orange (la publication reste possible).
+// (obligatoire), anglais, néerlandais, italien et allemand. Si l'anglais ou le
+// néerlandais manque alors que le français est rempli, le Studio affiche un
+// avertissement orange (la publication reste possible). L'italien et l'allemand,
+// masqués au lancement, sont rangés dans un volet replié et facultatifs.
 
 const languages = [
   { id: "fr", title: "Français" },
@@ -13,6 +14,9 @@ const languages = [
   { id: "de", title: "Allemand" },
 ] as const;
 
+/** Langues facultatives (masquées sur le site au lancement) : volet replié, pas d'avertissement. */
+const optional = new Set(["it", "de"]);
+
 const isFilled = (v: unknown) =>
   Array.isArray(v) ? v.length > 0 : typeof v === "string" ? v.trim() !== "" : v != null;
 
@@ -21,7 +25,7 @@ export const warnMissingTranslations = (rule: Rule) =>
   rule
     .custom((value: Record<string, unknown> | undefined) => {
       if (!value || !isFilled(value.fr)) return true;
-      const missing = languages.filter((l) => l.id !== "fr" && !isFilled(value[l.id])).map((l) => l.title);
+      const missing = languages.filter((l) => l.id !== "fr" && !optional.has(l.id) && !isFilled(value[l.id])).map((l) => l.title);
       return missing.length === 0 ? true : `Traduction à compléter : ${missing.join(", ")}.`;
     })
     .warning();
@@ -37,11 +41,13 @@ function localizedType(
     title,
     type: "object",
     validation: (rule) => warnMissingTranslations(rule as unknown as Rule) as unknown as typeof rule,
+    fieldsets: [{ name: "autres", title: "Italien et allemand (facultatif)", options: { collapsible: true, collapsed: true } }],
     fields: languages.map((lang) =>
       defineField({
         name: lang.id,
         title: lang.title,
         type,
+        ...(optional.has(lang.id) ? { fieldset: "autres" } : {}),
         ...extra,
       }),
     ),

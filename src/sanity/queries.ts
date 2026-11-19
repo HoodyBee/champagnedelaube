@@ -1,4 +1,5 @@
 import { defineQuery, type PortableTextBlock } from "next-sanity";
+import { defaultActiveLocales, isLocale, locales, type Locale } from "@/i18n/routing";
 import { defaultContact } from "@/lib/site";
 import { sanityFetch } from "./lib/fetch";
 import type { Localized } from "./lib/i18n";
@@ -16,10 +17,12 @@ export type Reglages = {
   pepitesActive?: boolean;
   /** Adresse qui reçoit les formulaires. */
   emailsFormulaires?: string;
+  /** Langues proposées aux visiteurs et ouvertes à Google. */
+  languesActives?: string[];
 };
 
 const reglagesQuery = defineQuery(`*[_id == "reglages"][0]{
-  email, ville, telephone, afficherTelephone, instagramUrl, facebookUrl, linkedinUrl, signature, pepitesActive, emailsFormulaires
+  email, ville, telephone, afficherTelephone, instagramUrl, facebookUrl, linkedinUrl, signature, pepitesActive, emailsFormulaires, languesActives
 }`);
 
 /** Réglages du site (coordonnées, réseaux…), avec les valeurs par défaut si rien n'est rempli. */
@@ -29,6 +32,19 @@ export async function getReglages(): Promise<Reglages> {
     ...defaultContact,
     ...Object.fromEntries(Object.entries(data ?? {}).filter(([, v]) => v != null && v !== "")),
   } as Reglages;
+}
+
+/** Langues actives (réglage Sanity), dans l'ordre du site ; le français est toujours inclus. */
+export async function getActiveLocales(): Promise<Locale[]> {
+  const r = await getReglages();
+  const chosen = (r.languesActives ?? []).filter(isLocale);
+  const set = new Set<Locale>(chosen.length ? ["fr", ...chosen] : defaultActiveLocales);
+  return locales.filter((l) => set.has(l));
+}
+
+/** Adresse du catalogue PDF « Notre sélection », s'il a été téléversé dans Sanity. */
+export async function getCatalogueUrl(): Promise<string | null> {
+  return sanityFetch<string>({ query: defineQuery(`*[_id == "reglages"][0].catalogue.asset->url`), tags: ["reglages"] });
 }
 
 /** Liens des réseaux sociaux à afficher (LinkedIn seulement s'il est rempli). */

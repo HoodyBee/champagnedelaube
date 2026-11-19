@@ -26,9 +26,10 @@ export type FormDef = {
   fields: readonly FieldDef[];
   /**
    * Liste Brevo dans laquelle la personne est classée. "sujet" : selon le champ
-   * « Votre demande concerne » (formulaire de contact).
+   * « Votre demande concerne » (formulaire de contact) ; "choix" : selon le champ
+   * « Vous êtes » (formulaire « Recevoir notre sélection »).
    */
-  profil: "pro" | "entreprises" | "particuliers" | "vignerons" | "sujet";
+  profil: "pro" | "entreprises" | "particuliers" | "vignerons" | "sujet" | "choix";
   /** "emailOuTelephone" : au moins l'un des deux est demandé (formulaires particuliers). */
   contact: "email" | "emailOuTelephone";
 };
@@ -147,6 +148,16 @@ export const forms = {
     contact: "email",
     fields: [nom, email(), telephone(), { name: "places", type: "number", required: true, half: true, min: 1, max: 50 }, message()],
   },
+  /** « Recevoir notre sélection » : le catalogue PDF (Réglages du site) part par e-mail. */
+  catalogue: {
+    profil: "choix",
+    contact: "email",
+    fields: [
+      nom,
+      email(),
+      { name: "profil", type: "select", required: true, options: ["professionnel", "entreprise", "particulier"] },
+    ],
+  },
   /** Page Contact. */
   contact: {
     profil: "sujet",
@@ -177,4 +188,11 @@ export const profilParSujet: Record<string, "pro" | "entreprises" | "particulier
   particulier: "particuliers",
   vigneron: "vignerons",
   autre: "particuliers",
+};
+
+/** Liste Brevo selon le champ « Vous êtes » (formulaire « Recevoir notre sélection »). */
+export const profilParChoix: Record<string, "pro" | "entreprises" | "particuliers"> = {
+  professionnel: "pro",
+  entreprise: "entreprises",
+  particulier: "particuliers",
 };

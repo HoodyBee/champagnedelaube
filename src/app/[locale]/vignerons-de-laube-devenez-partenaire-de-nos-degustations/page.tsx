@@ -40,7 +40,7 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
 
   return (
     <>
-      <Breadcrumb locale={locale} items={[{ label: tNav("pro") }, { label: titre }]} />
+      <Breadcrumb locale={locale} items={[{ label: tNav("proCorporate") }, { label: titre }]} />
       <header className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 pb-space-2 pt-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:pt-space-5">
         <div>
           <p className="text-sur-titre text-bronze">{page.surTitre ?? t("surTitre")}</p>

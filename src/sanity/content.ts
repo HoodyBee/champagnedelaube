@@ -244,14 +244,14 @@ const entreeOf = (e: EntreeRaw | undefined, locale: Locale): Entree => ({
 export async function getAccueil(locale: Locale) {
   const a = await sanityFetch<{
     hero?: HeroRaw;
-    chiffres?: { valeur?: string; label?: Localized }[];
+    chiffres?: { valeur?: Localized | string; label?: Localized }[];
     entreePro?: EntreeRaw;
     entreeEntreprises?: EntreeRaw;
     entreeParticuliers?: EntreeRaw;
     terroir?: BlocRaw;
-    vigneronsTitre?: Localized;
-    vigneronsIntro?: Localized;
-    vigneronsSelection?: VigneronRaw[];
+    photoPleineLargeur?: SanityImg;
+    selectionTitre?: Localized;
+    selectionTexte?: Localized;
     reassurance?: ArgumentRaw[];
     seo?: SeoRaw;
   }>({
@@ -261,15 +261,16 @@ export async function getAccueil(locale: Locale) {
       entreeEntreprises{surTitre, titre, texte, bouton, image ${IMG}},
       entreeParticuliers{surTitre, titre, texte, bouton, image ${IMG}},
       terroir{icone, surTitre, titre, texte, points, image ${IMG}},
-      vigneronsTitre, vigneronsIntro, vigneronsSelection[]->{${VIGNERON_CARD}},
+      photoPleineLargeur ${IMG}, selectionTitre, selectionTexte,
       reassurance, seo}`,
-    tags: ["accueil", "vigneron"],
+    tags: ["accueil"],
   });
   return {
     hero: heroOf(a?.hero, locale),
     chiffres: (a?.chiffres ?? []).flatMap((c) => {
       const label = L(c.label, locale);
-      return c.valeur && label ? [{ valeur: c.valeur, label }] : [];
+      const valeur = typeof c.valeur === "string" ? c.valeur : L(c.valeur, locale);
+      return valeur && label ? [{ valeur, label }] : [];
     }),
     entrees: {
       pro: entreeOf(a?.entreePro, locale),
@@ -277,9 +278,9 @@ export async function getAccueil(locale: Locale) {
       particuliers: entreeOf(a?.entreeParticuliers, locale),
     },
     terroir: blocOf(a?.terroir, locale),
-    vigneronsTitre: L(a?.vigneronsTitre, locale),
-    vigneronsIntro: L(a?.vigneronsIntro, locale),
-    vigneronsSelection: (a?.vigneronsSelection ?? []).filter((v) => v?.slug).map((v) => cardOf(v, locale)),
+    photoPleineLargeur: toImg(a?.photoPleineLargeur, locale, 2400),
+    selectionTitre: L(a?.selectionTitre, locale),
+    selectionTexte: L(a?.selectionTexte, locale),
     reassurance: argumentsOf(a?.reassurance, locale),
     seo: seoOf(a?.seo, locale),
   };

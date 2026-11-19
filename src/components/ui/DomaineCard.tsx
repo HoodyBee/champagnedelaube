@@ -29,7 +29,7 @@ export function DomaineCard({ domaine: d }: { domaine: DomaineCardData }) {
           ratio="4/5"
           sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
           placeholderLabel={t("photoSoon")}
-          className="transition-transform duration-500 group-hover:scale-[1.02]"
+         
         />
       </div>
       <div className="flex flex-1 flex-col pt-space-2">
