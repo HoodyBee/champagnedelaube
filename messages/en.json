@@ -26,7 +26,9 @@
     "mariage": "Your Special Occasions",
     "mag": "Le Mag",
     "menu": "Menu",
-    "proEntreprises": "Trade & Business"
+    "proEntreprises": "Trade & Business",
+    "terroirHubLink": "Discover the terroirs",
+    "tastingLink": "All our tastings"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -462,7 +464,7 @@
       }
     },
     "argumentsTitre": "One contact, several estates",
-    "portfolioSurTitre": "The estates",
+    "portfolioSurTitre": "Independent winemakers",
     "portfolioTitre": "The estates in the selection",
     "portfolioIntro": "Estates that complement each other in terroir and grape varieties. Trade prices are in our selection, sent on request.",
     "portfolioCta": "See our whole selection",
@@ -527,7 +529,7 @@
     "formTexte": "A few words about your estate and your cuvées: we will get back to you to arrange a visit to the estate."
   },
   "selection": {
-    "surTitre": "Our selection",
+    "surTitre": "The catalogue",
     "titre": "Our selection grows with every encounter",
     "texte": "From the Côte des Bar to Montgueux, we meet new winemakers every season. Receive our current selection by email: the estates, their villages, their cuvées.",
     "bouton": "Receive our selection",
@@ -539,7 +541,7 @@
     "intro": "In Troyes or at your home, around a table of 6 to 13 people, we introduce you to winemakers from our selection: their village, their plots, the way they work. An hour and a half, with a quiz, to understand what sets them apart.",
     "metaTitle": "Champagne tasting in Troyes: Aube winemaker workshops | Champagne de l'Aube",
     "metaDescription": "Tastings of Aube grower champagnes, in Troyes or at your home, for 6 to 13 people, for an hour and a half, with a quiz.",
-    "surTitre": "Our Tastings",
+    "surTitre": "In Troyes or at your home",
     "h1": "Champagne tastings in Troyes",
     "ctaReserver": "Book a tasting",
     "ctaEvenements": "Your Special Occasions",
@@ -649,7 +651,7 @@
     "ctaDevis": "Request a quote",
     "ctaBrochure": "Get the works council brochure",
     "coffrets": {
-      "surTitre": "Gift boxes",
+      "surTitre": "For your staff and clients",
       "titre": "Gift boxes & works council offers",
       "texte": "Gift boxes put together with estates from our selection, for your staff, clients or partners. Each box tells the story of a village and a winemaker.",
       "points": [
@@ -658,7 +660,7 @@
       ]
     },
     "animations": {
-      "surTitre": "Team events",
+      "surTitre": "For your teams",
       "titre": "Tastings & team building",
       "texte": "A guided tasting, at your premises or in Troyes, to discover the Aube terroirs through their winemakers, with a quiz to finish.",
       "points": [
@@ -704,6 +706,11 @@
     "offrePro": "Discover our trade offer",
     "carteTitre": "Four terroirs",
     "carteIntro": "From the Côte des Bar to Villenauxe-la-Grande, each terroir has its soil, its grapes and its winemakers.",
-    "faqTitre": "Your questions about the Aube terroir"
+    "faqTitre": "Your questions about the Aube terroir",
+    "cepagesGroupes": {
+      "principaux": "The main grapes",
+      "rares": "The rare grapes",
+      "nouveau": "The newcomer"
+    }
   }
 }

@@ -98,8 +98,13 @@
   ],
   "cepagesDominants": [
     "pinot-noir",
+    "meunier",
     "chardonnay",
-    "meunier"
+    "pinot-blanc",
+    "pinot-gris",
+    "arbane",
+    "petit-meslier",
+    "chardonnay-rose"
   ],
   "sols": {
     "fr": "Des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur. On retrouve ce même sous-sol à Chablis, en Bourgogne.",
@@ -163,10 +168,10 @@
       },
       "paragraphes": [
         {
-          "fr": "Ici, le pinot noir couvre plus de 80 % des vignes. Sur les marnes kimméridgiennes, il donne des champagnes généreux, souvent vinifiés en blanc de noirs. Le chardonnay et le meunier complètent l'encépagement, et quelques vignerons cultivent encore des cépages plus rares, comme le pinot blanc.",
-          "en": "Here, pinot noir covers more than 80% of the vines. On Kimmeridgian marl it gives generous champagnes, often made as blanc de noirs. Chardonnay and meunier complete the picture, and a few winemakers still grow rarer varieties, such as pinot blanc.",
-          "nl": "Hier beslaat pinot noir meer dan 80% van de wijngaarden. Op kimmeridgiaanse mergel geeft hij royale champagnes, vaak als blanc de noirs. Chardonnay en meunier vullen het geheel aan, en enkele wijnmakers telen nog zeldzamere rassen, zoals pinot blanc.",
-          "it": "Qui il pinot noir copre oltre l'80% delle vigne. Sulle marne kimmeridgiane dà champagne generosi, spesso vinificati in blanc de noirs. Chardonnay e meunier completano l'uvaggio, e alcuni vignaioli coltivano ancora vitigni più rari, come il pinot blanc."
+          "fr": "Ici, le pinot noir couvre plus de 80 % des vignes. Sur les marnes kimméridgiennes, il donne des champagnes généreux, souvent vinifiés en blanc de noirs. Le chardonnay et le meunier complètent l'encépagement. La Côte des Bar garde aussi l'essentiel des cépages rares de la Champagne : le pinot blanc, le pinot gris, que l'on appelle ici fromenteau, l'arbane et le petit meslier. Des vignerons de Buxeuil ou d'Urville les ont sauvés de l'oubli. Le chardonnay rose, mutation naturelle du chardonnay, a rejoint en 2025 la liste des cépages autorisés.",
+          "en": "Here, pinot noir covers more than 80% of the vines. On Kimmeridgian marl it gives generous champagnes, often made as blanc de noirs. Chardonnay and meunier complete the picture. The Côte des Bar also keeps most of Champagne's rare grape varieties: pinot blanc, pinot gris, known here as fromenteau, arbane and petit meslier. Winemakers in Buxeuil and Urville saved them from oblivion. Chardonnay rose, a natural mutation of chardonnay, joined the list of permitted varieties in 2025.",
+          "nl": "Hier beslaat pinot noir meer dan 80% van de wijngaarden. Op kimmeridgiaanse mergel geeft hij royale champagnes, vaak als blanc de noirs. Chardonnay en meunier vullen het geheel aan. De Côte des Bar bewaart ook de meeste zeldzame druivenrassen van de Champagne: pinot blanc, pinot gris, hier fromenteau genoemd, arbane en petit meslier. Wijnmakers in Buxeuil en Urville hebben ze van de vergetelheid gered. Chardonnay rose, een natuurlijke mutatie van chardonnay, kwam in 2025 op de lijst van toegestane rassen.",
+          "it": "Qui il pinot noir copre oltre l'80% delle vigne. Sulle marne kimmeridgiane dà champagne generosi, spesso vinificati in blanc de noirs. Chardonnay e meunier completano l'uvaggio. La Côte des Bar conserva anche la maggior parte dei vitigni rari della Champagne: pinot blanc, pinot gris, qui chiamato fromenteau, arbane e petit meslier. Vignaioli di Buxeuil e Urville li hanno salvati dall'oblio. Lo chardonnay rose, mutazione naturale dello chardonnay, è entrato nel 2025 nell'elenco dei vitigni ammessi."
         }
       ]
     },
@@ -199,12 +204,6 @@
           "en": "The Champagne Tourist Route crosses the Côte des Bar for around 220 kilometres, starting from Bar-sur-Seine or Bar-sur-Aube. In Essoyes, where Renoir spent nearly thirty summers, you can visit the painter's studio. In Colombey-les-Deux-Églises, the Charles de Gaulle Memorial recalls another chapter of history.",
           "nl": "De toeristische Champagneroute doorkruist de Côte des Bar over zo'n 220 kilometer, vanuit Bar-sur-Seine of Bar-sur-Aube. In Essoyes, waar Renoir bijna dertig zomers doorbracht, kunt u het atelier van de schilder bezoeken. In Colombey-les-Deux-Églises herinnert het Mémorial Charles de Gaulle aan een ander stuk geschiedenis.",
           "it": "La Strada turistica dello Champagne attraversa la Côte des Bar per circa 220 chilometri, partendo da Bar-sur-Seine o da Bar-sur-Aube. A Essoyes, dove Renoir trascorse quasi trenta estati, si visita l'atelier del pittore. A Colombey-les-Deux-Églises, il Memoriale Charles de Gaulle ricorda un'altra pagina di storia."
-        },
-        {
-          "fr": "[VOTRE ANECDOTE] Votre plus beau souvenir dans un village de la Côte des Bar.",
-          "en": "[VOTRE ANECDOTE] Your best memory of a Côte des Bar village.",
-          "nl": "[VOTRE ANECDOTE] Uw mooiste herinnering aan een dorp in de Côte des Bar.",
-          "it": "[VOTRE ANECDOTE] Il vostro ricordo più bello di un villaggio della Côte des Bar."
         }
       ]
     },
@@ -221,14 +220,16 @@
           "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
           "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
           "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
-        },
-        {
-          "fr": "[VOTRE ANECDOTE] Une rencontre marquante avec un vigneron du Barsuraubois.",
-          "en": "[VOTRE ANECDOTE] A memorable meeting with a Barsuraubois winemaker.",
-          "nl": "[VOTRE ANECDOTE] Een bijzondere ontmoeting met een wijnmaker uit het Barsuraubois.",
-          "it": "[VOTRE ANECDOTE] Un incontro memorabile con un vignaiolo del Barsuraubois."
         }
       ]
     }
-  ]
+  ],
+  "cepagesNotes": {
+    "chardonnay-rose": {
+      "fr": "Autorisé en Champagne depuis 2025",
+      "en": "Allowed in Champagne since 2025",
+      "nl": "Toegestaan in de Champagne sinds 2025",
+      "it": "Ammesso in Champagne dal 2025"
+    }
+  }
 }

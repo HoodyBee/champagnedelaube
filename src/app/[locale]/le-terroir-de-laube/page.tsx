@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { BrandBadge } from "@/components/brand/BrandBadge";
+import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { ButtonLink } from "@/components/ui/Button";
 import { Faq } from "@/components/ui/Faq";
@@ -11,7 +11,6 @@ import { Section } from "@/components/ui/Section";
 import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { cepages } from "@/lib/brand";
 import { nav } from "@/lib/site";
 import { getTerroirAube } from "@/sanity/content";
 
@@ -60,7 +59,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         <ul className="mt-space-4 grid gap-space-3 sm:grid-cols-3">
           {p.cepagesTextes.map((c) => (
             <li key={c.cepage} className="flex flex-col items-center text-center">
-              <BrandBadge asset={cepages[c.cepage]} size={72} />
+              <CepagePastille cepage={c.cepage} size={44} />
               <p className="mt-space-2 max-w-xs text-gris-chaud">{c.texte}</p>
             </li>
           ))}

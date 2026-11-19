@@ -32,7 +32,8 @@ Textes rédigés pour l'étape 8, dans `content/terroirs/*.json` (français, ang
 | Montgueux : appellation Champagne en 1927 ; plants de chardonnay partis au Japon à la fin du XIXe siècle | [Champagne Jaillant](https://champagne-jaillant.com/le-vignoble/) · [Troyes La Champagne](https://en.troyeslachampagne.com/the-champagne/montgueux-champagne-at-the-gateway-to-troyes/) |
 | Villenauxe-la-Grande : une centaine d'hectares (101,8 ou 104 ha), majorité de chardonnay, un peu de pinot noir | [UMC – Villenauxe-la-Grande](https://maisons-champagne.com/fr/commune/villenauxe-la-grande) · [Petit Futé](https://www.petitfute.com/v12359-villenauxe-la-grande-10370/c1173-visites-points-d-interet/c976-archeologie-artisanat-science-et-technique/c977-agriculture-viticulture/333233-vignoble-et-champagne.html) · [Champagne Hélène Monleau](https://www.champagne-monleau.com/cote-de-sezanne/) |
 | Villenauxe-la-Grande : vallée de la Noxe ; domaines qui reçoivent sur rendez-vous ; pinot blanc et petit meslier chez certains | [Aube Champagne – Vallée de la Noxe](https://www.aube-champagne.com/en/poi/vignoble-de-champagne-et-vallee-de-la-noxe/) · [Aube Champagne – Champagne Wirtz](https://www.aube-champagne.com/en/poi/champagne-wirtz/) · [Comité Champagne – Champagne François Oudard](https://www.champagne.fr/en/visit-champagne/directory-champagne-producers/champagne-francois-oudard) |
-| Pinot blanc dans la Côte des Bar | Information fournie par vos soins (Champagne Moutard-Dangin, Polisy) · [Aube Champagne – Champagne Wirtz](https://www.aube-champagne.com/en/poi/champagne-wirtz/) |
+| Côte des Bar : pinot blanc, pinot gris (« fromenteau »), arbane et petit meslier présents, sauvés notamment par des vignerons de Buxeuil et d'Urville | [Club Oenologique – cépages ancestraux (Moutard, Buxeuil)](https://cluboenologique.com/story/reviving-the-ancestral-grapes-of-champagne/) · [Champagne Drappier – le vignoble (Urville, fromenteau)](https://www.champagne-drappier.com/en/vineyard/) · [Wikipédia – Arbane (vers Bar-sur-Aube)](https://en.wikipedia.org/wiki/Arbane) · [Club Oenologique – Côte des Bar](https://cluboenologique.com/report/cote-des-bar-regional-profile-champagne/) · pinot blanc chez Champagne Moutard-Dangin (Polisy), information fournie par vos soins |
+| Chardonnay rose : mutation naturelle du chardonnay, ajouté aux cépages de l'AOC Champagne en 2025 (arrêté du 31 juillet 2025) | [Comité Champagne – communiqué](https://www.champagne.fr/fr/approfondir/mediaroom/communique-presse-champagne/le-chardonnay-rose-un-cepage-oublie-qui-retrouve) · [Vitisphere](https://www.vitisphere.com/actualite-105578--le-chardonnay-rose-entre-dans-le-cahier-des-charges-de-laoc-champagne.html) · [iDealwine](https://www.idealwine.net/le-chardonnay-rose-entre-dans-laoc-champagne/) |
 
 ## Informations écartées (sources en désaccord) : à vous de trancher
 
@@ -43,15 +44,8 @@ Textes rédigés pour l'étape 8, dans `content/terroirs/*.json` (français, ang
 5. **Surface du Rosé des Riceys réellement produite** : 20, 35, 40-50 ou 100 ha selon les sources. Écrit « une petite partie ».
 6. **Surface exacte des Riceys** : 844, 866 ou 870 ha. Écrit « plus de 840 hectares ».
 7. **Surface de chaque secteur** (Barséquanais ≈ 5 470 ha, Barsuraubois ≈ 2 400 ha) : une seule source détaillée (UMC). Non affichée.
+9. **Chardonnay rose en Côte des Bar** : aucune source ne mentionne de vignes plantées dans la Côte des Bar (premières plantations certifiées annoncées pour 2027 par une seule source). Il est affiché comme « autorisé en Champagne depuis 2025 », sans dire qu'il y est cultivé.
 8. **Longueur totale de la Route touristique du Champagne** (700 ou 970 km selon les sources). Seule la boucle Côte des Bar (≈ 220 km) est citée.
-
-## Emplacements « [VOTRE ANECDOTE] »
-
-- Les Terroirs Aubois : une histoire de vigneron entendue lors d'une visite.
-- Côte des Bar : votre plus beau souvenir dans un village ; une rencontre avec un vigneron du Barsuraubois.
-- Les Riceys : votre première rencontre avec un Rosé des Riceys.
-- Montgueux : votre point de vue préféré sur la colline, ou le vigneron qui vous l'a fait découvrir.
-- Villenauxe-la-Grande : une découverte faite sur place.
 
 ## Mots-clés principaux (un par page)
 

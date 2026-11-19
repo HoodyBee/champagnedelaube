@@ -61,8 +61,9 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
     label: p.label,
     color: `var(--color-${terroirs[p.key].color})`,
   }));
-  const terroirMenu: Item[] = [toItem(nav.terroirHub), ...terroirItems];
-  const degustationItems = nav.particuliers.map(toItem);
+  // Premier lien de chaque groupe : un libellé distinct du titre du groupe (pas de doublon).
+  const terroirMenu: Item[] = [{ href: nav.terroirHub.href, label: t("terroirHubLink") }, ...terroirItems];
+  const degustationItems: Item[] = [{ href: nav.particuliers[0].href, label: t("tastingLink") }, toItem(nav.particuliers[1])];
   const proItems = proEntreprises.map(toItem);
 
   const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
@@ -77,18 +78,19 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
 
   return (
     <MotionConfig reducedMotion="user">
-      <header ref={headerRef} className="sticky top-[-172px] z-40 bg-creme-clair lg:top-[-224px]">
-        {/* Étage 1 : le logo complet, puis les 4 terroirs écrits en entier (ordinateur). */}
-        <div ref={logoRowRef} className="flex h-[172px] flex-col items-center justify-center lg:h-[224px]">
-          <Link href="/" aria-label={t("homeLink")} className="block p-[19px] lg:p-[20px]" tabIndex={compact ? -1 : undefined}>
+      <header ref={headerRef} className="sticky top-0 z-40 bg-creme-clair lg:top-[-224px]">
+        {/* Étage 1 (ordinateur) : le logo complet, puis les 4 terroirs écrits en entier.
+            Sur mobile, en-tête compact sur une seule ligne (voir étage 2). */}
+        <div ref={logoRowRef} className="hidden h-[224px] flex-col items-center justify-center lg:flex">
+          <Link href="/" aria-label={t("homeLink")} className="block p-[20px]" tabIndex={compact ? -1 : undefined}>
             <Image
               src={logos.sansTerroirs.src}
               alt=""
               width={150}
               height={143}
-              sizes="(min-width: 1024px) 150px, 140px"
+              sizes="150px"
               priority
-              className="h-[133px] w-[140px] lg:h-[143px] lg:w-[150px]"
+              className="h-[143px] w-[150px]"
             />
           </Link>
           <nav aria-label={t("terroirBand")} className="hidden lg:block">
@@ -121,13 +123,18 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
         >
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4 2xl:max-w-[1440px]">
             <div className="flex min-w-0 items-center gap-space-2">
-              {/* La bouteille seule, une fois le logo complet sorti de l'écran. */}
+              {/* Mobile : logo réduit (la bouteille) et le nom, toujours visibles. */}
+              <Link href="/" aria-label={t("homeLink")} className="flex min-w-0 items-center gap-space-1 lg:hidden">
+                <Image src={logos.avatar.src} alt="" width={40} height={40} sizes="40px" priority className="h-10 w-10 shrink-0" />
+                <span className="truncate text-[1.0625rem] font-bold leading-tight">Champagne de l&apos;Aube</span>
+              </Link>
+              {/* Ordinateur : la bouteille seule, une fois le logo complet sorti de l'écran. */}
               <Link
                 href="/"
                 aria-label={t("homeLink")}
                 aria-hidden={!compact}
                 tabIndex={compact ? undefined : -1}
-                className={`shrink-0 transition-opacity duration-300 ${compact ? "opacity-100" : "pointer-events-none opacity-0"}`}
+                className={`hidden shrink-0 transition-opacity duration-300 lg:block ${compact ? "opacity-100" : "pointer-events-none opacity-0"}`}
               >
                 <Image src={logos.avatar.src} alt="" width={44} height={44} sizes="44px" className="h-11 w-11" />
               </Link>

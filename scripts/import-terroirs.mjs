@@ -51,11 +51,10 @@ function bloc(texte, l, style = "normal") {
     last = m.index + m[0].length;
   }
   if (last < texte.length) children.push({ _type: "span", _key: key(), text: texte.slice(last), marks: [] });
-  return { _type: "block", _key: key(), style: texte.startsWith("[VOTRE ANECDOTE]") ? "blockquote" : style, markDefs, children };
+  return { _type: "block", _key: key(), style, markDefs, children };
 }
 const str = (v, type = "localeString") => ({ _type: type, ...Object.fromEntries(LANGS.filter((l) => v?.[l]).map((l) => [l, v[l]])) });
 const rich = (fn) => ({ _type: "localeRichText", ...Object.fromEntries(LANGS.map((l) => [l, fn(l)])) });
-const splitAnecdote = (t) => (t.includes("[VOTRE ANECDOTE]") ? [t.slice(0, t.indexOf("[VOTRE ANECDOTE]")).trim(), t.slice(t.indexOf("[VOTRE ANECDOTE]"))] : [t]);
 
 function terroirDoc(d) {
   return {
@@ -77,7 +76,7 @@ function aubeDoc(a) {
       _type: "blocTexte",
       _key: key(),
       titre: str(c.titre),
-      texte: rich((l) => splitAnecdote(c.texte[l]).map((p) => bloc(p, l))),
+      texte: rich((l) => [bloc(c.texte[l], l)]),
     })),
     cepagesTitre: str(a.cepagesTitre),
     cepagesIntro: rich((l) => [bloc(a.cepagesIntro[l], l)]),

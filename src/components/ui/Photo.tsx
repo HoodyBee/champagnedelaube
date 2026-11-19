@@ -1,3 +1,4 @@
+import type React from "react";
 import Image from "next/image";
 import type { Img } from "./types";
 
@@ -10,6 +11,7 @@ export function Photo({
   ratio = "4/5",
   sizes,
   priority,
+  compactMobile,
   className = "",
 }: {
   image?: Img | null;
@@ -19,9 +21,14 @@ export function Photo({
   /** Conservé pour compatibilité : le visuel provisoire n'affiche plus de texte. */
   placeholderLabel?: string;
   className?: string;
+  /** Image d'ouverture : sur mobile, bandeau bas (16:9, un tiers de l'écran au plus) pour laisser lire le titre. */
+  compactMobile?: boolean;
 }) {
   return (
-    <div className={`relative overflow-hidden bg-creme-clair ${className}`} style={{ aspectRatio: ratio }}>
+    <div
+      className={`relative overflow-hidden bg-creme-clair ${compactMobile ? "aspect-video max-h-[33svh] w-full sm:max-h-none sm:aspect-[var(--ar)]" : ""} ${className}`}
+      style={compactMobile ? ({ "--ar": ratio.replace("/", " / ") } as React.CSSProperties) : { aspectRatio: ratio }}
+    >
       {image ? (
         <Image
           src={image.src}

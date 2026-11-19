@@ -26,7 +26,9 @@
     "mariage": "I vostri grandi eventi",
     "mag": "Le Mag",
     "menu": "Menu",
-    "proEntreprises": "Professionisti & aziende"
+    "proEntreprises": "Professionisti & aziende",
+    "terroirHubLink": "Scoprire i terroir",
+    "tastingLink": "Tutte le nostre degustazioni"
   },
   "langSwitcher": {
     "label": "Scegli la lingua",
@@ -462,7 +464,7 @@
       }
     },
     "argumentsTitre": "Un interlocutore, più tenute",
-    "portfolioSurTitre": "Le tenute",
+    "portfolioSurTitre": "Vignaioli indipendenti",
     "portfolioTitre": "Le tenute della selezione",
     "portfolioIntro": "Tenute complementari per terroir e vitigni. I prezzi per professionisti sono nella nostra selezione, inviata su richiesta.",
     "portfolioCta": "Vedi tutta la nostra selezione",
@@ -527,7 +529,7 @@
     "formTexte": "Qualche parola sulla vostra tenuta e sulle vostre cuvée: vi ricontatteremo per un incontro in tenuta."
   },
   "selection": {
-    "surTitre": "La nostra selezione",
+    "surTitre": "Il catalogo",
     "titre": "La nostra selezione cresce a ogni incontro",
     "texte": "Dalla Côte des Bar a Montgueux, ogni stagione incontriamo nuovi vignaioli. Ricevete la selezione del momento via e-mail: le tenute, i loro villaggi, le loro cuvée.",
     "bouton": "Ricevere la nostra selezione",
@@ -539,7 +541,7 @@
     "intro": "A Troyes o a casa vostra, attorno a un tavolo da 6 a 13 persone, vi presentiamo dei vignaioli della nostra selezione: il loro villaggio, le loro parcelle, il loro modo di lavorare. Un'ora e mezza, con un quiz, per capire cosa li distingue.",
     "metaTitle": "Degustazione di champagne a Troyes: laboratori con vignaioli dell'Aube | Champagne de l'Aube",
     "metaDescription": "Degustazioni di champagne di vignaioli dell'Aube, a Troyes o a casa vostra, da 6 a 13 persone, per un'ora e mezza, con un quiz.",
-    "surTitre": "Le nostre degustazioni",
+    "surTitre": "A Troyes o a casa vostra",
     "h1": "Degustazioni di champagne a Troyes",
     "ctaReserver": "Prenotare una degustazione",
     "ctaEvenements": "I vostri grandi eventi",
@@ -649,7 +651,7 @@
     "ctaDevis": "Chiedere un preventivo",
     "ctaBrochure": "Ricevere la brochure CRAL",
     "coffrets": {
-      "surTitre": "Confezioni",
+      "surTitre": "Per i vostri dipendenti e clienti",
       "titre": "Confezioni regalo & offerte CRAL",
       "texte": "Confezioni composte con tenute della nostra selezione, per i vostri dipendenti, clienti o partner. Ogni confezione racconta un villaggio e un vignaiolo.",
       "points": [
@@ -658,7 +660,7 @@
       ]
     },
     "animations": {
-      "surTitre": "Animazioni",
+      "surTitre": "Per i vostri team",
       "titre": "Degustazioni & team building",
       "texte": "Una degustazione guidata, nei vostri locali o a Troyes, per scoprire i terroir dell'Aube attraverso i suoi vignaioli, con un quiz finale.",
       "points": [
@@ -704,6 +706,11 @@
     "offrePro": "Scoprire l'offerta per professionisti",
     "carteTitre": "Quattro terroir",
     "carteIntro": "Dalla Côte des Bar a Villenauxe-la-Grande, ogni terroir ha il suo suolo, i suoi vitigni e i suoi vignaioli.",
-    "faqTitre": "Le vostre domande sul terroir dell'Aube"
+    "faqTitre": "Le vostre domande sul terroir dell'Aube",
+    "cepagesGroupes": {
+      "principaux": "I grandi vitigni",
+      "rares": "I vitigni rari",
+      "nouveau": "Il nuovo arrivato"
+    }
   }
 }

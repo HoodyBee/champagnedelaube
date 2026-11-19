@@ -26,7 +26,9 @@
     "mariage": "Vos Grands Événements",
     "mag": "Le Mag",
     "menu": "Menu",
-    "proEntreprises": "Espace Pro & Entreprises"
+    "proEntreprises": "Espace Pro & Entreprises",
+    "terroirHubLink": "Découvrir les terroirs",
+    "tastingLink": "Toutes nos dégustations"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -462,7 +464,7 @@
       }
     },
     "argumentsTitre": "Un interlocuteur, plusieurs domaines",
-    "portfolioSurTitre": "Les domaines",
+    "portfolioSurTitre": "Vignerons indépendants",
     "portfolioTitre": "Les domaines de la sélection",
     "portfolioIntro": "Des domaines complémentaires par leurs terroirs et leurs cépages. Les tarifs pro figurent dans notre sélection, envoyée sur demande.",
     "portfolioCta": "Voir toute notre sélection",
@@ -527,7 +529,7 @@
     "formTexte": "Quelques mots sur votre domaine et vos cuvées : nous vous recontactons pour une rencontre au domaine."
   },
   "selection": {
-    "surTitre": "Notre sélection",
+    "surTitre": "Le catalogue",
     "titre": "Notre sélection évolue au fil des rencontres",
     "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
     "bouton": "Recevoir notre sélection",
@@ -539,7 +541,7 @@
     "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue.",
     "metaTitle": "Dégustation de champagne à Troyes : ateliers de vignerons de l'Aube | Champagne de l'Aube",
     "metaDescription": "Des dégustations de champagnes de vignerons de l'Aube, à Troyes ou chez vous, de 6 à 13 personnes, pendant 1 h 30, avec un quiz.",
-    "surTitre": "Nos Dégustations",
+    "surTitre": "À Troyes ou chez vous",
     "h1": "Dégustations de champagne à Troyes",
     "ctaReserver": "Réserver une dégustation",
     "ctaEvenements": "Vos Grands Événements",
@@ -649,7 +651,7 @@
     "ctaDevis": "Demander un devis",
     "ctaBrochure": "Recevoir la brochure CSE",
     "coffrets": {
-      "surTitre": "Coffrets",
+      "surTitre": "Pour vos salariés et vos clients",
       "titre": "Coffrets cadeaux & offres CSE",
       "texte": "Des coffrets composés avec des domaines de notre sélection, pour vos salariés, vos clients ou vos partenaires. Chaque coffret raconte un village et un vigneron.",
       "points": [
@@ -658,7 +660,7 @@
       ]
     },
     "animations": {
-      "surTitre": "Animations",
+      "surTitre": "Pour vos équipes",
       "titre": "Animations & team building",
       "texte": "Une dégustation commentée, dans vos locaux ou à Troyes, pour découvrir les terroirs de l'Aube à travers ses vignerons, avec un quiz pour finir.",
       "points": [
@@ -704,6 +706,11 @@
     "offrePro": "Découvrir l'offre pro",
     "carteTitre": "Quatre terroirs",
     "carteIntro": "De la Côte des Bar à Villenauxe-la-Grande, chaque terroir a son sol, ses cépages et ses vignerons.",
-    "faqTitre": "Vos questions sur le terroir de l'Aube"
+    "faqTitre": "Vos questions sur le terroir de l'Aube",
+    "cepagesGroupes": {
+      "principaux": "Les grands cépages",
+      "rares": "Les cépages rares",
+      "nouveau": "Le nouveau venu"
+    }
   }
 }

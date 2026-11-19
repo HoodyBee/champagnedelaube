@@ -28,7 +28,6 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
   setRequestLocale(locale);
   const t = await getTranslations("partenairePage");
   const tNav = await getTranslations("nav");
-  const tUi = await getTranslations("ui");
   const page = await getPageContent(CLE, locale);
   const titre = page.titre ?? t("h1");
 
@@ -50,7 +49,7 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
             {t("formTitre")}
           </ButtonLink>
         </div>
-        {page.image && <Photo image={page.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority placeholderLabel={tUi("photoSoon")} />}
+        {page.image && <Photo image={page.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile />}
       </header>
 
       <Section>

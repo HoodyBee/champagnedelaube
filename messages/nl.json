@@ -26,7 +26,9 @@
     "mariage": "Uw grote gelegenheden",
     "mag": "Le Mag",
     "menu": "Menu",
-    "proEntreprises": "Professionals & bedrijven"
+    "proEntreprises": "Professionals & bedrijven",
+    "terroirHubLink": "Ontdek de terroirs",
+    "tastingLink": "Al onze proeverijen"
   },
   "langSwitcher": {
     "label": "Kies een taal",
@@ -462,7 +464,7 @@
       }
     },
     "argumentsTitre": "Eén contactpersoon, meerdere domeinen",
-    "portfolioSurTitre": "De domeinen",
+    "portfolioSurTitre": "Onafhankelijke wijnmakers",
     "portfolioTitre": "De domeinen in de selectie",
     "portfolioIntro": "Domeinen die elkaar aanvullen in terroir en druivenrassen. De professionele prijzen staan in onze selectie, op aanvraag verstuurd.",
     "portfolioCta": "Bekijk onze hele selectie",
@@ -527,7 +529,7 @@
     "formTexte": "Een paar woorden over uw domein en uw cuvées: we nemen contact met u op voor een bezoek aan het domein."
   },
   "selection": {
-    "surTitre": "Onze selectie",
+    "surTitre": "De catalogus",
     "titre": "Onze selectie groeit met elke ontmoeting",
     "texte": "Van de Côte des Bar tot Montgueux ontmoeten we elk seizoen nieuwe wijnmakers. Ontvang de huidige selectie per e-mail: de domeinen, hun dorpen, hun cuvées.",
     "bouton": "Ontvang onze selectie",
@@ -539,7 +541,7 @@
     "intro": "In Troyes of bij u thuis, rond een tafel van 6 tot 13 personen, stellen we u wijnmakers uit onze selectie voor: hun dorp, hun percelen, hun manier van werken. Anderhalf uur, met een quiz, om te begrijpen wat hen onderscheidt.",
     "metaTitle": "Champagneproeverij in Troyes: workshops met wijnmakers uit de Aube | Champagne de l'Aube",
     "metaDescription": "Proeverijen van wijnmakerschampagnes uit de Aube, in Troyes of bij u thuis, voor 6 tot 13 personen, anderhalf uur lang, met een quiz.",
-    "surTitre": "Onze proeverijen",
+    "surTitre": "In Troyes of bij u thuis",
     "h1": "Champagneproeverijen in Troyes",
     "ctaReserver": "Een proeverij boeken",
     "ctaEvenements": "Uw grote gelegenheden",
@@ -649,7 +651,7 @@
     "ctaDevis": "Offerte aanvragen",
     "ctaBrochure": "Brochure voor ondernemingsraden ontvangen",
     "coffrets": {
-      "surTitre": "Geschenkdozen",
+      "surTitre": "Voor uw medewerkers en klanten",
       "titre": "Geschenkdozen & aanbod voor ondernemingsraden",
       "texte": "Geschenkdozen samengesteld met domeinen uit onze selectie, voor uw medewerkers, klanten of partners. Elke doos vertelt het verhaal van een dorp en een wijnmaker.",
       "points": [
@@ -658,7 +660,7 @@
       ]
     },
     "animations": {
-      "surTitre": "Activiteiten",
+      "surTitre": "Voor uw teams",
       "titre": "Proeverijen & teambuilding",
       "texte": "Een begeleide proeverij, bij u op kantoor of in Troyes, om de terroirs van de Aube te ontdekken via hun wijnmakers, met een quiz als afsluiter.",
       "points": [
@@ -704,6 +706,11 @@
     "offrePro": "Ontdek het aanbod voor professionals",
     "carteTitre": "Vier terroirs",
     "carteIntro": "Van de Côte des Bar tot Villenauxe-la-Grande heeft elk terroir zijn bodem, zijn druiven en zijn wijnmakers.",
-    "faqTitre": "Uw vragen over het terroir van de Aube"
+    "faqTitre": "Uw vragen over het terroir van de Aube",
+    "cepagesGroupes": {
+      "principaux": "De grote druivenrassen",
+      "rares": "De zeldzame druivenrassen",
+      "nouveau": "De nieuwkomer"
+    }
   }
 }
