@@ -6,6 +6,7 @@ import { RichText } from "@/components/ui/RichText";
 import { Link } from "@/i18n/navigation";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
+import { adresseSiege } from "@/lib/legal";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages } from "@/sanity/queries";
 
@@ -36,7 +37,7 @@ export default async function LegalNoticePage({ params }: PageProps<"/[locale]/m
   const titre = localize(page?.titre, locale) ?? t("title");
   const contenu = localize(page?.contenu, locale);
   // Adresse du siège administratif : modifiable dans les Réglages du site ; affichée ici seulement.
-  const adresse = reglages.adresseSiege || t("adresseDefaut");
+  const adresse = adresseSiege(reglages.adresseSiege, locale);
   const mention = localize(reglages.adresseMention, locale) || t("mentionDefaut");
 
   return (

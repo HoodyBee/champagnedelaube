@@ -5,6 +5,7 @@ import { Paragraphs } from "@/components/legal/Paragraphs";
 import { RichText } from "@/components/ui/RichText";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
+import { adresseSiege } from "@/lib/legal";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages } from "@/sanity/queries";
 
@@ -32,8 +33,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/polit
   setRequestLocale(locale);
   const t = await getTranslations("privacy");
   const [page, reglages] = await Promise.all([getPage("confidentialite"), getReglages()]);
-  const tNotice = await getTranslations("legalNoticePage");
-  const adresse = reglages.adresseSiege || tNotice("adresseDefaut");
+  const adresse = adresseSiege(reglages.adresseSiege, locale);
   const titre = localize(page?.titre, locale) ?? t("title");
   const contenu = localize(page?.contenu, locale);
 

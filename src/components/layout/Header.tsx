@@ -159,11 +159,11 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
             </div>
 
             {/* Groupe de droite, d'un seul tenant : Espace Pro & Entreprises | FR / EN | Contact */}
-            <div className="flex items-center gap-space-1 xl:gap-space-2">
+            <div className="flex items-center gap-space-1 2xl:gap-space-2">
               <div className="hidden xl:block">
                 <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
               </div>
-              <span aria-hidden="true" className="hidden h-5 w-px bg-filet xl:block" />
+              <span aria-hidden="true" className="hidden h-5 w-px bg-filet 2xl:block" />
               <SocialLinks links={social} labels={socialLabels} compact iconSize={17} className="hidden xl:flex" linkClassName="text-gris-chaud hover:text-bronze" />
               <div className="hidden xl:block">
                 <LanguageSwitcher variant="compact" locales={locales} />
@@ -215,7 +215,7 @@ function NavLink({ href, active, children }: { href: AppPathname; active: boolea
     <Link
       href={href}
       aria-current={active ? "page" : undefined}
-      className={`inline-flex min-h-11 items-center whitespace-nowrap px-space-1 transition-colors hover:text-bronze ${
+      className={`inline-flex min-h-11 items-center whitespace-nowrap px-[6px] 2xl:px-space-1 transition-colors hover:text-bronze ${
         active ? "text-bronze underline decoration-or decoration-2 underline-offset-8" : ""
       }`}
     >
@@ -294,7 +294,7 @@ function Dropdown({
           }
           setOpen((v) => !v);
         }}
-        className={`inline-flex min-h-11 items-center gap-1 whitespace-nowrap px-space-1 transition-colors hover:text-bronze ${
+        className={`inline-flex min-h-11 items-center gap-1 whitespace-nowrap px-[6px] 2xl:px-space-1 transition-colors hover:text-bronze ${
           active ? "text-bronze" : ""
         }`}
       >

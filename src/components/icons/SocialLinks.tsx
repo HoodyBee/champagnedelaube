@@ -36,7 +36,7 @@ export function SocialLinks({
             rel="noopener"
             aria-label={labels[k]}
             title={labels[k]}
-            className={`inline-flex ${compact ? "h-10 w-8" : "h-11 w-11"} items-center justify-center transition-colors ${linkClassName}`}
+            className={`inline-flex ${compact ? "h-10 w-7" : "h-11 w-11"} items-center justify-center transition-colors ${linkClassName}`}
           >
             <SocialIcon name={k} size={iconSize} />
           </a>
