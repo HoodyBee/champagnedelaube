@@ -109,7 +109,7 @@ export default async function ArticlePage({ params }: Props) {
           {a.extrait && <p className="mt-space-3 text-accroche text-gris-chaud">{a.extrait}</p>}
         </header>
         <div data-reveal className="mx-auto max-w-5xl px-space-2 sm:px-space-4">
-          <Photo image={a.image} ratio="16/9" sizes="(min-width: 1024px) 1024px, 100vw" priority />
+          <Photo image={a.image} ratio="16/9" sizes="(min-width: 1024px) 1024px, 100vw" priority compactMobile />
         </div>
         {a.contenu?.length ? (
           <div className="mx-auto max-w-3xl px-space-2 py-space-5 sm:px-space-4">

@@ -1,0 +1,85 @@
+{
+  "slug": "pinot-gris-fromenteau-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "titre": {
+    "fr": "Le pinot gris, ou fromenteau, en Champagne",
+    "en": "Pinot gris, or fromenteau, in Champagne",
+    "nl": "Pinot gris, of fromenteau, in de Champagne",
+    "it": "Il pinot gris, o fromenteau, in Champagne"
+  },
+  "motCle": "pinot gris champagne (fromenteau)",
+  "extrait": {
+    "fr": "En Champagne, le pinot gris porte un nom ancien : le fromenteau. Un cépage rare, remis à l'honneur dans la Côte des Bar.",
+    "en": "In Champagne, pinot gris has an old name: fromenteau. A rare grape, brought back to the fore in the Côte des Bar.",
+    "nl": "In de Champagne heeft pinot gris een oude naam: fromenteau. Een zeldzaam ras, opnieuw in ere hersteld in de Côte des Bar.",
+    "it": "In Champagne il pinot gris ha un nome antico: fromenteau. Un vitigno raro, tornato in auge nella Côte des Bar."
+  },
+  "seo": {
+    "title": {
+      "fr": "Pinot gris (fromenteau) et champagne : un cépage rare | Champagne de l'Aube",
+      "en": "Pinot gris (fromenteau) and champagne: a rare grape | Champagne de l'Aube",
+      "nl": "Pinot gris (fromenteau) en champagne: een zeldzaam ras | Champagne de l'Aube",
+      "it": "Pinot gris (fromenteau) e champagne: un vitigno raro | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le pinot gris, appelé fromenteau en Champagne : un cépage rare autorisé dans l'appellation et cultivé par quelques vignerons de la Côte des Bar.",
+      "en": "Pinot gris, called fromenteau in Champagne: a rare grape permitted in the appellation and grown by a few Côte des Bar winemakers.",
+      "nl": "Pinot gris, in de Champagne fromenteau genoemd: een zeldzaam ras dat in de appellatie is toegestaan en door enkele wijnmakers in de Côte des Bar wordt geteeld.",
+      "it": "Il pinot gris, chiamato fromenteau in Champagne: un vitigno raro ammesso nella denominazione e coltivato da alcuni vignaioli della Côte des Bar."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un nom champenois",
+        "en": "A Champagne name",
+        "nl": "Een Champagnenaam",
+        "it": "Un nome champenois"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le pinot gris fait partie des cépages autorisés en Champagne. Dans la région, on le connaît sous un nom plus ancien : le fromenteau.",
+          "en": "Pinot gris is one of the grapes permitted in Champagne. In the region it is known by an older name: fromenteau.",
+          "nl": "Pinot gris is een van de toegestane rassen in de Champagne. In de streek kent men hem onder een oudere naam: fromenteau.",
+          "it": "Il pinot gris è tra i vitigni ammessi in Champagne. Nella regione è conosciuto con un nome più antico: fromenteau."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Remis à l'honneur dans l'Aube",
+        "en": "Revived in the Aube",
+        "nl": "Herontdekt in de Aube",
+        "it": "Riscoperto nell'Aube"
+      },
+      "paragraphes": [
+        {
+          "fr": "Comme l'arbane ou le petit meslier, le fromenteau a failli disparaître. Dans la [Côte des Bar](/la-cote-des-bar), des vignerons, notamment à Urville, l'ont replanté et en tirent aujourd'hui des cuvées confidentielles.",
+          "en": "Like arbane or petit meslier, fromenteau almost disappeared. In the [Côte des Bar](/la-cote-des-bar), winemakers, notably in Urville, have replanted it and now make small-batch cuvées from it.",
+          "nl": "Net als arbane of petit meslier was fromenteau bijna verdwenen. In de [Côte des Bar](/la-cote-des-bar) hebben wijnmakers, onder meer in Urville, hem opnieuw aangeplant en maken er nu kleine cuvées van.",
+          "it": "Come l'arbane o il petit meslier, il fromenteau stava per scomparire. Nella [Côte des Bar](/la-cote-des-bar), alcuni vignaioli, in particolare a Urville, l'hanno ripiantato e oggi ne ricavano cuvée confidenziali."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Les goûter",
+        "en": "Tasting them",
+        "nl": "Ze proeven",
+        "it": "Assaggiarli"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    }
+  ],
+  "rubriques": [
+    "tout-savoir"
+  ]
+}

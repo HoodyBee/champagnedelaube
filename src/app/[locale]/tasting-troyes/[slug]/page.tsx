@@ -59,7 +59,7 @@ export default async function ExperiencePage({ params }: Props) {
     <>
       <Breadcrumb locale={locale} items={[{ label: tNav("tasting"), href: nav.particuliers[0].href }, { label: e.titre }]} />
       <section className="mx-auto grid max-w-7xl items-start gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:py-space-5">
-        <Photo image={e.image} ratio="4/5" sizes="(min-width: 1024px) 50vw, 100vw" priority className="lg:order-2" />
+        <Photo image={e.image} ratio="4/5" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="lg:order-2" />
         <div className="lg:order-1">
           <h1 className="text-titre-post">{e.titre}</h1>
           {e.accroche && <p className="mt-space-2 text-accroche text-gris-chaud">{e.accroche}</p>}

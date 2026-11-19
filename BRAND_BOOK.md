@@ -233,6 +233,10 @@ Une seule famille principale rend l'identité cohérente, chaleureuse et artisan
 - **Les sujets** : fourchette et flûte (Accords), palette (Art & Champagne), bulles (Autres bulles auboises), calendrier étoilé (Événements), bulle de dialogue avec un cœur (Vos partages), verre à dégustation avec ses bulles (Dégustations).
 - Style : trait seul, épaisseur constante, bouts arrondis, sans remplissage. Pas d'emoji, pas d'icônes d'un autre style.
 
+## Les cépages sur le site
+
+Les cépages s'affichent en **version légère** : la grappe blanche dans une petite pastille ronde de la couleur du cépage (32 à 44 px), et le nom écrit à côté. La vignette carrée complète est réservée aux supports imprimés et aux grands formats. Sur le site, on regroupe : les grands cépages (pinot noir, meunier, chardonnay), les cépages rares (pinot blanc, pinot gris ou fromenteau, arbane, petit meslier) et le chardonnay rose, autorisé depuis 2025.
+
 ## Les pictos thématiques (pour classer cuvées et vignerons sur le site)
 
 | Picto | Dessin | Couleur |

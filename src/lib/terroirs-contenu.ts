@@ -23,6 +23,8 @@ export type TerroirContenu = {
   villages: string[];
   cepagesDominants: CepageKey[];
   sols?: T;
+  /** Précision sous un cépage (ex. chardonnay rose : autorisé depuis 2025). */
+  cepagesNotes?: Partial<Record<CepageKey, T>>;
   secteurs?: { titre: T; texte: T }[];
   sections: { titre: T; paragraphes: T[] }[];
 };
@@ -42,7 +44,6 @@ export const aubeContenu = aube as unknown as AubeContenu;
 /** Texte dans la langue demandée (secours : anglais, puis français). */
 export const tr = (v: T | undefined, locale: Locale) => v?.[locale] ?? v?.en ?? v?.fr ?? "";
 
-export const ANECDOTE = "[VOTRE ANECDOTE]";
 let n = 0;
 const key = () => `k${(n++).toString(36)}`;
 
@@ -69,8 +70,7 @@ export function paragrapheEnBloc(texte: string, locale: Locale, style: "normal" 
     last = m.index + m[0].length;
   }
   if (last < texte.length) children.push({ _type: "span", _key: key(), text: texte.slice(last), marks: [] });
-  const finalStyle = texte.startsWith(ANECDOTE) ? "blockquote" : style;
-  return { _type: "block", _key: key(), style: finalStyle, markDefs, children } as PortableTextBlock;
+  return { _type: "block", _key: key(), style, markDefs, children } as PortableTextBlock;
 }
 
 /** Sections (intertitre + paragraphes) -> texte enrichi complet. */

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { BrandBadge } from "@/components/brand/BrandBadge";
+import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { ButtonLink } from "@/components/ui/Button";
 import { Photo } from "@/components/ui/Photo";
@@ -9,9 +9,13 @@ import { Section } from "@/components/ui/Section";
 import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { cepages, terroirs, type TerroirKey } from "@/lib/brand";
+import { terroirs, type TerroirKey } from "@/lib/brand";
 import { nav, terroirPages } from "@/lib/site";
 import { getTerroir } from "@/sanity/content";
+
+const GRANDS = ["pinot-noir", "meunier", "chardonnay"] as const;
+const RARES = ["pinot-blanc", "pinot-gris", "arbane", "petit-meslier"] as const;
+const NOUVEAUX = ["chardonnay-rose"] as const;
 
 const hrefOf = (cle: TerroirKey) => terroirPages.find((p) => p.key === cle)!.href;
 
@@ -41,7 +45,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
             {t.accroche && <p className="mt-space-3 text-accroche">{t.accroche}</p>}
             {t.intro && <p className="mt-space-2 max-w-xl text-[1.125rem] text-gris-chaud">{t.intro}</p>}
           </div>
-          <Photo image={t.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority className="order-1 lg:order-2" />
+          <Photo image={t.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />
         </div>
       </section>
 
@@ -71,13 +75,28 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
             {t.cepagesDominants.length > 0 && (
               <div>
                 <h2 className="text-sur-titre text-bronze">{tT("cepages")}</h2>
-                <ul className="mt-space-2 flex flex-wrap gap-space-1">
-                  {t.cepagesDominants.map((c) => (
-                    <li key={c} title={cepages[c].label}>
-                      <BrandBadge asset={cepages[c]} size={64} />
-                    </li>
-                  ))}
-                </ul>
+                {(
+                  [
+                    ["principaux", GRANDS],
+                    ["rares", RARES],
+                    ["nouveau", NOUVEAUX],
+                  ] as const
+                ).map(([groupe, liste]) => {
+                  const items = t.cepagesDominants.filter((c) => (liste as readonly string[]).includes(c));
+                  if (!items.length) return null;
+                  return (
+                    <div key={groupe} className="mt-space-2">
+                      {t.cepagesDominants.length > 3 && <p className="text-sur-titre-petit text-gris-chaud">{tT(`cepagesGroupes.${groupe}`)}</p>}
+                      <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
+                        {items.map((c) => (
+                          <li key={c}>
+                            <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} />
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             )}
             {t.villages.length > 0 && (

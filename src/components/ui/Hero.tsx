@@ -35,6 +35,7 @@ export function Hero({
           ratio="4/3"
           sizes="(min-width: 1024px) 50vw, 100vw"
           priority
+          compactMobile
           placeholderLabel={placeholderLabel}
           className="order-1 lg:order-2"
         />

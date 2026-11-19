@@ -1,0 +1,4391 @@
+[
+  {
+    "_id": "drafts.article-arbane-cepage-champagne",
+    "existant": false,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "arbane-cepage-champagne"
+      },
+      "date": "2026-11-19"
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "L'arbane, le plus rare des cépages champenois",
+        "en": "Arbane, the rarest Champagne grape",
+        "nl": "Arbane, het zeldzaamste champagneras",
+        "it": "L'arbane, il più raro dei vitigni champenois"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "Difficile à cultiver, sensible au gel, l'arbane a presque disparu. Quelques vignerons de l'Aube le gardent vivant.",
+        "en": "Hard to grow and frost-sensitive, arbane almost disappeared. A few Aube winemakers keep it alive.",
+        "nl": "Moeilijk te telen en gevoelig voor vorst: arbane verdween bijna. Enkele wijnmakers in de Aube houden hem in leven.",
+        "it": "Difficile da coltivare e sensibile al gelo, l'arbane è quasi scomparso. Alcuni vignaioli dell'Aube lo mantengono in vita."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "a1",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a0",
+                "text": "Un cépage exigeant",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2",
+                "text": "L'arbane est un cépage blanc autorisé en Champagne. Difficile à cultiver et sensible au gel, il a été délaissé au profit des grands cépages, jusqu'à devenir l'un des plus rares de la région.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4",
+                "text": "Une histoire auboise",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aa",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a7",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6",
+                "text": "Les dernières vignes d'arbane se trouvent surtout dans l'Aube. À Buxeuil comme autour de Bar-sur-Aube, des vignerons de la ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a8",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a7"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a9",
+                "text": " l'ont préservé et l'assemblent parfois avec les autres cépages anciens.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ac",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ab",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ak",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "ae",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "ah",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ad",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "af",
+                "text": "nos dégustations",
+                "marks": [
+                  "ae"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ag",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ai",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "ah"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aj",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "am",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "al",
+                "text": "A demanding grape",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ao",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "an",
+                "text": "Arbane is a white grape permitted in Champagne. Hard to grow and frost-sensitive, it was abandoned in favour of the main grapes, until it became one of the rarest in the region.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aq",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ap",
+                "text": "An Aube affair",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "av",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "as",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ar",
+                "text": "The last arbane vines are found mainly in the Aube. In Buxeuil and around Bar-sur-Aube, winemakers of the ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "at",
+                "text": "Côte des Bar",
+                "marks": [
+                  "as"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "au",
+                "text": " have preserved it and sometimes blend it with the other old grapes.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ax",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aw",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a15",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "az",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a12",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ay",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a10",
+                "text": "our tastings",
+                "marks": [
+                  "az"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a11",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a13",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "a12"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a14",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "a17",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a16",
+                "text": "Een veeleisend ras",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a19",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a18",
+                "text": "Arbane is een wit ras dat in de Champagne is toegestaan. Moeilijk te telen en gevoelig voor vorst, werd hij verlaten ten gunste van de hoofdrassen, tot hij een van de zeldzaamste van de streek werd.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1b",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1a",
+                "text": "Een zaak van de Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1g",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a1d",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1c",
+                "text": "De laatste arbanestokken staan vooral in de Aube. In Buxeuil en rond Bar-sur-Aube hebben wijnmakers van de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a1e",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a1d"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a1f",
+                "text": " hem bewaard en assembleren ze hem soms met de andere oude rassen.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1i",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1h",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1q",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a1k",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a1n",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1j",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a1l",
+                "text": "onze proeverijen",
+                "marks": [
+                  "a1k"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a1m",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a1o",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "a1n"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a1p",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "a1s",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1r",
+                "text": "Un vitigno esigente",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1u",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1t",
+                "text": "L'arbane è un vitigno bianco ammesso in Champagne. Difficile da coltivare e sensibile al gelo, è stato abbandonato a favore dei grandi vitigni, fino a diventare uno dei più rari della regione.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a1w",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1v",
+                "text": "Una storia dell'Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a21",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a1y",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a1x",
+                "text": "Le ultime vigne di arbane si trovano soprattutto nell'Aube. A Buxeuil e attorno a Bar-sur-Aube, vignaioli della ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a1z",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a1y"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a20",
+                "text": " l'hanno preservato e talvolta lo assemblano con gli altri vitigni antichi.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a23",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a22",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2b",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a25",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a28",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a24",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a26",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "a25"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a27",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a29",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a28"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a2a",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "L'arbane, cépage rare du champagne dans l'Aube | Champagne de l'Aube",
+          "en": "Arbane, a rare champagne grape in the Aube | Champagne de l'Aube",
+          "nl": "Arbane, een zeldzaam champagneras in de Aube | Champagne de l'Aube",
+          "it": "L'arbane, vitigno raro dello champagne nell'Aube | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "L'arbane, cépage blanc rare autorisé en Champagne, difficile à cultiver et sensible au gel, préservé par quelques vignerons de l'Aube.",
+          "en": "Arbane, a rare white grape permitted in Champagne, hard to grow and frost-sensitive, preserved by a few Aube winemakers.",
+          "nl": "Arbane, een zeldzaam wit ras dat in de Champagne is toegestaan, moeilijk te telen en vorstgevoelig, bewaard door enkele wijnmakers in de Aube.",
+          "it": "L'arbane, raro vitigno bianco ammesso in Champagne, difficile da coltivare e sensibile al gelo, preservato da alcuni vignaioli dell'Aube."
+        }
+      }
+    }
+  },
+  {
+    "_id": "drafts.article-chardonnay-rose-champagne",
+    "existant": false,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "chardonnay-rose-champagne"
+      },
+      "date": "2026-11-19"
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "Le chardonnay rose, le huitième cépage du champagne",
+        "en": "Chardonnay rose, the eighth champagne grape",
+        "nl": "Chardonnay rose, het achtste champagneras",
+        "it": "Lo chardonnay rose, l'ottavo vitigno dello champagne"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "Mutation naturelle du chardonnay, le chardonnay rose est entré en 2025 dans la liste des cépages du champagne.",
+        "en": "A natural mutation of chardonnay, chardonnay rose joined the list of champagne grapes in 2025.",
+        "nl": "Chardonnay rose, een natuurlijke mutatie van chardonnay, kwam in 2025 op de lijst van champagnerassen.",
+        "it": "Mutazione naturale dello chardonnay, lo chardonnay rose è entrato nel 2025 nell'elenco dei vitigni dello champagne."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "a2d",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2c",
+                "text": "Une mutation naturelle",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2f",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2e",
+                "text": "Le chardonnay rose est une mutation naturelle du chardonnay : ses baies ont la peau rosée. Il était déjà connu en Champagne et en Bourgogne au début du XXe siècle.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2h",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2g",
+                "text": "Autorisé depuis 2025",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2j",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2i",
+                "text": "Un arrêté du 31 juillet 2025 l'a ajouté au cahier des charges de l'appellation Champagne. Il devient ainsi le huitième cépage autorisé. Nous suivrons avec curiosité les premiers vignerons de l'Aube qui le planteront.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2l",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2k",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2t",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a2n",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a2q",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2m",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a2o",
+                "text": "nos dégustations",
+                "marks": [
+                  "a2n"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a2p",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a2r",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a2q"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a2s",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "a2v",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2u",
+                "text": "A natural mutation",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2x",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2w",
+                "text": "Chardonnay rose is a natural mutation of chardonnay: its berries have pink skins. It was already known in Champagne and Burgundy in the early 20th century.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a2z",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a2y",
+                "text": "Permitted since 2025",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a31",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a30",
+                "text": "An order of 31 July 2025 added it to the rules of the Champagne appellation, making it the eighth permitted grape. We will follow with curiosity the first Aube winemakers to plant it.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a33",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a32",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3b",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a35",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a38",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a34",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a36",
+                "text": "our tastings",
+                "marks": [
+                  "a35"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a37",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a39",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "a38"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a3a",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "a3d",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3c",
+                "text": "Een natuurlijke mutatie",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3f",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3e",
+                "text": "Chardonnay rose is een natuurlijke mutatie van chardonnay: de bessen hebben een roze schil. Hij was begin 20e eeuw al bekend in de Champagne en Bourgondië.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3h",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3g",
+                "text": "Toegestaan sinds 2025",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3j",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3i",
+                "text": "Een besluit van 31 juli 2025 voegde hem toe aan het lastenboek van de appellatie Champagne. Zo wordt hij het achtste toegestane ras. We volgen met nieuwsgierigheid de eerste wijnmakers in de Aube die hem aanplanten.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3l",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3k",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3t",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a3n",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a3q",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3m",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a3o",
+                "text": "onze proeverijen",
+                "marks": [
+                  "a3n"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a3p",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a3r",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "a3q"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a3s",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "a3v",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3u",
+                "text": "Una mutazione naturale",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3x",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3w",
+                "text": "Lo chardonnay rose è una mutazione naturale dello chardonnay: i suoi acini hanno la buccia rosata. Era già conosciuto in Champagne e in Borgogna all'inizio del Novecento.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a3z",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a3y",
+                "text": "Ammesso dal 2025",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a41",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a40",
+                "text": "Un decreto del 31 luglio 2025 l'ha aggiunto al disciplinare della denominazione Champagne, rendendolo l'ottavo vitigno ammesso. Seguiremo con curiosità i primi vignaioli dell'Aube che lo pianteranno.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a43",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a42",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4b",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a45",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a48",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a44",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a46",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "a45"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a47",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a49",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a48"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a4a",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "Chardonnay rose : le nouveau cépage autorisé en Champagne | Champagne de l'Aube",
+          "en": "Chardonnay rose: the newly permitted grape in Champagne | Champagne de l'Aube",
+          "nl": "Chardonnay rose: het nieuw toegestane ras in de Champagne | Champagne de l'Aube",
+          "it": "Chardonnay rose: il nuovo vitigno ammesso in Champagne | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "Le chardonnay rose, mutation naturelle du chardonnay, ajouté en 2025 aux cépages de l'appellation Champagne.",
+          "en": "Chardonnay rose, a natural mutation of chardonnay, added in 2025 to the grapes of the Champagne appellation.",
+          "nl": "Chardonnay rose, een natuurlijke mutatie van chardonnay, in 2025 toegevoegd aan de rassen van de appellatie Champagne.",
+          "it": "Lo chardonnay rose, mutazione naturale dello chardonnay, aggiunto nel 2025 ai vitigni della denominazione Champagne."
+        }
+      }
+    }
+  },
+  {
+    "_id": "drafts.article-petit-meslier-cepage-champagne",
+    "existant": false,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "petit-meslier-cepage-champagne"
+      },
+      "date": "2026-11-19"
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "Le petit meslier, un cépage de fraîcheur",
+        "en": "Petit meslier, a grape of freshness",
+        "nl": "Petit meslier, een ras van frisheid",
+        "it": "Il petit meslier, un vitigno di freschezza"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "Né d'un croisement ancien, le petit meslier est apprécié pour sa fraîcheur. Un cépage rare, surtout présent dans l'Aube.",
+        "en": "Born of an ancient cross, petit meslier is valued for its freshness. A rare grape, found mainly in the Aube.",
+        "nl": "Ontstaan uit een oude kruising, wordt petit meslier gewaardeerd om zijn frisheid. Een zeldzaam ras, vooral in de Aube.",
+        "it": "Nato da un antico incrocio, il petit meslier è apprezzato per la sua freschezza. Un vitigno raro, presente soprattutto nell'Aube."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "a4d",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4c",
+                "text": "Une origine ancienne",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4f",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4e",
+                "text": "Le petit meslier est issu d'un croisement entre deux très vieux cépages, le gouais et le savagnin. C'est l'un des cépages anciens autorisés par l'appellation Champagne.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4h",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4g",
+                "text": "La fraîcheur avant tout",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4m",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a4j",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4i",
+                "text": "Les vignerons qui le cultivent l'apprécient pour sa fraîcheur et ses notes citronnées. On le trouve surtout dans l'Aube, en particulier dans la ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a4k",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a4j"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a4l",
+                "text": ", et dans la vallée de la Marne.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4o",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4n",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a4w",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a4q",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a4t",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4p",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a4r",
+                "text": "nos dégustations",
+                "marks": [
+                  "a4q"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a4s",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a4u",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a4t"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a4v",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "a4y",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4x",
+                "text": "An ancient origin",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a50",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a4z",
+                "text": "Petit meslier comes from a cross between two very old grapes, gouais and savagnin. It is one of the old grapes permitted by the Champagne appellation.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a52",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a51",
+                "text": "Freshness first",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a57",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a54",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a53",
+                "text": "Winemakers who grow it value its freshness and lemony notes. It is found mainly in the Aube, especially in the ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a55",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a54"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a56",
+                "text": ", and in the Marne valley.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a59",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a58",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5h",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a5b",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a5e",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5a",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a5c",
+                "text": "our tastings",
+                "marks": [
+                  "a5b"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a5d",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a5f",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "a5e"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a5g",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "a5j",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5i",
+                "text": "Een oude oorsprong",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5l",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5k",
+                "text": "Petit meslier komt voort uit een kruising tussen twee zeer oude rassen, gouais en savagnin. Het is een van de oude rassen die de appellatie Champagne toestaat.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5n",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5m",
+                "text": "Frisheid voorop",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5s",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a5p",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5o",
+                "text": "Wijnmakers die hem telen waarderen zijn frisheid en citroenachtige toetsen. Je vindt hem vooral in de Aube, met name in de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a5q",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a5p"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a5r",
+                "text": ", en in de Marnevallei.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a5u",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5t",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a62",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a5w",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a5z",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a5v",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a5x",
+                "text": "onze proeverijen",
+                "marks": [
+                  "a5w"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a5y",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a60",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "a5z"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a61",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "a64",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a63",
+                "text": "Un'origine antica",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a66",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a65",
+                "text": "Il petit meslier nasce da un incrocio tra due vitigni antichissimi, il gouais e il savagnin. È uno dei vitigni antichi ammessi dalla denominazione Champagne.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a68",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a67",
+                "text": "La freschezza prima di tutto",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6d",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a6a",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a69",
+                "text": "I vignaioli che lo coltivano ne apprezzano la freschezza e le note di limone. Si trova soprattutto nell'Aube, in particolare nella ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a6b",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a6a"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a6c",
+                "text": ", e nella valle della Marna.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6f",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6e",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6n",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a6h",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a6k",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6g",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a6i",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "a6h"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a6j",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a6l",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a6k"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a6m",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "Le petit meslier, cépage rare du champagne | Champagne de l'Aube",
+          "en": "Petit meslier, a rare champagne grape | Champagne de l'Aube",
+          "nl": "Petit meslier, een zeldzaam champagneras | Champagne de l'Aube",
+          "it": "Il petit meslier, vitigno raro dello champagne | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "Le petit meslier, croisement du gouais et du savagnin, cépage rare autorisé en Champagne et apprécié pour sa fraîcheur.",
+          "en": "Petit meslier, a cross of gouais and savagnin, a rare grape permitted in Champagne and valued for its freshness.",
+          "nl": "Petit meslier, een kruising van gouais en savagnin, een zeldzaam ras dat in de Champagne is toegestaan en om zijn frisheid wordt gewaardeerd.",
+          "it": "Il petit meslier, incrocio di gouais e savagnin, vitigno raro ammesso in Champagne e apprezzato per la sua freschezza."
+        }
+      }
+    }
+  },
+  {
+    "_id": "drafts.article-pinot-blanc-champagne",
+    "existant": false,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "pinot-blanc-champagne"
+      },
+      "date": "2026-11-19"
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "Le pinot blanc, un cépage rare de la Côte des Bar",
+        "en": "Pinot blanc, a rare grape of the Côte des Bar",
+        "nl": "Pinot blanc, een zeldzaam ras van de Côte des Bar",
+        "it": "Il pinot blanc, un vitigno raro della Côte des Bar"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "Autorisé en Champagne mais rarement planté, le pinot blanc garde quelques fidèles dans la Côte des Bar.",
+        "en": "Permitted in Champagne but rarely planted, pinot blanc still has a few devotees in the Côte des Bar.",
+        "nl": "Toegestaan in de Champagne maar zelden aangeplant: pinot blanc heeft nog trouwe telers in de Côte des Bar.",
+        "it": "Ammesso in Champagne ma raramente piantato, il pinot blanc conserva alcuni fedeli nella Côte des Bar."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "a6p",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6o",
+                "text": "Un cépage autorisé, mais discret",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6r",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6q",
+                "text": "Le pinot blanc fait partie des cépages autorisés par l'appellation Champagne, aux côtés du pinot noir, du meunier et du chardonnay. Il reste pourtant très peu planté. Dans l'Aube, on l'appelle parfois « blanc vrai ».",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6t",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6s",
+                "text": "Dans la Côte des Bar",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a6y",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a6v",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6u",
+                "text": "La ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a6w",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a6v"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a6x",
+                "text": " garde l'essentiel des cépages rares de la Champagne. Des vignerons de Buxeuil et d'Urville ont contribué à les préserver, et certains domaines, comme à Polisy, cultivent encore le pinot blanc aux côtés des grands cépages.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a70",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a6z",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a78",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a72",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a75",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a71",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a73",
+                "text": "nos dégustations",
+                "marks": [
+                  "a72"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a74",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a76",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a75"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a77",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "a7a",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a79",
+                "text": "Permitted, but discreet",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7c",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7b",
+                "text": "Pinot blanc is one of the grapes permitted by the Champagne appellation, alongside pinot noir, meunier and chardonnay. Yet it remains very little planted. In the Aube, it is sometimes called \"blanc vrai\".",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7e",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7d",
+                "text": "In the Côte des Bar",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7j",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a7g",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7f",
+                "text": "The ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a7h",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a7g"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a7i",
+                "text": " keeps most of Champagne's rare grapes. Winemakers in Buxeuil and Urville helped preserve them, and some estates, such as in Polisy, still grow pinot blanc alongside the main grapes.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7l",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7k",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7t",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a7n",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a7q",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7m",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a7o",
+                "text": "our tastings",
+                "marks": [
+                  "a7n"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a7p",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a7r",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "a7q"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a7s",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "a7v",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7u",
+                "text": "Toegestaan, maar bescheiden",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7x",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7w",
+                "text": "Pinot blanc is een van de rassen die de appellatie Champagne toestaat, naast pinot noir, meunier en chardonnay. Toch wordt hij nog maar weinig aangeplant. In de Aube noemt men hem soms \"blanc vrai\".",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a7z",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a7y",
+                "text": "In de Côte des Bar",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a84",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a81",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a80",
+                "text": "De ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a82",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a81"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a83",
+                "text": " bewaart de meeste zeldzame rassen van de Champagne. Wijnmakers in Buxeuil en Urville hielpen ze te behouden, en sommige domeinen, zoals in Polisy, telen nog pinot blanc naast de hoofdrassen.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a86",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a85",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8e",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a88",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a8b",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a87",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a89",
+                "text": "onze proeverijen",
+                "marks": [
+                  "a88"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a8a",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a8c",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "a8b"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a8d",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "a8g",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8f",
+                "text": "Ammesso, ma discreto",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8i",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8h",
+                "text": "Il pinot blanc è tra i vitigni ammessi dalla denominazione Champagne, accanto a pinot noir, meunier e chardonnay. Resta però pochissimo piantato. Nell'Aube lo si chiama talvolta \"blanc vrai\".",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8k",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8j",
+                "text": "Nella Côte des Bar",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8p",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a8m",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8l",
+                "text": "La ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a8n",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a8m"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a8o",
+                "text": " conserva la maggior parte dei vitigni rari della Champagne. Vignaioli di Buxeuil e Urville hanno contribuito a preservarli, e alcune tenute, come a Polisy, coltivano ancora il pinot blanc accanto ai grandi vitigni.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8r",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8q",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a8z",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a8t",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a8w",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a8s",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a8u",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "a8t"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a8v",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a8x",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a8w"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a8y",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "Pinot blanc et champagne : un cépage rare de la Côte des Bar | Champagne de l'Aube",
+          "en": "Pinot blanc and champagne: a rare grape of the Côte des Bar | Champagne de l'Aube",
+          "nl": "Pinot blanc en champagne: een zeldzaam ras van de Côte des Bar | Champagne de l'Aube",
+          "it": "Pinot blanc e champagne: un vitigno raro della Côte des Bar | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "Le pinot blanc, l'un des cépages rares autorisés en Champagne, encore cultivé par quelques vignerons de la Côte des Bar.",
+          "en": "Pinot blanc, one of the rare grapes permitted in Champagne, still grown by a few Côte des Bar winemakers.",
+          "nl": "Pinot blanc, een van de zeldzame toegestane rassen in de Champagne, nog geteeld door enkele wijnmakers in de Côte des Bar.",
+          "it": "Il pinot blanc, uno dei vitigni rari ammessi in Champagne, ancora coltivato da alcuni vignaioli della Côte des Bar."
+        }
+      }
+    }
+  },
+  {
+    "_id": "drafts.article-pinot-gris-fromenteau-champagne",
+    "existant": false,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "pinot-gris-fromenteau-champagne"
+      },
+      "date": "2026-11-19"
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "Le pinot gris, ou fromenteau, en Champagne",
+        "en": "Pinot gris, or fromenteau, in Champagne",
+        "nl": "Pinot gris, of fromenteau, in de Champagne",
+        "it": "Il pinot gris, o fromenteau, in Champagne"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "En Champagne, le pinot gris porte un nom ancien : le fromenteau. Un cépage rare, remis à l'honneur dans la Côte des Bar.",
+        "en": "In Champagne, pinot gris has an old name: fromenteau. A rare grape, brought back to the fore in the Côte des Bar.",
+        "nl": "In de Champagne heeft pinot gris een oude naam: fromenteau. Een zeldzaam ras, opnieuw in ere hersteld in de Côte des Bar.",
+        "it": "In Champagne il pinot gris ha un nome antico: fromenteau. Un vitigno raro, tornato in auge nella Côte des Bar."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "a91",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a90",
+                "text": "Un nom champenois",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a93",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a92",
+                "text": "Le pinot gris fait partie des cépages autorisés en Champagne. Dans la région, on le connaît sous un nom plus ancien : le fromenteau.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a95",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a94",
+                "text": "Remis à l'honneur dans l'Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9a",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a97",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a96",
+                "text": "Comme l'arbane ou le petit meslier, le fromenteau a failli disparaître. Dans la ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a98",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a97"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a99",
+                "text": ", des vignerons, notamment à Urville, l'ont replanté et en tirent aujourd'hui des cuvées confidentielles.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9c",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9b",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9k",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a9e",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "a9h",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9d",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a9f",
+                "text": "nos dégustations",
+                "marks": [
+                  "a9e"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a9g",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a9i",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "a9h"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a9j",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "a9m",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9l",
+                "text": "A Champagne name",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9o",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9n",
+                "text": "Pinot gris is one of the grapes permitted in Champagne. In the region it is known by an older name: fromenteau.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9q",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9p",
+                "text": "Revived in the Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9v",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a9s",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9r",
+                "text": "Like arbane or petit meslier, fromenteau almost disappeared. In the ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "a9t",
+                "text": "Côte des Bar",
+                "marks": [
+                  "a9s"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "a9u",
+                "text": ", winemakers, notably in Urville, have replanted it and now make small-batch cuvées from it.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "a9x",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9w",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aa5",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "a9z",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "aa2",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "a9y",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aa0",
+                "text": "our tastings",
+                "marks": [
+                  "a9z"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aa1",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aa3",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "aa2"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aa4",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "aa7",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aa6",
+                "text": "Een Champagnenaam",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aa9",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aa8",
+                "text": "Pinot gris is een van de toegestane rassen in de Champagne. In de streek kent men hem onder een oudere naam: fromenteau.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aab",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aaa",
+                "text": "Herontdekt in de Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aag",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "aad",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aac",
+                "text": "Net als arbane of petit meslier was fromenteau bijna verdwenen. In de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aae",
+                "text": "Côte des Bar",
+                "marks": [
+                  "aad"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aaf",
+                "text": " hebben wijnmakers, onder meer in Urville, hem opnieuw aangeplant en maken er nu kleine cuvées van.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aai",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aah",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aaq",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "aak",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "aan",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aaj",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aal",
+                "text": "onze proeverijen",
+                "marks": [
+                  "aak"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aam",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aao",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "aan"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aap",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "aas",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aar",
+                "text": "Un nome champenois",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aau",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aat",
+                "text": "Il pinot gris è tra i vitigni ammessi in Champagne. Nella regione è conosciuto con un nome più antico: fromenteau.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aaw",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aav",
+                "text": "Riscoperto nell'Aube",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ab1",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "aay",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aax",
+                "text": "Come l'arbane o il petit meslier, il fromenteau stava per scomparire. Nella ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aaz",
+                "text": "Côte des Bar",
+                "marks": [
+                  "aay"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ab0",
+                "text": ", alcuni vignaioli, in particolare a Urville, l'hanno ripiantato e oggi ne ricavano cuvée confidenziali.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ab3",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ab2",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "abb",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "ab5",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "ab8",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ab4",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ab6",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "ab5"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ab7",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ab9",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "ab8"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aba",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "Pinot gris (fromenteau) et champagne : un cépage rare | Champagne de l'Aube",
+          "en": "Pinot gris (fromenteau) and champagne: a rare grape | Champagne de l'Aube",
+          "nl": "Pinot gris (fromenteau) en champagne: een zeldzaam ras | Champagne de l'Aube",
+          "it": "Pinot gris (fromenteau) e champagne: un vitigno raro | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "Le pinot gris, appelé fromenteau en Champagne : un cépage rare autorisé dans l'appellation et cultivé par quelques vignerons de la Côte des Bar.",
+          "en": "Pinot gris, called fromenteau in Champagne: a rare grape permitted in the appellation and grown by a few Côte des Bar winemakers.",
+          "nl": "Pinot gris, in de Champagne fromenteau genoemd: een zeldzaam ras dat in de appellatie is toegestaan en door enkele wijnmakers in de Côte des Bar wordt geteeld.",
+          "it": "Il pinot gris, chiamato fromenteau in Champagne: un vitigno raro ammesso nella denominazione e coltivato da alcuni vignaioli della Côte des Bar."
+        }
+      }
+    }
+  },
+  {
+    "_id": "drafts.article-quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne",
+    "existant": true,
+    "base": {
+      "_type": "article",
+      "slug": {
+        "_type": "slug",
+        "current": "quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne"
+      }
+    },
+    "set": {
+      "titre": {
+        "_type": "localeString",
+        "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages du champagne",
+        "en": "What is a grape variety? The 8 grapes of champagne",
+        "nl": "Wat is een druivenras? De 8 druivenrassen van champagne",
+        "it": "Che cos'è un vitigno? Gli 8 vitigni dello champagne"
+      },
+      "extrait": {
+        "_type": "localeText",
+        "fr": "Pinot noir, meunier, chardonnay, et cinq cépages plus rares : ce qu'est un cépage, et pourquoi il change tout dans votre verre.",
+        "en": "Pinot noir, meunier, chardonnay and five rarer grapes: what a grape variety is, and why it changes everything in your glass.",
+        "nl": "Pinot noir, meunier, chardonnay en vijf zeldzamere rassen: wat een druivenras is, en waarom het alles verandert in uw glas.",
+        "it": "Pinot noir, meunier, chardonnay e cinque vitigni più rari: che cos'è un vitigno e perché cambia tutto nel bicchiere."
+      },
+      "rubriques": [
+        "tout-savoir"
+      ],
+      "contenu": {
+        "_type": "localeRichText",
+        "fr": [
+          {
+            "_type": "block",
+            "_key": "abd",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abc",
+                "text": "Une variété de vigne",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "abf",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abe",
+                "text": "Un cépage, c'est une variété de vigne. Comme les pommes, toutes les grappes se ressemblent de loin, mais chaque variété a sa couleur, son acidité, ses arômes. Une golden n'est pas une granny ; un pinot noir n'est pas un chardonnay.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "abh",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abg",
+                "text": "Trois grands cépages",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "abj",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abi",
+                "text": "Trois cépages couvrent la quasi-totalité du vignoble champenois. Le pinot noir arrive en tête, suivi du meunier et du chardonnay, presque à égalité. Le pinot noir apporte la structure, le meunier la rondeur et le fruit, le chardonnay la finesse et la fraîcheur.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "abl",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abk",
+                "text": "Cinq cépages plus rares",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ac2",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "abn",
+                "href": "/pinot-blanc-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "abq",
+                "href": "/pinot-gris-fromenteau-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "abt",
+                "href": "/arbane-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "abw",
+                "href": "/petit-meslier-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "abz",
+                "href": "/chardonnay-rose-champagne/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "abm",
+                "text": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "abo",
+                "text": "pinot blanc",
+                "marks": [
+                  "abn"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "abp",
+                "text": ", le ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "abr",
+                "text": "pinot gris",
+                "marks": [
+                  "abq"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "abs",
+                "text": ", l'",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "abu",
+                "text": "arbane",
+                "marks": [
+                  "abt"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "abv",
+                "text": " et le ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "abx",
+                "text": "petit meslier",
+                "marks": [
+                  "abw"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aby",
+                "text": ". Depuis 2025, un huitième les a rejoints : le ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ac0",
+                "text": "chardonnay rose",
+                "marks": [
+                  "abz"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ac1",
+                "text": ". Ensemble, ils n'occupent qu'une toute petite place dans le vignoble.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ac4",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ac3",
+                "text": "Un même cépage, deux terroirs",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acc",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "ac6",
+                "href": "/la-cote-des-bar/"
+              },
+              {
+                "_type": "link",
+                "_key": "ac9",
+                "href": "/montgueux/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ac5",
+                "text": "Dans la ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ac7",
+                "text": "Côte des Bar",
+                "marks": [
+                  "ac6"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ac8",
+                "text": ", le pinot noir domine sur des marnes du Kimméridgien. À ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aca",
+                "text": "Montgueux",
+                "marks": [
+                  "ac9"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "acb",
+                "text": ", c'est le chardonnay, sur une craie du Turonien. Le sol, l'exposition et le climat donnent à chaque cépage une signature différente. Le vigneron assemble ensuite ses vins pour trouver l'équilibre de chaque cuvée ; certaines sont même issues d'un seul cépage.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ace",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acd",
+                "text": "Les goûter",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acm",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "acg",
+                "href": "/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "acj",
+                "href": "/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acf",
+                "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ach",
+                "text": "nos dégustations",
+                "marks": [
+                  "acg"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aci",
+                "text": ", à Troyes ou chez vous, ou découvrez ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ack",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "acj"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "acl",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "en": [
+          {
+            "_type": "block",
+            "_key": "aco",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acn",
+                "text": "A variety of vine",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acq",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acp",
+                "text": "A grape variety is a variety of vine. Like apples, all bunches look alike from afar, but each variety has its own colour, acidity and aromas. A Golden is not a Granny Smith; a pinot noir is not a chardonnay.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acs",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acr",
+                "text": "Three main grapes",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acu",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "act",
+                "text": "Three grapes cover almost the entire Champagne vineyard. Pinot noir comes first, followed by meunier and chardonnay, almost level. Pinot noir brings structure, meunier roundness and fruit, chardonnay finesse and freshness.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "acw",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acv",
+                "text": "Five rarer grapes",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "add",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "acy",
+                "href": "/en/pinot-blanc-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "ad1",
+                "href": "/en/pinot-gris-fromenteau-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "ad4",
+                "href": "/en/arbane-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "ad7",
+                "href": "/en/petit-meslier-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "ada",
+                "href": "/en/chardonnay-rose-champagne/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "acx",
+                "text": "The appellation rules also allow four old varieties: ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "acz",
+                "text": "pinot blanc",
+                "marks": [
+                  "acy"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ad0",
+                "text": ", ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ad2",
+                "text": "pinot gris",
+                "marks": [
+                  "ad1"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ad3",
+                "text": ", ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ad5",
+                "text": "arbane",
+                "marks": [
+                  "ad4"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ad6",
+                "text": " and ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ad8",
+                "text": "petit meslier",
+                "marks": [
+                  "ad7"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ad9",
+                "text": ". Since 2025, an eighth has joined them: ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "adb",
+                "text": "chardonnay rose",
+                "marks": [
+                  "ada"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "adc",
+                "text": ". Together they occupy only a tiny place in the vineyard.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "adf",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ade",
+                "text": "One grape, two terroirs",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "adn",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "adh",
+                "href": "/en/la-cote-des-bar/"
+              },
+              {
+                "_type": "link",
+                "_key": "adk",
+                "href": "/en/montgueux/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "adg",
+                "text": "In the ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "adi",
+                "text": "Côte des Bar",
+                "marks": [
+                  "adh"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "adj",
+                "text": ", pinot noir dominates on Kimmeridgian marl. In ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "adl",
+                "text": "Montgueux",
+                "marks": [
+                  "adk"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "adm",
+                "text": ", it is chardonnay, on Turonian chalk. Soil, aspect and climate give each grape a different signature. The winemaker then blends the wines to find the balance of each cuvée; some are even made from a single grape.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "adp",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ado",
+                "text": "Tasting them",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "adx",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "adr",
+                "href": "/en/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "adu",
+                "href": "/en/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "adq",
+                "text": "To taste these grapes and meet the people who grow them, join one of ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ads",
+                "text": "our tastings",
+                "marks": [
+                  "adr"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "adt",
+                "text": ", in Troyes or at your home, or discover ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "adv",
+                "text": "the Côte des Bar",
+                "marks": [
+                  "adu"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "adw",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "nl": [
+          {
+            "_type": "block",
+            "_key": "adz",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ady",
+                "text": "Een wijnstokvariëteit",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ae1",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ae0",
+                "text": "Een druivenras is een variëteit van de wijnstok. Net als bij appels lijken alle trossen van ver op elkaar, maar elke variëteit heeft haar eigen kleur, zuurgraad en aroma's. Een golden is geen granny smith; een pinot noir is geen chardonnay.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ae3",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ae2",
+                "text": "Drie hoofdrassen",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ae5",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ae4",
+                "text": "Drie rassen beslaan bijna de hele Champagne-wijngaard. Pinot noir staat bovenaan, gevolgd door meunier en chardonnay, bijna gelijk. Pinot noir brengt structuur, meunier rondheid en fruit, chardonnay finesse en frisheid.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ae7",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ae6",
+                "text": "Vijf zeldzamere rassen",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aeo",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "ae9",
+                "href": "/nl/pinot-blanc-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "aec",
+                "href": "/nl/pinot-gris-fromenteau-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "aef",
+                "href": "/nl/arbane-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "aei",
+                "href": "/nl/petit-meslier-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "ael",
+                "href": "/nl/chardonnay-rose-champagne/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ae8",
+                "text": "Het lastenboek van de appellatie staat ook vier oude rassen toe: ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aea",
+                "text": "pinot blanc",
+                "marks": [
+                  "ae9"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aeb",
+                "text": ", ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aed",
+                "text": "pinot gris",
+                "marks": [
+                  "aec"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aee",
+                "text": ", ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aeg",
+                "text": "arbane",
+                "marks": [
+                  "aef"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aeh",
+                "text": " en ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aej",
+                "text": "petit meslier",
+                "marks": [
+                  "aei"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aek",
+                "text": ". Sinds 2025 is er een achtste bij: ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aem",
+                "text": "chardonnay rose",
+                "marks": [
+                  "ael"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aen",
+                "text": ". Samen nemen ze maar een heel klein deel van de wijngaard in.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aeq",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aep",
+                "text": "Eén ras, twee terroirs",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "aey",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "aes",
+                "href": "/nl/la-cote-des-bar/"
+              },
+              {
+                "_type": "link",
+                "_key": "aev",
+                "href": "/nl/montgueux/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aer",
+                "text": "In de ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aet",
+                "text": "Côte des Bar",
+                "marks": [
+                  "aes"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aeu",
+                "text": " overheerst pinot noir op kimmeridgiaanse mergel. In ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "aew",
+                "text": "Montgueux",
+                "marks": [
+                  "aev"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "aex",
+                "text": " is het chardonnay, op krijt uit het Turonien. Bodem, ligging en klimaat geven elk ras een eigen handtekening. De wijnmaker assembleert daarna zijn wijnen tot het evenwicht van elke cuvée; sommige komen zelfs van één ras.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "af0",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aez",
+                "text": "Ze proeven",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "af8",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "af2",
+                "href": "/nl/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "af5",
+                "href": "/nl/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "af1",
+                "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "af3",
+                "text": "onze proeverijen",
+                "marks": [
+                  "af2"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "af4",
+                "text": ", in Troyes of bij u thuis, of ontdek ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "af6",
+                "text": "de Côte des Bar",
+                "marks": [
+                  "af5"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "af7",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ],
+        "it": [
+          {
+            "_type": "block",
+            "_key": "afa",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "af9",
+                "text": "Una varietà di vite",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "afc",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "afb",
+                "text": "Un vitigno è una varietà di vite. Come per le mele, da lontano i grappoli si somigliano, ma ogni varietà ha il suo colore, la sua acidità, i suoi aromi. Una golden non è una granny smith; un pinot noir non è uno chardonnay.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "afe",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "afd",
+                "text": "Tre grandi vitigni",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "afg",
+            "style": "normal",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aff",
+                "text": "Tre vitigni coprono quasi tutto il vigneto della Champagne. In testa il pinot noir, seguito da meunier e chardonnay, quasi alla pari. Il pinot noir porta struttura, il meunier rotondità e frutto, lo chardonnay finezza e freschezza.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "afi",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "afh",
+                "text": "Cinque vitigni più rari",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "afz",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "afk",
+                "href": "/it/pinot-blanc-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "afn",
+                "href": "/it/pinot-gris-fromenteau-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "afq",
+                "href": "/it/arbane-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "aft",
+                "href": "/it/petit-meslier-cepage-champagne/"
+              },
+              {
+                "_type": "link",
+                "_key": "afw",
+                "href": "/it/chardonnay-rose-champagne/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "afj",
+                "text": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "afl",
+                "text": "pinot blanc",
+                "marks": [
+                  "afk"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "afm",
+                "text": ", il ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "afo",
+                "text": "pinot gris",
+                "marks": [
+                  "afn"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "afp",
+                "text": ", l'",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "afr",
+                "text": "arbane",
+                "marks": [
+                  "afq"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "afs",
+                "text": " e il ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "afu",
+                "text": "petit meslier",
+                "marks": [
+                  "aft"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "afv",
+                "text": ". Dal 2025 se n'è aggiunto un ottavo: lo ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "afx",
+                "text": "chardonnay rose",
+                "marks": [
+                  "afw"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "afy",
+                "text": ". Insieme occupano solo un piccolissimo spazio nel vigneto.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ag1",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ag0",
+                "text": "Un vitigno, due terroir",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "ag9",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "ag3",
+                "href": "/it/la-cote-des-bar/"
+              },
+              {
+                "_type": "link",
+                "_key": "ag6",
+                "href": "/it/montgueux/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "ag2",
+                "text": "Nella ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ag4",
+                "text": "Côte des Bar",
+                "marks": [
+                  "ag3"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ag5",
+                "text": " domina il pinot noir, sulle marne del Kimmeridgiano. A ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "ag7",
+                "text": "Montgueux",
+                "marks": [
+                  "ag6"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "ag8",
+                "text": " è lo chardonnay, sul gesso del Turoniano. Suolo, esposizione e clima danno a ogni vitigno una firma diversa. Il vignaiolo assembla poi i suoi vini per trovare l'equilibrio di ogni cuvée; alcune nascono persino da un solo vitigno.",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "agb",
+            "style": "h2",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "aga",
+                "text": "Assaggiarli",
+                "marks": []
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "_key": "agj",
+            "style": "normal",
+            "markDefs": [
+              {
+                "_type": "link",
+                "_key": "agd",
+                "href": "/it/tasting-troyes/"
+              },
+              {
+                "_type": "link",
+                "_key": "agg",
+                "href": "/it/la-cote-des-bar/"
+              }
+            ],
+            "children": [
+              {
+                "_type": "span",
+                "_key": "agc",
+                "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "age",
+                "text": "nostre degustazioni",
+                "marks": [
+                  "agd"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "agf",
+                "text": ", a Troyes o a casa vostra, oppure scoprite ",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "_key": "agh",
+                "text": "la Côte des Bar",
+                "marks": [
+                  "agg"
+                ]
+              },
+              {
+                "_type": "span",
+                "_key": "agi",
+                "text": ".",
+                "marks": []
+              }
+            ]
+          }
+        ]
+      },
+      "seo": {
+        "_type": "seo",
+        "title": {
+          "_type": "localeString",
+          "fr": "Les cépages du champagne : pinot noir, meunier, chardonnay et cépages rares | Champagne de l'Aube",
+          "en": "Champagne grape varieties: pinot noir, meunier, chardonnay and rare grapes | Champagne de l'Aube",
+          "nl": "Druivenrassen van champagne: pinot noir, meunier, chardonnay en zeldzame rassen | Champagne de l'Aube",
+          "it": "I vitigni dello champagne: pinot noir, meunier, chardonnay e vitigni rari | Champagne de l'Aube"
+        },
+        "description": {
+          "_type": "localeText",
+          "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages autorisés en Champagne, du pinot noir au chardonnay rose, et leur expression dans la Côte des Bar et à Montgueux.",
+          "en": "What is a grape variety? The 8 grapes permitted in Champagne, from pinot noir to chardonnay rose, and how they express themselves in the Côte des Bar and Montgueux.",
+          "nl": "Wat is een druivenras? De 8 toegestane rassen in de Champagne, van pinot noir tot chardonnay rose, en hun uitdrukking in de Côte des Bar en Montgueux.",
+          "it": "Che cos'è un vitigno? Gli 8 vitigni ammessi in Champagne, dal pinot noir allo chardonnay rose, e la loro espressione nella Côte des Bar e a Montgueux."
+        }
+      }
+    }
+  }
+]

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { BrandBadge } from "@/components/brand/BrandBadge";
+import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { ButtonLink } from "@/components/ui/Button";
 import { DomaineCard } from "@/components/ui/DomaineCard";
@@ -11,7 +12,7 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
-import { cepages, pictos, terroirs } from "@/lib/brand";
+import { pictos, terroirs } from "@/lib/brand";
 import { nav } from "@/lib/site";
 import { MagCard } from "@/components/mag/MagCard";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
@@ -48,7 +49,6 @@ export default async function VigneronPage({ params }: Props) {
 
   const t = await getTranslations("vigneronPage");
   const tNav = await getTranslations("nav");
-  const tUi = await getTranslations("ui");
   const tLegal = await getTranslations("legal");
   const tPro = await getTranslations("proPage");
   const terroir = v.terroir ? terroirs[v.terroir] : undefined;
@@ -94,7 +94,7 @@ export default async function VigneronPage({ params }: Props) {
             </ul>
           )}
         </div>
-        <Photo image={v.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority placeholderLabel={tUi("photoSoon")} className="order-1 lg:order-2" />
+        <Photo image={v.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />
       </section>
 
       {v.personnes.length > 0 && (
@@ -133,10 +133,10 @@ export default async function VigneronPage({ params }: Props) {
             {v.cepages.length > 0 && (
               <div>
                 <h2 className="text-sur-titre text-bronze">{t("cepages")}</h2>
-                <ul className="mt-space-2 flex flex-wrap gap-space-1">
+                <ul className="mt-space-2 grid grid-cols-2 gap-x-space-2 gap-y-space-1 sm:grid-cols-3">
                   {v.cepages.map((k) => (
-                    <li key={k} title={cepages[k].label}>
-                      <BrandBadge asset={cepages[k]} size={72} />
+                    <li key={k}>
+                      <CepagePastille cepage={k} />
                     </li>
                   ))}
                 </ul>

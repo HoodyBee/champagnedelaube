@@ -724,6 +724,7 @@ export type TerroirPage = {
   contenu?: PortableTextBlock[];
   sols?: string;
   cepagesDominants: CepageKey[];
+  cepagesNotes?: Partial<Record<CepageKey, string>>;
   secteurs: { titre: string; texte?: PortableTextBlock[]; texteSimple?: string }[];
   galerie: Img[];
   seo: Seo;
@@ -785,6 +786,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     contenu: sectionsEnBlocs(d.sections, locale),
     sols: d.sols ? tr(d.sols, locale) : undefined,
     cepagesDominants: d.cepagesDominants,
+    cepagesNotes: Object.fromEntries(Object.entries(d.cepagesNotes ?? {}).map(([k, v]) => [k, tr(v, locale)])),
     secteurs: (d.secteurs ?? []).map((s) => ({ titre: tr(s.titre, locale), texteSimple: tr(s.texte, locale) })),
     galerie: [],
     seo: { title: tr(d.seo.title, locale), description: tr(d.seo.description, locale) },
@@ -834,11 +836,7 @@ export async function getTerroirAube(locale: Locale): Promise<TerroirAubePage> {
       ? chapitresSanity.map((c) => ({ titre: c.titre!, texte: c.texte, image: c.image }))
       : a.chapitres.map((c, i) => ({
           titre: tr(c.titre, locale),
-          texte: [paragrapheEnBloc(tr(c.texte, locale).replace(/ ?\[VOTRE ANECDOTE\].*$/, ""), locale)].concat(
-            tr(c.texte, locale).includes("[VOTRE ANECDOTE]")
-              ? [paragrapheEnBloc(tr(c.texte, locale).slice(tr(c.texte, locale).indexOf("[VOTRE ANECDOTE]")), locale)]
-              : [],
-          ),
+          texte: [paragrapheEnBloc(tr(c.texte, locale), locale)],
           image: (p?.chapitres?.[i] && toImg(p.chapitres[i].image, locale)) || null,
         })),
     cepagesTitre: L(p?.cepagesTitre, locale) ?? tr(a.cepagesTitre, locale),
