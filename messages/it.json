@@ -694,5 +694,16 @@
     "galerie": "In immagini",
     "reserverTitre": "Prenotare: {titre}",
     "autres": "Le nostre altre degustazioni"
+  },
+  "terroirPage": {
+    "sols": "Suoli e geologia",
+    "cepages": "Vitigni",
+    "villages": "Villaggi",
+    "secteurs": "Due settori",
+    "autres": "Gli altri terroir dell'Aube",
+    "offrePro": "Scoprire l'offerta per professionisti",
+    "carteTitre": "Quattro terroir",
+    "carteIntro": "Dalla Côte des Bar a Villenauxe-la-Grande, ogni terroir ha il suo suolo, i suoi vitigni e i suoi vignaioli.",
+    "faqTitre": "Le vostre domande sul terroir dell'Aube"
   }
 }

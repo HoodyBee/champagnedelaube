@@ -1,0 +1,234 @@
+{
+  "cle": "cote-des-bar",
+  "nom": "Côte des Bar",
+  "motCle": "champagne Côte des Bar",
+  "seo": {
+    "title": {
+      "fr": "Champagne de la Côte des Bar : terroir, villages et vignerons | Champagne de l'Aube",
+      "en": "Côte des Bar champagne: terroir, villages and winemakers | Champagne de l'Aube",
+      "nl": "Champagne uit de Côte des Bar: terroir, dorpen en wijnmakers | Champagne de l'Aube",
+      "it": "Champagne della Côte des Bar: terroir, villaggi e vignaioli | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "La Côte des Bar, au sud de la Champagne : le Barséquanais et le Barsuraubois, des sols kimméridgiens, plus de 80 % de pinot noir et des vignerons indépendants.",
+      "en": "The Côte des Bar, in the south of Champagne: the Barséquanais and the Barsuraubois, Kimmeridgian soils, more than 80% pinot noir and independent winemakers.",
+      "nl": "De Côte des Bar, in het zuiden van de Champagne: het Barséquanais en het Barsuraubois, kimmeridgiaanse bodems, meer dan 80% pinot noir en onafhankelijke wijnmakers.",
+      "it": "La Côte des Bar, nel sud della Champagne: il Barséquanais e il Barsuraubois, suoli kimmeridgiani, oltre l'80% di pinot noir e vignaioli indipendenti."
+    }
+  },
+  "accroche": {
+    "fr": "Saviez-vous que la Côte des Bar partage son sous-sol avec Chablis ?",
+    "en": "Did you know that the Côte des Bar shares its subsoil with Chablis?",
+    "nl": "Wist u dat de Côte des Bar haar ondergrond deelt met Chablis?",
+    "it": "Sapevate che la Côte des Bar condivide il suo sottosuolo con Chablis?"
+  },
+  "intro": {
+    "fr": "Au sud-est de Troyes, la Côte des Bar rassemble l'essentiel du vignoble de l'Aube. Deux secteurs, le Barséquanais et le Barsuraubois, un même sol kimméridgien, et un cépage qui domine : le pinot noir.",
+    "en": "South-east of Troyes, the Côte des Bar holds most of the Aube vineyard. Two areas, the Barséquanais and the Barsuraubois, one Kimmeridgian soil, and one grape that dominates: pinot noir.",
+    "nl": "Ten zuidoosten van Troyes ligt het grootste deel van de wijngaard van de Aube: de Côte des Bar. Twee gebieden, het Barséquanais en het Barsuraubois, één kimmeridgiaanse bodem en één overheersend ras: pinot noir.",
+    "it": "A sud-est di Troyes, la Côte des Bar riunisce la maggior parte del vigneto dell'Aube. Due settori, il Barséquanais e il Barsuraubois, uno stesso suolo kimmeridgiano e un vitigno dominante: il pinot noir."
+  },
+  "reperes": [
+    {
+      "label": {
+        "fr": "Sous-sol",
+        "en": "Subsoil",
+        "nl": "Ondergrond",
+        "it": "Sottosuolo"
+      },
+      "valeur": {
+        "fr": "Marnes et calcaires du Kimméridgien",
+        "en": "Kimmeridgian marl and limestone",
+        "nl": "Mergel en kalksteen uit het Kimmeridgien",
+        "it": "Marne e calcari del Kimmeridgiano"
+      }
+    },
+    {
+      "label": {
+        "fr": "Cépage principal",
+        "en": "Main grape",
+        "nl": "Belangrijkste ras",
+        "it": "Vitigno principale"
+      },
+      "valeur": {
+        "fr": "Pinot noir, plus de 80 %",
+        "en": "Pinot noir, over 80%",
+        "nl": "Pinot noir, meer dan 80%",
+        "it": "Pinot noir, oltre l'80%"
+      }
+    },
+    {
+      "label": {
+        "fr": "Secteurs",
+        "en": "Areas",
+        "nl": "Gebieden",
+        "it": "Settori"
+      },
+      "valeur": {
+        "fr": "Barséquanais et Barsuraubois",
+        "en": "Barséquanais and Barsuraubois",
+        "nl": "Barséquanais en Barsuraubois",
+        "it": "Barséquanais e Barsuraubois"
+      }
+    },
+    {
+      "label": {
+        "fr": "Appellations",
+        "en": "Appellations",
+        "nl": "Appellaties",
+        "it": "Denominazioni"
+      },
+      "valeur": {
+        "fr": "Champagne, Coteaux champenois, Rosé des Riceys",
+        "en": "Champagne, Coteaux Champenois, Rosé des Riceys",
+        "nl": "Champagne, Coteaux Champenois, Rosé des Riceys",
+        "it": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      }
+    }
+  ],
+  "villages": [
+    "Bar-sur-Seine",
+    "Les Riceys",
+    "Essoyes",
+    "Polisy",
+    "Bar-sur-Aube",
+    "Baroville",
+    "Urville",
+    "Arrentières"
+  ],
+  "cepagesDominants": [
+    "pinot-noir",
+    "chardonnay",
+    "meunier"
+  ],
+  "sols": {
+    "fr": "Des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur. On retrouve ce même sous-sol à Chablis, en Bourgogne.",
+    "en": "Kimmeridgian marl and limestone, a layer from the Upper Jurassic. The same subsoil is found in Chablis, in Burgundy.",
+    "nl": "Mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura. Dezelfde ondergrond vind je in Chablis, in Bourgondië.",
+    "it": "Marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore. Lo stesso sottosuolo si ritrova a Chablis, in Borgogna."
+  },
+  "secteurs": [
+    {
+      "titre": {
+        "fr": "Le Barséquanais",
+        "en": "The Barséquanais",
+        "nl": "Het Barséquanais",
+        "it": "Il Barséquanais"
+      },
+      "texte": {
+        "fr": "Autour de Bar-sur-Seine. On y trouve Les Riceys et leurs trois appellations, Essoyes et le souvenir de Renoir, ou encore Polisy.",
+        "en": "Around Bar-sur-Seine. Here you find Les Riceys and its three appellations, Essoyes and the memory of Renoir, and villages such as Polisy.",
+        "nl": "Rond Bar-sur-Seine. Hier liggen Les Riceys met zijn drie appellaties, Essoyes met de herinnering aan Renoir, en dorpen als Polisy.",
+        "it": "Attorno a Bar-sur-Seine. Qui si trovano Les Riceys e le sue tre denominazioni, Essoyes e il ricordo di Renoir, o ancora Polisy."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Le Barsuraubois",
+        "en": "The Barsuraubois",
+        "nl": "Het Barsuraubois",
+        "it": "Il Barsuraubois"
+      },
+      "texte": {
+        "fr": "Autour de Bar-sur-Aube, les villages viticoles s'étirent jusqu'à la Haute-Marne. Baroville y possède l'un des vignobles les plus étendus du secteur.",
+        "en": "Around Bar-sur-Aube, the wine villages stretch as far as the Haute-Marne. Baroville has one of the largest vineyards in the area.",
+        "nl": "Rond Bar-sur-Aube strekken de wijndorpen zich uit tot in de Haute-Marne. Baroville heeft er een van de grootste wijngaarden.",
+        "it": "Attorno a Bar-sur-Aube, i villaggi viticoli si estendono fino alla Haute-Marne. Baroville possiede uno dei vigneti più estesi del settore."
+      }
+    }
+  ],
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un vignoble au sud de la Champagne",
+        "en": "A vineyard in the south of Champagne",
+        "nl": "Een wijngaard in het zuiden van de Champagne",
+        "it": "Un vigneto nel sud della Champagne"
+      },
+      "paragraphes": [
+        {
+          "fr": "La Côte des Bar est la partie la plus méridionale du vignoble champenois. Ses coteaux s'organisent autour de deux petites villes, Bar-sur-Seine et Bar-sur-Aube. Avec [Montgueux](/montgueux) et [Villenauxe-la-Grande](/villenauxe-la-grande), elle forme le vignoble de l'Aube : environ 8 000 hectares, un bon quart de la Champagne.",
+          "en": "The Côte des Bar is the southernmost part of the Champagne vineyard. Its slopes are organised around two small towns, Bar-sur-Seine and Bar-sur-Aube. Together with [Montgueux](/montgueux) and [Villenauxe-la-Grande](/villenauxe-la-grande), it makes up the Aube vineyard: around 8,000 hectares, a good quarter of Champagne.",
+          "nl": "De Côte des Bar is het zuidelijkste deel van de Champagne-wijngaard. De hellingen liggen rond twee stadjes, Bar-sur-Seine en Bar-sur-Aube. Samen met [Montgueux](/montgueux) en [Villenauxe-la-Grande](/villenauxe-la-grande) vormt ze de wijngaard van de Aube: zo'n 8.000 hectare, een flink kwart van de Champagne.",
+          "it": "La Côte des Bar è la parte più meridionale del vigneto champenois. Le sue colline si organizzano attorno a due cittadine, Bar-sur-Seine e Bar-sur-Aube. Con [Montgueux](/montgueux) e [Villenauxe-la-Grande](/villenauxe-la-grande), forma il vigneto dell'Aube: circa 8.000 ettari, un buon quarto della Champagne."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le pays du pinot noir",
+        "en": "Pinot noir country",
+        "nl": "Het land van de pinot noir",
+        "it": "Il paese del pinot noir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Ici, le pinot noir couvre plus de 80 % des vignes. Sur les marnes kimméridgiennes, il donne des champagnes généreux, souvent vinifiés en blanc de noirs. Le chardonnay et le meunier complètent l'encépagement, et quelques vignerons cultivent encore des cépages plus rares, comme le pinot blanc.",
+          "en": "Here, pinot noir covers more than 80% of the vines. On Kimmeridgian marl it gives generous champagnes, often made as blanc de noirs. Chardonnay and meunier complete the picture, and a few winemakers still grow rarer varieties, such as pinot blanc.",
+          "nl": "Hier beslaat pinot noir meer dan 80% van de wijngaarden. Op kimmeridgiaanse mergel geeft hij royale champagnes, vaak als blanc de noirs. Chardonnay en meunier vullen het geheel aan, en enkele wijnmakers telen nog zeldzamere rassen, zoals pinot blanc.",
+          "it": "Qui il pinot noir copre oltre l'80% delle vigne. Sulle marne kimmeridgiane dà champagne generosi, spesso vinificati in blanc de noirs. Chardonnay e meunier completano l'uvaggio, e alcuni vignaioli coltivano ancora vitigni più rari, come il pinot blanc."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Une histoire de résistance",
+        "en": "A story of resistance",
+        "nl": "Een verhaal van verzet",
+        "it": "Una storia di resistenza"
+      },
+      "paragraphes": [
+        {
+          "fr": "En 1911, les vignerons de l'Aube se mobilisent contre leur exclusion de l'appellation Champagne. La loi du 28 juillet 1927 leur rend leur place. Aujourd'hui, de nombreux vignerons indépendants travaillent dans la Côte des Bar, dont certains de [notre sélection](/vignerons).",
+          "en": "In 1911, the winemakers of the Aube mobilised against their exclusion from the Champagne appellation. The law of 28 July 1927 gave them back their place. Today, many independent winemakers work in the Côte des Bar, some of them in [our selection](/vignerons).",
+          "nl": "In 1911 kwamen de wijnmakers van de Aube in verzet tegen hun uitsluiting uit de appellatie Champagne. De wet van 28 juli 1927 gaf hun hun plaats terug. Vandaag werken veel onafhankelijke wijnmakers in de Côte des Bar, sommigen uit [onze selectie](/vignerons).",
+          "it": "Nel 1911 i vignaioli dell'Aube si mobilitarono contro la loro esclusione dalla denominazione Champagne. La legge del 28 luglio 1927 restituì loro il loro posto. Oggi molti vignaioli indipendenti lavorano nella Côte des Bar, alcuni della [nostra selezione](/vignerons)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Sur la Route du Champagne",
+        "en": "On the Champagne Route",
+        "nl": "Op de Champagneroute",
+        "it": "Sulla Strada dello Champagne"
+      },
+      "paragraphes": [
+        {
+          "fr": "La Route touristique du Champagne parcourt la Côte des Bar sur environ 220 kilomètres, au départ de Bar-sur-Seine ou de Bar-sur-Aube. À Essoyes, où Renoir a passé près de trente étés, l'atelier du peintre se visite. À Colombey-les-Deux-Églises, le Mémorial Charles de Gaulle rappelle une autre page d'histoire.",
+          "en": "The Champagne Tourist Route crosses the Côte des Bar for around 220 kilometres, starting from Bar-sur-Seine or Bar-sur-Aube. In Essoyes, where Renoir spent nearly thirty summers, you can visit the painter's studio. In Colombey-les-Deux-Églises, the Charles de Gaulle Memorial recalls another chapter of history.",
+          "nl": "De toeristische Champagneroute doorkruist de Côte des Bar over zo'n 220 kilometer, vanuit Bar-sur-Seine of Bar-sur-Aube. In Essoyes, waar Renoir bijna dertig zomers doorbracht, kunt u het atelier van de schilder bezoeken. In Colombey-les-Deux-Églises herinnert het Mémorial Charles de Gaulle aan een ander stuk geschiedenis.",
+          "it": "La Strada turistica dello Champagne attraversa la Côte des Bar per circa 220 chilometri, partendo da Bar-sur-Seine o da Bar-sur-Aube. A Essoyes, dove Renoir trascorse quasi trenta estati, si visita l'atelier del pittore. A Colombey-les-Deux-Églises, il Memoriale Charles de Gaulle ricorda un'altra pagina di storia."
+        },
+        {
+          "fr": "[VOTRE ANECDOTE] Votre plus beau souvenir dans un village de la Côte des Bar.",
+          "en": "[VOTRE ANECDOTE] Your best memory of a Côte des Bar village.",
+          "nl": "[VOTRE ANECDOTE] Uw mooiste herinnering aan een dorp in de Côte des Bar.",
+          "it": "[VOTRE ANECDOTE] Il vostro ricordo più bello di un villaggio della Côte des Bar."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Goûter ce terroir",
+        "en": "Taste this terroir",
+        "nl": "Dit terroir proeven",
+        "it": "Assaggiare questo terroir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
+          "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
+          "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
+          "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
+        },
+        {
+          "fr": "[VOTRE ANECDOTE] Une rencontre marquante avec un vigneron du Barsuraubois.",
+          "en": "[VOTRE ANECDOTE] A memorable meeting with a Barsuraubois winemaker.",
+          "nl": "[VOTRE ANECDOTE] Een bijzondere ontmoeting met een wijnmaker uit het Barsuraubois.",
+          "it": "[VOTRE ANECDOTE] Un incontro memorabile con un vignaiolo del Barsuraubois."
+        }
+      ]
+    }
+  ]
+}

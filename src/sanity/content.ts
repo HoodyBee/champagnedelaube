@@ -709,3 +709,142 @@ export async function getEvenementsAVenir(locale: Locale): Promise<Evenement[]> 
     ];
   });
 }
+
+// ---------------------------------------------------------------------------
+// Terroirs : fiche publiée dans Sanity, sinon textes rédigés dans le dépôt
+// ---------------------------------------------------------------------------
+export type TerroirPage = {
+  cle: TerroirKey;
+  nom: string;
+  accroche?: string;
+  intro?: string;
+  image: Img | null;
+  reperes: { label: string; valeur: string }[];
+  villages: string[];
+  contenu?: PortableTextBlock[];
+  sols?: string;
+  cepagesDominants: CepageKey[];
+  secteurs: { titre: string; texte?: PortableTextBlock[]; texteSimple?: string }[];
+  galerie: Img[];
+  seo: Seo;
+};
+
+export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<TerroirPage> {
+  const t = await sanityFetch<{
+    nom?: string;
+    accroche?: Localized;
+    intro?: Localized;
+    image?: SanityImg;
+    chiffres?: { label?: Localized; valeur?: Localized }[];
+    villages?: string[];
+    contenu?: LocalizedBlocks;
+    sols?: Localized;
+    cepagesDominants?: CepageKey[];
+    secteurs?: BlocRaw[];
+    galerie?: SanityImg[];
+    seo?: SeoRaw;
+  } | null>({
+    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants,
+      secteurs[]{icone, surTitre, titre, texte, points, image ${IMG}}, galerie[] ${IMG}, seo}`,
+    params: { cle },
+    tags: ["terroir"],
+  });
+  const { terroirsContenu, tr, sectionsEnBlocs } = await import("@/lib/terroirs-contenu");
+  const d = terroirsContenu[cle];
+  const contenuSanity = localize(t?.contenu, locale);
+  // Fiche publiée et remplie : elle l'emporte ; sinon, textes du dépôt (image Sanity gardée si présente).
+  if (t && L(t.accroche, locale) && contenuSanity?.length) {
+    return {
+      cle,
+      nom: t.nom ?? d.nom,
+      accroche: L(t.accroche, locale),
+      intro: L(t.intro, locale),
+      image: toImg(t.image, locale),
+      reperes: (t.chiffres ?? []).flatMap((c) => {
+        const label = L(c.label, locale);
+        const valeur = L(c.valeur, locale);
+        return label && valeur ? [{ label, valeur }] : [];
+      }),
+      villages: t.villages ?? [],
+      contenu: contenuSanity,
+      sols: L(t.sols, locale),
+      cepagesDominants: t.cepagesDominants ?? [],
+      secteurs: (t.secteurs ?? []).map((s) => blocOf(s, locale)).filter((s) => s.titre).map((s) => ({ titre: s.titre!, texte: s.texte })),
+      galerie: (t.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
+      seo: seoOf(t.seo, locale),
+    };
+  }
+  return {
+    cle,
+    nom: d.nom,
+    accroche: tr(d.accroche, locale),
+    intro: tr(d.intro, locale),
+    image: toImg(t?.image, locale),
+    reperes: d.reperes.map((r) => ({ label: tr(r.label, locale), valeur: tr(r.valeur, locale) })),
+    villages: d.villages,
+    contenu: sectionsEnBlocs(d.sections, locale),
+    sols: d.sols ? tr(d.sols, locale) : undefined,
+    cepagesDominants: d.cepagesDominants,
+    secteurs: (d.secteurs ?? []).map((s) => ({ titre: tr(s.titre, locale), texteSimple: tr(s.texte, locale) })),
+    galerie: [],
+    seo: { title: tr(d.seo.title, locale), description: tr(d.seo.description, locale) },
+  };
+}
+
+export type TerroirAubePage = {
+  hero: Hero;
+  chapitres: { titre: string; texte?: PortableTextBlock[]; image: Img | null }[];
+  cepagesTitre: string;
+  cepagesIntro?: PortableTextBlock[];
+  cepagesTextes: { cepage: CepageKey; texte: string }[];
+  faq: { question: string; reponse: string }[];
+  seo: Seo;
+};
+
+export async function getTerroirAube(locale: Locale): Promise<TerroirAubePage> {
+  const p = await sanityFetch<{
+    hero?: HeroRaw;
+    chapitres?: BlocRaw[];
+    cepagesTitre?: Localized;
+    cepagesIntro?: LocalizedBlocks;
+    cepagesTextes?: { cepage?: CepageKey; texte?: Localized }[];
+    faq?: { question?: Localized; reponse?: Localized }[];
+    seo?: SeoRaw;
+  }>({
+    query: `*[_id == "terroirAube"][0]{hero{surTitre, titre, intro, image ${IMG}}, chapitres[]{icone, surTitre, titre, texte, points, image ${IMG}},
+      cepagesTitre, cepagesIntro, cepagesTextes, faq, seo}`,
+    tags: ["terroirAube"],
+  });
+  const { aubeContenu: a, tr, paragrapheEnBloc } = await import("@/lib/terroirs-contenu");
+  const hero = heroOf(p?.hero, locale);
+  const chapitresSanity = (p?.chapitres ?? []).map((b) => blocOf(b, locale)).filter((b) => b.titre && b.texte?.length);
+  const faq = faqOf(p?.faq, locale);
+  const textes = (p?.cepagesTextes ?? []).flatMap((c) => {
+    const texte = L(c.texte, locale);
+    return c.cepage && texte ? [{ cepage: c.cepage, texte }] : [];
+  });
+  return {
+    hero: {
+      surTitre: hero.surTitre ?? tr(a.hero.surTitre, locale),
+      titre: hero.titre ?? tr(a.hero.titre, locale),
+      intro: hero.intro ?? tr(a.hero.intro, locale),
+      image: hero.image,
+    },
+    chapitres: chapitresSanity.length
+      ? chapitresSanity.map((c) => ({ titre: c.titre!, texte: c.texte, image: c.image }))
+      : a.chapitres.map((c, i) => ({
+          titre: tr(c.titre, locale),
+          texte: [paragrapheEnBloc(tr(c.texte, locale).replace(/ ?\[VOTRE ANECDOTE\].*$/, ""), locale)].concat(
+            tr(c.texte, locale).includes("[VOTRE ANECDOTE]")
+              ? [paragrapheEnBloc(tr(c.texte, locale).slice(tr(c.texte, locale).indexOf("[VOTRE ANECDOTE]")), locale)]
+              : [],
+          ),
+          image: (p?.chapitres?.[i] && toImg(p.chapitres[i].image, locale)) || null,
+        })),
+    cepagesTitre: L(p?.cepagesTitre, locale) ?? tr(a.cepagesTitre, locale),
+    cepagesIntro: localize(p?.cepagesIntro, locale)?.length ? localize(p?.cepagesIntro, locale) : [paragrapheEnBloc(tr(a.cepagesIntro, locale), locale)],
+    cepagesTextes: textes.length ? textes : a.cepagesTextes.map((c) => ({ cepage: c.cepage, texte: tr(c.texte, locale) })),
+    faq: faq.length ? faq : a.faq.map((q) => ({ question: tr(q.question, locale), reponse: tr(q.reponse, locale) })),
+    seo: { ...seoOf(p?.seo, locale), title: L(p?.seo?.title, locale) ?? tr(a.seo.title, locale), description: L(p?.seo?.description, locale) ?? tr(a.seo.description, locale) },
+  };
+}

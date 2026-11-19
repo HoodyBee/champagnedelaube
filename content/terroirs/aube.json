@@ -1,0 +1,181 @@
+{
+  "cle": "aube",
+  "motCle": "terroir de l'Aube",
+  "seo": {
+    "title": {
+      "fr": "Le terroir de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube",
+      "en": "The Aube terroir: Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube",
+      "nl": "Het terroir van de Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube",
+      "it": "Il terroir dell'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le terroir de l'Aube en Champagne : environ 8 000 hectares de vignes, des sols kimméridgiens et crayeux, le pinot noir de la Côte des Bar et le chardonnay de Montgueux.",
+      "en": "The Aube terroir in Champagne: around 8,000 hectares of vines, Kimmeridgian and chalk soils, the pinot noir of the Côte des Bar and the chardonnay of Montgueux.",
+      "nl": "Het terroir van de Aube in de Champagne: zo'n 8.000 hectare wijngaarden, kimmeridgiaanse en krijtbodems, de pinot noir van de Côte des Bar en de chardonnay van Montgueux.",
+      "it": "Il terroir dell'Aube in Champagne: circa 8.000 ettari di vigne, suoli kimmeridgiani e gessosi, il pinot noir della Côte des Bar e lo chardonnay di Montgueux."
+    }
+  },
+  "hero": {
+    "surTitre": {
+      "fr": "Les Terroirs Aubois",
+      "en": "The Aube Terroirs",
+      "nl": "De terroirs van de Aube",
+      "it": "I terroir dell'Aube"
+    },
+    "titre": {
+      "fr": "Le terroir de l'Aube, un quart du vignoble champenois",
+      "en": "The Aube terroir, a quarter of the Champagne vineyard",
+      "nl": "Het terroir van de Aube, een kwart van de Champagne",
+      "it": "Il terroir dell'Aube, un quarto della Champagne"
+    },
+    "intro": {
+      "fr": "Au sud de la Champagne, l'Aube compte environ 8 000 hectares de vignes. Quatre terroirs, des sols différents, et des vignerons que nous connaissons un à un.",
+      "en": "In the south of Champagne, the Aube has around 8,000 hectares of vines. Four terroirs, different soils, and winemakers we know one by one.",
+      "nl": "In het zuiden van de Champagne telt de Aube zo'n 8.000 hectare wijngaarden. Vier terroirs, verschillende bodems, en wijnmakers die we één voor één kennen.",
+      "it": "Nel sud della Champagne, l'Aube conta circa 8.000 ettari di vigne. Quattro terroir, suoli diversi e vignaioli che conosciamo uno per uno."
+    }
+  },
+  "chapitres": [
+    {
+      "titre": {
+        "fr": "Situer l'Aube",
+        "en": "Where is the Aube?",
+        "nl": "Waar ligt de Aube?",
+        "it": "Dove si trova l'Aube"
+      },
+      "texte": {
+        "fr": "Le vignoble de Champagne couvre environ 34 000 hectares, sur 319 communes et cinq départements : la Marne, l'Aube, l'Aisne, la Haute-Marne et la Seine-et-Marne. L'Aube en représente un bon quart. Ses vignes se répartissent entre la [Côte des Bar](/la-cote-des-bar), autour de Bar-sur-Seine et de Bar-sur-Aube, la colline de [Montgueux](/montgueux), aux portes de Troyes, et [Villenauxe-la-Grande](/villenauxe-la-grande), au nord-ouest du département.",
+        "en": "The Champagne vineyard covers around 34,000 hectares, across 319 villages and five departments: the Marne, the Aube, the Aisne, the Haute-Marne and the Seine-et-Marne. The Aube accounts for a good quarter of it. Its vines are spread between the [Côte des Bar](/la-cote-des-bar), around Bar-sur-Seine and Bar-sur-Aube, the hill of [Montgueux](/montgueux), on the edge of Troyes, and [Villenauxe-la-Grande](/villenauxe-la-grande), in the north-west of the department.",
+        "nl": "De Champagne-wijngaard beslaat zo'n 34.000 hectare, verspreid over 319 gemeenten en vijf departementen: de Marne, de Aube, de Aisne, de Haute-Marne en de Seine-et-Marne. De Aube vertegenwoordigt er een flink kwart van. Haar wijngaarden liggen in de [Côte des Bar](/la-cote-des-bar), rond Bar-sur-Seine en Bar-sur-Aube, op de heuvel van [Montgueux](/montgueux), aan de rand van Troyes, en in [Villenauxe-la-Grande](/villenauxe-la-grande), in het noordwesten van het departement.",
+        "it": "Il vigneto della Champagne copre circa 34.000 ettari, su 319 comuni e cinque dipartimenti: Marne, Aube, Aisne, Haute-Marne e Seine-et-Marne. L'Aube ne rappresenta un buon quarto. Le sue vigne si dividono tra la [Côte des Bar](/la-cote-des-bar), attorno a Bar-sur-Seine e Bar-sur-Aube, la collina di [Montgueux](/montgueux), alle porte di Troyes, e [Villenauxe-la-Grande](/villenauxe-la-grande), nel nord-ovest del dipartimento."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Des sols venus du Jurassique et du Crétacé",
+        "en": "Soils from the Jurassic and the Cretaceous",
+        "nl": "Bodems uit het Jura en het Krijt",
+        "it": "Suoli del Giurassico e del Cretaceo"
+      },
+      "texte": {
+        "fr": "Dans la Côte des Bar, la vigne pousse sur des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur que l'on retrouve aussi à Chablis. À Montgueux, c'est une craie du Turonien qui forme la colline. Deux sous-sols, deux expressions : le pinot noir d'un côté, le chardonnay de l'autre.",
+        "en": "In the Côte des Bar, the vines grow on Kimmeridgian marl and limestone, a layer from the Upper Jurassic also found in Chablis. In Montgueux, the hill is made of Turonian chalk. Two subsoils, two expressions: pinot noir on one side, chardonnay on the other.",
+        "nl": "In de Côte des Bar groeien de wijnstokken op mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura die je ook in Chablis vindt. In Montgueux bestaat de heuvel uit krijt uit het Turonien. Twee ondergronden, twee uitdrukkingen: pinot noir aan de ene kant, chardonnay aan de andere.",
+        "it": "Nella Côte des Bar, la vite cresce su marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore che si ritrova anche a Chablis. A Montgueux la collina è fatta di gesso del Turoniano. Due sottosuoli, due espressioni: il pinot noir da una parte, lo chardonnay dall'altra."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Un climat à double influence",
+        "en": "A climate with two influences",
+        "nl": "Een klimaat met twee invloeden",
+        "it": "Un clima a doppia influenza"
+      },
+      "texte": {
+        "fr": "Comme toute la Champagne, l'Aube vit sous une double influence. Océanique, elle apporte des pluies régulières et des températures sans grands écarts. Continentale, elle amène des gelées parfois rudes, mais aussi un bel ensoleillement en été.",
+        "en": "Like the whole of Champagne, the Aube lives under two influences. The oceanic one brings regular rainfall and temperatures without sharp contrasts. The continental one brings frosts that can be harsh, but also generous summer sunshine.",
+        "nl": "Zoals de hele Champagne staat de Aube onder een dubbele invloed. De oceanische brengt regelmatige regen en temperaturen zonder grote verschillen. De continentale brengt soms strenge vorst, maar ook veel zon in de zomer.",
+        "it": "Come tutta la Champagne, l'Aube vive sotto una doppia influenza. Quella oceanica porta piogge regolari e temperature senza grandi sbalzi. Quella continentale porta gelate a volte rigide, ma anche un bel soleggiamento estivo."
+      }
+    },
+    {
+      "titre": {
+        "fr": "Une histoire de vignerons",
+        "en": "A story of winemakers",
+        "nl": "Een verhaal van wijnmakers",
+        "it": "Una storia di vignaioli"
+      },
+      "texte": {
+        "fr": "Au début du XXe siècle, l'Aube est d'abord tenue à l'écart de l'appellation Champagne. En 1911, ses vignerons se mobilisent pour défendre leur place. La loi du 28 juillet 1927 réintègre leur vignoble dans la Champagne. [VOTRE ANECDOTE] Une histoire de vigneron entendue lors d'une visite, à raconter ici.",
+        "en": "In the early 20th century, the Aube was at first kept out of the Champagne appellation. In 1911, its winemakers mobilised to defend their place. The law of 28 July 1927 brought their vineyard back into Champagne. [VOTRE ANECDOTE] A winemaker's story heard during a visit, to be told here.",
+        "nl": "Begin 20e eeuw werd de Aube eerst buiten de appellatie Champagne gehouden. In 1911 kwamen de wijnmakers in actie om hun plaats te verdedigen. De wet van 28 juli 1927 bracht hun wijngaard terug in de Champagne. [VOTRE ANECDOTE] Een verhaal van een wijnmaker, gehoord tijdens een bezoek, om hier te vertellen.",
+        "it": "All'inizio del Novecento, l'Aube fu dapprima tenuta fuori dalla denominazione Champagne. Nel 1911 i suoi vignaioli si mobilitarono per difendere il loro posto. La legge del 28 luglio 1927 reintegrò il loro vigneto nella Champagne. [VOTRE ANECDOTE] Una storia di vignaiolo ascoltata durante una visita, da raccontare qui."
+      }
+    }
+  ],
+  "cepagesTitre": {
+    "fr": "Les cépages de l'Aube",
+    "en": "The grape varieties of the Aube",
+    "nl": "De druivenrassen van de Aube",
+    "it": "I vitigni dell'Aube"
+  },
+  "cepagesIntro": {
+    "fr": "Trois cépages principaux font le champagne de l'Aube : le pinot noir, le chardonnay et le meunier. Quelques vignerons cultivent aussi des cépages plus rares, comme le pinot blanc ou le petit meslier. Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
+    "en": "Three main grape varieties make the champagne of the Aube: pinot noir, chardonnay and meunier. A few winemakers also grow rarer varieties, such as pinot blanc or petit meslier. To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
+    "nl": "Drie hoofddruivenrassen maken de champagne van de Aube: pinot noir, chardonnay en meunier. Enkele wijnmakers telen ook zeldzamere rassen, zoals pinot blanc of petit meslier. Om ze te proeven: kom naar een van [onze proeverijen](/tasting-troyes) of ontdek [onze selectie](/vignerons).",
+    "it": "Tre vitigni principali fanno lo champagne dell'Aube: pinot noir, chardonnay e meunier. Alcuni vignaioli coltivano anche vitigni più rari, come il pinot blanc o il petit meslier. Per assaggiarli, partecipate a una delle [nostre degustazioni](/tasting-troyes) o scoprite [la nostra selezione](/vignerons)."
+  },
+  "cepagesTextes": [
+    {
+      "cepage": "pinot-noir",
+      "texte": {
+        "fr": "Le cépage roi de la Côte des Bar, où il couvre plus de 80 % des vignes.",
+        "en": "The leading grape of the Côte des Bar, where it covers more than 80% of the vines.",
+        "nl": "Het belangrijkste ras van de Côte des Bar, waar het meer dan 80% van de wijngaarden beslaat.",
+        "it": "Il vitigno re della Côte des Bar, dove copre oltre l'80% delle vigne."
+      }
+    },
+    {
+      "cepage": "chardonnay",
+      "texte": {
+        "fr": "Très majoritaire sur la colline de Montgueux et à Villenauxe-la-Grande.",
+        "en": "By far the main grape on the hill of Montgueux and in Villenauxe-la-Grande.",
+        "nl": "Veruit het belangrijkste ras op de heuvel van Montgueux en in Villenauxe-la-Grande.",
+        "it": "Nettamente maggioritario sulla collina di Montgueux e a Villenauxe-la-Grande."
+      }
+    },
+    {
+      "cepage": "meunier",
+      "texte": {
+        "fr": "Le troisième grand cépage champenois, plus discret dans l'Aube.",
+        "en": "The third great Champagne grape, more discreet in the Aube.",
+        "nl": "Het derde grote champagneras, bescheidener in de Aube.",
+        "it": "Il terzo grande vitigno champenois, più discreto nell'Aube."
+      }
+    }
+  ],
+  "faq": [
+    {
+      "question": {
+        "fr": "Combien d'appellations compte l'Aube ?",
+        "en": "How many appellations does the Aube have?",
+        "nl": "Hoeveel appellaties telt de Aube?",
+        "it": "Quante denominazioni conta l'Aube?"
+      },
+      "reponse": {
+        "fr": "Trois : Champagne, Coteaux champenois et Rosé des Riceys. Les trois se rencontrent sur une seule commune, Les Riceys.",
+        "en": "Three: Champagne, Coteaux Champenois and Rosé des Riceys. All three meet in a single village, Les Riceys.",
+        "nl": "Drie: Champagne, Coteaux Champenois en Rosé des Riceys. Alle drie komen samen in één gemeente, Les Riceys.",
+        "it": "Tre: Champagne, Coteaux Champenois e Rosé des Riceys. Tutte e tre si incontrano in un solo comune, Les Riceys."
+      }
+    },
+    {
+      "question": {
+        "fr": "Quel est le cépage principal de l'Aube ?",
+        "en": "What is the main grape variety of the Aube?",
+        "nl": "Wat is het belangrijkste druivenras van de Aube?",
+        "it": "Qual è il vitigno principale dell'Aube?"
+      },
+      "reponse": {
+        "fr": "Le pinot noir, qui couvre plus de 80 % des vignes de la Côte des Bar. À Montgueux et à Villenauxe-la-Grande, c'est le chardonnay qui domine.",
+        "en": "Pinot noir, which covers more than 80% of the vines in the Côte des Bar. In Montgueux and Villenauxe-la-Grande, chardonnay dominates.",
+        "nl": "Pinot noir, dat meer dan 80% van de wijngaarden in de Côte des Bar beslaat. In Montgueux en Villenauxe-la-Grande overheerst chardonnay.",
+        "it": "Il pinot noir, che copre oltre l'80% delle vigne della Côte des Bar. A Montgueux e a Villenauxe-la-Grande domina lo chardonnay."
+      }
+    },
+    {
+      "question": {
+        "fr": "Où goûter les champagnes de l'Aube ?",
+        "en": "Where can I taste the champagnes of the Aube?",
+        "nl": "Waar kan ik de champagnes van de Aube proeven?",
+        "it": "Dove assaggiare gli champagne dell'Aube?"
+      },
+      "reponse": {
+        "fr": "Lors de nos dégustations, à Troyes ou chez vous, de 6 à 13 personnes. Nous vous y présentons des vignerons de notre sélection.",
+        "en": "At our tastings, in Troyes or at your home, for 6 to 13 people. We introduce you to winemakers from our selection.",
+        "nl": "Tijdens onze proeverijen, in Troyes of bij u thuis, voor 6 tot 13 personen. We stellen u wijnmakers uit onze selectie voor.",
+        "it": "Durante le nostre degustazioni, a Troyes o a casa vostra, da 6 a 13 persone. Vi presentiamo dei vignaioli della nostra selezione."
+      }
+    }
+  ]
+}

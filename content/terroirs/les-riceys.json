@@ -1,0 +1,177 @@
+{
+  "cle": "les-riceys",
+  "nom": "Les Riceys",
+  "motCle": "champagne Les Riceys (et Rosé des Riceys)",
+  "seo": {
+    "title": {
+      "fr": "Les Riceys : champagne, coteaux champenois et Rosé des Riceys | Champagne de l'Aube",
+      "en": "Les Riceys: champagne, Coteaux Champenois and Rosé des Riceys | Champagne de l'Aube",
+      "nl": "Les Riceys: champagne, Coteaux Champenois en Rosé des Riceys | Champagne de l'Aube",
+      "it": "Les Riceys: champagne, Coteaux Champenois e Rosé des Riceys | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Les Riceys, seule commune de Champagne aux trois appellations : champagne, coteaux champenois et Rosé des Riceys. Le plus grand vignoble communal de Champagne.",
+      "en": "Les Riceys, the only village in Champagne with three appellations: champagne, Coteaux Champenois and Rosé des Riceys. The largest village vineyard in Champagne.",
+      "nl": "Les Riceys, de enige gemeente in de Champagne met drie appellaties: champagne, Coteaux Champenois en Rosé des Riceys. De grootste gemeentelijke wijngaard van de Champagne.",
+      "it": "Les Riceys, unico comune della Champagne con tre denominazioni: champagne, Coteaux Champenois e Rosé des Riceys. Il più grande vigneto comunale della Champagne."
+    }
+  },
+  "accroche": {
+    "fr": "Un village, trois appellations : où ailleurs en Champagne ?",
+    "en": "One village, three appellations: where else in Champagne?",
+    "nl": "Eén dorp, drie appellaties: waar anders in de Champagne?",
+    "it": "Un villaggio, tre denominazioni: dove altro in Champagne?"
+  },
+  "intro": {
+    "fr": "Au sud de la Côte des Bar, Les Riceys est la seule commune de Champagne à produire trois appellations : le champagne, les coteaux champenois et le Rosé des Riceys. C'est aussi le plus grand vignoble communal de toute la Champagne.",
+    "en": "In the south of the Côte des Bar, Les Riceys is the only village in Champagne to produce three appellations: champagne, Coteaux Champenois and Rosé des Riceys. It is also the largest village vineyard in the whole of Champagne.",
+    "nl": "In het zuiden van de Côte des Bar is Les Riceys de enige gemeente in de Champagne met drie appellaties: champagne, Coteaux Champenois en Rosé des Riceys. Het is ook de grootste gemeentelijke wijngaard van de hele Champagne.",
+    "it": "Nel sud della Côte des Bar, Les Riceys è l'unico comune della Champagne a produrre tre denominazioni: lo champagne, i Coteaux Champenois e il Rosé des Riceys. È anche il più grande vigneto comunale di tutta la Champagne."
+  },
+  "reperes": [
+    {
+      "label": {
+        "fr": "Vignoble",
+        "en": "Vineyard",
+        "nl": "Wijngaard",
+        "it": "Vigneto"
+      },
+      "valeur": {
+        "fr": "Plus de 840 hectares",
+        "en": "More than 840 hectares",
+        "nl": "Meer dan 840 hectare",
+        "it": "Oltre 840 ettari"
+      }
+    },
+    {
+      "label": {
+        "fr": "Appellations",
+        "en": "Appellations",
+        "nl": "Appellaties",
+        "it": "Denominazioni"
+      },
+      "valeur": {
+        "fr": "3 : Champagne, Coteaux champenois, Rosé des Riceys",
+        "en": "3: Champagne, Coteaux Champenois, Rosé des Riceys",
+        "nl": "3: Champagne, Coteaux Champenois, Rosé des Riceys",
+        "it": "3: Champagne, Coteaux Champenois, Rosé des Riceys"
+      }
+    },
+    {
+      "label": {
+        "fr": "Rosé des Riceys",
+        "en": "Rosé des Riceys",
+        "nl": "Rosé des Riceys",
+        "it": "Rosé des Riceys"
+      },
+      "valeur": {
+        "fr": "100 % pinot noir, AOC depuis 1947",
+        "en": "100% pinot noir, AOC since 1947",
+        "nl": "100% pinot noir, AOC sinds 1947",
+        "it": "100% pinot noir, AOC dal 1947"
+      }
+    }
+  ],
+  "villages": [
+    "Ricey-Bas",
+    "Ricey-Haut",
+    "Ricey-Haute-Rive"
+  ],
+  "cepagesDominants": [
+    "pinot-noir"
+  ],
+  "sols": {
+    "fr": "Comme le reste de la Côte des Bar, des marnes et des calcaires du Kimméridgien.",
+    "en": "Like the rest of the Côte des Bar, Kimmeridgian marl and limestone.",
+    "nl": "Zoals de rest van de Côte des Bar: mergel en kalksteen uit het Kimmeridgien.",
+    "it": "Come il resto della Côte des Bar, marne e calcari del Kimmeridgiano."
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Trois villages en un",
+        "en": "Three villages in one",
+        "nl": "Drie dorpen in één",
+        "it": "Tre villaggi in uno"
+      },
+      "paragraphes": [
+        {
+          "fr": "Les Riceys réunissent trois anciens bourgs : Ricey-Bas, Ricey-Haut et Ricey-Haute-Rive. Autrefois rattachés à trois évêchés différents, ils forment aujourd'hui une seule commune.",
+          "en": "Les Riceys brings together three former villages: Ricey-Bas, Ricey-Haut and Ricey-Haute-Rive. Once attached to three different bishoprics, they now form a single municipality.",
+          "nl": "Les Riceys verenigt drie vroegere dorpen: Ricey-Bas, Ricey-Haut en Ricey-Haute-Rive. Vroeger hoorden ze bij drie verschillende bisdommen; vandaag vormen ze één gemeente.",
+          "it": "Les Riceys riunisce tre antichi borghi: Ricey-Bas, Ricey-Haut e Ricey-Haute-Rive. Un tempo legati a tre diversi vescovati, oggi formano un unico comune."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le plus grand vignoble de Champagne",
+        "en": "The largest vineyard in Champagne",
+        "nl": "De grootste wijngaard van de Champagne",
+        "it": "Il più grande vigneto della Champagne"
+      },
+      "paragraphes": [
+        {
+          "fr": "Avec plus de 840 hectares de vignes, Les Riceys est la commune la plus plantée de toute la Champagne. Le pinot noir y règne, comme partout dans la [Côte des Bar](/la-cote-des-bar).",
+          "en": "With more than 840 hectares of vines, Les Riceys is the most planted village in the whole of Champagne. Pinot noir reigns here, as everywhere in the [Côte des Bar](/la-cote-des-bar).",
+          "nl": "Met meer dan 840 hectare wijngaard is Les Riceys de meest beplante gemeente van de hele Champagne. Pinot noir is hier koning, zoals overal in de [Côte des Bar](/la-cote-des-bar).",
+          "it": "Con oltre 840 ettari di vigne, Les Riceys è il comune più vitato di tutta la Champagne. Il pinot noir vi regna, come in tutta la [Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le Rosé des Riceys, une rareté",
+        "en": "Rosé des Riceys, a rarity",
+        "nl": "Rosé des Riceys, een zeldzaamheid",
+        "it": "Il Rosé des Riceys, una rarità"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le Rosé des Riceys est un vin tranquille, sans bulles, issu exclusivement de pinot noir. Reconnu en appellation d'origine contrôlée par un décret du 8 décembre 1947, il ne se récolte que sur la commune, dans des parcelles délimitées. Environ 350 hectares peuvent le produire, mais seule une petite partie y est consacrée : il reste rare.",
+          "en": "Rosé des Riceys is a still wine, without bubbles, made exclusively from pinot noir. Recognised as an appellation d'origine contrôlée by a decree of 8 December 1947, it is harvested only within the village, on delimited plots. Around 350 hectares may produce it, but only a small part is used for it: it remains rare.",
+          "nl": "Rosé des Riceys is een stille wijn, zonder bubbels, uitsluitend van pinot noir. Erkend als appellation d'origine contrôlée bij decreet van 8 december 1947, wordt hij alleen in de gemeente geoogst, op afgebakende percelen. Zo'n 350 hectare mag hem voortbrengen, maar slechts een klein deel wordt ervoor gebruikt: hij blijft zeldzaam.",
+          "it": "Il Rosé des Riceys è un vino fermo, senza bollicine, ottenuto esclusivamente da pinot noir. Riconosciuto come appellation d'origine contrôlée con un decreto dell'8 dicembre 1947, si vendemmia solo nel comune, su parcelle delimitate. Circa 350 ettari possono produrlo, ma solo una piccola parte vi è dedicata: resta raro."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Champagne et coteaux champenois",
+        "en": "Champagne and Coteaux Champenois",
+        "nl": "Champagne en Coteaux Champenois",
+        "it": "Champagne e Coteaux Champenois"
+      },
+      "paragraphes": [
+        {
+          "fr": "À côté du rosé, les vignerons des Riceys produisent du champagne et des coteaux champenois, des vins tranquilles de Champagne.",
+          "en": "Alongside the rosé, the winemakers of Les Riceys produce champagne and Coteaux Champenois, the still wines of Champagne.",
+          "nl": "Naast de rosé maken de wijnmakers van Les Riceys champagne en Coteaux Champenois, de stille wijnen van de Champagne.",
+          "it": "Accanto al rosé, i vignaioli di Les Riceys producono champagne e Coteaux Champenois, i vini fermi della Champagne."
+        },
+        {
+          "fr": "[VOTRE ANECDOTE] Votre première rencontre avec un Rosé des Riceys.",
+          "en": "[VOTRE ANECDOTE] Your first encounter with a Rosé des Riceys.",
+          "nl": "[VOTRE ANECDOTE] Uw eerste kennismaking met een Rosé des Riceys.",
+          "it": "[VOTRE ANECDOTE] Il vostro primo incontro con un Rosé des Riceys."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Goûter ce terroir",
+        "en": "Taste this terroir",
+        "nl": "Dit terroir proeven",
+        "it": "Assaggiare questo terroir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
+          "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
+          "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
+          "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
+        }
+      ]
+    }
+  ]
+}

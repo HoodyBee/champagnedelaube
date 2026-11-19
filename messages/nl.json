@@ -694,5 +694,16 @@
     "galerie": "In beeld",
     "reserverTitre": "Boeken: {titre}",
     "autres": "Onze andere proeverijen"
+  },
+  "terroirPage": {
+    "sols": "Bodem en geologie",
+    "cepages": "Druivenrassen",
+    "villages": "Dorpen",
+    "secteurs": "Twee gebieden",
+    "autres": "De andere terroirs van de Aube",
+    "offrePro": "Ontdek het aanbod voor professionals",
+    "carteTitre": "Vier terroirs",
+    "carteIntro": "Van de Côte des Bar tot Villenauxe-la-Grande heeft elk terroir zijn bodem, zijn druiven en zijn wijnmakers.",
+    "faqTitre": "Uw vragen over het terroir van de Aube"
   }
 }

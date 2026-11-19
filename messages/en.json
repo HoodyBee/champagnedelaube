@@ -694,5 +694,16 @@
     "galerie": "In pictures",
     "reserverTitre": "Book: {titre}",
     "autres": "Our other tastings"
+  },
+  "terroirPage": {
+    "sols": "Soils and geology",
+    "cepages": "Grape varieties",
+    "villages": "Villages",
+    "secteurs": "Two areas",
+    "autres": "The other Aube terroirs",
+    "offrePro": "Discover our trade offer",
+    "carteTitre": "Four terroirs",
+    "carteIntro": "From the Côte des Bar to Villenauxe-la-Grande, each terroir has its soil, its grapes and its winemakers.",
+    "faqTitre": "Your questions about the Aube terroir"
   }
 }

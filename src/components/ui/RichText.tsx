@@ -19,7 +19,13 @@ const components = (locale: Locale): PortableTextComponents => ({
   block: {
     h2: ({ children }) => <h2 className="pt-space-2 text-titre-section">{children}</h2>,
     h3: ({ children }) => <h3 className="pt-space-1 text-[1.25rem] font-bold">{children}</h3>,
-    blockquote: ({ children }) => <blockquote className="border-l-2 border-or pl-space-2 text-accroche">{children}</blockquote>,
+    blockquote: ({ children, value }) =>
+      // Emplacement réservé à une anecdote personnelle, à remplir dans Sanity : bien visible, sans faire « chantier ».
+      (value?.children?.[0] as { text?: string } | undefined)?.text?.startsWith("[VOTRE ANECDOTE]") ? (
+        <p className="rounded-carte border border-dashed border-or bg-creme-clair p-space-2 text-gris-chaud">{children}</p>
+      ) : (
+        <blockquote className="border-l-2 border-or pl-space-2 text-accroche">{children}</blockquote>
+      ),
     normal: ({ children }) => <p>{children}</p>,
   },
   list: {
