@@ -13,7 +13,9 @@ import { pageMetadata } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
 import { cepages, pictos, terroirs } from "@/lib/brand";
 import { nav } from "@/lib/site";
-import { getVigneron, getVigneronSlugs, getVignerons } from "@/sanity/content";
+import { MagCard } from "@/components/mag/MagCard";
+import { getRubriqueLabels, withDates } from "@/lib/mag";
+import { getArticles, getVigneron, getVigneronSlugs, getVignerons } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/vignerons/[slug]">;
 
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function VigneronPage({ params }: Props) {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   setRequestLocale(locale);
-  const [v, tous] = await Promise.all([getVigneron(slug, locale), getVignerons(locale)]);
+  const [v, tous, articles, labels] = await Promise.all([getVigneron(slug, locale), getVignerons(locale), getArticles(locale), getRubriqueLabels(locale)]);
   if (!v) notFound();
 
   const t = await getTranslations("vigneronPage");
@@ -51,6 +53,8 @@ export default async function VigneronPage({ params }: Props) {
   const tPro = await getTranslations("proPage");
   const terroir = v.terroir ? terroirs[v.terroir] : undefined;
   const autres = tous.filter((o) => o.slug !== v.slug).slice(0, 4);
+  const tMag = await getTranslations("mag");
+  const mag = withDates(articles.filter((a) => a.vignerons.includes(v.slug)), locale).slice(0, 3);
 
   return (
     <>
@@ -185,6 +189,18 @@ export default async function VigneronPage({ params }: Props) {
             {v.galerie.map((g, i) => (
               <li key={i}>
                 <Photo image={g} ratio="3/2" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" placeholderLabel="" />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {mag.length > 0 && (
+        <Section id="le-mag" titre={tMag("vigneronMag")} ornement="document">
+          <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
+            {mag.map((a) => (
+              <li key={a.slug}>
+                <MagCard article={a} labels={labels} lire={tMag("lire")} sponsored={tLegal("sponsored")} />
               </li>
             ))}
           </ul>

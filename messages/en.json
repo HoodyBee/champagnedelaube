@@ -6,9 +6,9 @@
     "defaultDescription": "Discover the champagnes of the Aube and their winemakers: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Our winemakers",
-    "tasting": "Our tastings",
-    "proChr": "Restaurants, wine shops and hotels",
+    "vignerons": "Our Selection",
+    "tasting": "Our Tastings",
+    "proChr": "Restaurants, wine shops, hotels",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
@@ -16,14 +16,17 @@
     "skipToContent": "Skip to content",
     "mainNav": "Main navigation",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu",
+    "closeMenu": "Close",
     "homeLink": "Champagne de l'Aube, back to home page",
     "terroirBand": "The terroirs of the Aube",
-    "terroirHub": "The Aube terroir",
+    "terroirHub": "The Aube Terroirs",
     "pro": "Professionals",
     "entreprises": "Companies",
     "particuliers": "Private clients",
-    "mariage": "Wedding champagne"
+    "mariage": "Your Special Occasions",
+    "mag": "Le Mag",
+    "menu": "Menu",
+    "proEntreprises": "Trade & Business"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -89,9 +92,9 @@
     },
     "entreprises": {
       "surTitre": "Gift boxes · Workshops · Team building",
-      "titre": "Companies & corporate gifts",
+      "titre": "Companies & business gifts",
       "texte": "Gift boxes from Aube winemakers and terroir discovery workshops for your teams and clients.",
-      "bouton": "Corporate offers"
+      "bouton": "Business offers"
     },
     "particuliers": {
       "surTitre": "Workshops · Advice · Events",
@@ -100,30 +103,37 @@
       "bouton": "Private clients area"
     },
     "chiffres": {
-      "terroirs": "Aube terroirs",
-      "domaines": "estates at most in the selection",
-      "personnes": "people per workshop",
-      "duree": "per tasting workshop"
+      "vignoble": {
+        "valeur": "≈ 8,000 ha",
+        "label": "the Aube vineyard, a quarter of the Champagne vineyard"
+      },
+      "appellations": {
+        "valeur": "3 appellations",
+        "label": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      },
+      "pinot": {
+        "valeur": "80%",
+        "label": "pinot noir in the Côte des Bar"
+      },
+      "degustation": {
+        "valeur": "6 to 13",
+        "label": "guests per tasting, for 1.5 hours"
+      }
     },
     "metaTitle": "Winemaker champagnes from the Côte des Bar | Champagne de l'Aube",
     "metaDescription": "A selection of independent winemakers from the Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande, with a single point of contact in Troyes.",
     "heroIntro": "A selection of independent winemakers from the Aube, presented by a single point of contact in Troyes.",
     "heroCtaTerroir": "Discover the terroir",
-    "heroCtaVignerons": "Our winemakers",
     "entreesTitre": "Who is it for?",
     "terroirSurTitre": "The terroir",
     "terroirTitre": "The Côte des Bar and the Aube, in the south of Champagne",
     "terroirTexte": "The Aube has four terroirs. The Côte des Bar, on its Kimmeridgian marls, is pinot noir country. Les Riceys is the only Champagne village with three appellations. Montgueux, a chalk hill on the edge of Troyes, is chardonnay land. Villenauxe-la-Grande looks towards the Sézannais.",
     "terroirCta": "Discover the Aube terroir",
-    "vigneronsSurTitre": "The selection",
-    "vigneronsTitre": "Our winemakers",
-    "vigneronsIntro": "Independent estates from the Aube, presented through the people who run them.",
-    "vigneronsCta": "All our winemakers",
     "reassuranceTitre": "Why Champagne de l'Aube?",
     "reassurance": {
       "selection": {
         "titre": "Independent winemakers",
-        "texte": "A selection of ten complementary estates at most."
+        "texte": "Independent estates chosen one by one, from the Côte des Bar to Montgueux."
       },
       "interlocuteur": {
         "titre": "Single point of contact",
@@ -151,7 +161,7 @@
       },
       "degustation": {
         "titre": "On-site tasting",
-        "texte": "I come and present the cuvées to your team, at your venue."
+        "texte": "We come and present the cuvées to your team, at your venue."
       }
     }
   },
@@ -176,7 +186,8 @@
       "dateEvenement": "Date of the event",
       "invites": "Number of guests",
       "places": "Number of places",
-      "sujet": "Your request is about"
+      "sujet": "Your request is about",
+      "profil": "You are"
     },
     "options": {
       "typeEtablissement": {
@@ -206,21 +217,30 @@
         "particulier": "Workshop or private event",
         "vigneron": "I am a winemaker",
         "autre": "Other"
+      },
+      "profil": {
+        "professionnel": "A trade professional (restaurant, wine shop, hotel)",
+        "entreprise": "A company or works council",
+        "particulier": "A private customer"
       }
     },
     "titles": {
       "grillePro": "Pro price list request",
       "degustationPro": "On-site tasting request",
       "partenaireVigneron": "Partner winemaker application",
-      "devisEntreprise": "Corporate quote request",
-      "brochureCse": "Corporate brochure request",
+      "devisEntreprise": "Business quote request",
+      "brochureCse": "Business brochure request",
       "reservationExperience": "Booking request",
       "conseilEvenement": "Event advice request",
       "inscriptionEvenement": "Event registration",
-      "contact": "Contact message"
+      "contact": "Contact message",
+      "catalogue": "Request for our selection (catalogue)",
+      "contactParticulier": "Private client enquiry",
+      "contactPro": "Trade enquiry (restaurant, wine shop, hotel)",
+      "contactEntreprise": "Company or works council enquiry"
     },
     "submit": {
-      "grillePro": "Get the price list",
+      "grillePro": "Receive the selection and trade prices",
       "degustationPro": "Request a tasting",
       "partenaireVigneron": "Send my application",
       "devisEntreprise": "Request my quote",
@@ -228,7 +248,11 @@
       "reservationExperience": "Send my booking request",
       "conseilEvenement": "Ask for advice",
       "inscriptionEvenement": "Register",
-      "contact": "Send the message"
+      "contact": "Send the message",
+      "catalogue": "Receive our selection",
+      "contactParticulier": "Send the message",
+      "contactPro": "Send the message",
+      "contactEntreprise": "Send the message"
     },
     "errors": {
       "required": "This field is required.",
@@ -238,12 +262,12 @@
       "date": "Please enter a valid date.",
       "tooLong": "This text is too long.",
       "majeur": "Please tick this box to continue: this service is for adults only.",
-      "emailOrPhone": "Please give at least an email or a phone number so I can reply.",
+      "emailOrPhone": "Please give at least an email or a phone number so we can reply.",
       "invalid": "Some fields need correcting, see below.",
       "spam": "Your request could not be sent. Please wait a few seconds and try again.",
       "captcha": "The anti-spam check failed. Please try again.",
       "rate": "Too many requests in a short time. Please try again in a few minutes.",
-      "config": "Sending is temporarily unavailable. Please email me directly at contact@champagnedelaube.fr.",
+      "config": "Sending is temporarily unavailable. Please email us directly at contact@champagnedelaube.fr.",
       "send": "A technical problem prevented sending. Please try again, or email contact@champagnedelaube.fr.",
       "emailForNewsletter": "To receive the news, please enter your email address."
     },
@@ -253,27 +277,59 @@
     "rgpd": "Your details are only used to reply to your request and are never sold. Learn more: <link>privacy policy</link>.",
     "sending": "Sending…",
     "success": {
-      "title": "Thank you, your request has been sent.",
-      "text": "I will reply to you personally as soon as possible.",
+      "title": "Thank you!",
+      "text": "We will get back to you very soon.",
       "download": "Download the brochure (PDF)",
-      "brochureByEmail": "I will email you the brochure very soon.",
-      "newsletter": "One last step to receive the news: click the confirmation link I have just emailed you."
+      "brochureByEmail": "We will email you the brochure very soon.",
+      "newsletter": "One last step to receive the news: click the confirmation link we have just emailed you.",
+      "catalogueSent": "Our selection is on its way: you will find it in your inbox within a few minutes.",
+      "catalogueSoon": "We will email you our selection very soon."
     },
     "ack": {
       "subject": "Champagne de l'Aube: we have received your request",
       "hello": "Hello,",
-      "body": "Thank you for your message ({form}). I have received it and will reply to you personally as soon as possible.",
+      "body": "Thank you for your message ({form}). We have received it and will get back to you very soon.",
       "brochure": "Your brochure is available here:",
-      "signature": "Speak soon,\nJulien Mineo"
+      "signature": "Speak soon,\nJulien Mineo",
+      "catalogue": "Here is our current selection, to download here:",
+      "catalogueSoon": "We will send you our current selection very soon, by return email."
     },
-    "newsletterOptIn": "I would like to receive news from Champagne de l'Aube (winemakers, tastings, events)."
+    "newsletterOptIn": "I would like to receive news from Champagne de l'Aube (winemakers, tastings, events).",
+    "faisonsConnaissance": "Let's get acquainted",
+    "fieldsByForm": {
+      "grillePro": {
+        "message": "Your wine list, your wishes"
+      }
+    }
   },
   "contactPage": {
     "title": "Contact",
-    "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to me: I will reply personally.",
+    "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to us: we will reply personally.",
     "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for winemaker champagnes from the Aube.",
     "details": "Details",
-    "formTitle": "Send a message"
+    "formTitle": "Let's get acquainted",
+    "vousEtes": "You are…?",
+    "vousEtesAide": "Choose your profile: the form adapts to your request.",
+    "profils": {
+      "particulier": {
+        "titre": "Private client",
+        "texte": "A tasting, a gift, an event"
+      },
+      "pro": {
+        "titre": "Trade professional",
+        "texte": "Restaurant, wine shop, hotel"
+      },
+      "entreprise": {
+        "titre": "Company & works council",
+        "texte": "Gift boxes, team events, gifts"
+      }
+    },
+    "raccourcisTitre": "Are you planning…",
+    "raccourcis": {
+      "degustation": "Book a tasting",
+      "evenement": "Plan a special occasion"
+    },
+    "vigneron": "Are you a winemaker? Tell us about your estate"
   },
   "newsletter": {
     "bar": {
@@ -283,7 +339,7 @@
     },
     "surTitre": "Newsletter",
     "title": "News from the winemakers of the Aube",
-    "intro": "Receive by email news from the estates I follow, the dates of upcoming tastings and events in the Aube.",
+    "intro": "Receive by email news from the estates we follow, the dates of upcoming tastings and events in the Aube.",
     "metaDescription": "Sign up for news from Champagne de l'Aube: independent winemakers of the Côte des Bar and the Aube, tastings in Troyes, events.",
     "points": {
       "vignerons": "Portraits and news of independent winemakers",
@@ -312,7 +368,7 @@
     },
     "success": {
       "title": "Check your inbox",
-      "text": "I have just sent an email to {email}. Click the link inside to confirm your subscription."
+      "text": "We have just sent an email to {email}. Click the link inside to confirm your subscription."
     },
     "confirm": {
       "title": "Confirm your subscription",
@@ -347,7 +403,7 @@
     "title": "Privacy policy",
     "metaDescription": "How Champagne de l'Aube collects and protects your personal data: forms, newsletter, processors (Brevo, Netlify), cookies and your rights.",
     "updated": "Last updated: November 2026",
-    "intro": "This page explains simply what personal data I collect on this website, why, who it is shared with and how to exercise your rights.",
+    "intro": "This page explains simply what personal data we collect on this website, why, who it is shared with and how to exercise your rights.",
     "sections": {
       "responsable": {
         "title": "Data controller",
@@ -359,7 +415,7 @@
       },
       "finalites": {
         "title": "Why this data is used",
-        "text": "• To reply to your request and prepare a quote or booking (pre-contractual measures).\n• To follow up our exchange: your contact details are saved in my address book (Brevo), sorted by profile (professional, company, private client, winemaker) (legitimate interest). This does not subscribe you to the newsletter.\n• To send you news, only if you asked for it and confirmed by clicking the link received by email (consent).\n• To protect the forms against automated submissions (legitimate interest)."
+        "text": "• To reply to your request and prepare a quote or booking (pre-contractual measures).\n• To follow up our exchange: your contact details are saved in our address book (Brevo), sorted by profile (professional, company, private client, winemaker) (legitimate interest). This does not subscribe you to the newsletter.\n• To send you news, only if you asked for it and confirmed by clicking the link received by email (consent).\n• To protect the forms against automated submissions (legitimate interest)."
       },
       "destinataires": {
         "title": "Who has access to your data",
@@ -383,8 +439,8 @@
     "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
     "metaDescription": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list: direct estate prices, a single point of contact, tastings at your venue.",
     "h1": "Champagnes from Aube winemakers for your wine list",
-    "intro": "I select champagnes from independent Aube winemakers and present them to restaurants, wine shops and hotels: direct estate prices, a single point of contact and a tasting at your venue.",
-    "ctaGrille": "Request the Pro price list",
+    "intro": "We select champagnes from independent Aube winemakers and present them to restaurants, wine shops and hotels: direct estate prices, a single point of contact and a tasting at your venue.",
+    "ctaGrille": "Receive our selection and trade prices",
     "ctaDegustation": "Arrange a tasting",
     "profilsTitre": "For which businesses?",
     "profils": {
@@ -408,22 +464,22 @@
     "argumentsTitre": "One contact, several estates",
     "portfolioSurTitre": "The estates",
     "portfolioTitre": "The estates in the selection",
-    "portfolioIntro": "A selection of ten estates at most, complementary in their terroirs and grape varieties. Prices are in the Pro price list, sent on request.",
-    "portfolioCta": "See all our winemakers",
+    "portfolioIntro": "Estates that complement each other in terroir and grape varieties. Trade prices are in our selection, sent on request.",
+    "portfolioCta": "See our whole selection",
     "referencesTitre": "They trust us",
-    "grilleTitre": "Get the Pro price list",
-    "grilleTexte": "I will email you the price list of the estates in the selection.",
+    "grilleTitre": "Receive our selection and its trade prices",
+    "grilleTexte": "We will email you our current selection, with the trade prices of each estate.",
     "degustationTitre": "Arrange a tasting at your venue",
-    "degustationTexte": "I come and present a selection of cuvées to your team, at your venue.",
+    "degustationTexte": "We come and present a selection of cuvées to your team, at your venue.",
     "partenaireTitre": "Are you a winemaker?",
-    "partenaireTexte": "Tell me about your estate: the selection is deliberately kept small.",
+    "partenaireTexte": "Tell us about your estate: the selection is deliberately kept small.",
     "partenaireCta": "Become a partner"
   },
   "vigneronsPage": {
-    "metaTitle": "Champagnes from independent Aube winemakers | Champagne de l'Aube",
+    "metaTitle": "Our selection of Aube grower Champagnes | Champagne de l'Aube",
     "metaDescription": "The independent winemakers in the Champagne de l'Aube selection: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Their villages, grape varieties and methods.",
     "surTitre": "Independent winemakers",
-    "h1": "Our winemakers",
+    "h1": "Our Selection",
     "intro": "Independent estates from the Aube, chosen for their terroir and their work. Each cuvée is presented through its winemaker.",
     "filtres": "Filter the estates",
     "tous": "All",
@@ -441,22 +497,22 @@
     "site": "Estate website",
     "galerie": "In pictures",
     "ctaProTitre": "Restaurant, wine shop, hotel?",
-    "ctaProTexte": "Get the Pro price list for the estates in the selection.",
+    "ctaProTexte": "Receive our selection and its trade prices.",
     "ctaPartTitre": "Discover the cuvées",
-    "ctaPartTexte": "At a small-group tasting workshop in Troyes.",
+    "ctaPartTexte": "In Troyes or at your home, at a tasting for 6 to 13 people.",
     "ctaPartBouton": "Our tastings",
     "autres": "More winemakers from the selection"
   },
   "partenairePage": {
     "metaTitle": "Aube winemakers: become a partner | Champagne de l'Aube",
-    "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "surTitre": "Aube winemakers",
     "h1": "Winemakers: become a partner",
-    "intro": "Are you an independent winemaker in the Aube? I present a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "intro": "Are you an independent winemaker in the Aube? We present a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "points": {
       "selection": {
         "titre": "A small selection",
-        "texte": "Ten complementary estates at most, so that each has its place."
+        "texte": "Complementary estates, chosen so that each has its place."
       },
       "publics": {
         "titre": "Professionals and private clients",
@@ -467,7 +523,87 @@
         "texte": "Workshops for 6 to 13 people, where each cuvée is told through its winemaker."
       }
     },
-    "formTitre": "Tell me about your estate",
-    "formTexte": "A few words about your estate and your cuvées: I will get back to you to arrange a visit to the estate."
+    "formTitre": "Tell us about your estate",
+    "formTexte": "A few words about your estate and your cuvées: we will get back to you to arrange a visit to the estate."
+  },
+  "selection": {
+    "surTitre": "Our selection",
+    "titre": "Our selection grows with every encounter",
+    "texte": "From the Côte des Bar to Montgueux, we meet new winemakers every season. Receive our current selection by email: the estates, their villages, their cuvées.",
+    "bouton": "Receive our selection",
+    "dialogTitre": "Receive our selection",
+    "dialogTexte": "The estates of the moment, their villages and their cuvées, in a document sent by email.",
+    "fermer": "Close"
+  },
+  "degustationsPage": {
+    "intro": "In Troyes or at your home, around a table of 6 to 13 people, we introduce you to winemakers from our selection: their village, their plots, the way they work. An hour and a half, with a quiz, to understand what sets them apart."
+  },
+  "evenementsPage": {
+    "metaTitle": "Wedding champagne in Troyes and the Aube | Champagne de l'Aube",
+    "metaDescription": "Weddings, christenings, group orders: choose champagnes from Aube winemakers with our advice and direct winemaker prices.",
+    "surTitre": "Weddings · Christenings · Group orders",
+    "h1": "Champagne for weddings and special occasions",
+    "intro": "Need champagne for a special occasion, a wedding, a christening, or a group order? Benefit from our advice and direct winemaker prices, with estates from our selection.",
+    "cta": "Ask for advice for my event",
+    "occasionsTitre": "For which occasion?",
+    "occasions": {
+      "mariage": {
+        "titre": "Weddings",
+        "texte": "From the reception to dessert, we help you choose cuvées from Aube winemakers to go with your menu, and estimate the quantities."
+      },
+      "bapteme": {
+        "titre": "Christenings",
+        "texte": "For a family meal, we advise you according to the menu, the number of guests and your budget."
+      },
+      "famille": {
+        "titre": "Birthdays and family celebrations",
+        "texte": "A date that matters, a meal that brings people together: we point you to estates from our selection, from the Côte des Bar to Les Riceys."
+      },
+      "groupee": {
+        "titre": "Group orders",
+        "texte": "Associations, committees, friends: combine your orders and benefit from direct winemaker prices."
+      }
+    },
+    "etapesTitre": "How does it work?",
+    "etapes": {
+      "1": {
+        "titre": "Tell us about your event",
+        "texte": "The date, the number of guests, the menu, your budget: a few lines are enough."
+      },
+      "2": {
+        "titre": "We advise you",
+        "texte": "We suggest cuvées from our selection to suit your menu, with the quantities to plan for."
+      },
+      "3": {
+        "titre": "You order direct",
+        "texte": "You benefit from direct winemaker prices, and we remain your contact until the big day."
+      }
+    },
+    "faqTitre": "Your questions",
+    "formTitre": "Ask for advice for my event",
+    "formTexte": "Tell us about your project: we will get back to you very soon with suggestions."
+  },
+  "mag": {
+    "metaTitle": "Le Mag: champagne, food pairings and Aube winemakers | Champagne de l'Aube",
+    "metaDescription": "All about champagne, food and champagne pairings, and portraits of winemakers from the Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande.",
+    "surTitre": "Champagne de l'Aube",
+    "h1": "Le Mag",
+    "intro": "Winemakers, villages, pairings: what we learn in the field, from Montgueux to Les Riceys.",
+    "filtres": "Filter by section",
+    "tous": "All",
+    "count": "{count, plural, one {# article} other {# articles}}",
+    "aucun": "No articles in this section yet.",
+    "vide": "The first articles are coming very soon.",
+    "lire": "Read the article",
+    "voirRubrique": "The whole section",
+    "retour": "All Le Mag articles",
+    "vignerons": "The winemakers in this article",
+    "lies": "Related articles",
+    "vigneronMag": "Featured in Le Mag",
+    "rubriques": {
+      "toutSavoir": "All about champagne",
+      "accords": "Food & champagne pairings",
+      "portraits": "Winemaker portraits"
+    }
   }
 }

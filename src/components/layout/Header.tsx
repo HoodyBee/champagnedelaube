@@ -6,16 +6,24 @@ import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link, usePathname } from "@/i18n/navigation";
-import type { StaticPathname as AppPathname } from "@/i18n/routing";
+import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
-import { nav, terroirPages, type NavKey } from "@/lib/site";
+import { nav, proEntreprises, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
 type Item = { href: AppPathname; label: string; color?: string };
 
-/** En-tête du site : logo (avatar), navigation, Espace Pro, réseaux, langue, bandeau des terroirs. */
-export function Header({ social }: { social: Social }) {
+/**
+ * En-tête en deux étages :
+ *  1. le logo complet (sans sa ligne des terroirs, que l'on écrit en entier juste dessous),
+ *     qui défile normalement avec la page ;
+ *  2. la barre de navigation, qui reste collée en haut de l'écran. Une fois le logo
+ *     sorti de l'écran, la bouteille seule (avatar) apparaît à gauche de la barre.
+ * Pas de saut de mise en page : l'en-tête est « collant » avec un décalage égal à la
+ * hauteur du premier étage.
+ */
+export function Header({ social, locales }: { social: Social; locales: readonly Locale[] }) {
   const t = useTranslations("nav");
   const tSocial = useTranslations("social");
   const socialLabels = {
@@ -27,13 +35,24 @@ export function Header({ social }: { social: Social }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Le bandeau des terroirs se replie dès que l'on fait défiler la page.
-  const [scrolled, setScrolled] = useState(false);
+  // « Réduit » : le logo est sorti de l'écran, la barre de navigation est collée en haut.
+  const headerRef = useRef<HTMLElement>(null);
+  const logoRowRef = useRef<HTMLDivElement>(null);
+  const [compact, setCompact] = useState(false);
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    const onScroll = () => {
+      const header = headerRef.current;
+      const row = logoRowRef.current;
+      if (!header || !row) return;
+      setCompact(header.getBoundingClientRect().top <= -row.offsetHeight + 1);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   const toItem = (p: { key: NavKey; href: AppPathname }): Item => ({ href: p.href, label: t(p.key) });
@@ -43,8 +62,8 @@ export function Header({ social }: { social: Social }) {
     color: `var(--color-${terroirs[p.key].color})`,
   }));
   const terroirMenu: Item[] = [toItem(nav.terroirHub), ...terroirItems];
-  const proItems = nav.pro.map(toItem);
-  const particuliersItems = nav.particuliers.map(toItem);
+  const degustationItems = nav.particuliers.map(toItem);
+  const proItems = proEntreprises.map(toItem);
 
   const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
   const isGroupActive = (items: Item[]) => items.some((i) => isActive(i.href));
@@ -58,88 +77,28 @@ export function Header({ social }: { social: Social }) {
 
   return (
     <MotionConfig reducedMotion="user">
-      <header className="sticky top-0 z-40 border-b border-filet bg-creme-clair/95 backdrop-blur-sm">
-        <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4 2xl:max-w-[1440px]">
-          <Link href="/" aria-label={t("homeLink")} className="flex shrink-0 items-center gap-space-1">
+      <header ref={headerRef} className="sticky top-[-172px] z-40 bg-creme-clair lg:top-[-224px]">
+        {/* Étage 1 : le logo complet, puis les 4 terroirs écrits en entier (ordinateur). */}
+        <div ref={logoRowRef} className="flex h-[172px] flex-col items-center justify-center lg:h-[224px]">
+          <Link href="/" aria-label={t("homeLink")} className="block p-[19px] lg:p-[20px]" tabIndex={compact ? -1 : undefined}>
             <Image
-              src={logos.avatar.src}
+              src={logos.sansTerroirs.src}
               alt=""
-              width={48}
-              height={48}
-              sizes="48px"
+              width={150}
+              height={143}
+              sizes="(min-width: 1024px) 150px, 140px"
               priority
-              className="h-12 w-12"
+              className="h-[133px] w-[140px] lg:h-[143px] lg:w-[150px]"
             />
-            <span className="whitespace-nowrap text-[1.125rem] font-bold leading-tight">
-              Champagne de l&apos;Aube
-            </span>
           </Link>
-
-          {/* Navigation ordinateur */}
-          <nav aria-label={t("mainNav")} className="hidden xl:block">
-            <ul className="flex items-center gap-1 2xl:gap-space-2">
-              <li>
-                <Dropdown label={t("terroirHub")} items={terroirMenu} active={isGroupActive(terroirMenu)} isActive={isActive} />
-              </li>
-              <li>
-                <NavLink href={nav.vignerons.href} active={isActive(nav.vignerons.href)}>{t("vignerons")}</NavLink>
-              </li>
-              <li>
-                <Dropdown label={t("pro")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} />
-              </li>
-              <li>
-                <NavLink href={nav.entreprises.href} active={isActive(nav.entreprises.href)}>{t("entreprises")}</NavLink>
-              </li>
-              <li>
-                <Dropdown label={t("particuliers")} items={particuliersItems} active={isGroupActive(particuliersItems)} isActive={isActive} align="right" />
-              </li>
-            </ul>
-          </nav>
-
-          <div className="flex items-center gap-space-1">
-            <SocialLinks
-              links={social}
-              labels={socialLabels}
-              className="hidden 2xl:flex"
-              linkClassName="text-anthracite hover:text-bronze"
-            />
-            <div className="hidden xl:block">
-              <LanguageSwitcher />
-            </div>
-            <Link
-              href="/contact"
-              aria-current={isActive("/contact") ? "page" : undefined}
-              className="hidden min-h-11 items-center rounded-etiquette bg-anthracite px-space-2 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit xl:inline-flex"
-            >
-              {t("contact")}
-            </Link>
-            <button
-              type="button"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-etiquette text-anthracite xl:hidden"
-              aria-expanded={mobileOpen}
-              aria-controls="menu-mobile"
-              aria-label={mobileOpen ? t("closeMenu") : t("openMenu")}
-              onClick={() => setMobileOpen((v) => !v)}
-            >
-              <BurgerIcon open={mobileOpen} />
-            </button>
-          </div>
-        </div>
-
-        {/* Bandeau des 4 terroirs : ordinateur uniquement, replié au défilement. */}
-        <div
-          inert={scrolled}
-          className={`hidden overflow-hidden border-t border-filet transition-[max-height,opacity] duration-300 ease-out lg:block ${
-            scrolled ? "max-h-0 opacity-0" : "max-h-12 opacity-100"
-          }`}
-        >
-          <nav aria-label={t("terroirBand")}>
-            <ul className="mx-auto flex h-9 max-w-7xl items-center justify-center gap-space-1 px-space-4">
+          <nav aria-label={t("terroirBand")} className="hidden lg:block">
+            <ul className="flex items-center justify-center gap-space-1">
               {terroirItems.map((item, i) => (
                 <li key={item.href} className="flex items-center gap-space-1">
                   {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud">·</span>}
                   <Link
                     href={item.href}
+                    tabIndex={compact ? -1 : undefined}
                     aria-current={isActive(item.href) ? "page" : undefined}
                     className={`inline-flex items-center gap-[6px] py-1 text-sur-titre-petit transition-colors hover:text-bronze ${
                       isActive(item.href) ? "text-bronze" : "text-gris-chaud"
@@ -153,6 +112,72 @@ export function Header({ social }: { social: Social }) {
             </ul>
           </nav>
         </div>
+
+        {/* Étage 2 : la barre de navigation, collée en haut de l'écran au défilement. */}
+        <div
+          className={`border-y border-filet transition-[background-color,box-shadow] duration-300 ${
+            compact ? "bg-creme-clair/95 shadow-[0_6px_18px_rgba(30,30,32,0.05)] backdrop-blur-sm" : "bg-creme-clair"
+          }`}
+        >
+          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-space-2 px-space-2 sm:px-space-4 2xl:max-w-[1440px]">
+            <div className="flex min-w-0 items-center gap-space-2">
+              {/* La bouteille seule, une fois le logo complet sorti de l'écran. */}
+              <Link
+                href="/"
+                aria-label={t("homeLink")}
+                aria-hidden={!compact}
+                tabIndex={compact ? undefined : -1}
+                className={`shrink-0 transition-opacity duration-300 ${compact ? "opacity-100" : "pointer-events-none opacity-0"}`}
+              >
+                <Image src={logos.avatar.src} alt="" width={44} height={44} sizes="44px" className="h-11 w-11" />
+              </Link>
+
+              {/* Navigation ordinateur */}
+              <nav aria-label={t("mainNav")} className="hidden xl:block">
+                <ul className="flex items-center gap-1 2xl:gap-space-1">
+                  <li>
+                    <Dropdown label={t("terroirHub")} items={terroirMenu} active={isGroupActive(terroirMenu)} isActive={isActive} />
+                  </li>
+                  <li>
+                    <NavLink href={nav.vignerons.href} active={isActive(nav.vignerons.href)}>{t("vignerons")}</NavLink>
+                  </li>
+                  <li>
+                    <Dropdown label={t("tasting")} items={degustationItems} active={isGroupActive(degustationItems)} isActive={isActive} />
+                  </li>
+                  <li>
+                    <NavLink href={nav.mag.href} active={isActive(nav.mag.href)}>{t("mag")}</NavLink>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div className="flex items-center gap-space-1">
+              <div className="hidden xl:block">
+                <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
+              </div>
+              <div className="hidden xl:block">
+                <LanguageSwitcher locales={locales} />
+              </div>
+              <Link
+                href="/contact"
+                aria-current={isActive("/contact") ? "page" : undefined}
+                className="hidden min-h-11 items-center rounded-etiquette bg-anthracite px-space-2 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit xl:inline-flex"
+              >
+                {t("contact")}
+              </Link>
+              <button
+                type="button"
+                className="inline-flex min-h-11 items-center gap-space-1 rounded-etiquette px-space-1 text-sur-titre text-anthracite xl:hidden"
+                aria-expanded={mobileOpen}
+                aria-controls="menu-mobile"
+                onClick={() => setMobileOpen(true)}
+              >
+                {t("menu")}
+                <BurgerIcon open={false} />
+              </button>
+            </div>
+          </div>
+        </div>
       </header>
 
       {/* En dehors du <header> : son effet de flou empêcherait le panneau de couvrir l'écran. */}
@@ -162,12 +187,13 @@ export function Header({ social }: { social: Social }) {
         groups={[
           { title: t("terroirHub"), items: terroirMenu },
           { items: [toItem(nav.vignerons)] },
-          { title: t("pro"), items: proItems },
-          { items: [toItem(nav.entreprises)] },
-          { title: t("particuliers"), items: particuliersItems },
+          { title: t("tasting"), items: degustationItems },
+          { items: [toItem(nav.mag)] },
+          { title: t("proEntreprises"), items: proItems },
         ]}
         contact={{ href: "/contact", label: t("contact") }}
         isActive={isActive}
+        locales={locales}
         social={<SocialLinks links={social} labels={socialLabels} className="-ml-3" linkClassName="text-anthracite hover:text-bronze" />}
       />
     </MotionConfig>
@@ -307,6 +333,7 @@ function MobileMenu({
   groups,
   contact,
   isActive,
+  locales,
   social,
 }: {
   social: ReactNode;
@@ -315,19 +342,25 @@ function MobileMenu({
   groups: { title?: string; items: Item[] }[];
   contact: Item;
   isActive: (href: AppPathname) => boolean;
+  locales: readonly Locale[];
 }) {
   const t = useTranslations("nav");
+  const closeRef = useRef<HTMLButtonElement>(null);
 
-  // Bloque le défilement de la page derrière le menu, et ferme avec Échap.
+  // Bloque le défilement de la page derrière le menu, place le focus sur « Fermer »,
+  // ferme avec Échap et rend le focus au bouton « Menu ».
   useEffect(() => {
     if (!open) return;
+    const opener = document.activeElement as HTMLElement | null;
     const previous = document.documentElement.style.overflow;
     document.documentElement.style.overflow = "hidden";
+    closeRef.current?.focus();
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     document.addEventListener("keydown", onKey);
     return () => {
       document.documentElement.style.overflow = previous;
       document.removeEventListener("keydown", onKey);
+      opener?.focus();
     };
   }, [open, onClose]);
 
@@ -336,13 +369,32 @@ function MobileMenu({
       {open && (
         <motion.div
           id="menu-mobile"
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-          className="fixed inset-x-0 bottom-0 top-[72px] z-40 overflow-y-auto bg-blanc xl:hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-label={t("mainNav")}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="fixed inset-0 z-50 overflow-y-auto bg-creme-clair xl:hidden"
         >
-          <nav aria-label={t("mainNav")} className="mx-auto max-w-xl px-space-2 pb-space-5 pt-space-3 sm:px-space-4">
+          <div className="sticky top-0 z-10 border-b border-filet bg-creme-clair">
+            <div className="mx-auto flex h-16 max-w-xl items-center justify-between px-space-2 sm:px-space-4">
+              <Link href="/" aria-label={t("homeLink")} onClick={onClose}>
+                <Image src={logos.avatar.src} alt="" width={44} height={44} sizes="44px" className="h-11 w-11" />
+              </Link>
+              <button
+                ref={closeRef}
+                type="button"
+                onClick={onClose}
+                className="inline-flex min-h-11 items-center gap-space-1 rounded-etiquette px-space-1 text-sur-titre text-anthracite"
+              >
+                {t("closeMenu")}
+                <BurgerIcon open />
+              </button>
+            </div>
+          </div>
+          <nav aria-label={t("mainNav")} className="mx-auto max-w-xl px-space-2 pb-space-5 pt-space-1 sm:px-space-4">
             {groups.map((group) => (
               <div key={group.title ?? group.items[0].href} className="border-b border-filet py-space-2">
                 {group.title && <p className="text-sur-titre text-bronze">{group.title}</p>}
@@ -358,7 +410,7 @@ function MobileMenu({
                         }`}
                       >
                         {item.color && (
-                          <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
+                          <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
                         )}
                         {item.label}
                       </Link>
@@ -375,7 +427,7 @@ function MobileMenu({
               {contact.label}
             </Link>
             <div className="mt-space-3">
-              <LanguageSwitcher variant="inline" onNavigate={onClose} />
+              <LanguageSwitcher variant="inline" locales={locales} onNavigate={onClose} />
             </div>
             <div className="mt-space-2">{social}</div>
           </nav>

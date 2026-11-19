@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import type { Locale } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -9,7 +10,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
  * donc tout le contenu. Son fonctionnement (ouverture, boutons, mémorisation,
  * clavier) est entièrement géré par le script de src/lib/age-gate.ts, sans React.
  */
-export async function AgeGate() {
+export async function AgeGate({ locales }: { locales: readonly Locale[] }) {
   const t = await getTranslations("ageGate");
 
   return (
@@ -57,7 +58,7 @@ export async function AgeGate() {
         </p>
 
         <div className="mt-space-3 flex justify-center">
-          <LanguageSwitcher variant="inline" />
+          <LanguageSwitcher variant="inline" locales={locales} />
         </div>
         <p className="mt-space-2 text-legende text-gris-chaud">{t("remember")}</p>
       </div>

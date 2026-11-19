@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/politiqu
   return {
     title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: localizedAlternates("/politique-de-confidentialite", locale),
-    robots: robotsFor(locale),
+    alternates: await localizedAlternates("/politique-de-confidentialite", locale),
+    robots: await robotsFor(locale),
   };
 }
 

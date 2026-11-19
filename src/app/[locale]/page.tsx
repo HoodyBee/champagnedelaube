@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Arguments } from "@/components/ui/Arguments";
 import { ButtonLink } from "@/components/ui/Button";
 import { Chiffres } from "@/components/ui/Chiffres";
-import { DomaineCard } from "@/components/ui/DomaineCard";
 import { EntreeCard } from "@/components/ui/EntreeCard";
 import { Hero } from "@/components/ui/Hero";
 import { LineIcon } from "@/components/ui/LineIcon";
@@ -14,7 +13,8 @@ import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata, SITE_URL } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
-import { getAccueil, getProchainEvenement, getVignerons } from "@/sanity/content";
+import { SelectionBox } from "@/components/selection/SelectionBox";
+import { getAccueil, getProchainEvenement } from "@/sanity/content";
 import { getReglages } from "@/sanity/queries";
 
 const TERROIRS_LIGNE = "Côte des Bar · Les Riceys · Montgueux · Villenauxe-la-Grande";
@@ -31,20 +31,16 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   setRequestLocale(locale);
   const t = await getTranslations("home");
   const tUi = await getTranslations("ui");
-  const [a, vignerons, evenement, reglages] = await Promise.all([
-    getAccueil(locale),
-    getVignerons(locale),
-    getProchainEvenement(locale),
-    getReglages(),
-  ]);
+  const tNav = await getTranslations("nav");
+  const [a, evenement, reglages] = await Promise.all([getAccueil(locale), getProchainEvenement(locale), getReglages()]);
 
   const chiffres = a.chiffres.length
     ? a.chiffres
     : [
-        { valeur: "4", label: t("chiffres.terroirs") },
-        { valeur: "10", label: t("chiffres.domaines") },
-        { valeur: "6–13", label: t("chiffres.personnes") },
-        { valeur: "90 min", label: t("chiffres.duree") },
+        ...(["vignoble", "appellations", "pinot", "degustation"] as const).map((k) => ({
+          valeur: t(`chiffres.${k}.valeur`),
+          label: t(`chiffres.${k}.label`),
+        })),
       ];
   const entree = (k: "pro" | "entreprises" | "particuliers") => {
     const e = a.entrees[k];
@@ -56,7 +52,6 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
       image: e.image,
     };
   };
-  const selection = (a.vigneronsSelection.length ? a.vigneronsSelection : vignerons.filter((v) => v.partenaire)).slice(0, 4);
   const reassurance = a.reassurance.length
     ? a.reassurance
     : (["selection", "interlocuteur", "terroir"] as const).map((k, i) => ({
@@ -91,7 +86,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           <>
             <ButtonLink href={nav.terroirHub.href}>{t("heroCtaTerroir")}</ButtonLink>
             <ButtonLink href={nav.vignerons.href} variant="secondaire">
-              {t("heroCtaVignerons")}
+              {tNav("vignerons")}
             </ButtonLink>
           </>
         }
@@ -105,6 +100,11 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           <EntreeCard href={nav.particuliers[0].href} placeholderLabel={tUi("photoSoon")} {...entree("particuliers")} />
         </div>
       </Section>
+
+      {/* Respiration : une grande photo pleine largeur (paysage, village, mains au travail). */}
+      <div data-reveal className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[21/9]">
+        <Photo image={a.photoPleineLargeur} ratio="16/9" sizes="100vw" placeholderLabel="" className="absolute inset-0 !aspect-auto h-full w-full" />
+      </div>
 
       <Section id="terroir" fond="chaude">
         <div className="grid items-center gap-space-4 lg:grid-cols-2 lg:gap-space-5">
@@ -127,23 +127,13 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         </div>
       </Section>
 
-      <Section id="vignerons" surTitre={t("vigneronsSurTitre")} titre={a.vigneronsTitre ?? t("vigneronsTitre")} intro={a.vigneronsIntro ?? t("vigneronsIntro")}>
-        <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-4">
-          {selection.map((v) => (
-            <li key={v.slug}>
-              <DomaineCard domaine={v} />
-            </li>
-          ))}
-        </ul>
-        <div className="mt-space-4 text-center">
-          <ButtonLink href={nav.vignerons.href} variant="secondaire">
-            {t("vigneronsCta")}
-          </ButtonLink>
-        </div>
+      {/* Notre sélection évolue : pas de vitrine figée des domaines, un catalogue à recevoir. */}
+      <Section id="selection">
+        <SelectionBox titre={a.selectionTitre} texte={a.selectionTexte} />
       </Section>
 
       {evenement && (
-        <Section id="rendez-vous" fond="chaude">
+        <Section id="rendez-vous">
           <div className="grid items-center gap-space-4 md:grid-cols-[1fr_1.2fr]">
             <Photo image={evenement.image} ratio="4/3" sizes="(min-width: 768px) 40vw, 100vw" placeholderLabel={tUi("photoSoon")} />
             <div>
@@ -176,7 +166,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         </Section>
       )}
 
-      <Section id="pourquoi" fond={evenement ? "blanc" : "chaude"} titre={t("reassuranceTitre")}>
+      <Section id="pourquoi" fond="chaude" titre={t("reassuranceTitre")}>
         <Arguments items={reassurance} />
       </Section>
 

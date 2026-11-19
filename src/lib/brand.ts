@@ -63,7 +63,19 @@ export const logos = {
     height: 3000,
     minWidth: 240,
   },
-  /** La bouteille seule : favicon et en-tête (en attendant un logo sans ligne des terroirs). */
+  /**
+   * Logo empilé SANS la ligne des terroirs (en-tête). Simple recadrage du fichier
+   * officiel, fond rendu transparent, sans aucune retouche du dessin.
+   * Minimum 140 px de large ; les terroirs sont alors écrits à part, en entier.
+   */
+  sansTerroirs: {
+    src: "/brand/logos/logo-empile-sans-terroirs.png",
+    alt: "Champagne de l'Aube",
+    width: 1000,
+    height: 952,
+    minWidth: 140,
+  },
+  /** La bouteille seule : favicon, et en-tête une fois réduit au défilement. */
   avatar: {
     src: "/brand/logos/avatar.png",
     alt: "Champagne de l'Aube",

@@ -87,6 +87,35 @@ export const reglages = defineType({
       validation: (rule) => rule.required().email(),
     }),
     defineField({
+      name: "catalogue",
+      title: "Catalogue « Notre sélection » (PDF)",
+      description:
+        "Le PDF envoyé automatiquement par e-mail quand un visiteur clique sur « Recevoir notre sélection ». Pour le changer : téléversez le nouveau fichier ici, puis Publier. Sans PDF, vous recevez la demande et vous répondez vous-même.",
+      type: "file",
+      group: "pages",
+      options: { accept: "application/pdf" },
+    }),
+    defineField({
+      name: "languesActives",
+      title: "Langues actives",
+      description:
+        "Langues proposées dans les sélecteurs de langue et ouvertes à Google. Une langue décochée garde ses pages et ses traductions, mais elle est masquée et hors de Google. Le français reste toujours actif.",
+      type: "array",
+      group: "general",
+      of: [{ type: "string" }],
+      options: {
+        layout: "grid",
+        list: [
+          { title: "Français", value: "fr" },
+          { title: "English", value: "en" },
+          { title: "Nederlands", value: "nl" },
+          { title: "Italiano", value: "it" },
+          { title: "Deutsch", value: "de" },
+        ],
+      },
+      initialValue: ["fr", "en", "nl", "it"],
+    }),
+    defineField({
       name: "pepitesActive",
       title: "Afficher la page « Où trouver nos pépites ? »",
       description:

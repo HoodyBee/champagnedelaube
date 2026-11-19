@@ -8,6 +8,7 @@ import { experience } from "./documents/experience";
 import { page } from "./documents/page";
 import { partenaire } from "./documents/partenaire";
 import { reglages } from "./documents/reglages";
+import { rubrique } from "./documents/rubrique";
 import { terroir } from "./documents/terroir";
 import { terroirAube } from "./documents/terroirAube";
 import { vigneron } from "./documents/vigneron";
@@ -33,6 +34,7 @@ export const schemaTypes = [
   experience,
   evenement,
   article,
+  rubrique,
   partenaire,
   // Briques
   localeString,

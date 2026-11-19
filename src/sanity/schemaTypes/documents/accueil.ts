@@ -59,17 +59,15 @@ export const accueil = defineType({
     entree("entreeParticuliers", "Entrée 3 : Particuliers", "Bouton vers l'espace Particuliers (/tasting-troyes/)."),
 
     defineField({ name: "terroir", title: "Section « Le terroir de l'Aube »", type: "blocTexte", group: "sections" }),
-    defineField({ name: "vigneronsTitre", title: "Titre de la section vignerons", type: "localeString", group: "sections" }),
-    defineField({ name: "vigneronsIntro", title: "Introduction de la section vignerons", type: "localeText", group: "sections" }),
     defineField({
-      name: "vigneronsSelection",
-      title: "Vignerons mis en avant",
-      description: "3 à 6 domaines. Laissez vide pour afficher automatiquement les premiers partenaires.",
-      type: "array",
+      name: "photoPleineLargeur",
+      title: "Grande photo pleine largeur",
+      description: "Une respiration entre les sections : un paysage, un village, des mains au travail. Format paysage, au moins 2400 px de large.",
+      type: "imageAvecAlt",
       group: "sections",
-      validation: (r) => r.max(6),
-      of: [defineArrayMember({ type: "reference", to: [{ type: "vigneron" }] })],
     }),
+    defineField({ name: "selectionTitre", title: "Encadré « Notre sélection » : titre", description: "Par défaut : « Notre sélection évolue au fil des rencontres ».", type: "localeString", group: "sections" }),
+    defineField({ name: "selectionTexte", title: "Encadré « Notre sélection » : texte", type: "localeText", group: "sections" }),
 
     defineField({
       name: "reassurance",

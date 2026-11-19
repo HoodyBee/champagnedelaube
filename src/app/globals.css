@@ -103,3 +103,35 @@ html[data-age-gate="open"] .age-gate-panel {
     scroll-behavior: auto !important;
   }
 }
+
+/* Visuel provisoire en attendant les photos : crème clair et motif « vitrail »
+   très discret (rappel des facettes de la bouteille), en filets dorés pâles. */
+@utility vitrail {
+  background-color: var(--color-creme-clair);
+  background-image:
+    radial-gradient(ellipse at 50% 45%, var(--color-creme-clair) 0%, color-mix(in srgb, var(--color-creme-clair) 70%, transparent) 38%, transparent 75%),
+    repeating-linear-gradient(60deg, transparent 0 47px, var(--color-filet) 47px 48px),
+    repeating-linear-gradient(-60deg, transparent 0 47px, var(--color-filet) 47px 48px),
+    repeating-linear-gradient(0deg, transparent 0 41px, color-mix(in srgb, var(--color-filet) 70%, transparent) 41px 42px);
+}
+
+/* Apparition des sections : un fondu lent et léger au fil du défilement, rien qui
+   bouge. 100 % CSS (aucun script) ; les navigateurs qui ne le gèrent pas affichent
+   simplement tout, et rien ne s'anime si le visiteur demande de réduire les animations. */
+@keyframes cda-fondu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    [data-reveal] {
+      animation: cda-fondu linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+  }
+}

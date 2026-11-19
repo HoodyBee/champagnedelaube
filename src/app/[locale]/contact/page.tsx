@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { LeadForm } from "@/components/forms/LeadForm";
+import { ContactProfils } from "@/components/contact/ContactProfils";
 import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LineIcon } from "@/components/ui/LineIcon";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
+import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
+import { nav } from "@/lib/site";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages, socialLinks } from "@/sanity/queries";
 
@@ -16,8 +18,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/contact"
   return {
     title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: localizedAlternates("/contact", locale),
-    robots: robotsFor(locale),
+    alternates: await localizedAlternates("/contact", locale),
+    robots: await robotsFor(locale),
   };
 }
 
@@ -52,6 +54,26 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
               {tFooter("location")}
             </li>
           </ul>
+          <h2 className="mt-space-4 text-sur-titre text-bronze">{t("raccourcisTitre")}</h2>
+          <ul className="mt-space-2 grid gap-space-1">
+            <li>
+              <Link href={nav.particuliers[0].href} className="flex min-h-12 items-center gap-space-2 rounded-carte border border-filet bg-blanc px-space-2 hover:border-bronze">
+                <LineIcon name="degustation" size={24} className="text-or" />
+                <span className="flex-1 font-bold">{t("raccourcis.degustation")}</span>
+                <span aria-hidden="true" className="text-bronze">→</span>
+              </Link>
+            </li>
+            <li>
+              <Link href={nav.particuliers[1].href} className="flex min-h-12 items-center gap-space-2 rounded-carte border border-filet bg-blanc px-space-2 hover:border-bronze">
+                <LineIcon name="calendrier" size={24} className="text-or" />
+                <span className="flex-1 font-bold">{t("raccourcis.evenement")}</span>
+                <span aria-hidden="true" className="text-bronze">→</span>
+              </Link>
+            </li>
+          </ul>
+          <p className="mt-space-3">
+            <Link href={nav.pro[1].href} className="text-bronze underline underline-offset-4">{t("vigneron")}</Link>
+          </p>
           <SocialLinks
             links={socialLinks(reglages)}
             labels={{ label: tSocial("label"), instagram: tSocial("instagram"), facebook: tSocial("facebook"), linkedin: tSocial("linkedin") }}
@@ -60,9 +82,8 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
           />
         </div>
 
-        <section aria-labelledby="contact-form-title" className="surface-chaude rounded-carte p-space-3 sm:p-space-4">
-          <h2 id="contact-form-title" className="mb-space-3 text-titre-section">{t("formTitle")}</h2>
-          <LeadForm formId="contact" />
+        <section aria-label={t("formTitle")} className="surface-chaude rounded-carte p-space-3 sm:p-space-4">
+          <ContactProfils />
         </section>
       </div>
     </>

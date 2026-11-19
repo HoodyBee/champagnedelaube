@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { ButtonLink } from "@/components/ui/Button";
+import { CatalogueDialog } from "@/components/selection/CatalogueDialog";
+import { SelectionBox } from "@/components/selection/SelectionBox";
 import { Section } from "@/components/ui/Section";
 import { VigneronsFiltres } from "@/components/vignerons/VigneronsFiltres";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { nav } from "@/lib/site";
 import { getPageContent, getVignerons } from "@/sanity/content";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/vignerons">): Promise<Metadata> {
@@ -16,13 +16,11 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/vigneron
   return pageMetadata({ locale, href: "/vignerons", seo: page.seo, title: t("metaTitle"), description: t("metaDescription") });
 }
 
-/** Nos vignerons : tous les domaines de la sélection, avec filtres. */
+/** Notre Sélection : tous les domaines de la sélection, avec filtres. */
 export default async function VigneronsPage({ params }: PageProps<"/[locale]/vignerons">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("vigneronsPage");
-  const tVg = await getTranslations("vigneronPage");
-  const tPro = await getTranslations("proPage");
   const [page, vignerons] = await Promise.all([getPageContent("vignerons", locale), getVignerons(locale)]);
   const titre = page.titre ?? t("h1");
 
@@ -33,27 +31,13 @@ export default async function VigneronsPage({ params }: PageProps<"/[locale]/vig
         <p className="text-sur-titre text-bronze">{page.surTitre ?? t("surTitre")}</p>
         <h1 className="mt-space-1 text-titre-post">{titre}</h1>
         <p className="mt-space-2 max-w-2xl text-[1.125rem] text-gris-chaud">{page.intro ?? t("intro")}</p>
+        <CatalogueDialog className="mt-space-3" />
       </header>
       <Section className="!pt-space-3">
         <VigneronsFiltres vignerons={vignerons} />
       </Section>
       <Section fond="chaude">
-        <div className="grid gap-space-3 md:grid-cols-2">
-          <div className="rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">
-            <h2 className="text-titre-section">{tVg("ctaProTitre")}</h2>
-            <p className="mt-space-1 text-gris-chaud">{tVg("ctaProTexte")}</p>
-            <ButtonLink href={{ pathname: nav.pro[0].href, hash: "grille" }} className="mt-space-3">
-              {tPro("ctaGrille")}
-            </ButtonLink>
-          </div>
-          <div className="rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">
-            <h2 className="text-titre-section">{tVg("ctaPartTitre")}</h2>
-            <p className="mt-space-1 text-gris-chaud">{tVg("ctaPartTexte")}</p>
-            <ButtonLink href={nav.particuliers[0].href} variant="secondaire" className="mt-space-3">
-              {tVg("ctaPartBouton")}
-            </ButtonLink>
-          </div>
-        </div>
+        <SelectionBox lienSelection={false} />
       </Section>
     </>
   );

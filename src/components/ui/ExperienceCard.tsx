@@ -41,7 +41,7 @@ export function ExperienceCard({ experience: e }: { experience: ExperienceCardDa
           ratio="4/5"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           placeholderLabel={t("photoSoon")}
-          className="transition-transform duration-500 group-hover:scale-[1.02]"
+          
         />
         {e.etiquette && (
           <span className="absolute left-space-2 top-space-2 rounded-etiquette bg-blanc/95 px-space-1 py-1 text-sur-titre-petit text-anthracite">

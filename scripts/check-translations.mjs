@@ -10,6 +10,9 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const locales = ["fr", "en", "nl", "it", "de"];
+// Langues dont tous les textes doivent être traduits. L'allemand est masqué sur le
+// site et n'est plus traduit : ses textes manquants s'affichent en anglais.
+const required = new Set(["en", "nl", "it"]);
 const load = (l) => JSON.parse(readFileSync(resolve(root, `messages/${l}.json`), "utf8"));
 
 function keys(obj, prefix = "") {
@@ -27,7 +30,9 @@ let problems = 0;
 
 for (const locale of locales.slice(1)) {
   const messages = load(locale);
-  const missing = refKeys.filter((k) => typeof get(messages, k) !== "string" || get(messages, k).trim() === "");
+  const missing = required.has(locale)
+    ? refKeys.filter((k) => typeof get(messages, k) !== "string" || get(messages, k).trim() === "")
+    : [];
   const extra = keys(messages).filter((k) => get(reference, k) === undefined);
   for (const k of missing) console.error(`✗ [${locale}] traduction manquante : ${k}`);
   for (const k of extra) console.error(`✗ [${locale}] texte inconnu en français : ${k}`);
@@ -51,6 +56,8 @@ const forbidden = [
   /casa\s+(di|dello)\s+champagne/i,
   /ohne\s+zwischenh[äa]ndler/i,
   /champagnerhaus/i,
+  // Décision de novembre 2026 : jamais « Corporate » (on dit « Entreprises »).
+  /\bcorporate\b/i,
 ];
 function walk(dir) {
   return readdirSync(dir).flatMap((name) => {
@@ -73,4 +80,4 @@ if (problems > 0) {
   console.error(`\n${problems} problème(s) : complétez les traductions ou reformulez les expressions interdites.`);
   process.exit(1);
 }
-console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${locales.length} langues · aucune expression interdite`);
+console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${required.size + 1} langues (FR, EN, NL, IT) · aucune expression interdite`);

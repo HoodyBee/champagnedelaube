@@ -5,9 +5,11 @@ import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
 import { Flag } from "@/components/icons/Flag";
 import { Link, usePathname } from "@/i18n/navigation";
-import { localeNames, routing, type Locale } from "@/i18n/routing";
+import { defaultActiveLocales, localeNames, type Locale } from "@/i18n/routing";
 
 type Props = {
+  /** Langues proposées (réglage « Langues actives » de Sanity). */
+  locales?: readonly Locale[];
   /** "menu" : liste déroulante (en-tête) ; "inline" : liste de boutons (menu mobile,
    *  vérification d'âge) ; "footer" : drapeaux sur fond sombre (pied de page). */
   variant?: "menu" | "inline" | "footer";
@@ -20,7 +22,7 @@ type Props = {
  * Sélecteur de langue. Chaque langue est un vrai lien (bon pour Google), qui
  * mène à la même page traduite : /vignerons/ -> /en/winemakers/.
  */
-export function LanguageSwitcher({ variant = "menu", onNavigate, label }: Props) {
+export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales = defaultActiveLocales }: Props) {
   const t = useTranslations("langSwitcher");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
@@ -51,7 +53,7 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label }: Props)
   void _ignored;
   const href = { pathname, params: routeParams } as Parameters<typeof Link>[0]["href"];
 
-  const links = routing.locales.map((l) => (
+  const links = locales.map((l) => (
     <Link
       key={l}
       href={href}

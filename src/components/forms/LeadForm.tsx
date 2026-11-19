@@ -32,7 +32,9 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
     return (
       <div ref={statusRef} tabIndex={-1} role="status" className={`surface-chaude rounded-carte p-space-3 outline-none sm:p-space-4 ${className}`}>
         <p className="text-accroche">{t("success.title")}</p>
-        <p className="mt-space-1 text-gris-chaud">{t("success.text")}</p>
+        <p className="mt-space-1 text-gris-chaud">
+          {formId === "catalogue" ? t(state.catalogueSent ? "success.catalogueSent" : "success.catalogueSoon") : t("success.text")}
+        </p>
         {state.newsletter && <p className="mt-space-2 text-gris-chaud">{t("success.newsletter")}</p>}
         {formId === "brochureCse" && (
           state.downloadUrl ? (
@@ -75,6 +77,8 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         </div>
       )}
 
+      {formId !== "catalogue" && <p className="text-sur-titre-petit text-bronze sm:col-span-2">{t("faisonsConnaissance")}</p>}
+
       {fields.map((f) => {
         const required = f.required || (def.contact === "emailOuTelephone" && f.name === "email");
         const common = {
@@ -90,7 +94,7 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         return (
           <div key={f.name} className={f.half ? "" : "sm:col-span-2"}>
             <label htmlFor={id(f.name)} className="mb-1 block text-[0.9375rem] font-bold">
-              {t(`fields.${f.name}`)}
+              {t.has(`fieldsByForm.${formId}.${f.name}`) ? t(`fieldsByForm.${formId}.${f.name}` as never) : t(`fields.${f.name}`)}
               {required && <span aria-hidden="true" className="text-bronze"> *</span>}
             </label>
             {f.type === "textarea" ? (

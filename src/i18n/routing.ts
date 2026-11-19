@@ -7,13 +7,13 @@ export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "fr";
 
 /**
- * Langues dont les contenus sont rédigés et qui peuvent être indexées par Google.
- * Le néerlandais, l'italien et l'allemand existent déjà (structure prête), mais tant que leurs
- * textes ne sont pas traduits, leurs pages affichent l'anglais en secours : on les
- * garde hors de Google (noindex, absentes du sitemap et des balises hreflang) pour
- * éviter le contenu dupliqué. Pour publier une langue, ajoutez-la ici.
+ * Langues actives par défaut : affichées dans les sélecteurs de langue et ouvertes
+ * à Google. Le réglage « Langues actives » des Réglages du site (Sanity) l'emporte.
+ * Les autres langues gardent leurs pages, leurs URL et leurs traductions, mais elles
+ * sont masquées des sélecteurs, en noindex et hors sitemap : on les réactive en
+ * cochant la langue dans Sanity.
  */
-export const indexedLocales: readonly Locale[] = ["fr", "en"];
+export const defaultActiveLocales: readonly Locale[] = ["fr", "en", "nl", "it"];
 
 export const localeNames: Record<Locale, string> = {
   fr: "Français",
@@ -72,15 +72,19 @@ export const routing = defineRouting({
     "/tasting-troyes": "/tasting-troyes",
     "/tasting-troyes/[slug]": "/tasting-troyes/[slug]",
 
-    // Champagne pour mariage (nouvelle page, référencement « champagne mariage Troyes »)
-    "/champagne-mariage-troyes": {
-      fr: "/champagne-mariage-troyes",
-      en: "/wedding-champagne-troyes",
-      nl: "/champagne-voor-bruiloft-troyes",
-      it: "/champagne-per-matrimonio-troyes",
-      de: "/hochzeitschampagner-troyes",
+    // Vos Grands Événements (mariage, baptême, commandes groupées).
+    // URL courte « champagne-mariage » ; les autres occasions auront leurs pages, reliées entre elles.
+    "/champagne-mariage": {
+      fr: "/champagne-mariage",
+      en: "/wedding-champagne",
+      nl: "/champagne-voor-bruiloft",
+      it: "/champagne-per-matrimonio",
+      de: "/hochzeitschampagner",
     },
-
+    // Le Mag (espace éditorial : tous les articles, par rubrique)
+    "/le-mag": "/le-mag",
+    // Articles du Mag : à la racine du site, adresses historiques conservées (/mon-article/)
+    "/[article]": "/[article]",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
     "/ou-trouver-nos-pepites": {
       fr: "/ou-trouver-nos-pepites",
@@ -100,7 +104,7 @@ export const routing = defineRouting({
     },
     "/cse-et-cadeaux-dentreprise": {
       fr: "/cse-et-cadeaux-dentreprise",
-      en: "/corporate-gifts-and-events",
+      en: "/business-gifts-and-events",
       nl: "/bedrijfsgeschenken-en-evenementen",
       it: "/regali-aziendali-ed-eventi",
       de: "/firmengeschenke-und-firmenevents",

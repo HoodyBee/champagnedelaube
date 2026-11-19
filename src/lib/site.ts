@@ -33,18 +33,21 @@ export type NavKey =
   | "mariage"
   | "recettes"
   | "toutSavoir"
+  | "mag"
+  | "proEntreprises"
   | "contact";
 
 type NavLink = { key: NavKey; href: AppPathname };
 
 /**
- * Menu principal, organisé par public.
- *  - Le terroir de l'Aube ▾ (page centrale + 4 terroirs)
- *  - Nos vignerons
- *  - Professionnels ▾
- *  - Entreprises & CSE
- *  - Particuliers ▾
+ * Menu principal :
+ *  - Les Terroirs Aubois ▾ (page centrale + 4 terroirs)
+ *  - Notre Sélection
+ *  - Nos Dégustations ▾ (Nos Dégustations, Vos Grands Événements)
+ *  - Le Mag
+ *  - Espace Pro & Entreprises ▾ (à droite : Professionnels, Entreprises & CSE, Vignerons)
  *  - [Contact]
+ * Les URL historiques ne changent pas.
  */
 export const nav = {
   terroirHub: { key: "terroirHub", href: "/le-terroir-de-laube" } satisfies NavLink,
@@ -56,10 +59,14 @@ export const nav = {
   entreprises: { key: "entreprises", href: "/cse-et-cadeaux-dentreprise" } satisfies NavLink,
   particuliers: [
     { key: "tasting", href: "/tasting-troyes" },
-    { key: "mariage", href: "/champagne-mariage-troyes" },
+    { key: "mariage", href: "/champagne-mariage" },
   ] satisfies NavLink[],
+  mag: { key: "mag", href: "/le-mag" } satisfies NavLink,
   contact: { key: "contact", href: "/contact" } satisfies NavLink,
 };
+
+/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons. */
+export const proEntreprises: NavLink[] = [nav.pro[0], nav.entreprises, nav.pro[1]];
 
 /** Contenus éditoriaux (pied de page, et liens depuis les pages Terroir et Particuliers). */
 export const contentPages: NavLink[] = [
