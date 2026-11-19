@@ -7,7 +7,7 @@ import { requireFr } from "../objects/localized";
 export const pagesFixes = [
   { title: "Notre Sélection (page liste)", value: "vignerons" },
   { title: "Vignerons : devenez partenaire", value: "pro-vignerons" },
-  { title: "Champagne pour mariage (Troyes)", value: "mariage" },
+  { title: "Vos Grands Événements (champagne pour mariage)", value: "mariage" },
   { title: "Recettes et accords mets-champagne (page liste)", value: "recettes" },
   { title: "Tout savoir sur le champagne", value: "tout-savoir" },
   { title: "Où trouver nos pépites ? (page liste)", value: "pepites" },

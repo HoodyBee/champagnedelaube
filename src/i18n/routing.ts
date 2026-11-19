@@ -72,17 +72,19 @@ export const routing = defineRouting({
     "/tasting-troyes": "/tasting-troyes",
     "/tasting-troyes/[slug]": "/tasting-troyes/[slug]",
 
-    // Champagne pour mariage (nouvelle page, référencement « champagne mariage Troyes »)
-    "/champagne-mariage-troyes": {
-      fr: "/champagne-mariage-troyes",
-      en: "/wedding-champagne-troyes",
-      nl: "/champagne-voor-bruiloft-troyes",
-      it: "/champagne-per-matrimonio-troyes",
-      de: "/hochzeitschampagner-troyes",
+    // Vos Grands Événements (mariage, baptême, commandes groupées).
+    // URL courte « champagne-mariage » ; les autres occasions auront leurs pages, reliées entre elles.
+    "/champagne-mariage": {
+      fr: "/champagne-mariage",
+      en: "/wedding-champagne",
+      nl: "/champagne-voor-bruiloft",
+      it: "/champagne-per-matrimonio",
+      de: "/hochzeitschampagner",
     },
-
     // Le Mag (espace éditorial : tous les articles, par rubrique)
     "/le-mag": "/le-mag",
+    // Articles du Mag : à la racine du site, adresses historiques conservées (/mon-article/)
+    "/[article]": "/[article]",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
     "/ou-trouver-nos-pepites": {
       fr: "/ou-trouver-nos-pepites",

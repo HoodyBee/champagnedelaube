@@ -2,7 +2,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
 
-/** Article (recette, accord, pédagogie). Publié à la racine du site : /mon-article/. */
+/** Article du Mag (recette, accord, pédagogie, portrait). Publié à la racine du site : /mon-article/. */
 export const article = defineType({
   name: "article",
   title: "Article",
@@ -24,18 +24,38 @@ export const article = defineType({
       validation: (r) => r.required(),
     }),
     defineField({
-      name: "rubrique",
-      title: "Rubrique",
-      type: "string",
+      name: "rubriques",
+      title: "Rubriques du Mag",
+      description:
+        "Une ou plusieurs. Sans rubrique créée dans « Rubriques du Mag », utilisez les codes prêts à l'emploi : tout-savoir, accords, portraits.",
+      type: "array",
       group: "contenu",
+      of: [{ type: "string" }],
       options: {
         list: [
-          { title: "Recettes & accords mets-champagne", value: "recettes" },
-          { title: "Comprendre le champagne", value: "comprendre" },
+          { title: "Tout savoir sur le champagne", value: "tout-savoir" },
+          { title: "Accords mets & champagne", value: "accords" },
+          { title: "Portraits de vignerons", value: "portraits" },
         ],
-        layout: "radio",
+        layout: "grid",
       },
-      validation: (r) => r.required(),
+    }),
+    defineField({
+      name: "autresRubriques",
+      title: "Autres rubriques",
+      description: "Les rubriques que vous avez ajoutées vous-même dans « Rubriques du Mag ».",
+      type: "array",
+      group: "contenu",
+      of: [defineArrayMember({ type: "reference", to: [{ type: "rubrique" }] })],
+    }),
+    defineField({
+      name: "rubrique",
+      title: "Rubrique (ancien site)",
+      description: "Repris de l'ancien site. Remplacé par « Rubriques du Mag » ci-dessus.",
+      type: "string",
+      group: "contenu",
+      readOnly: true,
+      hidden: ({ value }) => !value,
     }),
     defineField({ name: "date", title: "Date de publication", type: "date", group: "contenu", initialValue: () => new Date().toISOString().slice(0, 10) }),
     defineField({ name: "extrait", title: "Résumé (cartes et Google)", type: "localeText", group: "contenu" }),
@@ -44,6 +64,7 @@ export const article = defineType({
     defineField({
       name: "vignerons",
       title: "Vignerons cités",
+      description: "L'article s'affiche aussi sur leur fiche (« Ils en parlent dans Le Mag »).",
       type: "array",
       group: "contenu",
       of: [defineArrayMember({ type: "reference", to: [{ type: "vigneron" }] })],
@@ -60,10 +81,10 @@ export const article = defineType({
   ],
   orderings: [{ title: "Date", name: "date", by: [{ field: "date", direction: "desc" }] }],
   preview: {
-    select: { title: "titre.fr", rubrique: "rubrique", media: "image" },
-    prepare: ({ title, rubrique, media }) => ({
+    select: { title: "titre.fr", rubriques: "rubriques", date: "date", media: "image" },
+    prepare: ({ title, rubriques, date, media }) => ({
       title,
-      subtitle: rubrique === "recettes" ? "Recettes & accords" : rubrique === "comprendre" ? "Comprendre le champagne" : "",
+      subtitle: [date, ...(rubriques ?? [])].filter(Boolean).join(" · "),
       media,
     }),
   },

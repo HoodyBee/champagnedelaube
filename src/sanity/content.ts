@@ -385,3 +385,97 @@ export async function getPageContent(cle: string, locale: Locale) {
     seo: seoOf(p?.seo, locale),
   };
 }
+
+// ---------------------------------------------------------------------------
+// Le Mag : articles et rubriques
+// ---------------------------------------------------------------------------
+
+/** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
+export const RUBRIQUES_PAR_DEFAUT = ["tout-savoir", "accords", "portraits"] as const;
+/** Rubriques qui ont leur propre page (adresses historiques). */
+export const PAGES_RUBRIQUE = {
+  "tout-savoir": "/tout-savoir-sur-le-champagne",
+  accords: "/recettes-accords-mets-champagne",
+} as const;
+/** Anciennes rubriques de WordPress -> codes du Mag. */
+const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords" };
+
+export type Rubrique = { cle: string; titre?: string; description?: string };
+
+export async function getRubriquesSanity(locale: Locale): Promise<Rubrique[]> {
+  const list = await sanityFetch<{ cle?: string; titre?: Localized; description?: Localized }[]>({
+    query: `*[_type == "rubrique" && defined(cle.current)] | order(coalesce(ordre, 10) asc){"cle": cle.current, titre, description}`,
+    tags: ["rubrique"],
+  });
+  return (list ?? []).flatMap((r) => (r.cle ? [{ cle: r.cle, titre: L(r.titre, locale), description: L(r.description, locale) }] : []));
+}
+
+const ARTICLE_CARD = `"slug": slug.current, titre, date, extrait, image ${IMG}, collaborationCommerciale,
+  rubrique, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
+type ArticleRaw = {
+  slug: string;
+  titre?: Localized;
+  date?: string;
+  extrait?: Localized;
+  image?: SanityImg;
+  collaborationCommerciale?: boolean;
+  rubrique?: string;
+  rubriques?: string[];
+  autresRubriques?: (string | null)[];
+  vignerons?: (string | null)[];
+};
+export type ArticleCard = {
+  slug: string;
+  titre: string;
+  date?: string;
+  extrait?: string;
+  image: Img | null;
+  rubriques: string[];
+  vignerons: string[];
+  collaborationCommerciale: boolean;
+};
+const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
+  const titre = L(a.titre, locale);
+  if (!titre || !a.slug) return null;
+  const rubriques = [
+    ...(a.rubriques ?? []),
+    ...(a.autresRubriques ?? []).filter((r): r is string => !!r),
+    ...(a.rubrique && !a.rubriques?.length ? [RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique] : []),
+  ];
+  return {
+    slug: a.slug,
+    titre,
+    date: a.date,
+    extrait: L(a.extrait, locale),
+    image: toImg(a.image, locale, 1200),
+    rubriques: [...new Set(rubriques)],
+    vignerons: (a.vignerons ?? []).filter((v): v is string => !!v),
+    collaborationCommerciale: a.collaborationCommerciale === true,
+  };
+};
+
+/** Tous les articles publiés, du plus récent au plus ancien. */
+export async function getArticles(locale: Locale): Promise<ArticleCard[]> {
+  const list = await sanityFetch<ArticleRaw[]>({
+    query: `*[_type == "article" && defined(slug.current)] | order(coalesce(date, _createdAt) desc){${ARTICLE_CARD}}`,
+    tags: ["article", "rubrique", "vigneron"],
+  });
+  return (list ?? []).map((a) => articleCardOf(a, locale)).filter((a): a is ArticleCard => !!a);
+}
+
+export type ArticleDetail = ArticleCard & { contenu?: PortableTextBlock[]; seo: Seo; updatedAt?: string };
+
+export async function getArticle(slug: string, locale: Locale): Promise<ArticleDetail | null> {
+  const a = await sanityFetch<(ArticleRaw & { contenu?: LocalizedBlocks; seo?: SeoRaw; _updatedAt?: string }) | null>({
+    query: `*[_type == "article" && slug.current == $slug][0]{${ARTICLE_CARD}, contenu, seo, _updatedAt}`,
+    params: { slug },
+    tags: ["article", "rubrique", "vigneron"],
+  });
+  const card = a ? articleCardOf(a, locale) : null;
+  if (!a || !card) return null;
+  return { ...card, contenu: localize(a.contenu, locale), seo: seoOf(a.seo, locale), updatedAt: a._updatedAt };
+}
+
+export async function getArticleSlugs(): Promise<string[]> {
+  return (await sanityFetch<string[]>({ query: `*[_type == "article" && defined(slug.current)].slug.current`, tags: ["article"] })) ?? [];
+}

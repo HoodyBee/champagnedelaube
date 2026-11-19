@@ -265,17 +265,30 @@ Comme **un ami passionné qui connaît tous les vignerons du coin** : il partage
 
 ## Règles d'écriture
 
-- **Le « je » pour Julien, le « vous » pour le lecteur.** Le « on » pour les moments partagés.
+- **Le « nous » pour Champagne de l'Aube, jamais le « je ».** Le « vous » pour le lecteur. Seule la signature des e-mails reste personnelle (Julien Mineo).
+- **Engageant, chaleureux, professionnel et classe** : des passionnés qui connaissent tous les vignerons du coin.
 - **Une accroche qui intrigue** : une question ou un fait étonnant.
-- **Les gens d'abord** : une cuvée se présente à travers son vigneron.
+- **Les gens d'abord** : une cuvée se présente à travers son vigneron. On écrit « des vignerons de notre sélection », pas « les vignerons ».
 - **Des mots simples** : « vif », « gourmand », « minéral ». Un terme technique s'explique en une phrase.
 - **Des phrases courtes.** Une idée par phrase.
-- **Toujours le territoire** : nommer le village, le terroir, la parcelle.
+- **Toujours le territoire** : nommer le village, le terroir, la parcelle ou le vigneron.
+- **Des titres évocateurs** plutôt que des intitulés techniques (« Faisons connaissance » plutôt que « Vos informations »).
+- **Pour les pros et les entreprises** : professionnel et rassurant, sans jargon commercial. On parle de « tarifs pro ».
+- **Classe** : pas de points d'exclamation à répétition, pas d'emojis, pas de superlatifs creux (« exceptionnel », « incroyable »).
+- **Loi Évin** : chaleureux sur les gens, les villages, les paysages et le savoir-faire ; jamais sur le fait de boire (pas de fête, de plaisir de consommer, d'ivresse ni de séduction).
+- **Vocabulaire du site** : « Notre Sélection » (jamais « Nos vignerons »), « Les Terroirs Aubois », « Nos Dégustations », « Le Mag ». Jamais « sans intermédiaire » ni « maison de champagne ».
 
 ## Exemples
 
 | Au lieu de | Écrire |
 | --- | --- |
+| « Superbe champagne, à découvrir absolument !!! » | « Un blanc de noirs vif, qui sent la brioche et la pomme. Parfait avec un chaource bien fait. » |
+| « Collaboration avec le domaine X » | « Nous avons passé la matinée chez Paul, à Celles-sur-Ource. Voilà ce qu'il nous a appris sur ses vieilles vignes. » |
+| « Venez nombreux à notre événement ! » | « Jeudi 4 décembre, 12 places, 3 vignerons de la Côte des Bar. Nous vous gardons une place ? » |
+| « Formulaire de demande de grille tarifaire » | « Recevez notre sélection et ses tarifs pro » |
+| « Votre demande a bien été envoyée » | « Merci ! Nous revenons vers vous très vite. » |
+
+--- | --- |
 | « Superbe champagne, à découvrir absolument !!! » | « Un blanc de noirs vif, qui sent la brioche et la pomme. Parfait avec un chaource bien fait. » |
 | « Collaboration avec le domaine X » | « J'ai passé la matinée chez Paul, à Celles-sur-Ource. Voilà ce qu'il m'a appris sur ses vieilles vignes. » |
 | « Venez nombreux à notre événement ! » | « Jeudi 4 décembre, 12 places, 3 vignerons de la Côte des Bar. On vous garde un verre ? » |
@@ -286,7 +299,7 @@ Comme **un ami passionné qui connaît tous les vignerons du coin** : il partage
 
 Des images **vraies, lumineuses et habitées** : un vigneron, des mains, un village, un plat, la lumière sur les coteaux.
 
-**À faire** : des gens dans le cadre (vignerons, participants, Julien) ; lumière naturelle ; une histoire par image ; tons chauds et naturels, cohérents avec le `creme` et l'`or` ; des mains (vendanges, raisin, verre que l'on sert).
+**À faire** : des gens dans le cadre (vignerons, participants, l'équipe) ; lumière naturelle ; une histoire par image ; tons chauds et naturels, cohérents avec le `creme` et l'`or` ; des mains (vendanges, raisin, verre que l'on sert).
 
 **À éviter** : la flûte seule sur une table, les filtres lourds et couleurs saturées, les photos de banque d'images, les scènes d'ivresse, de fête excessive ou de séduction, des personnes paraissant mineures à côté de l'alcool.
 

@@ -161,7 +161,7 @@
       },
       "degustation": {
         "titre": "Degustazione in loco",
-        "texte": "Vengo a presentare le cuvée al vostro team, nel vostro locale."
+        "texte": "Veniamo a presentare le cuvée al vostro team, nel vostro locale."
       }
     }
   },
@@ -187,7 +187,7 @@
       "invites": "Numero di invitati",
       "places": "Numero di posti",
       "sujet": "La vostra richiesta riguarda",
-      "profil": "Lei è"
+      "profil": "Siete"
     },
     "options": {
       "typeEtablissement": {
@@ -237,7 +237,7 @@
       "catalogue": "Richiesta della nostra selezione (catalogo)"
     },
     "submit": {
-      "grillePro": "Ricevere il listino",
+      "grillePro": "Ricevere la selezione e i prezzi",
       "degustationPro": "Richiedere una degustazione",
       "partenaireVigneron": "Inviare la candidatura",
       "devisEntreprise": "Richiedere il preventivo",
@@ -256,12 +256,12 @@
       "date": "Indicate una data valida.",
       "tooLong": "Questo testo è troppo lungo.",
       "majeur": "Spuntate questa casella per continuare: il servizio è riservato ai maggiorenni.",
-      "emailOrPhone": "Indicate almeno un'e-mail o un telefono per potervi rispondere.",
+      "emailOrPhone": "Indicate almeno un'e-mail o un telefono, così potremo rispondervi.",
       "invalid": "Alcuni campi sono da correggere, vedi sotto.",
       "spam": "Non è stato possibile inviare la richiesta. Attendete qualche secondo e riprovate.",
       "captcha": "La verifica anti-spam non è andata a buon fine. Riprovate.",
       "rate": "Troppe richieste in poco tempo. Riprovate tra qualche minuto.",
-      "config": "L'invio è momentaneamente non disponibile. Scrivetemi direttamente a contact@champagnedelaube.fr.",
+      "config": "L'invio è momentaneamente non disponibile. Scriveteci direttamente a contact@champagnedelaube.fr.",
       "send": "Un problema tecnico ha impedito l'invio. Riprovate o scrivete a contact@champagnedelaube.fr.",
       "emailForNewsletter": "Per ricevere le novità, indicate il vostro indirizzo e-mail."
     },
@@ -271,28 +271,34 @@
     "rgpd": "I vostri dati servono solo a rispondere alla richiesta e non vengono mai ceduti. Per saperne di più: <link>informativa sulla privacy</link>.",
     "sending": "Invio in corso…",
     "success": {
-      "title": "Grazie, la vostra richiesta è stata inviata.",
-      "text": "Vi risponderò personalmente il prima possibile.",
+      "title": "Grazie!",
+      "text": "Vi ricontatteremo molto presto.",
       "download": "Scarica la brochure (PDF)",
-      "brochureByEmail": "Vi invierò la brochure via e-mail a breve.",
-      "newsletter": "Ultimo passo per ricevere le novità: cliccate sul link di conferma che vi ho appena inviato via e-mail.",
-      "catalogueSent": "La nostra selezione è in arrivo: la troverà nella sua casella e-mail tra qualche minuto.",
-      "catalogueSoon": "Le invieremo molto presto la nostra selezione via e-mail."
+      "brochureByEmail": "Vi invieremo la brochure via e-mail molto presto.",
+      "newsletter": "Un ultimo passo per ricevere le novità: cliccate sul link di conferma che vi abbiamo appena inviato via e-mail.",
+      "catalogueSent": "La nostra selezione è in arrivo: la troverete nella vostra casella e-mail tra qualche minuto.",
+      "catalogueSoon": "Vi invieremo molto presto la nostra selezione via e-mail."
     },
     "ack": {
       "subject": "Champagne de l'Aube: abbiamo ricevuto la vostra richiesta",
       "hello": "Buongiorno,",
-      "body": "Grazie per il vostro messaggio ({form}). L'ho ricevuto e vi risponderò personalmente il prima possibile.",
+      "body": "Grazie per il vostro messaggio ({form}). Lo abbiamo ricevuto e vi ricontatteremo molto presto.",
       "brochure": "La vostra brochure è disponibile qui:",
       "signature": "A presto,\nJulien Mineo",
       "catalogue": "Ecco la nostra selezione del momento, da scaricare qui:",
       "catalogueSoon": "Le invieremo molto presto la nostra selezione del momento, via e-mail."
     },
-    "newsletterOptIn": "Desidero ricevere le novità di Champagne de l'Aube (vignaioli, degustazioni, eventi)."
+    "newsletterOptIn": "Desidero ricevere le novità di Champagne de l'Aube (vignaioli, degustazioni, eventi).",
+    "faisonsConnaissance": "Facciamo conoscenza",
+    "fieldsByForm": {
+      "grillePro": {
+        "message": "La vostra carta, i vostri desideri"
+      }
+    }
   },
   "contactPage": {
     "title": "Contatti",
-    "intro": "Una domanda su una cuvée, una degustazione, un cofanetto o una collaborazione? Scrivetemi: vi risponderò personalmente.",
+    "intro": "Una domanda su una cuvée, una degustazione, una confezione regalo o una collaborazione? Scriveteci: vi risponderemo personalmente.",
     "metaDescription": "Contattate Champagne de l'Aube a Troyes: professionisti, aziende, privati e vignaioli. Un unico interlocutore per gli champagne dei vignaioli dell'Aube.",
     "details": "Recapiti",
     "formTitle": "Inviare un messaggio"
@@ -305,7 +311,7 @@
     },
     "surTitre": "Newsletter",
     "title": "Le novità dei vignaioli dell'Aube",
-    "intro": "Ricevete via e-mail le notizie delle tenute che seguo, le date delle prossime degustazioni e gli appuntamenti nell'Aube.",
+    "intro": "Ricevete via e-mail le novità delle tenute che seguiamo, le date delle prossime degustazioni e gli appuntamenti nell'Aube.",
     "metaDescription": "Iscrivetevi alle novità di Champagne de l'Aube: vignaioli indipendenti della Côte des Bar e dell'Aube, degustazioni a Troyes, eventi.",
     "points": {
       "vignerons": "Ritratti e notizie dei vignaioli indipendenti",
@@ -334,7 +340,7 @@
     },
     "success": {
       "title": "Controllate la vostra casella di posta",
-      "text": "Ho appena inviato un'e-mail a {email}. Cliccate sul link che contiene per confermare l'iscrizione."
+      "text": "Abbiamo appena inviato un'e-mail a {email}. Cliccate sul link che contiene per confermare l'iscrizione."
     },
     "confirm": {
       "title": "Confermare l'iscrizione",
@@ -369,7 +375,7 @@
     "title": "Informativa sulla privacy",
     "metaDescription": "Come Champagne de l'Aube raccoglie e protegge i vostri dati personali: moduli, newsletter, responsabili del trattamento (Brevo, Netlify), cookie e diritti.",
     "updated": "Ultimo aggiornamento: novembre 2026",
-    "intro": "Questa pagina spiega in modo semplice quali dati personali raccolgo su questo sito, perché, con chi sono condivisi e come esercitare i vostri diritti.",
+    "intro": "Questa pagina spiega in modo semplice quali dati personali raccogliamo su questo sito, perché, con chi sono condivisi e come esercitare i vostri diritti.",
     "sections": {
       "responsable": {
         "title": "Titolare del trattamento",
@@ -381,7 +387,7 @@
       },
       "finalites": {
         "title": "Perché questi dati sono utilizzati",
-        "text": "• Rispondere alla vostra richiesta e preparare un preventivo o una prenotazione (misure precontrattuali).\n• Seguire il nostro scambio: il vostro contatto è registrato nella mia rubrica (Brevo), classificato per profilo (professionista, azienda, privato, vignaiolo) (interesse legittimo). Ciò non vi iscrive alla newsletter.\n• Inviarvi le novità, solo se lo avete chiesto e confermato cliccando sul link ricevuto via e-mail (consenso).\n• Proteggere i moduli dagli invii automatici (interesse legittimo)."
+        "text": "• Rispondere alla vostra richiesta e preparare un preventivo o una prenotazione (misure precontrattuali).\n• Seguire il nostro scambio: il vostro contatto è registrato nella nostra rubrica (Brevo), classificato per profilo (professionista, azienda, privato, vignaiolo) (interesse legittimo). Ciò non vi iscrive alla newsletter.\n• Inviarvi le novità, solo se lo avete chiesto e confermato cliccando sul link ricevuto via e-mail (consenso).\n• Proteggere i moduli dagli invii automatici (interesse legittimo)."
       },
       "destinataires": {
         "title": "Chi ha accesso ai vostri dati",
@@ -405,8 +411,8 @@
     "metaTitle": "Champagne per ristoranti, enoteche e hotel | Champagne de l'Aube",
     "metaDescription": "Champagne di vignaioli indipendenti della Côte des Bar e dell'Aube per la vostra carta: prezzi diretti dalla tenuta, un unico interlocutore, degustazione nel vostro locale.",
     "h1": "Champagne di vignaioli dell'Aube per la vostra carta",
-    "intro": "Seleziono champagne di vignaioli indipendenti dell'Aube e li presento a ristoranti, enoteche e hotel: prezzi diretti dalla tenuta, un unico interlocutore e una degustazione nel vostro locale.",
-    "ctaGrille": "Richiedi il listino Pro",
+    "intro": "Selezioniamo champagne di vignaioli indipendenti dell'Aube e li presentiamo a ristoranti, enoteche e hotel: prezzi diretti dalla tenuta, un unico interlocutore e una degustazione nel vostro locale.",
+    "ctaGrille": "Ricevere la selezione e i prezzi",
     "ctaDegustation": "Organizzare una degustazione",
     "profilsTitre": "Per quali locali?",
     "profils": {
@@ -433,12 +439,12 @@
     "portfolioIntro": "Una selezione di massimo dieci tenute, complementari per terroir e vitigni. I prezzi sono nel listino Pro, inviato su richiesta.",
     "portfolioCta": "Vedi tutta la nostra selezione",
     "referencesTitre": "Si fidano di noi",
-    "grilleTitre": "Ricevere il listino Pro",
-    "grilleTexte": "Vi invierò via e-mail il listino delle tenute della selezione.",
+    "grilleTitre": "Ricevete la nostra selezione e i prezzi per professionisti",
+    "grilleTexte": "Vi invieremo via e-mail la selezione del momento, con i prezzi per professionisti di ogni tenuta.",
     "degustationTitre": "Organizzare una degustazione nel vostro locale",
-    "degustationTexte": "Vengo a presentare una selezione di cuvée al vostro team, nel vostro locale.",
+    "degustationTexte": "Veniamo a presentare una selezione di cuvée al vostro team, nel vostro locale.",
     "partenaireTitre": "Siete vignaioli?",
-    "partenaireTexte": "Presentatemi la vostra tenuta: la selezione resta volutamente ristretta.",
+    "partenaireTexte": "Presentateci la vostra tenuta: la selezione resta volutamente ristretta.",
     "partenaireCta": "Diventare partner"
   },
   "vigneronsPage": {
@@ -463,9 +469,9 @@
     "site": "Sito della tenuta",
     "galerie": "In immagini",
     "ctaProTitre": "Ristorante, enoteca, hotel?",
-    "ctaProTexte": "Ricevete il listino Pro delle tenute della selezione.",
+    "ctaProTexte": "Ricevete la nostra selezione con i prezzi per professionisti.",
     "ctaPartTitre": "Scoprire le cuvée",
-    "ctaPartTexte": "Durante un laboratorio di degustazione a Troyes, in piccoli gruppi.",
+    "ctaPartTexte": "A Troyes o a casa vostra, durante una degustazione da 6 a 13 persone.",
     "ctaPartBouton": "Le nostre degustazioni",
     "autres": "Altri vignaioli della selezione"
   },
@@ -474,7 +480,7 @@
     "metaDescription": "Vignaioli indipendenti nell'Aube? Champagne de l'Aube presenta una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
     "surTitre": "Vignaioli dell'Aube",
     "h1": "Vignaioli: diventate partner",
-    "intro": "Siete vignaioli indipendenti nell'Aube? Presento una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
+    "intro": "Siete vignaioli indipendenti nell'Aube? Presentiamo una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
     "points": {
       "selection": {
         "titre": "Una selezione ristretta",
@@ -489,16 +495,87 @@
         "texte": "Laboratori da 6 a 13 persone, in cui ogni cuvée è raccontata attraverso il suo vignaiolo."
       }
     },
-    "formTitre": "Presentatemi la vostra tenuta",
-    "formTexte": "Qualche parola sulla vostra tenuta e sulle vostre cuvée: vi ricontatterò per un incontro in tenuta."
+    "formTitre": "Presentateci la vostra tenuta",
+    "formTexte": "Qualche parola sulla vostra tenuta e sulle vostre cuvée: vi ricontatteremo per un incontro in tenuta."
   },
   "selection": {
     "surTitre": "La nostra selezione",
     "titre": "La nostra selezione cresce a ogni incontro",
-    "texte": "Dalla Côte des Bar a Montgueux, ogni stagione incontriamo nuovi vignaioli. Riceva la selezione del momento via e-mail: i domini, i loro villaggi, le loro cuvée.",
+    "texte": "Dalla Côte des Bar a Montgueux, ogni stagione incontriamo nuovi vignaioli. Ricevete la selezione del momento via e-mail: le tenute, i loro villaggi, le loro cuvée.",
     "bouton": "Ricevere la nostra selezione",
-    "dialogTitre": "Riceva la nostra selezione",
-    "dialogTexte": "I domini del momento, i loro villaggi e le loro cuvée, in un documento inviato via e-mail.",
+    "dialogTitre": "Ricevete la nostra selezione",
+    "dialogTexte": "Le tenute del momento, i loro villaggi e le loro cuvée, in un documento inviato via e-mail.",
     "fermer": "Chiudi"
+  },
+  "degustationsPage": {
+    "intro": "A Troyes o a casa vostra, attorno a un tavolo da 6 a 13 persone, vi presentiamo dei vignaioli della nostra selezione: il loro villaggio, le loro parcelle, il loro modo di lavorare. Un'ora e mezza, con un quiz, per capire cosa li distingue."
+  },
+  "evenementsPage": {
+    "metaTitle": "Champagne per matrimonio a Troyes e nell'Aube | Champagne de l'Aube",
+    "metaDescription": "Matrimonio, battesimo, ordine di gruppo: scegliete champagne di vignaioli dell'Aube con i nostri consigli e prezzi diretti dei vignaioli.",
+    "surTitre": "Matrimonio · Battesimo · Ordini di gruppo",
+    "h1": "Champagne per matrimoni e grandi eventi",
+    "intro": "Vi serve uno champagne per una grande occasione, un matrimonio, un battesimo, o un ordine di gruppo? Approfittate dei nostri consigli e dei prezzi diretti dei vignaioli, con tenute della nostra selezione.",
+    "cta": "Chiedere un consiglio per il mio evento",
+    "occasionsTitre": "Per quale occasione?",
+    "occasions": {
+      "mariage": {
+        "titre": "Matrimonio",
+        "texte": "Dal ricevimento al dessert, vi aiutiamo a scegliere cuvée di vignaioli dell'Aube adatte al vostro menu e a stimare le quantità."
+      },
+      "bapteme": {
+        "titre": "Battesimo",
+        "texte": "Per un pranzo di famiglia, vi consigliamo in base al menu, al numero di invitati e al vostro budget."
+      },
+      "famille": {
+        "titre": "Compleanni e feste di famiglia",
+        "texte": "Una data che conta, un pasto che riunisce: vi orientiamo verso tenute della nostra selezione, dalla Côte des Bar a Les Riceys."
+      },
+      "groupee": {
+        "titre": "Ordini di gruppo",
+        "texte": "Associazioni, comitati, amici: raggruppate i vostri ordini e approfittate dei prezzi diretti dei vignaioli."
+      }
+    },
+    "etapesTitre": "Come funziona?",
+    "etapes": {
+      "1": {
+        "titre": "Raccontateci il vostro evento",
+        "texte": "La data, il numero di invitati, il menu, il vostro budget: bastano poche righe."
+      },
+      "2": {
+        "titre": "Vi consigliamo",
+        "texte": "Vi proponiamo cuvée della nostra selezione adatte al vostro menu, con le quantità da prevedere."
+      },
+      "3": {
+        "titre": "Ordinate direttamente",
+        "texte": "Approfittate dei prezzi diretti dei vignaioli, e restiamo il vostro interlocutore fino al grande giorno."
+      }
+    },
+    "faqTitre": "Le vostre domande",
+    "formTitre": "Chiedere un consiglio per il mio evento",
+    "formTexte": "Raccontateci il vostro progetto: vi ricontatteremo molto presto con delle proposte."
+  },
+  "mag": {
+    "metaTitle": "Le Mag: champagne, abbinamenti e vignaioli dell'Aube | Champagne de l'Aube",
+    "metaDescription": "Tutto sullo champagne, abbinamenti cibo e champagne e ritratti di vignaioli della Côte des Bar, di Les Riceys, di Montgueux e di Villenauxe-la-Grande.",
+    "surTitre": "Champagne de l'Aube",
+    "h1": "Le Mag",
+    "intro": "Vignaioli, villaggi, abbinamenti: ciò che impariamo sul campo, da Montgueux a Les Riceys.",
+    "filtres": "Filtra per rubrica",
+    "tous": "Tutto",
+    "count": "{count, plural, one {# articolo} other {# articoli}}",
+    "aucun": "Ancora nessun articolo in questa rubrica.",
+    "vide": "I primi articoli arriveranno molto presto.",
+    "lire": "Leggi l'articolo",
+    "voirRubrique": "Tutta la rubrica",
+    "retour": "Tutti gli articoli di Le Mag",
+    "vignerons": "I vignaioli di questo articolo",
+    "lies": "Articoli correlati",
+    "vigneronMag": "Ne parlano in Le Mag",
+    "rubriques": {
+      "toutSavoir": "Tutto sullo champagne",
+      "accords": "Abbinamenti cibo & champagne",
+      "portraits": "Ritratti di vignaioli"
+    }
   }
 }

@@ -59,7 +59,7 @@ export const nav = {
   entreprises: { key: "entreprises", href: "/cse-et-cadeaux-dentreprise" } satisfies NavLink,
   particuliers: [
     { key: "tasting", href: "/tasting-troyes" },
-    { key: "mariage", href: "/champagne-mariage-troyes" },
+    { key: "mariage", href: "/champagne-mariage" },
   ] satisfies NavLink[],
   mag: { key: "mag", href: "/le-mag" } satisfies NavLink,
   contact: { key: "contact", href: "/contact" } satisfies NavLink,

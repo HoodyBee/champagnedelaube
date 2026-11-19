@@ -77,6 +77,8 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         </div>
       )}
 
+      {formId !== "catalogue" && <p className="text-sur-titre-petit text-bronze sm:col-span-2">{t("faisonsConnaissance")}</p>}
+
       {fields.map((f) => {
         const required = f.required || (def.contact === "emailOuTelephone" && f.name === "email");
         const common = {
@@ -92,7 +94,7 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         return (
           <div key={f.name} className={f.half ? "" : "sm:col-span-2"}>
             <label htmlFor={id(f.name)} className="mb-1 block text-[0.9375rem] font-bold">
-              {t(`fields.${f.name}`)}
+              {t.has(`fieldsByForm.${formId}.${f.name}`) ? t(`fieldsByForm.${formId}.${f.name}` as never) : t(`fields.${f.name}`)}
               {required && <span aria-hidden="true" className="text-bronze"> *</span>}
             </label>
             {f.type === "textarea" ? (

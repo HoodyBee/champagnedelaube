@@ -5,7 +5,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AgeGate } from "@/components/layout/AgeGate";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { Reveal } from "@/components/ui/Reveal";
 import { routing } from "@/i18n/routing";
 import { ageGateScript } from "@/lib/age-gate";
 import { newsletterBarScript } from "@/lib/newsletter-bar";
@@ -72,7 +71,6 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             <Footer locales={activeLocales} />
           </div>
           <AgeGate locales={activeLocales} />
-          <Reveal />
         </NextIntlClientProvider>
       </body>
     </html>

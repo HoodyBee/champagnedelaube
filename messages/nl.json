@@ -161,7 +161,7 @@
       },
       "degustation": {
         "titre": "Proeverij ter plaatse",
-        "texte": "Ik kom de cuvées voorstellen aan uw team, in uw zaak."
+        "texte": "We komen de cuvées voorstellen aan uw team, in uw zaak."
       }
     }
   },
@@ -237,7 +237,7 @@
       "catalogue": "Aanvraag van onze selectie (catalogus)"
     },
     "submit": {
-      "grillePro": "Prijslijst ontvangen",
+      "grillePro": "Ontvang de selectie en de prijzen",
       "degustationPro": "Proeverij aanvragen",
       "partenaireVigneron": "Aanvraag versturen",
       "devisEntreprise": "Offerte aanvragen",
@@ -256,12 +256,12 @@
       "date": "Vul een geldige datum in.",
       "tooLong": "Deze tekst is te lang.",
       "majeur": "Vink dit vakje aan om verder te gaan: deze dienst is alleen voor volwassenen.",
-      "emailOrPhone": "Vul minstens een e-mailadres of telefoonnummer in zodat ik kan antwoorden.",
+      "emailOrPhone": "Vul minstens een e-mailadres of telefoonnummer in zodat we kunnen antwoorden.",
       "invalid": "Sommige velden moeten worden aangepast, zie hieronder.",
       "spam": "Uw aanvraag kon niet worden verzonden. Wacht een paar seconden en probeer het opnieuw.",
       "captcha": "De anti-spamcontrole is mislukt. Probeer het opnieuw.",
       "rate": "Te veel aanvragen in korte tijd. Probeer het over enkele minuten opnieuw.",
-      "config": "Verzenden is tijdelijk niet mogelijk. Mail me rechtstreeks op contact@champagnedelaube.fr.",
+      "config": "Verzenden is tijdelijk niet mogelijk. Mail ons rechtstreeks op contact@champagnedelaube.fr.",
       "send": "Door een technisch probleem is het niet verzonden. Probeer het opnieuw of mail naar contact@champagnedelaube.fr.",
       "emailForNewsletter": "Vul uw e-mailadres in om het nieuws te ontvangen."
     },
@@ -271,28 +271,34 @@
     "rgpd": "Uw gegevens worden alleen gebruikt om op uw aanvraag te antwoorden en worden nooit verkocht. Meer info: <link>privacybeleid</link>.",
     "sending": "Bezig met verzenden…",
     "success": {
-      "title": "Bedankt, uw aanvraag is verzonden.",
-      "text": "Ik antwoord u zo snel mogelijk persoonlijk.",
+      "title": "Bedankt!",
+      "text": "We nemen heel snel contact met u op.",
       "download": "Brochure downloaden (pdf)",
-      "brochureByEmail": "Ik stuur u de brochure binnenkort per e-mail.",
-      "newsletter": "Nog één stap om het nieuws te ontvangen: klik op de bevestigingslink die ik u net heb gemaild.",
+      "brochureByEmail": "We sturen u de brochure binnenkort per e-mail.",
+      "newsletter": "Nog één stap om het nieuws te ontvangen: klik op de bevestigingslink die we u net hebben gemaild.",
       "catalogueSent": "Onze selectie is onderweg: u vindt ze binnen enkele minuten in uw mailbox.",
       "catalogueSoon": "We mailen u onze selectie heel snel."
     },
     "ack": {
       "subject": "Champagne de l'Aube: uw aanvraag is ontvangen",
       "hello": "Goedendag,",
-      "body": "Bedankt voor uw bericht ({form}). Ik heb het goed ontvangen en antwoord u zo snel mogelijk persoonlijk.",
+      "body": "Bedankt voor uw bericht ({form}). We hebben het goed ontvangen en nemen heel snel contact met u op.",
       "brochure": "Uw brochure is hier beschikbaar:",
       "signature": "Tot binnenkort,\nJulien Mineo",
       "catalogue": "Hier is onze huidige selectie, om hier te downloaden:",
       "catalogueSoon": "We sturen u onze huidige selectie heel snel per e-mail."
     },
-    "newsletterOptIn": "Ik wil het nieuws van Champagne de l'Aube ontvangen (wijnmakers, proeverijen, evenementen)."
+    "newsletterOptIn": "Ik wil het nieuws van Champagne de l'Aube ontvangen (wijnmakers, proeverijen, evenementen).",
+    "faisonsConnaissance": "Laten we kennismaken",
+    "fieldsByForm": {
+      "grillePro": {
+        "message": "Uw wijnkaart, uw wensen"
+      }
+    }
   },
   "contactPage": {
     "title": "Contact",
-    "intro": "Een vraag over een cuvée, een proeverij, een geschenkdoos of een samenwerking? Schrijf me: ik antwoord u persoonlijk.",
+    "intro": "Een vraag over een cuvée, een proeverij, een geschenkdoos of een samenwerking? Schrijf ons: we antwoorden u persoonlijk.",
     "metaDescription": "Neem contact op met Champagne de l'Aube in Troyes: professionals, bedrijven, particulieren en wijnmakers. Eén aanspreekpunt voor champagnes van wijnmakers uit de Aube.",
     "details": "Gegevens",
     "formTitle": "Stuur een bericht"
@@ -305,7 +311,7 @@
     },
     "surTitre": "Nieuwsbrief",
     "title": "Nieuws van de wijnmakers uit de Aube",
-    "intro": "Ontvang per e-mail nieuws van de domeinen die ik volg, de data van de volgende proeverijen en de afspraken in de Aube.",
+    "intro": "Ontvang per e-mail nieuws van de domeinen die we volgen, de data van de volgende proeverijen en de afspraken in de Aube.",
     "metaDescription": "Schrijf u in voor het nieuws van Champagne de l'Aube: onafhankelijke wijnmakers uit de Côte des Bar en de Aube, proeverijen in Troyes, evenementen.",
     "points": {
       "vignerons": "Portretten en nieuws van onafhankelijke wijnmakers",
@@ -334,7 +340,7 @@
     },
     "success": {
       "title": "Controleer uw mailbox",
-      "text": "Ik heb net een e-mail gestuurd naar {email}. Klik op de link erin om uw inschrijving te bevestigen."
+      "text": "We hebben net een e-mail gestuurd naar {email}. Klik op de link erin om uw inschrijving te bevestigen."
     },
     "confirm": {
       "title": "Uw inschrijving bevestigen",
@@ -369,7 +375,7 @@
     "title": "Privacybeleid",
     "metaDescription": "Hoe Champagne de l'Aube uw persoonsgegevens verzamelt en beschermt: formulieren, nieuwsbrief, verwerkers (Brevo, Netlify), cookies en uw rechten.",
     "updated": "Laatst bijgewerkt: november 2026",
-    "intro": "Deze pagina legt eenvoudig uit welke persoonsgegevens ik op deze website verzamel, waarom, met wie ze worden gedeeld en hoe u uw rechten kunt uitoefenen.",
+    "intro": "Deze pagina legt eenvoudig uit welke persoonsgegevens we op deze website verzamelen, waarom, met wie ze worden gedeeld en hoe u uw rechten kunt uitoefenen.",
     "sections": {
       "responsable": {
         "title": "Verwerkingsverantwoordelijke",
@@ -381,7 +387,7 @@
       },
       "finalites": {
         "title": "Waarom deze gegevens worden gebruikt",
-        "text": "• Om op uw aanvraag te antwoorden en een offerte of reservering voor te bereiden (precontractuele maatregelen).\n• Om ons contact op te volgen: uw gegevens worden bewaard in mijn adresboek (Brevo), ingedeeld per profiel (professional, bedrijf, particulier, wijnmaker) (gerechtvaardigd belang). U ontvangt daardoor niet automatisch de nieuwsbrief.\n• Om u nieuws te sturen, alleen als u daarom heeft gevraagd en dit heeft bevestigd via de link in de e-mail (toestemming).\n• Om de formulieren te beschermen tegen automatische verzendingen (gerechtvaardigd belang)."
+        "text": "• Om op uw aanvraag te antwoorden en een offerte of reservering voor te bereiden (precontractuele maatregelen).\n• Om ons contact op te volgen: uw gegevens worden bewaard in ons adresboek (Brevo), ingedeeld per profiel (professional, bedrijf, particulier, wijnmaker) (gerechtvaardigd belang). U ontvangt daardoor niet automatisch de nieuwsbrief.\n• Om u nieuws te sturen, alleen als u daarom heeft gevraagd en dit heeft bevestigd via de link in de e-mail (toestemming).\n• Om de formulieren te beschermen tegen automatische verzendingen (gerechtvaardigd belang)."
       },
       "destinataires": {
         "title": "Wie toegang heeft tot uw gegevens",
@@ -405,8 +411,8 @@
     "metaTitle": "Champagne voor restaurants, wijnhandels en hotels | Champagne de l'Aube",
     "metaDescription": "Champagnes van onafhankelijke wijnmakers uit de Côte des Bar en de Aube voor uw kaart: directe domeinprijzen, één aanspreekpunt, proeverij in uw zaak.",
     "h1": "Champagnes van wijnmakers uit de Aube voor uw kaart",
-    "intro": "Ik selecteer champagnes van onafhankelijke wijnmakers uit de Aube en stel ze voor aan restaurants, wijnhandels en hotels: directe domeinprijzen, één aanspreekpunt en een proeverij in uw zaak.",
-    "ctaGrille": "Pro-prijslijst aanvragen",
+    "intro": "We selecteren champagnes van onafhankelijke wijnmakers uit de Aube en stellen ze voor aan restaurants, wijnhandels en hotels: directe domeinprijzen, één aanspreekpunt en een proeverij in uw zaak.",
+    "ctaGrille": "Ontvang onze selectie en prijzen",
     "ctaDegustation": "Een proeverij organiseren",
     "profilsTitre": "Voor welke zaken?",
     "profils": {
@@ -433,12 +439,12 @@
     "portfolioIntro": "Een selectie van maximaal tien domeinen, complementair in terroir en druivenrassen. De prijzen staan in de pro-prijslijst, op aanvraag verstuurd.",
     "portfolioCta": "Bekijk onze hele selectie",
     "referencesTitre": "Zij vertrouwen ons",
-    "grilleTitre": "De pro-prijslijst ontvangen",
-    "grilleTexte": "Ik stuur u per e-mail de prijslijst van de domeinen in de selectie.",
+    "grilleTitre": "Ontvang onze selectie met de professionele prijzen",
+    "grilleTexte": "We mailen u de huidige selectie, met de professionele prijzen van elk domein.",
     "degustationTitre": "Een proeverij in uw zaak organiseren",
-    "degustationTexte": "Ik kom een selectie cuvées voorstellen aan uw team, in uw zaak.",
+    "degustationTexte": "We komen een selectie cuvées voorstellen aan uw team, in uw zaak.",
     "partenaireTitre": "Bent u wijnmaker?",
-    "partenaireTexte": "Stel mij uw domein voor: de selectie blijft bewust klein.",
+    "partenaireTexte": "Stel ons uw domein voor: de selectie blijft bewust klein.",
     "partenaireCta": "Partner worden"
   },
   "vigneronsPage": {
@@ -463,9 +469,9 @@
     "site": "Website van het domein",
     "galerie": "In beeld",
     "ctaProTitre": "Restaurant, wijnhandel, hotel?",
-    "ctaProTexte": "Ontvang de pro-prijslijst van de domeinen in de selectie.",
+    "ctaProTexte": "Ontvang onze selectie met de professionele prijzen.",
     "ctaPartTitre": "Ontdek de cuvées",
-    "ctaPartTexte": "Tijdens een proeverij-workshop in kleine groep in Troyes.",
+    "ctaPartTexte": "In Troyes of bij u thuis, tijdens een proeverij voor 6 tot 13 personen.",
     "ctaPartBouton": "Onze proeverijen",
     "autres": "Meer wijnmakers uit de selectie"
   },
@@ -474,7 +480,7 @@
     "metaDescription": "Onafhankelijke wijnmaker in de Aube? Champagne de l'Aube stelt een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
     "surTitre": "Wijnmakers uit de Aube",
     "h1": "Wijnmakers: word partner",
-    "intro": "Bent u onafhankelijk wijnmaker in de Aube? Ik stel een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
+    "intro": "Bent u onafhankelijk wijnmaker in de Aube? We stellen een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
     "points": {
       "selection": {
         "titre": "Een kleine selectie",
@@ -489,8 +495,8 @@
         "texte": "Workshops voor 6 tot 13 personen, waarin elke cuvée via haar wijnmaker wordt verteld."
       }
     },
-    "formTitre": "Stel mij uw domein voor",
-    "formTexte": "Een paar woorden over uw domein en uw cuvées: ik neem contact met u op voor een bezoek aan het domein."
+    "formTitre": "Stel ons uw domein voor",
+    "formTexte": "Een paar woorden over uw domein en uw cuvées: we nemen contact met u op voor een bezoek aan het domein."
   },
   "selection": {
     "surTitre": "Onze selectie",
@@ -500,5 +506,76 @@
     "dialogTitre": "Ontvang onze selectie",
     "dialogTexte": "De domeinen van het moment, hun dorpen en hun cuvées, in een document per e-mail.",
     "fermer": "Sluiten"
+  },
+  "degustationsPage": {
+    "intro": "In Troyes of bij u thuis, rond een tafel van 6 tot 13 personen, stellen we u wijnmakers uit onze selectie voor: hun dorp, hun percelen, hun manier van werken. Anderhalf uur, met een quiz, om te begrijpen wat hen onderscheidt."
+  },
+  "evenementsPage": {
+    "metaTitle": "Champagne voor uw bruiloft in Troyes en de Aube | Champagne de l'Aube",
+    "metaDescription": "Bruiloft, doop, groepsbestelling: kies champagnes van wijnmakers uit de Aube met ons advies en directe wijnmakersprijzen.",
+    "surTitre": "Bruiloft · Doop · Groepsbestellingen",
+    "h1": "Champagne voor bruiloften en grote gelegenheden",
+    "intro": "Champagne nodig voor een grote gelegenheid, een bruiloft, een doop, of een groepsbestelling? Profiteer van ons advies en directe wijnmakersprijzen, met domeinen uit onze selectie.",
+    "cta": "Advies vragen voor mijn evenement",
+    "occasionsTitre": "Voor welke gelegenheid?",
+    "occasions": {
+      "mariage": {
+        "titre": "Bruiloft",
+        "texte": "Van de receptie tot het dessert helpen we u cuvées van wijnmakers uit de Aube te kiezen die bij uw menu passen, en de hoeveelheden in te schatten."
+      },
+      "bapteme": {
+        "titre": "Doop",
+        "texte": "Voor een familiemaaltijd adviseren we u volgens het menu, het aantal gasten en uw budget."
+      },
+      "famille": {
+        "titre": "Verjaardagen en familiefeesten",
+        "texte": "Een datum die telt, een maaltijd die samenbrengt: we wijzen u de weg naar domeinen uit onze selectie, van de Côte des Bar tot Les Riceys."
+      },
+      "groupee": {
+        "titre": "Groepsbestellingen",
+        "texte": "Verenigingen, comités, vrienden: bundel uw bestellingen en profiteer van directe wijnmakersprijzen."
+      }
+    },
+    "etapesTitre": "Hoe gaat het in zijn werk?",
+    "etapes": {
+      "1": {
+        "titre": "Vertel ons over uw evenement",
+        "texte": "De datum, het aantal gasten, het menu, uw budget: een paar regels volstaan."
+      },
+      "2": {
+        "titre": "Wij adviseren u",
+        "texte": "We stellen cuvées uit onze selectie voor die bij uw menu passen, met de hoeveelheden die u nodig hebt."
+      },
+      "3": {
+        "titre": "U bestelt rechtstreeks",
+        "texte": "U profiteert van directe wijnmakersprijzen, en wij blijven uw aanspreekpunt tot de grote dag."
+      }
+    },
+    "faqTitre": "Uw vragen",
+    "formTitre": "Advies vragen voor mijn evenement",
+    "formTexte": "Vertel ons over uw project: we nemen heel snel contact met u op met voorstellen."
+  },
+  "mag": {
+    "metaTitle": "Le Mag: champagne, combinaties en wijnmakers uit de Aube | Champagne de l'Aube",
+    "metaDescription": "Alles over champagne, combinaties van gerechten en champagne, en portretten van wijnmakers uit de Côte des Bar, Les Riceys, Montgueux en Villenauxe-la-Grande.",
+    "surTitre": "Champagne de l'Aube",
+    "h1": "Le Mag",
+    "intro": "Wijnmakers, dorpen, combinaties: wat we in het veld leren, van Montgueux tot Les Riceys.",
+    "filtres": "Filteren op rubriek",
+    "tous": "Alles",
+    "count": "{count, plural, one {# artikel} other {# artikelen}}",
+    "aucun": "Nog geen artikelen in deze rubriek.",
+    "vide": "De eerste artikelen komen heel binnenkort.",
+    "lire": "Lees het artikel",
+    "voirRubrique": "De hele rubriek",
+    "retour": "Alle artikelen van Le Mag",
+    "vignerons": "De wijnmakers in dit artikel",
+    "lies": "Gerelateerde artikelen",
+    "vigneronMag": "Ze schrijven erover in Le Mag",
+    "rubriques": {
+      "toutSavoir": "Alles over champagne",
+      "accords": "Gerechten & champagne",
+      "portraits": "Portretten van wijnmakers"
+    }
   }
 }
