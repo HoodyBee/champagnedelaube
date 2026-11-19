@@ -1,0 +1,85 @@
+{
+  "slug": "chardonnay-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "rubriques": [
+    "terroirs-cepages"
+  ],
+  "titre": {
+    "fr": "Le chardonnay, le cépage de la finesse",
+    "en": "Chardonnay, the grape of finesse"
+  },
+  "motCle": "chardonnay champagne",
+  "extrait": {
+    "fr": "Seul grand cépage blanc de la Champagne, le chardonnay apporte finesse et fraîcheur. Dans l'Aube, il trouve à Montgueux et à Villenauxe-la-Grande des terroirs de craie qui lui ressemblent.",
+    "en": "The only major white grape in Champagne, chardonnay brings finesse and freshness. In the Aube, it finds chalk terroirs that suit it in Montgueux and Villenauxe-la-Grande."
+  },
+  "seo": {
+    "title": {
+      "fr": "Chardonnay et champagne : finesse, blanc de blancs et terroirs de l'Aube | Champagne de l'Aube",
+      "en": "Chardonnay and champagne: finesse, blanc de blancs and Aube terroirs | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le chardonnay, grand cépage blanc du champagne : finesse, fraîcheur, blanc de blancs, et ses terroirs de craie dans l'Aube, à Montgueux et Villenauxe-la-Grande.",
+      "en": "Chardonnay, champagne's main white grape: finesse, freshness, blanc de blancs, and its chalk terroirs in the Aube, Montgueux and Villenauxe-la-Grande."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Le grand cépage blanc",
+        "en": "The main white grape"
+      },
+      "paragraphes": [
+        {
+          "fr": "Des trois grands cépages de la Champagne, le chardonnay est le seul blanc. Dans l'assemblage, on lui attribue la finesse et la fraîcheur.",
+          "en": "Of Champagne's three main grapes, chardonnay is the only white one. In a blend, it is credited with finesse and freshness."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Blanc de blancs",
+        "en": "Blanc de blancs"
+      },
+      "paragraphes": [
+        {
+          "fr": "Un champagne blanc de blancs est élaboré uniquement à partir de cépages blancs, le plus souvent du chardonnay. C'est le pendant du blanc de noirs, issu de raisins noirs.",
+          "en": "A blanc de blancs champagne is made only from white grapes, most often chardonnay. It is the counterpart of blanc de noirs, made from black grapes."
+        },
+        {
+          "fr": "Le chardonnay a aussi un cousin rose : le chardonnay rose, une mutation naturelle, ajouté aux cépages de l'appellation en 2025. Nous lui consacrons [un article](/chardonnay-rose-champagne).",
+          "en": "Chardonnay also has a pink cousin: chardonnay rose, a natural mutation added to the appellation's grapes in 2025. We devote [an article](/chardonnay-rose-champagne) to it."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Ses terroirs de craie dans l'Aube",
+        "en": "Its chalk terroirs in the Aube"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le chardonnay aime la craie. Au nord, la Côte des Blancs, au sud d'Épernay, lui est presque entièrement consacrée. Dans l'Aube, deux terroirs lui font la part belle.",
+          "en": "Chardonnay loves chalk. In the north, the Côte des Blancs, south of Épernay, is almost entirely devoted to it. In the Aube, two terroirs give it pride of place."
+        },
+        {
+          "fr": "À [Montgueux](/montgueux), à une dizaine de kilomètres de Troyes, une colline de craie exposée au sud est plantée très majoritairement en chardonnay. À [Villenauxe-la-Grande](/villenauxe-la-grande), à l'ouest du département, le chardonnay est aussi majoritaire. Deux visages du chardonnay, à découvrir à côté du pinot noir de la [Côte des Bar](/la-cote-des-bar).",
+          "en": "In [Montgueux](/montgueux), about ten kilometres from Troyes, a south-facing chalk hill is planted mostly with chardonnay. In [Villenauxe-la-Grande](/villenauxe-la-grande), in the west of the department, chardonnay is also the main grape. Two faces of chardonnay, to discover alongside the pinot noir of the [Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le goûter",
+        "en": "Tasting it"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour comparer un chardonnay de Montgueux et un pinot noir de la Côte des Bar, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous. Nous y présentons les vignerons et leurs terroirs.",
+          "en": "To compare a Montgueux chardonnay with a Côte des Bar pinot noir, join one of [our tastings](/tasting-troyes), in Troyes or at your home. We present the winemakers and their terroirs."
+        }
+      ]
+    }
+  ]
+}

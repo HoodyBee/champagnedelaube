@@ -1,0 +1,257 @@
+{
+  "slug": "vocabulaire-du-champagne-en-anglais",
+  "existant": false,
+  "date": "2026-11-19",
+  "rubriques": [
+    "tout-savoir"
+  ],
+  "titre": {
+    "fr": "Le vocabulaire du champagne en anglais",
+    "en": "Champagne vocabulary in French and English"
+  },
+  "motCle": "vocabulaire champagne anglais",
+  "extrait": {
+    "fr": "De la vigne à la dégustation, les mots du champagne traduits en anglais, avec une courte explication pour chacun.",
+    "en": "From vine to tasting, the words of champagne in French and English, each with a short explanation."
+  },
+  "seo": {
+    "title": {
+      "fr": "Vocabulaire du champagne en anglais : le lexique | Champagne de l'Aube",
+      "en": "Champagne vocabulary in French and English: glossary | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Lexique français-anglais du champagne : vigne, vinification, méthode champenoise, dosage, dégustation. Les termes justes, expliqués simplement.",
+      "en": "French-English champagne glossary: vineyard, winemaking, traditional method, dosage, tasting. The right words, simply explained."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Pourquoi ce lexique",
+        "en": "Why this glossary"
+      },
+      "paragraphes": [
+        {
+          "fr": "Vous recevez des amis étrangers, vous travaillez avec une clientèle internationale ou vous préparez un voyage dans le vignoble ? Voici les mots du champagne en anglais, de la vigne à la dégustation. Certains termes français sont utilisés tels quels en anglais : nous le signalons.",
+          "en": "Hosting friends from abroad, working with French-speaking partners or planning a trip to the vineyards? Here are the words of champagne in French and English, from vine to tasting. Some French terms are used as they are in English: we point them out."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Dans la vigne",
+        "en": "In the vineyard"
+      },
+      "paragraphes": [
+        {
+          "fr": "le vignoble : the vineyard. L'ensemble des vignes d'une région ou d'un domaine.",
+          "en": "the vineyard: le vignoble. All the vines of a region or estate."
+        },
+        {
+          "fr": "le vigneron : the winemaker (ou grower). Celui qui cultive la vigne et, souvent, élabore son vin. « Grower champagne » désigne le champagne de vigneron.",
+          "en": "the winemaker (ou grower): le vigneron. The person who grows the vines and often makes the wine. « Grower champagne » means champagne made by a winemaker from their own grapes."
+        },
+        {
+          "fr": "le cépage : the grape variety. Pinot noir, meunier, chardonnay… Voir [Qu'est-ce qu'un cépage ?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne).",
+          "en": "the grape variety: le cépage. Pinot noir, meunier, chardonnay… See [What is a grape variety?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne)."
+        },
+        {
+          "fr": "la parcelle : the plot. Une portion de vigne. En Champagne, on parle aussi de lieu-dit.",
+          "en": "the plot: la parcelle. A portion of vineyard. In Champagne, people also speak of a « lieu-dit », a named site."
+        },
+        {
+          "fr": "le coteau : the slope (ou hillside). Les vignes champenoises sont souvent plantées à flanc de colline.",
+          "en": "the slope (ou hillside): le coteau. Champagne vines are often planted on hillsides."
+        },
+        {
+          "fr": "la taille : the pruning. Le travail d'hiver qui limite le nombre de bourgeons.",
+          "en": "the pruning: la taille. The winter work that limits the number of buds."
+        },
+        {
+          "fr": "le débourrement : the budburst. L'ouverture des bourgeons au printemps.",
+          "en": "the budburst: le débourrement. The opening of the buds in spring."
+        },
+        {
+          "fr": "la floraison : the flowering. La vigne fleurit au début de l'été.",
+          "en": "the flowering: la floraison. The vine flowers in early summer."
+        },
+        {
+          "fr": "la véraison : the veraison. Le moment où les raisins changent de couleur. Les anglophones emploient le mot français.",
+          "en": "the veraison: la véraison. The moment grapes change colour. English speakers use the French word."
+        },
+        {
+          "fr": "les vendanges : the harvest. En Champagne, elles se font à la main.",
+          "en": "the harvest: les vendanges. In Champagne, it is done by hand."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Du raisin au vin",
+        "en": "From grape to wine"
+      },
+      "paragraphes": [
+        {
+          "fr": "le pressoir : the press. Les raisins y sont pressés entiers, rapidement après la cueillette.",
+          "en": "the press: le pressoir. Grapes are pressed whole, quickly after picking."
+        },
+        {
+          "fr": "la cuvée : the cuvée. Au pressoir, le premier jus, le plus fin. Le mot désigne aussi un champagne précis d'un producteur.",
+          "en": "the cuvée: la cuvée. At the press, the first and finest juice. The word also means a producer's specific champagne."
+        },
+        {
+          "fr": "le vin clair : the base wine. Le vin tranquille obtenu après la première fermentation.",
+          "en": "the base wine: le vin clair. The still wine obtained after the first fermentation."
+        },
+        {
+          "fr": "l'assemblage : the blend (ou blending). Le mélange de vins de cépages, de parcelles ou d'années différents.",
+          "en": "the blend (ou blending): l'assemblage. The blending of wines from different grapes, plots or years."
+        },
+        {
+          "fr": "le vin de réserve : the reserve wine. Vin des années précédentes, gardé pour l'assemblage.",
+          "en": "the reserve wine: le vin de réserve. Wine from previous years, kept for blending."
+        },
+        {
+          "fr": "le millésime : the vintage. Un champagne millésimé provient d'une seule année. Sans millésime : « non-vintage ».",
+          "en": "the vintage: le millésime. A vintage champagne comes from a single year. Without a vintage: « non-vintage »."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "La méthode champenoise",
+        "en": "The traditional method"
+      },
+      "paragraphes": [
+        {
+          "fr": "la liqueur de tirage : the liqueur de tirage. Le mélange de sucre et de levures ajouté au vin avant la mise en bouteille. Les anglophones gardent souvent le terme français.",
+          "en": "the liqueur de tirage: la liqueur de tirage. The mixture of sugar and yeast added to the wine before bottling. English speakers often keep the French term."
+        },
+        {
+          "fr": "la prise de mousse : the second fermentation. La fermentation en bouteille qui crée les bulles.",
+          "en": "the second fermentation: la prise de mousse. The fermentation in the bottle that creates the bubbles."
+        },
+        {
+          "fr": "les lies : the lees. Les levures mortes après la fermentation. Le vin vieillit à leur contact : « ageing on lees ».",
+          "en": "the lees: les lies. The dead yeast after fermentation. The wine ages in contact with them: « ageing on lees »."
+        },
+        {
+          "fr": "le remuage : the riddling. Les bouteilles sont tournées et inclinées peu à peu pour que le dépôt descende dans le goulot.",
+          "en": "the riddling: le remuage. Bottles are turned and gradually tilted so the sediment slides into the neck."
+        },
+        {
+          "fr": "le dégorgement : the disgorgement. On retire le dépôt accumulé dans le goulot.",
+          "en": "the disgorgement: le dégorgement. The sediment collected in the neck is removed."
+        },
+        {
+          "fr": "le dosage : the dosage. L'ajout d'une liqueur d'expédition (vin et sucre) après le dégorgement. Il définit le style : brut, extra brut…",
+          "en": "the dosage: le dosage. The addition of a « liqueur d'expédition » (wine and sugar) after disgorgement. It sets the style: brut, extra brut…"
+        },
+        {
+          "fr": "le bouchon et le muselet : the cork and the wire cage (ou muselet). Le muselet est l'armature métallique qui retient le bouchon.",
+          "en": "the cork and the wire cage (ou muselet): le bouchon et le muselet. The wire cage holds the cork in place."
+        },
+        {
+          "fr": "la cave : the cellar. Là où les bouteilles vieillissent, au frais et à l'abri de la lumière.",
+          "en": "the cellar: la cave. Where bottles age, cool and away from light."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Lire une étiquette",
+        "en": "Reading a label"
+      },
+      "paragraphes": [
+        {
+          "fr": "brut nature : brut nature (ou zero dosage). Moins de 3 grammes de sucre par litre, sans sucre ajouté au dosage.",
+          "en": "brut nature (ou zero dosage): brut nature. Less than 3 grams of sugar per litre, no sugar added at dosage."
+        },
+        {
+          "fr": "extra brut : extra brut. Entre 0 et 6 grammes par litre.",
+          "en": "extra brut: extra brut. Between 0 and 6 grams per litre."
+        },
+        {
+          "fr": "brut : brut. Moins de 12 grammes par litre : le style le plus courant.",
+          "en": "brut: brut. Less than 12 grams per litre: the most common style."
+        },
+        {
+          "fr": "extra dry : extra dry. De 12 à 17 grammes par litre. Attention : malgré son nom, il est plus doux qu'un brut.",
+          "en": "extra dry: extra dry. 12 to 17 grams per litre. Note: despite its name, it is sweeter than brut."
+        },
+        {
+          "fr": "sec : sec (ou dry). De 17 à 32 grammes par litre.",
+          "en": "sec (ou dry): sec. 17 to 32 grams per litre."
+        },
+        {
+          "fr": "demi-sec : demi-sec. De 32 à 50 grammes par litre.",
+          "en": "demi-sec: demi-sec. 32 to 50 grams per litre."
+        },
+        {
+          "fr": "doux : doux (ou sweet). Plus de 50 grammes par litre.",
+          "en": "doux (ou sweet): doux. More than 50 grams per litre."
+        },
+        {
+          "fr": "blanc de blancs : blanc de blancs. Champagne issu uniquement de cépages blancs, le plus souvent le chardonnay.",
+          "en": "blanc de blancs: blanc de blancs. Champagne made only from white grapes, most often chardonnay."
+        },
+        {
+          "fr": "blanc de noirs : blanc de noirs. Champagne blanc issu uniquement de raisins noirs : pinot noir, meunier ou les deux.",
+          "en": "blanc de noirs: blanc de noirs. White champagne made only from black grapes: pinot noir, meunier or both."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "À la dégustation",
+        "en": "At the tasting"
+      },
+      "paragraphes": [
+        {
+          "fr": "la dégustation : the tasting. Regarder, sentir, goûter.",
+          "en": "the tasting: la dégustation. Look, smell, taste."
+        },
+        {
+          "fr": "la robe : the colour (ou appearance). L'aspect du vin dans le verre.",
+          "en": "the colour (ou appearance): la robe. How the wine looks in the glass."
+        },
+        {
+          "fr": "les bulles : the bubbles. Les anglophones parlent aussi de « perlage » ou de « bead ».",
+          "en": "the bubbles: les bulles. English speakers also use « perlage » or « bead »."
+        },
+        {
+          "fr": "la mousse : the mousse. La texture des bulles en bouche.",
+          "en": "the mousse: la mousse. The texture of the bubbles on the palate."
+        },
+        {
+          "fr": "le nez : the nose. Les arômes perçus à l'odorat.",
+          "en": "the nose: le nez. The aromas perceived by smell."
+        },
+        {
+          "fr": "la bouche : the palate. Les sensations en bouche.",
+          "en": "the palate: la bouche. The sensations in the mouth."
+        },
+        {
+          "fr": "la finale : the finish. Ce qui reste après avoir goûté. Une finale longue est souvent un signe de qualité.",
+          "en": "the finish: la finale. What remains after tasting. A long finish is often a sign of quality."
+        },
+        {
+          "fr": "frais, fruité, floral, toasté : fresh, fruity, floral, toasty. Quelques adjectifs courants pour décrire un champagne.",
+          "en": "fresh, fruity, floral, toasty: frais, fruité, floral, toasté. A few common adjectives to describe a champagne."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Pratiquer avec nous",
+        "en": "Practise with us"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meilleur moyen de retenir ce vocabulaire, c'est de l'entendre en situation, lors de l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous.",
+          "en": "The best way to remember this vocabulary is to hear it in context, at one of [our tastings](/tasting-troyes), in Troyes or at your home."
+        }
+      ]
+    }
+  ]
+}
