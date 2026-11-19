@@ -16,22 +16,26 @@ export async function sanityFetch<T>({
   query,
   params = {},
   tags,
+  life = "max",
 }: {
   query: string;
   params?: QueryParams;
   tags: string[];
+  /** Durée de cache : "max" (vidé par le webhook à chaque publication) ou "hours" (contenus datés). */
+  life?: "max" | "hours";
 }): Promise<T | null> {
   "use cache";
   cacheTag("sanity", ...tags);
 
+  const setLife = () => (life === "hours" ? cacheLife("hours") : cacheLife("max"));
   if (!client) {
-    cacheLife("max");
+    setLife();
     return null;
   }
 
   try {
     const result = await client.fetch<T>(query, params);
-    cacheLife("max");
+    setLife();
     return result;
   } catch (error) {
     // Sanity injoignable : on affiche les contenus par défaut plutôt que de casser

@@ -35,11 +35,6 @@
     "legalNotice": "Juridische informatie",
     "privacy": "Privacybeleid"
   },
-  "charte": {
-    "eyebrow": "Website in aanbouw · Controle van de huisstijl",
-    "title": "Terroirs en champagnes met karakter",
-    "intro": "Deze tijdelijke pagina toont de kleuren, lettertypen en pictogrammen van het merk zoals ze op de nieuwe website gebruikt zullen worden."
-  },
   "footer": {
     "discover": "Ontdekken",
     "contact": "Contact opnemen",
@@ -109,7 +104,40 @@
       "domaines": "domeinen maximaal in de selectie",
       "personnes": "personen per workshop",
       "duree": "per proeverij"
-    }
+    },
+    "metaTitle": "Champagnes van wijnmakers uit de Côte des Bar | Champagne de l'Aube",
+    "metaDescription": "Een selectie onafhankelijke wijnmakers uit de Côte des Bar, Les Riceys, Montgueux en Villenauxe-la-Grande, met één aanspreekpunt in Troyes.",
+    "heroIntro": "Een selectie onafhankelijke wijnmakers uit de Aube, voorgesteld door één aanspreekpunt in Troyes.",
+    "heroCtaTerroir": "Ontdek het terroir",
+    "heroCtaVignerons": "Onze wijnmakers",
+    "entreesTitre": "Voor wie?",
+    "terroirSurTitre": "Het terroir",
+    "terroirTitre": "De Côte des Bar en de Aube, in het zuiden van de Champagne",
+    "terroirTexte": "De Aube telt vier terroirs. De Côte des Bar, op kimmeridgische mergel, is het land van de pinot noir. Les Riceys is het enige champagnedorp met drie appellations. Montgueux, een krijtheuvel aan de rand van Troyes, is het land van de chardonnay. Villenauxe-la-Grande kijkt uit op de Sézannais.",
+    "terroirCta": "Ontdek het terroir van de Aube",
+    "vigneronsSurTitre": "De selectie",
+    "vigneronsTitre": "Onze wijnmakers",
+    "vigneronsIntro": "Onafhankelijke domeinen uit de Aube, voorgesteld via de mensen die ze maken.",
+    "vigneronsCta": "Al onze wijnmakers",
+    "reassuranceTitre": "Waarom Champagne de l'Aube?",
+    "reassurance": {
+      "selection": {
+        "titre": "Onafhankelijke wijnmakers",
+        "texte": "Een selectie van maximaal tien complementaire domeinen."
+      },
+      "interlocuteur": {
+        "titre": "Eén aanspreekpunt",
+        "texte": "Eén contactpersoon voor meerdere domeinen, in Troyes."
+      },
+      "terroir": {
+        "titre": "Eerst het terroir van de Aube",
+        "texte": "Elke cuvée wordt voorgesteld met haar dorp, terroir en wijnmaker."
+      }
+    },
+    "eventSurTitre": "Volgende afspraak",
+    "eventPlaces": "{places} plaatsen",
+    "eventComplet": "Volgeboekt",
+    "eventCta": "Bekijk de afspraak"
   },
   "pro": {
     "arguments": {
@@ -350,5 +378,96 @@
         "text": "Deze website gebruikt geen advertentie- of statistiekcookies. Ze slaat alleen noodzakelijke technische informatie op in uw browser:\n• cda_age (cookie en lokale opslag, 1 jaar): uw antwoord op de leeftijdscontrole;\n• NEXT_LOCALE (cookie, tijdens het bezoek): de gekozen taal;\n• cda_nl_bar (lokale opslag): de nieuwsbanner die u heeft gesloten."
       }
     }
+  },
+  "proPage": {
+    "metaTitle": "Champagne voor restaurants, wijnhandels en hotels | Champagne de l'Aube",
+    "metaDescription": "Champagnes van onafhankelijke wijnmakers uit de Côte des Bar en de Aube voor uw kaart: directe domeinprijzen, één aanspreekpunt, proeverij in uw zaak.",
+    "h1": "Champagnes van wijnmakers uit de Aube voor uw kaart",
+    "intro": "Ik selecteer champagnes van onafhankelijke wijnmakers uit de Aube en stel ze voor aan restaurants, wijnhandels en hotels: directe domeinprijzen, één aanspreekpunt en een proeverij in uw zaak.",
+    "ctaGrille": "Pro-prijslijst aanvragen",
+    "ctaDegustation": "Een proeverij organiseren",
+    "profilsTitre": "Voor welke zaken?",
+    "profils": {
+      "restaurants": {
+        "titre": "Restaurants",
+        "texte": "Cuvées van wijnmakers voor een kaart die een terroir vertelt."
+      },
+      "cavistes": {
+        "titre": "Wijnhandels",
+        "texte": "Onafhankelijke domeinen uit de Aube om aan uw klanten voor te stellen."
+      },
+      "hotels": {
+        "titre": "Hotels",
+        "texte": "Een selectie champagnes uit de Aube voor uw gasten op doorreis."
+      },
+      "epiceries": {
+        "titre": "Delicatessenzaken en traiteurs",
+        "texte": "Champagnes van wijnmakers voor uw geschenkdozen en evenementen."
+      }
+    },
+    "argumentsTitre": "Eén contactpersoon, meerdere domeinen",
+    "portfolioSurTitre": "De domeinen",
+    "portfolioTitre": "De domeinen in de selectie",
+    "portfolioIntro": "Een selectie van maximaal tien domeinen, complementair in terroir en druivenrassen. De prijzen staan in de pro-prijslijst, op aanvraag verstuurd.",
+    "portfolioCta": "Bekijk al onze wijnmakers",
+    "referencesTitre": "Zij vertrouwen ons",
+    "grilleTitre": "De pro-prijslijst ontvangen",
+    "grilleTexte": "Ik stuur u per e-mail de prijslijst van de domeinen in de selectie.",
+    "degustationTitre": "Een proeverij in uw zaak organiseren",
+    "degustationTexte": "Ik kom een selectie cuvées voorstellen aan uw team, in uw zaak.",
+    "partenaireTitre": "Bent u wijnmaker?",
+    "partenaireTexte": "Stel mij uw domein voor: de selectie blijft bewust klein.",
+    "partenaireCta": "Partner worden"
+  },
+  "vigneronsPage": {
+    "metaTitle": "Champagnes van onafhankelijke wijnmakers uit de Aube | Champagne de l'Aube",
+    "metaDescription": "De onafhankelijke wijnmakers in de selectie van Champagne de l'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Hun dorpen, druivenrassen en methoden.",
+    "surTitre": "Onafhankelijke wijnmakers",
+    "h1": "Onze wijnmakers",
+    "intro": "Onafhankelijke domeinen uit de Aube, gekozen om hun terroir en hun werk. Elke cuvée wordt voorgesteld via haar wijnmaker.",
+    "filtres": "Domeinen filteren",
+    "tous": "Alle",
+    "aucun": "Er is momenteel geen domein dat aan deze filter voldoet.",
+    "count": "{count, plural, one {# domein} other {# domeinen}}"
+  },
+  "vigneronPage": {
+    "metaTitle": "{nom}, wijnmaker in {village} | Champagne de l'Aube",
+    "personnes": "De wijnmakers",
+    "histoire": "Het domein",
+    "cepages": "Druivenrassen",
+    "thematiques": "Kenmerken",
+    "pratiques": "Op het domein",
+    "labels": "Labels en certificeringen",
+    "site": "Website van het domein",
+    "galerie": "In beeld",
+    "ctaProTitre": "Restaurant, wijnhandel, hotel?",
+    "ctaProTexte": "Ontvang de pro-prijslijst van de domeinen in de selectie.",
+    "ctaPartTitre": "Ontdek de cuvées",
+    "ctaPartTexte": "Tijdens een proeverij-workshop in kleine groep in Troyes.",
+    "ctaPartBouton": "Onze proeverijen",
+    "autres": "Meer wijnmakers uit de selectie"
+  },
+  "partenairePage": {
+    "metaTitle": "Wijnmakers uit de Aube: word partner | Champagne de l'Aube",
+    "metaDescription": "Onafhankelijke wijnmaker in de Aube? Champagne de l'Aube stelt een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
+    "surTitre": "Wijnmakers uit de Aube",
+    "h1": "Wijnmakers: word partner",
+    "intro": "Bent u onafhankelijk wijnmaker in de Aube? Ik stel een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
+    "points": {
+      "selection": {
+        "titre": "Een kleine selectie",
+        "texte": "Maximaal tien complementaire domeinen, zodat elk zijn plaats heeft."
+      },
+      "publics": {
+        "titre": "Professionals en particulieren",
+        "texte": "Uw cuvées voorgesteld aan restaurants, wijnhandels, hotels, bedrijven en particulieren."
+      },
+      "degustations": {
+        "titre": "Proeverijen in Troyes",
+        "texte": "Workshops voor 6 tot 13 personen, waarin elke cuvée via haar wijnmaker wordt verteld."
+      }
+    },
+    "formTitre": "Stel mij uw domein voor",
+    "formTexte": "Een paar woorden over uw domein en uw cuvées: ik neem contact met u op voor een bezoek aan het domein."
   }
 }

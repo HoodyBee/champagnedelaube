@@ -35,11 +35,6 @@
     "legalNotice": "Note legali",
     "privacy": "Informativa sulla privacy"
   },
-  "charte": {
-    "eyebrow": "Sito in costruzione · Verifica dell'identità visiva",
-    "title": "Terroir e champagne di carattere",
-    "intro": "Questa pagina provvisoria mostra i colori, i caratteri e i pittogrammi del marchio come saranno utilizzati nel nuovo sito."
-  },
   "footer": {
     "discover": "Scoprire",
     "contact": "Contattaci",
@@ -109,7 +104,40 @@
       "domaines": "tenute al massimo nella selezione",
       "personnes": "persone per laboratorio",
       "duree": "per laboratorio di degustazione"
-    }
+    },
+    "metaTitle": "Champagne di vignaioli della Côte des Bar | Champagne de l'Aube",
+    "metaDescription": "Una selezione di vignaioli indipendenti della Côte des Bar, di Les Riceys, Montgueux e Villenauxe-la-Grande, con un unico interlocutore a Troyes.",
+    "heroIntro": "Una selezione di vignaioli indipendenti dell'Aube, presentati da un unico interlocutore a Troyes.",
+    "heroCtaTerroir": "Scopri il terroir",
+    "heroCtaVignerons": "I nostri vignaioli",
+    "entreesTitre": "Per chi?",
+    "terroirSurTitre": "Il terroir",
+    "terroirTitre": "La Côte des Bar e l'Aube, nel sud della Champagne",
+    "terroirTexte": "L'Aube conta quattro terroir. La Côte des Bar, sulle sue marne kimmeridgiane, è la terra del pinot noir. Les Riceys è l'unico villaggio della Champagne con tre denominazioni. Montgueux, collina di gesso alle porte di Troyes, è la terra dello chardonnay. Villenauxe-la-Grande guarda verso il Sézannais.",
+    "terroirCta": "Scopri il terroir dell'Aube",
+    "vigneronsSurTitre": "La selezione",
+    "vigneronsTitre": "I nostri vignaioli",
+    "vigneronsIntro": "Tenute indipendenti dell'Aube, presentate attraverso le persone che le fanno vivere.",
+    "vigneronsCta": "Tutti i nostri vignaioli",
+    "reassuranceTitre": "Perché Champagne de l'Aube?",
+    "reassurance": {
+      "selection": {
+        "titre": "Vignaioli indipendenti",
+        "texte": "Una selezione di massimo dieci tenute complementari."
+      },
+      "interlocuteur": {
+        "titre": "Un unico interlocutore",
+        "texte": "Un solo contatto per più tenute, a Troyes."
+      },
+      "terroir": {
+        "titre": "Prima di tutto il terroir dell'Aube",
+        "texte": "Ogni cuvée è presentata con il suo villaggio, il suo terroir e il suo vignaiolo."
+      }
+    },
+    "eventSurTitre": "Prossimo appuntamento",
+    "eventPlaces": "{places} posti",
+    "eventComplet": "Completo",
+    "eventCta": "Vedi l'appuntamento"
   },
   "pro": {
     "arguments": {
@@ -350,5 +378,96 @@
         "text": "Questo sito non utilizza cookie pubblicitari né di misurazione dell'audience. Memorizza nel browser solo informazioni tecniche indispensabili:\n• cda_age (cookie e memoria locale, 1 anno): la vostra risposta alla verifica dell'età;\n• NEXT_LOCALE (cookie, durata della visita): la lingua scelta;\n• cda_nl_bar (memoria locale): il banner delle novità che avete chiuso."
       }
     }
+  },
+  "proPage": {
+    "metaTitle": "Champagne per ristoranti, enoteche e hotel | Champagne de l'Aube",
+    "metaDescription": "Champagne di vignaioli indipendenti della Côte des Bar e dell'Aube per la vostra carta: prezzi diretti dalla tenuta, un unico interlocutore, degustazione nel vostro locale.",
+    "h1": "Champagne di vignaioli dell'Aube per la vostra carta",
+    "intro": "Seleziono champagne di vignaioli indipendenti dell'Aube e li presento a ristoranti, enoteche e hotel: prezzi diretti dalla tenuta, un unico interlocutore e una degustazione nel vostro locale.",
+    "ctaGrille": "Richiedi il listino Pro",
+    "ctaDegustation": "Organizzare una degustazione",
+    "profilsTitre": "Per quali locali?",
+    "profils": {
+      "restaurants": {
+        "titre": "Ristoranti",
+        "texte": "Cuvée di vignaioli per una carta che racconta un terroir."
+      },
+      "cavistes": {
+        "titre": "Enoteche",
+        "texte": "Tenute indipendenti dell'Aube da far scoprire ai vostri clienti."
+      },
+      "hotels": {
+        "titre": "Hotel",
+        "texte": "Una selezione di champagne dell'Aube per i vostri ospiti di passaggio."
+      },
+      "epiceries": {
+        "titre": "Gastronomie e catering",
+        "texte": "Champagne di vignaioli per i vostri cofanetti e i vostri eventi."
+      }
+    },
+    "argumentsTitre": "Un interlocutore, più tenute",
+    "portfolioSurTitre": "Le tenute",
+    "portfolioTitre": "Le tenute della selezione",
+    "portfolioIntro": "Una selezione di massimo dieci tenute, complementari per terroir e vitigni. I prezzi sono nel listino Pro, inviato su richiesta.",
+    "portfolioCta": "Vedi tutti i nostri vignaioli",
+    "referencesTitre": "Si fidano di noi",
+    "grilleTitre": "Ricevere il listino Pro",
+    "grilleTexte": "Vi invierò via e-mail il listino delle tenute della selezione.",
+    "degustationTitre": "Organizzare una degustazione nel vostro locale",
+    "degustationTexte": "Vengo a presentare una selezione di cuvée al vostro team, nel vostro locale.",
+    "partenaireTitre": "Siete vignaioli?",
+    "partenaireTexte": "Presentatemi la vostra tenuta: la selezione resta volutamente ristretta.",
+    "partenaireCta": "Diventare partner"
+  },
+  "vigneronsPage": {
+    "metaTitle": "Champagne di vignaioli indipendenti dell'Aube | Champagne de l'Aube",
+    "metaDescription": "I vignaioli indipendenti della selezione Champagne de l'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. I loro villaggi, vitigni e metodi.",
+    "surTitre": "Vignaioli indipendenti",
+    "h1": "I nostri vignaioli",
+    "intro": "Tenute indipendenti dell'Aube, scelte per il loro terroir e il loro lavoro. Ogni cuvée è presentata attraverso il suo vignaiolo.",
+    "filtres": "Filtra le tenute",
+    "tous": "Tutti",
+    "aucun": "Al momento nessuna tenuta corrisponde a questo filtro.",
+    "count": "{count, plural, one {# tenuta} other {# tenute}}"
+  },
+  "vigneronPage": {
+    "metaTitle": "{nom}, vignaiolo a {village} | Champagne de l'Aube",
+    "personnes": "I vignaioli",
+    "histoire": "La tenuta",
+    "cepages": "Vitigni",
+    "thematiques": "Particolarità",
+    "pratiques": "In tenuta",
+    "labels": "Marchi e certificazioni",
+    "site": "Sito della tenuta",
+    "galerie": "In immagini",
+    "ctaProTitre": "Ristorante, enoteca, hotel?",
+    "ctaProTexte": "Ricevete il listino Pro delle tenute della selezione.",
+    "ctaPartTitre": "Scoprire le cuvée",
+    "ctaPartTexte": "Durante un laboratorio di degustazione a Troyes, in piccoli gruppi.",
+    "ctaPartBouton": "Le nostre degustazioni",
+    "autres": "Altri vignaioli della selezione"
+  },
+  "partenairePage": {
+    "metaTitle": "Vignaioli dell'Aube: diventate partner | Champagne de l'Aube",
+    "metaDescription": "Vignaioli indipendenti nell'Aube? Champagne de l'Aube presenta una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
+    "surTitre": "Vignaioli dell'Aube",
+    "h1": "Vignaioli: diventate partner",
+    "intro": "Siete vignaioli indipendenti nell'Aube? Presento una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
+    "points": {
+      "selection": {
+        "titre": "Una selezione ristretta",
+        "texte": "Massimo dieci tenute complementari, perché ognuna abbia il suo posto."
+      },
+      "publics": {
+        "titre": "Professionisti e privati",
+        "texte": "Le vostre cuvée presentate a ristoranti, enoteche, hotel, aziende e privati."
+      },
+      "degustations": {
+        "titre": "Degustazioni a Troyes",
+        "texte": "Laboratori da 6 a 13 persone, in cui ogni cuvée è raccontata attraverso il suo vignaiolo."
+      }
+    },
+    "formTitre": "Presentatemi la vostra tenuta",
+    "formTexte": "Qualche parola sulla vostra tenuta e sulle vostre cuvée: vi ricontatterò per un incontro in tenuta."
   }
 }

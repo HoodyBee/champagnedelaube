@@ -35,11 +35,6 @@
     "legalNotice": "Impressum",
     "privacy": "Datenschutzerklärung"
   },
-  "charte": {
-    "eyebrow": "Website im Aufbau · Prüfung des Erscheinungsbilds",
-    "title": "Terroirs und Champagner mit Charakter",
-    "intro": "Diese vorläufige Seite zeigt die Farben, Schriften und Piktogramme der Marke so, wie sie auf der neuen Website verwendet werden."
-  },
   "footer": {
     "discover": "Entdecken",
     "contact": "Kontakt",
@@ -109,7 +104,40 @@
       "domaines": "Weingüter höchstens in der Auswahl",
       "personnes": "Personen pro Workshop",
       "duree": "pro Verkostungsworkshop"
-    }
+    },
+    "metaTitle": "Winzerchampagner aus der Côte des Bar | Champagne de l'Aube",
+    "metaDescription": "Eine Auswahl unabhängiger Winzer aus der Côte des Bar, Les Riceys, Montgueux und Villenauxe-la-Grande, mit einem einzigen Ansprechpartner in Troyes.",
+    "heroIntro": "Eine Auswahl unabhängiger Winzer der Aube, vorgestellt von einem einzigen Ansprechpartner in Troyes.",
+    "heroCtaTerroir": "Das Terroir entdecken",
+    "heroCtaVignerons": "Unsere Winzer",
+    "entreesTitre": "Für wen?",
+    "terroirSurTitre": "Das Terroir",
+    "terroirTitre": "Die Côte des Bar und die Aube, im Süden der Champagne",
+    "terroirTexte": "Die Aube umfasst vier Terroirs. Die Côte des Bar mit ihren Kimmeridge-Mergeln ist das Land des Pinot Noir. Les Riceys ist das einzige Champagnerdorf mit drei Appellationen. Montgueux, ein Kreidehügel vor den Toren von Troyes, ist das Land des Chardonnay. Villenauxe-la-Grande blickt zum Sézannais.",
+    "terroirCta": "Das Terroir der Aube entdecken",
+    "vigneronsSurTitre": "Die Auswahl",
+    "vigneronsTitre": "Unsere Winzer",
+    "vigneronsIntro": "Unabhängige Weingüter der Aube, vorgestellt durch die Menschen, die sie führen.",
+    "vigneronsCta": "Alle unsere Winzer",
+    "reassuranceTitre": "Warum Champagne de l'Aube?",
+    "reassurance": {
+      "selection": {
+        "titre": "Unabhängige Winzer",
+        "texte": "Eine Auswahl von höchstens zehn sich ergänzenden Weingütern."
+      },
+      "interlocuteur": {
+        "titre": "Ein einziger Ansprechpartner",
+        "texte": "Ein Kontakt für mehrere Weingüter, in Troyes."
+      },
+      "terroir": {
+        "titre": "Zuerst das Terroir der Aube",
+        "texte": "Jede Cuvée wird mit ihrem Dorf, ihrem Terroir und ihrem Winzer vorgestellt."
+      }
+    },
+    "eventSurTitre": "Nächster Termin",
+    "eventPlaces": "{places} Plätze",
+    "eventComplet": "Ausgebucht",
+    "eventCta": "Termin ansehen"
   },
   "pro": {
     "arguments": {
@@ -350,5 +378,96 @@
         "text": "Diese Website verwendet keine Werbe- oder Analyse-Cookies. Sie speichert in Ihrem Browser nur unbedingt erforderliche technische Informationen:\n• cda_age (Cookie und lokaler Speicher, 1 Jahr): Ihre Antwort auf die Altersabfrage;\n• NEXT_LOCALE (Cookie, für die Dauer des Besuchs): die gewählte Sprache;\n• cda_nl_bar (lokaler Speicher): das Neuigkeiten-Banner, das Sie geschlossen haben."
       }
     }
+  },
+  "proPage": {
+    "metaTitle": "Champagner für Restaurants, Weinhandlungen und Hotels | Champagne de l'Aube",
+    "metaDescription": "Champagner unabhängiger Winzer aus der Côte des Bar und der Aube für Ihre Karte: direkte Weingutspreise, ein Ansprechpartner, Verkostung in Ihrem Betrieb.",
+    "h1": "Champagner von Winzern der Aube für Ihre Karte",
+    "intro": "Ich wähle Champagner unabhängiger Winzer der Aube aus und stelle sie Restaurants, Weinhandlungen und Hotels vor: direkte Weingutspreise, ein Ansprechpartner und eine Verkostung in Ihrem Betrieb.",
+    "ctaGrille": "Profi-Preisliste anfordern",
+    "ctaDegustation": "Eine Verkostung organisieren",
+    "profilsTitre": "Für welche Betriebe?",
+    "profils": {
+      "restaurants": {
+        "titre": "Restaurants",
+        "texte": "Winzercuvées für eine Karte, die von einem Terroir erzählt."
+      },
+      "cavistes": {
+        "titre": "Weinhandlungen",
+        "texte": "Unabhängige Weingüter der Aube, die Sie Ihren Kunden vorstellen können."
+      },
+      "hotels": {
+        "titre": "Hotels",
+        "texte": "Eine Auswahl von Champagnern der Aube für Ihre Gäste auf der Durchreise."
+      },
+      "epiceries": {
+        "titre": "Feinkostläden und Caterer",
+        "texte": "Winzerchampagner für Ihre Geschenkboxen und Veranstaltungen."
+      }
+    },
+    "argumentsTitre": "Ein Ansprechpartner, mehrere Weingüter",
+    "portfolioSurTitre": "Die Weingüter",
+    "portfolioTitre": "Die Weingüter der Auswahl",
+    "portfolioIntro": "Eine Auswahl von höchstens zehn Weingütern, die sich in Terroir und Rebsorten ergänzen. Die Preise stehen in der Profi-Preisliste, die auf Anfrage verschickt wird.",
+    "portfolioCta": "Alle unsere Winzer ansehen",
+    "referencesTitre": "Sie vertrauen uns",
+    "grilleTitre": "Die Profi-Preisliste erhalten",
+    "grilleTexte": "Ich sende Ihnen die Preisliste der Weingüter der Auswahl per E-Mail.",
+    "degustationTitre": "Eine Verkostung in Ihrem Betrieb organisieren",
+    "degustationTexte": "Ich stelle Ihrem Team eine Auswahl an Cuvées direkt in Ihrem Betrieb vor.",
+    "partenaireTitre": "Sind Sie Winzer?",
+    "partenaireTexte": "Stellen Sie mir Ihr Weingut vor: Die Auswahl bleibt bewusst klein.",
+    "partenaireCta": "Partner werden"
+  },
+  "vigneronsPage": {
+    "metaTitle": "Champagner unabhängiger Winzer der Aube | Champagne de l'Aube",
+    "metaDescription": "Die unabhängigen Winzer der Auswahl von Champagne de l'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Ihre Dörfer, Rebsorten und Methoden.",
+    "surTitre": "Unabhängige Winzer",
+    "h1": "Unsere Winzer",
+    "intro": "Unabhängige Weingüter der Aube, ausgewählt wegen ihres Terroirs und ihrer Arbeit. Jede Cuvée wird durch ihren Winzer vorgestellt.",
+    "filtres": "Weingüter filtern",
+    "tous": "Alle",
+    "aucun": "Derzeit entspricht kein Weingut diesem Filter.",
+    "count": "{count, plural, one {# Weingut} other {# Weingüter}}"
+  },
+  "vigneronPage": {
+    "metaTitle": "{nom}, Winzer in {village} | Champagne de l'Aube",
+    "personnes": "Die Winzer",
+    "histoire": "Das Weingut",
+    "cepages": "Rebsorten",
+    "thematiques": "Besonderheiten",
+    "pratiques": "Auf dem Weingut",
+    "labels": "Siegel und Zertifizierungen",
+    "site": "Website des Weinguts",
+    "galerie": "In Bildern",
+    "ctaProTitre": "Restaurant, Weinhandlung, Hotel?",
+    "ctaProTexte": "Erhalten Sie die Profi-Preisliste der Weingüter der Auswahl.",
+    "ctaPartTitre": "Die Cuvées entdecken",
+    "ctaPartTexte": "Bei einem Verkostungsworkshop in kleiner Runde in Troyes.",
+    "ctaPartBouton": "Unsere Verkostungen",
+    "autres": "Weitere Winzer der Auswahl"
+  },
+  "partenairePage": {
+    "metaTitle": "Winzer der Aube: Werden Sie Partner | Champagne de l'Aube",
+    "metaDescription": "Unabhängiger Winzer in der Aube? Champagne de l'Aube stellt eine Auswahl von höchstens zehn Weingütern Restaurants, Weinhandlungen, Hotels, Unternehmen und Privatkunden vor.",
+    "surTitre": "Winzer der Aube",
+    "h1": "Winzer: Werden Sie Partner",
+    "intro": "Sind Sie unabhängiger Winzer in der Aube? Ich stelle eine Auswahl von höchstens zehn Weingütern Restaurants, Weinhandlungen, Hotels, Unternehmen und Privatkunden vor.",
+    "points": {
+      "selection": {
+        "titre": "Eine kleine Auswahl",
+        "texte": "Höchstens zehn sich ergänzende Weingüter, damit jedes seinen Platz hat."
+      },
+      "publics": {
+        "titre": "Profis und Privatkunden",
+        "texte": "Ihre Cuvées vorgestellt bei Restaurants, Weinhandlungen, Hotels, Unternehmen und Privatkunden."
+      },
+      "degustations": {
+        "titre": "Verkostungen in Troyes",
+        "texte": "Workshops für 6 bis 13 Personen, in denen jede Cuvée durch ihren Winzer erzählt wird."
+      }
+    },
+    "formTitre": "Stellen Sie mir Ihr Weingut vor",
+    "formTexte": "Ein paar Worte zu Ihrem Weingut und Ihren Cuvées: Ich melde mich für ein Treffen auf dem Weingut."
   }
 }

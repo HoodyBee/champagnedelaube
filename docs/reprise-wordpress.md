@@ -27,6 +27,17 @@ Repris en **français uniquement** : les champs EN, NL, IT, DE sont vides (avert
 
 Les boutons de l'ancien site (« Accords Mets et Champagne »…) ont été gardés comme simples liens. Les images ont été copiées dans Sanity (version la plus grande disponible).
 
+## Mise à jour : corrections appliquées dans les brouillons
+
+À votre demande, les propositions ci-dessous ont été **appliquées directement dans les brouillons** (rien n'est publié) : 60 reformulations dans 16 documents, coquilles corrigées (« suchis », « landemain », « ci, plus » → « Ici, plus », « hectares . », « priviligiée »), emojis retirés (😉, 👉, 🍾), descriptions Google refaites (pesto, sushis, boudin, recettes, tout savoir, Entreprises & CSE, accueil, Côte des Bar), et 46 textes alternatifs d'images remplacés par de vraies descriptions. Seul « Route du Champagne en fête » est conservé (nom propre). Une sauvegarde de l'état précédent a été faite avant les modifications.
+
+**Images à remplacer (non modifiées)** :
+- Accueil, onglet « Ancien site » : l'**ancien logo** (bouteille sur rond pêche avec texte superposé) — interdit par le brand book.
+- Espace Particuliers, onglet « Ancien site » : photo de banque d'images d'une **soirée avec verres levés** — scène festive à éviter (loi Évin, brand book).
+- Terroir Montgueux : la photo principale montre des **maisons à pans de bois de Troyes**, pas Montgueux.
+- Photos de banque d'images (tracteur vu du ciel, coffrets, table gastronomique, mains dans les vignes) : à remplacer par vos photos quand vous en aurez.
+- L'ancienne adresse e-mail de l'agence, présente dans les anciens textes (Entreprises & CSE, Particuliers, Pro, Vignerons partenaires), a été remplacée partout par contact@champagnedelaube.fr (12 occurrences, liens compris).
+
 ## 2. Passages à réécrire (loi Évin)
 
 *Rappel du brand book : informer (terroir, vignerons, cépages, méthodes, accords) plutôt que faire rêver ; ne pas associer le champagne à la fête, à la séduction, à la réussite sociale ou au plaisir de boire ; pas d'incitation à consommer. Ces propositions ne remplacent pas l'avis d'un juriste.*
