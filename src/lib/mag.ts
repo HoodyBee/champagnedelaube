@@ -2,7 +2,14 @@ import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { getRubriquesSanity, RUBRIQUES_PAR_DEFAUT, type ArticleCard } from "@/sanity/content";
 
-const CLE_MESSAGE: Record<string, string> = { "tout-savoir": "toutSavoir", accords: "accords", portraits: "portraits" };
+const CLE_MESSAGE: Record<string, string> = {
+  "tout-savoir": "toutSavoir",
+  accords: "accords",
+  portraits: "portraits",
+  "terroirs-cepages": "terroirsCepages",
+  oenotourisme: "oenotourisme",
+  actualites: "actualites",
+};
 
 /** Noms des rubriques dans la langue de la page (Sanity d'abord, sinon les noms par défaut). */
 export async function getRubriqueLabels(locale: Locale): Promise<Record<string, string>> {

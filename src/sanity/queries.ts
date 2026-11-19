@@ -17,12 +17,15 @@ export type Reglages = {
   pepitesActive?: boolean;
   /** Adresse qui reçoit les formulaires. */
   emailsFormulaires?: string;
+  /** Siège administratif (mentions légales uniquement). */
+  adresseSiege?: string;
+  adresseMention?: Localized;
   /** Langues proposées aux visiteurs et ouvertes à Google. */
   languesActives?: string[];
 };
 
 const reglagesQuery = defineQuery(`*[_id == "reglages"][0]{
-  email, ville, telephone, afficherTelephone, instagramUrl, facebookUrl, linkedinUrl, signature, pepitesActive, emailsFormulaires, languesActives
+  email, ville, telephone, afficherTelephone, instagramUrl, facebookUrl, linkedinUrl, signature, pepitesActive, emailsFormulaires, languesActives, adresseSiege, adresseMention
 }`);
 
 /** Réglages du site (coordonnées, réseaux…), avec les valeurs par défaut si rien n'est rempli. */

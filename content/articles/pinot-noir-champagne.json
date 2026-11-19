@@ -1,0 +1,89 @@
+{
+  "slug": "pinot-noir-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "rubriques": [
+    "terroirs-cepages"
+  ],
+  "titre": {
+    "fr": "Le pinot noir, le cépage qui structure le champagne de l'Aube",
+    "en": "Pinot noir, the grape that gives Aube champagne its structure"
+  },
+  "motCle": "pinot noir champagne",
+  "extrait": {
+    "fr": "Premier cépage de la Champagne et roi de la Côte des Bar, le pinot noir donne au champagne sa charpente. Portrait d'un raisin noir qui fait des vins blancs.",
+    "en": "Champagne's leading grape and king of the Côte des Bar, pinot noir gives champagne its backbone. A portrait of a black grape that makes white wines."
+  },
+  "seo": {
+    "title": {
+      "fr": "Pinot noir et champagne : le cépage de la Côte des Bar | Champagne de l'Aube",
+      "en": "Pinot noir and champagne: the grape of the Côte des Bar | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le pinot noir, premier cépage de la Champagne et très largement majoritaire dans la Côte des Bar : son rôle dans l'assemblage, le blanc de noirs, le rosé des Riceys.",
+      "en": "Pinot noir, Champagne's leading grape and by far the main one in the Côte des Bar: its role in the blend, blanc de noirs, Rosé des Riceys."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Le premier cépage de la Champagne",
+        "en": "Champagne's leading grape"
+      },
+      "paragraphes": [
+        {
+          "fr": "Parmi les cépages autorisés en Champagne, trois couvrent la quasi-totalité du vignoble : le pinot noir, le meunier et le chardonnay. Le pinot noir arrive en tête. C'est un raisin noir à la peau fine.",
+          "en": "Of the grapes permitted in Champagne, three cover almost the entire vineyard: pinot noir, meunier and chardonnay. Pinot noir comes first. It is a thin-skinned black grape."
+        },
+        {
+          "fr": "Dans l'assemblage, on lui prête la structure : il donne au vin sa charpente et de l'ampleur. Pour découvrir les autres cépages, lisez [Qu'est-ce qu'un cépage ?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne).",
+          "en": "In a blend, it is credited with structure: it gives the wine its backbone and body. To discover the other grapes, read [What is a grape variety?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Un raisin noir, un vin blanc",
+        "en": "A black grape, a white wine"
+      },
+      "paragraphes": [
+        {
+          "fr": "La couleur d'un raisin noir se trouve dans sa peau : sa pulpe, elle, est incolore. Pressé rapidement et délicatement, sans laisser le jus au contact des peaux, le pinot noir donne donc un jus blanc.",
+          "en": "A black grape's colour lies in its skin; its pulp is colourless. Pressed quickly and gently, without leaving the juice in contact with the skins, pinot noir therefore gives a white juice."
+        },
+        {
+          "fr": "C'est ainsi que naît le blanc de noirs : un champagne élaboré uniquement à partir de raisins noirs, pinot noir, meunier ou les deux. On lui associe en général plus d'ampleur et des notes de fruits rouges.",
+          "en": "That is how blanc de noirs is born: a champagne made only from black grapes, pinot noir, meunier or both. It is generally associated with more body and red-fruit notes."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Dans la Côte des Bar, il est chez lui",
+        "en": "At home in the Côte des Bar"
+      },
+      "paragraphes": [
+        {
+          "fr": "Dans le sud de la Champagne, la [Côte des Bar](/la-cote-des-bar) est plantée très largement en pinot noir : plus de huit vignes sur dix. Ses coteaux de marnes et de calcaires du Kimméridgien, les mêmes qu'à Chablis, lui conviennent particulièrement.",
+          "en": "In the south of Champagne, the [Côte des Bar](/la-cote-des-bar) is planted overwhelmingly with pinot noir: more than eight vines in ten. Its slopes of Kimmeridgian marl and limestone, the same as in Chablis, suit it particularly well."
+        },
+        {
+          "fr": "Aux [Riceys](/les-riceys), le pinot noir donne aussi un vin tranquille rare : le rosé des Riceys, une appellation à part entière depuis 1947, issue uniquement de pinot noir récolté sur la commune.",
+          "en": "In [Les Riceys](/les-riceys), pinot noir also makes a rare still wine: Rosé des Riceys, an appellation in its own right since 1947, made solely from pinot noir harvested in the village."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le goûter avec ceux qui le cultivent",
+        "en": "Tasting it with the people who grow it"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le pinot noir de l'Aube se comprend mieux en écoutant les vignerons qui le travaillent. Lors de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, nous présentons des champagnes de vignerons de la Côte des Bar et parlons de leurs choix : assemblage, blanc de noirs, élevage.",
+          "en": "Aube pinot noir is best understood by listening to the winemakers who work it. At [our tastings](/tasting-troyes), in Troyes or at your home, we present champagnes from Côte des Bar winemakers and talk about their choices: blend, blanc de noirs, ageing."
+        }
+      ]
+    }
+  ]
+}

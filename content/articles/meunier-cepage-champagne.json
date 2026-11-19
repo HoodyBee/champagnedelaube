@@ -1,0 +1,85 @@
+{
+  "slug": "meunier-cepage-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "rubriques": [
+    "terroirs-cepages"
+  ],
+  "titre": {
+    "fr": "Le meunier, le cépage du fruit et de la rondeur",
+    "en": "Meunier, the grape of fruit and roundness"
+  },
+  "motCle": "meunier champagne",
+  "extrait": {
+    "fr": "Longtemps resté dans l'ombre, le meunier est l'un des trois grands cépages de la Champagne. D'où vient son nom, et qu'apporte-t-il au champagne ?",
+    "en": "Long kept in the shadows, meunier is one of Champagne's three main grapes. Where does its name come from, and what does it bring to champagne?"
+  },
+  "seo": {
+    "title": {
+      "fr": "Le meunier en Champagne : origine du nom et rôle dans l'assemblage | Champagne de l'Aube",
+      "en": "Meunier in Champagne: its name and role in the blend | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le meunier, l'un des trois grands cépages du champagne : l'origine de son nom, son débourrement tardif, le fruit et la rondeur qu'il apporte à l'assemblage.",
+      "en": "Meunier, one of champagne's three main grapes: where its name comes from, its late budburst, and the fruit and roundness it brings to the blend."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un nom venu de la farine",
+        "en": "A name that comes from flour"
+      },
+      "paragraphes": [
+        {
+          "fr": "Regardez le dessous d'une feuille de meunier : elle est couverte d'un fin duvet blanc, comme si on l'avait saupoudrée de farine. C'est de là que vient son nom. Longtemps appelé « pinot meunier », on le nomme aujourd'hui le plus souvent simplement « meunier ».",
+          "en": "Look at the underside of a meunier leaf: it is covered in a fine white down, as if dusted with flour. That is where its name comes from (meunier means miller). Long called \"pinot meunier\", it is now most often simply called \"meunier\"."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Un cépage robuste",
+        "en": "A hardy grape"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meunier débourre plus tard que le pinot noir et le chardonnay : ses bourgeons s'ouvrent après les leurs au printemps. Il est donc un peu moins exposé aux gelées de printemps, un atout dans un vignoble aussi septentrional que la Champagne.",
+          "en": "Meunier buds later than pinot noir and chardonnay: its buds open after theirs in spring. It is therefore slightly less exposed to spring frosts, an asset in a vineyard as northerly as Champagne."
+        },
+        {
+          "fr": "Avec le pinot noir et le chardonnay, il forme le trio qui couvre la quasi-totalité du vignoble champenois. Le meunier et le chardonnay y occupent des surfaces proches, derrière le pinot noir.",
+          "en": "Together with pinot noir and chardonnay, it forms the trio that covers almost all of the Champagne vineyard. Meunier and chardonnay occupy similar areas, behind pinot noir."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Ce qu'il apporte au champagne",
+        "en": "What it brings to champagne"
+      },
+      "paragraphes": [
+        {
+          "fr": "Dans l'assemblage, on attribue au meunier la rondeur et le fruit : il donne de la souplesse au vin. C'est un raisin noir : comme le pinot noir, il peut entrer dans un blanc de noirs, seul ou avec lui.",
+          "en": "In a blend, meunier is credited with roundness and fruit: it gives the wine suppleness. It is a black grape: like pinot noir, it can go into a blanc de noirs, on its own or with pinot noir."
+        },
+        {
+          "fr": "Certains vignerons lui consacrent aujourd'hui des cuvées entières. Pour situer le meunier parmi les autres cépages, lisez [Qu'est-ce qu'un cépage ?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne) et [Le pinot noir](/pinot-noir-champagne).",
+          "en": "Some winemakers now devote whole cuvées to it. To place meunier among the other grapes, read [What is a grape variety?](/quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne) and [Pinot noir](/pinot-noir-champagne)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le découvrir",
+        "en": "Discovering it"
+      },
+      "paragraphes": [
+        {
+          "fr": "Lors de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, nous présentons des champagnes de vignerons de l'Aube et expliquons le rôle de chaque cépage.",
+          "en": "At [our tastings](/tasting-troyes), in Troyes or at your home, we present champagnes from Aube winemakers and explain the role of each grape."
+        }
+      ]
+    }
+  ]
+}

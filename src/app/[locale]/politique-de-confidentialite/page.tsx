@@ -5,8 +5,9 @@ import { Paragraphs } from "@/components/legal/Paragraphs";
 import { RichText } from "@/components/ui/RichText";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
+import { adresseSiege } from "@/lib/legal";
 import { localize } from "@/sanity/lib/i18n";
-import { getPage } from "@/sanity/queries";
+import { getPage, getReglages } from "@/sanity/queries";
 
 const sections = ["responsable", "donnees", "finalites", "destinataires", "conservation", "droits", "cookies"] as const;
 
@@ -31,7 +32,8 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/polit
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("privacy");
-  const page = await getPage("confidentialite");
+  const [page, reglages] = await Promise.all([getPage("confidentialite"), getReglages()]);
+  const adresse = adresseSiege(reglages.adresseSiege, locale);
   const titre = localize(page?.titre, locale) ?? t("title");
   const contenu = localize(page?.contenu, locale);
 
@@ -49,7 +51,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/polit
             {sections.map((key) => (
               <section key={key} aria-labelledby={`pc-${key}`} className="mt-space-4">
                 <h2 id={`pc-${key}`} className="text-titre-section">{t(`sections.${key}.title`)}</h2>
-                <Paragraphs text={t(`sections.${key}.text`)} />
+                <Paragraphs text={t(`sections.${key}.text`, { adresse })} />
               </section>
             ))}
           </>

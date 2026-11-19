@@ -6,7 +6,8 @@
 // Article déjà existant (ex. « Qu'est-ce qu'un cépage ? ») : son brouillon reçoit le nouveau
 // titre, résumé, texte, rubriques et référencement ; la photo et la date sont conservées,
 // et l'ancienne version est sauvegardée dans docs/import-articles-sauvegarde.json.
-// Nouvel article : un brouillon est créé (adresse, date, rubrique « Tout savoir »).
+// Nouvel article : un brouillon est créé (adresse, date, rubriques du fichier).
+// Article avec « blocs » : texte repris tel quel (pas de réécriture), langues présentes seulement.
 // Rien n'est publié : vous relisez, ajoutez une photo et publiez dans le Studio.
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -41,6 +42,25 @@ function bloc(texte, l, style = "normal") {
   if (last < texte.length) children.push({ _type: "span", _key: key(), text: texte.slice(last), marks: [] });
   return { _type: "block", _key: key(), style, markDefs, children };
 }
+// Article repris tel quel (ex. article de detectezmoi.com) : blocs déjà découpés
+// { style, listItem?, spans: [{ text, strong?, href? }] }, liens externes conservés.
+function blocBrut(b) {
+  const markDefs = [];
+  const children = b.spans.map((s) => {
+    const marks = s.strong ? ["strong"] : [];
+    if (s.href) {
+      const k = key();
+      markDefs.push({ _type: "link", _key: k, href: s.href });
+      marks.push(k);
+    }
+    return { _type: "span", _key: key(), text: s.text, marks };
+  });
+  return { _type: "block", _key: key(), style: b.style, ...(b.listItem ? { listItem: b.listItem, level: 1 } : {}), markDefs, children };
+}
+const contenu = (a, l) =>
+  a.blocs
+    ? (a.blocs[l] ?? []).map(blocBrut)
+    : a.sections.filter((s) => s.titre[l]).flatMap((s) => [bloc(s.titre[l], l, "h2"), ...s.paragraphes.filter((p) => p[l]).map((p) => bloc(p[l], l))]);
 const str = (v, type = "localeString") => ({ _type: type, ...Object.fromEntries(LANGS.filter((l) => v?.[l]).map((l) => [l, v[l]])) });
 
 const docs = articles.map((a) => ({
@@ -51,7 +71,7 @@ const docs = articles.map((a) => ({
     titre: str(a.titre),
     extrait: str(a.extrait, "localeText"),
     rubriques: a.rubriques,
-    contenu: { _type: "localeRichText", ...Object.fromEntries(LANGS.map((l) => [l, a.sections.flatMap((s) => [bloc(s.titre[l], l, "h2"), ...s.paragraphes.map((p) => bloc(p[l], l))])])) },
+    contenu: { _type: "localeRichText", ...Object.fromEntries(LANGS.map((l) => [l, contenu(a, l)]).filter(([, v]) => v.length)) },
     seo: { _type: "seo", title: str(a.seo.title), description: str(a.seo.description, "localeText") },
   },
 }));

@@ -1,0 +1,138 @@
+{
+  "slug": "journees-du-champagne-et-des-cepages",
+  "existant": false,
+  "date": "2026-11-19",
+  "rubriques": [
+    "actualites",
+    "tout-savoir"
+  ],
+  "titre": {
+    "fr": "Les journées du champagne et de ses cépages, mois par mois",
+    "en": "Champagne and grape days, month by month"
+  },
+  "motCle": "journée du champagne",
+  "extrait": {
+    "fr": "Saint-Vincent, journée du chardonnay, du pinot noir, du meunier, Champagne Day : les rendez-vous de l'année pour mieux connaître le champagne et ses cépages.",
+    "en": "Saint Vincent, Chardonnay, Pinot Noir and Meunier days, Champagne Day: the year's dates to get to know champagne and its grapes better."
+  },
+  "seo": {
+    "title": {
+      "fr": "Journée du champagne et des cépages : le calendrier de l'année | Champagne de l'Aube",
+      "en": "Champagne Day and grape days: the yearly calendar | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Les journées dédiées au champagne et à ses cépages : Saint-Vincent, pinot gris, chardonnay, pinot noir, Champagne Day, meunier. Dates et règles de calcul.",
+      "en": "Days dedicated to champagne and its grapes: Saint Vincent, pinot gris, chardonnay, pinot noir, Champagne Day, meunier. Dates and how they are set."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un calendrier pour apprendre",
+        "en": "A calendar for learning"
+      },
+      "paragraphes": [
+        {
+          "fr": "Au fil de l'année, plusieurs journées mettent à l'honneur le champagne et ses cépages. Certaines sont anciennes et ancrées dans la vie des villages viticoles, d'autres sont nées plus récemment, souvent à l'étranger. Toutes sont une bonne occasion d'en apprendre davantage sur le travail des vignerons. Voici les dates qui reviennent chaque année.",
+          "en": "Throughout the year, several days honour champagne and its grapes. Some are old and rooted in the life of wine villages, others are more recent, often from abroad. All are a good opportunity to learn more about winemakers' work. Here are the dates that come back every year."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "22 janvier : la Saint-Vincent",
+        "en": "22 January: Saint Vincent's Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "Saint Vincent est le patron des vignerons, fêté le 22 janvier. En Champagne, les confréries des villages viticoles se réunissent autour de cette date : on remercie le saint pour la récolte passée et on place la suivante sous sa protection.",
+          "en": "Saint Vincent is the patron saint of winemakers, celebrated on 22 January. In Champagne, the brotherhoods of wine villages gather around this date to give thanks for the past harvest and place the next one under the saint's protection."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "17 mai : la journée du pinot gris",
+        "en": "17 May: Pinot Gris Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le pinot gris a sa journée internationale le 17 mai. En Champagne, ce cépage rare porte un autre nom, le fromenteau. Nous lui consacrons [un article](/pinot-gris-fromenteau-champagne).",
+          "en": "Pinot gris has its international day on 17 May. In Champagne, this rare grape goes by another name, fromenteau. We devote [an article](/pinot-gris-fromenteau-champagne) to it."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Fin mai : la journée du chardonnay",
+        "en": "Late May: Chardonnay Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "La journée internationale du chardonnay, née aux États-Unis, a lieu le jeudi qui précède le Memorial Day américain (dernier lundi de mai) : la date change donc chaque année. L'occasion de découvrir [le chardonnay](/chardonnay-champagne) et ses terroirs de craie dans l'Aube.",
+          "en": "International Chardonnay Day, born in the United States, falls on the Thursday before the American Memorial Day (the last Monday in May), so the date changes every year. A chance to discover [chardonnay](/chardonnay-champagne) and its chalk terroirs in the Aube."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Fin juillet ou début août : la Route du Champagne en fête",
+        "en": "Late July or early August: La Route du Champagne en fête"
+      },
+      "paragraphes": [
+        {
+          "fr": "Chaque été, la Route du Champagne en fête s'installe dans un secteur différent de la Côte des Bar. Pendant un week-end, les villages accueillent visiteurs, vignerons et animations. Les dates et le lieu de chaque édition sont annoncés par les organisateurs et l'office de tourisme. Découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "Every summer, La Route du Champagne en fête moves to a different part of the Côte des Bar. For a weekend, the villages welcome visitors, winemakers and events. The dates and place of each edition are announced by the organisers and the tourist office. Discover [the Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "18 août : la journée du pinot noir",
+        "en": "18 August: Pinot Noir Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le 18 août est la journée internationale du pinot noir, premier cépage de la Champagne et roi de la Côte des Bar. Pour comprendre son rôle, lisez [notre article sur le pinot noir](/pinot-noir-champagne).",
+          "en": "18 August is International Pinot Noir Day, honouring Champagne's leading grape and king of the Côte des Bar. To understand its role, read [our article on pinot noir](/pinot-noir-champagne)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "4e vendredi d'octobre : Champagne Day",
+        "en": "4th Friday of October: Champagne Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "Champagne Day, ou journée mondiale du champagne, a lieu chaque année le quatrième vendredi d'octobre. Une journée pour parler de l'appellation, de ses terroirs et de ceux qui la font vivre.",
+          "en": "Champagne Day, or Global Champagne Day, takes place every year on the fourth Friday of October. A day to talk about the appellation, its terroirs and the people who keep it alive."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "16 décembre : la journée du meunier",
+        "en": "16 December: Meunier Day"
+      },
+      "paragraphes": [
+        {
+          "fr": "L'année se termine avec la journée internationale du meunier, le 16 décembre. Longtemps discret, ce cépage est l'un des trois grands de la Champagne : découvrez [son histoire](/meunier-cepage-champagne).",
+          "en": "The year ends with International Meunier Day on 16 December. Long discreet, this grape is one of Champagne's big three: discover [its story](/meunier-cepage-champagne)."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Toute l'année : nos dégustations",
+        "en": "All year round: our tastings"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pas besoin d'attendre une date du calendrier pour rencontrer les vignerons de l'Aube : [nos dégustations](/tasting-troyes) ont lieu toute l'année, à Troyes ou chez vous, sur rendez-vous.",
+          "en": "No need to wait for a date in the calendar to meet Aube winemakers: [our tastings](/tasting-troyes) take place all year round, in Troyes or at your home, by appointment."
+        }
+      ]
+    }
+  ]
+}

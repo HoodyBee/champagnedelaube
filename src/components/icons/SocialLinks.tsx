@@ -12,11 +12,17 @@ export function SocialLinks({
   labels,
   className = "",
   linkClassName = "",
+  iconSize = 20,
+  compact = false,
 }: {
   links: Links;
   labels: Labels;
   className?: string;
   linkClassName?: string;
+  /** Taille des icônes (px). */
+  iconSize?: number;
+  /** Zones cliquables plus étroites (barre de navigation). */
+  compact?: boolean;
 }) {
   const items = (["instagram", "facebook", "linkedin"] as const).filter((k) => links[k]);
   if (items.length === 0) return null;
@@ -30,9 +36,9 @@ export function SocialLinks({
             rel="noopener"
             aria-label={labels[k]}
             title={labels[k]}
-            className={`inline-flex h-11 w-11 items-center justify-center transition-colors ${linkClassName}`}
+            className={`inline-flex ${compact ? "h-10 w-7" : "h-11 w-11"} items-center justify-center transition-colors ${linkClassName}`}
           >
-            <SocialIcon name={k} />
+            <SocialIcon name={k} size={iconSize} />
           </a>
         </li>
       ))}

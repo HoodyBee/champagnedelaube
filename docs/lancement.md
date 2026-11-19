@@ -7,9 +7,10 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 
 | | Tâche | Qui |
 |---|---|---|
-| 🔴 | Fusionner les PR dans l'ordre : #10, #8, #9, puis la PR des retours (#11) | Vous |
+| 🔴 | Fusionner la PR de la Partie B (mentions légales, réseaux sociaux, articles, traductions) | Vous |
 | 🔴 | **Lever le blocage Google** : aujourd'hui tout le site est en `noindex, nofollow` (site en construction). À retirer le jour J seulement | Claude |
-| ✅ / 🔴 | **Page Mentions légales** créée (`/mentions-legales/`) : il reste à remplir les champs [À COMPLÉTER] (nom ou raison sociale, statut, SIRET, adresse, directeur de la publication, adresse de l'hébergeur, crédits photos), dans le Studio (Autres pages → Mentions légales) ou en me les envoyant | Vous |
+| ✅ | **Mentions légales complètes** (éditeur, SIRET, siège, directeur de la publication, conception, Netlify, OVH, données, cookies, mention sanitaire). Adresse du siège modifiable dans Réglages → Contact, affichée uniquement sur les pages légales | Claude |
+| ✅ | **Icônes Instagram et Facebook** : en-tête (ordinateur), menu mobile, pied de page ; lien « Suivez-nous sur Instagram » dans l'appel final de l'accueil | Claude |
 | ✅ | **Redirections 301** faites (`src/redirections.ts`) : `/champagne-aube/`, catégories, étiquette, auteurs, flux, liens courts `?p=` et `?page_id=`. Les 7 articles et les 10 pages historiques gardent leur adresse | Claude |
 | ✅ | **sitemap.xml** (langues actives, hreflang) et **robots.txt** faits | Claude |
 | 🟠 | Page 404 soignée, et vrai code 404 pour les adresses inconnues (aujourd'hui la page « introuvable » s'affiche, avec un noindex) | Claude |
@@ -22,12 +23,13 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 | | Tâche |
 |---|---|
 | 🔴 | **Relire et publier** les brouillons repris de l'ancien site (accueil, Espace Pro, Entreprises & CSE, Nos Dégustations, pages). Rien n'est publié aujourd'hui : le site affiche les textes par défaut |
-| 🔴 | **Réglages du site** : adresse qui reçoit les formulaires, réseaux sociaux, signature, langues actives (FR, EN, NL, IT) |
+| 🔴 | **Réglages du site** : adresse qui reçoit les formulaires, réseaux sociaux (Instagram, Facebook), signature ; langues actives : FR et EN |
 | 🔴 | **Fiches vignerons** : au moins les domaines de votre sélection, avec portrait, village, terroir, philosophie. Aujourd'hui seules 2 fiches par défaut s'affichent (Moutard-Dangin, Mennetrier) |
 | ✅ | **Langues au lancement : français et anglais** (NL, IT, DE masquées, réactivables dans « Langues actives ») |
-| 🔴 | Traductions **anglaises** des contenus publiés dans le Studio (un avertissement orange signale celles qui manquent) |
-| 🟠 | Relire et publier les brouillons importés : textes des terroirs, page « Les terroirs de l'Aube », 6 articles sur les cépages (import fait ; sauvegardes dans `docs/import-*-sauvegarde.json`) |
-| 🟠 | Publier les 7 articles repris (corrections loi Évin déjà appliquées dans les brouillons) |
+| ✅ / 🔴 | **Traductions anglaises** faites en brouillon (articles, pages, référencement, textes des photos) : à relire et publier. Seule exception : l'article sur le rap, gardé tel quel en français |
+| 🟠 | Relire et publier les brouillons importés : textes des terroirs, page « Les terroirs de l'Aube », **13 articles** (cépages, pinot noir, meunier, chardonnay, portrait Pétré, journées du champagne, vocabulaire, rap) ; sources dans `docs/articles-cepages-sources.md` |
+| 🟠 | Publier les 6 articles repris de l'ancien site (rubriques Accords / Tout savoir attribuées) |
+| 🟠 | Portrait Daniel Pétré & Fils : préciser s'il s'agit d'une collaboration commerciale (case « Collaboration commerciale » de l'article) |
 | 🟠 | Au moins un **format de dégustation** (document « Expérience ») avec durée, nombre de personnes, prix « à partir de » ou vide (« Sur demande ») |
 | 🟠 | **Catalogue PDF « Notre sélection »** (Réglages du site) et **brochure CSE** (Entreprises & CSE) |
 | 🟠 | Trancher les points listés dans `docs/terroirs-sources.md` (surface de Montgueux, rattachement de Villenauxe-la-Grande…) |
@@ -37,16 +39,16 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 
 | | Tâche |
 |---|---|
-| 🔴 | Grande image d'ouverture de l'accueil (paysage de la Côte des Bar ou vigneron dans ses parcelles), photo de la section « Dégustations privées » (accueil) et ouverture de la page Dégustations privées (voir `docs/photos-proposition.md`) |
-| 🟠 | Une photo par terroir, un portrait par vigneron ; remplacer la photo « Montgueux » (en réalité Troyes) et les images signalées dans `docs/reprise-wordpress.md` (ancien logo, soirée verres levés, photos de banque d'images) |
+| ✅ | Photos placées en brouillon : vignes de la Côte des Bar (accueil), service en dégustation (accueil et Dégustations privées), dégustation en plein air (Vos Grands Événements), caves voûtées (Les terroirs de l'Aube) |
+| 🟠 | Remplacer la photo « Montgueux » (en réalité Troyes), ajouter une photo pour Les Riceys, un portrait par vigneron, et les images signalées dans `docs/reprise-wordpress.md` |
 | ⚪ | Une photo par article du Mag |
 
 ## 4. Domaine, Netlify, Brevo, Sanity (vous, avec mes instructions pas à pas)
 
 | | Tâche |
 |---|---|
-| 🔴 | **Domaine** : chez votre registrar (à identifier), faire pointer `champagnedelaube.fr` vers Netlify ; dans Netlify, ajouter le domaine (sans www) comme domaine principal, `www` en redirection ; vérifier le certificat HTTPS |
-| 🔴 | **Brevo, authentification du domaine** : ajouter dans les DNS les enregistrements SPF, DKIM et DMARC donnés par Brevo (Expéditeurs, domaines et IP dédiées → Domaines). Sans eux, les e-mails risquent d'arriver en indésirables |
+| 🔴 | **Domaine** : chez OVH (DNS chez OVH), faire pointer `champagnedelaube.fr` vers Netlify ; dans Netlify, ajouter le domaine (sans www) comme domaine principal, `www` en redirection ; vérifier le certificat HTTPS |
+| 🔴 | **Brevo, authentification du domaine** : suivre `docs/brevo-domaine-ovh.md` (code Brevo, DKIM, DMARC en mode observation, sans toucher aux e-mails OVH ni à l'ancien site) |
 | 🔴 | **Webhook Sanity** + variable `SANITY_REVALIDATE_SECRET` dans Netlify (instructions données à l'étape 6), avec l'adresse définitive `https://champagnedelaube.fr/api/revalidate/` |
 | 🔴 | **Sanity, CORS** : ajouter `https://champagnedelaube.fr` dans sanity.io/manage → API → CORS origins (pour le Studio sur le domaine) |
 | 🔴 | **Sécurité** : supprimer la clé d'écriture Sanity (« Sanity write token (import) ») dans sanity.io/manage → API → Tokens, et dans les réglages de l'environnement cloud (Network secrets), une fois les imports vérifiés |
