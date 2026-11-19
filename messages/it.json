@@ -536,7 +536,41 @@
     "fermer": "Chiudi"
   },
   "degustationsPage": {
-    "intro": "A Troyes o a casa vostra, attorno a un tavolo da 6 a 13 persone, vi presentiamo dei vignaioli della nostra selezione: il loro villaggio, le loro parcelle, il loro modo di lavorare. Un'ora e mezza, con un quiz, per capire cosa li distingue."
+    "intro": "A Troyes o a casa vostra, attorno a un tavolo da 6 a 13 persone, vi presentiamo dei vignaioli della nostra selezione: il loro villaggio, le loro parcelle, il loro modo di lavorare. Un'ora e mezza, con un quiz, per capire cosa li distingue.",
+    "metaTitle": "Degustazione di champagne a Troyes: laboratori con vignaioli dell'Aube | Champagne de l'Aube",
+    "metaDescription": "Degustazioni di champagne di vignaioli dell'Aube, a Troyes o a casa vostra, da 6 a 13 persone, per un'ora e mezza, con un quiz.",
+    "surTitre": "Le nostre degustazioni",
+    "h1": "Degustazioni di champagne a Troyes",
+    "ctaReserver": "Prenotare una degustazione",
+    "ctaEvenements": "I vostri grandi eventi",
+    "chiffres": {
+      "personnes": {
+        "valeur": "da 6 a 13",
+        "label": "persone per degustazione"
+      },
+      "duree": {
+        "valeur": "1 ora e mezza",
+        "label": "di scoperta, con un quiz"
+      },
+      "lieu": {
+        "valeur": "Troyes",
+        "label": "o a casa vostra, a scelta"
+      }
+    },
+    "experiencesTitre": "I nostri formati di degustazione",
+    "experiencesIntro": "Ogni degustazione vi presenta dei vignaioli della nostra selezione: il loro villaggio, le loro parcelle, il loro modo di lavorare.",
+    "aucuneExperience": "I nostri formati di degustazione sono in preparazione. Diteci cosa immaginate: vi ricontatteremo molto presto.",
+    "reserverTitre": "Prenotare una degustazione",
+    "reserverTexte": "Il numero di persone, la data che preferite, a Troyes o a casa vostra: vi ricontatteremo molto presto per confermare.",
+    "rendezVousTitre": "I nostri prossimi appuntamenti",
+    "places": "{places} posti",
+    "complet": "Completo",
+    "prix": "{prix} € a persona",
+    "inscription": "Iscriversi",
+    "inscriptionTitre": "Iscriversi: {titre}",
+    "carte": "Vedi sulla mappa",
+    "privesTitre": "Un matrimonio, un battesimo, un ordine di gruppo?",
+    "privesTexte": "Vi consigliamo champagne di vignaioli per le vostre grandi occasioni, ai prezzi diretti dei vignaioli."
   },
   "evenementsPage": {
     "metaTitle": "Champagne per matrimonio a Troyes e nell'Aube | Champagne de l'Aube",
@@ -605,5 +639,60 @@
       "accords": "Abbinamenti cibo & champagne",
       "portraits": "Ritratti di vignaioli"
     }
+  },
+  "entreprisesPage": {
+    "metaTitle": "Confezioni di champagne per aziende e CRAL | Champagne de l'Aube",
+    "metaDescription": "Confezioni di champagne di vignaioli dell'Aube e degustazioni per i vostri team e clienti. Un unico interlocutore e un preventivo su misura.",
+    "surTitre": "Aziende & CRAL",
+    "h1": "Champagne di vignaioli per i vostri regali aziendali e il vostro CRAL",
+    "intro": "Componiamo confezioni con vignaioli indipendenti dell'Aube e animiamo degustazioni per i vostri team e clienti. Un unico interlocutore, dalla scelta delle cuvée al vostro ordine.",
+    "ctaDevis": "Chiedere un preventivo",
+    "ctaBrochure": "Ricevere la brochure CRAL",
+    "coffrets": {
+      "surTitre": "Confezioni",
+      "titre": "Confezioni regalo & offerte CRAL",
+      "texte": "Confezioni composte con tenute della nostra selezione, per i vostri dipendenti, clienti o partner. Ogni confezione racconta un villaggio e un vignaiolo.",
+      "points": [
+        "Composizione secondo il vostro budget e il numero di confezioni",
+        "Cuvée di vignaioli indipendenti dell'Aube"
+      ]
+    },
+    "animations": {
+      "surTitre": "Animazioni",
+      "titre": "Degustazioni & team building",
+      "texte": "Una degustazione guidata, nei vostri locali o a Troyes, per scoprire i terroir dell'Aube attraverso i suoi vignaioli, con un quiz finale.",
+      "points": [
+        "Nei vostri locali o a Troyes",
+        "Terroir, vitigni e vignaioli raccontati in modo semplice"
+      ]
+    },
+    "argumentsTitre": "Perché affidarci i vostri regali?",
+    "arguments": {
+      "interlocuteur": {
+        "titre": "Un unico interlocutore",
+        "texte": "Un solo contatto, dal preventivo all'ordine."
+      },
+      "vignerons": {
+        "titre": "Vignaioli indipendenti",
+        "texte": "Tenute scelte una per una nell'Aube."
+      },
+      "surMesure": {
+        "titre": "Su misura",
+        "texte": "Confezioni e animazioni composte secondo la vostra richiesta."
+      }
+    },
+    "devisTitre": "Chiedere un preventivo su misura",
+    "devisTexte": "Confezioni, degustazione o entrambe: raccontateci il vostro progetto, vi ricontatteremo molto presto con una proposta.",
+    "brochureTitre": "Ricevere la brochure CRAL",
+    "brochureTexte": "Le nostre offerte per i CRAL, da scaricare o ricevere via e-mail."
+  },
+  "experiencePage": {
+    "metaTitle": "{titre}: degustazione di champagne a Troyes | Champagne de l'Aube",
+    "inclus": "Cosa è compreso",
+    "lieu": "Il luogo",
+    "vignerons": "I vignaioli di questa degustazione",
+    "galerie": "In immagini",
+    "reserverTitre": "Prenotare: {titre}",
+    "autres": "Le nostre altre degustazioni"
   }
 }

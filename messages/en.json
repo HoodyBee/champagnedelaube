@@ -536,7 +536,41 @@
     "fermer": "Close"
   },
   "degustationsPage": {
-    "intro": "In Troyes or at your home, around a table of 6 to 13 people, we introduce you to winemakers from our selection: their village, their plots, the way they work. An hour and a half, with a quiz, to understand what sets them apart."
+    "intro": "In Troyes or at your home, around a table of 6 to 13 people, we introduce you to winemakers from our selection: their village, their plots, the way they work. An hour and a half, with a quiz, to understand what sets them apart.",
+    "metaTitle": "Champagne tasting in Troyes: Aube winemaker workshops | Champagne de l'Aube",
+    "metaDescription": "Tastings of Aube grower champagnes, in Troyes or at your home, for 6 to 13 people, for an hour and a half, with a quiz.",
+    "surTitre": "Our Tastings",
+    "h1": "Champagne tastings in Troyes",
+    "ctaReserver": "Book a tasting",
+    "ctaEvenements": "Your Special Occasions",
+    "chiffres": {
+      "personnes": {
+        "valeur": "6 to 13",
+        "label": "guests per tasting"
+      },
+      "duree": {
+        "valeur": "1.5 hours",
+        "label": "of discovery, with a quiz"
+      },
+      "lieu": {
+        "valeur": "Troyes",
+        "label": "or at your home, as you prefer"
+      }
+    },
+    "experiencesTitre": "Our tasting formats",
+    "experiencesIntro": "Each tasting introduces you to winemakers from our selection: their village, their plots, the way they work.",
+    "aucuneExperience": "Our tasting formats are being prepared. Tell us what you have in mind: we will get back to you very soon.",
+    "reserverTitre": "Book a tasting",
+    "reserverTexte": "The number of guests, the date that suits you, in Troyes or at your home: we will get back to you very soon to confirm.",
+    "rendezVousTitre": "Our upcoming events",
+    "places": "{places} places",
+    "complet": "Fully booked",
+    "prix": "€{prix} per person",
+    "inscription": "Sign up",
+    "inscriptionTitre": "Sign up: {titre}",
+    "carte": "See on the map",
+    "privesTitre": "A wedding, a christening, a group order?",
+    "privesTexte": "We advise you on grower champagnes for your special occasions, at direct winemaker prices."
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube | Champagne de l'Aube",
@@ -605,5 +639,60 @@
       "accords": "Food & champagne pairings",
       "portraits": "Winemaker portraits"
     }
+  },
+  "entreprisesPage": {
+    "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",
+    "metaDescription": "Gift boxes of Aube grower champagnes and tastings for your teams and clients. A single point of contact and a tailor-made quote.",
+    "surTitre": "Companies & works councils",
+    "h1": "Grower champagnes for your business gifts and works council",
+    "intro": "We put together gift boxes with independent Aube winemakers, and we host tastings for your teams and clients. One point of contact, from choosing the cuvées to your order.",
+    "ctaDevis": "Request a quote",
+    "ctaBrochure": "Get the works council brochure",
+    "coffrets": {
+      "surTitre": "Gift boxes",
+      "titre": "Gift boxes & works council offers",
+      "texte": "Gift boxes put together with estates from our selection, for your staff, clients or partners. Each box tells the story of a village and a winemaker.",
+      "points": [
+        "Composed to suit your budget and the number of boxes",
+        "Cuvées from independent Aube winemakers"
+      ]
+    },
+    "animations": {
+      "surTitre": "Team events",
+      "titre": "Tastings & team building",
+      "texte": "A guided tasting, at your premises or in Troyes, to discover the Aube terroirs through their winemakers, with a quiz to finish.",
+      "points": [
+        "At your premises or in Troyes",
+        "Terroirs, grape varieties and winemakers, simply explained"
+      ]
+    },
+    "argumentsTitre": "Why entrust us with your gifts?",
+    "arguments": {
+      "interlocuteur": {
+        "titre": "A single point of contact",
+        "texte": "One contact, from quote to order."
+      },
+      "vignerons": {
+        "titre": "Independent winemakers",
+        "texte": "Estates chosen one by one in the Aube."
+      },
+      "surMesure": {
+        "titre": "Tailor-made",
+        "texte": "Gift boxes and tastings designed around your request."
+      }
+    },
+    "devisTitre": "Request a tailor-made quote",
+    "devisTexte": "Gift boxes, a tasting or both: tell us about your project and we will get back to you very soon with a proposal.",
+    "brochureTitre": "Get the works council brochure",
+    "brochureTexte": "Our offers for works councils, to download or receive by email."
+  },
+  "experiencePage": {
+    "metaTitle": "{titre}: champagne tasting in Troyes | Champagne de l'Aube",
+    "inclus": "What is included",
+    "lieu": "The venue",
+    "vignerons": "The winemakers of this tasting",
+    "galerie": "In pictures",
+    "reserverTitre": "Book: {titre}",
+    "autres": "Our other tastings"
   }
 }

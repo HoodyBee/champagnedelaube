@@ -536,7 +536,41 @@
     "fermer": "Fermer"
   },
   "degustationsPage": {
-    "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue."
+    "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue.",
+    "metaTitle": "Dégustation de champagne à Troyes : ateliers de vignerons de l'Aube | Champagne de l'Aube",
+    "metaDescription": "Des dégustations de champagnes de vignerons de l'Aube, à Troyes ou chez vous, de 6 à 13 personnes, pendant 1 h 30, avec un quiz.",
+    "surTitre": "Nos Dégustations",
+    "h1": "Dégustations de champagne à Troyes",
+    "ctaReserver": "Réserver une dégustation",
+    "ctaEvenements": "Vos Grands Événements",
+    "chiffres": {
+      "personnes": {
+        "valeur": "6 à 13",
+        "label": "personnes par dégustation"
+      },
+      "duree": {
+        "valeur": "1 h 30",
+        "label": "de découverte, avec un quiz"
+      },
+      "lieu": {
+        "valeur": "Troyes",
+        "label": "ou chez vous, à votre choix"
+      }
+    },
+    "experiencesTitre": "Nos formats de dégustation",
+    "experiencesIntro": "Chaque dégustation vous présente des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler.",
+    "aucuneExperience": "Nos formats de dégustation sont en préparation. Dites-nous ce que vous imaginez : nous revenons vers vous très vite.",
+    "reserverTitre": "Réserver une dégustation",
+    "reserverTexte": "Le nombre de personnes, la date qui vous convient, à Troyes ou chez vous : nous revenons vers vous très vite pour confirmer.",
+    "rendezVousTitre": "Nos prochains rendez-vous",
+    "places": "{places} places",
+    "complet": "Complet",
+    "prix": "{prix} € par personne",
+    "inscription": "S'inscrire",
+    "inscriptionTitre": "S'inscrire : {titre}",
+    "carte": "Voir sur la carte",
+    "privesTitre": "Un mariage, un baptême, une commande groupée ?",
+    "privesTexte": "Nous vous conseillons des champagnes de vignerons pour vos grandes occasions, aux tarifs directs vignerons."
   },
   "evenementsPage": {
     "metaTitle": "Champagne pour mariage à Troyes et dans l'Aube | Champagne de l'Aube",
@@ -605,5 +639,60 @@
       "accords": "Accords mets & champagne",
       "portraits": "Portraits de vignerons"
     }
+  },
+  "entreprisesPage": {
+    "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
+    "metaDescription": "Coffrets de champagnes de vignerons de l'Aube et dégustations pour vos équipes et vos clients. Un interlocuteur unique et un devis sur-mesure.",
+    "surTitre": "Entreprises & CSE",
+    "h1": "Champagnes de vignerons pour vos cadeaux d'entreprise et votre CSE",
+    "intro": "Nous composons des coffrets avec des vignerons indépendants de l'Aube, et nous animons des dégustations pour vos équipes et vos clients. Un seul interlocuteur, du choix des cuvées à votre commande.",
+    "ctaDevis": "Demander un devis",
+    "ctaBrochure": "Recevoir la brochure CSE",
+    "coffrets": {
+      "surTitre": "Coffrets",
+      "titre": "Coffrets cadeaux & offres CSE",
+      "texte": "Des coffrets composés avec des domaines de notre sélection, pour vos salariés, vos clients ou vos partenaires. Chaque coffret raconte un village et un vigneron.",
+      "points": [
+        "Composition selon votre budget et le nombre de coffrets",
+        "Cuvées de vignerons indépendants de l'Aube"
+      ]
+    },
+    "animations": {
+      "surTitre": "Animations",
+      "titre": "Animations & team building",
+      "texte": "Une dégustation commentée, dans vos locaux ou à Troyes, pour découvrir les terroirs de l'Aube à travers ses vignerons, avec un quiz pour finir.",
+      "points": [
+        "Dans vos locaux ou à Troyes",
+        "Terroirs, cépages et vignerons racontés simplement"
+      ]
+    },
+    "argumentsTitre": "Pourquoi nous confier vos cadeaux ?",
+    "arguments": {
+      "interlocuteur": {
+        "titre": "Un interlocuteur unique",
+        "texte": "Un seul contact, du devis à la commande."
+      },
+      "vignerons": {
+        "titre": "Des vignerons indépendants",
+        "texte": "Des domaines choisis un à un dans l'Aube."
+      },
+      "surMesure": {
+        "titre": "Du sur-mesure",
+        "texte": "Coffrets et animations composés selon votre demande."
+      }
+    },
+    "devisTitre": "Demander un devis sur-mesure",
+    "devisTexte": "Coffrets, animation ou les deux : décrivez-nous votre projet, nous revenons vers vous très vite avec une proposition.",
+    "brochureTitre": "Recevoir la brochure CSE",
+    "brochureTexte": "Nos offres pour les comités d'entreprise, à télécharger ou à recevoir par e-mail."
+  },
+  "experiencePage": {
+    "metaTitle": "{titre} : dégustation de champagne à Troyes | Champagne de l'Aube",
+    "inclus": "Ce qui est compris",
+    "lieu": "Le lieu",
+    "vignerons": "Les vignerons de cette dégustation",
+    "galerie": "En images",
+    "reserverTitre": "Réserver : {titre}",
+    "autres": "Nos autres dégustations"
   }
 }

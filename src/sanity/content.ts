@@ -479,3 +479,233 @@ export async function getArticle(slug: string, locale: Locale): Promise<ArticleD
 export async function getArticleSlugs(): Promise<string[]> {
   return (await sanityFetch<string[]>({ query: `*[_type == "article" && defined(slug.current)].slug.current`, tags: ["article"] })) ?? [];
 }
+
+// ---------------------------------------------------------------------------
+// Entreprises & CSE
+// ---------------------------------------------------------------------------
+export async function getEspaceEntreprises(locale: Locale) {
+  const p = await sanityFetch<{
+    hero?: HeroRaw;
+    coffrets?: BlocRaw;
+    animations?: BlocRaw;
+    devisTitre?: Localized;
+    devisTexte?: Localized;
+    brochureTitre?: Localized;
+    brochureTexte?: Localized;
+    faq?: { question?: Localized; reponse?: Localized }[];
+    seo?: SeoRaw;
+  }>({
+    query: `*[_id == "espaceEntreprises"][0]{hero{surTitre, titre, intro, image ${IMG}},
+      coffrets{icone, surTitre, titre, texte, points, image ${IMG}}, animations{icone, surTitre, titre, texte, points, image ${IMG}},
+      devisTitre, devisTexte, brochureTitre, brochureTexte, faq, seo}`,
+    tags: ["espaceEntreprises"],
+  });
+  return {
+    hero: heroOf(p?.hero, locale),
+    coffrets: blocOf(p?.coffrets, locale),
+    animations: blocOf(p?.animations, locale),
+    devisTitre: L(p?.devisTitre, locale),
+    devisTexte: L(p?.devisTexte, locale),
+    brochureTitre: L(p?.brochureTitre, locale),
+    brochureTexte: L(p?.brochureTexte, locale),
+    faq: faqOf(p?.faq, locale),
+    seo: seoOf(p?.seo, locale),
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Nos Dégustations (espace Particuliers) : expériences et rendez-vous
+// ---------------------------------------------------------------------------
+export async function getEspaceParticuliers(locale: Locale) {
+  const p = await sanityFetch<{
+    hero?: HeroRaw;
+    chiffres?: { valeur?: Localized | string; label?: Localized }[];
+    experiencesTitre?: Localized;
+    experiencesIntro?: Localized;
+    evenementsTitre?: Localized;
+    evenementsPrives?: BlocRaw;
+    faq?: { question?: Localized; reponse?: Localized }[];
+    seo?: SeoRaw;
+  }>({
+    query: `*[_id == "espaceParticuliers"][0]{hero{surTitre, titre, intro, image ${IMG}}, chiffres, experiencesTitre, experiencesIntro,
+      evenementsTitre, evenementsPrives{icone, surTitre, titre, texte, points, image ${IMG}}, faq, seo}`,
+    tags: ["espaceParticuliers"],
+  });
+  return {
+    hero: heroOf(p?.hero, locale),
+    chiffres: (p?.chiffres ?? []).flatMap((c) => {
+      const label = L(c.label, locale);
+      const valeur = typeof c.valeur === "string" ? c.valeur : L(c.valeur, locale);
+      return valeur && label ? [{ valeur, label }] : [];
+    }),
+    experiencesTitre: L(p?.experiencesTitre, locale),
+    experiencesIntro: L(p?.experiencesIntro, locale),
+    evenementsTitre: L(p?.evenementsTitre, locale),
+    evenementsPrives: blocOf(p?.evenementsPrives, locale),
+    faq: faqOf(p?.faq, locale),
+    seo: seoOf(p?.seo, locale),
+  };
+}
+
+const EXPERIENCE_CARD = `"slug": slug.current, titre, etiquette, image ${IMG}, accroche, duree, participantsMin, participantsMax, lieu,
+  prixAPartirDe, animateur{nom, role, photo ${IMG}}`;
+type ExperienceRaw = {
+  slug: string;
+  titre?: Localized;
+  etiquette?: "nouveau" | "places-limitees" | "sur-mesure";
+  image?: SanityImg;
+  accroche?: Localized;
+  duree?: Localized;
+  participantsMin?: number;
+  participantsMax?: number;
+  lieu?: Localized;
+  prixAPartirDe?: number | null;
+  animateur?: { nom?: string; role?: Localized; photo?: SanityImg };
+};
+export type Experience = {
+  slug: string;
+  titre: string;
+  etiquette?: "nouveau" | "places-limitees" | "sur-mesure";
+  image: Img | null;
+  accroche?: string;
+  duree?: string;
+  participantsMin?: number;
+  participantsMax?: number;
+  lieu?: string;
+  prixAPartirDe?: number | null;
+  animateur?: { nom?: string; role?: string; photo: Img | null };
+};
+const experienceOf = (e: ExperienceRaw, locale: Locale): Experience | null => {
+  const titre = L(e.titre, locale);
+  if (!titre || !e.slug) return null;
+  return {
+    slug: e.slug,
+    titre,
+    etiquette: e.etiquette,
+    image: toImg(e.image, locale, 1000),
+    accroche: L(e.accroche, locale),
+    duree: L(e.duree, locale),
+    participantsMin: e.participantsMin,
+    participantsMax: e.participantsMax,
+    lieu: L(e.lieu, locale),
+    prixAPartirDe: e.prixAPartirDe ?? null,
+    animateur: e.animateur?.nom ? { nom: e.animateur.nom, role: L(e.animateur.role, locale), photo: toImg(e.animateur.photo, locale, 200) } : undefined,
+  };
+};
+
+/** Expériences visibles (case « Afficher cette expérience »), dans l'ordre choisi. */
+export async function getExperiences(locale: Locale): Promise<Experience[]> {
+  const list = await sanityFetch<ExperienceRaw[]>({
+    query: `*[_type == "experience" && actif != false && defined(slug.current)] | order(coalesce(ordre, 10) asc){${EXPERIENCE_CARD}}`,
+    tags: ["experience"],
+  });
+  return (list ?? []).map((e) => experienceOf(e, locale)).filter((e): e is Experience => !!e);
+}
+
+export type ExperienceDetail = Experience & {
+  description?: PortableTextBlock[];
+  inclus: string[];
+  adresse?: { nom?: string; adresse?: string; codePostal?: string; ville?: string; lienCarte?: string };
+  vignerons: string[];
+  galerie: Img[];
+  seo: Seo;
+};
+
+export async function getExperience(slug: string, locale: Locale): Promise<ExperienceDetail | null> {
+  const e = await sanityFetch<
+    | (ExperienceRaw & {
+        description?: LocalizedBlocks;
+        inclus?: Localized[];
+        adresse?: ExperienceDetail["adresse"];
+        vignerons?: (string | null)[];
+        galerie?: SanityImg[];
+        seo?: SeoRaw;
+      })
+    | null
+  >({
+    query: `*[_type == "experience" && actif != false && slug.current == $slug][0]{${EXPERIENCE_CARD}, description, inclus, adresse,
+      "vignerons": vignerons[]->slug.current, galerie[] ${IMG}, seo}`,
+    params: { slug },
+    tags: ["experience", "vigneron"],
+  });
+  const card = e ? experienceOf(e, locale) : null;
+  if (!e || !card) return null;
+  return {
+    ...card,
+    description: localize(e.description, locale),
+    inclus: (e.inclus ?? []).map((i) => L(i, locale)).filter((i): i is string => !!i),
+    adresse: e.adresse,
+    vignerons: (e.vignerons ?? []).filter((v): v is string => !!v),
+    galerie: (e.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
+    seo: seoOf(e.seo, locale),
+  };
+}
+
+export async function getExperienceSlugs(): Promise<string[]> {
+  return (await sanityFetch<string[]>({ query: `*[_type == "experience" && actif != false && defined(slug.current)].slug.current`, tags: ["experience"] })) ?? [];
+}
+
+export type Evenement = {
+  slug?: string;
+  titre: string;
+  debut: string;
+  fin?: string;
+  lieu: string;
+  lienCarte?: string;
+  places?: number;
+  complet: boolean;
+  prix?: number;
+  prixPrecision?: string;
+  accroche?: string;
+  description?: PortableTextBlock[];
+  image: Img | null;
+  collaborationCommerciale: boolean;
+};
+
+/** Événements ponctuels à venir (un événement passé disparaît de lui-même). */
+export async function getEvenementsAVenir(locale: Locale): Promise<Evenement[]> {
+  const list = await sanityFetch<
+    {
+      titre?: Localized;
+      slug?: string;
+      debut?: string;
+      fin?: string;
+      lieu?: { nom?: string; adresse?: string; ville?: string; lienCarte?: string };
+      places?: number;
+      complet?: boolean;
+      prix?: number;
+      prixPrecision?: Localized;
+      accroche?: Localized;
+      description?: LocalizedBlocks;
+      image?: SanityImg;
+      collaborationCommerciale?: boolean;
+    }[]
+  >({
+    query: `*[_type == "evenement" && dateTime(debut) > dateTime(now())] | order(debut asc){titre, "slug": slug.current, debut, fin, lieu, places,
+      complet, prix, prixPrecision, accroche, description, image ${IMG}, collaborationCommerciale}`,
+    tags: ["evenement"],
+    life: "hours",
+  });
+  return (list ?? []).flatMap((e) => {
+    const titre = L(e.titre, locale);
+    if (!titre || !e.debut) return [];
+    return [
+      {
+        slug: e.slug,
+        titre,
+        debut: e.debut,
+        fin: e.fin,
+        lieu: [e.lieu?.nom, e.lieu?.adresse, e.lieu?.ville].filter(Boolean).join(", "),
+        lienCarte: e.lieu?.lienCarte,
+        places: e.places,
+        complet: e.complet === true,
+        prix: e.prix,
+        prixPrecision: L(e.prixPrecision, locale),
+        accroche: L(e.accroche, locale),
+        description: localize(e.description, locale),
+        image: toImg(e.image, locale, 1200),
+        collaborationCommerciale: e.collaborationCommerciale === true,
+      },
+    ];
+  });
+}

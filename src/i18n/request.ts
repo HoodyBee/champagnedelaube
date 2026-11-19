@@ -13,7 +13,8 @@ function merge(base: Messages, override: Messages): Messages {
   for (const [key, value] of Object.entries(override)) {
     const prev = out[key];
     out[key] =
-      value && typeof value === "object" && prev && typeof prev === "object"
+      // Les listes (tableaux) sont remplacées d'un bloc, jamais fusionnées.
+      value && typeof value === "object" && !Array.isArray(value) && prev && typeof prev === "object" && !Array.isArray(prev)
         ? merge(prev as Messages, value as Messages)
         : value;
   }
