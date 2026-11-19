@@ -27,15 +27,18 @@ export const article = defineType({
       name: "rubriques",
       title: "Rubriques du Mag",
       description:
-        "Une ou plusieurs. Sans rubrique créée dans « Rubriques du Mag », utilisez les codes prêts à l'emploi : tout-savoir, accords, portraits.",
+        "Une ou plusieurs. Six rubriques sont prêtes ; pour en ajouter une autre, créez-la dans « Le Mag : rubriques » puis choisissez-la dans « Autres rubriques ».",
       type: "array",
       group: "contenu",
       of: [{ type: "string" }],
       options: {
         list: [
-          { title: "Tout savoir sur le champagne", value: "tout-savoir" },
-          { title: "Accords mets & champagne", value: "accords" },
           { title: "Portraits de vignerons", value: "portraits" },
+          { title: "Terroirs & cépages", value: "terroirs-cepages" },
+          { title: "Accords mets & champagne", value: "accords" },
+          { title: "Tout savoir sur le champagne", value: "tout-savoir" },
+          { title: "Œnotourisme", value: "oenotourisme" },
+          { title: "Actualités", value: "actualites" },
         ],
         layout: "grid",
       },

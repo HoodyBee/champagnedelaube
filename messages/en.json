@@ -195,7 +195,8 @@
     "finalTexte": "A tasting, a wine list, gift boxes for your teams: write to us and we will get back to you very soon.",
     "finalCta": "Write to us",
     "heroCtaDegustation": "Book a tasting",
-    "pepitesLien": "Discover our whole selection"
+    "pepitesLien": "Discover our whole selection",
+    "instagram": "Follow us on Instagram"
   },
   "pro": {
     "arguments": {
@@ -474,7 +475,7 @@
     "sections": {
       "responsable": {
         "title": "Data controller",
-        "text": "Champagne de l'Aube, represented by Julien Mineo, Troyes (Aube, France). [TO BE COMPLETED: legal status, SIRET number, postal address]\nContact: contact@champagnedelaube.fr"
+        "text": "Champagne de l'Aube, Julien Mineo, sole trader (micro-entreprise), SIRET 527 744 528 00029. Administrative office: {adresse}.\nContact: contact@champagnedelaube.fr"
       },
       "donnees": {
         "title": "Data collected",
@@ -734,7 +735,10 @@
     "rubriques": {
       "toutSavoir": "All about champagne",
       "accords": "Food & champagne pairings",
-      "portraits": "Winemaker portraits"
+      "portraits": "Winemaker portraits",
+      "terroirsCepages": "Terroirs & grape varieties",
+      "oenotourisme": "Wine tourism",
+      "actualites": "News"
     },
     "aLaUne": "Featured",
     "tousLesArticles": "All articles"
@@ -817,33 +821,39 @@
     "sections": {
       "editeur": {
         "title": "Publisher",
-        "text": "The website champagnedelaube.fr is published by:\n• Name or company name: [TO BE COMPLETED]\n• Legal form: [TO BE COMPLETED]\n• Registered address: [TO BE COMPLETED], Troyes (Aube, France)\n• SIRET: [TO BE COMPLETED]\n• VAT number: [TO BE COMPLETED, if applicable]\n• Registration (RCS or RNE): [TO BE COMPLETED, if applicable]\n• Email: contact@champagnedelaube.fr\n• Phone: [TO BE COMPLETED]"
+        "text": "The website champagnedelaube.fr is published by Champagne de l'Aube, a business run by Julien Mineo, sole trader under the French micro-entreprise scheme (the same business as Detectezmoi.com).\n• SIRET: 527 744 528 00029\n• Administrative office: {adresse}\n{mention}\n• Email: contact@champagnedelaube.fr"
       },
       "directeur": {
         "title": "Publication director",
-        "text": "[TO BE COMPLETED: first and last name of the publication director]"
+        "text": "Julien Mineo."
+      },
+      "conception": {
+        "title": "Website design and development",
+        "text": "Detectezmoi.com (Julien Mineo, SIRET 527 744 528 00029)."
       },
       "hebergement": {
         "title": "Hosting",
-        "text": "The website is hosted by:\n• Netlify, Inc.: [TO BE COMPLETED: postal address given on netlify.com, Legal section]\nEditorial content and images are managed with Sanity (Sanity AS, Norway)."
+        "text": "• Website host: Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, United States (www.netlify.com).\n• Editorial content and images: Sanity AS, Norway (www.sanity.io).\n• Domain name: registered with OVH SAS, 2 rue Kellermann, 59100 Roubaix, France."
       },
       "propriete": {
         "title": "Intellectual property",
-        "text": "All content on this website (texts, photographs, logos, pictograms, layout) is protected by copyright. Any full or partial reproduction or reuse without prior written permission is prohibited.\nThe names and logos of the estates presented remain the property of their owners.\nPhoto credits: [TO BE COMPLETED]"
+        "text": "All content on this website (texts, photographs, logos, pictograms, layout) is protected by copyright. Any full or partial reproduction or reuse without prior written permission is prohibited.\nThe names and logos of the estates presented remain the property of their owners.\nPhotographs: Julien Mineo, unless stated otherwise."
       },
       "donnees": {
         "title": "Personal data",
-        "text": "Information sent through the forms is used only to reply to your requests. Details of the processing, its duration and your rights are given in our privacy policy."
+        "text": "Information sent through the forms is used only to reply to your requests and, if you have agreed, to send you our news. It is managed with Brevo (emails and address book) and passes through our host, Netlify. It is never sold.\nYou have the right to access, correct, erase and object: write to contact@champagnedelaube.fr. You may also lodge a complaint with the CNIL (www.cnil.fr).\nDetails of the processing and retention periods are given in our privacy policy."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "This website uses no analytics or advertising cookies.\nA single technical cookie, \"cda_age\", stores your answer to the age check for one year. It is essential to the website and does not require consent.\nYour browser also remembers, without a cookie, your choice to close the news banner."
       },
       "alcool": {
-        "title": "Sale and consumption of alcohol",
+        "title": "Alcohol and minors",
         "text": "Alcohol abuse is dangerous for your health. Drink responsibly.\nThe sale of alcohol to minors is prohibited. This website is reserved for people aged 18 or over."
-      },
-      "credits": {
-        "title": "Website design",
-        "text": "Website created by Detectezmoi.com."
       }
     },
-    "privacyLink": "Read the privacy policy"
+    "privacyLink": "Read the privacy policy",
+    "adresseDefaut": "rue Carré, 10000 Troyes, France",
+    "mentionDefaut": "Administrative office only: no shop and no storage. Meetings and tastings by appointment."
   }
 }

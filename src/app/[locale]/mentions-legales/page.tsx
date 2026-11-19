@@ -7,9 +7,9 @@ import { Link } from "@/i18n/navigation";
 import { localizedAlternates, robotsFor } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { localize } from "@/sanity/lib/i18n";
-import { getPage } from "@/sanity/queries";
+import { getPage, getReglages } from "@/sanity/queries";
 
-const sections = ["editeur", "directeur", "hebergement", "propriete", "donnees", "alcool", "credits"] as const;
+const sections = ["editeur", "directeur", "conception", "hebergement", "propriete", "donnees", "cookies", "alcool"] as const;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/mentions-legales">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -32,9 +32,12 @@ export default async function LegalNoticePage({ params }: PageProps<"/[locale]/m
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("legalNoticePage");
-  const page = await getPage("mentions-legales");
+  const [page, reglages] = await Promise.all([getPage("mentions-legales"), getReglages()]);
   const titre = localize(page?.titre, locale) ?? t("title");
   const contenu = localize(page?.contenu, locale);
+  // Adresse du siège administratif : modifiable dans les Réglages du site ; affichée ici seulement.
+  const adresse = reglages.adresseSiege || t("adresseDefaut");
+  const mention = localize(reglages.adresseMention, locale) || t("mentionDefaut");
 
   return (
     <>
@@ -48,7 +51,7 @@ export default async function LegalNoticePage({ params }: PageProps<"/[locale]/m
           sections.map((key) => (
             <section key={key} aria-labelledby={`ml-${key}`} className="mt-space-4">
               <h2 id={`ml-${key}`} className="text-titre-section">{t(`sections.${key}.title`)}</h2>
-              <Paragraphs text={t(`sections.${key}.text`)} />
+              <Paragraphs text={t(`sections.${key}.text`, { adresse, mention })} />
               {key === "donnees" && (
                 <p className="mt-space-2">
                   <Link href="/politique-de-confidentialite" className="text-bronze underline underline-offset-4">{t("privacyLink")}</Link>

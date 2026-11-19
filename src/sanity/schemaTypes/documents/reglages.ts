@@ -96,6 +96,20 @@ export const reglages = defineType({
       options: { accept: "application/pdf" },
     }),
     defineField({
+      name: "adresseSiege",
+      title: "Adresse du siège administratif",
+      description: "Affichée uniquement dans les mentions légales (ni dans le pied de page ni sur la page Contact). Par défaut : rue Carré, 10000 Troyes.",
+      type: "string",
+      group: "contact",
+    }),
+    defineField({
+      name: "adresseMention",
+      title: "Précision sous l'adresse",
+      description: "Par défaut : « Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous. »",
+      type: "localeText",
+      group: "contact",
+    }),
+    defineField({
       name: "languesActives",
       title: "Langues actives",
       description:

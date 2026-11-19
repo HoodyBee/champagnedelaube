@@ -164,6 +164,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
                 <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
               </div>
               <span aria-hidden="true" className="hidden h-5 w-px bg-filet xl:block" />
+              <SocialLinks links={social} labels={socialLabels} compact iconSize={17} className="hidden xl:flex" linkClassName="text-gris-chaud hover:text-bronze" />
               <div className="hidden xl:block">
                 <LanguageSwitcher variant="compact" locales={locales} />
               </div>

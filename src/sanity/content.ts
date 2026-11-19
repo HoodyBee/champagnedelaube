@@ -408,7 +408,7 @@ export async function getPageContent(cle: string, locale: Locale) {
 // ---------------------------------------------------------------------------
 
 /** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["tout-savoir", "accords", "portraits"] as const;
+export const RUBRIQUES_PAR_DEFAUT = ["portraits", "terroirs-cepages", "accords", "tout-savoir", "oenotourisme", "actualites"] as const;
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",

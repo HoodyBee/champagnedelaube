@@ -3,10 +3,11 @@ import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
 
 /**
- * Rubrique du Mag. Trois rubriques existent déjà sur le site sans rien créer ici :
- * « Tout savoir sur le champagne » (code tout-savoir), « Accords mets & champagne »
- * (code accords) et « Portraits de vignerons » (code portraits). Créez une rubrique
- * ici pour en ajouter une nouvelle, ou pour renommer l'une des trois (même code).
+ * Rubrique du Mag. Six rubriques existent déjà sans rien créer ici : Portraits de
+ * vignerons (portraits), Terroirs & cépages (terroirs-cepages), Accords mets & champagne
+ * (accords), Tout savoir sur le champagne (tout-savoir), Œnotourisme (oenotourisme) et
+ * Actualités (actualites). Créez une rubrique ici pour en ajouter une, ou pour renommer
+ * l'une d'elles (même code).
  */
 export const rubrique = defineType({
   name: "rubrique",

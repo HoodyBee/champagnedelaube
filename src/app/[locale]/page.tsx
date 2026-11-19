@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CarteTerroirs } from "@/components/home/CarteTerroirs";
+import { SocialIcon } from "@/components/icons/SocialLinks";
 import { MagCard } from "@/components/mag/MagCard";
 import { CatalogueDialog } from "@/components/selection/CatalogueDialog";
 import { ButtonLink } from "@/components/ui/Button";
@@ -255,6 +256,17 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
                 {reglages.email}
               </a>
             </div>
+            {reglages.instagramUrl && (
+              <a
+                href={reglages.instagramUrl}
+                target="_blank"
+                rel="noopener"
+                className="mt-space-2 inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit text-anthracite hover:text-bronze"
+              >
+                <SocialIcon name="instagram" size={18} />
+                {t("instagram")}
+              </a>
+            )}
           </div>
         </div>
       </Section>

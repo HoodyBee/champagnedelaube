@@ -195,7 +195,8 @@
     "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
     "finalCta": "Nous écrire",
     "heroCtaDegustation": "Réserver une dégustation",
-    "pepitesLien": "Découvrir toute notre sélection"
+    "pepitesLien": "Découvrir toute notre sélection",
+    "instagram": "Suivez-nous sur Instagram"
   },
   "pro": {
     "arguments": {
@@ -474,7 +475,7 @@
     "sections": {
       "responsable": {
         "title": "Responsable du traitement",
-        "text": "Champagne de l'Aube, représenté par Julien Mineo, Troyes (Aube, France). [À COMPLÉTER : statut juridique, numéro SIRET, adresse postale]\nContact : contact@champagnedelaube.fr"
+        "text": "Champagne de l'Aube, Julien Mineo, entrepreneur individuel (micro-entreprise), SIRET 527 744 528 00029. Siège administratif : {adresse}.\nContact : contact@champagnedelaube.fr"
       },
       "donnees": {
         "title": "Données collectées",
@@ -734,7 +735,10 @@
     "rubriques": {
       "toutSavoir": "Tout savoir sur le champagne",
       "accords": "Accords mets & champagne",
-      "portraits": "Portraits de vignerons"
+      "portraits": "Portraits de vignerons",
+      "terroirsCepages": "Terroirs & cépages",
+      "oenotourisme": "Œnotourisme",
+      "actualites": "Actualités"
     },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles"
@@ -817,33 +821,39 @@
     "sections": {
       "editeur": {
         "title": "Éditeur du site",
-        "text": "Le site champagnedelaube.fr est édité par :\n• Nom ou raison sociale : [À COMPLÉTER]\n• Statut juridique : [À COMPLÉTER : par exemple entrepreneur individuel, SAS, SARL…]\n• Adresse du siège : [À COMPLÉTER], Troyes (Aube, France)\n• SIRET : [À COMPLÉTER]\n• Numéro de TVA intracommunautaire : [À COMPLÉTER, si applicable]\n• Immatriculation (RCS ou RNE) : [À COMPLÉTER, si applicable]\n• E-mail : contact@champagnedelaube.fr\n• Téléphone : [À COMPLÉTER]"
+        "text": "Le site champagnedelaube.fr est édité par Champagne de l'Aube, activité de Julien Mineo, entrepreneur individuel sous le régime de la micro-entreprise (même entreprise que Detectezmoi.com).\n• SIRET : 527 744 528 00029\n• Siège administratif : {adresse}\n{mention}\n• E-mail : contact@champagnedelaube.fr"
       },
       "directeur": {
         "title": "Directeur de la publication",
-        "text": "[À COMPLÉTER : prénom et nom du directeur de la publication]"
+        "text": "Julien Mineo."
+      },
+      "conception": {
+        "title": "Conception et réalisation",
+        "text": "Detectezmoi.com (Julien Mineo, SIRET 527 744 528 00029)."
       },
       "hebergement": {
         "title": "Hébergement",
-        "text": "Le site est hébergé par :\n• Netlify, Inc. : [À COMPLÉTER : adresse postale indiquée sur netlify.com, rubrique Legal]\nLes contenus éditoriaux et les images sont gérés avec Sanity (Sanity AS, Norvège)."
+        "text": "• Hébergeur du site : Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis (www.netlify.com).\n• Contenus éditoriaux et images : Sanity AS, Norvège (www.sanity.io).\n• Nom de domaine : enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France."
       },
       "propriete": {
         "title": "Propriété intellectuelle",
-        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nCrédits photos : [À COMPLÉTER]"
+        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nPhotographies : Julien Mineo, sauf mention contraire."
       },
       "donnees": {
         "title": "Données personnelles",
-        "text": "Les informations envoyées par les formulaires servent uniquement à répondre à vos demandes. Le détail des traitements, de leur durée et de vos droits figure dans notre politique de confidentialité."
+        "text": "Les informations envoyées par les formulaires servent uniquement à répondre à vos demandes et, si vous l'avez accepté, à vous envoyer nos actualités. Elles sont gérées avec Brevo (envoi des e-mails et carnet d'adresses) et transitent par notre hébergeur, Netlify. Elles ne sont jamais vendues.\nVous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition : écrivez à contact@champagnedelaube.fr. Vous pouvez aussi adresser une réclamation à la CNIL (www.cnil.fr).\nLe détail des traitements et des durées de conservation figure dans notre politique de confidentialité."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "Le site n'utilise aucun cookie de mesure d'audience ni de publicité.\nUn seul cookie technique, « cda_age », garde pendant un an votre réponse à la fenêtre de vérification de l'âge. Indispensable au fonctionnement du site, il ne nécessite pas de consentement.\nVotre navigateur retient aussi, sans cookie, votre choix de fermer le bandeau des actualités."
       },
       "alcool": {
-        "title": "Vente et consommation d'alcool",
-        "text": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.\nLa vente d'alcool est interdite aux mineurs. Ce site est réservé aux personnes âgées de 18 ans ou plus."
-      },
-      "credits": {
-        "title": "Réalisation du site",
-        "text": "Site internet réalisé par Detectezmoi.com."
+        "title": "Alcool et mineurs",
+        "text": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.\nLa vente d'alcool aux mineurs est interdite. Ce site est réservé aux personnes âgées de 18 ans ou plus."
       }
     },
-    "privacyLink": "Consulter la politique de confidentialité"
+    "privacyLink": "Consulter la politique de confidentialité",
+    "adresseDefaut": "rue Carré, 10000 Troyes",
+    "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous."
   }
 }
