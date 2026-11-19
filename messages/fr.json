@@ -35,11 +35,6 @@
     "legalNotice": "Mentions légales",
     "privacy": "Politique de confidentialité"
   },
-  "charte": {
-    "eyebrow": "Site en construction · Contrôle de la charte",
-    "title": "Terroirs et champagnes de caractère",
-    "intro": "Cette page temporaire montre les couleurs, les polices et les pictogrammes de la marque tels qu'ils seront utilisés sur le futur site."
-  },
   "footer": {
     "discover": "Découvrir",
     "contact": "Nous joindre",
@@ -109,7 +104,40 @@
       "domaines": "domaines au maximum dans la sélection",
       "personnes": "personnes par atelier",
       "duree": "par atelier de dégustation"
-    }
+    },
+    "metaTitle": "Champagnes de vignerons de la Côte des Bar | Champagne de l'Aube",
+    "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
+    "heroIntro": "Une sélection de vignerons indépendants de l'Aube, présentés par un interlocuteur unique, à Troyes.",
+    "heroCtaTerroir": "Découvrir le terroir",
+    "heroCtaVignerons": "Nos vignerons",
+    "entreesTitre": "Pour qui ?",
+    "terroirSurTitre": "Le terroir",
+    "terroirTitre": "La Côte des Bar et l'Aube, au sud de la Champagne",
+    "terroirTexte": "L'Aube compte quatre terroirs. La Côte des Bar, sur ses marnes kimméridgiennes, est le pays du pinot noir. Les Riceys sont le seul village champenois à posséder trois appellations. Montgueux, colline de craie aux portes de Troyes, est la terre du chardonnay. Villenauxe-la-Grande regarde vers le Sézannais.",
+    "terroirCta": "Découvrir le terroir de l'Aube",
+    "vigneronsSurTitre": "La sélection",
+    "vigneronsTitre": "Nos vignerons",
+    "vigneronsIntro": "Des domaines indépendants de l'Aube, présentés à travers ceux qui les font vivre.",
+    "vigneronsCta": "Tous nos vignerons",
+    "reassuranceTitre": "Pourquoi Champagne de l'Aube ?",
+    "reassurance": {
+      "selection": {
+        "titre": "Vignerons indépendants",
+        "texte": "Une sélection de dix domaines complémentaires au maximum."
+      },
+      "interlocuteur": {
+        "titre": "Interlocuteur unique",
+        "texte": "Un seul contact pour plusieurs domaines, à Troyes."
+      },
+      "terroir": {
+        "titre": "Le terroir aubois avant tout",
+        "texte": "Chaque cuvée est présentée avec son village, son terroir et son vigneron."
+      }
+    },
+    "eventSurTitre": "Prochain rendez-vous",
+    "eventPlaces": "{places} places",
+    "eventComplet": "Complet",
+    "eventCta": "Voir le rendez-vous"
   },
   "pro": {
     "arguments": {
@@ -350,5 +378,96 @@
         "text": "Ce site n'utilise aucun cookie publicitaire ni de mesure d'audience. Il enregistre seulement, dans votre navigateur, des informations techniques indispensables :\n• cda_age (cookie et stockage local, 1 an) : votre réponse à la vérification de l'âge ;\n• NEXT_LOCALE (cookie, durée de la visite) : la langue choisie ;\n• cda_nl_bar (stockage local) : le bandeau des actualités que vous avez fermé."
       }
     }
+  },
+  "proPage": {
+    "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
+    "metaDescription": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte : tarifs directs domaine, interlocuteur unique, dégustation dans votre établissement.",
+    "h1": "Des champagnes de vignerons de l'Aube pour votre carte",
+    "intro": "Je sélectionne des champagnes de vignerons indépendants de l'Aube et je les présente aux restaurants, cavistes et hôtels : tarifs directs domaine, un interlocuteur unique et une dégustation dans votre établissement.",
+    "ctaGrille": "Demander la grille tarifaire Pro",
+    "ctaDegustation": "Organiser une dégustation",
+    "profilsTitre": "Pour quels établissements ?",
+    "profils": {
+      "restaurants": {
+        "titre": "Restaurants",
+        "texte": "Des cuvées de vignerons pour une carte qui raconte un terroir."
+      },
+      "cavistes": {
+        "titre": "Cavistes",
+        "texte": "Des domaines indépendants de l'Aube à faire découvrir à vos clients."
+      },
+      "hotels": {
+        "titre": "Hôtels",
+        "texte": "Une sélection de champagnes de l'Aube pour vos clients de passage."
+      },
+      "epiceries": {
+        "titre": "Épiceries fines et traiteurs",
+        "texte": "Des champagnes de vignerons pour vos coffrets et vos événements."
+      }
+    },
+    "argumentsTitre": "Un interlocuteur, plusieurs domaines",
+    "portfolioSurTitre": "Les domaines",
+    "portfolioTitre": "Les domaines de la sélection",
+    "portfolioIntro": "Une sélection de dix domaines au maximum, complémentaires par leurs terroirs et leurs cépages. Les tarifs figurent dans la grille Pro, envoyée sur demande.",
+    "portfolioCta": "Voir tous nos vignerons",
+    "referencesTitre": "Ils nous font confiance",
+    "grilleTitre": "Recevoir la grille tarifaire Pro",
+    "grilleTexte": "Je vous envoie par e-mail la grille tarifaire des domaines de la sélection.",
+    "degustationTitre": "Organiser une dégustation dans votre établissement",
+    "degustationTexte": "Je viens présenter une sélection de cuvées à votre équipe, dans votre établissement.",
+    "partenaireTitre": "Vous êtes vigneron ?",
+    "partenaireTexte": "Présentez-moi votre domaine : la sélection reste volontairement courte.",
+    "partenaireCta": "Devenir partenaire"
+  },
+  "vigneronsPage": {
+    "metaTitle": "Champagnes de vignerons indépendants de l'Aube | Champagne de l'Aube",
+    "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
+    "surTitre": "Vignerons indépendants",
+    "h1": "Nos vignerons",
+    "intro": "Des domaines indépendants de l'Aube, choisis pour leur terroir et leur travail. Chaque cuvée est présentée à travers son vigneron.",
+    "filtres": "Filtrer les domaines",
+    "tous": "Tous",
+    "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
+    "count": "{count, plural, one {# domaine} other {# domaines}}"
+  },
+  "vigneronPage": {
+    "metaTitle": "{nom}, vigneron à {village} | Champagne de l'Aube",
+    "personnes": "Les vignerons",
+    "histoire": "Le domaine",
+    "cepages": "Cépages",
+    "thematiques": "Particularités",
+    "pratiques": "Au domaine",
+    "labels": "Labels et certifications",
+    "site": "Site du domaine",
+    "galerie": "En images",
+    "ctaProTitre": "Restaurant, caviste, hôtel ?",
+    "ctaProTexte": "Recevez la grille tarifaire Pro des domaines de la sélection.",
+    "ctaPartTitre": "Découvrir ses cuvées",
+    "ctaPartTexte": "Lors d'un atelier de dégustation à Troyes, en petit comité.",
+    "ctaPartBouton": "Nos dégustations",
+    "autres": "D'autres vignerons de la sélection"
+  },
+  "partenairePage": {
+    "metaTitle": "Vignerons de l'Aube : devenez partenaire | Champagne de l'Aube",
+    "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection de dix domaines au maximum aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "surTitre": "Vignerons de l'Aube",
+    "h1": "Vignerons : devenez partenaire",
+    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Je présente une sélection de dix domaines au maximum aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "points": {
+      "selection": {
+        "titre": "Une sélection courte",
+        "texte": "Dix domaines complémentaires au maximum, pour que chacun ait sa place."
+      },
+      "publics": {
+        "titre": "Professionnels et particuliers",
+        "texte": "Vos cuvées présentées aux restaurants, cavistes, hôtels, entreprises et particuliers."
+      },
+      "degustations": {
+        "titre": "Des dégustations à Troyes",
+        "texte": "Des ateliers de 6 à 13 personnes, où chaque cuvée est racontée à travers son vigneron."
+      }
+    },
+    "formTitre": "Présentez-moi votre domaine",
+    "formTexte": "Quelques mots sur votre domaine et vos cuvées : je vous recontacte pour une rencontre au domaine."
   }
 }

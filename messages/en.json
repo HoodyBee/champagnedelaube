@@ -35,11 +35,6 @@
     "legalNotice": "Legal notice",
     "privacy": "Privacy policy"
   },
-  "charte": {
-    "eyebrow": "Under construction · Brand guidelines check",
-    "title": "Terroirs and champagnes of character",
-    "intro": "This temporary page shows the brand's colours, typefaces and pictograms as they will be used on the new website."
-  },
   "footer": {
     "discover": "Discover",
     "contact": "Get in touch",
@@ -109,7 +104,40 @@
       "domaines": "estates at most in the selection",
       "personnes": "people per workshop",
       "duree": "per tasting workshop"
-    }
+    },
+    "metaTitle": "Winemaker champagnes from the Côte des Bar | Champagne de l'Aube",
+    "metaDescription": "A selection of independent winemakers from the Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande, with a single point of contact in Troyes.",
+    "heroIntro": "A selection of independent winemakers from the Aube, presented by a single point of contact in Troyes.",
+    "heroCtaTerroir": "Discover the terroir",
+    "heroCtaVignerons": "Our winemakers",
+    "entreesTitre": "Who is it for?",
+    "terroirSurTitre": "The terroir",
+    "terroirTitre": "The Côte des Bar and the Aube, in the south of Champagne",
+    "terroirTexte": "The Aube has four terroirs. The Côte des Bar, on its Kimmeridgian marls, is pinot noir country. Les Riceys is the only Champagne village with three appellations. Montgueux, a chalk hill on the edge of Troyes, is chardonnay land. Villenauxe-la-Grande looks towards the Sézannais.",
+    "terroirCta": "Discover the Aube terroir",
+    "vigneronsSurTitre": "The selection",
+    "vigneronsTitre": "Our winemakers",
+    "vigneronsIntro": "Independent estates from the Aube, presented through the people who run them.",
+    "vigneronsCta": "All our winemakers",
+    "reassuranceTitre": "Why Champagne de l'Aube?",
+    "reassurance": {
+      "selection": {
+        "titre": "Independent winemakers",
+        "texte": "A selection of ten complementary estates at most."
+      },
+      "interlocuteur": {
+        "titre": "Single point of contact",
+        "texte": "One contact for several estates, in Troyes."
+      },
+      "terroir": {
+        "titre": "The Aube terroir first",
+        "texte": "Each cuvée is presented with its village, its terroir and its winemaker."
+      }
+    },
+    "eventSurTitre": "Next event",
+    "eventPlaces": "{places} places",
+    "eventComplet": "Fully booked",
+    "eventCta": "See the event"
   },
   "pro": {
     "arguments": {
@@ -350,5 +378,96 @@
         "text": "This website uses no advertising or audience measurement cookies. It only stores essential technical information in your browser:\n• cda_age (cookie and local storage, 1 year): your answer to the age check;\n• NEXT_LOCALE (cookie, for the visit): the chosen language;\n• cda_nl_bar (local storage): the news banner you closed."
       }
     }
+  },
+  "proPage": {
+    "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
+    "metaDescription": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list: direct estate prices, a single point of contact, tastings at your venue.",
+    "h1": "Champagnes from Aube winemakers for your wine list",
+    "intro": "I select champagnes from independent Aube winemakers and present them to restaurants, wine shops and hotels: direct estate prices, a single point of contact and a tasting at your venue.",
+    "ctaGrille": "Request the Pro price list",
+    "ctaDegustation": "Arrange a tasting",
+    "profilsTitre": "For which businesses?",
+    "profils": {
+      "restaurants": {
+        "titre": "Restaurants",
+        "texte": "Winemakers' cuvées for a wine list that tells the story of a terroir."
+      },
+      "cavistes": {
+        "titre": "Wine shops",
+        "texte": "Independent Aube estates to introduce to your customers."
+      },
+      "hotels": {
+        "titre": "Hotels",
+        "texte": "A selection of Aube champagnes for your guests passing through."
+      },
+      "epiceries": {
+        "titre": "Delicatessens and caterers",
+        "texte": "Winemaker champagnes for your gift boxes and events."
+      }
+    },
+    "argumentsTitre": "One contact, several estates",
+    "portfolioSurTitre": "The estates",
+    "portfolioTitre": "The estates in the selection",
+    "portfolioIntro": "A selection of ten estates at most, complementary in their terroirs and grape varieties. Prices are in the Pro price list, sent on request.",
+    "portfolioCta": "See all our winemakers",
+    "referencesTitre": "They trust us",
+    "grilleTitre": "Get the Pro price list",
+    "grilleTexte": "I will email you the price list of the estates in the selection.",
+    "degustationTitre": "Arrange a tasting at your venue",
+    "degustationTexte": "I come and present a selection of cuvées to your team, at your venue.",
+    "partenaireTitre": "Are you a winemaker?",
+    "partenaireTexte": "Tell me about your estate: the selection is deliberately kept small.",
+    "partenaireCta": "Become a partner"
+  },
+  "vigneronsPage": {
+    "metaTitle": "Champagnes from independent Aube winemakers | Champagne de l'Aube",
+    "metaDescription": "The independent winemakers in the Champagne de l'Aube selection: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Their villages, grape varieties and methods.",
+    "surTitre": "Independent winemakers",
+    "h1": "Our winemakers",
+    "intro": "Independent estates from the Aube, chosen for their terroir and their work. Each cuvée is presented through its winemaker.",
+    "filtres": "Filter the estates",
+    "tous": "All",
+    "aucun": "No estate matches this filter at the moment.",
+    "count": "{count, plural, one {# estate} other {# estates}}"
+  },
+  "vigneronPage": {
+    "metaTitle": "{nom}, winemaker in {village} | Champagne de l'Aube",
+    "personnes": "The winemakers",
+    "histoire": "The estate",
+    "cepages": "Grape varieties",
+    "thematiques": "Distinctive features",
+    "pratiques": "At the estate",
+    "labels": "Labels and certifications",
+    "site": "Estate website",
+    "galerie": "In pictures",
+    "ctaProTitre": "Restaurant, wine shop, hotel?",
+    "ctaProTexte": "Get the Pro price list for the estates in the selection.",
+    "ctaPartTitre": "Discover the cuvées",
+    "ctaPartTexte": "At a small-group tasting workshop in Troyes.",
+    "ctaPartBouton": "Our tastings",
+    "autres": "More winemakers from the selection"
+  },
+  "partenairePage": {
+    "metaTitle": "Aube winemakers: become a partner | Champagne de l'Aube",
+    "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "surTitre": "Aube winemakers",
+    "h1": "Winemakers: become a partner",
+    "intro": "Are you an independent winemaker in the Aube? I present a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "points": {
+      "selection": {
+        "titre": "A small selection",
+        "texte": "Ten complementary estates at most, so that each has its place."
+      },
+      "publics": {
+        "titre": "Professionals and private clients",
+        "texte": "Your cuvées presented to restaurants, wine shops, hotels, companies and private clients."
+      },
+      "degustations": {
+        "titre": "Tastings in Troyes",
+        "texte": "Workshops for 6 to 13 people, where each cuvée is told through its winemaker."
+      }
+    },
+    "formTitre": "Tell me about your estate",
+    "formTexte": "A few words about your estate and your cuvées: I will get back to you to arrange a visit to the estate."
   }
 }

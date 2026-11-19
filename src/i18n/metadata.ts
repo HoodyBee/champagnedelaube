@@ -27,3 +27,23 @@ export function localizedAlternates(
 export function robotsFor(locale: Locale): Metadata["robots"] {
   return indexedLocales.includes(locale) ? undefined : { index: false, follow: true };
 }
+
+/**
+ * Métadonnées d'une page : les réglages « Référencement » saisis dans Sanity
+ * l'emportent sur les textes par défaut. Le titre est utilisé tel quel (sans suffixe).
+ */
+export function pageMetadata(opts: {
+  locale: Locale;
+  href: AppPathname | Href;
+  seo?: { title?: string; description?: string; noIndex?: boolean };
+  title: string;
+  description: string;
+}): Metadata {
+  const robots = opts.seo?.noIndex ? { index: false, follow: true } : robotsFor(opts.locale);
+  return {
+    title: { absolute: opts.seo?.title || opts.title },
+    description: opts.seo?.description || opts.description,
+    alternates: localizedAlternates(opts.href, opts.locale),
+    ...(robots ? { robots } : {}),
+  };
+}
