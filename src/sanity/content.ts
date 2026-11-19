@@ -250,7 +250,7 @@ export async function getAccueil(locale: Locale) {
     entreeParticuliers?: EntreeRaw;
     terroir?: BlocRaw;
     photoPleineLargeur?: SanityImg;
-    heroCtaSelection?: Localized;
+    heroCtaDegustation?: Localized;
     heroCtaTerroirs?: Localized;
     pepitesTitre?: Localized;
     pepitesIntro?: Localized;
@@ -269,7 +269,7 @@ export async function getAccueil(locale: Locale) {
       entreeEntreprises{surTitre, titre, texte, bouton, image ${IMG}},
       entreeParticuliers{surTitre, titre, texte, bouton, image ${IMG}},
       terroir{icone, surTitre, titre, texte, points, image ${IMG}},
-      photoPleineLargeur ${IMG}, selectionTitre, selectionTexte, heroCtaSelection, heroCtaTerroirs, pepitesTitre, pepitesIntro,
+      photoPleineLargeur ${IMG}, selectionTitre, selectionTexte, heroCtaDegustation, heroCtaTerroirs, pepitesTitre, pepitesIntro,
       degustationTitre, degustationAccroche, degustationTexte, degustationImage ${IMG},
       reassurance, seo}`,
     tags: ["accueil"],
@@ -288,7 +288,7 @@ export async function getAccueil(locale: Locale) {
     },
     terroir: blocOf(a?.terroir, locale),
     photoPleineLargeur: toImg(a?.photoPleineLargeur, locale, 2400),
-    heroCtaSelection: L(a?.heroCtaSelection, locale),
+    heroCtaDegustation: L(a?.heroCtaDegustation, locale),
     heroCtaTerroirs: L(a?.heroCtaTerroirs, locale),
     pepitesTitre: L(a?.pepitesTitre, locale),
     pepitesIntro: L(a?.pepitesIntro, locale),

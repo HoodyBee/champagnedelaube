@@ -151,8 +151,7 @@
     "eventComplet": "Fully booked",
     "eventCta": "See the event",
     "heroSurTitre": "Côte des Bar · Les Riceys · Montgueux · Villenauxe",
-    "heroCtaSelection": "Discover our selection",
-    "heroCtaTerroirs": "Explore the terroirs",
+    "heroCtaTerroirs": "Discover the terroirs",
     "photoAVenir": "Photograph to come",
     "terroirsSurTitre": "Our Terroir",
     "terroirsTitre": "The Aube terroirs",
@@ -194,7 +193,9 @@
     "magCta": "Read The Champagne Mag",
     "finalTitre": "A question, a project?",
     "finalTexte": "A tasting, a wine list, gift boxes for your teams: write to us and we will get back to you very soon.",
-    "finalCta": "Write to us"
+    "finalCta": "Write to us",
+    "heroCtaDegustation": "Book a tasting",
+    "pepitesLien": "Discover our whole selection"
   },
   "pro": {
     "arguments": {

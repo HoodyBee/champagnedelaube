@@ -26,8 +26,9 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
 }
 
 /**
- * Accueil, en magazine : la promesse, les terroirs, les pépites du moment, les portraits,
- * les dégustations privées, l'espace pro, Le Mag, puis un dernier appel au contact.
+ * Accueil, en magazine. Hiérarchie : les terroirs et l'identité, les dégustations privées,
+ * les vignerons (portraits), la sélection (secondaire, progressive), l'espace pro, Le Mag,
+ * puis un dernier appel au contact. Une marque de découverte, pas une boutique.
  * Les sections sans contenu publié se replient proprement (aucun contenu inventé).
  */
 export default async function Accueil({ params }: PageProps<"/[locale]">) {
@@ -58,7 +59,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const derniers = withDates(articles.filter((x) => !dejaVus.has(x.slug)), locale).slice(0, 3);
 
   // Alternance blanc / crème clair, quelles que soient les sections affichées.
-  const sections = ["terroirs", "pepites", ...(portraits.length ? ["portraits"] : []), "degustations", "pro", "mag"] as const;
+  const sections = ["terroirs", "degustations", ...(portraits.length ? ["portraits"] : []), "pepites", "pro", "mag"] as const;
   const fond = (id: (typeof sections)[number]) => (sections.indexOf(id) % 2 === 1 ? "chaude" : "blanc");
 
   // Données structurées : l'organisation et son activité locale à Troyes.
@@ -87,7 +88,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         placeholderText={t("photoAVenir")}
         actions={
           <>
-            <ButtonLink href={nav.vignerons.href}>{a.heroCtaSelection ?? t("heroCtaSelection")}</ButtonLink>
+            <ButtonLink href={{ pathname: nav.particuliers[0].href, hash: "organiser" }}>{a.heroCtaDegustation ?? t("heroCtaDegustation")}</ButtonLink>
             <ButtonLink href={nav.terroirHub.href} variant="secondaire">
               {a.heroCtaTerroirs ?? t("heroCtaTerroirs")}
             </ButtonLink>
@@ -98,12 +99,12 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
 
       {/* 2. Les terroirs de l'Aube : carte stylisée et 4 portes d'entrée */}
       <Section id="terroirs" fond={fond("terroirs")}>
-        <div className="grid items-center gap-space-4 lg:grid-cols-[1fr_1.15fr] lg:gap-space-5">
-          <div>
+        <div className="grid items-center gap-space-4 lg:grid-cols-[1fr_1fr] lg:gap-space-5">
+          <div className="flex flex-col">
             <p className="text-sur-titre text-bronze">{t("terroirsSurTitre")}</p>
             <h2 className="mt-space-1 text-titre-section sm:text-[2rem]">{t("terroirsTitre")}</h2>
             <p className="mt-space-2 max-w-lg text-[1.0625rem] text-gris-chaud">{t("terroirsIntro")}</p>
-            <div className="mx-auto mt-space-3 max-w-md lg:mx-0">
+            <div className="mx-auto mt-space-4 w-full max-w-md lg:max-w-[440px]">
               <CarteTerroirs legende={t("carteLegende")} troyes={t("carteTroyes")} />
             </div>
           </div>
@@ -131,8 +132,41 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         </div>
       </Section>
 
-      {/* 3. Les pépites du moment (cuvées publiées dans Sanity ; sinon introduction et boutons seuls) */}
-      <Section id="pepites" fond={fond("pepites")} surTitre={t("pepitesSurTitre")} titre={a.pepitesTitre ?? t("pepitesTitre")} intro={a.pepitesIntro ?? t("pepitesIntro")}>
+      {/* 3. Dégustations privées : section immersive, bien repérable */}
+      <Section id="degustations-privees" fond={fond("degustations")}>
+        <div className="grid items-center gap-space-4 lg:grid-cols-[1.15fr_1fr] lg:gap-space-5">
+          <Photo image={a.degustationImage} ratio="4/3" sizes="(min-width: 1024px) 55vw, 100vw" placeholder="sobre" placeholderText={t("photoAVenir")} />
+          <div>
+            <LineIcon name="degustation" size={32} className="text-or" />
+            <h2 className="mt-space-2 text-titre-section sm:text-[2.25rem]">{a.degustationTitre ?? t("degustTitre")}</h2>
+            <p className="mt-space-2 text-accroche">{a.degustationAccroche ?? t("degustAccroche")}</p>
+            <p className="mt-space-2 text-[1.0625rem] text-gris-chaud">{a.degustationTexte ?? t("degustTexte")}</p>
+            <p className="mt-space-3 border-l-2 border-or pl-space-2 text-[1.25rem] font-bold italic text-bronze">{t("degustSignature")}</p>
+            <div className="mt-space-4 flex flex-col gap-space-1 sm:flex-row sm:flex-wrap">
+              <ButtonLink href={{ pathname: nav.particuliers[0].href, hash: "organiser" }}>{t("degustCta")}</ButtonLink>
+              <ButtonLink href={nav.particuliers[0].href} variant="secondaire">
+                {t("degustCtaSecondaire")}
+              </ButtonLink>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* 4. Rencontres et portraits : seulement si des portraits sont publiés dans Le Mag */}
+      {portraits.length > 0 && (
+        <Section id="portraits" fond={fond("portraits")} surTitre={t("portraitsSurTitre")} titre={t("portraitsTitre")} intro={t("portraitsIntro")}>
+          <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
+            {portraits.map((x) => (
+              <li key={x.slug}>
+                <MagCard article={x} labels={labels} lire={tMag("lire")} sponsored={tLegal("sponsored")} />
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
+
+      {/* 5. Les pépites du moment : section secondaire, sobre (cuvées publiées dans Sanity ; sinon introduction et liens seuls) */}
+      <Section id="pepites" fond={fond("pepites")} align="gauche" surTitre={t("pepitesSurTitre")} titre={a.pepitesTitre ?? t("pepitesTitre")} intro={a.pepitesIntro ?? t("pepitesIntro")}>
         {cuvees.length > 0 && (
           <ul className={`grid gap-space-4 sm:grid-cols-2 ${cuvees.length >= 3 ? "lg:grid-cols-3" : ""} ${cuvees.length === 1 ? "mx-auto max-w-md sm:grid-cols-1" : ""}`}>
             {cuvees.slice(0, 3).map((c) => (
@@ -157,42 +191,11 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
             ))}
           </ul>
         )}
-        <div className={`flex flex-col items-center justify-center gap-space-1 sm:flex-row ${cuvees.length ? "mt-space-4" : ""}`}>
-          <ButtonLink href={nav.vignerons.href}>{t("pepitesCta")}</ButtonLink>
+        <div className={`flex flex-col items-start gap-space-2 sm:flex-row sm:items-center sm:gap-space-3 ${cuvees.length ? "mt-space-4" : ""}`}>
+          <Link href={nav.vignerons.href} className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit text-anthracite hover:text-bronze">
+            {t("pepitesLien")} <span aria-hidden="true">→</span>
+          </Link>
           <CatalogueDialog variant="secondaire" />
-        </div>
-      </Section>
-
-      {/* 4. Rencontres et portraits : seulement si des portraits sont publiés dans Le Mag */}
-      {portraits.length > 0 && (
-        <Section id="portraits" fond={fond("portraits")} surTitre={t("portraitsSurTitre")} titre={t("portraitsTitre")} intro={t("portraitsIntro")}>
-          <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
-            {portraits.map((x) => (
-              <li key={x.slug}>
-                <MagCard article={x} labels={labels} lire={tMag("lire")} sponsored={tLegal("sponsored")} />
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
-
-      {/* 5. Dégustations privées : section immersive, bien repérable */}
-      <Section id="degustations-privees" fond={fond("degustations")}>
-        <div className="grid items-center gap-space-4 lg:grid-cols-[1.15fr_1fr] lg:gap-space-5">
-          <Photo image={a.degustationImage} ratio="4/3" sizes="(min-width: 1024px) 55vw, 100vw" placeholder="sobre" placeholderText={t("photoAVenir")} />
-          <div>
-            <LineIcon name="degustation" size={32} className="text-or" />
-            <h2 className="mt-space-2 text-titre-section sm:text-[2.25rem]">{a.degustationTitre ?? t("degustTitre")}</h2>
-            <p className="mt-space-2 text-accroche">{a.degustationAccroche ?? t("degustAccroche")}</p>
-            <p className="mt-space-2 text-[1.0625rem] text-gris-chaud">{a.degustationTexte ?? t("degustTexte")}</p>
-            <p className="mt-space-3 border-l-2 border-or pl-space-2 text-[1.25rem] font-bold italic text-bronze">{t("degustSignature")}</p>
-            <div className="mt-space-4 flex flex-col gap-space-1 sm:flex-row sm:flex-wrap">
-              <ButtonLink href={{ pathname: nav.particuliers[0].href, hash: "organiser" }}>{t("degustCta")}</ButtonLink>
-              <ButtonLink href={nav.particuliers[0].href} variant="secondaire">
-                {t("degustCtaSecondaire")}
-              </ButtonLink>
-            </div>
-          </div>
         </div>
       </Section>
 
