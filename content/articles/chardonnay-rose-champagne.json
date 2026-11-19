@@ -1,0 +1,85 @@
+{
+  "slug": "chardonnay-rose-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "titre": {
+    "fr": "Le chardonnay rose, le huitième cépage du champagne",
+    "en": "Chardonnay rose, the eighth champagne grape",
+    "nl": "Chardonnay rose, het achtste champagneras",
+    "it": "Lo chardonnay rose, l'ottavo vitigno dello champagne"
+  },
+  "motCle": "chardonnay rose champagne",
+  "extrait": {
+    "fr": "Mutation naturelle du chardonnay, le chardonnay rose est entré en 2025 dans la liste des cépages du champagne.",
+    "en": "A natural mutation of chardonnay, chardonnay rose joined the list of champagne grapes in 2025.",
+    "nl": "Chardonnay rose, een natuurlijke mutatie van chardonnay, kwam in 2025 op de lijst van champagnerassen.",
+    "it": "Mutazione naturale dello chardonnay, lo chardonnay rose è entrato nel 2025 nell'elenco dei vitigni dello champagne."
+  },
+  "seo": {
+    "title": {
+      "fr": "Chardonnay rose : le nouveau cépage autorisé en Champagne | Champagne de l'Aube",
+      "en": "Chardonnay rose: the newly permitted grape in Champagne | Champagne de l'Aube",
+      "nl": "Chardonnay rose: het nieuw toegestane ras in de Champagne | Champagne de l'Aube",
+      "it": "Chardonnay rose: il nuovo vitigno ammesso in Champagne | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le chardonnay rose, mutation naturelle du chardonnay, ajouté en 2025 aux cépages de l'appellation Champagne.",
+      "en": "Chardonnay rose, a natural mutation of chardonnay, added in 2025 to the grapes of the Champagne appellation.",
+      "nl": "Chardonnay rose, een natuurlijke mutatie van chardonnay, in 2025 toegevoegd aan de rassen van de appellatie Champagne.",
+      "it": "Lo chardonnay rose, mutazione naturale dello chardonnay, aggiunto nel 2025 ai vitigni della denominazione Champagne."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Une mutation naturelle",
+        "en": "A natural mutation",
+        "nl": "Een natuurlijke mutatie",
+        "it": "Una mutazione naturale"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le chardonnay rose est une mutation naturelle du chardonnay : ses baies ont la peau rosée. Il était déjà connu en Champagne et en Bourgogne au début du XXe siècle.",
+          "en": "Chardonnay rose is a natural mutation of chardonnay: its berries have pink skins. It was already known in Champagne and Burgundy in the early 20th century.",
+          "nl": "Chardonnay rose is een natuurlijke mutatie van chardonnay: de bessen hebben een roze schil. Hij was begin 20e eeuw al bekend in de Champagne en Bourgondië.",
+          "it": "Lo chardonnay rose è una mutazione naturale dello chardonnay: i suoi acini hanno la buccia rosata. Era già conosciuto in Champagne e in Borgogna all'inizio del Novecento."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Autorisé depuis 2025",
+        "en": "Permitted since 2025",
+        "nl": "Toegestaan sinds 2025",
+        "it": "Ammesso dal 2025"
+      },
+      "paragraphes": [
+        {
+          "fr": "Un arrêté du 31 juillet 2025 l'a ajouté au cahier des charges de l'appellation Champagne. Il devient ainsi le huitième cépage autorisé. Nous suivrons avec curiosité les premiers vignerons de l'Aube qui le planteront.",
+          "en": "An order of 31 July 2025 added it to the rules of the Champagne appellation, making it the eighth permitted grape. We will follow with curiosity the first Aube winemakers to plant it.",
+          "nl": "Een besluit van 31 juli 2025 voegde hem toe aan het lastenboek van de appellatie Champagne. Zo wordt hij het achtste toegestane ras. We volgen met nieuwsgierigheid de eerste wijnmakers in de Aube die hem aanplanten.",
+          "it": "Un decreto del 31 luglio 2025 l'ha aggiunto al disciplinare della denominazione Champagne, rendendolo l'ottavo vitigno ammesso. Seguiremo con curiosità i primi vignaioli dell'Aube che lo pianteranno."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Les goûter",
+        "en": "Tasting them",
+        "nl": "Ze proeven",
+        "it": "Assaggiarli"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    }
+  ],
+  "rubriques": [
+    "tout-savoir"
+  ]
+}

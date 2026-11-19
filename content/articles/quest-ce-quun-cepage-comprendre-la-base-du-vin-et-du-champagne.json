@@ -1,0 +1,117 @@
+{
+  "slug": "quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne",
+  "existant": true,
+  "date": null,
+  "titre": {
+    "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages du champagne",
+    "en": "What is a grape variety? The 8 grapes of champagne",
+    "nl": "Wat is een druivenras? De 8 druivenrassen van champagne",
+    "it": "Che cos'è un vitigno? Gli 8 vitigni dello champagne"
+  },
+  "motCle": "cépages du champagne",
+  "extrait": {
+    "fr": "Pinot noir, meunier, chardonnay, et cinq cépages plus rares : ce qu'est un cépage, et pourquoi il change tout dans votre verre.",
+    "en": "Pinot noir, meunier, chardonnay and five rarer grapes: what a grape variety is, and why it changes everything in your glass.",
+    "nl": "Pinot noir, meunier, chardonnay en vijf zeldzamere rassen: wat een druivenras is, en waarom het alles verandert in uw glas.",
+    "it": "Pinot noir, meunier, chardonnay e cinque vitigni più rari: che cos'è un vitigno e perché cambia tutto nel bicchiere."
+  },
+  "seo": {
+    "title": {
+      "fr": "Les cépages du champagne : pinot noir, meunier, chardonnay et cépages rares | Champagne de l'Aube",
+      "en": "Champagne grape varieties: pinot noir, meunier, chardonnay and rare grapes | Champagne de l'Aube",
+      "nl": "Druivenrassen van champagne: pinot noir, meunier, chardonnay en zeldzame rassen | Champagne de l'Aube",
+      "it": "I vitigni dello champagne: pinot noir, meunier, chardonnay e vitigni rari | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages autorisés en Champagne, du pinot noir au chardonnay rose, et leur expression dans la Côte des Bar et à Montgueux.",
+      "en": "What is a grape variety? The 8 grapes permitted in Champagne, from pinot noir to chardonnay rose, and how they express themselves in the Côte des Bar and Montgueux.",
+      "nl": "Wat is een druivenras? De 8 toegestane rassen in de Champagne, van pinot noir tot chardonnay rose, en hun uitdrukking in de Côte des Bar en Montgueux.",
+      "it": "Che cos'è un vitigno? Gli 8 vitigni ammessi in Champagne, dal pinot noir allo chardonnay rose, e la loro espressione nella Côte des Bar e a Montgueux."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Une variété de vigne",
+        "en": "A variety of vine",
+        "nl": "Een wijnstokvariëteit",
+        "it": "Una varietà di vite"
+      },
+      "paragraphes": [
+        {
+          "fr": "Un cépage, c'est une variété de vigne. Comme les pommes, toutes les grappes se ressemblent de loin, mais chaque variété a sa couleur, son acidité, ses arômes. Une golden n'est pas une granny ; un pinot noir n'est pas un chardonnay.",
+          "en": "A grape variety is a variety of vine. Like apples, all bunches look alike from afar, but each variety has its own colour, acidity and aromas. A Golden is not a Granny Smith; a pinot noir is not a chardonnay.",
+          "nl": "Een druivenras is een variëteit van de wijnstok. Net als bij appels lijken alle trossen van ver op elkaar, maar elke variëteit heeft haar eigen kleur, zuurgraad en aroma's. Een golden is geen granny smith; een pinot noir is geen chardonnay.",
+          "it": "Un vitigno è una varietà di vite. Come per le mele, da lontano i grappoli si somigliano, ma ogni varietà ha il suo colore, la sua acidità, i suoi aromi. Una golden non è una granny smith; un pinot noir non è uno chardonnay."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Trois grands cépages",
+        "en": "Three main grapes",
+        "nl": "Drie hoofdrassen",
+        "it": "Tre grandi vitigni"
+      },
+      "paragraphes": [
+        {
+          "fr": "Trois cépages couvrent la quasi-totalité du vignoble champenois. Le pinot noir arrive en tête, suivi du meunier et du chardonnay, presque à égalité. Le pinot noir apporte la structure, le meunier la rondeur et le fruit, le chardonnay la finesse et la fraîcheur.",
+          "en": "Three grapes cover almost the entire Champagne vineyard. Pinot noir comes first, followed by meunier and chardonnay, almost level. Pinot noir brings structure, meunier roundness and fruit, chardonnay finesse and freshness.",
+          "nl": "Drie rassen beslaan bijna de hele Champagne-wijngaard. Pinot noir staat bovenaan, gevolgd door meunier en chardonnay, bijna gelijk. Pinot noir brengt structuur, meunier rondheid en fruit, chardonnay finesse en frisheid.",
+          "it": "Tre vitigni coprono quasi tutto il vigneto della Champagne. In testa il pinot noir, seguito da meunier e chardonnay, quasi alla pari. Il pinot noir porta struttura, il meunier rotondità e frutto, lo chardonnay finezza e freschezza."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Cinq cépages plus rares",
+        "en": "Five rarer grapes",
+        "nl": "Vijf zeldzamere rassen",
+        "it": "Cinque vitigni più rari"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le [pinot blanc](/pinot-blanc-champagne), le [pinot gris](/pinot-gris-fromenteau-champagne), l'[arbane](/arbane-cepage-champagne) et le [petit meslier](/petit-meslier-cepage-champagne). Depuis 2025, un huitième les a rejoints : le [chardonnay rose](/chardonnay-rose-champagne). Ensemble, ils n'occupent qu'une toute petite place dans le vignoble.",
+          "en": "The appellation rules also allow four old varieties: [pinot blanc](/pinot-blanc-champagne), [pinot gris](/pinot-gris-fromenteau-champagne), [arbane](/arbane-cepage-champagne) and [petit meslier](/petit-meslier-cepage-champagne). Since 2025, an eighth has joined them: [chardonnay rose](/chardonnay-rose-champagne). Together they occupy only a tiny place in the vineyard.",
+          "nl": "Het lastenboek van de appellatie staat ook vier oude rassen toe: [pinot blanc](/pinot-blanc-champagne), [pinot gris](/pinot-gris-fromenteau-champagne), [arbane](/arbane-cepage-champagne) en [petit meslier](/petit-meslier-cepage-champagne). Sinds 2025 is er een achtste bij: [chardonnay rose](/chardonnay-rose-champagne). Samen nemen ze maar een heel klein deel van de wijngaard in.",
+          "it": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il [pinot blanc](/pinot-blanc-champagne), il [pinot gris](/pinot-gris-fromenteau-champagne), l'[arbane](/arbane-cepage-champagne) e il [petit meslier](/petit-meslier-cepage-champagne). Dal 2025 se n'è aggiunto un ottavo: lo [chardonnay rose](/chardonnay-rose-champagne). Insieme occupano solo un piccolissimo spazio nel vigneto."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Un même cépage, deux terroirs",
+        "en": "One grape, two terroirs",
+        "nl": "Eén ras, twee terroirs",
+        "it": "Un vitigno, due terroir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Dans la [Côte des Bar](/la-cote-des-bar), le pinot noir domine sur des marnes du Kimméridgien. À [Montgueux](/montgueux), c'est le chardonnay, sur une craie du Turonien. Le sol, l'exposition et le climat donnent à chaque cépage une signature différente. Le vigneron assemble ensuite ses vins pour trouver l'équilibre de chaque cuvée ; certaines sont même issues d'un seul cépage.",
+          "en": "In the [Côte des Bar](/la-cote-des-bar), pinot noir dominates on Kimmeridgian marl. In [Montgueux](/montgueux), it is chardonnay, on Turonian chalk. Soil, aspect and climate give each grape a different signature. The winemaker then blends the wines to find the balance of each cuvée; some are even made from a single grape.",
+          "nl": "In de [Côte des Bar](/la-cote-des-bar) overheerst pinot noir op kimmeridgiaanse mergel. In [Montgueux](/montgueux) is het chardonnay, op krijt uit het Turonien. Bodem, ligging en klimaat geven elk ras een eigen handtekening. De wijnmaker assembleert daarna zijn wijnen tot het evenwicht van elke cuvée; sommige komen zelfs van één ras.",
+          "it": "Nella [Côte des Bar](/la-cote-des-bar) domina il pinot noir, sulle marne del Kimmeridgiano. A [Montgueux](/montgueux) è lo chardonnay, sul gesso del Turoniano. Suolo, esposizione e clima danno a ogni vitigno una firma diversa. Il vignaiolo assembla poi i suoi vini per trovare l'equilibrio di ogni cuvée; alcune nascono persino da un solo vitigno."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Les goûter",
+        "en": "Tasting them",
+        "nl": "Ze proeven",
+        "it": "Assaggiarli"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    }
+  ],
+  "rubriques": [
+    "tout-savoir"
+  ]
+}

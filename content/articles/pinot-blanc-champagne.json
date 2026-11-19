@@ -1,0 +1,85 @@
+{
+  "slug": "pinot-blanc-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "titre": {
+    "fr": "Le pinot blanc, un cépage rare de la Côte des Bar",
+    "en": "Pinot blanc, a rare grape of the Côte des Bar",
+    "nl": "Pinot blanc, een zeldzaam ras van de Côte des Bar",
+    "it": "Il pinot blanc, un vitigno raro della Côte des Bar"
+  },
+  "motCle": "pinot blanc champagne",
+  "extrait": {
+    "fr": "Autorisé en Champagne mais rarement planté, le pinot blanc garde quelques fidèles dans la Côte des Bar.",
+    "en": "Permitted in Champagne but rarely planted, pinot blanc still has a few devotees in the Côte des Bar.",
+    "nl": "Toegestaan in de Champagne maar zelden aangeplant: pinot blanc heeft nog trouwe telers in de Côte des Bar.",
+    "it": "Ammesso in Champagne ma raramente piantato, il pinot blanc conserva alcuni fedeli nella Côte des Bar."
+  },
+  "seo": {
+    "title": {
+      "fr": "Pinot blanc et champagne : un cépage rare de la Côte des Bar | Champagne de l'Aube",
+      "en": "Pinot blanc and champagne: a rare grape of the Côte des Bar | Champagne de l'Aube",
+      "nl": "Pinot blanc en champagne: een zeldzaam ras van de Côte des Bar | Champagne de l'Aube",
+      "it": "Pinot blanc e champagne: un vitigno raro della Côte des Bar | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Le pinot blanc, l'un des cépages rares autorisés en Champagne, encore cultivé par quelques vignerons de la Côte des Bar.",
+      "en": "Pinot blanc, one of the rare grapes permitted in Champagne, still grown by a few Côte des Bar winemakers.",
+      "nl": "Pinot blanc, een van de zeldzame toegestane rassen in de Champagne, nog geteeld door enkele wijnmakers in de Côte des Bar.",
+      "it": "Il pinot blanc, uno dei vitigni rari ammessi in Champagne, ancora coltivato da alcuni vignaioli della Côte des Bar."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un cépage autorisé, mais discret",
+        "en": "Permitted, but discreet",
+        "nl": "Toegestaan, maar bescheiden",
+        "it": "Ammesso, ma discreto"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le pinot blanc fait partie des cépages autorisés par l'appellation Champagne, aux côtés du pinot noir, du meunier et du chardonnay. Il reste pourtant très peu planté. Dans l'Aube, on l'appelle parfois « blanc vrai ».",
+          "en": "Pinot blanc is one of the grapes permitted by the Champagne appellation, alongside pinot noir, meunier and chardonnay. Yet it remains very little planted. In the Aube, it is sometimes called \"blanc vrai\".",
+          "nl": "Pinot blanc is een van de rassen die de appellatie Champagne toestaat, naast pinot noir, meunier en chardonnay. Toch wordt hij nog maar weinig aangeplant. In de Aube noemt men hem soms \"blanc vrai\".",
+          "it": "Il pinot blanc è tra i vitigni ammessi dalla denominazione Champagne, accanto a pinot noir, meunier e chardonnay. Resta però pochissimo piantato. Nell'Aube lo si chiama talvolta \"blanc vrai\"."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Dans la Côte des Bar",
+        "en": "In the Côte des Bar",
+        "nl": "In de Côte des Bar",
+        "it": "Nella Côte des Bar"
+      },
+      "paragraphes": [
+        {
+          "fr": "La [Côte des Bar](/la-cote-des-bar) garde l'essentiel des cépages rares de la Champagne. Des vignerons de Buxeuil et d'Urville ont contribué à les préserver, et certains domaines, comme à Polisy, cultivent encore le pinot blanc aux côtés des grands cépages.",
+          "en": "The [Côte des Bar](/la-cote-des-bar) keeps most of Champagne's rare grapes. Winemakers in Buxeuil and Urville helped preserve them, and some estates, such as in Polisy, still grow pinot blanc alongside the main grapes.",
+          "nl": "De [Côte des Bar](/la-cote-des-bar) bewaart de meeste zeldzame rassen van de Champagne. Wijnmakers in Buxeuil en Urville hielpen ze te behouden, en sommige domeinen, zoals in Polisy, telen nog pinot blanc naast de hoofdrassen.",
+          "it": "La [Côte des Bar](/la-cote-des-bar) conserva la maggior parte dei vitigni rari della Champagne. Vignaioli di Buxeuil e Urville hanno contribuito a preservarli, e alcune tenute, come a Polisy, coltivano ancora il pinot blanc accanto ai grandi vitigni."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Les goûter",
+        "en": "Tasting them",
+        "nl": "Ze proeven",
+        "it": "Assaggiarli"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    }
+  ],
+  "rubriques": [
+    "tout-savoir"
+  ]
+}

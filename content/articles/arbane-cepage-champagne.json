@@ -1,0 +1,85 @@
+{
+  "slug": "arbane-cepage-champagne",
+  "existant": false,
+  "date": "2026-11-19",
+  "titre": {
+    "fr": "L'arbane, le plus rare des cépages champenois",
+    "en": "Arbane, the rarest Champagne grape",
+    "nl": "Arbane, het zeldzaamste champagneras",
+    "it": "L'arbane, il più raro dei vitigni champenois"
+  },
+  "motCle": "arbane champagne",
+  "extrait": {
+    "fr": "Difficile à cultiver, sensible au gel, l'arbane a presque disparu. Quelques vignerons de l'Aube le gardent vivant.",
+    "en": "Hard to grow and frost-sensitive, arbane almost disappeared. A few Aube winemakers keep it alive.",
+    "nl": "Moeilijk te telen en gevoelig voor vorst: arbane verdween bijna. Enkele wijnmakers in de Aube houden hem in leven.",
+    "it": "Difficile da coltivare e sensibile al gelo, l'arbane è quasi scomparso. Alcuni vignaioli dell'Aube lo mantengono in vita."
+  },
+  "seo": {
+    "title": {
+      "fr": "L'arbane, cépage rare du champagne dans l'Aube | Champagne de l'Aube",
+      "en": "Arbane, a rare champagne grape in the Aube | Champagne de l'Aube",
+      "nl": "Arbane, een zeldzaam champagneras in de Aube | Champagne de l'Aube",
+      "it": "L'arbane, vitigno raro dello champagne nell'Aube | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "L'arbane, cépage blanc rare autorisé en Champagne, difficile à cultiver et sensible au gel, préservé par quelques vignerons de l'Aube.",
+      "en": "Arbane, a rare white grape permitted in Champagne, hard to grow and frost-sensitive, preserved by a few Aube winemakers.",
+      "nl": "Arbane, een zeldzaam wit ras dat in de Champagne is toegestaan, moeilijk te telen en vorstgevoelig, bewaard door enkele wijnmakers in de Aube.",
+      "it": "L'arbane, raro vitigno bianco ammesso in Champagne, difficile da coltivare e sensibile al gelo, preservato da alcuni vignaioli dell'Aube."
+    }
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un cépage exigeant",
+        "en": "A demanding grape",
+        "nl": "Een veeleisend ras",
+        "it": "Un vitigno esigente"
+      },
+      "paragraphes": [
+        {
+          "fr": "L'arbane est un cépage blanc autorisé en Champagne. Difficile à cultiver et sensible au gel, il a été délaissé au profit des grands cépages, jusqu'à devenir l'un des plus rares de la région.",
+          "en": "Arbane is a white grape permitted in Champagne. Hard to grow and frost-sensitive, it was abandoned in favour of the main grapes, until it became one of the rarest in the region.",
+          "nl": "Arbane is een wit ras dat in de Champagne is toegestaan. Moeilijk te telen en gevoelig voor vorst, werd hij verlaten ten gunste van de hoofdrassen, tot hij een van de zeldzaamste van de streek werd.",
+          "it": "L'arbane è un vitigno bianco ammesso in Champagne. Difficile da coltivare e sensibile al gelo, è stato abbandonato a favore dei grandi vitigni, fino a diventare uno dei più rari della regione."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Une histoire auboise",
+        "en": "An Aube affair",
+        "nl": "Een zaak van de Aube",
+        "it": "Una storia dell'Aube"
+      },
+      "paragraphes": [
+        {
+          "fr": "Les dernières vignes d'arbane se trouvent surtout dans l'Aube. À Buxeuil comme autour de Bar-sur-Aube, des vignerons de la [Côte des Bar](/la-cote-des-bar) l'ont préservé et l'assemblent parfois avec les autres cépages anciens.",
+          "en": "The last arbane vines are found mainly in the Aube. In Buxeuil and around Bar-sur-Aube, winemakers of the [Côte des Bar](/la-cote-des-bar) have preserved it and sometimes blend it with the other old grapes.",
+          "nl": "De laatste arbanestokken staan vooral in de Aube. In Buxeuil en rond Bar-sur-Aube hebben wijnmakers van de [Côte des Bar](/la-cote-des-bar) hem bewaard en assembleren ze hem soms met de andere oude rassen.",
+          "it": "Le ultime vigne di arbane si trovano soprattutto nell'Aube. A Buxeuil e attorno a Bar-sur-Aube, vignaioli della [Côte des Bar](/la-cote-des-bar) l'hanno preservato e talvolta lo assemblano con gli altri vitigni antichi."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Les goûter",
+        "en": "Tasting them",
+        "nl": "Ze proeven",
+        "it": "Assaggiarli"
+      },
+      "paragraphes": [
+        {
+          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+        }
+      ]
+    }
+  ],
+  "rubriques": [
+    "tout-savoir"
+  ]
+}
