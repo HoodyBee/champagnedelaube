@@ -13,7 +13,7 @@ export const defaultLocale: Locale = "fr";
  * sont masquées des sélecteurs, en noindex et hors sitemap : on les réactive en
  * cochant la langue dans Sanity.
  */
-export const defaultActiveLocales: readonly Locale[] = ["fr", "en", "nl"];
+export const defaultActiveLocales: readonly Locale[] = ["fr", "en", "nl", "it"];
 
 export const localeNames: Record<Locale, string> = {
   fr: "Français",
@@ -104,7 +104,7 @@ export const routing = defineRouting({
     },
     "/cse-et-cadeaux-dentreprise": {
       fr: "/cse-et-cadeaux-dentreprise",
-      en: "/corporate-gifts-and-events",
+      en: "/business-gifts-and-events",
       nl: "/bedrijfsgeschenken-en-evenementen",
       it: "/regali-aziendali-ed-eventi",
       de: "/firmengeschenke-und-firmenevents",

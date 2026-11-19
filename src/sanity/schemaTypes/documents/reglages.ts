@@ -113,7 +113,7 @@ export const reglages = defineType({
           { title: "Deutsch", value: "de" },
         ],
       },
-      initialValue: ["fr", "en", "nl"],
+      initialValue: ["fr", "en", "nl", "it"],
     }),
     defineField({
       name: "pepitesActive",

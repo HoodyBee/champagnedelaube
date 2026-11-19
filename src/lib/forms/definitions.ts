@@ -158,7 +158,40 @@ export const forms = {
       { name: "profil", type: "select", required: true, options: ["professionnel", "entreprise", "particulier"] },
     ],
   },
-  /** Page Contact. */
+  /** Page Contact, profil « Particulier ». */
+  contactParticulier: {
+    profil: "particuliers",
+    contact: "email",
+    fields: [nom, email(), telephone(), message(true)],
+  },
+  /** Page Contact, profil « Professionnel » (restaurant, cave, hôtel). */
+  contactPro: {
+    profil: "pro",
+    contact: "email",
+    fields: [
+      { name: "etablissement", type: "text", required: true, half: true, autoComplete: "organization" },
+      typeEtablissement,
+      nom,
+      email(),
+      telephone(),
+      { name: "ville", type: "text", half: true, autoComplete: "address-level2" },
+      message(true),
+    ],
+  },
+  /** Page Contact, profil « Entreprise & CSE ». */
+  contactEntreprise: {
+    profil: "entreprises",
+    contact: "email",
+    fields: [
+      { name: "entreprise", type: "text", required: true, half: true, autoComplete: "organization" },
+      { name: "effectif", type: "number", half: true, min: 1, max: 100000 },
+      nom,
+      email(),
+      telephone(),
+      message(true),
+    ],
+  },
+  /** Ancien formulaire de contact générique (choix du sujet), conservé. */
   contact: {
     profil: "sujet",
     contact: "email",

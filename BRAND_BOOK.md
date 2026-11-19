@@ -36,7 +36,7 @@ Mettre en lumière les vignerons de l'Aube et leurs cuvées, et donner envie de 
 
 1. **Le média** : la page Instagram @champagnedelaube et le site champagnedelaube.fr.
 2. **Les dégustations à Troyes** : des soirées d'1h30, de 6 à 13 personnes, en plusieurs formats (accords mets et champagnes, quiz, rencontres, musique).
-3. **L'apport d'affaires et les partenariats** : Julien déniche des pépites et met en relation une sélection de 10 domaines complémentaires au maximum avec les restaurants, cavistes, hôtels et entreprises (développement commercial, partenariats).
+3. **L'apport d'affaires et les partenariats** : Julien déniche des pépites et met en relation une sélection courte de domaines complémentaires, qui évolue au fil des rencontres avec les restaurants, cavistes, hôtels et entreprises (développement commercial, partenariats).
 
 ### Les publics
 

@@ -25,7 +25,6 @@
     "particuliers": "Privatkunden",
     "mariage": "Ihre großen Anlässe",
     "mag": "Le Mag",
-    "proCorporate": "Fachhandel & Unternehmen",
     "menu": "Menü"
   },
   "langSwitcher": {
@@ -132,8 +131,7 @@
     "reassuranceTitre": "Warum Champagne de l'Aube?",
     "reassurance": {
       "selection": {
-        "titre": "Unabhängige Winzer",
-        "texte": "Eine Auswahl von höchstens zehn sich ergänzenden Weingütern."
+        "titre": "Unabhängige Winzer"
       },
       "interlocuteur": {
         "titre": "Ein einziger Ansprechpartner",
@@ -436,7 +434,6 @@
     "argumentsTitre": "Ein Ansprechpartner, mehrere Weingüter",
     "portfolioSurTitre": "Die Weingüter",
     "portfolioTitre": "Die Weingüter der Auswahl",
-    "portfolioIntro": "Eine Auswahl von höchstens zehn Weingütern, die sich in Terroir und Rebsorten ergänzen. Die Preise stehen in der Profi-Preisliste, die auf Anfrage verschickt wird.",
     "portfolioCta": "Unsere ganze Auswahl ansehen",
     "referencesTitre": "Sie vertrauen uns",
     "grilleTitre": "Erhalten Sie unsere Auswahl mit den Fachhandelspreisen",
@@ -477,14 +474,11 @@
   },
   "partenairePage": {
     "metaTitle": "Winzer der Aube: Werden Sie Partner | Champagne de l'Aube",
-    "metaDescription": "Unabhängiger Winzer in der Aube? Champagne de l'Aube stellt eine Auswahl von höchstens zehn Weingütern Restaurants, Weinhandlungen, Hotels, Unternehmen und Privatkunden vor.",
     "surTitre": "Winzer der Aube",
     "h1": "Winzer: Werden Sie Partner",
-    "intro": "Sind Sie unabhängiger Winzer in der Aube? Wir stellen eine Auswahl von höchstens zehn Weingütern Restaurants, Weinhandlungen, Hotels, Unternehmen und Privatkunden vor.",
     "points": {
       "selection": {
-        "titre": "Eine kleine Auswahl",
-        "texte": "Höchstens zehn sich ergänzende Weingüter, damit jedes seinen Platz hat."
+        "titre": "Eine kleine Auswahl"
       },
       "publics": {
         "titre": "Profis und Privatkunden",

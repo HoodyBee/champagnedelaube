@@ -34,7 +34,7 @@ export type NavKey =
   | "recettes"
   | "toutSavoir"
   | "mag"
-  | "proCorporate"
+  | "proEntreprises"
   | "contact";
 
 type NavLink = { key: NavKey; href: AppPathname };
@@ -45,7 +45,7 @@ type NavLink = { key: NavKey; href: AppPathname };
  *  - Notre Sélection
  *  - Nos Dégustations ▾ (Nos Dégustations, Vos Grands Événements)
  *  - Le Mag
- *  - Espace Pro & Corporate ▾ (à droite : Professionnels, Entreprises & CSE, Vignerons)
+ *  - Espace Pro & Entreprises ▾ (à droite : Professionnels, Entreprises & CSE, Vignerons)
  *  - [Contact]
  * Les URL historiques ne changent pas.
  */
@@ -65,8 +65,8 @@ export const nav = {
   contact: { key: "contact", href: "/contact" } satisfies NavLink,
 };
 
-/** Onglet « Espace Pro & Corporate » : professionnels, entreprises, vignerons. */
-export const proCorporate: NavLink[] = [nav.pro[0], nav.entreprises, nav.pro[1]];
+/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons. */
+export const proEntreprises: NavLink[] = [nav.pro[0], nav.entreprises, nav.pro[1]];
 
 /** Contenus éditoriaux (pied de page, et liens depuis les pages Terroir et Particuliers). */
 export const contentPages: NavLink[] = [

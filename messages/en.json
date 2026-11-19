@@ -8,7 +8,7 @@
   "nav": {
     "vignerons": "Our Selection",
     "tasting": "Our Tastings",
-    "proChr": "Restaurants, hotels & wine shops",
+    "proChr": "Restaurants, wine shops, hotels",
     "proVignerons": "Winemakers: become a partner",
     "recettes": "Food and champagne pairings",
     "toutSavoir": "All about champagne",
@@ -25,8 +25,8 @@
     "particuliers": "Private clients",
     "mariage": "Your Special Occasions",
     "mag": "Le Mag",
-    "proCorporate": "Trade & Corporate",
-    "menu": "Menu"
+    "menu": "Menu",
+    "proEntreprises": "Trade & Business"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -92,9 +92,9 @@
     },
     "entreprises": {
       "surTitre": "Gift boxes · Workshops · Team building",
-      "titre": "Companies & corporate gifts",
+      "titre": "Companies & business gifts",
       "texte": "Gift boxes from Aube winemakers and terroir discovery workshops for your teams and clients.",
-      "bouton": "Corporate offers"
+      "bouton": "Business offers"
     },
     "particuliers": {
       "surTitre": "Workshops · Advice · Events",
@@ -133,7 +133,7 @@
     "reassurance": {
       "selection": {
         "titre": "Independent winemakers",
-        "texte": "A selection of ten complementary estates at most."
+        "texte": "Independent estates chosen one by one, from the Côte des Bar to Montgueux."
       },
       "interlocuteur": {
         "titre": "Single point of contact",
@@ -228,13 +228,16 @@
       "grillePro": "Pro price list request",
       "degustationPro": "On-site tasting request",
       "partenaireVigneron": "Partner winemaker application",
-      "devisEntreprise": "Corporate quote request",
-      "brochureCse": "Corporate brochure request",
+      "devisEntreprise": "Business quote request",
+      "brochureCse": "Business brochure request",
       "reservationExperience": "Booking request",
       "conseilEvenement": "Event advice request",
       "inscriptionEvenement": "Event registration",
       "contact": "Contact message",
-      "catalogue": "Request for our selection (catalogue)"
+      "catalogue": "Request for our selection (catalogue)",
+      "contactParticulier": "Private client enquiry",
+      "contactPro": "Trade enquiry (restaurant, wine shop, hotel)",
+      "contactEntreprise": "Company or works council enquiry"
     },
     "submit": {
       "grillePro": "Receive the selection and trade prices",
@@ -246,7 +249,10 @@
       "conseilEvenement": "Ask for advice",
       "inscriptionEvenement": "Register",
       "contact": "Send the message",
-      "catalogue": "Receive our selection"
+      "catalogue": "Receive our selection",
+      "contactParticulier": "Send the message",
+      "contactPro": "Send the message",
+      "contactEntreprise": "Send the message"
     },
     "errors": {
       "required": "This field is required.",
@@ -301,7 +307,29 @@
     "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to us: we will reply personally.",
     "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for winemaker champagnes from the Aube.",
     "details": "Details",
-    "formTitle": "Send a message"
+    "formTitle": "Let's get acquainted",
+    "vousEtes": "You are…?",
+    "vousEtesAide": "Choose your profile: the form adapts to your request.",
+    "profils": {
+      "particulier": {
+        "titre": "Private client",
+        "texte": "A tasting, a gift, an event"
+      },
+      "pro": {
+        "titre": "Trade professional",
+        "texte": "Restaurant, wine shop, hotel"
+      },
+      "entreprise": {
+        "titre": "Company & works council",
+        "texte": "Gift boxes, team events, gifts"
+      }
+    },
+    "raccourcisTitre": "Are you planning…",
+    "raccourcis": {
+      "degustation": "Book a tasting",
+      "evenement": "Plan a special occasion"
+    },
+    "vigneron": "Are you a winemaker? Tell us about your estate"
   },
   "newsletter": {
     "bar": {
@@ -436,7 +464,7 @@
     "argumentsTitre": "One contact, several estates",
     "portfolioSurTitre": "The estates",
     "portfolioTitre": "The estates in the selection",
-    "portfolioIntro": "A selection of ten estates at most, complementary in their terroirs and grape varieties. Prices are in the Pro price list, sent on request.",
+    "portfolioIntro": "Estates that complement each other in terroir and grape varieties. Trade prices are in our selection, sent on request.",
     "portfolioCta": "See our whole selection",
     "referencesTitre": "They trust us",
     "grilleTitre": "Receive our selection and its trade prices",
@@ -477,14 +505,14 @@
   },
   "partenairePage": {
     "metaTitle": "Aube winemakers: become a partner | Champagne de l'Aube",
-    "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "surTitre": "Aube winemakers",
     "h1": "Winemakers: become a partner",
-    "intro": "Are you an independent winemaker in the Aube? We present a selection of ten estates at most to restaurants, wine shops, hotels, companies and private clients.",
+    "intro": "Are you an independent winemaker in the Aube? We present a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "points": {
       "selection": {
         "titre": "A small selection",
-        "texte": "Ten complementary estates at most, so that each has its place."
+        "texte": "Complementary estates, chosen so that each has its place."
       },
       "publics": {
         "titre": "Professionals and private clients",

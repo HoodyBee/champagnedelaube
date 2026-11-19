@@ -8,7 +8,7 @@ import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
-import { nav, proCorporate, terroirPages, type NavKey } from "@/lib/site";
+import { nav, proEntreprises, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -63,7 +63,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
   }));
   const terroirMenu: Item[] = [toItem(nav.terroirHub), ...terroirItems];
   const degustationItems = nav.particuliers.map(toItem);
-  const proItems = proCorporate.map(toItem);
+  const proItems = proEntreprises.map(toItem);
 
   const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
   const isGroupActive = (items: Item[]) => items.some((i) => isActive(i.href));
@@ -153,7 +153,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
 
             <div className="flex items-center gap-space-1">
               <div className="hidden xl:block">
-                <Dropdown label={t("proCorporate")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
+                <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
               </div>
               <div className="hidden xl:block">
                 <LanguageSwitcher locales={locales} />
@@ -189,7 +189,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
           { items: [toItem(nav.vignerons)] },
           { title: t("tasting"), items: degustationItems },
           { items: [toItem(nav.mag)] },
-          { title: t("proCorporate"), items: proItems },
+          { title: t("proEntreprises"), items: proItems },
         ]}
         contact={{ href: "/contact", label: t("contact") }}
         isActive={isActive}

@@ -8,7 +8,7 @@
   "nav": {
     "vignerons": "Notre Sélection",
     "tasting": "Nos Dégustations",
-    "proChr": "Professionnels (CHR, cavistes)",
+    "proChr": "Restaurants, cavistes, hôtels",
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
@@ -25,8 +25,8 @@
     "particuliers": "Particuliers",
     "mariage": "Vos Grands Événements",
     "mag": "Le Mag",
-    "proCorporate": "Espace Pro & Corporate",
-    "menu": "Menu"
+    "menu": "Menu",
+    "proEntreprises": "Espace Pro & Entreprises"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -133,7 +133,7 @@
     "reassurance": {
       "selection": {
         "titre": "Vignerons indépendants",
-        "texte": "Une sélection de dix domaines complémentaires au maximum."
+        "texte": "Des domaines indépendants choisis un à un, de la Côte des Bar à Montgueux."
       },
       "interlocuteur": {
         "titre": "Interlocuteur unique",
@@ -234,7 +234,10 @@
       "conseilEvenement": "Demande de conseil pour un événement",
       "inscriptionEvenement": "Inscription à un événement",
       "contact": "Message de contact",
-      "catalogue": "Demande de notre sélection (catalogue)"
+      "catalogue": "Demande de notre sélection (catalogue)",
+      "contactParticulier": "Contact particulier",
+      "contactPro": "Contact professionnel (restaurant, cave, hôtel)",
+      "contactEntreprise": "Contact entreprise ou CSE"
     },
     "submit": {
       "grillePro": "Recevoir la sélection et les tarifs pro",
@@ -246,7 +249,10 @@
       "conseilEvenement": "Demander conseil",
       "inscriptionEvenement": "M'inscrire",
       "contact": "Envoyer le message",
-      "catalogue": "Recevoir notre sélection"
+      "catalogue": "Recevoir notre sélection",
+      "contactParticulier": "Envoyer le message",
+      "contactPro": "Envoyer le message",
+      "contactEntreprise": "Envoyer le message"
     },
     "errors": {
       "required": "Ce champ est obligatoire.",
@@ -301,7 +307,29 @@
     "intro": "Une question sur une cuvée, une dégustation, un coffret ou un partenariat ? Écrivez-nous : nous vous répondons personnellement.",
     "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de vignerons de l'Aube.",
     "details": "Coordonnées",
-    "formTitle": "Envoyer un message"
+    "formTitle": "Faisons connaissance",
+    "vousEtes": "Vous êtes… ?",
+    "vousEtesAide": "Choisissez votre profil : le formulaire s'adapte à votre demande.",
+    "profils": {
+      "particulier": {
+        "titre": "Particulier",
+        "texte": "Une dégustation, un cadeau, un événement"
+      },
+      "pro": {
+        "titre": "Professionnel",
+        "texte": "Restaurant, cave, hôtel"
+      },
+      "entreprise": {
+        "titre": "Entreprise & CSE",
+        "texte": "Coffrets, animations, cadeaux"
+      }
+    },
+    "raccourcisTitre": "Vous préparez…",
+    "raccourcis": {
+      "degustation": "Réserver une dégustation",
+      "evenement": "Préparer un grand événement"
+    },
+    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine"
   },
   "newsletter": {
     "bar": {
@@ -436,7 +464,7 @@
     "argumentsTitre": "Un interlocuteur, plusieurs domaines",
     "portfolioSurTitre": "Les domaines",
     "portfolioTitre": "Les domaines de la sélection",
-    "portfolioIntro": "Une sélection de dix domaines au maximum, complémentaires par leurs terroirs et leurs cépages. Les tarifs figurent dans la grille Pro, envoyée sur demande.",
+    "portfolioIntro": "Des domaines complémentaires par leurs terroirs et leurs cépages. Les tarifs pro figurent dans notre sélection, envoyée sur demande.",
     "portfolioCta": "Voir toute notre sélection",
     "referencesTitre": "Ils nous font confiance",
     "grilleTitre": "Recevez notre sélection et ses tarifs pro",
@@ -477,14 +505,14 @@
   },
   "partenairePage": {
     "metaTitle": "Vignerons de l'Aube : devenez partenaire | Champagne de l'Aube",
-    "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection de dix domaines au maximum aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "surTitre": "Vignerons de l'Aube",
     "h1": "Vignerons : devenez partenaire",
-    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Nous présentons une sélection de dix domaines au maximum aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Nous présentons une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "points": {
       "selection": {
         "titre": "Une sélection courte",
-        "texte": "Dix domaines complémentaires au maximum, pour que chacun ait sa place."
+        "texte": "Des domaines complémentaires, choisis pour que chacun ait sa place."
       },
       "publics": {
         "titre": "Professionnels et particuliers",

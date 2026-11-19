@@ -8,7 +8,7 @@
   "nav": {
     "vignerons": "La nostra selezione",
     "tasting": "Le nostre degustazioni",
-    "proChr": "Ristoranti, hotel ed enoteche",
+    "proChr": "Ristoranti, enoteche, hotel",
     "proVignerons": "Vignaioli: diventate partner",
     "recettes": "Abbinamenti cibo e champagne",
     "toutSavoir": "Tutto sullo champagne",
@@ -25,8 +25,8 @@
     "particuliers": "Privati",
     "mariage": "I vostri grandi eventi",
     "mag": "Le Mag",
-    "proCorporate": "Professionisti & aziende",
-    "menu": "Menu"
+    "menu": "Menu",
+    "proEntreprises": "Professionisti & aziende"
   },
   "langSwitcher": {
     "label": "Scegli la lingua",
@@ -133,7 +133,7 @@
     "reassurance": {
       "selection": {
         "titre": "Vignaioli indipendenti",
-        "texte": "Una selezione di massimo dieci tenute complementari."
+        "texte": "Tenute indipendenti scelte una per una, dalla Côte des Bar a Montgueux."
       },
       "interlocuteur": {
         "titre": "Un unico interlocutore",
@@ -234,7 +234,10 @@
       "conseilEvenement": "Richiesta di consiglio per un evento",
       "inscriptionEvenement": "Iscrizione a un evento",
       "contact": "Messaggio di contatto",
-      "catalogue": "Richiesta della nostra selezione (catalogo)"
+      "catalogue": "Richiesta della nostra selezione (catalogo)",
+      "contactParticulier": "Contatto privato",
+      "contactPro": "Contatto professionale (ristorante, enoteca, hotel)",
+      "contactEntreprise": "Contatto azienda o CRAL"
     },
     "submit": {
       "grillePro": "Ricevere la selezione e i prezzi",
@@ -246,7 +249,10 @@
       "conseilEvenement": "Chiedere un consiglio",
       "inscriptionEvenement": "Iscrivermi",
       "contact": "Inviare il messaggio",
-      "catalogue": "Ricevere la nostra selezione"
+      "catalogue": "Ricevere la nostra selezione",
+      "contactParticulier": "Inviare il messaggio",
+      "contactPro": "Inviare il messaggio",
+      "contactEntreprise": "Inviare il messaggio"
     },
     "errors": {
       "required": "Questo campo è obbligatorio.",
@@ -301,7 +307,29 @@
     "intro": "Una domanda su una cuvée, una degustazione, una confezione regalo o una collaborazione? Scriveteci: vi risponderemo personalmente.",
     "metaDescription": "Contattate Champagne de l'Aube a Troyes: professionisti, aziende, privati e vignaioli. Un unico interlocutore per gli champagne dei vignaioli dell'Aube.",
     "details": "Recapiti",
-    "formTitle": "Inviare un messaggio"
+    "formTitle": "Facciamo conoscenza",
+    "vousEtes": "Siete…?",
+    "vousEtesAide": "Scegliete il vostro profilo: il modulo si adatta alla vostra richiesta.",
+    "profils": {
+      "particulier": {
+        "titre": "Privato",
+        "texte": "Una degustazione, un regalo, un evento"
+      },
+      "pro": {
+        "titre": "Professionista",
+        "texte": "Ristorante, enoteca, hotel"
+      },
+      "entreprise": {
+        "titre": "Azienda & CRAL",
+        "texte": "Confezioni, animazioni, regali"
+      }
+    },
+    "raccourcisTitre": "State preparando…",
+    "raccourcis": {
+      "degustation": "Prenotare una degustazione",
+      "evenement": "Preparare un grande evento"
+    },
+    "vigneron": "Siete vignaioli? Presentateci la vostra tenuta"
   },
   "newsletter": {
     "bar": {
@@ -436,7 +464,7 @@
     "argumentsTitre": "Un interlocutore, più tenute",
     "portfolioSurTitre": "Le tenute",
     "portfolioTitre": "Le tenute della selezione",
-    "portfolioIntro": "Una selezione di massimo dieci tenute, complementari per terroir e vitigni. I prezzi sono nel listino Pro, inviato su richiesta.",
+    "portfolioIntro": "Tenute complementari per terroir e vitigni. I prezzi per professionisti sono nella nostra selezione, inviata su richiesta.",
     "portfolioCta": "Vedi tutta la nostra selezione",
     "referencesTitre": "Si fidano di noi",
     "grilleTitre": "Ricevete la nostra selezione e i prezzi per professionisti",
@@ -477,14 +505,14 @@
   },
   "partenairePage": {
     "metaTitle": "Vignaioli dell'Aube: diventate partner | Champagne de l'Aube",
-    "metaDescription": "Vignaioli indipendenti nell'Aube? Champagne de l'Aube presenta una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
+    "metaDescription": "Vignaioli indipendenti nell'Aube? Champagne de l'Aube presenta una selezione ristretta di tenute a ristoranti, enoteche, hotel, aziende e privati.",
     "surTitre": "Vignaioli dell'Aube",
     "h1": "Vignaioli: diventate partner",
-    "intro": "Siete vignaioli indipendenti nell'Aube? Presentiamo una selezione di massimo dieci tenute a ristoranti, enoteche, hotel, aziende e privati.",
+    "intro": "Siete vignaioli indipendenti nell'Aube? Presentiamo una selezione ristretta di tenute a ristoranti, enoteche, hotel, aziende e privati.",
     "points": {
       "selection": {
         "titre": "Una selezione ristretta",
-        "texte": "Massimo dieci tenute complementari, perché ognuna abbia il suo posto."
+        "texte": "Tenute complementari, scelte perché ognuna abbia il suo posto."
       },
       "publics": {
         "titre": "Professionisti e privati",

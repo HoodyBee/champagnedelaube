@@ -8,7 +8,7 @@
   "nav": {
     "vignerons": "Onze selectie",
     "tasting": "Onze proeverijen",
-    "proChr": "Horeca & wijnhandels",
+    "proChr": "Restaurants, wijnhandels, hotels",
     "proVignerons": "Wijnmakers: word partner",
     "recettes": "Champagne en gerechten",
     "toutSavoir": "Alles over champagne",
@@ -25,8 +25,8 @@
     "particuliers": "Particulieren",
     "mariage": "Uw grote gelegenheden",
     "mag": "Le Mag",
-    "proCorporate": "Professionals & bedrijven",
-    "menu": "Menu"
+    "menu": "Menu",
+    "proEntreprises": "Professionals & bedrijven"
   },
   "langSwitcher": {
     "label": "Kies een taal",
@@ -133,7 +133,7 @@
     "reassurance": {
       "selection": {
         "titre": "Onafhankelijke wijnmakers",
-        "texte": "Een selectie van maximaal tien complementaire domeinen."
+        "texte": "Onafhankelijke domeinen, één voor één gekozen, van de Côte des Bar tot Montgueux."
       },
       "interlocuteur": {
         "titre": "Eén aanspreekpunt",
@@ -234,7 +234,10 @@
       "conseilEvenement": "Adviesaanvraag voor een evenement",
       "inscriptionEvenement": "Inschrijving voor een evenement",
       "contact": "Contactbericht",
-      "catalogue": "Aanvraag van onze selectie (catalogus)"
+      "catalogue": "Aanvraag van onze selectie (catalogus)",
+      "contactParticulier": "Contact particulier",
+      "contactPro": "Professioneel contact (restaurant, wijnhandel, hotel)",
+      "contactEntreprise": "Contact bedrijf of ondernemingsraad"
     },
     "submit": {
       "grillePro": "Ontvang de selectie en de prijzen",
@@ -246,7 +249,10 @@
       "conseilEvenement": "Advies vragen",
       "inscriptionEvenement": "Inschrijven",
       "contact": "Bericht versturen",
-      "catalogue": "Ontvang onze selectie"
+      "catalogue": "Ontvang onze selectie",
+      "contactParticulier": "Bericht versturen",
+      "contactPro": "Bericht versturen",
+      "contactEntreprise": "Bericht versturen"
     },
     "errors": {
       "required": "Dit veld is verplicht.",
@@ -301,7 +307,29 @@
     "intro": "Een vraag over een cuvée, een proeverij, een geschenkdoos of een samenwerking? Schrijf ons: we antwoorden u persoonlijk.",
     "metaDescription": "Neem contact op met Champagne de l'Aube in Troyes: professionals, bedrijven, particulieren en wijnmakers. Eén aanspreekpunt voor champagnes van wijnmakers uit de Aube.",
     "details": "Gegevens",
-    "formTitle": "Stuur een bericht"
+    "formTitle": "Laten we kennismaken",
+    "vousEtes": "U bent…?",
+    "vousEtesAide": "Kies uw profiel: het formulier past zich aan uw aanvraag aan.",
+    "profils": {
+      "particulier": {
+        "titre": "Particulier",
+        "texte": "Een proeverij, een cadeau, een evenement"
+      },
+      "pro": {
+        "titre": "Professional",
+        "texte": "Restaurant, wijnhandel, hotel"
+      },
+      "entreprise": {
+        "titre": "Bedrijf & ondernemingsraad",
+        "texte": "Geschenkdozen, teamactiviteiten, cadeaus"
+      }
+    },
+    "raccourcisTitre": "Bent u van plan…",
+    "raccourcis": {
+      "degustation": "Een proeverij boeken",
+      "evenement": "Een grote gelegenheid voorbereiden"
+    },
+    "vigneron": "Bent u wijnmaker? Stel ons uw domein voor"
   },
   "newsletter": {
     "bar": {
@@ -436,7 +464,7 @@
     "argumentsTitre": "Eén contactpersoon, meerdere domeinen",
     "portfolioSurTitre": "De domeinen",
     "portfolioTitre": "De domeinen in de selectie",
-    "portfolioIntro": "Een selectie van maximaal tien domeinen, complementair in terroir en druivenrassen. De prijzen staan in de pro-prijslijst, op aanvraag verstuurd.",
+    "portfolioIntro": "Domeinen die elkaar aanvullen in terroir en druivenrassen. De professionele prijzen staan in onze selectie, op aanvraag verstuurd.",
     "portfolioCta": "Bekijk onze hele selectie",
     "referencesTitre": "Zij vertrouwen ons",
     "grilleTitre": "Ontvang onze selectie met de professionele prijzen",
@@ -477,14 +505,14 @@
   },
   "partenairePage": {
     "metaTitle": "Wijnmakers uit de Aube: word partner | Champagne de l'Aube",
-    "metaDescription": "Onafhankelijke wijnmaker in de Aube? Champagne de l'Aube stelt een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
+    "metaDescription": "Onafhankelijke wijnmaker in de Aube? Champagne de l'Aube stelt een kleine selectie domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
     "surTitre": "Wijnmakers uit de Aube",
     "h1": "Wijnmakers: word partner",
-    "intro": "Bent u onafhankelijk wijnmaker in de Aube? We stellen een selectie van maximaal tien domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
+    "intro": "Bent u onafhankelijk wijnmaker in de Aube? We stellen een kleine selectie domeinen voor aan restaurants, wijnhandels, hotels, bedrijven en particulieren.",
     "points": {
       "selection": {
         "titre": "Een kleine selectie",
-        "texte": "Maximaal tien complementaire domeinen, zodat elk zijn plaats heeft."
+        "texte": "Complementaire domeinen, gekozen zodat elk zijn plaats heeft."
       },
       "publics": {
         "titre": "Professionals en particulieren",
