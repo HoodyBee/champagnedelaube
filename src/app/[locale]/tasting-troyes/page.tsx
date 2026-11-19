@@ -13,10 +13,21 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata, SITE_URL } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { nav } from "@/lib/site";
+import type { LineIconName } from "@/lib/line-icons";
+import { formatsDegustationActifs, nav } from "@/lib/site";
 import { getEspaceParticuliers, getEvenementsAVenir, getExperiences } from "@/sanity/content";
 
 const HREF = "/tasting-troyes";
+
+const OCCASIONS: [string, LineIconName][] = [
+  ["amis", "groupe"],
+  ["famille", "interlocuteur"],
+  ["anniversaire", "calendrier"],
+  ["groupe", "groupe"],
+  ["sejour", "carte"],
+  ["entreprise", "coffret"],
+];
+const LIEUX = ["domicile", "privatise", "partenaire", "troyes"] as const;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/tasting-troyes">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -25,13 +36,18 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/tasting-
   return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription") });
 }
 
-/** Nos Dégustations (adresse historique /tasting-troyes/) : formats, prochains rendez-vous, réservation. */
+/**
+ * Dégustations privées (adresse historique /tasting-troyes/, gardée pour le référencement) :
+ * une seule offre sur mesure. Les formats et les rendez-vous publics sont masqués
+ * (formatsDegustationActifs dans src/lib/site.ts), pas supprimés.
+ */
 export default async function DegustationsPage({ params }: PageProps<"/[locale]/tasting-troyes">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("degustationsPage");
   const tNav = await getTranslations("nav");
   const tUi = await getTranslations("ui");
+  const tHome = await getTranslations("home");
   const [p, experiences, evenements] = await Promise.all([getEspaceParticuliers(locale), getExperiences(locale), getEvenementsAVenir(locale)]);
 
   const chiffres = p.chiffres.length
@@ -61,20 +77,58 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
       <Hero
         surTitre={p.hero.surTitre ?? t("surTitre")}
         titre={p.hero.titre ?? t("h1")}
-        intro={p.hero.intro ?? t("intro")}
+        intro={p.hero.intro ?? t("accroche")}
         image={p.hero.image}
-        placeholderLabel={tUi("photoSoon")}
-        actions={
-          <>
-            <ButtonLink href={{ pathname: HREF, hash: "reserver" }}>{t("ctaReserver")}</ButtonLink>
-            <ButtonLink href={nav.particuliers[1].href} variant="secondaire">
-              {t("ctaEvenements")}
-            </ButtonLink>
-          </>
-        }
+        placeholder="sobre"
+        placeholderText={tHome("photoAVenir")}
+        actions={<ButtonLink href={{ pathname: HREF, hash: "organiser" }}>{t("ctaOrganiser")}</ButtonLink>}
       />
-      <Chiffres items={chiffres} />
+      {p.chiffres.length > 0 && <Chiffres items={chiffres} />}
 
+      {/* Une offre unique, sur mesure */}
+      <Section id="sur-mesure">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-titre-section sm:text-[2rem]">{t("surMesureTitre")}</h2>
+          <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("texte")}</p>
+          <p className="mt-space-4 border-l-2 border-or pl-space-3 text-[1.5rem] font-bold italic leading-snug text-bronze sm:text-[1.75rem]">
+            {t("signature")}
+          </p>
+        </div>
+      </Section>
+
+      <Section id="occasions" fond="chaude">
+        <div className="grid gap-space-5 lg:grid-cols-[1.4fr_1fr]">
+          <div>
+            <h2 className="text-titre-section">{t("occasionsTitre")}</h2>
+            <ul className="mt-space-3 grid gap-space-2 sm:grid-cols-2">
+              {OCCASIONS.map(([k, icone]) => (
+                <li key={k} className="flex items-center gap-space-2 rounded-carte border border-filet bg-blanc p-space-2">
+                  <LineIcon name={icone} size={28} className="shrink-0 text-or" />
+                  <span className="font-bold leading-snug">{t(`occasions.${k}`)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-titre-section">{t("lieuxTitre")}</h2>
+            <p className="mt-space-1 text-gris-chaud">{t("lieuxIntro")}</p>
+            <ul className="mt-space-3 divide-y divide-filet border-y border-filet">
+              {LIEUX.map((k) => (
+                <li key={k} className="flex min-h-12 items-center gap-space-1">
+                  <LineIcon name="lieu" size={20} className="text-bronze" />
+                  {t(`lieux.${k}`)}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-space-4 rounded-carte border border-filet bg-blanc p-space-3">
+              <p className="font-bold">{t("touristesTitre")}</p>
+              <p className="mt-space-1 text-gris-chaud">{t("touristesTexte")}</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {formatsDegustationActifs && (
       <Section id="formats" titre={p.experiencesTitre ?? t("experiencesTitre")} intro={p.experiencesIntro ?? t("experiencesIntro")}>
         {experiences.length ? (
           <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -88,8 +142,9 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
           <p className="mx-auto max-w-2xl text-center text-gris-chaud">{t("aucuneExperience")}</p>
         )}
       </Section>
+      )}
 
-      {evenements.length > 0 && (
+      {formatsDegustationActifs && evenements.length > 0 && (
         <Section id="rendez-vous" fond="chaude" titre={p.evenementsTitre ?? t("rendezVousTitre")}>
           <ul className="space-y-space-4">
             {evenements.map((e) => (
@@ -148,21 +203,21 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
         </Section>
       )}
 
-      <Section id="reserver" fond={evenements.length ? "blanc" : "chaude"}>
-        <section aria-labelledby="reserver-titre" className="mx-auto max-w-3xl scroll-mt-28 rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">
+      <Section id="organiser">
+        <section aria-labelledby="organiser-titre" className="mx-auto max-w-3xl scroll-mt-28 rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">
           <LineIcon name="degustation" size={32} className="text-or" />
-          <h2 id="reserver-titre" className="mt-space-2 text-titre-section">{t("reserverTitre")}</h2>
-          <p className="mt-space-1 text-gris-chaud">{t("reserverTexte")}</p>
+          <h2 id="organiser-titre" className="mt-space-2 text-titre-section">{t("formTitre")}</h2>
+          <p className="mt-space-1 text-gris-chaud">{t("formTexte")}</p>
           <div className="mt-space-3">
-            <LeadForm formId="reservationExperience" />
+            <LeadForm formId="degustationPrivee" />
           </div>
         </section>
       </Section>
 
-      <Section id="grands-evenements" fond={evenements.length ? "chaude" : "blanc"}>
+      <Section id="grands-evenements" fond="chaude">
         <div className="mx-auto max-w-3xl text-center">
           <LineIcon name="calendrier" size={32} className="mx-auto block text-or" />
-          <h2 className="mt-space-2 text-titre-section sm:text-[2rem]">{p.evenementsPrives.titre ?? t("privesTitre")}</h2>
+          <h2 className="mt-space-2 text-titre-section sm:text-[2rem]">{p.evenementsPrives.titre ?? t("evenementsTitre")}</h2>
           {p.evenementsPrives.texte?.length ? (
             <RichText value={p.evenementsPrives.texte} locale={locale} className="mt-space-2 text-gris-chaud" />
           ) : (
@@ -179,7 +234,7 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
           <Faq items={p.faq} />
         </Section>
       )}
-      {jsonLd.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
+      {formatsDegustationActifs && jsonLd.length > 0 && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
     </>
   );
 }

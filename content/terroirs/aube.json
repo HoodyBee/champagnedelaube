@@ -17,22 +17,22 @@
   },
   "hero": {
     "surTitre": {
-      "fr": "Les Terroirs Aubois",
-      "en": "The Aube Terroirs",
+      "fr": "Notre Terroir",
+      "en": "Our Terroir",
+      "nl": "Ons terroir",
+      "it": "Il nostro terroir"
+    },
+    "titre": {
+      "fr": "Les terroirs de l'Aube",
+      "en": "The Aube terroirs",
       "nl": "De terroirs van de Aube",
       "it": "I terroir dell'Aube"
     },
-    "titre": {
-      "fr": "Le terroir de l'Aube, un quart du vignoble champenois",
-      "en": "The Aube terroir, a quarter of the Champagne vineyard",
-      "nl": "Het terroir van de Aube, een kwart van de Champagne",
-      "it": "Il terroir dell'Aube, un quarto della Champagne"
-    },
     "intro": {
-      "fr": "Au sud de la Champagne, l'Aube compte environ 8 000 hectares de vignes. Quatre terroirs, des sols différents, et des vignerons que nous connaissons un à un.",
-      "en": "In the south of Champagne, the Aube has around 8,000 hectares of vines. Four terroirs, different soils, and winemakers we know one by one.",
-      "nl": "In het zuiden van de Champagne telt de Aube zo'n 8.000 hectare wijngaarden. Vier terroirs, verschillende bodems, en wijnmakers die we één voor één kennen.",
-      "it": "Nel sud della Champagne, l'Aube conta circa 8.000 ettari di vigne. Quattro terroir, suoli diversi e vignaioli che conosciamo uno per uno."
+      "fr": "Au sud de la Champagne, l'Aube compte environ 8 000 hectares de vignes, un bon quart du vignoble champenois. Quatre terroirs, des sols différents, et des vignerons que nous connaissons un à un.",
+      "en": "In the south of Champagne, the Aube has around 8,000 hectares of vines, a good quarter of the Champagne vineyard. Four terroirs, different soils, and winemakers we know one by one.",
+      "nl": "In het zuiden van de Champagne telt de Aube zo'n 8.000 hectare wijngaarden, een flink kwart van de Champagne. Vier terroirs, verschillende bodems, en wijnmakers die we één voor één kennen.",
+      "it": "Nel sud della Champagne, l'Aube conta circa 8.000 ettari di vigne, un buon quarto del vigneto champenois. Quattro terroir, suoli diversi e vignaioli che conosciamo uno per uno."
     }
   },
   "chapitres": [

@@ -11,7 +11,7 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
-import { nav } from "@/lib/site";
+import { formatsDegustationActifs, nav } from "@/lib/site";
 import { getExperience, getExperiences, getExperienceSlugs, getVignerons } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/tasting-troyes/[slug]">;
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
-  const e = await getExperience(slug, locale);
+  const e = formatsDegustationActifs ? await getExperience(slug, locale) : null;
   if (!e) return {};
   const t = await getTranslations({ locale, namespace: "experiencePage" });
   return pageMetadata({
@@ -40,6 +40,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ExperiencePage({ params }: Props) {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   setRequestLocale(locale);
+  // Formats de dégustation masqués : la page n'est pas affichée (elle reste prête).
+  if (!formatsDegustationActifs) notFound();
   const [e, toutes, vignerons] = await Promise.all([getExperience(slug, locale), getExperiences(locale), getVignerons(locale)]);
   if (!e) notFound();
 

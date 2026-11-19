@@ -13,11 +13,12 @@ export const defaultContact = {
 export const siteCredit = { name: "Detectezmoi.com", url: "http://www.detectezmoi.com/" };
 
 /** Terroirs : clé du brand book (couleur, picto) -> adresse de la page. Côte des Bar en premier. */
-export const terroirPages: { key: TerroirKey; label: string; href: AppPathname }[] = [
+/** `short` : nom court pour la ligne graphique de l'en-tête (« Villenauxe ») ; le nom officiel reste ailleurs. */
+export const terroirPages: { key: TerroirKey; label: string; short?: string; href: AppPathname }[] = [
   { key: "cote-des-bar", label: "Côte des Bar", href: "/la-cote-des-bar" },
   { key: "les-riceys", label: "Les Riceys", href: "/les-riceys" },
   { key: "montgueux", label: "Montgueux", href: "/montgueux" },
-  { key: "villenauxe", label: "Villenauxe-la-Grande", href: "/villenauxe-la-grande" },
+  { key: "villenauxe", label: "Villenauxe-la-Grande", short: "Villenauxe", href: "/villenauxe-la-grande" },
 ];
 
 /** Clés des textes de navigation (messages/*.json, rubrique "nav"). */
@@ -73,6 +74,13 @@ export const contentPages: NavLink[] = [
   { key: "recettes", href: "/recettes-accords-mets-champagne" },
   { key: "toutSavoir", href: "/tout-savoir-sur-le-champagne" },
 ];
+
+/**
+ * Formats de dégustation (documents « Expérience ») et rendez-vous publics : masqués.
+ * L'offre est aujourd'hui une seule offre de dégustations privées sur mesure.
+ * Passer à true pour les réafficher (rien n'a été supprimé).
+ */
+export const formatsDegustationActifs = false;
 
 /** Formate un numéro français pour un lien tel: (+33…). */
 export function telHref(phone: string) {

@@ -6,8 +6,8 @@
     "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
-    "vignerons": "Notre Sélection",
-    "tasting": "Nos Dégustations",
+    "vignerons": "Notre sélection du moment",
+    "tasting": "Dégustations privées",
     "proChr": "Restaurants, cavistes, hôtels",
     "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
@@ -19,15 +19,15 @@
     "closeMenu": "Fermer",
     "homeLink": "Champagne de l'Aube, retour à l'accueil",
     "terroirBand": "Les terroirs de l'Aube",
-    "terroirHub": "Les Terroirs Aubois",
+    "terroirHub": "Notre Terroir",
     "pro": "Professionnels",
     "entreprises": "Entreprises & CSE",
     "particuliers": "Particuliers",
     "mariage": "Vos Grands Événements",
-    "mag": "Le Mag",
+    "mag": "Le Mag du Champagne",
     "menu": "Menu",
     "proEntreprises": "Espace Pro & Entreprises",
-    "terroirHubLink": "Découvrir les terroirs",
+    "terroirHubLink": "Les terroirs de l'Aube",
     "tastingLink": "Toutes nos dégustations"
   },
   "langSwitcher": {
@@ -85,7 +85,7 @@
     }
   },
   "home": {
-    "heroTitre": "Les champagnes de vignerons de la Côte des Bar et de l'Aube",
+    "heroTitre": "Les champagnes de l'Aube, révélés par ceux qui les font.",
     "pro": {
       "surTitre": "Restaurants · Cavistes · Hôtels",
       "titre": "Professionnels",
@@ -124,7 +124,7 @@
     },
     "metaTitle": "Champagnes de vignerons de la Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
-    "heroIntro": "Une sélection de vignerons indépendants de l'Aube, présentés par un interlocuteur unique, à Troyes.",
+    "heroIntro": "À la rencontre des vignerons indépendants, des terroirs et des cuvées de caractère. Une sélection singulière, portée par un passionné au cœur de l'Aube.",
     "heroCtaTerroir": "Découvrir le terroir",
     "entreesTitre": "Pour qui ?",
     "terroirSurTitre": "Le terroir",
@@ -149,7 +149,52 @@
     "eventSurTitre": "Prochain rendez-vous",
     "eventPlaces": "{places} places",
     "eventComplet": "Complet",
-    "eventCta": "Voir le rendez-vous"
+    "eventCta": "Voir le rendez-vous",
+    "heroSurTitre": "Côte des Bar · Les Riceys · Montgueux · Villenauxe",
+    "heroCtaSelection": "Découvrir notre sélection",
+    "heroCtaTerroirs": "Explorer les terroirs",
+    "photoAVenir": "Photographie à venir",
+    "terroirsSurTitre": "Notre Terroir",
+    "terroirsTitre": "Les terroirs de l'Aube",
+    "terroirsIntro": "Au sud de la Champagne, quatre terroirs, quatre sols, quatre caractères. Partez à leur découverte, et à la rencontre de ceux qui les cultivent.",
+    "terroirsCta": "Explorer les terroirs de l'Aube",
+    "carteTroyes": "Troyes",
+    "carteLegende": "Carte stylisée des terroirs de l'Aube",
+    "terroirsCartes": {
+      "cote-des-bar": "Le pays du pinot noir, sur les marnes du Kimméridgien.",
+      "les-riceys": "Un village, trois appellations, dont le Rosé des Riceys.",
+      "montgueux": "La colline du chardonnay, aux portes de Troyes.",
+      "villenauxe": "Le vignoble discret du nord-ouest, tourné vers la Marne."
+    },
+    "pepitesSurTitre": "Notre sélection du moment",
+    "pepitesTitre": "Les pépites du moment",
+    "pepitesIntro": "Des cuvées choisies pour leur caractère, leur histoire et la personnalité de ceux qui les élaborent.",
+    "pepitesCta": "Découvrir toute notre sélection",
+    "portraitsSurTitre": "Le Mag du Champagne",
+    "portraitsTitre": "Rencontres et portraits de vignerons",
+    "portraitsIntro": "Ceux qui font le champagne de l'Aube, dans leurs vignes et dans leurs caves.",
+    "degustTitre": "Dégustations privées",
+    "degustAccroche": "Le champagne se découvre, se partage et se raconte.",
+    "degustTexte": "Entre amis, en famille ou pour une occasion particulière, nous composons avec vous une dégustation sur mesure, à Troyes, ailleurs dans l'Aube ou chez vous.",
+    "degustSignature": "La Côte des Bar vient à vous.",
+    "degustCta": "Organiser une dégustation privée",
+    "degustCtaSecondaire": "En savoir plus",
+    "proSurTitre": "Espace Pro & Entreprises",
+    "proTitre": "Votre interlocuteur auprès des vignerons de l'Aube",
+    "proIntro": "Nous représentons des domaines indépendants auprès des professionnels et des entreprises : nous les présentons, nous vous conseillons et nous développons leur présence, avec un seul interlocuteur.",
+    "proCarteTitre": "Restaurants, cavistes, hôtels",
+    "proCarteTexte": "Bars, traiteurs et épiceries fines aussi : une carte de champagnes de vignerons, aux tarifs pro, et une dégustation avec votre équipe.",
+    "proCarteCta": "Découvrir l'offre pro",
+    "entCarteTitre": "Entreprises & CSE",
+    "entCarteTexte": "Des coffrets composés avec des vignerons de l'Aube et des dégustations pour vos équipes et vos clients.",
+    "entCarteCta": "Découvrir l'offre entreprises",
+    "magSurTitre": "Le Mag du Champagne",
+    "magTitre": "Histoires de vignerons, de terroirs et d'accords",
+    "magIntro": "Portraits, cépages, accords mets et champagnes, découvertes : le champagne de l'Aube raconté par ceux qui le font.",
+    "magCta": "Lire Le Mag du Champagne",
+    "finalTitre": "Une question, un projet ?",
+    "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
+    "finalCta": "Nous écrire"
   },
   "pro": {
     "arguments": {
@@ -189,7 +234,9 @@
       "invites": "Nombre d'invités",
       "places": "Nombre de places",
       "sujet": "Votre demande concerne",
-      "profil": "Vous êtes"
+      "profil": "Vous êtes",
+      "occasion": "Occasion",
+      "lieu": "Lieu souhaité"
     },
     "options": {
       "typeEtablissement": {
@@ -224,6 +271,21 @@
         "professionnel": "Un professionnel (restaurant, cave, hôtel)",
         "entreprise": "Une entreprise ou un CSE",
         "particulier": "Un particulier"
+      },
+      "occasion": {
+        "amis": "Entre amis",
+        "famille": "En famille",
+        "anniversaire": "Anniversaire ou occasion particulière",
+        "groupe": "Groupe ou association",
+        "sejour": "Séjour touristique",
+        "entreprise": "Entreprise ou événement professionnel"
+      },
+      "lieu": {
+        "domicile": "À domicile",
+        "privatise": "Lieu privatisé",
+        "partenaire": "Chez un partenaire",
+        "troyes": "À Troyes",
+        "aDefinir": "À définir ensemble"
       }
     },
     "titles": {
@@ -239,7 +301,8 @@
       "catalogue": "Demande de notre sélection (catalogue)",
       "contactParticulier": "Contact particulier",
       "contactPro": "Contact professionnel (restaurant, cave, hôtel)",
-      "contactEntreprise": "Contact entreprise ou CSE"
+      "contactEntreprise": "Contact entreprise ou CSE",
+      "degustationPrivee": "Demande de dégustation privée"
     },
     "submit": {
       "grillePro": "Recevoir la sélection et les tarifs pro",
@@ -254,7 +317,8 @@
       "catalogue": "Recevoir notre sélection",
       "contactParticulier": "Envoyer le message",
       "contactPro": "Envoyer le message",
-      "contactEntreprise": "Envoyer le message"
+      "contactEntreprise": "Envoyer le message",
+      "degustationPrivee": "Organiser ma dégustation"
     },
     "errors": {
       "required": "Ce champ est obligatoire.",
@@ -441,7 +505,7 @@
     "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
     "metaDescription": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte : tarifs directs domaine, interlocuteur unique, dégustation dans votre établissement.",
     "h1": "Des champagnes de vignerons de l'Aube pour votre carte",
-    "intro": "Nous sélectionnons des champagnes de vignerons indépendants de l'Aube et nous les présentons aux restaurants, cavistes et hôtels : tarifs directs domaine, un interlocuteur unique et une dégustation dans votre établissement.",
+    "intro": "Nous représentons des vignerons indépendants de l'Aube auprès des professionnels : nous les présentons, nous vous conseillons pour votre carte et nous développons leur présence chez vous. Tarifs pro, un interlocuteur unique et une dégustation avec votre équipe.",
     "ctaGrille": "Recevoir notre sélection et ses tarifs pro",
     "ctaDegustation": "Organiser une dégustation",
     "profilsTitre": "Pour quels établissements ?",
@@ -475,18 +539,20 @@
     "degustationTexte": "Nous venons présenter une sélection de cuvées à votre équipe, dans votre établissement.",
     "partenaireTitre": "Vous êtes vigneron ?",
     "partenaireTexte": "Présentez-nous votre domaine : la sélection reste volontairement courte.",
-    "partenaireCta": "Devenir partenaire"
+    "partenaireCta": "Devenir partenaire",
+    "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines"
   },
   "vigneronsPage": {
-    "metaTitle": "Notre sélection de champagnes de vignerons de l'Aube | Champagne de l'Aube",
+    "metaTitle": "Notre sélection du moment : champagnes de vignerons de l'Aube | Champagne de l'Aube",
     "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
-    "surTitre": "Vignerons indépendants",
-    "h1": "Notre Sélection",
-    "intro": "Des domaines indépendants de l'Aube, choisis pour leur terroir et leur travail. Chaque cuvée est présentée à travers son vigneron.",
+    "surTitre": "Cuvées, découvertes et coups de cœur",
+    "h1": "Notre sélection du moment",
+    "intro": "Une sélection vivante, qui évolue au fil des rencontres : des domaines indépendants de l'Aube, leurs cuvées et les personnes qui les élaborent.",
     "filtres": "Filtrer les domaines",
     "tous": "Tous",
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
-    "count": "{count, plural, one {# domaine} other {# domaines}}"
+    "count": "{count, plural, one {# domaine} other {# domaines}}",
+    "domainesTitre": "Les domaines de la sélection"
   },
   "vigneronPage": {
     "metaTitle": "{nom}, vigneron à {village} | Champagne de l'Aube",
@@ -535,14 +601,15 @@
     "bouton": "Recevoir notre sélection",
     "dialogTitre": "Recevez notre sélection",
     "dialogTexte": "Les domaines du moment, leurs villages et leurs cuvées, dans un document envoyé par e-mail.",
-    "fermer": "Fermer"
+    "fermer": "Fermer",
+    "decouvrirDomaine": "Découvrir le domaine"
   },
   "degustationsPage": {
     "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue.",
-    "metaTitle": "Dégustation de champagne à Troyes : ateliers de vignerons de l'Aube | Champagne de l'Aube",
-    "metaDescription": "Des dégustations de champagnes de vignerons de l'Aube, à Troyes ou chez vous, de 6 à 13 personnes, pendant 1 h 30, avec un quiz.",
-    "surTitre": "À Troyes ou chez vous",
-    "h1": "Dégustations de champagne à Troyes",
+    "metaTitle": "Dégustations privées de champagne à Troyes, dans l'Aube ou chez vous | Champagne de l'Aube",
+    "metaDescription": "Des dégustations privées sur mesure pour découvrir les champagnes de vignerons indépendants de l'Aube : à Troyes, dans l'Aube ou chez vous. La Côte des Bar vient à vous.",
+    "surTitre": "Troyes · Aube · Chez vous",
+    "h1": "Dégustations privées",
     "ctaReserver": "Réserver une dégustation",
     "ctaEvenements": "Vos Grands Événements",
     "chiffres": {
@@ -572,7 +639,34 @@
     "inscriptionTitre": "S'inscrire : {titre}",
     "carte": "Voir sur la carte",
     "privesTitre": "Un mariage, un baptême, une commande groupée ?",
-    "privesTexte": "Nous vous conseillons des champagnes de vignerons pour vos grandes occasions, aux tarifs directs vignerons."
+    "privesTexte": "Nous vous conseillons des champagnes de vignerons pour vos grandes occasions, aux tarifs directs vignerons.",
+    "accroche": "Le champagne se découvre, se partage et se raconte.",
+    "texte": "Le temps d'une dégustation privée, découvrez les champagnes de vignerons indépendants de l'Aube, leurs terroirs et ceux qui les élaborent. Entre amis, en famille ou pour une occasion particulière, nous composons avec vous un moment sur mesure. À Troyes, ailleurs dans l'Aube ou selon vos envies : la Côte des Bar vient à vous.",
+    "signature": "La Côte des Bar vient à vous.",
+    "ctaOrganiser": "Organiser une dégustation privée",
+    "surMesureTitre": "Un moment sur mesure",
+    "occasionsTitre": "Pour quelle occasion ?",
+    "occasions": {
+      "amis": "Entre amis",
+      "famille": "En famille",
+      "anniversaire": "Un anniversaire ou une occasion particulière",
+      "groupe": "Un groupe ou une association",
+      "sejour": "Un séjour touristique",
+      "entreprise": "Une entreprise ou un événement professionnel"
+    },
+    "lieuxTitre": "Où ?",
+    "lieuxIntro": "Selon votre demande : nous venons à vous, ou nous vous accueillons.",
+    "lieux": {
+      "domicile": "À domicile",
+      "privatise": "Dans un lieu privatisé",
+      "partenaire": "Chez un partenaire",
+      "troyes": "À Troyes"
+    },
+    "touristesTitre": "De passage à Troyes ?",
+    "touristesTexte": "Découvrez les champagnes de la Côte des Bar sans prendre la route des vignobles : nous vous les faisons goûter à Troyes, avec l'histoire de leurs villages et de leurs vignerons.",
+    "formTitre": "Organiser une dégustation privée",
+    "formTexte": "L'occasion, le lieu, le nombre de personnes, une date : quelques mots suffisent. Nous revenons vers vous très vite avec une proposition.",
+    "evenementsTitre": "Un mariage, un baptême, une commande groupée ?"
   },
   "evenementsPage": {
     "metaTitle": "Champagne pour mariage à Troyes et dans l'Aube | Champagne de l'Aube",
@@ -620,11 +714,11 @@
     "formTexte": "Racontez-nous votre projet : nous revenons vers vous très vite avec des propositions."
   },
   "mag": {
-    "metaTitle": "Le Mag : champagne, accords et vignerons de l'Aube | Champagne de l'Aube",
+    "metaTitle": "Le Mag du Champagne : vignerons, terroirs et accords de l'Aube | Champagne de l'Aube",
     "metaDescription": "Tout savoir sur le champagne, accords mets & champagne et portraits de vignerons de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande.",
-    "surTitre": "Champagne de l'Aube",
-    "h1": "Le Mag",
-    "intro": "Des vignerons, des villages, des accords : ce que nous apprenons sur le terrain, de Montgueux aux Riceys.",
+    "surTitre": "Portraits, terroirs, accords",
+    "h1": "Le Mag du Champagne",
+    "intro": "Des vignerons, des villages, des cépages et des accords : les histoires que nous rapportons du terrain, de Montgueux aux Riceys.",
     "filtres": "Filtrer par rubrique",
     "tous": "Tout",
     "count": "{count, plural, one {# article} other {# articles}}",
@@ -640,7 +734,9 @@
       "toutSavoir": "Tout savoir sur le champagne",
       "accords": "Accords mets & champagne",
       "portraits": "Portraits de vignerons"
-    }
+    },
+    "aLaUne": "À la une",
+    "tousLesArticles": "Tous les articles"
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",

@@ -13,7 +13,7 @@ const styles: Record<Variant, string> = {
 };
 
 export const buttonClass = (variant: Variant = "primaire", className = "") =>
-  `inline-flex min-h-12 items-center justify-center gap-space-1 rounded-etiquette px-space-3 text-center text-sur-titre transition-colors ${styles[variant]} ${className}`;
+  `inline-flex min-h-12 items-center justify-center gap-space-1 rounded-etiquette px-space-3 text-center text-sur-titre transition-colors sm:whitespace-nowrap ${styles[variant]} ${className}`;
 
 /** Bouton-lien vers une page du site (adresse traduite automatiquement). */
 export function ButtonLink({

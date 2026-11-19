@@ -59,6 +59,20 @@ export const accueil = defineType({
     entree("entreeParticuliers", "Entrée 3 : Particuliers", "Bouton vers l'espace Particuliers (/tasting-troyes/)."),
 
     defineField({ name: "terroir", title: "Section « Le terroir de l'Aube »", type: "blocTexte", group: "sections" }),
+    defineField({ name: "heroCtaSelection", title: "Ouverture : bouton principal", description: "Par défaut : « Découvrir notre sélection ».", type: "localeString", group: "hero" }),
+    defineField({ name: "heroCtaTerroirs", title: "Ouverture : bouton secondaire", description: "Par défaut : « Explorer les terroirs ».", type: "localeString", group: "hero" }),
+    defineField({ name: "pepitesTitre", title: "« Les pépites du moment » : titre", type: "localeString", group: "sections" }),
+    defineField({ name: "pepitesIntro", title: "« Les pépites du moment » : introduction", description: "Les cuvées affichées sont les documents « Cuvée » cochés « Afficher sur l'accueil ».", type: "localeText", group: "sections" }),
+    defineField({ name: "degustationTitre", title: "« Dégustations privées » : titre", type: "localeString", group: "sections" }),
+    defineField({ name: "degustationAccroche", title: "« Dégustations privées » : accroche", type: "localeString", group: "sections" }),
+    defineField({ name: "degustationTexte", title: "« Dégustations privées » : texte court", type: "localeText", group: "sections" }),
+    defineField({
+      name: "degustationImage",
+      title: "« Dégustations privées » : photo",
+      description: "Une vraie dégustation : des personnes autour d'une table, une cuvée présentée. Pas de verres levés (loi Évin).",
+      type: "imageAvecAlt",
+      group: "sections",
+    }),
     defineField({
       name: "photoPleineLargeur",
       title: "Grande photo pleine largeur",

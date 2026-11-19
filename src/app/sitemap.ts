@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
-import { SITE_URL } from "@/i18n/metadata";
+import { SITE_URL, withSlash } from "@/i18n/metadata";
 import { defaultLocale, type Locale, type StaticPathname } from "@/i18n/routing";
 import { getArticleSlugs, getVigneronSlugs } from "@/sanity/content";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
@@ -42,7 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
-  const url = (href: Href, locale: Locale) => SITE_URL + getPathname({ href, locale });
+  const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));
   return hrefs.flatMap((href) =>
     locales.map((locale) => ({
       url: url(href, locale),

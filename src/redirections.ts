@@ -6,7 +6,7 @@
 // sitemap de l'ancien site (novembre 2026).
 import type { Redirect } from "next/dist/lib/load-custom-routes";
 
-const r = (source: string, destination: string): Redirect => ({ source, destination, permanent: true });
+const r = (source: string, destination: string): Redirect => ({ source, destination, statusCode: 301 });
 
 /** Anciennes pages -> nouvelles. */
 const pages: Redirect[] = [
@@ -55,13 +55,13 @@ const liensCourts: Redirect[] = [
     source: "/",
     has: [{ type: "query" as const, key: "p", value: id }],
     destination: `/${slug}/`,
-    permanent: true,
+    statusCode: 301 as const,
   })),
   ...Object.entries(PAGES).map(([id, slug]) => ({
     source: "/",
     has: [{ type: "query" as const, key: "page_id", value: id }],
     destination: `/${slug}/`,
-    permanent: true,
+    statusCode: 301 as const,
   })),
 ];
 

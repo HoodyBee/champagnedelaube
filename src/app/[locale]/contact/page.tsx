@@ -8,6 +8,8 @@ import { localizedAlternates, robotsFor } from "@/i18n/metadata";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
+import { getPageContent } from "@/sanity/content";
+import { Photo } from "@/components/ui/Photo";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages, socialLinks } from "@/sanity/queries";
 
@@ -29,7 +31,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
   const t = await getTranslations("contactPage");
   const tSocial = await getTranslations("social");
   const tFooter = await getTranslations("footer");
-  const [page, reglages] = await Promise.all([getPage("contact"), getReglages()]);
+  const [page, reglages, contenu] = await Promise.all([getPage("contact"), getReglages(), getPageContent("contact", locale)]);
   const titre = localize(page?.titre, locale) ?? t("title");
 
   return (
@@ -41,6 +43,11 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
           <h1 className="text-titre-post">{titre}</h1>
           <p className="mt-space-3 text-[1.125rem] text-gris-chaud">{localize(page?.intro, locale) ?? t("intro")}</p>
 
+          {contenu.image && (
+            <div className="mt-space-4 max-w-xs overflow-hidden rounded-carte">
+              <Photo image={contenu.image} ratio="4/5" sizes="320px" />
+            </div>
+          )}
           <h2 className="mt-space-4 text-sur-titre text-bronze">{t("details")}</h2>
           <ul className="mt-space-2 space-y-space-1">
             <li className="flex items-center gap-space-1">

@@ -12,6 +12,8 @@ export function Photo({
   sizes,
   priority,
   compactMobile,
+  placeholder = "vitrail",
+  placeholderText,
   className = "",
 }: {
   image?: Img | null;
@@ -21,12 +23,16 @@ export function Photo({
   /** Conservé pour compatibilité : le visuel provisoire n'affiche plus de texte. */
   placeholderLabel?: string;
   className?: string;
-  /** Image d'ouverture : sur mobile, bandeau bas (16:9, un tiers de l'écran au plus) pour laisser lire le titre. */
+  /** Sans image : « vitrail » (motif décoratif) ou « sobre » (crème uni, pour un emplacement de photo principale). */
+  placeholder?: "vitrail" | "sobre";
+  /** Mention discrète affichée dans l'emplacement « sobre » (ex. « Photographie à venir »). */
+  placeholderText?: string;
+  /** Image d'ouverture : sur mobile et tablette, bandeau bas (16:9, un tiers de l'écran au plus) pour laisser lire le titre. */
   compactMobile?: boolean;
 }) {
   return (
     <div
-      className={`relative overflow-hidden bg-creme-clair ${compactMobile ? "aspect-video max-h-[33svh] w-full sm:max-h-none sm:aspect-[var(--ar)]" : ""} ${className}`}
+      className={`relative overflow-hidden bg-creme-clair ${compactMobile ? "aspect-video max-h-[33svh] w-full lg:max-h-none lg:aspect-[var(--ar)]" : ""} ${className}`}
       style={compactMobile ? ({ "--ar": ratio.replace("/", " / ") } as React.CSSProperties) : { aspectRatio: ratio }}
     >
       {image ? (
@@ -42,7 +48,13 @@ export function Photo({
         />
       ) : (
         // Visuel provisoire sobre (motif vitrail très discret), en attendant la photo.
-        <div data-photo-a-venir className="vitrail absolute inset-0 border border-filet" aria-hidden="true" />
+        placeholder === "sobre" ? (
+          <div data-photo-a-venir className="absolute inset-0 flex items-end justify-center border border-filet bg-gradient-to-b from-creme-clair to-creme/60 p-space-2">
+            {placeholderText && <span className="text-sur-titre-petit text-gris-chaud/70">{placeholderText}</span>}
+          </div>
+        ) : (
+          <div data-photo-a-venir className="vitrail absolute inset-0 border border-filet" aria-hidden="true" />
+        )
       )}
     </div>
   );
