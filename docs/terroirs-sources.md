@@ -1,0 +1,64 @@
+# Terroirs : sources et vérifications
+
+Textes rédigés pour l'étape 8, dans `content/terroirs/*.json` (français, anglais, néerlandais, italien). Chaque fait a été recoupé avec **au moins deux sources**. Quand les sources se contredisent, l'information **n'a pas été gardée** : elle est listée en bas de ce document.
+
+> Limite technique : les sites officiels (champagne.fr, inao.gouv.fr, aube-champagne.com, troyeslachampagne.com, maisons-champagne.com) ne pouvaient pas être ouverts directement depuis l'environnement de travail. Ils ont été consultés via un moteur de recherche (extraits des pages). Une relecture rapide de votre part sur ces sites est conseillée avant publication.
+
+## Faits retenus et sources
+
+| Fait | Sources |
+|---|---|
+| Vignoble de Champagne ≈ 34 000 ha, 319 communes, 5 départements (Marne, Aube, Aisne, Haute-Marne, Seine-et-Marne) | [Comité Champagne – le vignoble](https://www.champagne.fr/en/about-champagne/a-great-blended-wine/the-champagne-region) · [Union des Maisons de Champagne – aire géographique](https://maisons-champagne.com/en/appellation/geographical-area/) · [Cahier des charges AOC Champagne (INAO)](https://extranet.inao.gouv.fr/fichier/CDCPNOChampagne20240911.pdf) |
+| Aube ≈ 8 000 ha, un bon quart de l'appellation | [Aube Champagne – un vignoble aux racines profondes](https://www.aube-champagne.com/fr/l-aube-en-champagne-un-vignoble-aux-racines-profondes/) · [UMC – Côte des Bar](https://maisons-champagne.com/fr/appellation/aire-geographique/cote-des-bar/) · [Guide touristique Côte des Bar (Aube Champagne)](https://www.aube-champagne.com/assets/uploads/2020/01/Guide-Touristique-Cote-des-Bar-2019-2020.pdf) |
+| Double influence climatique (océanique / continentale) | [Comité Champagne – le climat](https://www.champagne.fr/en/about-champagne/the-champagne-terroir/champagne-and-its-climate) · [Cahier des charges AOC Champagne](https://www.champagne.fr/system/files/2024-03/Cahier_des_charges_appellation.pdf) |
+| Côte des Bar : deux secteurs, Barséquanais (Bar-sur-Seine) et Barsuraubois (Bar-sur-Aube) | [UMC – The Côte des Bar](https://maisons-champagne.com/en/appellation/geographical-area/the-cote-des-bar/) · [Vinovonk – Côte des Bar](https://vinovonk.com/en/liquid-library/cote-des-bar-aube-champagne/) · [Que faire dans l'Aube](https://quefairedanslaube.fr/champagne-de-la-cote-des-bar/) |
+| Côte des Bar : marnes et calcaires du Kimméridgien (Jurassique supérieur), comme à Chablis | [La Libre – terroir du pinot noir](https://www.lalibre.be/supplement/essentielle-vino/2018/01/16/champagnes-de-laube-13-le-terroir-du-pinot-noir-ZUI65INNUFGGDGFDIRR2VR3I6U/) · [Vinovonk](https://vinovonk.com/en/liquid-library/cote-des-bar-aube-champagne/) · [Jacques Chaput](https://www.jacques-chaput.com/post/la-cote-des-bar-terroir-pinot-noir-champagne) |
+| Côte des Bar : pinot noir > 80 % (les sources donnent 83 à 86 %) | [Aube Champagne](https://www.aube-champagne.com/en/portfolio-post/the-champagne/) · [Jacques Chaput](https://www.jacques-chaput.com/post/la-cote-des-bar-terroir-pinot-noir-champagne) · [Que faire dans l'Aube](https://quefairedanslaube.fr/champagne-de-la-cote-des-bar/) |
+| Baroville : l'un des vignobles les plus étendus du Barsuraubois | [UMC – Baroville](https://maisons-champagne.com/en/village/baroville) · [vin-vigne.com – Baroville](http://www.vin-vigne.com/commune/Baroville-10200.html) |
+| Le Barsuraubois s'étend jusqu'à la Haute-Marne (Colombey-les-Deux-Églises) | [Winetomas – Bar-sur-Aubois](https://winetomas.wordpress.com/champagne-villages/bar-sur-aubois/) · [UMC – aire géographique](https://maisons-champagne.com/en/appellation/geographical-area/) |
+| Révolte des vignerons aubois en 1911 ; loi du 28 juillet 1927 qui réintègre l'Aube | [Wikipédia – Révolte de 1911](https://fr.wikipedia.org/wiki/R%C3%A9volte_des_vignerons_de_la_Champagne_en_1911) · [INA – Panorama Grand Est](https://fresques.ina.fr/panorama-grand-est/fiche-media/GRDEST00151/la-revolte-des-vignerons-aubois-en-1911.html) · [Aube Champagne](https://www.aube-champagne.com/fr/l-aube-en-champagne-un-vignoble-aux-racines-profondes/) |
+| Route touristique du Champagne, Côte des Bar ≈ 220 km au départ de Bar-sur-Seine ou Bar-sur-Aube | [Aube Champagne – Route touristique (PDF)](https://www.aube-champagne.com/assets/uploads/2015/03/La_Route_Touristique_du_Champagne.pdf) · [Routes touristiques – Côte des Bar](https://www.routes-touristiques.com/tourisme/les-circuits/champagne-ardenne/route-touristique-du-champagne-cote-des-bar.html) |
+| Essoyes : Renoir y a passé près de trente étés, atelier visitable (« Du côté des Renoir ») | [Explore Grand Est – étape Essoyes](https://www.explore-grandest.com/en/steps/rtc-stage-13-around-essoyes/) · [Aube Champagne – Chemins de Renoir](https://www.aube-champagne.com/fr/poi/chemins-de-renoir/) |
+| Colombey-les-Deux-Églises : Mémorial Charles de Gaulle | [Explore Grand Est – Route touristique](https://www.explore-grandest.com/en/itineraries/the-champagne-tourist-route/) · [Aube Champagne – Bar-sur-Aube](https://www.aube-champagne.com/en/portfolio-post/visit-bar-sur-aube/) |
+| Les Riceys : seule commune aux 3 appellations (Champagne, Coteaux champenois, Rosé des Riceys) | [Aube Champagne – Les Riceys 3 AOC](https://www.aube-champagne.com/fr/les-riceys-3-aoc-aube/) · [Office de tourisme Côte des Bar](https://www.tourisme-cotedesbar.com/patrimoine/les-riceys-plus-grand-terroir-de-champagne/) · [Wikipédia – Rosé des Riceys](https://fr.m.wikipedia.org/wiki/Ros%C3%A9-des-riceys) |
+| Les Riceys : plus grand vignoble communal de Champagne, plus de 840 ha (sources : 844, 866 ou 870 ha) | [Office de tourisme Côte des Bar](https://www.tourisme-cotedesbar.com/patrimoine/les-riceys-plus-grand-terroir-de-champagne/) · [Aube Champagne – Rosé des Riceys](https://www.aube-champagne.com/en/portfolio-post/rose-des-riceys-a-rare-wine/) · [Les Riceys – terroir](https://www.les-riceys.fr/cat%C3%A9gories/terroir/) |
+| Les Riceys : trois anciens bourgs (Ricey-Bas, Ricey-Haut, Ricey-Haute-Rive), trois évêchés | [Office de tourisme Côte des Bar](https://www.tourisme-cotedesbar.com/patrimoine/les-riceys-plus-grand-terroir-de-champagne/) · [Les Riceys – dépliant](https://www.les-riceys.fr/wp-content/uploads/2023/05/depliant_les_riceys_web.pdf) |
+| Rosé des Riceys : vin tranquille, 100 % pinot noir, AOC par décret du 8 décembre 1947, récolte sur la seule commune | [INAO – Rosé des Riceys](https://www.inao.gouv.fr/produit/rose-des-riceys-21050) · [Cahier des charges Rosé des Riceys (INAO)](https://extranet.inao.gouv.fr/fichier/3-CDC-Ros%C3%A9-des-Riceys-PNO.pdf) |
+| Rosé des Riceys : environ 350 ha délimités, une petite partie seulement produite | [Les Riceys – terroir](https://www.les-riceys.fr/cat%C3%A9gories/terroir/) · [Vins Vignes Vignerons](https://www.vinsvignesvignerons.com/Les-regions-viticoles-de-France/Region-viticole-Champagne/DECOUVREZ-LA-REGION-CHAMPAGNE/Les-appellations/(aoc)/Les-appellations/Rose-des-Riceys-AOC-AOP) · [ABC du vin](https://www.abcduvin.com/index.php/term/,6c53aa9f5fa7aa706e53aeaba3ab.xhtml) |
+| Montgueux : à une dizaine de km de Troyes, exposition sud / sud-est | [Troyes La Champagne – Montgueux](https://en.troyeslachampagne.com/the-champagne/montgueux-champagne-at-the-gateway-to-troyes/) · [Champagne Béliard-Lassaigne](https://champagne-beliard-lassaigne.fr/montgueux/) |
+| Montgueux : chardonnay très majoritaire (85 à 90 % selon les sources), un peu de pinot noir et de meunier | [Troyes La Champagne](https://www.troyeslachampagne.com/savourez/le-champagne/montgueux-le-champagne-aux-portes-de-troyes/) · [Champagne Eric Therrey (La Patafiole)](https://www.lapatafiole.fr/brand/76--champagne-eric-therrey-) |
+| Montgueux : craie du Turonien (Crétacé supérieur) | [Champagne Jaillant](https://champagne-jaillant.com/le-vignoble/) · [Troyes La Champagne – De vignes et de craie](https://www.troyeslachampagne.com/decouvrez/troyes-la-champagne/toutes-les-communes/de-vignes-et-de-craie/) |
+| Montgueux : surnom « Montrachet de la Champagne » ; arômes d'agrumes et de fruits exotiques souvent cités | [Troyes La Champagne](https://en.troyeslachampagne.com/champagne-at-the-gates-of-troyes/) · [Sommeliers International](https://www.sommeliers-international.com/fr/escapade/a-laube-dune-renommee-florissante) |
+| Montgueux : appellation Champagne en 1927 ; plants de chardonnay partis au Japon à la fin du XIXe siècle | [Champagne Jaillant](https://champagne-jaillant.com/le-vignoble/) · [Troyes La Champagne](https://en.troyeslachampagne.com/the-champagne/montgueux-champagne-at-the-gateway-to-troyes/) |
+| Villenauxe-la-Grande : une centaine d'hectares (101,8 ou 104 ha), majorité de chardonnay, un peu de pinot noir | [UMC – Villenauxe-la-Grande](https://maisons-champagne.com/fr/commune/villenauxe-la-grande) · [Petit Futé](https://www.petitfute.com/v12359-villenauxe-la-grande-10370/c1173-visites-points-d-interet/c976-archeologie-artisanat-science-et-technique/c977-agriculture-viticulture/333233-vignoble-et-champagne.html) · [Champagne Hélène Monleau](https://www.champagne-monleau.com/cote-de-sezanne/) |
+| Villenauxe-la-Grande : vallée de la Noxe ; domaines qui reçoivent sur rendez-vous ; pinot blanc et petit meslier chez certains | [Aube Champagne – Vallée de la Noxe](https://www.aube-champagne.com/en/poi/vignoble-de-champagne-et-vallee-de-la-noxe/) · [Aube Champagne – Champagne Wirtz](https://www.aube-champagne.com/en/poi/champagne-wirtz/) · [Comité Champagne – Champagne François Oudard](https://www.champagne.fr/en/visit-champagne/directory-champagne-producers/champagne-francois-oudard) |
+| Pinot blanc dans la Côte des Bar | Information fournie par vos soins (Champagne Moutard-Dangin, Polisy) · [Aube Champagne – Champagne Wirtz](https://www.aube-champagne.com/en/poi/champagne-wirtz/) |
+
+## Informations écartées (sources en désaccord) : à vous de trancher
+
+1. **Surface de Montgueux** : 180 ha, 200 ha, 208 ha ou 215 ha selon les sources. Non affichée.
+2. **Part exacte du chardonnay à Montgueux** : 85 % ou 90 %. Écrit « très majoritaire ».
+3. **Villenauxe-la-Grande : Côte de Sézanne ou Côte des Bar ?** Un producteur la rattache au terroir de la Côte de Sézanne ; l'Union des Maisons de Champagne la classe dans la Côte des Bar (Barséquanais). Non précisé dans le texte.
+4. **Villenauxe-la-Grande : date d'entrée dans l'appellation** (1970 selon une seule source) et **nature des sols** (aucune source fiable trouvée). Non affichés.
+5. **Surface du Rosé des Riceys réellement produite** : 20, 35, 40-50 ou 100 ha selon les sources. Écrit « une petite partie ».
+6. **Surface exacte des Riceys** : 844, 866 ou 870 ha. Écrit « plus de 840 hectares ».
+7. **Surface de chaque secteur** (Barséquanais ≈ 5 470 ha, Barsuraubois ≈ 2 400 ha) : une seule source détaillée (UMC). Non affichée.
+8. **Longueur totale de la Route touristique du Champagne** (700 ou 970 km selon les sources). Seule la boucle Côte des Bar (≈ 220 km) est citée.
+
+## Emplacements « [VOTRE ANECDOTE] »
+
+- Les Terroirs Aubois : une histoire de vigneron entendue lors d'une visite.
+- Côte des Bar : votre plus beau souvenir dans un village ; une rencontre avec un vigneron du Barsuraubois.
+- Les Riceys : votre première rencontre avec un Rosé des Riceys.
+- Montgueux : votre point de vue préféré sur la colline, ou le vigneron qui vous l'a fait découvrir.
+- Villenauxe-la-Grande : une découverte faite sur place.
+
+## Mots-clés principaux (un par page)
+
+| Page | Mot-clé principal |
+|---|---|
+| Les Terroirs Aubois (`/le-terroir-de-laube/`) | terroir de l'Aube |
+| Côte des Bar | champagne Côte des Bar |
+| Les Riceys | champagne Les Riceys (secondaire : Rosé des Riceys) |
+| Montgueux | champagne Montgueux |
+| Villenauxe-la-Grande | champagne Villenauxe-la-Grande |

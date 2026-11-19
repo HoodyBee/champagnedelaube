@@ -1,0 +1,154 @@
+{
+  "cle": "villenauxe",
+  "nom": "Villenauxe-la-Grande",
+  "motCle": "champagne Villenauxe-la-Grande",
+  "seo": {
+    "title": {
+      "fr": "Champagne de Villenauxe-la-Grande : le vignoble du nord-ouest de l'Aube | Champagne de l'Aube",
+      "en": "Villenauxe-la-Grande champagne: the vineyard of the north-west Aube | Champagne de l'Aube",
+      "nl": "Champagne uit Villenauxe-la-Grande: de wijngaard van het noordwesten van de Aube | Champagne de l'Aube",
+      "it": "Champagne di Villenauxe-la-Grande: il vigneto del nord-ovest dell'Aube | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Villenauxe-la-Grande, au nord-ouest de l'Aube, à la limite de la Marne : une centaine d'hectares de vignes, majoritairement en chardonnay, et des vignerons indépendants.",
+      "en": "Villenauxe-la-Grande, in the north-west of the Aube, on the border with the Marne: around a hundred hectares of vines, mostly chardonnay, and independent winemakers.",
+      "nl": "Villenauxe-la-Grande, in het noordwesten van de Aube, aan de grens met de Marne: zo'n honderd hectare wijngaard, vooral chardonnay, en onafhankelijke wijnmakers.",
+      "it": "Villenauxe-la-Grande, nel nord-ovest dell'Aube, al confine con la Marne: un centinaio di ettari di vigne, in maggioranza chardonnay, e vignaioli indipendenti."
+    }
+  },
+  "accroche": {
+    "fr": "Au nord-ouest de l'Aube, un vignoble discret qui regarde vers la Marne.",
+    "en": "In the north-west of the Aube, a discreet vineyard looking towards the Marne.",
+    "nl": "In het noordwesten van de Aube, een bescheiden wijngaard die naar de Marne kijkt.",
+    "it": "Nel nord-ovest dell'Aube, un vigneto discreto che guarda verso la Marne."
+  },
+  "intro": {
+    "fr": "Loin de la Côte des Bar, Villenauxe-la-Grande cultive une centaine d'hectares de vignes, surtout du chardonnay. Un terroir à part, à la limite du département de la Marne.",
+    "en": "Far from the Côte des Bar, Villenauxe-la-Grande farms around a hundred hectares of vines, mostly chardonnay. A terroir apart, on the border with the Marne department.",
+    "nl": "Ver van de Côte des Bar bewerkt Villenauxe-la-Grande zo'n honderd hectare wijngaard, vooral chardonnay. Een apart terroir, aan de grens met het departement Marne.",
+    "it": "Lontano dalla Côte des Bar, Villenauxe-la-Grande coltiva un centinaio di ettari di vigne, soprattutto chardonnay. Un terroir a parte, al confine con il dipartimento della Marne."
+  },
+  "reperes": [
+    {
+      "label": {
+        "fr": "Vignoble",
+        "en": "Vineyard",
+        "nl": "Wijngaard",
+        "it": "Vigneto"
+      },
+      "valeur": {
+        "fr": "Une centaine d'hectares",
+        "en": "Around a hundred hectares",
+        "nl": "Zo'n honderd hectare",
+        "it": "Un centinaio di ettari"
+      }
+    },
+    {
+      "label": {
+        "fr": "Cépage principal",
+        "en": "Main grape",
+        "nl": "Belangrijkste ras",
+        "it": "Vitigno principale"
+      },
+      "valeur": {
+        "fr": "Chardonnay",
+        "en": "Chardonnay",
+        "nl": "Chardonnay",
+        "it": "Chardonnay"
+      }
+    },
+    {
+      "label": {
+        "fr": "Situation",
+        "en": "Location",
+        "nl": "Ligging",
+        "it": "Posizione"
+      },
+      "valeur": {
+        "fr": "Nord-ouest de l'Aube, vallée de la Noxe",
+        "en": "North-west Aube, Noxe valley",
+        "nl": "Noordwesten van de Aube, vallei van de Noxe",
+        "it": "Nord-ovest dell'Aube, valle della Noxe"
+      }
+    }
+  ],
+  "villages": [
+    "Villenauxe-la-Grande"
+  ],
+  "cepagesDominants": [
+    "chardonnay",
+    "pinot-noir"
+  ],
+  "sections": [
+    {
+      "titre": {
+        "fr": "Un vignoble à part",
+        "en": "A vineyard apart",
+        "nl": "Een aparte wijngaard",
+        "it": "Un vigneto a parte"
+      },
+      "paragraphes": [
+        {
+          "fr": "Villenauxe-la-Grande se trouve au nord-ouest de l'Aube, dans la vallée de la Noxe, tout près de la Marne. Son vignoble, d'une centaine d'hectares, est le plus éloigné de la [Côte des Bar](/la-cote-des-bar) : un autre visage du champagne aubois.",
+          "en": "Villenauxe-la-Grande lies in the north-west of the Aube, in the Noxe valley, very close to the Marne. Its vineyard of around a hundred hectares is the furthest from the [Côte des Bar](/la-cote-des-bar): another face of Aube champagne.",
+          "nl": "Villenauxe-la-Grande ligt in het noordwesten van de Aube, in de vallei van de Noxe, vlak bij de Marne. De wijngaard van zo'n honderd hectare ligt het verst van de [Côte des Bar](/la-cote-des-bar): een ander gezicht van de champagne uit de Aube.",
+          "it": "Villenauxe-la-Grande si trova nel nord-ovest dell'Aube, nella valle della Noxe, vicinissima alla Marne. Il suo vigneto di un centinaio di ettari è il più lontano dalla [Côte des Bar](/la-cote-des-bar): un altro volto dello champagne dell'Aube."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le chardonnay en majorité",
+        "en": "Mostly chardonnay",
+        "nl": "Vooral chardonnay",
+        "it": "Chardonnay in maggioranza"
+      },
+      "paragraphes": [
+        {
+          "fr": "Comme à [Montgueux](/montgueux), le chardonnay domine, complété par du pinot noir. Certains vignerons cultivent aussi des cépages anciens, comme le pinot blanc ou le petit meslier.",
+          "en": "As in [Montgueux](/montgueux), chardonnay dominates, completed by pinot noir. Some winemakers also grow old varieties, such as pinot blanc or petit meslier.",
+          "nl": "Zoals in [Montgueux](/montgueux) overheerst chardonnay, aangevuld met pinot noir. Sommige wijnmakers telen ook oude rassen, zoals pinot blanc of petit meslier.",
+          "it": "Come a [Montgueux](/montgueux), domina lo chardonnay, completato dal pinot noir. Alcuni vignaioli coltivano anche vitigni antichi, come il pinot blanc o il petit meslier."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Des vignerons qui ouvrent leurs portes",
+        "en": "Winemakers who open their doors",
+        "nl": "Wijnmakers die hun deuren openen",
+        "it": "Vignaioli che aprono le porte"
+      },
+      "paragraphes": [
+        {
+          "fr": "Plusieurs domaines indépendants accueillent les visiteurs sur rendez-vous, pour une visite des caves ou une balade dans les vignes.",
+          "en": "Several independent estates welcome visitors by appointment, for a cellar visit or a walk in the vines.",
+          "nl": "Verschillende onafhankelijke domeinen ontvangen bezoekers op afspraak, voor een kelderbezoek of een wandeling door de wijngaard.",
+          "it": "Diverse tenute indipendenti accolgono i visitatori su appuntamento, per una visita delle cantine o una passeggiata tra le vigne."
+        },
+        {
+          "fr": "[VOTRE ANECDOTE] Une découverte que vous avez faite à Villenauxe-la-Grande.",
+          "en": "[VOTRE ANECDOTE] Something you discovered in Villenauxe-la-Grande.",
+          "nl": "[VOTRE ANECDOTE] Iets wat u in Villenauxe-la-Grande ontdekte.",
+          "it": "[VOTRE ANECDOTE] Una scoperta che avete fatto a Villenauxe-la-Grande."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Goûter ce terroir",
+        "en": "Taste this terroir",
+        "nl": "Dit terroir proeven",
+        "it": "Assaggiare questo terroir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
+          "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
+          "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
+          "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
+        }
+      ]
+    }
+  ]
+}

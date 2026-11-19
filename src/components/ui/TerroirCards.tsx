@@ -3,10 +3,10 @@ import { terroirs } from "@/lib/brand";
 import { terroirPages } from "@/lib/site";
 
 /** Les 4 terroirs : une liste sobre, la couleur du terroir en simple pastille. */
-export function TerroirCards() {
+export function TerroirCards({ exclure }: { exclure?: string } = {}) {
   return (
     <ul className="divide-y divide-filet border-y border-filet">
-      {terroirPages.map((p) => (
+      {terroirPages.filter((p) => p.key !== exclure).map((p) => (
         <li key={p.key}>
           <Link href={p.href} className="group flex min-h-14 items-center gap-space-2 py-space-2 transition-colors">
             <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />

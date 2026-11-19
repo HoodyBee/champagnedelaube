@@ -19,7 +19,7 @@ export function Hero({
   intro?: string;
   image?: Img | null;
   actions?: ReactNode;
-  placeholderLabel: string;
+  placeholderLabel?: string;
 }) {
   return (
     <section className="border-b border-filet bg-creme-clair">

@@ -1,0 +1,175 @@
+{
+  "cle": "montgueux",
+  "nom": "Montgueux",
+  "motCle": "champagne Montgueux",
+  "seo": {
+    "title": {
+      "fr": "Champagne de Montgueux : la colline du chardonnay près de Troyes | Champagne de l'Aube",
+      "en": "Montgueux champagne: the chardonnay hill near Troyes | Champagne de l'Aube",
+      "nl": "Champagne uit Montgueux: de chardonnayheuvel bij Troyes | Champagne de l'Aube",
+      "it": "Champagne di Montgueux: la collina dello chardonnay vicino a Troyes | Champagne de l'Aube"
+    },
+    "description": {
+      "fr": "Montgueux, à une dizaine de kilomètres de Troyes : une colline de craie exposée au sud et au sud-est, plantée très majoritairement de chardonnay.",
+      "en": "Montgueux, about ten kilometres from Troyes: a chalk hill facing south and south-east, planted mostly with chardonnay.",
+      "nl": "Montgueux, op een tiental kilometer van Troyes: een krijtheuvel op het zuiden en zuidoosten, grotendeels beplant met chardonnay.",
+      "it": "Montgueux, a una decina di chilometri da Troyes: una collina di gesso esposta a sud e a sud-est, piantata in gran parte a chardonnay."
+    }
+  },
+  "accroche": {
+    "fr": "Une colline de craie aux portes de Troyes, que l'on surnomme le « Montrachet de la Champagne ».",
+    "en": "A chalk hill on the edge of Troyes, nicknamed the \"Montrachet of Champagne\".",
+    "nl": "Een krijtheuvel aan de rand van Troyes, bijgenaamd de \"Montrachet van de Champagne\".",
+    "it": "Una collina di gesso alle porte di Troyes, soprannominata il \"Montrachet della Champagne\"."
+  },
+  "intro": {
+    "fr": "À une dizaine de kilomètres de Troyes, la colline de Montgueux est un vignoble à part dans l'Aube. Ici, ce n'est pas le pinot noir qui domine, mais le chardonnay.",
+    "en": "About ten kilometres from Troyes, the hill of Montgueux is a vineyard apart in the Aube. Here, it is not pinot noir that dominates, but chardonnay.",
+    "nl": "Op een tiental kilometer van Troyes is de heuvel van Montgueux een aparte wijngaard in de Aube. Hier overheerst niet de pinot noir, maar de chardonnay.",
+    "it": "A una decina di chilometri da Troyes, la collina di Montgueux è un vigneto a sé nell'Aube. Qui non domina il pinot noir, ma lo chardonnay."
+  },
+  "reperes": [
+    {
+      "label": {
+        "fr": "Cépage principal",
+        "en": "Main grape",
+        "nl": "Belangrijkste ras",
+        "it": "Vitigno principale"
+      },
+      "valeur": {
+        "fr": "Chardonnay, très majoritaire",
+        "en": "Chardonnay, by far",
+        "nl": "Chardonnay, veruit",
+        "it": "Chardonnay, nettamente"
+      }
+    },
+    {
+      "label": {
+        "fr": "Sous-sol",
+        "en": "Subsoil",
+        "nl": "Ondergrond",
+        "it": "Sottosuolo"
+      },
+      "valeur": {
+        "fr": "Craie du Turonien",
+        "en": "Turonian chalk",
+        "nl": "Krijt uit het Turonien",
+        "it": "Gesso del Turoniano"
+      }
+    },
+    {
+      "label": {
+        "fr": "Exposition",
+        "en": "Aspect",
+        "nl": "Ligging",
+        "it": "Esposizione"
+      },
+      "valeur": {
+        "fr": "Sud et sud-est",
+        "en": "South and south-east",
+        "nl": "Zuid en zuidoost",
+        "it": "Sud e sud-est"
+      }
+    },
+    {
+      "label": {
+        "fr": "Appellation Champagne",
+        "en": "Champagne appellation",
+        "nl": "Appellatie Champagne",
+        "it": "Denominazione Champagne"
+      },
+      "valeur": {
+        "fr": "Depuis 1927",
+        "en": "Since 1927",
+        "nl": "Sinds 1927",
+        "it": "Dal 1927"
+      }
+    }
+  ],
+  "villages": [
+    "Montgueux"
+  ],
+  "cepagesDominants": [
+    "chardonnay",
+    "pinot-noir",
+    "meunier"
+  ],
+  "sols": {
+    "fr": "Une craie du Turonien, datant du Crétacé supérieur.",
+    "en": "Turonian chalk, from the Upper Cretaceous.",
+    "nl": "Krijt uit het Turonien, uit het Boven-Krijt.",
+    "it": "Gesso del Turoniano, del Cretaceo superiore."
+  },
+  "sections": [
+    {
+      "titre": {
+        "fr": "Une colline de craie",
+        "en": "A chalk hill",
+        "nl": "Een krijtheuvel",
+        "it": "Una collina di gesso"
+      },
+      "paragraphes": [
+        {
+          "fr": "Montgueux tient sur une butte de craie du Turonien, exposée au sud et au sud-est. Un sous-sol bien différent des marnes kimméridgiennes de la [Côte des Bar](/la-cote-des-bar), et qui donne au vignoble sa personnalité.",
+          "en": "Montgueux sits on a mound of Turonian chalk, facing south and south-east. A subsoil very different from the Kimmeridgian marl of the [Côte des Bar](/la-cote-des-bar), and one that gives the vineyard its personality.",
+          "nl": "Montgueux ligt op een krijtheuvel uit het Turonien, op het zuiden en zuidoosten. Een ondergrond die sterk verschilt van de kimmeridgiaanse mergel van de [Côte des Bar](/la-cote-des-bar), en die de wijngaard zijn karakter geeft.",
+          "it": "Montgueux poggia su un rilievo di gesso del Turoniano, esposto a sud e a sud-est. Un sottosuolo molto diverso dalle marne kimmeridgiane della [Côte des Bar](/la-cote-des-bar), che dà al vigneto la sua personalità."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Le royaume du chardonnay",
+        "en": "The kingdom of chardonnay",
+        "nl": "Het rijk van de chardonnay",
+        "it": "Il regno dello chardonnay"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le chardonnay couvre l'essentiel de la colline, complété par un peu de pinot noir et de meunier. On y décrit souvent des arômes d'agrumes et de fruits exotiques, avec une belle tension. Son surnom de « Montrachet de la Champagne » dit l'estime qu'on lui porte.",
+          "en": "Chardonnay covers most of the hill, completed by a little pinot noir and meunier. People often describe citrus and exotic fruit aromas here, with lovely tension. Its nickname, the \"Montrachet of Champagne\", says how highly it is regarded.",
+          "nl": "Chardonnay beslaat het grootste deel van de heuvel, aangevuld met wat pinot noir en meunier. Men beschrijft er vaak aroma's van citrus en exotisch fruit, met mooie spanning. De bijnaam \"Montrachet van de Champagne\" zegt hoezeer hij gewaardeerd wordt.",
+          "it": "Lo chardonnay copre la maggior parte della collina, completato da un po' di pinot noir e meunier. Vi si descrivono spesso aromi di agrumi e frutti esotici, con una bella tensione. Il soprannome di \"Montrachet della Champagne\" dice quanto sia stimato."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "De Montgueux au Japon",
+        "en": "From Montgueux to Japan",
+        "nl": "Van Montgueux naar Japan",
+        "it": "Da Montgueux al Giappone"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le vignoble entre dans l'appellation Champagne en 1927. À la fin du XIXe siècle, des plants de chardonnay de Montgueux sont partis jusqu'au Japon : une histoire étonnante pour une colline si discrète.",
+          "en": "The vineyard joined the Champagne appellation in 1927. At the end of the 19th century, chardonnay cuttings from Montgueux travelled all the way to Japan: a surprising story for such a discreet hill.",
+          "nl": "De wijngaard kreeg in 1927 de appellatie Champagne. Eind 19e eeuw reisden chardonnaystekken uit Montgueux helemaal naar Japan: een verrassend verhaal voor zo'n bescheiden heuvel.",
+          "it": "Il vigneto entra nella denominazione Champagne nel 1927. Alla fine dell'Ottocento, talee di chardonnay di Montgueux partirono fino in Giappone: una storia sorprendente per una collina così discreta."
+        },
+        {
+          "fr": "[VOTRE ANECDOTE] Votre point de vue préféré sur la colline, ou un vigneron qui vous l'a fait découvrir.",
+          "en": "[VOTRE ANECDOTE] Your favourite viewpoint on the hill, or a winemaker who showed it to you.",
+          "nl": "[VOTRE ANECDOTE] Uw favoriete uitzichtpunt op de heuvel, of een wijnmaker die hem u liet ontdekken.",
+          "it": "[VOTRE ANECDOTE] Il vostro punto panoramico preferito sulla collina, o un vignaiolo che ve l'ha fatta scoprire."
+        }
+      ]
+    },
+    {
+      "titre": {
+        "fr": "Goûter ce terroir",
+        "en": "Taste this terroir",
+        "nl": "Dit terroir proeven",
+        "it": "Assaggiare questo terroir"
+      },
+      "paragraphes": [
+        {
+          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
+          "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
+          "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
+          "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
+        }
+      ]
+    }
+  ]
+}

@@ -694,5 +694,16 @@
     "galerie": "En images",
     "reserverTitre": "Réserver : {titre}",
     "autres": "Nos autres dégustations"
+  },
+  "terroirPage": {
+    "sols": "Sols et géologie",
+    "cepages": "Cépages",
+    "villages": "Villages",
+    "secteurs": "Deux secteurs",
+    "autres": "Les autres terroirs aubois",
+    "offrePro": "Découvrir l'offre pro",
+    "carteTitre": "Quatre terroirs",
+    "carteIntro": "De la Côte des Bar à Villenauxe-la-Grande, chaque terroir a son sol, ses cépages et ses vignerons.",
+    "faqTitre": "Vos questions sur le terroir de l'Aube"
   }
 }
