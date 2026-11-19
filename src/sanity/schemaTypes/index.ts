@@ -1,5 +1,6 @@
 import { accueil } from "./documents/accueil";
 import { article } from "./documents/article";
+import { cuvee } from "./documents/cuvee";
 import { espaceEntreprises } from "./documents/espaceEntreprises";
 import { espaceParticuliers } from "./documents/espaceParticuliers";
 import { espacePro } from "./documents/espacePro";
@@ -31,6 +32,7 @@ export const schemaTypes = [
   page,
   terroir,
   vigneron,
+  cuvee,
   experience,
   evenement,
   article,

@@ -31,7 +31,6 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("proPage");
-  const tHome = await getTranslations("home.pro");
   const tArg = await getTranslations("pro.arguments");
   const tNav = await getTranslations("nav");
   const tUi = await getTranslations("ui");
@@ -58,7 +57,7 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
     <>
       <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: tNav("proChr") }]} />
       <Hero
-        surTitre={p.hero.surTitre ?? tHome("surTitre")}
+        surTitre={p.hero.surTitre ?? t("surTitre")}
         titre={p.hero.titre ?? t("h1")}
         intro={p.hero.intro ?? t("intro")}
         image={p.hero.image}

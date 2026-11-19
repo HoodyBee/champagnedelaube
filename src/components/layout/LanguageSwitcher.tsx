@@ -11,8 +11,9 @@ type Props = {
   /** Langues proposées (réglage « Langues actives » de Sanity). */
   locales?: readonly Locale[];
   /** "menu" : liste déroulante (en-tête) ; "inline" : liste de boutons (menu mobile,
-   *  vérification d'âge) ; "footer" : drapeaux sur fond sombre (pied de page). */
-  variant?: "menu" | "inline" | "footer";
+   *  vérification d'âge) ; "footer" : drapeaux sur fond sombre (pied de page) ;
+   *  "compact" : « FR / EN » discret, en teinte secondaire (barre de navigation). */
+  variant?: "menu" | "inline" | "footer" | "compact";
   /** Titre accessible de la liste (variantes "inline" et "footer"). */
   label?: string;
   onNavigate?: () => void;
@@ -66,7 +67,11 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
         onNavigate?.();
       }}
       className={
-        variant === "footer"
+        variant === "compact"
+          ? `inline-flex min-h-10 items-center px-1 text-sur-titre-petit transition-colors ${
+              l === locale ? "text-anthracite" : "text-gris-chaud hover:text-bronze"
+            }`
+          : variant === "footer"
           ? `inline-flex min-h-11 items-center gap-space-1 rounded-etiquette border px-space-2 text-sur-titre transition-colors ${
               l === locale ? "border-or text-blanc" : "border-blanc/20 text-blanc hover:border-champagne"
             }`
@@ -93,6 +98,21 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
       {variant === "menu" && <span className="text-sur-titre text-gris-chaud">{l.toUpperCase()}</span>}
     </Link>
   ));
+
+  if (variant === "compact") {
+    return (
+      <nav aria-label={label ?? t("label")}>
+        <ul className="flex items-center">
+          {links.map((link, i) => (
+            <li key={link.key} className="flex items-center">
+              {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud/40">/</span>}
+              {link}
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  }
 
   if (variant !== "menu") {
     return (

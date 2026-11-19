@@ -13,7 +13,7 @@ export const defaultLocale: Locale = "fr";
  * sont masquées des sélecteurs, en noindex et hors sitemap : on les réactive en
  * cochant la langue dans Sanity.
  */
-export const defaultActiveLocales: readonly Locale[] = ["fr", "en", "nl", "it"];
+export const defaultActiveLocales: readonly Locale[] = ["fr", "en"];
 
 export const localeNames: Record<Locale, string> = {
   fr: "Français",

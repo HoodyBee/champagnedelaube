@@ -110,7 +110,7 @@ const api = (path, body) =>
 
 // Sauvegarde de l'existant (brouillons et versions publiées) avant toute modification.
 const ids = docs.flatMap((d) => [d._id, d._id.replace("drafts.", "")]);
-const existants = await api(`/data/query/${DATASET}?query=${encodeURIComponent("*[_id in $ids]")}&$ids=${encodeURIComponent(JSON.stringify(ids))}`);
+const existants = await api(`/data/query/${DATASET}?perspective=raw&query=${encodeURIComponent("*[_id in $ids]")}&$ids=${encodeURIComponent(JSON.stringify(ids))}`);
 writeFileSync(resolve(root, "docs/import-terroirs-sauvegarde.json"), JSON.stringify(existants.result, null, 2));
 
 const mutations = [];

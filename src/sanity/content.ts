@@ -250,6 +250,14 @@ export async function getAccueil(locale: Locale) {
     entreeParticuliers?: EntreeRaw;
     terroir?: BlocRaw;
     photoPleineLargeur?: SanityImg;
+    heroCtaDegustation?: Localized;
+    heroCtaTerroirs?: Localized;
+    pepitesTitre?: Localized;
+    pepitesIntro?: Localized;
+    degustationTitre?: Localized;
+    degustationAccroche?: Localized;
+    degustationTexte?: Localized;
+    degustationImage?: SanityImg;
     selectionTitre?: Localized;
     selectionTexte?: Localized;
     reassurance?: ArgumentRaw[];
@@ -261,7 +269,8 @@ export async function getAccueil(locale: Locale) {
       entreeEntreprises{surTitre, titre, texte, bouton, image ${IMG}},
       entreeParticuliers{surTitre, titre, texte, bouton, image ${IMG}},
       terroir{icone, surTitre, titre, texte, points, image ${IMG}},
-      photoPleineLargeur ${IMG}, selectionTitre, selectionTexte,
+      photoPleineLargeur ${IMG}, selectionTitre, selectionTexte, heroCtaDegustation, heroCtaTerroirs, pepitesTitre, pepitesIntro,
+      degustationTitre, degustationAccroche, degustationTexte, degustationImage ${IMG},
       reassurance, seo}`,
     tags: ["accueil"],
   });
@@ -279,6 +288,14 @@ export async function getAccueil(locale: Locale) {
     },
     terroir: blocOf(a?.terroir, locale),
     photoPleineLargeur: toImg(a?.photoPleineLargeur, locale, 2400),
+    heroCtaDegustation: L(a?.heroCtaDegustation, locale),
+    heroCtaTerroirs: L(a?.heroCtaTerroirs, locale),
+    pepitesTitre: L(a?.pepitesTitre, locale),
+    pepitesIntro: L(a?.pepitesIntro, locale),
+    degustationTitre: L(a?.degustationTitre, locale),
+    degustationAccroche: L(a?.degustationAccroche, locale),
+    degustationTexte: L(a?.degustationTexte, locale),
+    degustationImage: toImg(a?.degustationImage, locale, 1600),
     selectionTitre: L(a?.selectionTitre, locale),
     selectionTexte: L(a?.selectionTexte, locale),
     reassurance: argumentsOf(a?.reassurance, locale),
@@ -845,4 +862,43 @@ export async function getTerroirAube(locale: Locale): Promise<TerroirAubePage> {
     faq: faq.length ? faq : a.faq.map((q) => ({ question: tr(q.question, locale), reponse: tr(q.reponse, locale) })),
     seo: { ...seoOf(p?.seo, locale), title: L(p?.seo?.title, locale) ?? tr(a.seo.title, locale), description: L(p?.seo?.description, locale) ?? tr(a.seo.description, locale) },
   };
+}
+
+// ---------------------------------------------------------------------------
+// Cuvées de « Notre sélection du moment » (aucun prix)
+// ---------------------------------------------------------------------------
+export type Cuvee = {
+  id: string;
+  nom: string;
+  domaine?: string;
+  vigneronSlug?: string;
+  village?: string;
+  photo: Img | null;
+  histoire?: string;
+};
+
+/** Cuvées publiées ; `accueil` : seulement celles à afficher sur l'accueil. */
+export async function getCuvees(locale: Locale, { accueil = false } = {}): Promise<Cuvee[]> {
+  const list = await sanityFetch<
+    { _id: string; nom?: string; domaineTexte?: string; vigneron?: { nom?: string; slug?: string; village?: string }; photo?: SanityImg; histoire?: Localized }[]
+  >({
+    query: `*[_type == "cuvee" && defined(nom) ${accueil ? "&& enAvant != false" : ""}] | order(coalesce(ordre, 10) asc){
+      _id, nom, domaineTexte, vigneron->{nom, "slug": slug.current, village}, photo ${IMG}, histoire}`,
+    tags: ["cuvee", "vigneron"],
+  });
+  return (list ?? []).flatMap((c) =>
+    c.nom
+      ? [
+          {
+            id: c._id,
+            nom: c.nom,
+            domaine: c.vigneron?.nom ?? c.domaineTexte,
+            vigneronSlug: c.vigneron?.slug,
+            village: c.vigneron?.village,
+            photo: toImg(c.photo, locale, 900),
+            histoire: L(c.histoire, locale),
+          },
+        ]
+      : [],
+  );
 }

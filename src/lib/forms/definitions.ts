@@ -29,7 +29,7 @@ export type FormDef = {
    * « Votre demande concerne » (formulaire de contact) ; "choix" : selon le champ
    * « Vous êtes » (formulaire « Recevoir notre sélection »).
    */
-  profil: "pro" | "entreprises" | "particuliers" | "vignerons" | "sujet" | "choix";
+  profil: "pro" | "entreprises" | "particuliers" | "vignerons" | "sujet" | "choix" | "occasion";
   /** "emailOuTelephone" : au moins l'un des deux est demandé (formulaires particuliers). */
   contact: "email" | "emailOuTelephone";
 };
@@ -147,6 +147,21 @@ export const forms = {
     profil: "particuliers",
     contact: "email",
     fields: [nom, email(), telephone(), { name: "places", type: "number", required: true, half: true, min: 1, max: 50 }, message()],
+  },
+  /** Dégustations privées : « Organiser une dégustation privée ». Liste Brevo selon l'occasion. */
+  degustationPrivee: {
+    profil: "occasion",
+    contact: "email",
+    fields: [
+      { name: "occasion", type: "select", required: true, half: true, options: ["amis", "famille", "anniversaire", "groupe", "sejour", "entreprise"] },
+      { name: "lieu", type: "select", half: true, options: ["domicile", "privatise", "partenaire", "troyes", "aDefinir"] },
+      { name: "participants", type: "number", required: true, half: true, min: 1, max: 500 },
+      { name: "dateSouhaitee", type: "date", half: true },
+      nom,
+      email(),
+      telephone(),
+      message(),
+    ],
   },
   /** « Recevoir notre sélection » : le catalogue PDF (Réglages du site) part par e-mail. */
   catalogue: {

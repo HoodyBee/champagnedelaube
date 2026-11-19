@@ -10,9 +10,10 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const locales = ["fr", "en", "nl", "it", "de"];
-// Langues dont tous les textes doivent être traduits. L'allemand est masqué sur le
-// site et n'est plus traduit : ses textes manquants s'affichent en anglais.
-const required = new Set(["en", "nl", "it"]);
+// Langues dont tous les textes doivent être traduits : celles du lancement (FR, EN).
+// Le néerlandais, l'italien et l'allemand sont masqués : leurs textes existants sont
+// gardés, et ceux qui manquent s'affichent en anglais quand on les réactive.
+const required = new Set(["en"]);
 const load = (l) => JSON.parse(readFileSync(resolve(root, `messages/${l}.json`), "utf8"));
 
 function keys(obj, prefix = "") {
@@ -80,4 +81,4 @@ if (problems > 0) {
   console.error(`\n${problems} problème(s) : complétez les traductions ou reformulez les expressions interdites.`);
   process.exit(1);
 }
-console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${required.size + 1} langues (FR, EN, NL, IT) · aucune expression interdite`);
+console.log(`✓ Traductions complètes : ${refKeys.length} textes × ${required.size + 1} langues (FR, EN) · aucune expression interdite`);

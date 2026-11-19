@@ -12,7 +12,7 @@ import { nav, proEntreprises, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
-type Item = { href: AppPathname; label: string; color?: string };
+type Item = { href: AppPathname; label: string; color?: string; short?: string };
 
 /**
  * En-tête en deux étages :
@@ -59,11 +59,11 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
   const terroirItems: Item[] = terroirPages.map((p) => ({
     href: p.href,
     label: p.label,
+    short: p.short,
     color: `var(--color-${terroirs[p.key].color})`,
   }));
   // Premier lien de chaque groupe : un libellé distinct du titre du groupe (pas de doublon).
   const terroirMenu: Item[] = [{ href: nav.terroirHub.href, label: t("terroirHubLink") }, ...terroirItems];
-  const degustationItems: Item[] = [{ href: nav.particuliers[0].href, label: t("tastingLink") }, toItem(nav.particuliers[1])];
   const proItems = proEntreprises.map(toItem);
 
   const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
@@ -78,19 +78,19 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
 
   return (
     <MotionConfig reducedMotion="user">
-      <header ref={headerRef} className="sticky top-0 z-40 bg-creme-clair lg:top-[-224px]">
+      <header ref={headerRef} className="sticky top-0 z-40 bg-creme-clair lg:top-[-200px]">
         {/* Étage 1 (ordinateur) : le logo complet, puis les 4 terroirs écrits en entier.
             Sur mobile, en-tête compact sur une seule ligne (voir étage 2). */}
-        <div ref={logoRowRef} className="hidden h-[224px] flex-col items-center justify-center lg:flex">
-          <Link href="/" aria-label={t("homeLink")} className="block p-[20px]" tabIndex={compact ? -1 : undefined}>
+        <div ref={logoRowRef} className="hidden h-[200px] flex-col items-center justify-center lg:flex">
+          <Link href="/" aria-label={t("homeLink")} className="block p-[19px]" tabIndex={compact ? -1 : undefined}>
             <Image
               src={logos.sansTerroirs.src}
               alt=""
-              width={150}
-              height={143}
-              sizes="150px"
+              width={140}
+              height={133}
+              sizes="140px"
               priority
-              className="h-[143px] w-[150px]"
+              className="h-[133px] w-[140px]"
             />
           </Link>
           <nav aria-label={t("terroirBand")} className="hidden lg:block">
@@ -107,7 +107,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
                     }`}
                   >
                     <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
-                    {item.label}
+                    {item.short ?? item.label}
                   </Link>
                 </li>
               ))}
@@ -149,7 +149,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
                     <NavLink href={nav.vignerons.href} active={isActive(nav.vignerons.href)}>{t("vignerons")}</NavLink>
                   </li>
                   <li>
-                    <Dropdown label={t("tasting")} items={degustationItems} active={isGroupActive(degustationItems)} isActive={isActive} />
+                    <NavLink href={nav.particuliers[0].href} active={isActive(nav.particuliers[0].href)}>{t("tasting")}</NavLink>
                   </li>
                   <li>
                     <NavLink href={nav.mag.href} active={isActive(nav.mag.href)}>{t("mag")}</NavLink>
@@ -158,17 +158,19 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
               </nav>
             </div>
 
-            <div className="flex items-center gap-space-1">
+            {/* Groupe de droite, d'un seul tenant : Espace Pro & Entreprises | FR / EN | Contact */}
+            <div className="flex items-center gap-space-1 xl:gap-space-2">
               <div className="hidden xl:block">
                 <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
               </div>
+              <span aria-hidden="true" className="hidden h-5 w-px bg-filet xl:block" />
               <div className="hidden xl:block">
-                <LanguageSwitcher locales={locales} />
+                <LanguageSwitcher variant="compact" locales={locales} />
               </div>
               <Link
                 href="/contact"
                 aria-current={isActive("/contact") ? "page" : undefined}
-                className="hidden min-h-11 items-center rounded-etiquette bg-anthracite px-space-2 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit xl:inline-flex"
+                className="hidden min-h-10 items-center rounded-etiquette border border-or px-space-2 text-sur-titre-petit text-anthracite transition-colors hover:bg-creme hover:text-anthracite xl:inline-flex"
               >
                 {t("contact")}
               </Link>
@@ -194,7 +196,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
         groups={[
           { title: t("terroirHub"), items: terroirMenu },
           { items: [toItem(nav.vignerons)] },
-          { title: t("tasting"), items: degustationItems },
+          { items: [toItem(nav.particuliers[0])] },
           { items: [toItem(nav.mag)] },
           { title: t("proEntreprises"), items: proItems },
         ]}
@@ -429,12 +431,12 @@ function MobileMenu({
             <Link
               href={contact.href}
               onClick={onClose}
-              className="mt-space-3 flex min-h-12 items-center justify-center rounded-etiquette bg-anthracite text-sur-titre text-blanc"
+              className="mt-space-3 flex min-h-12 items-center justify-center rounded-etiquette border border-or text-sur-titre text-anthracite"
             >
               {contact.label}
             </Link>
             <div className="mt-space-3">
-              <LanguageSwitcher variant="inline" locales={locales} onNavigate={onClose} />
+              <LanguageSwitcher variant="compact" locales={locales} onNavigate={onClose} />
             </div>
             <div className="mt-space-2">{social}</div>
           </nav>

@@ -1,0 +1,1054 @@
+[
+  {
+    "_createdAt": "2026-11-18T20:26:03Z",
+    "_id": "drafts.article-quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne",
+    "_rev": "02YDpQu4EY755M1DLGDPWF",
+    "_type": "article",
+    "_updatedAt": "2026-11-18T20:26:03Z",
+    "collaborationCommerciale": false,
+    "contenu": {
+      "_type": "localeRichText",
+      "fr": [
+        {
+          "_key": "5747e84cd2e0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "2e5c14cf0107",
+              "_type": "span",
+              "marks": [],
+              "text": "Le terme "
+            },
+            {
+              "_key": "af7854bc03ff",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cépage"
+            },
+            {
+              "_key": "4a4efd8245ec",
+              "_type": "span",
+              "marks": [],
+              "text": " revient souvent dans l’univers du vin et du champagne. Mais que signifie-t-il vraiment ? Comprendre cette notion est essentiel pour mieux apprécier les vins, leur origine, et la richesse du vignoble champenois, de la Côte des Bar à Montgueux."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "9baf3a9f7fdc",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "324ff36172b0",
+              "_type": "span",
+              "marks": [],
+              "text": "Dans le monde, on recense plus de "
+            },
+            {
+              "_key": "5e2d8422c199",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "10 000 cépages"
+            },
+            {
+              "_key": "1cc54bbfe743",
+              "_type": "span",
+              "marks": [],
+              "text": " différents , mais en réalité, seule une partie est largement cultivée."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "715762db7fde",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "a0755b69e767",
+              "_type": "span",
+              "marks": [],
+              "text": "L’Organisation Internationale de la Vigne et du Vin (OIV) estime qu’environ "
+            },
+            {
+              "_key": "c9fa3e8e45c4",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "1 300 cépages"
+            },
+            {
+              "_key": "b618939879d0",
+              "_type": "span",
+              "marks": [],
+              "text": " sont exploités de manière significative pour la production de vin."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "c3decd2323bc",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "21a57eea44d8",
+              "_type": "span",
+              "marks": [],
+              "text": "Parmi eux, une cinquantaine représentent à elles seules "
+            },
+            {
+              "_key": "fdcef90eb7f5",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "90 % de la production mondiale"
+            },
+            {
+              "_key": "4c5d164d5eb3",
+              "_type": "span",
+              "marks": [],
+              "text": " : des grands classiques comme le Cabernet Sauvignon, le Merlot, le Chardonnay, le Pinot Noir, ou encore la Syrah."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ee28292a2af4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "93ee70290ba6",
+              "_type": "span",
+              "marks": [],
+              "text": "En Champagne, le choix est encore plus restreint : seulement "
+            },
+            {
+              "_key": "85a0d82dd951",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "7 cépages"
+            },
+            {
+              "_key": "a516e9a4f21c",
+              "_type": "span",
+              "marks": [],
+              "text": " sont autorisés."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "53378fbc00c6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "d7ee113385d1",
+              "_type": "span",
+              "marks": [],
+              "text": "En résumé, la nature offre une immense diversité, mais au verre, on retrouve surtout une poignée de cépages bien connus."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "302323513a6e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "fa874cd9bebf",
+              "_type": "span",
+              "marks": [],
+              "text": "Définition d’un cépage"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "92d3dc257542",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7cdacccd6243",
+              "_type": "span",
+              "marks": [],
+              "text": "Un "
+            },
+            {
+              "_key": "88814ad91b5b",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cépage"
+            },
+            {
+              "_key": "818b0bd86f77",
+              "_type": "span",
+              "marks": [],
+              "text": " est une variété spécifique de vigne cultivée pour produire du raisin destiné à la vinification. Chaque cépage possède ses propres caractéristiques :"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a5084b4eb08f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ad9b0fcbe138",
+              "_type": "span",
+              "marks": [],
+              "text": "Goût et arômes : fruité, floral, minéral…"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "dce5add4dfa4",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bea7dca8a5ec",
+              "_type": "span",
+              "marks": [],
+              "text": "Couleur de la peau : blanc ou noir."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "f7211145b715",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "1788a59b1898",
+              "_type": "span",
+              "marks": [],
+              "text": "Structure : acidité, rondeur, tanins..."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "d9b746aa78b7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6aea7d9c24b2",
+              "_type": "span",
+              "marks": [],
+              "text": "Une comparaison gourmande"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "789d89ddced9",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e19022ac4fec",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "On peut comparer les cépages aux variétés de pommes "
+            },
+            {
+              "_key": "a35d63bfae95",
+              "_type": "span",
+              "marks": [],
+              "text": ": toutes sont des pommes, mais une Golden et une Granny Smith n’ont ni la même couleur, ni la même acidité, ni le même parfum. De la même façon, chaque cépage de champagne a son caractère unique."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "6eb1f8feaea5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6d50239131c4",
+              "_type": "span",
+              "marks": [],
+              "text": "Les cépages autorisés en Champagne"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "e58a35eda272",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "2e76d14fa8bd",
+              "_type": "span",
+              "marks": [],
+              "text": "Les 3 cépages principaux :"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "bce73650c2cf",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7c29b6e12efb",
+              "_type": "span",
+              "marks": [],
+              "text": "Goût et arômes : fruité, floral, minéral…"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "4ed5e41a3a22",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "1087953616e2",
+              "_type": "span",
+              "marks": [],
+              "text": "Couleur de la peau : blanc ou noir."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "b60ea12a1c7c",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "b25f152993c7",
+              "_type": "span",
+              "marks": [],
+              "text": "Structure : acidité, rondeur, tanins..."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "18789b5f8749",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e4bb60804c4d",
+              "_type": "span",
+              "marks": [],
+              "text": "Les 4 cépages rares (0,3 % du vignoble) :"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "76e7b99c1200",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "09ea194dbcbb",
+              "_type": "span",
+              "marks": [],
+              "text": "Pinot Blanc"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "8655df43ad04",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "fe39038b7263",
+              "_type": "span",
+              "marks": [],
+              "text": "Pinot Gris"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ff909834824c",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7a6b86092604",
+              "_type": "span",
+              "marks": [],
+              "text": "Arbane"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "efd0200e7cfe",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6d4153a87beb",
+              "_type": "span",
+              "marks": [],
+              "text": "Petit Meslier"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "514968d46d8b",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "afa842a37894",
+              "_type": "span",
+              "marks": [],
+              "text": "Cépages et terroirs champenois : l’influence du sol et du climat"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "588df9142b2d",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4741d4367cff",
+              "_type": "span",
+              "marks": [
+                "71572b2a2559"
+              ],
+              "text": "Côte des Bar (Aube) – Le royaume du Pinot Noir"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "71572b2a2559",
+              "_type": "link",
+              "href": "/la-cote-des-bar/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "f353dd53ab51",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "161226fcfea3",
+              "_type": "span",
+              "marks": [],
+              "text": "Cépage dominant : "
+            },
+            {
+              "_key": "11b747161dcc",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            },
+            {
+              "_key": "70267280434c",
+              "_type": "span",
+              "marks": [],
+              "text": " (~83 %)."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "55e8ad3d94c2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "601600c8b07b",
+              "_type": "span",
+              "marks": [],
+              "text": "Sols argilo-calcaires du Kimméridgien → champagnes généreux, fruités et charpentés."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "538253f284dd",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "529e926564b3",
+              "_type": "span",
+              "marks": [
+                "5e9c32affd18"
+              ],
+              "text": "Montgueux – Le royaume du Chardonnay"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "5e9c32affd18",
+              "_type": "link",
+              "href": "/montgueux/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "3da6ebbefc3f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "fa1025b5b3d2",
+              "_type": "span",
+              "marks": [],
+              "text": "Cépage dominant : "
+            },
+            {
+              "_key": "cee161e2beaf",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "cd95736ac79e",
+              "_type": "span",
+              "marks": [],
+              "text": " (~90 %)."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "da5ab6a428e3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "cd16a36892d5",
+              "_type": "span",
+              "marks": [],
+              "text": "Sols de craie du Turonien, exposition sud/sud-est → champagnes frais, minéraux et aromatiques."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "b46de866b053",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "346c03a92256",
+              "_type": "span",
+              "marks": [],
+              "text": "Ces terroirs démontrent que "
+            },
+            {
+              "_key": "c924d75ae8b4",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "le même cépage peut offrir une signature différente"
+            },
+            {
+              "_key": "2084fc445383",
+              "_type": "span",
+              "marks": [],
+              "text": " selon ses conditions de culture."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "f581559b383a",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7dc8ff2a9fc6",
+              "_type": "span",
+              "marks": [],
+              "text": "Pourquoi connaître les cépages ?"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "69722912a8b3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5c1aedf32c9a",
+              "_type": "span",
+              "marks": [],
+              "text": "Ça aide à "
+            },
+            {
+              "_key": "5b966f33741a",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "décrypter l’étiquette"
+            },
+            {
+              "_key": "93b9308a7a90",
+              "_type": "span",
+              "marks": [],
+              "text": " ."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "8538a279bfef",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9079f905548d",
+              "_type": "span",
+              "marks": [],
+              "text": "Ça permet de mieux choisir selon vos préférences (finesse, structure, fruit) ;"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a3dfecbf8637",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9076891fbab7",
+              "_type": "span",
+              "marks": [],
+              "text": "Et ça enrichit la dégustation en comprenant les styles selon le terroir."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "177d9b2510cc",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e6d5cc2f6a09",
+              "_type": "span",
+              "marks": [],
+              "text": "ca permet de faire des découverte, de comparer des terroirs"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a6c39127adb6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "812d4648a7fa",
+              "_type": "span",
+              "marks": [],
+              "text": "de faire des accords mets vins coherents"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "fb2369409353",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ffaed8c2cdae",
+              "_type": "span",
+              "marks": [],
+              "text": "Le "
+            },
+            {
+              "_key": "db7b327e4afa",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cépage"
+            },
+            {
+              "_key": "cd9eef38def2",
+              "_type": "span",
+              "marks": [],
+              "text": " est au "
+            },
+            {
+              "_key": "aa84e3c45ea3",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "champagne"
+            },
+            {
+              "_key": "6835db2c2533",
+              "_type": "span",
+              "marks": [],
+              "text": " ce que l’"
+            },
+            {
+              "_key": "889bc3d3b064",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "ingrédient"
+            },
+            {
+              "_key": "cf8b313942eb",
+              "_type": "span",
+              "marks": [],
+              "text": " est à un plat : il en définit la base et influence son "
+            },
+            {
+              "_key": "2b7f767ee008",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "caractère"
+            },
+            {
+              "_key": "7a5b809219a8",
+              "_type": "span",
+              "marks": [],
+              "text": ". Le "
+            },
+            {
+              "_key": "da9d6ab3dd49",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "vigneron"
+            },
+            {
+              "_key": "31ff57492eee",
+              "_type": "span",
+              "marks": [],
+              "text": ", accompagné de son "
+            },
+            {
+              "_key": "b3081cc25687",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "œnologue"
+            },
+            {
+              "_key": "d3849029d6c4",
+              "_type": "span",
+              "marks": [],
+              "text": ", réalise ses "
+            },
+            {
+              "_key": "5d3332ccbd2b",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "assemblages"
+            },
+            {
+              "_key": "419252656238",
+              "_type": "span",
+              "marks": [],
+              "text": " pour trouver le goût et l’"
+            },
+            {
+              "_key": "0cc91f94d09d",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "équilibre"
+            },
+            {
+              "_key": "a74431f94162",
+              "_type": "span",
+              "marks": [],
+              "text": " choisis pour une "
+            },
+            {
+              "_key": "b1550714ee2e",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cuvée"
+            },
+            {
+              "_key": "34a09fc385f8",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a5b939f4e805",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4d6da821076c",
+              "_type": "span",
+              "marks": [],
+              "text": "Par ailleurs, il existe des champagnes "
+            },
+            {
+              "_key": "841751a70c7a",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "mono-cépages"
+            },
+            {
+              "_key": "f2bf9c169933",
+              "_type": "span",
+              "marks": [],
+              "text": " : vous pourrez alors découvrir si ce style vous plaît ou s’il s’"
+            },
+            {
+              "_key": "15605b2354f2",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "accorde"
+            },
+            {
+              "_key": "5b59b71eae0f",
+              "_type": "span",
+              "marks": [],
+              "text": " avec votre "
+            },
+            {
+              "_key": "a692eb9094df",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "plat"
+            },
+            {
+              "_key": "60e99b9fcca1",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "2061ed6c76ab",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "25cd10b5a723",
+              "_type": "span",
+              "marks": [],
+              "text": "Lors de votre prochaine "
+            },
+            {
+              "_key": "e132ef9ed2a3",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "dégustation"
+            },
+            {
+              "_key": "438155959923",
+              "_type": "span",
+              "marks": [],
+              "text": ", essayez de deviner quel "
+            },
+            {
+              "_key": "05505f7f9d8b",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cépage"
+            },
+            {
+              "_key": "cba471816adc",
+              "_type": "span",
+              "marks": [],
+              "text": " domine : "
+            },
+            {
+              "_key": "e539b35cec09",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            },
+            {
+              "_key": "e45a065215f0",
+              "_type": "span",
+              "marks": [],
+              "text": ", "
+            },
+            {
+              "_key": "981069727b1b",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "d1fc9ac31fb2",
+              "_type": "span",
+              "marks": [],
+              "text": ", "
+            },
+            {
+              "_key": "d64149c126e7",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Meunier"
+            },
+            {
+              "_key": "925dd4c99a14",
+              "_type": "span",
+              "marks": [],
+              "text": "… ou peut-être un "
+            },
+            {
+              "_key": "47aa75686d58",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "cépage"
+            },
+            {
+              "_key": "3f9b1bb01dd8",
+              "_type": "span",
+              "marks": [],
+              "text": " plus rare !"
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    "date": "2025-08-11",
+    "extrait": {
+      "_type": "localeText",
+      "fr": "Qu’est-ce qu’un cépage ? Comprendre les bases du champagne Le terme cépage revient souvent dans l’univers du vin et du champagne. Mais que signifie-t-il vraiment ? Comprendre cette notion est essentiel pour mieux apprécier les vins, leur origine, et la richesse du vignoble champenois, de la Côte des Bar à Montgueux. Dans le monde, on…"
+    },
+    "rubrique": "comprendre",
+    "seo": {
+      "_type": "seo",
+      "description": {
+        "_type": "localeText",
+        "fr": "Qu’est-ce qu’un cépage ? Comprendre les bases du champagne Le terme cépage revient souvent dans l’univers du vin et du champagne. Mais que signifie-t-il"
+      },
+      "title": {
+        "_type": "localeString",
+        "fr": "Qu’est-ce qu’un cépage ? Comprendre la base du vin et du champagne"
+      }
+    },
+    "slug": {
+      "_type": "slug",
+      "current": "quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne"
+    },
+    "titre": {
+      "_type": "localeString",
+      "fr": "Qu’est-ce qu’un cépage ? Comprendre la base du vin et du champagne"
+    }
+  }
+]

@@ -1,0 +1,1634 @@
+[
+  {
+    "_createdAt": "2026-11-18T20:22:19Z",
+    "_id": "drafts.terroir-cote-des-bar",
+    "_rev": "8M6tk69vA6qfXdPLAFVriG",
+    "_type": "terroir",
+    "_updatedAt": "2026-11-18T20:42:25Z",
+    "accroche": {
+      "_type": "localeString",
+      "fr": "La Côte des Bar, un vignoble de champagne authentique et singulier"
+    },
+    "cle": "cote-des-bar",
+    "contenu": {
+      "_type": "localeRichText",
+      "fr": [
+        {
+          "_key": "bd24ab1d0ace",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "3381e0f6a1f6",
+              "_type": "span",
+              "marks": [],
+              "text": "Berceau du Pinot Noir champenois"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "7506b408bac8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4e9af666a9d1",
+              "_type": "span",
+              "marks": [],
+              "text": "Située dans le département de l’Aube, au sud de la Champagne, la "
+            },
+            {
+              "_key": "f38d4073fc39",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Côte des Bar"
+            },
+            {
+              "_key": "e78b95349775",
+              "_type": "span",
+              "marks": [],
+              "text": " est aujourd’hui l’un des vignobles les plus dynamiques de l’appellation Champagne. Avec ses paysages vallonnés, ses vignerons engagés, et son encépagement centré sur le "
+            },
+            {
+              "_key": "11695504aabc",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            },
+            {
+              "_key": "a4b54d0d525d",
+              "_type": "span",
+              "marks": [],
+              "text": ", elle attire de plus en plus les amateurs de champagnes expressifs, sincères et identitaires."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "c2e25519897f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5f86c2d62d1c",
+              "_type": "span",
+              "marks": [],
+              "text": "Longtemps restée en marge des grandes maisons champenoises, la Côte des Bar a su affirmer sa personnalité grâce à une nouvelle génération de vignerons indépendants, à la recherche d’authenticité, de terroir, et d’innovation."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "367f9f56e01b",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "64b9c5ededaf",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Superficie"
+            },
+            {
+              "_key": "7d3bd00ef543",
+              "_type": "span",
+              "marks": [],
+              "text": " : Environ "
+            },
+            {
+              "_key": "8957e134fdb4",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "8 035 hectares"
+            },
+            {
+              "_key": "f9321e089ea5",
+              "_type": "span",
+              "marks": [],
+              "text": ""
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a71293e2ec86",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "c23678deddb4",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Sol"
+            },
+            {
+              "_key": "fe0b152b7f7c",
+              "_type": "span",
+              "marks": [],
+              "text": " : Principalement composé de "
+            },
+            {
+              "_key": "7cbdb8572eed",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "sols argilo-calcaires et marneux"
+            },
+            {
+              "_key": "fef2543f9110",
+              "_type": "span",
+              "marks": [],
+              "text": ", favorables au "
+            },
+            {
+              "_key": "fc58347b75e6",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "38072bfb4223",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "f1b268b91ac0",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Cépages"
+            },
+            {
+              "_key": "3bfd745006a2",
+              "_type": "span",
+              "marks": [],
+              "text": " :"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "69ad15a3a81e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "2a65e7809427",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            },
+            {
+              "_key": "46dcfefe25b9",
+              "_type": "span",
+              "marks": [],
+              "text": " : environ "
+            },
+            {
+              "_key": "d04e50f5dc46",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "86 %"
+            },
+            {
+              "_key": "aaab72291fb9",
+              "_type": "span",
+              "marks": [],
+              "text": " de la surface viticole de la Côte des Bar"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "acc65b561e6f",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "fe7f5e8ecffd",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "9e4f293c231c",
+              "_type": "span",
+              "marks": [],
+              "text": " : environ "
+            },
+            {
+              "_key": "8b5a71daa33d",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "10 %"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "a275ba4f9480",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "db914f75cafd",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Meunier"
+            },
+            {
+              "_key": "dca52c356c7f",
+              "_type": "span",
+              "marks": [],
+              "text": " : environ "
+            },
+            {
+              "_key": "3a3922e7dcef",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "4 %"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "b0b3988dff3e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "292bd4c35fec",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Autres cépages"
+            },
+            {
+              "_key": "550c9dc7f568",
+              "_type": "span",
+              "marks": [],
+              "text": " (notamment Pinot Blanc) : très marginal (<1 %)"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "8b621b3d7d38",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "72ace33f9722",
+              "_type": "span",
+              "marks": [],
+              "text": "Un terroir viticole unique dans l’Aube"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "96a31590ee31",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "24ccbeb77f94",
+              "_type": "span",
+              "marks": [],
+              "text": "Le vignoble de la Côte des Bar s’étend sur plus de "
+            },
+            {
+              "_key": "07b0ea431d29",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "8035 hectares"
+            },
+            {
+              "_key": "fad4813e30c1",
+              "_type": "span",
+              "marks": [],
+              "text": ", répartis sur une soixantaine de communes. Il représente à lui seul "
+            },
+            {
+              "_key": "c356d35417f9",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "près d’un quart du vignoble champenois"
+            },
+            {
+              "_key": "9db25b951812",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "0e18264ce9e5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e4a949c7196e",
+              "_type": "span",
+              "marks": [],
+              "text": "Le "
+            },
+            {
+              "_key": "2aee7a84a300",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "sous-sol"
+            },
+            {
+              "_key": "08e9669985be",
+              "_type": "span",
+              "marks": [],
+              "text": " y est composé de "
+            },
+            {
+              "_key": "e2bf7401ee2c",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "marnes et calcaires du Kimméridgien "
+            },
+            {
+              "_key": "c770a7af18cd",
+              "_type": "span",
+              "marks": [],
+              "text": " (Jurassique supérieur), similaires à celles du Chablisien. Cette géologie, riche en argiles et en fossiles marins, confère au sol une excellente régulation hydrique et thermique, idéale pour le "
+            },
+            {
+              "_key": "463961d82380",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Pinot Noir"
+            },
+            {
+              "_key": "0dd4e6b64cf2",
+              "_type": "span",
+              "marks": [],
+              "text": ", cépage majoritaire du secteur."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "be21717925ae",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "dd8227988510",
+              "_type": "span",
+              "marks": [],
+              "text": "Le climat est plus "
+            },
+            {
+              "_key": "90caf9c64f8e",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "continental"
+            },
+            {
+              "_key": "14cfa403d2d2",
+              "_type": "span",
+              "marks": [],
+              "text": " que dans le reste de la Champagne, avec des hivers rigoureux et des étés chauds, favorisant une belle maturité des raisins et des profils de champagnes plus charpentés, fruités et généreux."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "8b61f7a8dff0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "cf597a414cee",
+              "_type": "span",
+              "marks": [],
+              "text": "Une terre de vignerons passionnés"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "695b6138326c",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "8cebc0c4f4de",
+              "_type": "span",
+              "marks": [],
+              "text": "La Côte des Bar se distingue par une forte présence de "
+            },
+            {
+              "_key": "c49cd6701e9e",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "vignerons indépendants"
+            },
+            {
+              "_key": "741ab18c1031",
+              "_type": "span",
+              "marks": [],
+              "text": ". Ici, la vigne est souvent une affaire de famille, transmise avec passion de génération en génération. Beaucoup d’exploitations adoptent des pratiques respectueuses de l’environnement : "
+            },
+            {
+              "_key": "afa1b469d842",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "viticulture biologique"
+            },
+            {
+              "_key": "2f7acfda764d",
+              "_type": "span",
+              "marks": [],
+              "text": ", "
+            },
+            {
+              "_key": "0feadd33cdc0",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "biodynamique"
+            },
+            {
+              "_key": "a7b109678283",
+              "_type": "span",
+              "marks": [],
+              "text": ", ou "
+            },
+            {
+              "_key": "7e376a142e1b",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "certifiée HVE (Haute Valeur Environnementale)"
+            },
+            {
+              "_key": "8881e55e046c",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "b616dbd9017e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7e0ae91fc524",
+              "_type": "span",
+              "marks": [],
+              "text": "Le vignoble aubois est un terrain d’expression pour des "
+            },
+            {
+              "_key": "f4c6d3873979",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "champagnes créatifs"
+            },
+            {
+              "_key": "3690bbebe743",
+              "_type": "span",
+              "marks": [],
+              "text": ", souvent issus de "
+            },
+            {
+              "_key": "9e8e0d20d5a0",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "vinifications parcellaires"
+            },
+            {
+              "_key": "3b2bee2189ec",
+              "_type": "span",
+              "marks": [],
+              "text": ", d’élevages en fût, ou de méthodes naturelles (sans dosage, sans filtration). Ces cuvées mettent en lumière toute la richesse du terroir local."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "1dde124fd990",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4e8c28ebc72d",
+              "_type": "span",
+              "marks": [],
+              "text": "On y retrouve également les "
+            },
+            {
+              "_key": "d36b6fb347d2",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "sept cépages autorisés en Champagne."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "722b9f3260c3",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "0ea1e86d8f01",
+              "_type": "span",
+              "marks": [],
+              "text": "Nos derniers articles en lien avec la Côte des Bar"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "03bbdf6a6fa6",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "246097b2b482",
+              "_type": "span",
+              "marks": [
+                "fcbfaa465d59"
+              ],
+              "text": "Sauté d’Agneau à l’Orange & Champagne 100% Meunier | Recette de Pâques"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "fcbfaa465d59",
+              "_type": "link",
+              "href": "/agneau-orange-champagne-meunier-recette-paques/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "e93029937208",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9e0046a30bb2",
+              "_type": "span",
+              "marks": [
+                "c395ef9317be"
+              ],
+              "text": "Lire La Suite…"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "c395ef9317be",
+              "_type": "link",
+              "href": "/agneau-orange-champagne-meunier-recette-paques/"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "fa7398709a41",
+          "_type": "imageAvecAlt",
+          "alt": {
+            "_type": "localeString",
+            "fr": "Assiette de linguine au pesto et verre de champagne Guy Lamoureux"
+          },
+          "asset": {
+            "_ref": "image-454d86ebf5e7c665b0eb0e08dace146cd5a22a57-1080x1350-webp",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "a6fe14b2eb89",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7470a934b92d",
+              "_type": "span",
+              "marks": [
+                "80fe68606464"
+              ],
+              "text": "Accords Mets et Vin : Pâtes au Pesto Au basilic"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "80fe68606464",
+              "_type": "link",
+              "href": "/accords-mets-et-vin-pates-au-pesto-au-basilic/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "a48627e31c25",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "22f2d9231384",
+              "_type": "span",
+              "marks": [
+                "b1384331eea4"
+              ],
+              "text": "Lire La Suite…"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "b1384331eea4",
+              "_type": "link",
+              "href": "/accords-mets-et-vin-pates-au-pesto-au-basilic/"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "7a76c030933b",
+          "_type": "imageAvecAlt",
+          "alt": {
+            "_type": "localeString",
+            "fr": "Plateau de sushis et de California rolls, avec un verre de champagne Pinot Gris"
+          },
+          "asset": {
+            "_ref": "image-2d23d7d503a68f2ac70e3c58344c496fe1c3a536-1620x1080-webp",
+            "_type": "reference"
+          }
+        },
+        {
+          "_key": "abcf9777e0a5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5a3d2a0fe4ber",
+              "_type": "span",
+              "marks": [],
+              "text": "Que boire avec des sushis ?"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "23fd9758e686",
+              "_type": "link",
+              "href": "/champagne-sushis/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "bb319496d15b",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5233c2d2a8b7",
+              "_type": "span",
+              "marks": [
+                "0a74b39db6ec"
+              ],
+              "text": "Lire La Suite…"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "0a74b39db6ec",
+              "_type": "link",
+              "href": "/champagne-sushis/"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "d8502b7d7748",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "10656232f6b4",
+              "_type": "span",
+              "marks": [],
+              "text": "1"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "85f1002bf139",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "510ed6ca1504",
+              "_type": "span",
+              "marks": [
+                "210968b37e49"
+              ],
+              "text": "2"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "210968b37e49",
+              "_type": "link",
+              "href": "/wp-json/wp/v2/pages/?_page=2&per_page=100&status=publish&_fields=id%2Cslug%2Clink%2Ctitle%2Ccontent%2Cexcerpt%2Cfeatured_media"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "5d46fa963bd8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "719099ab0e6b",
+              "_type": "span",
+              "marks": [
+                "7e34496ee6a2"
+              ],
+              "text": "›"
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [
+            {
+              "_key": "7e34496ee6a2",
+              "_type": "link",
+              "href": "/wp-json/wp/v2/pages/?_page=2&per_page=100&status=publish&_fields=id%2Cslug%2Clink%2Ctitle%2Ccontent%2Cexcerpt%2Cfeatured_media"
+            }
+          ],
+          "style": "normal"
+        },
+        {
+          "_key": "977b425ea577",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "0a0939b8730f",
+              "_type": "span",
+              "marks": [],
+              "text": "Les zones emblématiques de la Côte des Bar : Barséquanais, Barsuraubois et Les Riceys"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "2228aa135feb",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "87f88c847c23",
+              "_type": "span",
+              "marks": [
+                "57746e91dc25"
+              ],
+              "text": "Le Barséquanais"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "57746e91dc25",
+              "_type": "link",
+              "href": "/category/la-cote-des-bar/le-barsequanais/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "7a411197e719",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "b3579815707f",
+              "_type": "span",
+              "marks": [],
+              "text": "Le Barséquanais s’étend autour de Bar-sur-Seine. Ce terroir vallonné, composé principalement de marnes et de calcaires kimméridgiens, est dominé par le Pinot Noir."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "ef5639397e1c",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "638a650d2cf7",
+              "_type": "span",
+              "marks": [
+                "985c21f1338b"
+              ],
+              "text": "Le Barsuraubois"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "985c21f1338b",
+              "_type": "link",
+              "href": "/category/la-cote-des-bar/le-barsuraubois/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "c97f1603d138",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "f197d289dcaa",
+              "_type": "span",
+              "marks": [],
+              "text": "Situé autour de Bar-sur-Aube, le Barsuraubois est un terroir plus discret mais tout aussi riche. Il bénéficie d’une diversité de sols et d’un climat continental."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "f250ab087762",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6be7f3406c78",
+              "_type": "span",
+              "marks": [
+                "c645bfb7f31a"
+              ],
+              "text": "Les Riceys"
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "c645bfb7f31a",
+              "_type": "link",
+              "href": "/category/la-cote-des-bar/les-riceys/"
+            }
+          ],
+          "style": "h3"
+        },
+        {
+          "_key": "8cdba1d958f8",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "337646fc56af",
+              "_type": "span",
+              "marks": [],
+              "text": "Seul village champenois à posséder trois AOC (Champagne, le célèbre Rosé des Riceys, Coteaux Champenois), Les Riceys incarne l’histoire, la diversité et le caractère du sud de la Champagne."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    "image": {
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "fr": "Coteaux plantés de vignes dans la Côte des Bar"
+      },
+      "asset": {
+        "_ref": "image-5331781ded5e8405a27409648e0ee167d728b6a3-1620x1080-webp",
+        "_type": "reference"
+      }
+    },
+    "nom": "Côte des Bar",
+    "seo": {
+      "_type": "seo",
+      "description": {
+        "_type": "localeText",
+        "fr": "La Côte des Bar, au sud de l’Aube : ses sols kimméridgiens, le pinot noir, ses villages et ses vignerons indépendants."
+      },
+      "title": {
+        "_type": "localeString",
+        "fr": "Côte des Bar : champagnes de vignerons, vignoble et terroir"
+      }
+    }
+  },
+  {
+    "_createdAt": "2026-11-18T20:26:04Z",
+    "_id": "drafts.terroir-les-riceys",
+    "_rev": "02YDpQu4EY755M1DLGDQ3d",
+    "_type": "terroir",
+    "_updatedAt": "2026-11-18T20:26:04Z",
+    "cle": "les-riceys",
+    "nom": "Les Riceys"
+  },
+  {
+    "_createdAt": "2026-11-18T20:22:17Z",
+    "_id": "drafts.terroir-montgueux",
+    "_rev": "8M6tk69vA6qfXdPLAFVriG",
+    "_type": "terroir",
+    "_updatedAt": "2026-11-18T20:42:25Z",
+    "accroche": {
+      "_type": "localeString",
+      "fr": "Le champagne de Montgueux, aux portes de Troyes"
+    },
+    "cle": "montgueux",
+    "contenu": {
+      "_type": "localeRichText",
+      "fr": [
+        {
+          "_key": "ab77057f3b99",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "8757214a236b",
+              "_type": "span",
+              "marks": [],
+              "text": "Un terroir viticole à quelques minutes de Troyes"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "283bde2dcb1c",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "07c1af314e1e",
+              "_type": "span",
+              "marks": [],
+              "text": "Située à quelques kilomètres seulement de Troyes, Montgueux est une colline unique qui domine la plaine champenoise. Ce petit vignoble, souvent qualifié de « Montrachet de la Champagne », "
+            },
+            {
+              "_key": "07c1af314e1er",
+              "_type": "span",
+              "marks": [],
+              "text": "est un vignoble encore méconnu de l’Aube"
+            },
+            {
+              "_key": "07c1af314e1ea",
+              "_type": "span",
+              "marks": [],
+              "text": ". Ici, le "
+            },
+            {
+              "_key": "81097445cd1c",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "e197235fa3ca",
+              "_type": "span",
+              "marks": [],
+              "text": " règne en maître et s’épanouit sur des sols crayeux d’une richesse rare."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "d05be7d559a2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "a25912b32ac6",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Superficie"
+            },
+            {
+              "_key": "6acf4f3612d6",
+              "_type": "span",
+              "marks": [],
+              "text": " : "
+            },
+            {
+              "_key": "6acf4f3612d6r",
+              "_type": "span",
+              "marks": [],
+              "text": "Environ 186,6 hectares."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "966a5d8c6534",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "db2dce50b8a3",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Sol"
+            },
+            {
+              "_key": "2abc7eeed2e1",
+              "_type": "span",
+              "marks": [],
+              "text": " : Sols calcaires, favorables au Chardonnay."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "cafd3adf65c0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "4f5a3ea87a89",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Cépages"
+            },
+            {
+              "_key": "b28884475b9b",
+              "_type": "span",
+              "marks": [],
+              "text": " : Le Chardonnay représente environ 89,6% des plantations, avec une présence marginale de Pinot Noir et Pinot Meunier."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "9070e4caa480",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "db8d190b5faa",
+              "_type": "span",
+              "marks": [],
+              "text": "Une colline, une identité"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "948acb6120b0",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6485e1322439",
+              "_type": "span",
+              "marks": [],
+              "text": "Montgueux n’est pas un village comme les autres : Contrairement au reste de la Côte des Bar, majoritairement marneuse, "
+            },
+            {
+              "_key": "9e92e0b62afa",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Montgueux repose sur une craie du Crétacé"
+            },
+            {
+              "_key": "868263b5ed1b",
+              "_type": "span",
+              "marks": [],
+              "text": ", proche de celle que l’on retrouve dans la Côte des Blancs. Ce sous-sol blanc et friable, allié à l’orientation idéale des coteaux, "
+            },
+            {
+              "_key": "868263b5ed1br",
+              "_type": "span",
+              "marks": [],
+              "text": "favorise une bonne maturité des raisins, en particulier"
+            },
+            {
+              "_key": "868263b5ed1ba",
+              "_type": "span",
+              "marks": [],
+              "text": " au Chardonnay, cépage roi de la colline. Cette combinaison permet de produire des champagnes d’une grande finesse, marqués par des arômes floraux, des notes de fruits blancs, et une belle minéralité."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "46dd0decff9d",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "7ec47f01048b",
+              "_type": "span",
+              "marks": [],
+              "text": "Le royaume du Chardonnay"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "f3ea86f74999",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "fa370a616c9er",
+              "_type": "span",
+              "marks": [],
+              "text": "Ici, plus de 90 %"
+            },
+            {
+              "_key": "fa370a616c9ea",
+              "_type": "span",
+              "marks": [],
+              "text": " des vignes sont plantées en "
+            },
+            {
+              "_key": "70594663a0e7",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "9cbdc4210819",
+              "_type": "span",
+              "marks": [],
+              "text": ", donnant naissance à des champagnes blancs de blancs d’une remarquable intensité aromatique. Les vins de Montgueux se caractérisent par leur ampleur, leur fruité expressif et une belle tension en bouche. On y retrouve des notes d’agrumes mûrs, de fruits exotiques, parfois même une touche beurrée ou miellée selon les vinifications."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "9a7cfe00f692",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "0873c9905c4f",
+              "_type": "span",
+              "marks": [],
+              "text": "Avec ses quelques dizaines d’hectares, Montgueux forme un vignoble confidentiel, presque secret, mais prisé des amateurs éclairés. "
+            },
+            {
+              "_key": "0873c9905c4fr",
+              "_type": "span",
+              "marks": [],
+              "text": "De grands noms de la Champagne s’y approvisionnent, aux côtés de vignerons indépendants"
+            },
+            {
+              "_key": "0873c9905c4fa",
+              "_type": "span",
+              "marks": [],
+              "text": " qui valorisent l’identité forte de ce terroir atypique."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        }
+      ]
+    },
+    "image": {
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "fr": "Maisons à pans de bois colorées dans une rue de Troyes"
+      },
+      "asset": {
+        "_ref": "image-88627de124d4ad8f90a9add8262c04b978e33cbe-1280x852-jpg",
+        "_type": "reference"
+      }
+    },
+    "nom": "Montgueux",
+    "seo": {
+      "_type": "seo",
+      "description": {
+        "_type": "localeText",
+        "fr": "Située à moins de 20 minutes seulement de Troyes, Montgueux est une colline unique qui domine la plaine champenoise. Le Chardonnay s’y épanouit."
+      },
+      "title": {
+        "_type": "localeString",
+        "fr": "Champagne aux portes de Troyes : Le Chardonnay de Montgueux"
+      }
+    }
+  },
+  {
+    "_createdAt": "2026-11-18T20:22:15Z",
+    "_id": "drafts.terroir-villenauxe",
+    "_rev": "8M6tk69vA6qfXdPLAFVriG",
+    "_type": "terroir",
+    "_updatedAt": "2026-11-18T20:42:25Z",
+    "accroche": {
+      "_type": "localeString",
+      "fr": "Villenauxe-la-Grande : terroir champenois de l’Aube aux portes du Sézannais"
+    },
+    "cle": "villenauxe",
+    "contenu": {
+      "_type": "localeRichText",
+      "fr": [
+        {
+          "_key": "bc83c99676b7",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "9eea4be247e5",
+              "_type": "span",
+              "marks": [],
+              "text": "Le vignoble de l’extrême ouest de l’Aube"
+            }
+          ],
+          "markDefs": [],
+          "style": "h2"
+        },
+        {
+          "_key": "3ee50319eea2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "e05a8610107b",
+              "_type": "span",
+              "marks": [],
+              "text": "Située à la frontière de l’Aube et de la Marne, "
+            },
+            {
+              "_key": "2daca1a88e7c",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Villenauxe-la-Grande"
+            },
+            {
+              "_key": "aef3eeb23be6",
+              "_type": "span",
+              "marks": [],
+              "text": " est un terroir singulier proche du "
+            },
+            {
+              "_key": "234551220e7e",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Sézannais"
+            },
+            {
+              "_key": "a1e934a00655",
+              "_type": "span",
+              "marks": [],
+              "text": ". Ici, le "
+            },
+            {
+              "_key": "3d3594dc5451",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Chardonnay"
+            },
+            {
+              "_key": "f6f542647703",
+              "_type": "span",
+              "marks": [],
+              "text": " s’épanouit offrant des champagnes élégants, équilibrés et empreints de caractère."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "4791998875a2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "735afa0705cc",
+              "_type": "span",
+              "marks": [],
+              "text": ""
+            },
+            {
+              "_key": "6999b177b67a",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Superficie"
+            },
+            {
+              "_key": "32d43c4289aa",
+              "_type": "span",
+              "marks": [],
+              "text": " : Environ 101 hectares ."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "163d755caa3e",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "bc7d1b32796c",
+              "_type": "span",
+              "marks": [],
+              "text": ""
+            },
+            {
+              "_key": "dc57c332be04",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Sol"
+            },
+            {
+              "_key": "4400490e4deb",
+              "_type": "span",
+              "marks": [],
+              "text": " : Sols argilo-calcaires, adaptés au Chardonnay."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "0a820fc696e1",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "5894331cdf67",
+              "_type": "span",
+              "marks": [],
+              "text": ""
+            },
+            {
+              "_key": "8731be019e7c",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Cépages"
+            },
+            {
+              "_key": "22f5c661d77b",
+              "_type": "span",
+              "marks": [],
+              "text": " : Le Chardonnay représente environ 82% des plantations, avec 18% de Pinot Noir."
+            }
+          ],
+          "level": 1,
+          "listItem": "bullet",
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "2c3600b2a110",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "6ec3f88272e2",
+              "_type": "span",
+              "marks": [],
+              "text": "Un terroir à la croisée des influences"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "28c990fd1832",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "ef1c5b87d668",
+              "_type": "span",
+              "marks": [],
+              "text": "Les sols de Villenauxe-la-Grande se distinguent par une "
+            },
+            {
+              "_key": "36c0a9ecadba",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "argilo-calcaires mêlés à des marnes"
+            },
+            {
+              "_key": "9a6397c44b1f",
+              "_type": "span",
+              "marks": [],
+              "text": ", offrant aux cépages plantés une diversité d’expression rare dans l’Aube. Ce terroir, plus tempéré grâce à sa position géographique, permet une maturation progressive des raisins, tout en conservant une belle fraîcheur aromatique."
+            }
+          ],
+          "markDefs": [],
+          "style": "normal"
+        },
+        {
+          "_key": "35ed0e212af5",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "06f3311ebcb2",
+              "_type": "span",
+              "marks": [],
+              "text": "Un vignoble confidentiel et engagé"
+            }
+          ],
+          "markDefs": [],
+          "style": "h3"
+        },
+        {
+          "_key": "7d6f44dcbaa2",
+          "_type": "block",
+          "children": [
+            {
+              "_key": "8e710d16d49f",
+              "_type": "span",
+              "marks": [],
+              "text": "À la frontière entre la Champagne et la Brie, "
+            },
+            {
+              "_key": "34ba9760dad5",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "Villenauxe-la-Grande"
+            },
+            {
+              "_key": "1d7d83512102",
+              "_type": "span",
+              "marks": [],
+              "text": " occupe une place singulière dans le paysage viticole champenois. Isolée des grands ensembles que sont "
+            },
+            {
+              "_key": "d0cff4ece22d",
+              "_type": "span",
+              "marks": [
+                "79c9ab83c718"
+              ],
+              "text": "la Côte des Bar"
+            },
+            {
+              "_key": "f4af944545cc",
+              "_type": "span",
+              "marks": [],
+              "text": " ou "
+            },
+            {
+              "_key": "98aa2366d463",
+              "_type": "span",
+              "marks": [
+                "dfcb6a53a83a"
+              ],
+              "text": "Montgueux"
+            },
+            {
+              "_key": "bcf78c8e1bdd",
+              "_type": "span",
+              "marks": [],
+              "text": ", cette zone viticole forme un "
+            },
+            {
+              "_key": "71068397b180",
+              "_type": "span",
+              "marks": [
+                "strong"
+              ],
+              "text": "îlot de vignes à la personnalité affirmée"
+            },
+            {
+              "_key": "e417d4369ccd",
+              "_type": "span",
+              "marks": [],
+              "text": "."
+            }
+          ],
+          "markDefs": [
+            {
+              "_key": "79c9ab83c718",
+              "_type": "link",
+              "href": "/la-cote-des-bar/"
+            },
+            {
+              "_key": "dfcb6a53a83a",
+              "_type": "link",
+              "href": "/montgueux/"
+            }
+          ],
+          "style": "normal"
+        }
+      ]
+    },
+    "image": {
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "fr": "Vignes et coteaux de Villenauxe-la-Grande"
+      },
+      "asset": {
+        "_ref": "image-b3ada2162e524e1ca1a401ca51122cf84804cdd5-1080x1080-webp",
+        "_type": "reference"
+      }
+    },
+    "nom": "Villenauxe-la-Grande",
+    "seo": {
+      "_type": "seo",
+      "description": {
+        "_type": "localeText",
+        "fr": "Découvrez les vignerons de Villenauxe située à la frontière de l’Aube et de la Marne, Villenauxe-la-Grande est un terroir singulier proche du Sézannais."
+      },
+      "title": {
+        "_type": "localeString",
+        "fr": "Villenauxe La Grande - Champagne aux portes du Sézannais"
+      }
+    }
+  }
+]

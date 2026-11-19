@@ -1,0 +1,37 @@
+{
+  "julien-salon-bouteille.jpg": {
+    "id": "image-ea278f1491036965dbba40a47e7aaae129a8737e-1080x722-jpg",
+    "alt": {
+      "fr": "Julien Mineo présente une bouteille de champagne sur un salon professionnel",
+      "en": "Julien Mineo presenting a bottle of champagne at a trade fair"
+    }
+  },
+  "julien-terrasse-ordinateur-vertical.jpg": {
+    "id": "image-aef09e266096ab82a16b2eaa16e6ad1ac4908dff-1080x1690-jpg",
+    "alt": {
+      "fr": "Julien Mineo travaille sur son ordinateur en terrasse, un café à côté",
+      "en": "Julien Mineo working on his laptop on a terrace, with a coffee"
+    }
+  },
+  "julien-terrasse-ordinateur.jpg": {
+    "id": "image-3d0526e78b7da1455e8bffe71ce6be10d0af89d5-1080x1350-jpg",
+    "alt": {
+      "fr": "Julien Mineo à son ordinateur, en terrasse",
+      "en": "Julien Mineo at his laptop, on a terrace"
+    }
+  },
+  "accord-crepe-champagne.jpg": {
+    "id": "image-ec144c6caf18bd0fc0b6dd6d3f1c92b11d18b5f5-2400x1600-jpg",
+    "alt": {
+      "fr": "Une crêpe à la pâte à tartiner servie avec un verre de champagne",
+      "en": "A crêpe with spread, served with a glass of champagne"
+    }
+  },
+  "salon-wine-paris-stand-daniel-petre.jpg": {
+    "id": "image-f2cc46132005accba96144de280cd20cff69f6a7-1080x1080-jpg",
+    "alt": {
+      "fr": "Le stand du Champagne Daniel Pétré & Fils au salon Wine Paris",
+      "en": "The Champagne Daniel Pétré & Fils stand at Wine Paris"
+    }
+  }
+}

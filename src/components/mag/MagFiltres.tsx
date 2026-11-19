@@ -5,8 +5,9 @@ import { useState } from "react";
 import type { MagCardData } from "@/lib/mag";
 import { MagCard } from "./MagCard";
 
+// Rubriques en onglets de texte, comme le sommaire d'un magazine (pas de « boutons »).
 const chip =
-  "inline-flex min-h-11 items-center rounded-rond border px-space-2 text-sur-titre-petit transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze";
+  "inline-flex min-h-11 items-center border-b-2 px-1 text-sur-titre-petit transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-bronze";
 
 /**
  * Articles du Mag avec filtres par rubrique (seulement les rubriques qui ont des articles).
@@ -26,7 +27,7 @@ export function MagFiltres({ articles, labels, ordre }: { articles: MagCardData[
         type="button"
         aria-pressed={filtre === value}
         onClick={() => setFiltre(value)}
-        className={`${chip} ${filtre === value ? "border-anthracite bg-anthracite text-blanc" : "border-filet bg-blanc text-anthracite hover:border-bronze"}`}
+        className={`${chip} ${filtre === value ? "border-or text-anthracite" : "border-transparent text-gris-chaud hover:text-bronze"}`}
       >
         {label}
       </button>
@@ -39,7 +40,7 @@ export function MagFiltres({ articles, labels, ordre }: { articles: MagCardData[
     <div>
       {presentes.length > 1 && (
         <div role="group" aria-label={t("filtres")} className="mb-space-4">
-          <ul className="flex flex-wrap gap-space-1">
+          <ul className="flex flex-wrap gap-x-space-3 gap-y-1 border-b border-filet">
             {item("tous", null, t("tous"))}
             {presentes.map((r) => item(r, r, labels[r]))}
           </ul>

@@ -20,6 +20,7 @@ export const structure: StructureResolver = (S) =>
       singleton(S, "terroirAube", "Le terroir de l'Aube"),
       S.documentTypeListItem("terroir").title("Terroirs"),
       S.documentTypeListItem("vigneron").title("Vignerons"),
+      S.documentTypeListItem("cuvee").title("Cuvées (sélection du moment)"),
       S.divider(),
       S.documentTypeListItem("article").title("Le Mag : articles"),
       S.documentTypeListItem("rubrique").title("Le Mag : rubriques"),

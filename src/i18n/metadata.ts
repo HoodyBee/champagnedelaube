@@ -8,6 +8,9 @@ export const SITE_URL = "https://champagnedelaube.fr";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 
+/** Adresses avec « / » final, comme tout le site (évite une redirection, ex. /en -> /en/). */
+export const withSlash = (path: string) => (path.endsWith("/") ? path : `${path}/`);
+
 /**
  * Balises canonical et hreflang d'une page, à utiliser dans generateMetadata :
  *   alternates: await localizedAlternates("/vignerons", locale)
@@ -15,7 +18,7 @@ type Href = Parameters<typeof getPathname>[0]["href"];
  */
 export async function localizedAlternates(href: AppPathname | Href, locale: Locale): Promise<Metadata["alternates"]> {
   const active = await getActiveLocales();
-  const url = (l: Locale) => getPathname({ href: href as Href, locale: l });
+  const url = (l: Locale) => withSlash(getPathname({ href: href as Href, locale: l }));
   const languages: Record<string, string> = {};
   for (const l of active) languages[l] = url(l);
   languages["x-default"] = url(defaultLocale);

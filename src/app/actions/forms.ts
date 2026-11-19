@@ -101,7 +101,11 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
         ? (profilParSujet[String(data.sujet)] ?? "particuliers")
         : def.profil === "choix"
           ? (profilParChoix[String(data.profil)] ?? "particuliers")
-          : def.profil;
+          : def.profil === "occasion"
+            ? data.occasion === "entreprise"
+              ? "entreprises"
+              : "particuliers"
+            : def.profil;
     await upsertContact({
       email: visitorEmail,
       fullName: String(data.nom ?? ""),
