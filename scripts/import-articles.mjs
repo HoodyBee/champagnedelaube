@@ -70,7 +70,8 @@ const docs = articles.map((a) => ({
   set: {
     titre: str(a.titre),
     extrait: str(a.extrait, "localeText"),
-    rubriques: a.rubriques,
+    rubriquePrincipale: a.rubriquePrincipale ?? a.rubriques[0],
+    rubriques: a.rubriquePrincipale ? a.rubriques : a.rubriques.slice(1),
     contenu: { _type: "localeRichText", ...Object.fromEntries(LANGS.map((l) => [l, contenu(a, l)]).filter(([, v]) => v.length)) },
     seo: { _type: "seo", title: str(a.seo.title), description: str(a.seo.description, "localeText") },
   },

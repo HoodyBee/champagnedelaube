@@ -740,6 +740,15 @@
       "oenotourisme": "Wine tourism",
       "actualites": "News"
     },
+    "autresRubriques": "Other sections of the Mag",
+    "rubriquesIntro": {
+      "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
+      "accords": "Recipes and food & champagne pairings, from starter to dessert, with cuvées from Aube winemakers.",
+      "portraits": "Meet the independent winemakers of the Aube: their story, their plots, their cuvées.",
+      "terroirsCepages": "Pinot noir, meunier, chardonnay and rare grapes: understanding champagne's grape varieties and the Aube terroirs that reveal them.",
+      "oenotourisme": "Cellar visits, vineyard routes and villages: planning your stay in the Aube vineyards.",
+      "actualites": "Vineyard events, the calendar of wine and food days, news from our winemakers."
+    },
     "aLaUne": "Featured",
     "tousLesArticles": "All articles"
   },

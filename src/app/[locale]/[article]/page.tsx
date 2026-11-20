@@ -9,9 +9,9 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { getPathname } from "@/i18n/navigation";
 import { pageMetadata, SITE_URL } from "@/i18n/metadata";
-import { routing, type Locale, type StaticPathname } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
-import { getArticle, getArticles, getArticleSlugs, getVignerons, PAGES_RUBRIQUE } from "@/sanity/content";
+import { getArticle, getArticles, getArticleSlugs, getVignerons, rubriqueHref } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/[article]">;
 
@@ -53,9 +53,8 @@ export default async function ArticlePage({ params }: Props) {
 
   const t = await getTranslations("mag");
   const tLegal = await getTranslations("legal");
-  const rubrique = a.rubriques.find((r) => labels[r]);
-  const rubriqueHref: StaticPathname =
-    rubrique && rubrique in PAGES_RUBRIQUE ? PAGES_RUBRIQUE[rubrique as keyof typeof PAGES_RUBRIQUE] : "/le-mag";
+  // Rubrique principale : fil d'Ariane, sur-titre et données structurées (l'adresse reste unique).
+  const rubrique = a.rubriquePrincipale && labels[a.rubriquePrincipale] ? a.rubriquePrincipale : a.rubriques.find((r) => labels[r]);
   const [aDate] = withDates([a], locale);
   const cites = vignerons.filter((v) => a.vignerons.includes(v.slug));
 
@@ -97,7 +96,7 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <Breadcrumb
         locale={locale}
-        items={[{ label: t("h1"), href: "/le-mag" }, ...(rubrique ? [{ label: labels[rubrique], href: rubriqueHref }] : []), { label: a.titre }]}
+        items={[{ label: t("h1"), href: "/le-mag" }, ...(rubrique ? [{ label: labels[rubrique], href: rubriqueHref(rubrique) }] : []), { label: a.titre }]}
       />
       <article>
         <header className="mx-auto max-w-3xl px-space-2 pb-space-3 pt-space-4 sm:px-space-4 lg:pt-space-5">

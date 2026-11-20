@@ -2,9 +2,8 @@
  "slug": "pourquoi-les-vignerons-devraient-sinteresser-au-rap",
  "existant": false,
  "date": "2025-03-15",
- "rubriques": [
-  "actualites"
- ],
+ "rubriquePrincipale": "actualites",
+ "rubriques": [],
  "titre": {
   "fr": "Pourquoi les vignerons devraient s’intéresser au rap"
  },

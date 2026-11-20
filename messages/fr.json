@@ -740,6 +740,15 @@
       "oenotourisme": "Œnotourisme",
       "actualites": "Actualités"
     },
+    "autresRubriques": "Les autres rubriques du Mag",
+    "rubriquesIntro": {
+      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
+      "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
+      "portraits": "À la rencontre des vignerons indépendants de l'Aube : leur histoire, leurs parcelles, leurs cuvées.",
+      "terroirsCepages": "Pinot noir, meunier, chardonnay et cépages rares : comprendre les cépages du champagne et les terroirs de l'Aube qui les révèlent.",
+      "oenotourisme": "Visites de caves, routes des vignes et villages : préparer son séjour dans le vignoble de l'Aube.",
+      "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons."
+    },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles"
   },

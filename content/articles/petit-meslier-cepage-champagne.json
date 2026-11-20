@@ -1,85 +1,86 @@
 {
-  "slug": "petit-meslier-cepage-champagne",
-  "existant": false,
-  "date": "2026-11-19",
-  "titre": {
-    "fr": "Le petit meslier, un cépage de fraîcheur",
-    "en": "Petit meslier, a grape of freshness",
-    "nl": "Petit meslier, een ras van frisheid",
-    "it": "Il petit meslier, un vitigno di freschezza"
+ "slug": "petit-meslier-cepage-champagne",
+ "existant": false,
+ "date": "2026-11-19",
+ "titre": {
+  "fr": "Le petit meslier, un cépage de fraîcheur",
+  "en": "Petit meslier, a grape of freshness",
+  "nl": "Petit meslier, een ras van frisheid",
+  "it": "Il petit meslier, un vitigno di freschezza"
+ },
+ "motCle": "petit meslier champagne",
+ "extrait": {
+  "fr": "Né d'un croisement ancien, le petit meslier est apprécié pour sa fraîcheur. Un cépage rare, surtout présent dans l'Aube.",
+  "en": "Born of an ancient cross, petit meslier is valued for its freshness. A rare grape, found mainly in the Aube.",
+  "nl": "Ontstaan uit een oude kruising, wordt petit meslier gewaardeerd om zijn frisheid. Een zeldzaam ras, vooral in de Aube.",
+  "it": "Nato da un antico incrocio, il petit meslier è apprezzato per la sua freschezza. Un vitigno raro, presente soprattutto nell'Aube."
+ },
+ "seo": {
+  "title": {
+   "fr": "Le petit meslier, cépage rare du champagne | Champagne de l'Aube",
+   "en": "Petit meslier, a rare champagne grape | Champagne de l'Aube",
+   "nl": "Petit meslier, een zeldzaam champagneras | Champagne de l'Aube",
+   "it": "Il petit meslier, vitigno raro dello champagne | Champagne de l'Aube"
   },
-  "motCle": "petit meslier champagne",
-  "extrait": {
-    "fr": "Né d'un croisement ancien, le petit meslier est apprécié pour sa fraîcheur. Un cépage rare, surtout présent dans l'Aube.",
-    "en": "Born of an ancient cross, petit meslier is valued for its freshness. A rare grape, found mainly in the Aube.",
-    "nl": "Ontstaan uit een oude kruising, wordt petit meslier gewaardeerd om zijn frisheid. Een zeldzaam ras, vooral in de Aube.",
-    "it": "Nato da un antico incrocio, il petit meslier è apprezzato per la sua freschezza. Un vitigno raro, presente soprattutto nell'Aube."
-  },
-  "seo": {
-    "title": {
-      "fr": "Le petit meslier, cépage rare du champagne | Champagne de l'Aube",
-      "en": "Petit meslier, a rare champagne grape | Champagne de l'Aube",
-      "nl": "Petit meslier, een zeldzaam champagneras | Champagne de l'Aube",
-      "it": "Il petit meslier, vitigno raro dello champagne | Champagne de l'Aube"
-    },
-    "description": {
-      "fr": "Le petit meslier, croisement du gouais et du savagnin, cépage rare autorisé en Champagne et apprécié pour sa fraîcheur.",
-      "en": "Petit meslier, a cross of gouais and savagnin, a rare grape permitted in Champagne and valued for its freshness.",
-      "nl": "Petit meslier, een kruising van gouais en savagnin, een zeldzaam ras dat in de Champagne is toegestaan en om zijn frisheid wordt gewaardeerd.",
-      "it": "Il petit meslier, incrocio di gouais e savagnin, vitigno raro ammesso in Champagne e apprezzato per la sua freschezza."
+  "description": {
+   "fr": "Le petit meslier, croisement du gouais et du savagnin, cépage rare autorisé en Champagne et apprécié pour sa fraîcheur.",
+   "en": "Petit meslier, a cross of gouais and savagnin, a rare grape permitted in Champagne and valued for its freshness.",
+   "nl": "Petit meslier, een kruising van gouais en savagnin, een zeldzaam ras dat in de Champagne is toegestaan en om zijn frisheid wordt gewaardeerd.",
+   "it": "Il petit meslier, incrocio di gouais e savagnin, vitigno raro ammesso in Champagne e apprezzato per la sua freschezza."
+  }
+ },
+ "sections": [
+  {
+   "titre": {
+    "fr": "Une origine ancienne",
+    "en": "An ancient origin",
+    "nl": "Een oude oorsprong",
+    "it": "Un'origine antica"
+   },
+   "paragraphes": [
+    {
+     "fr": "Le petit meslier est issu d'un croisement entre deux très vieux cépages, le gouais et le savagnin. C'est l'un des cépages anciens autorisés par l'appellation Champagne.",
+     "en": "Petit meslier comes from a cross between two very old grapes, gouais and savagnin. It is one of the old grapes permitted by the Champagne appellation.",
+     "nl": "Petit meslier komt voort uit een kruising tussen twee zeer oude rassen, gouais en savagnin. Het is een van de oude rassen die de appellatie Champagne toestaat.",
+     "it": "Il petit meslier nasce da un incrocio tra due vitigni antichissimi, il gouais e il savagnin. È uno dei vitigni antichi ammessi dalla denominazione Champagne."
     }
+   ]
   },
-  "sections": [
+  {
+   "titre": {
+    "fr": "La fraîcheur avant tout",
+    "en": "Freshness first",
+    "nl": "Frisheid voorop",
+    "it": "La freschezza prima di tutto"
+   },
+   "paragraphes": [
     {
-      "titre": {
-        "fr": "Une origine ancienne",
-        "en": "An ancient origin",
-        "nl": "Een oude oorsprong",
-        "it": "Un'origine antica"
-      },
-      "paragraphes": [
-        {
-          "fr": "Le petit meslier est issu d'un croisement entre deux très vieux cépages, le gouais et le savagnin. C'est l'un des cépages anciens autorisés par l'appellation Champagne.",
-          "en": "Petit meslier comes from a cross between two very old grapes, gouais and savagnin. It is one of the old grapes permitted by the Champagne appellation.",
-          "nl": "Petit meslier komt voort uit een kruising tussen twee zeer oude rassen, gouais en savagnin. Het is een van de oude rassen die de appellatie Champagne toestaat.",
-          "it": "Il petit meslier nasce da un incrocio tra due vitigni antichissimi, il gouais e il savagnin. È uno dei vitigni antichi ammessi dalla denominazione Champagne."
-        }
-      ]
-    },
-    {
-      "titre": {
-        "fr": "La fraîcheur avant tout",
-        "en": "Freshness first",
-        "nl": "Frisheid voorop",
-        "it": "La freschezza prima di tutto"
-      },
-      "paragraphes": [
-        {
-          "fr": "Les vignerons qui le cultivent l'apprécient pour sa fraîcheur et ses notes citronnées. On le trouve surtout dans l'Aube, en particulier dans la [Côte des Bar](/la-cote-des-bar), et dans la vallée de la Marne.",
-          "en": "Winemakers who grow it value its freshness and lemony notes. It is found mainly in the Aube, especially in the [Côte des Bar](/la-cote-des-bar), and in the Marne valley.",
-          "nl": "Wijnmakers die hem telen waarderen zijn frisheid en citroenachtige toetsen. Je vindt hem vooral in de Aube, met name in de [Côte des Bar](/la-cote-des-bar), en in de Marnevallei.",
-          "it": "I vignaioli che lo coltivano ne apprezzano la freschezza e le note di limone. Si trova soprattutto nell'Aube, in particolare nella [Côte des Bar](/la-cote-des-bar), e nella valle della Marna."
-        }
-      ]
-    },
-    {
-      "titre": {
-        "fr": "Les goûter",
-        "en": "Tasting them",
-        "nl": "Ze proeven",
-        "it": "Assaggiarli"
-      },
-      "paragraphes": [
-        {
-          "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
-          "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
-          "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
-          "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
-        }
-      ]
+     "fr": "Les vignerons qui le cultivent l'apprécient pour sa fraîcheur et ses notes citronnées. On le trouve surtout dans l'Aube, en particulier dans la [Côte des Bar](/la-cote-des-bar), et dans la vallée de la Marne.",
+     "en": "Winemakers who grow it value its freshness and lemony notes. It is found mainly in the Aube, especially in the [Côte des Bar](/la-cote-des-bar), and in the Marne valley.",
+     "nl": "Wijnmakers die hem telen waarderen zijn frisheid en citroenachtige toetsen. Je vindt hem vooral in de Aube, met name in de [Côte des Bar](/la-cote-des-bar), en in de Marnevallei.",
+     "it": "I vignaioli che lo coltivano ne apprezzano la freschezza e le note di limone. Si trova soprattutto nell'Aube, in particolare nella [Côte des Bar](/la-cote-des-bar), e nella valle della Marna."
     }
-  ],
-  "rubriques": [
-    "terroirs-cepages"
-  ]
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Les goûter",
+    "en": "Tasting them",
+    "nl": "Ze proeven",
+    "it": "Assaggiarli"
+   },
+   "paragraphes": [
+    {
+     "fr": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [la Côte des Bar](/la-cote-des-bar).",
+     "en": "To taste these grapes and meet the people who grow them, join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [the Côte des Bar](/la-cote-des-bar).",
+     "nl": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [de Côte des Bar](/la-cote-des-bar).",
+     "it": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la Côte des Bar](/la-cote-des-bar)."
+    }
+   ]
+  }
+ ],
+ "rubriquePrincipale": "terroirs-cepages",
+ "rubriques": [
+  "tout-savoir"
+ ]
 }
