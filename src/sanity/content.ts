@@ -155,6 +155,28 @@ const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   cepages: v.cepages ?? [],
 });
 
+/**
+ * Photo de la Médiathèque désignée par son identifiant (image-<hash>-<l>x<h>-<ext>), pour les pages
+ * dont le texte est dans le dépôt (ex. Troyes). Texte alternatif et légende fournis par la page.
+ */
+export function imgDepuisAsset(
+  asset: string,
+  fichier: string,
+  alt: { fr: string; en: string },
+  locale: Locale,
+  width = 1600,
+  legende?: { fr: string; en: string },
+): Img | null {
+  const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(asset) ?? [];
+  if (!hash) return null;
+  const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
+  return toImg(
+    { alt, legende, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
+    locale,
+    width,
+  );
+}
+
 /** Photo d'une fiche par défaut (image de la Médiathèque désignée par son identifiant). */
 const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, width = 900): Img | null => {
   if (!f.photo) return null;

@@ -64,6 +64,8 @@ export const routing = defineRouting({
       de: "/champagner-rebsorten/[cepage]",
     },
     "/les-riceys": "/les-riceys",
+    // Troyes : la ville, porte d'entrée du vignoble aubois (nom de lieu non traduit)
+    "/champagne-troyes": "/champagne-troyes",
     // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires
     "/communication-marketing": {
       fr: "/communication-marketing",

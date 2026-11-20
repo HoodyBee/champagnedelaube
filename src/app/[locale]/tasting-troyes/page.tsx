@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
 import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -124,6 +125,9 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
             <div className="mt-space-4 rounded-carte border border-filet bg-blanc p-space-3">
               <p className="font-bold">{t("touristesTitre")}</p>
               <p className="mt-space-1 text-gris-chaud">{t("touristesTexte")}</p>
+              <Link href="/champagne-troyes" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                {t("touristesLien")} <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </div>

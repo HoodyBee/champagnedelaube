@@ -31,7 +31,8 @@
     "tastingLink": "All our tastings",
     "communication": "Communication & marketing",
     "partenaires": "Our partners",
-    "magTout": "All articles"
+    "magTout": "All articles",
+    "troyes": "Champagne in Troyes"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -679,7 +680,8 @@
     "touristesTexte": "Discover the champagnes of the Côte des Bar without driving out to the vineyards: we let you taste them in Troyes, with the stories of their villages and winemakers.",
     "formTitre": "Arrange a private tasting",
     "formTexte": "The occasion, the place, the number of guests, a date: a few words are enough. We will get back to you very soon with a proposal.",
-    "evenementsTitre": "A wedding, a christening, a group order?"
+    "evenementsTitre": "A wedding, a christening, a group order?",
+    "touristesLien": "Things to do in Troyes around champagne"
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube | Champagne de l'Aube",
@@ -845,7 +847,8 @@
       "principaux": "Other grapes grown",
       "rares": "The rare grapes",
       "nouveau": "The newcomer"
-    }
+    },
+    "troyesLien": "Troyes and its vineyards: Montgueux about ten kilometres away, the Côte des Bar half an hour"
   },
   "legalNoticePage": {
     "title": "Legal notice",
@@ -999,5 +1002,64 @@
     "intro": "The winemakers we work with every day: we present their champagnes at our tastings and to professionals.",
     "devenir": "Are you a winemaker in the Aube?",
     "devenirBouton": "Become a partner"
+  },
+  "troyesPage": {
+    "metaTitle": "Champagne in Troyes: tastings and a vineyard nearby",
+    "metaDescription": "Things to do in Troyes around champagne: the city of the Counts of Champagne, the Montgueux vineyard 13 km away, the Côte des Bar, and our private tastings.",
+    "fil": "Troyes",
+    "surTitre": "Troyes · Aube",
+    "titre": "Champagne in Troyes, at the heart of the Aube",
+    "intro": "Troyes is the city of the Counts of Champagne, and the vineyards start right outside it: the hill of Montgueux is about ten kilometres away. This is where we hold our private tastings of growers' champagnes from the Aube.",
+    "cta": "Arrange a private tasting",
+    "histoireTitre": "Troyes, historic capital of Champagne",
+    "histoire1": "In the Middle Ages, Troyes was the capital of the Counts of Champagne. The city prospered thanks to the Champagne fairs: six great fairs punctuated the year in the region, two in Provins, one in Lagny, one in Bar-sur-Aube and two in Troyes, the “hot fair” in summer and the “cold fair” in autumn. Merchants and money-changers came from all over Europe.",
+    "histoire2": "Seen from the air, the old town is shaped like a champagne cork, and locals call it “le Bouchon” (the cork). Its streets are lined with half-timbered houses, many rebuilt after the great fire of 1524. A walk to take with your head up, before or after a tasting.",
+    "vignobleTitre": "The gateway to the Aube vineyards",
+    "vignobleIntro": "From Troyes, the vines are close at hand. A few landmarks by car:",
+    "trajets": {
+      "montgueux": "Montgueux",
+      "cdb": "Bar-sur-Seine (Côte des Bar)",
+      "riceys": "Les Riceys",
+      "bsa": "Bar-sur-Aube (Côte des Bar)"
+    },
+    "trajetsValeurs": {
+      "montgueux": "about 13 km · around 20 minutes",
+      "cdb": "about 32 km · around 35 minutes",
+      "riceys": "about 47 km · just under an hour",
+      "bsa": "about 57 km · around an hour"
+    },
+    "trajetsNote": "Approximate road distances, centre to centre, calculated with OpenStreetMap; times without traffic.",
+    "trajetsColLieu": "Destination",
+    "trajetsColTrajet": "From Troyes",
+    "vignobleTexte": "In Montgueux, the chalk hill is planted mostly with chardonnay. Further south, the Côte des Bar is the kingdom of pinot noir, and Les Riceys produces three appellations: champagne, coteaux champenois and rosé des Riceys.",
+    "venirTitre": "Passing through Troyes? Champagne comes to you",
+    "venirTexte1": "No time to drive out to the vineyards? We bring the growers' champagnes of the Aube to you in Troyes, at your home or at a venue of your choice, with the stories of their villages and of the people who make them.",
+    "venirTexte2": "With friends, family, for a special occasion or during a stay: tell us what you would enjoy, and we will put the tasting together with you.",
+    "gastroTitre": "Champagne and Troyes cuisine",
+    "gastro1": "Troyes has its specialities. The best known is andouillette de Troyes, made with pork. Chaource, a PDO soft cheese with a bloomy rind, is made south of Troyes, in the Aube and the neighbouring Yonne.",
+    "gastro2": "With chaource, a grower's champagne makes a lovely pairing, and rosé des Riceys goes well with local cooking. For more ideas, see our [champagne food pairing recipes](/recettes-accords-mets-champagne).",
+    "allerTitre": "Keep exploring",
+    "liens": {
+      "terroirs": "The terroirs of the Aube",
+      "montgueux": "Montgueux, chardonnay on the doorstep of Troyes",
+      "cdb": "The Côte des Bar, pinot noir country",
+      "cepages": "The grapes of the Champagne appellation",
+      "mag": "Le Mag du Champagne",
+      "degustations": "Our private tastings"
+    },
+    "legendeVignes": "Côte des Bar vineyards, in Colombé-le-Sec",
+    "legendeAccord": "Food and champagne pairing (illustration)",
+    "altHero": "Growers' champagne bottles and presentation cards on a wooden table, in Troyes",
+    "altVignes": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
+    "altAccord": "Cream puff served with a glass of champagne",
+    "faqTitre": "Your questions",
+    "faq": {
+      "q1": "Where can I find vineyards near Troyes?",
+      "r1": "The hill of Montgueux, about ten kilometres west of Troyes, is the nearest vineyard. Bar-sur-Seine, in the heart of the Côte des Bar, is some thirty kilometres to the south-east.",
+      "q2": "Can I do a champagne tasting in Troyes?",
+      "r2": "Yes: we organise private tastings of growers' champagnes from the Aube, in Troyes, at your home or at a venue of your choice. Tell us about your plans and we will come back to you with a proposal.",
+      "q3": "Why is the centre of Troyes called “le Bouchon”?",
+      "r3": "Because, seen from the air, the layout of the old town is shaped like a champagne cork."
+    }
   }
 }

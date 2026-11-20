@@ -31,7 +31,8 @@
     "tastingLink": "Toutes nos dégustations",
     "communication": "Communication & marketing",
     "partenaires": "Nos partenaires",
-    "magTout": "Tous les articles"
+    "magTout": "Tous les articles",
+    "troyes": "Champagne à Troyes"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -679,7 +680,8 @@
     "touristesTexte": "Découvrez les champagnes de la Côte des Bar sans prendre la route des vignobles : nous vous les faisons goûter à Troyes, avec l'histoire de leurs villages et de leurs vignerons.",
     "formTitre": "Organiser une dégustation privée",
     "formTexte": "L'occasion, le lieu, le nombre de personnes, une date : quelques mots suffisent. Nous revenons vers vous très vite avec une proposition.",
-    "evenementsTitre": "Un mariage, un baptême, une commande groupée ?"
+    "evenementsTitre": "Un mariage, un baptême, une commande groupée ?",
+    "touristesLien": "Que faire à Troyes autour du champagne"
   },
   "evenementsPage": {
     "metaTitle": "Champagne pour mariage à Troyes et dans l'Aube | Champagne de l'Aube",
@@ -845,7 +847,8 @@
       "principaux": "Autres cépages cultivés",
       "rares": "Les cépages rares",
       "nouveau": "Le nouveau venu"
-    }
+    },
+    "troyesLien": "Troyes et son vignoble : Montgueux à une dizaine de kilomètres, la Côte des Bar à une demi-heure"
   },
   "legalNoticePage": {
     "title": "Mentions légales",
@@ -999,5 +1002,64 @@
     "intro": "Les vignerons avec qui nous travaillons au quotidien : nous présentons leurs champagnes lors de nos dégustations et auprès des professionnels.",
     "devenir": "Vous êtes vigneron dans l'Aube ?",
     "devenirBouton": "Devenir partenaire"
+  },
+  "troyesPage": {
+    "metaTitle": "Champagne à Troyes : dégustation et vignoble tout proche",
+    "metaDescription": "Que faire à Troyes autour du champagne ? La ville des comtes de Champagne, le vignoble de Montgueux à 13 km, la Côte des Bar, et nos dégustations privées.",
+    "fil": "Troyes",
+    "surTitre": "Troyes · Aube",
+    "titre": "Le champagne à Troyes, au cœur de l'Aube",
+    "intro": "Troyes est la ville des comtes de Champagne, et le vignoble commence à ses portes : la colline de Montgueux est à une dizaine de kilomètres. C'est ici que nous organisons nos dégustations privées de champagnes de vignerons de l'Aube.",
+    "cta": "Organiser une dégustation privée",
+    "histoireTitre": "Troyes, capitale historique de la Champagne",
+    "histoire1": "Au Moyen Âge, Troyes est la capitale des comtes de Champagne. La ville prospère grâce aux foires de Champagne : six grandes foires rythment alors l'année dans la région, deux à Provins, une à Lagny, une à Bar-sur-Aube et deux à Troyes, la « foire chaude », l'été, et la « foire froide », à l'automne. Marchands et changeurs viennent de toute l'Europe.",
+    "histoire2": "Vu du ciel, le centre ancien a la forme d'un bouchon de champagne : les Troyens l'appellent d'ailleurs « le Bouchon ». Ses rues sont bordées de maisons à pans de bois, reconstruites pour beaucoup après le grand incendie de 1524. Une promenade à faire le nez en l'air, avant ou après une dégustation.",
+    "vignobleTitre": "La porte d'entrée du vignoble aubois",
+    "vignobleIntro": "Depuis Troyes, les vignes sont toutes proches. Quelques repères en voiture :",
+    "trajets": {
+      "montgueux": "Montgueux",
+      "cdb": "Bar-sur-Seine (Côte des Bar)",
+      "riceys": "Les Riceys",
+      "bsa": "Bar-sur-Aube (Côte des Bar)"
+    },
+    "trajetsValeurs": {
+      "montgueux": "environ 13 km · une vingtaine de minutes",
+      "cdb": "environ 32 km · 35 minutes environ",
+      "riceys": "environ 47 km · un peu moins d'une heure",
+      "bsa": "environ 57 km · une heure environ"
+    },
+    "trajetsNote": "Distances routières indicatives, de centre à centre, calculées avec OpenStreetMap ; temps hors trafic.",
+    "trajetsColLieu": "Destination",
+    "trajetsColTrajet": "Depuis Troyes",
+    "vignobleTexte": "À Montgueux, la colline de craie est plantée surtout en chardonnay. Plus au sud, la Côte des Bar est le royaume du pinot noir, et Les Riceys produisent trois appellations : champagne, coteaux champenois et rosé des Riceys.",
+    "venirTitre": "De passage à Troyes ? Le champagne vient à vous",
+    "venirTexte1": "Vous n'avez pas le temps de prendre la route des vignobles ? Nous vous faisons goûter les champagnes de vignerons de l'Aube à Troyes, chez vous ou dans le lieu de votre choix, avec l'histoire de leurs villages et de ceux qui les élaborent.",
+    "venirTexte2": "Entre amis, en famille, pour une occasion particulière ou un séjour : dites-nous ce qui vous ferait plaisir, et nous composons la dégustation avec vous.",
+    "gastroTitre": "Champagne et gastronomie troyenne",
+    "gastro1": "Troyes a ses spécialités. La plus célèbre est l'andouillette de Troyes, préparée avec du porc. Le chaource, fromage AOP à pâte molle et croûte fleurie, est fabriqué au sud de Troyes, dans l'Aube et l'Yonne voisine.",
+    "gastro2": "Avec le chaource, un champagne de vigneron fait un bel accord, et le rosé des Riceys accompagne volontiers la cuisine du terroir. Pour d'autres idées, voyez nos [recettes et accords mets et champagne](/recettes-accords-mets-champagne).",
+    "allerTitre": "Continuer la découverte",
+    "liens": {
+      "terroirs": "Les terroirs de l'Aube",
+      "montgueux": "Montgueux, le chardonnay aux portes de Troyes",
+      "cdb": "La Côte des Bar, terre de pinot noir",
+      "cepages": "Les cépages de l'appellation Champagne",
+      "mag": "Le Mag du Champagne",
+      "degustations": "Nos dégustations privées"
+    },
+    "legendeVignes": "Vignes de la Côte des Bar, à Colombé-le-Sec",
+    "legendeAccord": "Accord mets et champagne (illustration)",
+    "altHero": "Bouteilles de champagne de vignerons et cartes de présentation sur une table en bois, à Troyes",
+    "altVignes": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été",
+    "altAccord": "Chou à la crème servi avec un verre de champagne",
+    "faqTitre": "Vos questions",
+    "faq": {
+      "q1": "Où trouver des vignes près de Troyes ?",
+      "r1": "La colline de Montgueux, à une dizaine de kilomètres à l'ouest de Troyes, est le vignoble le plus proche. Bar-sur-Seine, au cœur de la Côte des Bar, est à une trentaine de kilomètres au sud-est.",
+      "q2": "Peut-on faire une dégustation de champagne à Troyes ?",
+      "r2": "Oui : nous organisons des dégustations privées de champagnes de vignerons de l'Aube, à Troyes, chez vous ou dans un lieu de votre choix. Décrivez-nous votre projet et nous revenons vers vous avec une proposition.",
+      "q3": "Pourquoi le centre de Troyes s'appelle-t-il « le Bouchon » ?",
+      "r3": "Parce que, vu du ciel, le tracé du centre ancien a la forme d'un bouchon de champagne."
+    }
   }
 }

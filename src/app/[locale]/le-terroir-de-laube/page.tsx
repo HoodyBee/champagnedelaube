@@ -43,6 +43,11 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         <div className="mx-auto max-w-2xl">
           <TerroirCards />
         </div>
+        <p className="mt-space-3 text-center">
+          <Link href="/champagne-troyes" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+            {t("troyesLien")} <span aria-hidden="true">→</span>
+          </Link>
+        </p>
       </Section>
 
       {p.chapitres.map((c, i) => (

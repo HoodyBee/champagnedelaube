@@ -29,6 +29,7 @@ const PAGES: StaticPathname[] = [
   "/",
   "/le-terroir-de-laube",
   "/cepages-champagne",
+  "/champagne-troyes",
   "/la-cote-des-bar",
   "/les-riceys",
   "/montgueux",
