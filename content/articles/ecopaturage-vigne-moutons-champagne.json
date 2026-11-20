@@ -1,0 +1,192 @@
+{
+ "slug": "ecopaturage-vigne-moutons-champagne",
+ "statut": "brouillon",
+ "date": "2026-11-21",
+ "rubriquePrincipale": "tout-savoir",
+ "rubriques": [],
+ "titre": {
+  "fr": "L'écopâturage dans les vignes : des moutons pour entretenir le vignoble",
+  "en": "Eco-grazing in the vineyard: sheep that tend the vines"
+ },
+ "motCle": "écopâturage vigne",
+ "extrait": {
+  "fr": "L'hiver, des moutons broutent l'herbe entre les rangs de vigne. Bienfaits, limites, organisation avec un berger : tout savoir sur l'écopâturage, en Champagne et ailleurs.",
+  "en": "In winter, sheep graze the grass between the vine rows. Benefits, limits, working with a shepherd: all about eco-grazing, in Champagne and beyond."
+ },
+ "seo": {
+  "title": {
+   "fr": "Écopâturage : des moutons dans les vignes en Champagne",
+   "en": "Eco-grazing: sheep in the vineyards of Champagne"
+  },
+  "description": {
+   "fr": "Écopâturage dans la vigne : pourquoi des moutons dans les vignes l'hiver, ses bienfaits (herbe, sols, biodiversité), ses limites et son essor en Champagne.",
+   "en": "Eco-grazing in vineyards: why sheep graze the vines in winter, the benefits (grass, soil, biodiversity), the limits and its growth in Champagne."
+  }
+ },
+ "image": {
+  "fichier": "moutons-vignes-merrey-sur-arce-cote-des-bar-2025.jpg",
+  "legende": {
+   "fr": "Moutons dans les vignes à Merrey-sur-Arce, dans la Côte des Bar, en mars 2025",
+   "en": "Sheep in the vineyard at Merrey-sur-Arce, in the Côte des Bar, in March 2025"
+  }
+ },
+ "sections": [
+  {
+   "titre": null,
+   "paragraphes": [
+    {
+     "fr": "Un soir de mars 2025, à Merrey-sur-Arce, j'ai vu un troupeau de moutons tranquillement occupé entre les rangs de vigne. La scène a quelque chose d'un autre temps, et pourtant elle est très actuelle : de plus en plus de vignerons ouvrent leurs parcelles aux brebis pendant l'hiver. C'est ce qu'on appelle l'écopâturage. Nous vous expliquons comment ça marche, ce que ça apporte, et ce que ça demande.",
+     "en": "One evening in March 2025, in Merrey-sur-Arce, I came across a flock of sheep quietly busy between the vine rows. The scene feels like something from another age, yet it is very much of today: more and more winemakers open their plots to sheep in winter. This is called eco-grazing. Here is how it works, what it brings, and what it takes."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "L'écopâturage, qu'est-ce que c'est ?",
+    "en": "What is eco-grazing?"
+   },
+   "paragraphes": [
+    {
+     "fr": "L'écopâturage consiste à confier l'entretien de l'herbe des vignes à un troupeau, le plus souvent des moutons. Comme le résume la Chambre d'agriculture de la Marne, il s'agit de « gérer l'enherbement des vignes pendant la période hivernale ».",
+     "en": "Eco-grazing means entrusting the upkeep of the grass in the vineyard to a flock, usually sheep. As the Marne Chamber of Agriculture puts it, the idea is to “manage the grass cover of the vines during the winter period”."
+    },
+    {
+     "fr": "Le calendrier est la clé. Les brebis entrent dans les vignes à l'automne, une fois les feuilles tombées ou en train de tomber, et en ressortent avant le débourrement, quand les bourgeons s'ouvrent au printemps, autour de mars. Pendant ces mois de dormance, la vigne n'a ni feuilles ni jeunes pousses : les animaux peuvent brouter sans l'abîmer.",
+     "en": "Timing is everything. The sheep come into the vineyard in autumn, once the leaves have fallen or are falling, and leave before budburst, when the buds open in spring, around March. During these dormant months, the vine has no leaves or young shoots, so the animals can graze without harming it."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Ce que les moutons apportent à la vigne",
+    "en": "What sheep bring to the vineyard"
+   },
+   "paragraphes": [
+    {
+     "fr": "L'herbe entretenue sans machine. Les brebis rasent l'enherbement entre les rangs, et même sous le rang, là où la machine passe mal. Au début du printemps, la parcelle est propre : le vigneron peut retarder son premier travail du sol, et parfois s'en passer.",
+     "en": "Grass kept down without machines. The sheep crop the grass between the rows, and even under the row, where machines struggle to reach. At the start of spring the plot is clean: the winemaker can delay the first soil work, and sometimes skip it."
+    },
+    {
+     "fr": "Moins de passages de tracteur. Chaque tonte ou désherbage mécanique évité, c'est un passage d'engin en moins : moins de carburant, moins de tassement lié aux roues, moins de temps passé sur le tracteur.",
+     "en": "Fewer tractor passes. Every mowing or mechanical weeding avoided means one machine pass less: less fuel, less compaction from wheels, less time on the tractor."
+    },
+    {
+     "fr": "Une fertilisation naturelle. Les déjections des moutons apportent de la matière organique au sol. Certains vignerons qui accueillent un troupeau disent ne plus avoir besoin de fertiliser.",
+     "en": "Natural fertilisation. Sheep droppings add organic matter to the soil. Some winemakers who host a flock say they no longer need to fertilise."
+    },
+    {
+     "fr": "Des sols et une flore plus vivants. Les retours de terrain et les essais techniques observent une flore plus diversifiée entre les rangs et des sols moins sollicités par les engins. L'effet sur la vie biologique du sol est prometteur, mais encore étudié par la recherche.",
+     "en": "Livelier soils and plant life. Field experience and technical trials report more diverse plants between the rows and soils less worked by machinery. The effect on soil biology looks promising but is still being studied."
+    },
+    {
+     "fr": "Et pour l'éleveur ? Les vignes enherbées deviennent une ressource précieuse en hiver, quand l'herbe manque ailleurs. C'est un partenariat gagnant-gagnant entre deux métiers qui se croisaient de moins en moins. Sans oublier le plaisir des promeneurs, souvent curieux de voir des moutons au milieu des vignes.",
+     "en": "And for the shepherd? Grassy vineyards become a valuable resource in winter, when grass is scarce elsewhere. It is a win-win partnership between two trades that had drifted apart. Not to mention the walkers, often delighted to see sheep among the vines."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Quels moutons, et combien ?",
+    "en": "Which sheep, and how many?"
+   },
+   "paragraphes": [
+    {
+     "fr": "Les races rustiques et de petite taille sont les plus adaptées : elles abîment moins la vigne, passent facilement entre des rangs étroits et supportent l'hiver dehors. Le mouton d'Ouessant, le plus petit du monde, ou la Solognote sont souvent cités. Les brebis choisies ont des besoins limités, par exemple des brebis en début de gestation ou qui ne nourrissent pas d'agneau ; sinon, il faut prévoir un complément de foin.",
+     "en": "Small, hardy breeds work best: they do less damage to the vines, move easily between narrow rows and cope with winter outdoors. The Ouessant, the smallest sheep in the world, and the Solognote are often mentioned. The ewes chosen have limited needs, for instance early in pregnancy or not feeding a lamb; otherwise, extra hay is needed."
+    },
+    {
+     "fr": "Le nombre de bêtes dépend de l'herbe disponible et du résultat recherché. Une fiche technique publiée par Vignevin Occitanie donne un repère moyen de 20 à 50 brebis par hectare ; en Champagne, un éleveur cité par la Chambre d'agriculture compte un lot de 30 brebis pour 20 à 50 ares, pendant trois à quatre jours. Le troupeau tourne ensuite de parcelle en parcelle.",
+     "en": "The number of animals depends on the grass available and the result sought. A technical sheet published by Vignevin Occitanie gives an average of 20 to 50 ewes per hectare; in Champagne, a shepherd quoted by the Chamber of Agriculture uses a group of 30 ewes for 20 to 50 ares, for three to four days. The flock then moves from plot to plot."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Les limites et les contraintes",
+    "en": "Limits and constraints"
+   },
+   "paragraphes": [
+    {
+     "fr": "Une affaire de calendrier. Le troupeau doit être sorti avant que la vigne redémarre : une brebis qui manque d'herbe goûtera volontiers aux jeunes pousses. Les très jeunes vignes et les complants, plus fragiles, demandent une protection particulière, ou sont tout simplement évités.",
+     "en": "A question of timing. The flock must be out before the vine starts growing again: a sheep short of grass will happily nibble young shoots. Very young vines and replacement plants, more fragile, need special protection or are simply avoided."
+    },
+    {
+     "fr": "Une organisation à deux. L'écopâturage ne s'improvise pas. La Chambre d'agriculture de la Marne insiste : il faut s'entendre à l'avance entre vigneron et éleveur sur la durée, la surveillance du troupeau et les clôtures. Il faut aussi assez d'herbe dans les vignes, et des prairies de repli pour les périodes de fortes pluies ou de sécheresse.",
+     "en": "A two-person arrangement. Eco-grazing cannot be improvised. The Marne Chamber of Agriculture stresses that the winemaker and the shepherd must agree in advance on duration, supervision of the flock and fencing. There must also be enough grass in the vines, and fallback pastures for spells of heavy rain or drought."
+    },
+    {
+     "fr": "Les sols mouillés. Laissés trop longtemps sur une parcelle détrempée, les animaux peuvent tasser et marquer le sol. Mieux vaut éviter le pâturage en conditions trop humides et adapter la taille du troupeau à l'herbe disponible.",
+     "en": "Wet soils. Left too long on a waterlogged plot, the animals can compact and mark the soil. It is best to avoid grazing in very wet conditions and to match the flock size to the grass available."
+    },
+    {
+     "fr": "Le cuivre. Utilisé contre le mildiou, notamment en viticulture biologique, le cuivre peut être toxique pour les moutons, qui l'accumulent dans le foie. Le calendrier de pâturage doit en tenir compte, en laissant le temps aux pluies de lessiver les traitements. La recherche continue sur ce point.",
+     "en": "Copper. Used against downy mildew, especially in organic vineyards, copper can be toxic for sheep, which store it in their liver. The grazing calendar must take it into account, leaving time for rain to wash off treatments. Research on this point is ongoing."
+    },
+    {
+     "fr": "Le travail quotidien. Clôtures mobiles à poser et à déplacer, surveillance, eau, sarments de taille à broyer pour ne pas gêner les bêtes : même avec un berger, il faut un peu de temps et une vraie envie de travailler avec des animaux.",
+     "en": "Daily work. Mobile fences to set up and move, supervision, water, pruning wood to mulch so it does not get in the animals' way: even with a shepherd, it takes some time and a genuine wish to work with animals."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Et en Champagne ?",
+    "en": "And in Champagne?"
+   },
+   "paragraphes": [
+    {
+     "fr": "La pratique se développe dans le vignoble champenois. La Chambre d'agriculture de la Marne forme les vignerons à l'écopâturage, et des exemples sont documentés dans l'Aisne et en Seine-et-Marne, où un éleveur fait pâturer ses brebis dans les vignes l'hiver depuis 2019. Dans l'Aube, nous en avons croisé dans la [Côte des Bar](/la-cote-des-bar), à Merrey-sur-Arce. Nous n'avons pas trouvé de chiffre fiable sur le nombre de domaines concernés : si vous en connaissez, écrivez-nous !",
+     "en": "The practice is growing in the Champagne vineyards. The Marne Chamber of Agriculture trains winemakers in eco-grazing, and examples are documented in the Aisne and in Seine-et-Marne, where a shepherd has grazed his sheep in the vines every winter since 2019. In the Aube, we came across a flock in the [Côte des Bar](/la-cote-des-bar), at Merrey-sur-Arce. We have not found a reliable figure for the number of estates involved: if you know some, write to us!"
+    },
+    {
+     "fr": "L'écopâturage rejoint la logique des démarches environnementales que nous détaillons dans notre article sur [les labels du champagne](/champagne-labels-et-certifications) : moins de passages d'engins et de désherbage, plus de vie dans les parcelles. Ce n'est pas un label en soi, mais un geste concret au service du sol.",
+     "en": "Eco-grazing fits the logic of the environmental schemes we describe in our article on [champagne labels](/champagne-labels-et-certifications): fewer machine passes and less weeding, more life in the plots. It is not a label in itself, but a practical step for the soil."
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "Chez Moutard*Dangin",
+    "en": "At Moutard*Dangin"
+   },
+   "paragraphes": [
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : depuis quand Champagne [Moutard*Dangin](/vignerons/moutard-dangin) accueille des moutons dans ses vignes]",
+     "en": "[TO BE COMPLETED BY JULIEN: since when Champagne [Moutard*Dangin](/vignerons/moutard-dangin) has hosted sheep in its vineyards]"
+    },
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : combien de moutons, quelle race, avec quel éleveur ou berger]",
+     "en": "[TO BE COMPLETED BY JULIEN: how many sheep, which breed, with which shepherd]"
+    },
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : quelles parcelles, sur quelle période de l'année]",
+     "en": "[TO BE COMPLETED BY JULIEN: which plots, at what time of year]"
+    },
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : ce que ça change pour le domaine (travail du sol, herbe, sols, organisation)]",
+     "en": "[TO BE COMPLETED BY JULIEN: what it changes for the estate (soil work, grass, soils, organisation)]"
+    },
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : une citation du vigneron, avec son prénom et son nom]",
+     "en": "[TO BE COMPLETED BY JULIEN: a quote from the winemaker, with first name and surname]"
+    },
+    {
+     "fr": "[À COMPLÉTER PAR JULIEN : votre témoignage personnel]",
+     "en": "[TO BE COMPLETED BY JULIEN: your personal account]"
+    }
+   ]
+  },
+  {
+   "titre": {
+    "fr": "En résumé",
+    "en": "In short"
+   },
+   "paragraphes": [
+    {
+     "fr": "Des moutons l'hiver, une vigne en repos, de l'herbe entretenue sans machine et des sols qui respirent : l'écopâturage est une belle idée, à condition de bien l'organiser. Et si vous voulez parler de tout cela autour d'un verre, rejoignez l'une de [nos dégustations privées](/tasting-troyes) : nous vous présenterons des vignerons de l'Aube engagés pour leur terroir.",
+     "en": "Sheep in winter, vines at rest, grass kept down without machines and soils that breathe: eco-grazing is a lovely idea, provided it is well organised. And if you would like to talk about it over a glass, join one of [our private tastings](/tasting-troyes): we will introduce you to Aube winemakers committed to their terroir."
+    }
+   ]
+  }
+ ]
+}
