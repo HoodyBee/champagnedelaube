@@ -10,9 +10,10 @@ import { Section } from "@/components/ui/Section";
 import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { terroirs, type TerroirKey } from "@/lib/brand";
+import { terroirs, type CepageKey, type TerroirKey } from "@/lib/brand";
+import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
 import { nav, terroirPages } from "@/lib/site";
-import { getTerroir } from "@/sanity/content";
+import { getArticleSlugs, getTerroir } from "@/sanity/content";
 
 const GRANDS = ["pinot-noir", "meunier", "chardonnay"] as const;
 const RARES = ["pinot-blanc", "pinot-gris", "arbane", "petit-meslier"] as const;
@@ -22,12 +23,14 @@ const hrefOf = (cle: TerroirKey) => terroirPages.find((p) => p.key === cle)!.hre
 
 export async function terroirMetadata(cle: TerroirKey, locale: Locale): Promise<Metadata> {
   const t = await getTerroir(cle, locale);
-  return pageMetadata({ locale, href: hrefOf(cle), seo: t.seo, title: t.seo.title ?? t.nom, description: t.seo.description ?? t.intro ?? t.nom });
+  return pageMetadata({ locale, href: hrefOf(cle), seo: t.seo, title: t.seo.title ?? t.nom, description: t.seo.description ?? t.intro ?? t.nom, image: t.image });
 }
 
 /** Page d'un terroir : ouverture, repères, texte, sols et cépages, secteurs, villages, liens. */
 export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Locale }) {
-  const t = await getTerroir(cle, locale);
+  const [t, slugs] = await Promise.all([getTerroir(cle, locale), getArticleSlugs()]);
+  // Lien vers l'article du cépage, seulement s'il est publié (jamais de lien cassé).
+  const lienCepage = (c: CepageKey) => (slugs.includes(ARTICLE_CEPAGE[c]) ? ARTICLE_CEPAGE[c] : undefined);
   const tT = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
   const couleur = `var(--color-${terroirs[cle].color})`;
@@ -76,6 +79,14 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
             {t.cepagesDominants.length > 0 && (
               <div>
                 <h2 className="text-sur-titre text-bronze">{tT("cepages")}</h2>
+                {/* Cépages majoritaires d'abord, puis les autres cépages cultivés (en minorité). */}
+                <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
+                  {t.cepagesMajoritaires.map((c) => (
+                    <li key={c}>
+                      <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} article={lienCepage(c)} />
+                    </li>
+                  ))}
+                </ul>
                 {(
                   [
                     ["principaux", GRANDS],
@@ -83,15 +94,15 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                     ["nouveau", NOUVEAUX],
                   ] as const
                 ).map(([groupe, liste]) => {
-                  const items = t.cepagesDominants.filter((c) => (liste as readonly string[]).includes(c));
+                  const items = t.cepagesDominants.filter((c) => (liste as readonly string[]).includes(c) && !t.cepagesMajoritaires.includes(c));
                   if (!items.length) return null;
                   return (
                     <div key={groupe} className="mt-space-2">
-                      {t.cepagesDominants.length > 3 && <p className="text-sur-titre-petit text-gris-chaud">{tT(`cepagesGroupes.${groupe}`)}</p>}
+                      <p className="text-sur-titre-petit text-gris-chaud">{tT(`cepagesGroupes.${groupe}`)}</p>
                       <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
                         {items.map((c) => (
                           <li key={c}>
-                            <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} />
+                            <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} article={lienCepage(c)} />
                           </li>
                         ))}
                       </ul>

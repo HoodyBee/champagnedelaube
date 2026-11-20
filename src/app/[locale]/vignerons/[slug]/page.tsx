@@ -13,10 +13,11 @@ import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
 import { pictos, terroirs } from "@/lib/brand";
+import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
 import { nav } from "@/lib/site";
 import { MagCard } from "@/components/mag/MagCard";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
-import { getArticles, getVigneron, getVigneronSlugs, getVignerons } from "@/sanity/content";
+import { getArticles, getArticleSlugs, getVigneron, getVigneronSlugs, getVignerons } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/vignerons/[slug]">;
 
@@ -37,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     seo: v.seo,
     title: v.village ? t("metaTitle", { nom: v.nom, village: v.village }) : `${v.nom} | Champagne de l'Aube`,
     description: v.philosophie ?? v.accroche ?? v.nom,
+    image: v.image,
   });
 }
 
@@ -44,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function VigneronPage({ params }: Props) {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   setRequestLocale(locale);
-  const [v, tous, articles, labels] = await Promise.all([getVigneron(slug, locale), getVignerons(locale), getArticles(locale), getRubriqueLabels(locale)]);
+  const [v, tous, articles, labels, slugsArticles] = await Promise.all([getVigneron(slug, locale), getVignerons(locale), getArticles(locale), getRubriqueLabels(locale), getArticleSlugs()]);
   if (!v) notFound();
 
   const t = await getTranslations("vigneronPage");
@@ -136,7 +138,7 @@ export default async function VigneronPage({ params }: Props) {
                 <ul className="mt-space-2 grid grid-cols-2 gap-x-space-2 gap-y-space-1 sm:grid-cols-3">
                   {v.cepages.map((k) => (
                     <li key={k}>
-                      <CepagePastille cepage={k} />
+                      <CepagePastille cepage={k} article={slugsArticles.includes(ARTICLE_CEPAGE[k]) ? ARTICLE_CEPAGE[k] : undefined} />
                     </li>
                   ))}
                 </ul>

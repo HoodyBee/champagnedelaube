@@ -13,21 +13,22 @@ import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
-import { getTerroirAube } from "@/sanity/content";
+import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
+import { getArticleSlugs, getTerroirAube } from "@/sanity/content";
 
 const HREF = "/le-terroir-de-laube";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/le-terroir-de-laube">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const p = await getTerroirAube(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: p.seo.title!, description: p.seo.description! });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: p.seo.title!, description: p.seo.description!, image: p.hero.image });
 }
 
 /** Les Terroirs Aubois : page centrale (situation, sols, climat, histoire, cépages, 4 terroirs). */
 export default async function TerroirAubePage({ params }: PageProps<"/[locale]/le-terroir-de-laube">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
-  const p = await getTerroirAube(locale);
+  const [p, slugs] = await Promise.all([getTerroirAube(locale), getArticleSlugs()]);
   const t = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
   const tPro = await getTranslations("terroirPage");
@@ -60,7 +61,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         <ul className="mt-space-4 grid gap-space-3 sm:grid-cols-3">
           {p.cepagesTextes.map((c) => (
             <li key={c.cepage} className="flex flex-col items-center text-center">
-              <CepagePastille cepage={c.cepage} size={44} />
+              <CepagePastille cepage={c.cepage} size={44} article={slugs.includes(ARTICLE_CEPAGE[c.cepage]) ? ARTICLE_CEPAGE[c.cepage] : undefined} />
               <p className="mt-space-2 max-w-xs text-gris-chaud">{c.texte}</p>
             </li>
           ))}

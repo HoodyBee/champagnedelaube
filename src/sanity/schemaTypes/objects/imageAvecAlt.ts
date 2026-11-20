@@ -28,8 +28,10 @@ export const imageAvecAlt = defineType({
     defineField({
       name: "credit",
       title: "Crédit photo",
-      description: "Facultatif. Ex. : © Prénom Nom.",
+      description:
+        "Par défaut : « © Champagne de l'Aube / Detectezmoi.com ». Pour une photo de banque d'images, indiquez l'auteur et la licence (ex. : « Photo : Jean Dupont, CC BY-SA 4.0, Wikimedia Commons ») : elle apparaîtra dans les mentions légales.",
       type: "string",
+      initialValue: "© Champagne de l'Aube / Detectezmoi.com",
     }),
   ],
 });

@@ -34,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     seo: a.seo,
     title: `${a.titre} | Champagne de l'Aube`,
     description: a.extrait ?? a.titre,
+    image: a.image,
   });
   if (!traduit && locale !== "fr") {
     meta.robots = { index: false, follow: true };
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: a.titre,
       description: a.extrait,
       publishedTime: a.date,
-      images: a.image ? [{ url: a.image.src, alt: a.image.alt }] : undefined,
+      images: a.image?.og ? [{ url: a.image.og, width: 1200, height: 630, alt: a.image.alt }] : undefined,
     },
   };
 }

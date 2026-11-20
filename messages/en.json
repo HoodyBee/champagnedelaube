@@ -822,7 +822,7 @@
   },
   "terroirPage": {
     "sols": "Soils and geology",
-    "cepages": "Grape varieties",
+    "cepages": "Main grape varieties",
     "villages": "Villages",
     "secteurs": "Two areas",
     "autres": "The other Aube terroirs",
@@ -831,7 +831,7 @@
     "carteIntro": "From the Côte des Bar to Villenauxe-la-Grande, each terroir has its soil, its grapes and its winemakers.",
     "faqTitre": "Your questions about the Aube terroir",
     "cepagesGroupes": {
-      "principaux": "The main grapes",
+      "principaux": "Other grapes grown",
       "rares": "The rare grapes",
       "nouveau": "The newcomer"
     }

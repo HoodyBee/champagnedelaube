@@ -56,12 +56,24 @@ export async function pageMetadata(opts: {
   seo?: { title?: string; description?: string; noIndex?: boolean };
   title: string;
   description: string;
+  /** Photo principale de la page : image de partage (Open Graph, 1200 × 630). */
+  image?: { og?: string; alt?: string } | null;
 }): Promise<Metadata> {
   const robots = opts.seo?.noIndex ? { index: false, follow: true } : await robotsFor(opts.locale);
   return {
     title: { absolute: titreCourt(opts.seo?.title || opts.title) },
     description: descriptionCourte(opts.seo?.description || opts.description),
     alternates: await localizedAlternates(opts.href, opts.locale),
+    ...(opts.image?.og
+      ? {
+          openGraph: {
+            title: titreCourt(opts.seo?.title || opts.title),
+            description: descriptionCourte(opts.seo?.description || opts.description),
+            images: [{ url: opts.image.og, width: 1200, height: 630, alt: opts.image.alt ?? "" }],
+          },
+          twitter: { card: "summary_large_image", images: [opts.image.og] },
+        }
+      : {}),
     ...(robots ? { robots } : {}),
   };
 }

@@ -822,7 +822,7 @@
   },
   "terroirPage": {
     "sols": "Sols et géologie",
-    "cepages": "Cépages",
+    "cepages": "Cépages majoritaires",
     "villages": "Villages",
     "secteurs": "Deux secteurs",
     "autres": "Les autres terroirs aubois",
@@ -831,7 +831,7 @@
     "carteIntro": "De la Côte des Bar à Villenauxe-la-Grande, chaque terroir a son sol, ses cépages et ses vignerons.",
     "faqTitre": "Vos questions sur le terroir de l'Aube",
     "cepagesGroupes": {
-      "principaux": "Les grands cépages",
+      "principaux": "Autres cépages cultivés",
       "rares": "Les cépages rares",
       "nouveau": "Le nouveau venu"
     }

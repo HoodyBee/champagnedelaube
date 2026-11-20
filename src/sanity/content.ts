@@ -16,25 +16,47 @@ import { urlFor } from "./lib/image";
 // ---------------------------------------------------------------------------
 // Images
 // ---------------------------------------------------------------------------
-const IMG = `{alt, credit, hotspot, crop, asset->{_id, url, metadata{lqip, dimensions{width, height}}}}`;
+const IMG = `{alt, credit, hotspot, crop, asset->{_id, url, originalFilename, creditLine, metadata{lqip, dimensions{width, height}}}}`;
 type SanityImg = {
   alt?: Localized;
   credit?: string;
   hotspot?: unknown;
   crop?: unknown;
-  asset?: { _id: string; url: string; metadata?: { lqip?: string; dimensions?: { width: number; height: number } } };
+  asset?: { _id: string; url: string; originalFilename?: string; creditLine?: string; metadata?: { lqip?: string; dimensions?: { width: number; height: number } } };
 } | null;
+
+/** Crédit des photos maison (modifiable photo par photo dans le Studio). */
+export const CREDIT_PAR_DEFAUT = "© Champagne de l'Aube / Detectezmoi.com";
+
+/**
+ * Ajoute le nom lisible du fichier à l'adresse Sanity (vanity filename) :
+ * https://cdn.sanity.io/images/…/hash-2400x1600.jpg/degustation-champagne-les-riceys-2025.jpg?…
+ */
+export function avecNomLisible(url: string, nomFichier?: string): string {
+  if (!nomFichier || !url.startsWith("https://cdn.sanity.io/images/")) return url;
+  const propre = nomFichier
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9.]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const [chemin, requete] = url.split("?");
+  return `${chemin}/${propre}${requete ? `?${requete}` : ""}`;
+}
 
 /** Image Sanity -> image prête pour next/image (recadrée selon le point d'intérêt). */
 export function toImg(img: SanityImg | undefined, locale: Locale, width = 1600): Img | null {
   if (!img?.asset?._id) return null;
   const d = img.asset.metadata?.dimensions ?? { width: 1600, height: 1067 };
+  const nom = img.asset.originalFilename;
   return {
-    src: urlFor(img as never).width(width).fit("max").url(),
+    src: avecNomLisible(urlFor(img as never).width(width).fit("max").url(), nom),
     alt: localize(img.alt, locale) ?? "",
     width,
     height: Math.round((width * d.height) / d.width),
     blurDataURL: img.asset.metadata?.lqip,
+    credit: img.credit || img.asset.creditLine || CREDIT_PAR_DEFAUT,
+    og: avecNomLisible(urlFor(img as never).width(1200).height(630).fit("crop").quality(80).url(), nom),
   };
 }
 
@@ -766,10 +788,24 @@ export type TerroirPage = {
   contenu?: PortableTextBlock[];
   sols?: string;
   cepagesDominants: CepageKey[];
+  /** Cépages majoritaires (vérifiés : docs/terroirs-sources.md). */
+  cepagesMajoritaires: CepageKey[];
   cepagesNotes?: Partial<Record<CepageKey, string>>;
   secteurs: { titre: string; texte?: PortableTextBlock[]; texteSimple?: string }[];
   galerie: Img[];
   seo: Seo;
+};
+
+/**
+ * Cépages majoritaires vérifiés (docs/terroirs-sources.md) : pinot noir dans la Côte des Bar (plus de 80 %)
+ * et aux Riceys (très largement majoritaire) ; chardonnay à Montgueux (85 à 90 %) et à Villenauxe-la-Grande.
+ * Modifiables dans le Studio (champ « Cépages majoritaires »).
+ */
+const MAJORITAIRES_PAR_DEFAUT: Record<TerroirKey, CepageKey[]> = {
+  "cote-des-bar": ["pinot-noir"],
+  "les-riceys": ["pinot-noir"],
+  montgueux: ["chardonnay"],
+  villenauxe: ["chardonnay"],
 };
 
 export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<TerroirPage> {
@@ -783,11 +819,12 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     contenu?: LocalizedBlocks;
     sols?: Localized;
     cepagesDominants?: CepageKey[];
+    cepagesMajoritaires?: CepageKey[];
     secteurs?: BlocRaw[];
     galerie?: SanityImg[];
     seo?: SeoRaw;
   } | null>({
-    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants,
+    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants, cepagesMajoritaires,
       secteurs[]{icone, surTitre, titre, texte, points, image ${IMG}}, galerie[] ${IMG}, seo}`,
     params: { cle },
     tags: ["terroir"],
@@ -812,6 +849,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
       contenu: contenuSanity,
       sols: L(t.sols, locale),
       cepagesDominants: t.cepagesDominants ?? [],
+      cepagesMajoritaires: t.cepagesMajoritaires?.length ? t.cepagesMajoritaires : MAJORITAIRES_PAR_DEFAUT[cle],
       secteurs: (t.secteurs ?? []).map((s) => blocOf(s, locale)).filter((s) => s.titre).map((s) => ({ titre: s.titre!, texte: s.texte })),
       galerie: (t.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
       seo: seoOf(t.seo, locale),
@@ -828,6 +866,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     contenu: sectionsEnBlocs(d.sections, locale),
     sols: d.sols ? tr(d.sols, locale) : undefined,
     cepagesDominants: d.cepagesDominants,
+    cepagesMajoritaires: MAJORITAIRES_PAR_DEFAUT[cle],
     cepagesNotes: Object.fromEntries(Object.entries(d.cepagesNotes ?? {}).map(([k, v]) => [k, tr(v, locale)])),
     secteurs: (d.secteurs ?? []).map((s) => ({ titre: tr(s.titre, locale), texteSimple: tr(s.texte, locale) })),
     galerie: [],

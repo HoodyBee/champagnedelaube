@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "proPage" });
   const p = await getEspacePro(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription"), image: p.hero.image });
 }
 
 /** Espace Professionnels : restaurants, cavistes, hôtels. */

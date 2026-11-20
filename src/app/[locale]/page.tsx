@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "home" });
   const a = await getAccueil(locale);
-  return pageMetadata({ locale, href: "/", seo: a.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: "/", seo: a.seo, title: t("metaTitle"), description: t("metaDescription"), image: a.hero.image });
 }
 
 /**

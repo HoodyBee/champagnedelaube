@@ -84,8 +84,18 @@ export const terroir = defineType({
     defineField({ name: "contenu", title: "Texte de la page", type: "localeRichText", group: "contenu" }),
     defineField({ name: "sols", title: "Sols et géologie", type: "localeText", group: "contenu" }),
     defineField({
+      name: "cepagesMajoritaires",
+      title: "Cépages majoritaires",
+      description:
+        "Ceux qui couvrent l'essentiel du vignoble (ex. : pinot noir pour la Côte des Bar, chardonnay pour Montgueux). Les autres cépages ci-dessous s'affichent à part, comme « autres cépages cultivés ».",
+      type: "array",
+      group: "contenu",
+      of: [defineArrayMember({ type: "string" })],
+      options: { list: Object.entries(cepages).map(([value, c]) => ({ title: c.label, value })) },
+    }),
+    defineField({
       name: "cepagesDominants",
-      title: "Cépages dominants",
+      title: "Cépages cultivés",
       type: "array",
       group: "contenu",
       of: [defineArrayMember({ type: "string" })],

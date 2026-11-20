@@ -15,6 +15,9 @@ const nextConfig: NextConfig = {
   images: {
     // Images hébergées par Sanity.
     remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
+    // Images Sanity servies par le CDN de Sanity (formats modernes, nom de fichier lisible).
+    loader: "custom",
+    loaderFile: "./src/sanity/lib/image-loader.ts",
   },
   turbopack: {
     rules: {
