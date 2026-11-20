@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -71,6 +72,8 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
           <Faq items={p.faq} />
         </Section>
       )}
+
+      <DansLeMag locale={locale} chemins={["/le-terroir-de-laube"]} rubrique="terroirs-cepages" />
 
       <Section fond="chaude">
         <div className="flex flex-col items-center justify-center gap-space-1 sm:flex-row">

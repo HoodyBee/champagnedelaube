@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/contact"
   const t = await getTranslations({ locale, namespace: "contactPage" });
   const page = await getPage("contact");
   return {
-    title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
+    title: localize(page?.seo?.title, locale) ?? t("metaTitle"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
     alternates: await localizedAlternates("/contact", locale),
     robots: await robotsFor(locale),

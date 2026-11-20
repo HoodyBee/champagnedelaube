@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -213,6 +214,8 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
           </div>
         </section>
       </Section>
+
+      <DansLeMag locale={locale} chemins={["/tasting-troyes"]} rubrique="accords" fond="chaude" />
 
       <Section id="grands-evenements" fond="chaude">
         <div className="mx-auto max-w-3xl text-center">

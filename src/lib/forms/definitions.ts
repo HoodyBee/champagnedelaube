@@ -173,6 +173,16 @@ export const forms = {
       { name: "profil", type: "select", required: true, options: ["professionnel", "entreprise", "particulier"] },
     ],
   },
+  /** Le Mag : « Recevoir le calendrier en PDF » (marronnier). Le lien du PDF part par e-mail et s'ouvre tout de suite. */
+  marronnier: {
+    profil: "choix",
+    contact: "email",
+    fields: [
+      nom,
+      email(),
+      { name: "profil", type: "select", required: true, options: ["professionnel", "vigneron", "entreprise", "particulier"] },
+    ],
+  },
   /** Page Contact, profil « Particulier ». */
   contactParticulier: {
     profil: "particuliers",
@@ -239,8 +249,9 @@ export const profilParSujet: Record<string, "pro" | "entreprises" | "particulier
 };
 
 /** Liste Brevo selon le champ « Vous êtes » (formulaire « Recevoir notre sélection »). */
-export const profilParChoix: Record<string, "pro" | "entreprises" | "particuliers"> = {
+export const profilParChoix: Record<string, "pro" | "entreprises" | "particuliers" | "vignerons"> = {
   professionnel: "pro",
+  vigneron: "vignerons",
   entreprise: "entreprises",
   particulier: "particuliers",
 };

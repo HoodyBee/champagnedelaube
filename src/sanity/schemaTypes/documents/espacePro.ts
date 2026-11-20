@@ -5,7 +5,7 @@ import { faqField, repriseField } from "../objects/blocs";
 /** Espace Professionnels : /champagne-hotel-restaurants-et-cavistes/ (document unique). */
 export const espacePro = defineType({
   name: "espacePro",
-  title: "Espace Professionnels",
+  title: "Restaurants, cavistes, hôtels",
   type: "document",
   icon: icon("case"),
   groups: [
@@ -72,5 +72,5 @@ export const espacePro = defineType({
     repriseField("reprise"),
     defineField({ name: "seo", title: "Référencement", type: "seo", group: "seo" }),
   ],
-  preview: { prepare: () => ({ title: "Espace Professionnels" }) },
+  preview: { prepare: () => ({ title: "Restaurants, cavistes, hôtels" }) },
 });

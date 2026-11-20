@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -91,6 +92,8 @@ export default async function GrandsEvenementsPage({ params }: PageProps<"/[loca
           <Faq items={page.faq} />
         </Section>
       )}
+
+      <DansLeMag locale={locale} chemins={["/champagne-mariage"]} rubrique="accords" fond={page.faq.length > 0 ? "blanc" : "chaude"} />
 
       <Section fond={page.faq.length > 0 ? "chaude" : "blanc"}>
         <section id="conseil" aria-labelledby="conseil-titre" className="mx-auto max-w-3xl scroll-mt-28 rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">

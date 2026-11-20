@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { MarronnierBloc } from "@/components/calendrier/MarronnierBloc";
 import { MagCard } from "@/components/mag/MagCard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { DomaineCard } from "@/components/ui/DomaineCard";
 import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
-import { getPathname } from "@/i18n/navigation";
-import { pageMetadata, SITE_URL } from "@/i18n/metadata";
-import { routing, type Locale, type StaticPathname } from "@/i18n/routing";
+import { getPathname, Link } from "@/i18n/navigation";
+import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
+import { routing, type Locale } from "@/i18n/routing";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
-import { getArticle, getArticles, getArticleSlugs, getVignerons, PAGES_RUBRIQUE } from "@/sanity/content";
+import { getArticle, getArticleLangues, getArticles, getArticleSlugs, getVignerons, rubriqueHref } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/[article]">;
 
@@ -23,8 +24,10 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, article: slug } = (await params) as { locale: Locale; article: string };
-  const a = await getArticle(slug, locale);
+  const [a, langues] = await Promise.all([getArticle(slug, locale), getArticleLangues()]);
   if (!a) return {};
+  // Article sans traduction dans cette langue : la page affiche le français -> pas d'indexation, canonique vers le français.
+  const traduit = (langues[slug] ?? []).includes(locale);
   const meta = await pageMetadata({
     locale,
     href: { pathname: "/[article]", params: { article: slug } },
@@ -32,6 +35,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${a.titre} | Champagne de l'Aube`,
     description: a.extrait ?? a.titre,
   });
+  if (!traduit && locale !== "fr") {
+    meta.robots = { index: false, follow: true };
+    meta.alternates = { canonical: withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale: "fr" })) };
+  }
   return {
     ...meta,
     openGraph: {
@@ -53,10 +60,12 @@ export default async function ArticlePage({ params }: Props) {
 
   const t = await getTranslations("mag");
   const tLegal = await getTranslations("legal");
-  const rubrique = a.rubriques.find((r) => labels[r]);
-  const rubriqueHref: StaticPathname =
-    rubrique && rubrique in PAGES_RUBRIQUE ? PAGES_RUBRIQUE[rubrique as keyof typeof PAGES_RUBRIQUE] : "/le-mag";
+  // Rubrique principale : fil d'Ariane, sur-titre et données structurées (l'adresse reste unique).
+  const rubrique = a.rubriquePrincipale && labels[a.rubriquePrincipale] ? a.rubriquePrincipale : a.rubriques.find((r) => labels[r]);
   const [aDate] = withDates([a], locale);
+  // Bloc « Calendrier du marronnier » placé dans le texte (Studio) : tableau filtrable + PDF.
+  const blocCal = a.contenu?.find((b) => b._type === "calendrierMarronnier") as { annee?: number } | undefined;
+  const blocMarronnier = blocCal ? <MarronnierBloc locale={locale} annee={blocCal.annee} /> : null;
   const cites = vignerons.filter((v) => a.vignerons.includes(v.slug));
 
   // Articles liés : mêmes vignerons d'abord, puis même rubrique, puis les plus récents.
@@ -97,7 +106,7 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <Breadcrumb
         locale={locale}
-        items={[{ label: t("h1"), href: "/le-mag" }, ...(rubrique ? [{ label: labels[rubrique], href: rubriqueHref }] : []), { label: a.titre }]}
+        items={[{ label: t("h1"), href: "/le-mag" }, ...(rubrique ? [{ label: labels[rubrique], href: rubriqueHref(rubrique) }] : []), { label: a.titre }]}
       />
       <article>
         <header className="mx-auto max-w-3xl px-space-2 pb-space-3 pt-space-4 sm:px-space-4 lg:pt-space-5">
@@ -113,9 +122,34 @@ export default async function ArticlePage({ params }: Props) {
         </div>
         {a.contenu?.length ? (
           <div className="mx-auto max-w-3xl px-space-2 py-space-5 sm:px-space-4">
-            <RichText value={a.contenu} locale={locale} />
+            <RichText value={a.contenu} locale={locale} extras={blocMarronnier ? { calendrierMarronnier: blocMarronnier } : undefined} />
           </div>
         ) : null}
+        {/* Continuer la découverte : la rubrique de l'article et deux pages clés, avec des ancres explicites */}
+        <nav aria-label={t("plusLoin")} className="mx-auto max-w-3xl px-space-2 pb-space-5 sm:px-space-4">
+          <div className="rounded-carte border border-filet bg-creme-clair p-space-3">
+            <p className="text-sur-titre-petit text-bronze">{t("plusLoin")}</p>
+            <ul className="mt-space-1 space-y-1 text-[1.0625rem]">
+              {rubrique && (
+                <li>
+                  <Link href={rubriqueHref(rubrique)} className="underline decoration-or underline-offset-4 hover:text-bronze">
+                    {t("tousArticlesRubrique", { rubrique: labels[rubrique] })}
+                  </Link>
+                </li>
+              )}
+              <li>
+                <Link href="/tasting-troyes" className="underline decoration-or underline-offset-4 hover:text-bronze">
+                  {t("lienDegustations")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/vignerons" className="underline decoration-or underline-offset-4 hover:text-bronze">
+                  {t("lienSelection")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </article>
 
       {cites.length > 0 && (

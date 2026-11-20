@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { CatalogueDialog } from "@/components/selection/CatalogueDialog";
@@ -57,6 +58,8 @@ export default async function VigneronsPage({ params }: PageProps<"/[locale]/vig
       <Section className={cuvees.length ? "" : "!pt-space-3"} titre={cuvees.length ? t("domainesTitre") : undefined} align="gauche">
         <VigneronsFiltres vignerons={vignerons} />
       </Section>
+      <DansLeMag locale={locale} chemins={["/vignerons"]} rubrique="portraits" />
+
       <Section fond="chaude">
         <SelectionBox lienSelection={false} />
       </Section>

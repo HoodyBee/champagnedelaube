@@ -42,5 +42,24 @@ export const richText = defineType({
       },
     }),
     defineArrayMember({ type: "imageAvecAlt" }),
+    // Marronnier : le tableau filtrable des journées (« Journées du calendrier » + « Mes événements ») et le PDF.
+    defineArrayMember({
+      name: "calendrierMarronnier",
+      title: "Calendrier du marronnier (tableau filtrable + PDF)",
+      type: "object",
+      fields: [
+        {
+          name: "annee",
+          title: "Année affichée",
+          description: "Laisser vide pour afficher toutes les dates saisies.",
+          type: "number",
+          validation: (rule) => rule.integer().min(2020).max(2100),
+        },
+      ],
+      preview: {
+        select: { annee: "annee" },
+        prepare: ({ annee }) => ({ title: `📅 Calendrier du marronnier${annee ? ` ${annee}` : ""}`, subtitle: "Tableau filtrable et formulaire PDF" }),
+      },
+    }),
   ],
 });

@@ -271,6 +271,7 @@
       },
       "profil": {
         "professionnel": "Un professionnel (restaurant, cave, hôtel)",
+        "vigneron": "Un vigneron ou un domaine",
         "entreprise": "Une entreprise ou un CSE",
         "particulier": "Un particulier"
       },
@@ -304,7 +305,8 @@
       "contactParticulier": "Contact particulier",
       "contactPro": "Contact professionnel (restaurant, cave, hôtel)",
       "contactEntreprise": "Contact entreprise ou CSE",
-      "degustationPrivee": "Demande de dégustation privée"
+      "degustationPrivee": "Demande de dégustation privée",
+      "marronnier": "Demande du calendrier (marronnier) en PDF"
     },
     "submit": {
       "grillePro": "Recevoir la sélection et les tarifs pro",
@@ -320,7 +322,8 @@
       "contactParticulier": "Envoyer le message",
       "contactPro": "Envoyer le message",
       "contactEntreprise": "Envoyer le message",
-      "degustationPrivee": "Organiser ma dégustation"
+      "degustationPrivee": "Organiser ma dégustation",
+      "marronnier": "Recevoir le calendrier"
     },
     "errors": {
       "required": "Ce champ est obligatoire.",
@@ -351,7 +354,9 @@
       "brochureByEmail": "Nous vous envoyons la brochure par e-mail très prochainement.",
       "newsletter": "Pour recevoir les actualités, il reste une étape : cliquez sur le lien de confirmation que nous venons de vous envoyer par e-mail.",
       "catalogueSent": "Notre sélection est en route : vous la trouverez dans votre boîte mail d'ici quelques minutes.",
-      "catalogueSoon": "Nous vous envoyons notre sélection très vite par e-mail."
+      "catalogueSoon": "Nous vous envoyons notre sélection très vite par e-mail.",
+      "downloadMarronnier": "Télécharger le calendrier (PDF)",
+      "marronnier": "Le calendrier est prêt : le lien vient aussi de partir dans votre boîte mail."
     },
     "ack": {
       "subject": "Champagne de l'Aube : votre demande est bien reçue",
@@ -360,7 +365,8 @@
       "brochure": "Votre brochure est disponible ici :",
       "signature": "À très bientôt,\nJulien Mineo",
       "catalogue": "Voici notre sélection du moment, à télécharger ici :",
-      "catalogueSoon": "Nous vous envoyons notre sélection du moment très vite, par retour d'e-mail."
+      "catalogueSoon": "Nous vous envoyons notre sélection du moment très vite, par retour d'e-mail.",
+      "marronnier": "Votre calendrier est prêt : vous pouvez le télécharger ici :"
     },
     "newsletterOptIn": "Je souhaite recevoir les actualités de Champagne de l'Aube (vignerons, dégustations, événements).",
     "faisonsConnaissance": "Faisons connaissance",
@@ -397,7 +403,8 @@
       "degustation": "Réserver une dégustation",
       "evenement": "Préparer un grand événement"
     },
-    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine"
+    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
+    "metaTitle": "Nous contacter à Troyes"
   },
   "newsletter": {
     "bar": {
@@ -740,8 +747,23 @@
       "oenotourisme": "Œnotourisme",
       "actualites": "Actualités"
     },
+    "autresRubriques": "Les autres rubriques du Mag",
+    "rubriquesIntro": {
+      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
+      "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
+      "portraits": "À la rencontre des vignerons indépendants de l'Aube : leur histoire, leurs parcelles, leurs cuvées.",
+      "terroirsCepages": "Pinot noir, meunier, chardonnay et cépages rares : comprendre les cépages du champagne et les terroirs de l'Aube qui les révèlent.",
+      "oenotourisme": "Visites de caves, routes des vignes et villages : préparer son séjour dans le vignoble de l'Aube.",
+      "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons."
+    },
     "aLaUne": "À la une",
-    "tousLesArticles": "Tous les articles"
+    "tousLesArticles": "Tous les articles",
+    "dansLeMag": "Pour aller plus loin",
+    "plusLoin": "Continuer la découverte",
+    "rubriquesNav": "Les rubriques du Mag",
+    "tousArticlesRubrique": "Tous les articles « {rubrique} »",
+    "lienDegustations": "Nos dégustations privées de champagnes de vignerons, à Troyes ou chez vous",
+    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons"
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
@@ -854,5 +876,46 @@
     },
     "privacyLink": "Consulter la politique de confidentialité",
     "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous."
+  },
+  "calendrier": {
+    "categories": {
+      "evenements": "⭐ Mes événements",
+      "vins": "🍷 Vins / Cépages",
+      "gastronomie": "🍴 Gastronomie",
+      "spiritueux": "🍸 Spiritueux / Cocktails",
+      "salons": "🌍 Grands RDV / Salons"
+    },
+    "filtreCategorie": "Catégorie",
+    "filtreMois": "Mois",
+    "toutes": "Toutes",
+    "tousLesMois": "Toute l'année",
+    "colDate": "Date",
+    "colJournee": "Journée",
+    "colCategorie": "Catégorie",
+    "colAnecdote": "Le petit plus",
+    "aConfirmer": "à confirmer",
+    "regle": "Règle : {regle}",
+    "aucune": "Aucune date pour ce filtre.",
+    "resultats": "{count, plural, =0 {aucune date} one {# date} other {# dates}}",
+    "lienExterne": "site officiel",
+    "lienInterne": "lire",
+    "du": "du {debut} au {fin}",
+    "accueilSurTitre": "Le calendrier du vin et de la gastronomie",
+    "accueilTitre": "Nos rendez-vous et les journées à ne pas manquer",
+    "accueilIntro": "Nos événements et les grandes journées du vin, de la gastronomie et des cépages, mois par mois.",
+    "precedent": "Mois précédent",
+    "suivant": "Mois suivant",
+    "prochaines": "Prochaines dates",
+    "voirTout": "Voir tout le calendrier",
+    "aucuneProchaine": "Les prochaines dates arrivent bientôt.",
+    "legende": "Légende",
+    "fermer": "Fermer",
+    "pdfTitre": "Recevoir le calendrier en PDF",
+    "pdfTexte": "Le marronnier complet, à imprimer ou à partager avec votre équipe. Indiquez votre e-mail, nous vous l'envoyons et le téléchargement démarre tout de suite.",
+    "pdfBouton": "Recevoir le PDF",
+    "pdfTelecharger": "Télécharger le calendrier (PDF)",
+    "pdfSurTitre": "Le Mag du Champagne · Champagne de l'Aube",
+    "pdfDocTitre": "Le marronnier {annee} du vin et de la gastronomie",
+    "pdfIntro": "Journées des cépages, de la gastronomie et des spiritueux, grands rendez-vous et nos événements : le calendrier éditorial pour préparer vos publications et vos animations. Dates vérifiées ; « à confirmer » quand l'organisateur ne les a pas encore annoncées."
   }
 }

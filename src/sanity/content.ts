@@ -414,6 +414,12 @@ export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
   accords: "/recettes-accords-mets-champagne",
 } as const;
+/** Adresse de la page d'une rubrique : adresse historique, sinon /le-mag/<code>/. */
+export function rubriqueHref(code: string) {
+  return code in PAGES_RUBRIQUE
+    ? PAGES_RUBRIQUE[code as keyof typeof PAGES_RUBRIQUE]
+    : ({ pathname: "/le-mag/[rubrique]", params: { rubrique: code } } as const);
+}
 /** Anciennes rubriques de WordPress -> codes du Mag. */
 const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords" };
 
@@ -428,7 +434,7 @@ export async function getRubriquesSanity(locale: Locale): Promise<Rubrique[]> {
 }
 
 const ARTICLE_CARD = `"slug": slug.current, titre, date, extrait, image ${IMG}, collaborationCommerciale,
-  rubrique, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
+  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
 type ArticleRaw = {
   slug: string;
   titre?: Localized;
@@ -437,6 +443,7 @@ type ArticleRaw = {
   image?: SanityImg;
   collaborationCommerciale?: boolean;
   rubrique?: string;
+  rubriquePrincipale?: string;
   rubriques?: string[];
   autresRubriques?: (string | null)[];
   vignerons?: (string | null)[];
@@ -447,6 +454,9 @@ export type ArticleCard = {
   date?: string;
   extrait?: string;
   image: Img | null;
+  /** Rubrique principale (fil d'Ariane, sur-titre, données structurées). */
+  rubriquePrincipale?: string;
+  /** Toutes les rubriques où l'article apparaît, la principale en premier. */
   rubriques: string[];
   vignerons: string[];
   collaborationCommerciale: boolean;
@@ -454,10 +464,13 @@ export type ArticleCard = {
 const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
   const titre = L(a.titre, locale);
   if (!titre || !a.slug) return null;
+  const ancienne = a.rubrique ? RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique : undefined;
+  const principale = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
   const rubriques = [
+    ...(principale ? [principale] : []),
     ...(a.rubriques ?? []),
     ...(a.autresRubriques ?? []).filter((r): r is string => !!r),
-    ...(a.rubrique && !a.rubriques?.length ? [RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique] : []),
+    ...(ancienne && !a.rubriques?.length ? [ancienne] : []),
   ];
   return {
     slug: a.slug,
@@ -465,6 +478,7 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
     date: a.date,
     extrait: L(a.extrait, locale),
     image: toImg(a.image, locale, 1200),
+    rubriquePrincipale: principale,
     rubriques: [...new Set(rubriques)],
     vignerons: (a.vignerons ?? []).filter((v): v is string => !!v),
     collaborationCommerciale: a.collaborationCommerciale === true,
@@ -491,6 +505,17 @@ export async function getArticle(slug: string, locale: Locale): Promise<ArticleD
   const card = a ? articleCardOf(a, locale) : null;
   if (!a || !card) return null;
   return { ...card, contenu: localize(a.contenu, locale), seo: seoOf(a.seo, locale), updatedAt: a._updatedAt };
+}
+
+/** Langues dans lesquelles chaque article a vraiment un texte (les autres affichent le français : pas d'indexation). */
+export async function getArticleLangues(): Promise<Record<string, string[]>> {
+  const list = await sanityFetch<{ slug: string; langs: string[] }[]>({
+    query: `*[_type == "article" && defined(slug.current)]{"slug": slug.current, "langs": array::compact([
+      select(count(contenu.fr) > 0 => "fr"), select(count(contenu.en) > 0 => "en"), select(count(contenu.nl) > 0 => "nl"),
+      select(count(contenu.it) > 0 => "it"), select(count(contenu.de) > 0 => "de")])}`,
+    tags: ["article"],
+  });
+  return Object.fromEntries((list ?? []).map((a) => [a.slug, a.langs]));
 }
 
 export async function getArticleSlugs(): Promise<string[]> {
@@ -900,5 +925,133 @@ export async function getCuvees(locale: Locale, { accueil = false } = {}): Promi
           },
         ]
       : [],
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Marronnier : journées du calendrier + « ⭐ Mes événements » (documents « Mon événement »)
+// ---------------------------------------------------------------------------
+export type CategorieCalendrier = "evenements" | "vins" | "gastronomie" | "spiritueux" | "salons";
+export const CATEGORIES_CALENDRIER: CategorieCalendrier[] = ["evenements", "vins", "gastronomie", "spiritueux", "salons"];
+
+export type DateCalendrier = {
+  id: string;
+  /** Premier jour, AAAA-MM-JJ (heure de Paris). */
+  debut: string;
+  /** Dernier jour, AAAA-MM-JJ (égal à debut pour une seule journée). */
+  fin: string;
+  /** Heure de début pour mes événements (ISO), pour les données structurées. */
+  debutIso?: string;
+  finIso?: string;
+  titre: string;
+  categorie: CategorieCalendrier;
+  emoji?: string;
+  anecdote?: string;
+  regle?: string;
+  lien?: string;
+  lieu?: { nom?: string; adresse?: string; codePostal?: string; ville?: string };
+  aConfirmer: boolean;
+};
+
+const jourParis = (iso: string) => new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date(iso));
+
+/**
+ * Toutes les dates du calendrier, triées : les journées du marronnier et mes événements
+ * (repris automatiquement des documents « Mon événement »). Rien n'est écrit en dur dans le code.
+ */
+export async function getCalendrier(locale: Locale): Promise<DateCalendrier[]> {
+  const data = await sanityFetch<{
+    journees: {
+      _id: string;
+      titre?: Localized;
+      debut?: string;
+      fin?: string;
+      categorie?: string;
+      emoji?: string;
+      anecdote?: Localized;
+      regle?: Localized;
+      lien?: string;
+      aConfirmer?: boolean;
+    }[];
+    evenements: {
+      _id: string;
+      titre?: Localized;
+      debut?: string;
+      fin?: string;
+      accroche?: Localized;
+      lien?: string;
+      lieu?: { nom?: string; adresse?: string; codePostal?: string; ville?: string };
+    }[];
+  }>({
+    query: `{
+      "journees": *[_type == "journeeCalendrier" && defined(debut)]{_id, titre, debut, fin, categorie, emoji, anecdote, regle, lien, aConfirmer},
+      "evenements": *[_type == "evenement" && defined(debut)]{_id, titre, debut, fin, accroche, lien, lieu}
+    }`,
+    tags: ["journeeCalendrier", "evenement"],
+    life: "hours",
+  });
+  const journees: DateCalendrier[] = (data?.journees ?? []).flatMap((j) => {
+    const titre = L(j.titre, locale);
+    if (!titre || !j.debut || !CATEGORIES_CALENDRIER.includes(j.categorie as CategorieCalendrier)) return [];
+    return [
+      {
+        id: j._id.replace(/^drafts\./, ""),
+        debut: j.debut,
+        fin: j.fin && j.fin > j.debut ? j.fin : j.debut,
+        titre,
+        categorie: j.categorie as CategorieCalendrier,
+        emoji: j.emoji,
+        anecdote: L(j.anecdote, locale),
+        regle: L(j.regle, locale),
+        lien: j.lien,
+        aConfirmer: j.aConfirmer === true,
+      },
+    ];
+  });
+  const evenements: DateCalendrier[] = (data?.evenements ?? []).flatMap((e) => {
+    const titre = L(e.titre, locale);
+    if (!titre || !e.debut) return [];
+    const debut = jourParis(e.debut);
+    const fin = e.fin ? jourParis(e.fin) : debut;
+    return [
+      {
+        id: e._id.replace(/^drafts\./, ""),
+        debut,
+        fin: fin > debut ? fin : debut,
+        debutIso: e.debut,
+        finIso: e.fin,
+        titre,
+        categorie: "evenements" as const,
+        emoji: "⭐",
+        anecdote: [L(e.accroche, locale), [e.lieu?.nom, e.lieu?.ville].filter(Boolean).join(", ")].filter(Boolean).join(" · ") || undefined,
+        lien: e.lien,
+        lieu: e.lieu,
+        aConfirmer: false,
+      },
+    ];
+  });
+  // Mes événements d'abord à date égale.
+  return [...evenements, ...journees].sort((a, b) => a.debut.localeCompare(b.debut) || (a.categorie === "evenements" ? -1 : b.categorie === "evenements" ? 1 : 0));
+}
+
+/** Adresse de l'article qui contient le calendrier du marronnier (le plus récent), pour « Voir tout le calendrier ». */
+export async function getSlugArticleMarronnier(): Promise<string | null> {
+  return (
+    (await sanityFetch<string | null>({
+      query: `*[_type == "article" && count(contenu.fr[_type == "calendrierMarronnier"]) > 0] | order(coalesce(date, _createdAt) desc)[0].slug.current`,
+      tags: ["article"],
+    })) ?? null
+  );
+}
+
+/** Articles du Mag dont le texte contient un lien vers l'une de ces pages (/la-cote-des-bar, /tasting-troyes…). */
+export async function getSlugsArticlesLiantVers(chemins: string[]): Promise<string[]> {
+  const hrefs = chemins.flatMap((c) => [c, `${c}/`]);
+  return (
+    (await sanityFetch<string[]>({
+      query: `*[_type == "article" && defined(slug.current) && count(contenu.fr[].markDefs[href in $hrefs]) > 0] | order(coalesce(date, _createdAt) desc).slug.current`,
+      params: { hrefs },
+      tags: ["article"],
+    })) ?? []
   );
 }

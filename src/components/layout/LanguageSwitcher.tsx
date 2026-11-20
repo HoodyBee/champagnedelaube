@@ -1,11 +1,32 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, usePathname as useNextPathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
 import { Flag } from "@/components/icons/Flag";
 import { Link, usePathname } from "@/i18n/navigation";
-import { defaultActiveLocales, localeNames, type Locale } from "@/i18n/routing";
+import { defaultActiveLocales, localeNames, routing, type Locale } from "@/i18n/routing";
+
+/**
+ * Page courante, sous sa forme interne (/vignerons, /[article]…). Au rendu serveur, l'adresse lue peut
+ * être l'adresse interne (/en/vignerons) au lieu de l'adresse traduite (/en/winemakers) : on la
+ * reconnaît directement, pour ne jamais confondre une page fixe avec un article (/[article]).
+ */
+function pagePourLiens(pathname: string, brut: string, locale: Locale, params: Record<string, string>): string {
+  const pages = routing.pathnames as Record<string, string | Record<string, string>>;
+  // Page à paramètres lue sous sa forme interne (/vignerons/mennetrier) : on retrouve le modèle (/vignerons/[slug]).
+  if (!pathname.includes("[") && !(pathname in pages) && Object.keys(params).length) {
+    const modele = Object.keys(pages).find(
+      (k) => k.includes("[") && new RegExp(`^${k.replace(/\[[^\]]+\]/g, "[^/]+")}$`).test(pathname.replace(/\/$/, "")),
+    );
+    if (modele) return modele;
+  }
+  if (!pathname.includes("[") || Object.keys(params).length) return pathname;
+  const seg = (brut.replace(new RegExp(`^/${locale}(?=/|$)`), "") || "/").replace(/\/$/, "") || "/";
+  if (seg in pages) return seg;
+  const traduite = Object.entries(pages).find(([, v]) => typeof v !== "string" && v[locale] === seg);
+  return traduite ? traduite[0] : pathname;
+}
 
 type Props = {
   /** Langues proposées (réglage « Langues actives » de Sanity). */
@@ -27,6 +48,7 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
   const t = useTranslations("langSwitcher");
   const locale = useLocale() as Locale;
   const pathname = usePathname();
+  const brut = useNextPathname();
   const params = useParams();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -52,7 +74,7 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
   // Même page, autre langue (avec les paramètres des pages dynamiques, ex. [slug]).
   const { locale: _ignored, ...routeParams } = params as Record<string, string>;
   void _ignored;
-  const href = { pathname, params: routeParams } as Parameters<typeof Link>[0]["href"];
+  const href = { pathname: pagePourLiens(pathname, brut, locale, routeParams), params: routeParams } as Parameters<typeof Link>[0]["href"];
 
   const links = locales.map((l) => (
     <Link

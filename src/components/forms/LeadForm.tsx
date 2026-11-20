@@ -33,9 +33,18 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
       <div ref={statusRef} tabIndex={-1} role="status" className={`surface-chaude rounded-carte p-space-3 outline-none sm:p-space-4 ${className}`}>
         <p className="text-accroche">{t("success.title")}</p>
         <p className="mt-space-1 text-gris-chaud">
-          {formId === "catalogue" ? t(state.catalogueSent ? "success.catalogueSent" : "success.catalogueSoon") : t("success.text")}
+          {formId === "catalogue"
+            ? t(state.catalogueSent ? "success.catalogueSent" : "success.catalogueSoon")
+            : formId === "marronnier"
+              ? t("success.marronnier")
+              : t("success.text")}
         </p>
         {state.newsletter && <p className="mt-space-2 text-gris-chaud">{t("success.newsletter")}</p>}
+        {formId === "marronnier" && state.downloadUrl && (
+          <a href={state.downloadUrl} target="_blank" rel="noopener" className={buttonClass("primaire", "mt-space-3")}>
+            {t("success.downloadMarronnier")}
+          </a>
+        )}
         {formId === "brochureCse" && (
           state.downloadUrl ? (
             <a href={state.downloadUrl} target="_blank" rel="noopener" className={buttonClass("primaire", "mt-space-3")}>
@@ -77,7 +86,7 @@ export function LeadForm({ formId, context, className = "" }: { formId: FormId; 
         </div>
       )}
 
-      {formId !== "catalogue" && <p className="text-sur-titre-petit text-bronze sm:col-span-2">{t("faisonsConnaissance")}</p>}
+      {formId !== "catalogue" && formId !== "marronnier" && <p className="text-sur-titre-petit text-bronze sm:col-span-2">{t("faisonsConnaissance")}</p>}
 
       {fields.map((f) => {
         const required = f.required || (def.contact === "emailOuTelephone" && f.name === "email");

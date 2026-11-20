@@ -2,10 +2,10 @@ import { icon } from "../../icons";
 import { defineField, defineType } from "sanity";
 import { requireFr } from "../objects/localized";
 
-/** Rendez-vous ponctuel, avec formulaire d'inscription. */
+/** Mes événements : rendez-vous ponctuels, affichés dans le calendrier de l'accueil et le marronnier (« ⭐ Mes événements »). */
 export const evenement = defineType({
   name: "evenement",
-  title: "Événement",
+  title: "Mon événement (calendrier)",
   type: "document",
   icon: icon("calendar"),
   fields: [
@@ -37,6 +37,13 @@ export const evenement = defineType({
         }),
     }),
     defineField({ name: "lieu", title: "Lieu", type: "lieu", validation: (rule) => rule.required() }),
+    defineField({
+      name: "lien",
+      title: "Lien (facultatif)",
+      description: "Billetterie, page de l'événement ou page du site (/tasting-troyes).",
+      type: "url",
+      validation: (r) => r.uri({ scheme: ["http", "https"], allowRelative: true }),
+    }),
     defineField({
       name: "places",
       title: "Nombre de places",

@@ -1,0 +1,1286 @@
+[
+ {
+  "debut": "2027-01-01",
+  "categorie": "spiritueux",
+  "emoji": "💧",
+  "titre": {
+   "fr": "Dry January (mois sans alcool)",
+   "en": "Dry January"
+  },
+  "anecdote": {
+   "fr": "Un mois de défi sans alcool, né au Royaume-Uni : l'occasion de parler modération, alternatives sans alcool et éducation au goût.",
+   "en": "A month-long alcohol-free challenge born in the UK: a chance to talk about moderation, alcohol-free alternatives and taste education."
+  },
+  "aConfirmer": false,
+  "fin": "2027-01-31",
+  "regle": {
+   "fr": "Tout le mois de janvier",
+   "en": "All of January"
+  }
+ },
+ {
+  "debut": "2027-01-10",
+  "categorie": "vins",
+  "emoji": "🍟",
+  "titre": {
+   "fr": "Journée du champagne et des frites (USA)",
+   "en": "Champagne and French Fries Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Lancée en 2021 par des blogueuses américaines du vin : l'acidité et les bulles du champagne répondent au sel et au croustillant.",
+   "en": "Started in 2021 by American wine bloggers: champagne's acidity and bubbles answer salt and crunch."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-01-17",
+  "categorie": "gastronomie",
+  "emoji": "🍴",
+  "titre": {
+   "fr": "Journée internationale de la cuisine italienne",
+   "en": "International Day of Italian Cuisine"
+  },
+  "anecdote": {
+   "fr": "Lancée par un réseau de chefs italiens à l'étranger, le jour de la Saint-Antoine.",
+   "en": "Launched by a network of Italian chefs abroad, on Saint Anthony's day."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-01-22",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Saint-Vincent, patron des vignerons",
+   "en": "Saint Vincent's Day, patron saint of winemakers"
+  },
+  "anecdote": {
+   "fr": "En Champagne, les confréries des villages se réunissent autour de cette date ; le lieu du grand défilé change chaque année.",
+   "en": "In Champagne, village brotherhoods gather around this date; the location of the main parade changes every year."
+  },
+  "aConfirmer": false,
+  "lien": "/le-terroir-de-laube"
+ },
+ {
+  "debut": "2027-01-30",
+  "categorie": "salons",
+  "emoji": "🌍",
+  "titre": {
+   "fr": "Saint-Vincent tournante de Bourgogne, à Volnay",
+   "en": "Saint-Vincent Tournante in Burgundy, in Volnay"
+  },
+  "anecdote": {
+   "fr": "83e édition, accueillie par Volnay, en Côte de Beaune.",
+   "en": "83rd edition, hosted by Volnay, in the Côte de Beaune."
+  },
+  "aConfirmer": false,
+  "fin": "2027-01-31"
+ },
+ {
+  "debut": "2027-02-02",
+  "categorie": "gastronomie",
+  "emoji": "🥞",
+  "titre": {
+   "fr": "La Chandeleur",
+   "en": "Candlemas (crêpe day)"
+  },
+  "anecdote": {
+   "fr": "Fête traditionnelle des crêpes, quarante jours après Noël.",
+   "en": "The traditional crêpe festival, forty days after Christmas."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-02-05",
+  "categorie": "gastronomie",
+  "emoji": "🍫",
+  "titre": {
+   "fr": "Journée mondiale du Nutella",
+   "en": "World Nutella Day"
+  },
+  "anecdote": {
+   "fr": "Créée en 2007 par une blogueuse américaine, reprise depuis par la marque.",
+   "en": "Created in 2007 by an American blogger, since taken over by the brand."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-02-09",
+  "categorie": "gastronomie",
+  "emoji": "🍕",
+  "titre": {
+   "fr": "Journée nationale de la pizza (USA)",
+   "en": "National Pizza Day (USA)"
+  },
+  "anecdote": {
+   "fr": "La date la plus reprise dans le monde ; l'Italie fête aussi ses pizzaïolos le 17 janvier.",
+   "en": "The most widely used date; Italy also honours its pizza makers on 17 January."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-02-14",
+  "categorie": "gastronomie",
+  "emoji": "💘",
+  "titre": {
+   "fr": "Saint-Valentin",
+   "en": "Valentine's Day"
+  },
+  "anecdote": {
+   "fr": "Une date clé pour les restaurateurs et les menus à deux.",
+   "en": "A key date for restaurants and menus for two."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-02-15",
+  "categorie": "salons",
+  "emoji": "🌍",
+  "titre": {
+   "fr": "Wine Paris & Vinexpo Paris",
+   "en": "Wine Paris & Vinexpo Paris"
+  },
+  "anecdote": {
+   "fr": "Le grand salon professionnel des vins et spiritueux, à Paris Expo Porte de Versailles.",
+   "en": "The major trade fair for wines and spirits, at Paris Expo Porte de Versailles."
+  },
+  "aConfirmer": false,
+  "fin": "2027-02-17",
+  "lien": "https://www.wineparis.com/"
+ },
+ {
+  "debut": "2027-02-16",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale de la syrah",
+   "en": "International Syrah Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage du nord de la vallée du Rhône, appelé shiraz en Australie.",
+   "en": "The grape of the northern Rhône, called shiraz in Australia."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-02-26",
+  "categorie": "gastronomie",
+  "emoji": "🌰",
+  "titre": {
+   "fr": "Journée mondiale de la pistache",
+   "en": "World Pistachio Day"
+  },
+  "anecdote": {
+   "fr": "Une journée pour un fruit sec très présent en pâtisserie.",
+   "en": "A day for a nut widely used in pastry."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-03",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du vin chaud",
+   "en": "Mulled Wine Day"
+  },
+  "anecdote": {
+   "fr": "Oui, en mars : la tradition du vin chaud épicé n'attend pas forcément Noël.",
+   "en": "Yes, in March: the spiced mulled wine tradition doesn't have to wait for Christmas."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-13",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du riesling",
+   "en": "International Riesling Day"
+  },
+  "anecdote": {
+   "fr": "Date choisie en souvenir de la plus ancienne mention écrite connue du riesling, le 13 mars 1435.",
+   "en": "Chosen in memory of the oldest known written mention of riesling, on 13 March 1435."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-20",
+  "categorie": "gastronomie",
+  "emoji": "🍬",
+  "titre": {
+   "fr": "Jour du Macaron",
+   "en": "Macaron Day"
+  },
+  "anecdote": {
+   "fr": "Lancé par Pierre Hermé : chaque année, une journée solidaire au profit d'une association.",
+   "en": "Launched by Pierre Hermé: each year, a charity day for an association."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-21",
+  "categorie": "spiritueux",
+  "emoji": "🍸",
+  "titre": {
+   "fr": "Journée mondiale du vermouth",
+   "en": "World Vermouth Day"
+  },
+  "anecdote": {
+   "fr": "Le vin aromatisé aux plantes, base de nombreux cocktails classiques.",
+   "en": "Herb-flavoured wine, the base of many classic cocktails."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-22",
+  "categorie": "gastronomie",
+  "emoji": "💧",
+  "titre": {
+   "fr": "Journée mondiale de l'eau (ONU)",
+   "en": "World Water Day (UN)"
+  },
+  "anecdote": {
+   "fr": "Une journée des Nations unies consacrée à la ressource en eau.",
+   "en": "A United Nations day devoted to water resources."
+  },
+  "aConfirmer": false,
+  "lien": "https://www.un.org/en/observances/water-day"
+ },
+ {
+  "debut": "2027-03-24",
+  "categorie": "spiritueux",
+  "emoji": "🍸",
+  "titre": {
+   "fr": "Journée nationale du cocktail (USA)",
+   "en": "National Cocktail Day (USA)"
+  },
+  "anecdote": {
+   "fr": "À ne pas confondre avec la journée mondiale du cocktail, le 13 mai.",
+   "en": "Not to be confused with World Cocktail Day on 13 May."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-03-27",
+  "categorie": "gastronomie",
+  "emoji": "🧀",
+  "titre": {
+   "fr": "Journée nationale du fromage",
+   "en": "National Cheese Day (France)"
+  },
+  "anecdote": {
+   "fr": "Créée en 2001 pour valoriser les fromages au lait cru et les AOP françaises.",
+   "en": "Created in 2001 to promote raw-milk cheeses and French PDO cheeses."
+  },
+  "aConfirmer": false,
+  "lien": "/recettes-accords-mets-champagne"
+ },
+ {
+  "debut": "2027-04-04",
+  "categorie": "gastronomie",
+  "emoji": "🥕",
+  "titre": {
+   "fr": "Journée internationale de la carotte",
+   "en": "International Carrot Day"
+  },
+  "anecdote": {
+   "fr": "Une journée née au début des années 2000 pour un légume du quotidien.",
+   "en": "A day born in the early 2000s for an everyday vegetable."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-04-14",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Tannat Day",
+   "en": "Tannat Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage du Sud-Ouest (Madiran) devenu l'emblème de l'Uruguay.",
+   "en": "The south-west France grape (Madiran) that became Uruguay's emblem."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-04-17",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale du malbec",
+   "en": "World Malbec Day"
+  },
+  "anecdote": {
+   "fr": "Cépage de Cahors devenu la star de l'Argentine.",
+   "en": "The Cahors grape that became Argentina's star."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-04-27",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale du marselan",
+   "en": "World Marselan Day"
+  },
+  "anecdote": {
+   "fr": "Croisement de cabernet sauvignon et de grenache, né en France en 1961, très planté en Chine.",
+   "en": "A cross of cabernet sauvignon and grenache, born in France in 1961, widely planted in China."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-04-30",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du viognier",
+   "en": "International Viognier Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage blanc de Condrieu, fêté le dernier vendredi d'avril.",
+   "en": "Condrieu's white grape, celebrated on the last Friday of April."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "Dernier vendredi d'avril",
+   "en": "Last Friday of April"
+  }
+ },
+ {
+  "debut": "2027-04-30",
+  "categorie": "gastronomie",
+  "emoji": "🍇",
+  "titre": {
+   "fr": "Journée du raisin sec (USA)",
+   "en": "National Raisin Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Raisin sec et non raisin frais : une journée américaine dédiée au fruit séché.",
+   "en": "Dried raisins, not fresh grapes: an American day for the dried fruit."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-05-07",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du sauvignon blanc",
+   "en": "International Sauvignon Blanc Day"
+  },
+  "anecdote": {
+   "fr": "Du Sancerrois à la Nouvelle-Zélande, un cépage voyageur.",
+   "en": "From Sancerre to New Zealand, a well-travelled grape."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "1er vendredi de mai",
+   "en": "First Friday of May"
+  }
+ },
+ {
+  "debut": "2027-05-09",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale du muscat",
+   "en": "World Moscato Day"
+  },
+  "anecdote": {
+   "fr": "Une famille de cépages aux arômes de raisin frais, du muscat de Beaumes-de-Venise au moscato d'Asti.",
+   "en": "A family of grapes with fresh-grape aromas, from Muscat de Beaumes-de-Venise to Moscato d'Asti."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-05-13",
+  "categorie": "spiritueux",
+  "emoji": "🍹",
+  "titre": {
+   "fr": "Journée mondiale du cocktail",
+   "en": "World Cocktail Day"
+  },
+  "anecdote": {
+   "fr": "En souvenir de la première définition imprimée du mot « cocktail », dans un journal américain en 1806.",
+   "en": "In memory of the first printed definition of the word « cocktail », in an American newspaper in 1806."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-05-15",
+  "categorie": "spiritueux",
+  "emoji": "🥃",
+  "titre": {
+   "fr": "Journée mondiale du whisky",
+   "en": "World Whisky Day"
+  },
+  "anecdote": {
+   "fr": "Créée en 2012 en Écosse, fêtée le 3e samedi de mai.",
+   "en": "Created in Scotland in 2012, held on the third Saturday of May."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "3e samedi de mai",
+   "en": "Third Saturday of May"
+  }
+ },
+ {
+  "debut": "2027-05-17",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du pinot gris",
+   "en": "Pinot Gris Day"
+  },
+  "anecdote": {
+   "fr": "En Champagne, ce cépage rare s'appelle le fromenteau.",
+   "en": "In Champagne, this rare grape is called fromenteau."
+  },
+  "aConfirmer": false,
+  "lien": "/pinot-gris-fromenteau-champagne"
+ },
+ {
+  "debut": "2027-05-21",
+  "categorie": "gastronomie",
+  "emoji": "🍵",
+  "titre": {
+   "fr": "Journée internationale du thé (ONU)",
+   "en": "International Day of Tea (UN)"
+  },
+  "anecdote": {
+   "fr": "Date officielle des Nations unies depuis 2020 ; les pays producteurs fêtent aussi le thé le 15 décembre.",
+   "en": "Official United Nations date since 2020; producing countries also celebrate tea on 15 December."
+  },
+  "aConfirmer": false,
+  "lien": "https://www.un.org/en/observances/tea-day"
+ },
+ {
+  "debut": "2027-05-27",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du chardonnay",
+   "en": "International Chardonnay Day"
+  },
+  "anecdote": {
+   "fr": "Le jeudi avant le Memorial Day américain. En Champagne, c'est le cépage de la finesse.",
+   "en": "The Thursday before the American Memorial Day. In Champagne, it is the grape of finesse."
+  },
+  "aConfirmer": false,
+  "lien": "/chardonnay-champagne",
+  "regle": {
+   "fr": "Jeudi avant le Memorial Day (USA)",
+   "en": "Thursday before Memorial Day (USA)"
+  }
+ },
+ {
+  "debut": "2027-05-28",
+  "categorie": "gastronomie",
+  "emoji": "🍔",
+  "titre": {
+   "fr": "Journée internationale du hamburger",
+   "en": "International Hamburger Day"
+  },
+  "anecdote": {
+   "fr": "Le 28 mai, date reprise par la plupart des calendriers.",
+   "en": "28 May, the date used by most calendars."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-05-30",
+  "categorie": "spiritueux",
+  "emoji": "🍺",
+  "titre": {
+   "fr": "Bières à Troyes",
+   "en": "Bières à Troyes (beer festival)"
+  },
+  "anecdote": {
+   "fr": "Festival de la bière à Troyes. Dates 2027 non encore annoncées : à confirmer.",
+   "en": "Beer festival in Troyes. 2027 dates not yet announced: to be confirmed."
+  },
+  "aConfirmer": true
+ },
+ {
+  "debut": "2027-06-01",
+  "categorie": "gastronomie",
+  "emoji": "🥛",
+  "titre": {
+   "fr": "Journée mondiale du lait (FAO)",
+   "en": "World Milk Day (FAO)"
+  },
+  "anecdote": {
+   "fr": "Une journée de l'Organisation des Nations unies pour l'alimentation et l'agriculture.",
+   "en": "A day of the Food and Agriculture Organization of the United Nations."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-06-03",
+  "categorie": "spiritueux",
+  "emoji": "🍏",
+  "titre": {
+   "fr": "Journée mondiale du cidre",
+   "en": "World Cider Day"
+  },
+  "anecdote": {
+   "fr": "Le 3 juin, pour la boisson des vergers.",
+   "en": "3 June, for the orchards' drink."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-06-04",
+  "categorie": "spiritueux",
+  "emoji": "🥃",
+  "titre": {
+   "fr": "Journée mondiale du cognac",
+   "en": "World Cognac Day"
+  },
+  "anecdote": {
+   "fr": "Promue par l'appellation ; le 4 juin marque traditionnellement le début de la saison des eaux-de-vie nouvelles.",
+   "en": "Promoted by the appellation; 4 June traditionally marks the start of the new spirits season."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-06-05",
+  "categorie": "salons",
+  "emoji": "🌍",
+  "titre": {
+   "fr": "Week-end des Grands Crus de Bordeaux",
+   "en": "Bordeaux Grands Crus Weekend"
+  },
+  "anecdote": {
+   "fr": "Dégustation des grands crus de Bordeaux, habituellement début juin. Dates 2027 non encore annoncées : à confirmer.",
+   "en": "Tasting of the Bordeaux grands crus, usually in early June. 2027 dates not yet announced: to be confirmed."
+  },
+  "aConfirmer": true
+ },
+ {
+  "debut": "2027-06-11",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale du verdejo",
+   "en": "World Verdejo Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage blanc de Rueda, en Espagne.",
+   "en": "The white grape of Rueda, in Spain."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "2e vendredi de juin",
+   "en": "Second Friday of June"
+  }
+ },
+ {
+  "debut": "2027-06-12",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée nationale du rosé (USA)",
+   "en": "National Rosé Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Version américaine ; la journée internationale du rosé a lieu le 25 juin.",
+   "en": "The American version; International Rosé Day is on 25 June."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "2e samedi de juin",
+   "en": "Second Saturday of June"
+  }
+ },
+ {
+  "debut": "2027-06-12",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Drink Chenin Blanc Day",
+   "en": "Drink Chenin Blanc Day"
+  },
+  "anecdote": {
+   "fr": "Le chenin, cépage de la Loire (Vouvray, Savennières) et de l'Afrique du Sud.",
+   "en": "Chenin, the grape of the Loire (Vouvray, Savennières) and South Africa."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "2e samedi de juin",
+   "en": "Second Saturday of June"
+  }
+ },
+ {
+  "debut": "2027-06-17",
+  "categorie": "gastronomie",
+  "emoji": "🍴",
+  "titre": {
+   "fr": "Journée mondiale de la tapa",
+   "en": "World Tapas Day"
+  },
+  "anecdote": {
+   "fr": "Créée en Espagne en 2016, le 3e jeudi de juin.",
+   "en": "Created in Spain in 2016, on the third Thursday of June."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "3e jeudi de juin",
+   "en": "Third Thursday of June"
+  }
+ },
+ {
+  "debut": "2027-06-18",
+  "categorie": "gastronomie",
+  "emoji": "🌱",
+  "titre": {
+   "fr": "Journée de la gastronomie durable (ONU)",
+   "en": "Sustainable Gastronomy Day (UN)"
+  },
+  "anecdote": {
+   "fr": "Une journée des Nations unies pour une cuisine locale, de saison et responsable.",
+   "en": "A United Nations day for local, seasonal and responsible cooking."
+  },
+  "aConfirmer": false,
+  "lien": "https://www.fao.org/sustainable-gastronomy-day/"
+ },
+ {
+  "debut": "2027-06-21",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale du lambrusco",
+   "en": "World Lambrusco Day"
+  },
+  "anecdote": {
+   "fr": "Le rouge effervescent d'Émilie-Romagne.",
+   "en": "The sparkling red of Emilia-Romagna."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-06-21",
+  "categorie": "salons",
+  "emoji": "🎸",
+  "titre": {
+   "fr": "Fête de la musique",
+   "en": "Fête de la Musique"
+  },
+  "anecdote": {
+   "fr": "Le premier jour de l'été, partout en France.",
+   "en": "The first day of summer, all over France."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-06-25",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du rosé",
+   "en": "International Rosé Day"
+  },
+  "anecdote": {
+   "fr": "Fêtée le 4e vendredi de juin.",
+   "en": "Held on the fourth Friday of June."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "4e vendredi de juin",
+   "en": "Fourth Friday of June"
+  }
+ },
+ {
+  "debut": "2027-07-11",
+  "categorie": "spiritueux",
+  "emoji": "🍹",
+  "titre": {
+   "fr": "Journée du mojito (USA)",
+   "en": "National Mojito Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Le cocktail cubain à base de rhum, de menthe et de citron vert.",
+   "en": "The Cuban cocktail of rum, mint and lime."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-07-12",
+  "categorie": "vins",
+  "emoji": "🍾",
+  "titre": {
+   "fr": "Journée internationale du cava",
+   "en": "International Cava Day"
+  },
+  "anecdote": {
+   "fr": "L'effervescent espagnol élaboré, comme le champagne, par fermentation en bouteille.",
+   "en": "The Spanish sparkling wine made, like champagne, by fermentation in the bottle."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-07-22",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du shiraz",
+   "en": "International Shiraz Day"
+  },
+  "anecdote": {
+   "fr": "Version australienne, le 4e jeudi de juillet ; la syrah a aussi sa journée le 16 février.",
+   "en": "The Australian version, on the fourth Thursday of July; syrah also has its day on 16 February."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "4e jeudi de juillet",
+   "en": "Fourth Thursday of July"
+  }
+ },
+ {
+  "debut": "2027-07-24",
+  "categorie": "spiritueux",
+  "emoji": "🥃",
+  "titre": {
+   "fr": "Journée nationale de la tequila (USA)",
+   "en": "National Tequila Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Date américaine ; le Mexique fête la tequila le 3e samedi de mars.",
+   "en": "The American date; Mexico celebrates tequila on the third Saturday of March."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-07-25",
+  "categorie": "vins",
+  "emoji": "🧀",
+  "titre": {
+   "fr": "Journée du vin et du fromage",
+   "en": "National Wine and Cheese Day"
+  },
+  "anecdote": {
+   "fr": "Le grand classique des accords, du vin… et du champagne.",
+   "en": "The great classic of pairings, for wine… and champagne."
+  },
+  "aConfirmer": false,
+  "lien": "/recettes-accords-mets-champagne"
+ },
+ {
+  "debut": "2027-07-31",
+  "categorie": "salons",
+  "emoji": "🥂",
+  "titre": {
+   "fr": "La Route du Champagne en fête",
+   "en": "La Route du Champagne en fête"
+  },
+  "anecdote": {
+   "fr": "Chaque été, un secteur différent de la Côte des Bar ouvre ses caves pendant un week-end. Dates et lieu 2027 non encore annoncés : à confirmer.",
+   "en": "Every summer, a different part of the Côte des Bar opens its cellars for a weekend. 2027 dates and place not yet announced: to be confirmed."
+  },
+  "aConfirmer": true,
+  "lien": "https://www.routeduchampagne.com/"
+ },
+ {
+  "debut": "2027-08-06",
+  "categorie": "spiritueux",
+  "emoji": "🍺",
+  "titre": {
+   "fr": "Journée internationale de la bière",
+   "en": "International Beer Day"
+  },
+  "anecdote": {
+   "fr": "Fêtée le 1er vendredi d'août.",
+   "en": "Held on the first Friday of August."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "1er vendredi d'août",
+   "en": "First Friday of August"
+  }
+ },
+ {
+  "debut": "2027-08-13",
+  "categorie": "vins",
+  "emoji": "🍾",
+  "titre": {
+   "fr": "Journée internationale du prosecco",
+   "en": "International Prosecco Day"
+  },
+  "anecdote": {
+   "fr": "L'effervescent de Vénétie et du Frioul.",
+   "en": "The sparkling wine of Veneto and Friuli."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-08-18",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du pinot noir",
+   "en": "International Pinot Noir Day"
+  },
+  "anecdote": {
+   "fr": "Premier cépage de la Champagne et roi de la Côte des Bar.",
+   "en": "Champagne's leading grape and king of the Côte des Bar."
+  },
+  "aConfirmer": false,
+  "lien": "/pinot-noir-champagne"
+ },
+ {
+  "debut": "2027-08-28",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du vin rouge (USA)",
+   "en": "National Red Wine Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Une journée américaine créée en 2013.",
+   "en": "An American day created in 2013."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-09-02",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du cabernet sauvignon",
+   "en": "International Cabernet Sauvignon Day"
+  },
+  "anecdote": {
+   "fr": "Le 1er jeudi de septembre selon la plupart des calendriers ; d'autres la placent le 30 août.",
+   "en": "The first Thursday of September in most calendars; others place it on 30 August."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "1er jeudi de septembre",
+   "en": "First Thursday of September"
+  }
+ },
+ {
+  "debut": "2027-09-03",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du chianti",
+   "en": "National Chianti Day"
+  },
+  "anecdote": {
+   "fr": "Le rouge toscan à base de sangiovese.",
+   "en": "The Tuscan red made from sangiovese."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "1er vendredi de septembre",
+   "en": "First Friday of September"
+  }
+ },
+ {
+  "debut": "2027-09-10",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du porto",
+   "en": "International Port Wine Day"
+  },
+  "anecdote": {
+   "fr": "Le célèbre vin muté de la vallée du Douro, au Portugal.",
+   "en": "The famous fortified wine of the Douro Valley, in Portugal."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-09-17",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du grenache",
+   "en": "International Grenache Day"
+  },
+  "anecdote": {
+   "fr": "Fêtée le 3e vendredi de septembre.",
+   "en": "Held on the third Friday of September."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "3e vendredi de septembre",
+   "en": "Third Friday of September"
+  }
+ },
+ {
+  "debut": "2027-09-29",
+  "categorie": "gastronomie",
+  "emoji": "♻️",
+  "titre": {
+   "fr": "Journée de sensibilisation aux pertes et gaspillages alimentaires (ONU)",
+   "en": "International Day of Awareness of Food Loss and Waste (UN)"
+  },
+  "anecdote": {
+   "fr": "La journée officielle des Nations unies contre le gaspillage alimentaire.",
+   "en": "The official United Nations day against food waste."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-10-01",
+  "categorie": "gastronomie",
+  "emoji": "☕",
+  "titre": {
+   "fr": "Journée internationale du café",
+   "en": "International Coffee Day"
+  },
+  "anecdote": {
+   "fr": "Fêtée chaque 1er octobre à l'initiative de l'Organisation internationale du café.",
+   "en": "Held every 1 October at the initiative of the International Coffee Organization."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-10-06",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du vin orange",
+   "en": "Orange Wine Day"
+  },
+  "anecdote": {
+   "fr": "Des vins blancs vinifiés comme des rouges, avec macération des peaux.",
+   "en": "White wines made like reds, with skin maceration."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-10-09",
+  "categorie": "salons",
+  "emoji": "🌍",
+  "titre": {
+   "fr": "Fête des vendanges de Montmartre",
+   "en": "Montmartre Grape Harvest Festival"
+  },
+  "anecdote": {
+   "fr": "Fête parisienne née en 1934, début octobre. Dates 2027 non encore annoncées : à confirmer.",
+   "en": "A Parisian festival since 1934, in early October. 2027 dates not yet announced: to be confirmed."
+  },
+  "aConfirmer": true
+ },
+ {
+  "debut": "2027-10-16",
+  "categorie": "gastronomie",
+  "emoji": "🥖",
+  "titre": {
+   "fr": "Journée mondiale de l'alimentation et du pain",
+   "en": "World Food Day and World Bread Day"
+  },
+  "anecdote": {
+   "fr": "Le 16 octobre, date de fondation de la FAO en 1945.",
+   "en": "16 October, the date the FAO was founded in 1945."
+  },
+  "aConfirmer": false,
+  "lien": "https://www.fao.org/world-food-day/"
+ },
+ {
+  "debut": "2027-10-20",
+  "categorie": "gastronomie",
+  "emoji": "🧑‍🍳",
+  "titre": {
+   "fr": "Journée internationale des cuisiniers",
+   "en": "International Chefs Day"
+  },
+  "anecdote": {
+   "fr": "Créée en 2004 par l'Association mondiale des sociétés de cuisiniers (Worldchefs).",
+   "en": "Created in 2004 by the World Association of Chefs' Societies (Worldchefs)."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-10-22",
+  "categorie": "vins",
+  "emoji": "🍾",
+  "titre": {
+   "fr": "Champagne Day",
+   "en": "Champagne Day"
+  },
+  "anecdote": {
+   "fr": "La journée mondiale du champagne, le 4e vendredi d'octobre : parfait pour parler terroirs, cépages et vignerons.",
+   "en": "World Champagne Day, on the fourth Friday of October: perfect to talk about terroirs, grapes and winemakers."
+  },
+  "aConfirmer": false,
+  "lien": "/tout-savoir-sur-le-champagne",
+  "regle": {
+   "fr": "4e vendredi d'octobre",
+   "en": "Fourth Friday of October"
+  }
+ },
+ {
+  "debut": "2027-10-25",
+  "categorie": "gastronomie",
+  "emoji": "🍝",
+  "titre": {
+   "fr": "Journée mondiale des pâtes",
+   "en": "World Pasta Day"
+  },
+  "anecdote": {
+   "fr": "Organisée par l'Organisation internationale des pâtes.",
+   "en": "Organised by the International Pasta Organisation."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-11-01",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du xinomavro",
+   "en": "International Xinomavro Day"
+  },
+  "anecdote": {
+   "fr": "Le grand cépage rouge du nord de la Grèce (Naoussa).",
+   "en": "The great red grape of northern Greece (Naoussa)."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-11-03",
+  "categorie": "gastronomie",
+  "emoji": "🥪",
+  "titre": {
+   "fr": "Journée du sandwich (USA)",
+   "en": "National Sandwich Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Le jour anniversaire du comte de Sandwich.",
+   "en": "The birthday of the Earl of Sandwich."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-11-07",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du merlot",
+   "en": "International Merlot Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage roi de la rive droite bordelaise.",
+   "en": "The leading grape of Bordeaux's Right Bank."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-11-11",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du tempranillo",
+   "en": "International Tempranillo Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage de la Rioja, fêté le 2e jeudi de novembre.",
+   "en": "The grape of Rioja, held on the second Thursday of November."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "2e jeudi de novembre",
+   "en": "Second Thursday of November"
+  }
+ },
+ {
+  "debut": "2027-11-17",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Zinfandel Day",
+   "en": "Zinfandel Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage californien, fêté le 3e mercredi de novembre.",
+   "en": "California's grape, held on the third Wednesday of November."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "3e mercredi de novembre",
+   "en": "Third Wednesday of November"
+  }
+ },
+ {
+  "debut": "2027-11-18",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Beaujolais nouveau",
+   "en": "Beaujolais Nouveau"
+  },
+  "anecdote": {
+   "fr": "Mise en marché du vin primeur, le 3e jeudi de novembre.",
+   "en": "Release of the new wine, on the third Thursday of November."
+  },
+  "aConfirmer": false,
+  "regle": {
+   "fr": "3e jeudi de novembre",
+   "en": "Third Thursday of November"
+  }
+ },
+ {
+  "debut": "2027-11-24",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du carménère",
+   "en": "International Carménère Day"
+  },
+  "anecdote": {
+   "fr": "Cépage bordelais oublié, redécouvert au Chili en 1994.",
+   "en": "A forgotten Bordeaux grape, rediscovered in Chile in 1994."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-11-26",
+  "categorie": "gastronomie",
+  "emoji": "🫒",
+  "titre": {
+   "fr": "Journée mondiale de l'olivier (UNESCO)",
+   "en": "World Olive Tree Day (UNESCO)"
+  },
+  "anecdote": {
+   "fr": "Proclamée par l'UNESCO en 2019.",
+   "en": "Proclaimed by UNESCO in 2019."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-01",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du maratheftiko",
+   "en": "International Maratheftiko Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage rouge autochtone de Chypre.",
+   "en": "Cyprus's native red grape."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-04",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée internationale du cabernet franc",
+   "en": "International Cabernet Franc Day"
+  },
+  "anecdote": {
+   "fr": "Le cépage de Chinon et de Saint-Émilion.",
+   "en": "The grape of Chinon and Saint-Émilion."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-06",
+  "categorie": "gastronomie",
+  "emoji": "🥨",
+  "titre": {
+   "fr": "Saint-Nicolas",
+   "en": "Saint Nicholas' Day"
+  },
+  "anecdote": {
+   "fr": "Une fête très suivie dans l'Est de la France.",
+   "en": "A festival widely celebrated in eastern France."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-10",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée mondiale de l'aszú",
+   "en": "World Aszú Day"
+  },
+  "anecdote": {
+   "fr": "Le vin liquoreux de Tokaj, en Hongrie.",
+   "en": "The sweet wine of Tokaj, in Hungary."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-13",
+  "categorie": "gastronomie",
+  "emoji": "🧀",
+  "titre": {
+   "fr": "Journée de la raclette",
+   "en": "Raclette Day"
+  },
+  "anecdote": {
+   "fr": "Le fromage fondu à l'honneur en plein hiver.",
+   "en": "Melted cheese in the spotlight in midwinter."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-16",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée du meunier",
+   "en": "Meunier Day"
+  },
+  "anecdote": {
+   "fr": "L'un des trois grands cépages de la Champagne.",
+   "en": "One of Champagne's three main grapes."
+  },
+  "aConfirmer": false,
+  "lien": "/meunier-cepage-champagne"
+ },
+ {
+  "debut": "2027-12-20",
+  "categorie": "vins",
+  "emoji": "🍷",
+  "titre": {
+   "fr": "Journée de la sangria (USA)",
+   "en": "National Sangria Day (USA)"
+  },
+  "anecdote": {
+   "fr": "Une préparation espagnole à base de vin et de fruits.",
+   "en": "A Spanish preparation of wine and fruit."
+  },
+  "aConfirmer": false
+ },
+ {
+  "debut": "2027-12-25",
+  "categorie": "gastronomie",
+  "emoji": "🎄",
+  "titre": {
+   "fr": "Noël",
+   "en": "Christmas"
+  },
+  "anecdote": {
+   "fr": "Une période clé pour les cavistes, les traiteurs et les coffrets d'entreprise.",
+   "en": "A key period for wine shops, caterers and corporate gift boxes."
+  },
+  "aConfirmer": false,
+  "lien": "/cse-et-cadeaux-dentreprise"
+ },
+ {
+  "debut": "2027-12-31",
+  "categorie": "gastronomie",
+  "emoji": "✨",
+  "titre": {
+   "fr": "Saint-Sylvestre",
+   "en": "New Year's Eve"
+  },
+  "anecdote": {
+   "fr": "Dernier rendez-vous de l'année pour les restaurateurs.",
+   "en": "The last date of the year for restaurants."
+  },
+  "aConfirmer": false
+ }
+]

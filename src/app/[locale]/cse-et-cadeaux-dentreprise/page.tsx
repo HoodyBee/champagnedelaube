@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Arguments } from "@/components/ui/Arguments";
@@ -100,6 +101,8 @@ export default async function EntreprisesPage({ params }: PageProps<"/[locale]/c
       <Section titre={t("argumentsTitre")}>
         <Arguments items={args} />
       </Section>
+
+      <DansLeMag locale={locale} chemins={["/cse-et-cadeaux-dentreprise"]} rubrique="accords" />
 
       <Section fond="chaude">
         <div className="grid gap-space-3 lg:grid-cols-[1.4fr_1fr]">

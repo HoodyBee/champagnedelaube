@@ -271,6 +271,7 @@
       },
       "profil": {
         "professionnel": "A trade professional (restaurant, wine shop, hotel)",
+        "vigneron": "A winemaker or estate",
         "entreprise": "A company or works council",
         "particulier": "A private customer"
       },
@@ -304,7 +305,8 @@
       "contactParticulier": "Private client enquiry",
       "contactPro": "Trade enquiry (restaurant, wine shop, hotel)",
       "contactEntreprise": "Company or works council enquiry",
-      "degustationPrivee": "Private tasting request"
+      "degustationPrivee": "Private tasting request",
+      "marronnier": "Calendar (wine and food days) PDF request"
     },
     "submit": {
       "grillePro": "Receive the selection and trade prices",
@@ -320,7 +322,8 @@
       "contactParticulier": "Send the message",
       "contactPro": "Send the message",
       "contactEntreprise": "Send the message",
-      "degustationPrivee": "Arrange my tasting"
+      "degustationPrivee": "Arrange my tasting",
+      "marronnier": "Get the calendar"
     },
     "errors": {
       "required": "This field is required.",
@@ -351,7 +354,9 @@
       "brochureByEmail": "We will email you the brochure very soon.",
       "newsletter": "One last step to receive the news: click the confirmation link we have just emailed you.",
       "catalogueSent": "Our selection is on its way: you will find it in your inbox within a few minutes.",
-      "catalogueSoon": "We will email you our selection very soon."
+      "catalogueSoon": "We will email you our selection very soon.",
+      "downloadMarronnier": "Download the calendar (PDF)",
+      "marronnier": "Your calendar is ready: the link is also on its way to your inbox."
     },
     "ack": {
       "subject": "Champagne de l'Aube: we have received your request",
@@ -360,7 +365,8 @@
       "brochure": "Your brochure is available here:",
       "signature": "Speak soon,\nJulien Mineo",
       "catalogue": "Here is our current selection, to download here:",
-      "catalogueSoon": "We will send you our current selection very soon, by return email."
+      "catalogueSoon": "We will send you our current selection very soon, by return email.",
+      "marronnier": "Your calendar is ready, you can download it here:"
     },
     "newsletterOptIn": "I would like to receive news from Champagne de l'Aube (winemakers, tastings, events).",
     "faisonsConnaissance": "Let's get acquainted",
@@ -397,7 +403,8 @@
       "degustation": "Book a tasting",
       "evenement": "Plan a special occasion"
     },
-    "vigneron": "Are you a winemaker? Tell us about your estate"
+    "vigneron": "Are you a winemaker? Tell us about your estate",
+    "metaTitle": "Contact us in Troyes"
   },
   "newsletter": {
     "bar": {
@@ -740,8 +747,23 @@
       "oenotourisme": "Wine tourism",
       "actualites": "News"
     },
+    "autresRubriques": "Other sections of the Mag",
+    "rubriquesIntro": {
+      "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
+      "accords": "Recipes and food & champagne pairings, from starter to dessert, with cuvées from Aube winemakers.",
+      "portraits": "Meet the independent winemakers of the Aube: their story, their plots, their cuvées.",
+      "terroirsCepages": "Pinot noir, meunier, chardonnay and rare grapes: understanding champagne's grape varieties and the Aube terroirs that reveal them.",
+      "oenotourisme": "Cellar visits, vineyard routes and villages: planning your stay in the Aube vineyards.",
+      "actualites": "Vineyard events, the calendar of wine and food days, news from our winemakers."
+    },
     "aLaUne": "Featured",
-    "tousLesArticles": "All articles"
+    "tousLesArticles": "All articles",
+    "dansLeMag": "Further reading",
+    "plusLoin": "Keep exploring",
+    "rubriquesNav": "Sections of the Mag",
+    "tousArticlesRubrique": "All « {rubrique} » articles",
+    "lienDegustations": "Our private tastings of winemakers' champagnes, in Troyes or at your home",
+    "lienSelection": "Our current selection: the Aube winemakers we follow"
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",
@@ -854,5 +876,46 @@
     },
     "privacyLink": "Read the privacy policy",
     "mentionDefaut": "Administrative office only: no shop and no storage. Meetings and tastings by appointment."
+  },
+  "calendrier": {
+    "categories": {
+      "evenements": "⭐ Our events",
+      "vins": "🍷 Wines / Grapes",
+      "gastronomie": "🍴 Food",
+      "spiritueux": "🍸 Spirits / Cocktails",
+      "salons": "🌍 Major events / Fairs"
+    },
+    "filtreCategorie": "Category",
+    "filtreMois": "Month",
+    "toutes": "All",
+    "tousLesMois": "Whole year",
+    "colDate": "Date",
+    "colJournee": "Day",
+    "colCategorie": "Category",
+    "colAnecdote": "Did you know?",
+    "aConfirmer": "to be confirmed",
+    "regle": "Rule: {regle}",
+    "aucune": "No date for this filter.",
+    "resultats": "{count, plural, =0 {no dates} one {# date} other {# dates}}",
+    "lienExterne": "official site",
+    "lienInterne": "read",
+    "du": "from {debut} to {fin}",
+    "accueilSurTitre": "The wine and food calendar",
+    "accueilTitre": "Our events and the days not to miss",
+    "accueilIntro": "Our events and the main wine, food and grape days, month by month.",
+    "precedent": "Previous month",
+    "suivant": "Next month",
+    "prochaines": "Coming up",
+    "voirTout": "See the full calendar",
+    "aucuneProchaine": "New dates coming soon.",
+    "legende": "Key",
+    "fermer": "Close",
+    "pdfTitre": "Get the calendar as a PDF",
+    "pdfTexte": "The full calendar, to print or share with your team. Enter your e-mail: we send it to you and the download starts straight away.",
+    "pdfBouton": "Get the PDF",
+    "pdfTelecharger": "Download the calendar (PDF)",
+    "pdfSurTitre": "The Champagne Mag · Champagne de l'Aube",
+    "pdfDocTitre": "The {annee} wine and food calendar",
+    "pdfIntro": "Grape, food and spirits days, major events and our own events: the editorial calendar to plan your posts and events. Dates checked; « to be confirmed » when the organiser has not announced them yet."
   }
 }

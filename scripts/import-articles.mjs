@@ -60,7 +60,15 @@ function blocBrut(b) {
 const contenu = (a, l) =>
   a.blocs
     ? (a.blocs[l] ?? []).map(blocBrut)
-    : a.sections.filter((s) => s.titre[l]).flatMap((s) => [bloc(s.titre[l], l, "h2"), ...s.paragraphes.filter((p) => p[l]).map((p) => bloc(p[l], l))]);
+    : a.sections
+        .filter((s) => s.titre[l])
+        .flatMap((s) => [
+          bloc(s.titre[l], l, "h2"),
+          // Paragraphe spécial { "calendrier": 2027 } : le bloc « Calendrier du marronnier » ; { "h3": {...} } : un sous-intertitre.
+          ...s.paragraphes
+            .filter((p) => p.calendrier || (p.h3 ?? p)[l])
+            .map((p) => (p.calendrier ? { _type: "calendrierMarronnier", _key: key(), annee: p.calendrier } : p.h3 ? bloc(p.h3[l], l, "h3") : bloc(p[l], l))),
+        ]);
 const str = (v, type = "localeString") => ({ _type: type, ...Object.fromEntries(LANGS.filter((l) => v?.[l]).map((l) => [l, v[l]])) });
 
 const docs = articles.map((a) => ({
@@ -70,7 +78,8 @@ const docs = articles.map((a) => ({
   set: {
     titre: str(a.titre),
     extrait: str(a.extrait, "localeText"),
-    rubriques: a.rubriques,
+    rubriquePrincipale: a.rubriquePrincipale ?? a.rubriques[0],
+    rubriques: a.rubriquePrincipale ? a.rubriques : a.rubriques.slice(1),
     contenu: { _type: "localeRichText", ...Object.fromEntries(LANGS.map((l) => [l, contenu(a, l)]).filter(([, v]) => v.length)) },
     seo: { _type: "seo", title: str(a.seo.title), description: str(a.seo.description, "localeText") },
   },
