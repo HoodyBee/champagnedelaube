@@ -83,6 +83,8 @@ export const routing = defineRouting({
     },
     // Le Mag (espace éditorial : tous les articles, par rubrique)
     "/le-mag": "/le-mag",
+    // Pages des rubriques sans adresse historique (/le-mag/terroirs-cepages/…)
+    "/le-mag/[rubrique]": "/le-mag/[rubrique]",
     // Articles du Mag : à la racine du site, adresses historiques conservées (/mon-article/)
     "/[article]": "/[article]",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)

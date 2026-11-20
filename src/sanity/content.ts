@@ -414,6 +414,12 @@ export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
   accords: "/recettes-accords-mets-champagne",
 } as const;
+/** Adresse de la page d'une rubrique : adresse historique, sinon /le-mag/<code>/. */
+export function rubriqueHref(code: string) {
+  return code in PAGES_RUBRIQUE
+    ? PAGES_RUBRIQUE[code as keyof typeof PAGES_RUBRIQUE]
+    : ({ pathname: "/le-mag/[rubrique]", params: { rubrique: code } } as const);
+}
 /** Anciennes rubriques de WordPress -> codes du Mag. */
 const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords" };
 
@@ -428,7 +434,7 @@ export async function getRubriquesSanity(locale: Locale): Promise<Rubrique[]> {
 }
 
 const ARTICLE_CARD = `"slug": slug.current, titre, date, extrait, image ${IMG}, collaborationCommerciale,
-  rubrique, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
+  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
 type ArticleRaw = {
   slug: string;
   titre?: Localized;
@@ -437,6 +443,7 @@ type ArticleRaw = {
   image?: SanityImg;
   collaborationCommerciale?: boolean;
   rubrique?: string;
+  rubriquePrincipale?: string;
   rubriques?: string[];
   autresRubriques?: (string | null)[];
   vignerons?: (string | null)[];
@@ -447,6 +454,9 @@ export type ArticleCard = {
   date?: string;
   extrait?: string;
   image: Img | null;
+  /** Rubrique principale (fil d'Ariane, sur-titre, données structurées). */
+  rubriquePrincipale?: string;
+  /** Toutes les rubriques où l'article apparaît, la principale en premier. */
   rubriques: string[];
   vignerons: string[];
   collaborationCommerciale: boolean;
@@ -454,10 +464,13 @@ export type ArticleCard = {
 const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
   const titre = L(a.titre, locale);
   if (!titre || !a.slug) return null;
+  const ancienne = a.rubrique ? RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique : undefined;
+  const principale = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
   const rubriques = [
+    ...(principale ? [principale] : []),
     ...(a.rubriques ?? []),
     ...(a.autresRubriques ?? []).filter((r): r is string => !!r),
-    ...(a.rubrique && !a.rubriques?.length ? [RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique] : []),
+    ...(ancienne && !a.rubriques?.length ? [ancienne] : []),
   ];
   return {
     slug: a.slug,
@@ -465,6 +478,7 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
     date: a.date,
     extrait: L(a.extrait, locale),
     image: toImg(a.image, locale, 1200),
+    rubriquePrincipale: principale,
     rubriques: [...new Set(rubriques)],
     vignerons: (a.vignerons ?? []).filter((v): v is string => !!v),
     collaborationCommerciale: a.collaborationCommerciale === true,

@@ -2,6 +2,16 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
 
+/** Les six rubriques prêtes à l'emploi (codes utilisés dans les adresses /le-mag/<code>/). */
+export const RUBRIQUES_OPTIONS = [
+  { title: "Portraits de vignerons", value: "portraits" },
+  { title: "Terroirs & cépages", value: "terroirs-cepages" },
+  { title: "Accords mets & champagne", value: "accords" },
+  { title: "Tout savoir sur le champagne", value: "tout-savoir" },
+  { title: "Œnotourisme", value: "oenotourisme" },
+  { title: "Actualités", value: "actualites" },
+];
+
 /** Article du Mag (recette, accord, pédagogie, portrait). Publié à la racine du site : /mon-article/. */
 export const article = defineType({
   name: "article",
@@ -24,29 +34,28 @@ export const article = defineType({
       validation: (r) => r.required(),
     }),
     defineField({
-      name: "rubriques",
-      title: "Rubriques du Mag",
+      name: "rubriquePrincipale",
+      title: "Rubrique principale",
       description:
-        "Une ou plusieurs. Six rubriques sont prêtes ; pour en ajouter une autre, créez-la dans « Le Mag : rubriques » puis choisissez-la dans « Autres rubriques ».",
+        "Celle qui définit le fil d'Ariane et la rubrique affichée sur l'article. L'adresse de l'article reste unique (champagnedelaube.fr/adresse/), quelle que soit la rubrique : pas de contenu dupliqué.",
+      type: "string",
+      group: "contenu",
+      options: { list: RUBRIQUES_OPTIONS, layout: "dropdown" },
+      validation: (r) => r.required().warning("Choisissez la rubrique principale de l'article."),
+    }),
+    defineField({
+      name: "rubriques",
+      title: "Rubriques secondaires",
+      description: "L'article apparaît aussi dans ces rubriques (facultatif). Inutile d'y recocher la rubrique principale.",
       type: "array",
       group: "contenu",
       of: [{ type: "string" }],
-      options: {
-        list: [
-          { title: "Portraits de vignerons", value: "portraits" },
-          { title: "Terroirs & cépages", value: "terroirs-cepages" },
-          { title: "Accords mets & champagne", value: "accords" },
-          { title: "Tout savoir sur le champagne", value: "tout-savoir" },
-          { title: "Œnotourisme", value: "oenotourisme" },
-          { title: "Actualités", value: "actualites" },
-        ],
-        layout: "grid",
-      },
+      options: { list: RUBRIQUES_OPTIONS, layout: "grid" },
     }),
     defineField({
       name: "autresRubriques",
-      title: "Autres rubriques",
-      description: "Les rubriques que vous avez ajoutées vous-même dans « Rubriques du Mag ».",
+      title: "Autres rubriques (créées dans le Studio)",
+      description: "Rubriques secondaires que vous avez créées vous-même dans « Le Mag : rubriques ».",
       type: "array",
       group: "contenu",
       of: [defineArrayMember({ type: "reference", to: [{ type: "rubrique" }] })],
@@ -84,10 +93,10 @@ export const article = defineType({
   ],
   orderings: [{ title: "Date", name: "date", by: [{ field: "date", direction: "desc" }] }],
   preview: {
-    select: { title: "titre.fr", rubriques: "rubriques", date: "date", media: "image" },
-    prepare: ({ title, rubriques, date, media }) => ({
+    select: { title: "titre.fr", principale: "rubriquePrincipale", rubriques: "rubriques", date: "date", media: "image" },
+    prepare: ({ title, principale, rubriques, date, media }) => ({
       title,
-      subtitle: [date, ...(rubriques ?? [])].filter(Boolean).join(" · "),
+      subtitle: [date, principale && `★ ${principale}`, ...(rubriques ?? [])].filter(Boolean).join(" · "),
       media,
     }),
   },
