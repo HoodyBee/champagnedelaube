@@ -1,5 +1,5 @@
 import type React from "react";
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import type { Img } from "./types";
 
 /**

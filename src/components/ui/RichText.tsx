@@ -1,6 +1,6 @@
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/react";
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import type { ReactNode } from "react";
 import { lienLocalise } from "@/i18n/liens";
 import type { Locale } from "@/i18n/routing";

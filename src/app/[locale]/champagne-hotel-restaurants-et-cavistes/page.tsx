@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Arguments } from "@/components/ui/Arguments";
