@@ -42,6 +42,14 @@ export const richText = defineType({
       },
     }),
     defineArrayMember({ type: "imageAvecAlt" }),
+    // Article sur les labels : le tableau comparatif (contenu et logos dans src/lib/labels.ts).
+    defineArrayMember({
+      name: "tableauLabels",
+      title: "Tableau comparatif des labels (HVE, VDC, Terra Vitis, bio, biodynamie)",
+      type: "object",
+      fields: [{ name: "note", title: "Note (non affichée)", type: "string", initialValue: "Tableau des labels" }],
+      preview: { prepare: () => ({ title: "🌿 Tableau comparatif des labels", subtitle: "Logos officiels, indice nature" }) },
+    }),
     // Marronnier : le tableau filtrable des journées (« Journées du calendrier » + « Mes événements ») et le PDF.
     defineArrayMember({
       name: "calendrierMarronnier",

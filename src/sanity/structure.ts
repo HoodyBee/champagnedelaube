@@ -52,6 +52,7 @@ export const structure: StructureResolver = (S) =>
         singleton(S, "espacePro", "Restaurants, cavistes, hôtels"),
         singleton(S, "espaceEntreprises", "Entreprises & CSE"),
         pageFixe(S, "pro-vignerons", "Vignerons : devenez partenaire"),
+        pageFixe(S, "communication", "Communication & marketing"),
       ]),
       S.divider(),
       dossier(S, "contact-legal", "Contact et pages légales", [

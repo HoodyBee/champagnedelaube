@@ -2,6 +2,7 @@ import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/react";
 import { SanityImage as Image } from "@/components/ui/SanityImage";
 import type { ReactNode } from "react";
+import { TableauLabels } from "@/components/mag/TableauLabels";
 import { lienLocalise } from "@/i18n/liens";
 import type { Locale } from "@/i18n/routing";
 import { localize } from "@/sanity/lib/i18n";
@@ -54,6 +55,7 @@ const components = (locale: Locale, extras?: Record<string, ReactNode>): Portabl
   },
   types: {
     calendrierMarronnier: () => <>{extras?.calendrierMarronnier ?? null}</>,
+    tableauLabels: () => <TableauLabels locale={locale} />,
     imageAvecAlt: ({ value }) =>
       value?.asset ? (
         <figure>

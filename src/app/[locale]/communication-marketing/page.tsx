@@ -3,7 +3,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { ButtonLink, buttonClass } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
+import { Photo } from "@/components/ui/Photo";
 import { pageMetadata } from "@/i18n/metadata";
+import { getPageContent } from "@/sanity/content";
 import type { Locale } from "@/i18n/routing";
 
 const HREF = "/communication-marketing";
@@ -25,15 +27,20 @@ export default async function CommunicationPage({ params }: PageProps<"/[locale]
   setRequestLocale(locale);
   const t = await getTranslations("communicationPage");
   const tNav = await getTranslations("nav");
+  // Photo de la page (document « Page » du Studio, clé « communication »).
+  const page = await getPageContent("communication", locale);
 
   return (
     <>
       <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: t("titre") }]} />
       <section className="border-b border-filet bg-creme-clair">
-        <div className="mx-auto max-w-3xl px-space-2 py-space-5 text-center sm:px-space-4">
-          <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
-          <h1 className="mt-space-2 text-titre-post">{t("titre")}</h1>
-          <p className="mt-space-3 text-[1.125rem] text-gris-chaud">{t("intro")}</p>
+        <div className={`mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:gap-space-5 lg:py-space-5 ${page.image ? "lg:grid-cols-2" : ""}`}>
+          <div className="order-2 lg:order-1">
+            <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
+            <h1 className="mt-space-2 text-titre-post">{t("titre")}</h1>
+            <p className="mt-space-3 max-w-xl text-[1.125rem] text-gris-chaud">{t("intro")}</p>
+          </div>
+          {page.image && <Photo image={page.image} ratio="4/5" sizes="(min-width: 1024px) 40vw, 100vw" priority compactMobile className="order-1 lg:order-2 lg:mx-auto lg:w-4/5" />}
         </div>
       </section>
       <Section>
