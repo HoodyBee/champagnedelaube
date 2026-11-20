@@ -4,19 +4,20 @@ Le tableau est un vrai tableau (bloc « Tableau comparatif des labels » dans le
 
 Colonnes : **Label** (logo officiel, lien vers le site du label) · **La démarche** (nom complet) · **Pesticides de synthèse** · **La promesse** · **Indice nature** (🌿, lu « Indice nature : 3 sur 5 » par les lecteurs d'écran).
 
-## Logos
+## Logos (recherche du 20-21 novembre 2026)
 
-| Label | Fichier | Source | Remarque |
-|---|---|---|---|
-| HVE | `logo-hve-haute-valeur-environnementale.svg` | [hve-asso.com](https://hve-asso.com/la-hve/) | Logo officiel de la certification. |
-| VDC | — | **non trouvé** | Aucun fichier officiel accessible sur champagne.fr : le sigle « VDC » s'affiche à la place. **À fournir par Julien.** |
-| Terra Vitis | `logo-terra-vitis.png` | [terravitis.com](https://terravitis.com/) | Logo « Viticulteurs responsables ». |
-| AB (logo français) | — | **non récupéré** | Wikimedia Commons a refusé le téléchargement (erreur serveur) et agencebio.org bloque l'accès. **À fournir par Julien.** |
-| Eurofeuille (bio, UE) | `logo-eurofeuille-bio-union-europeenne.svg` | [Wikimedia Commons – Organic-Logo.svg](https://commons.wikimedia.org/wiki/File:Organic-Logo.svg) | Logo bio officiel de l'Union européenne. |
-| Demeter | `logo-demeter.png` | [demeter.fr](https://www.demeter.fr/) | Marque déposée. |
-| Biodyvin | `logo-biodyvin.png` | [biodyvin.com](https://www.biodyvin.com/) | Marque déposée. |
+| Label | Affiché | Fichier | Source exacte | Droit d'usage pour un site d'information |
+|---|---|---|---|---|
+| HVE | logo | `logo-hve-haute-valeur-environnementale.svg` | [hve-asso.com/la-hve](https://hve-asso.com/la-hve/) (fichier `HVE-Haute-valeur-environnementale.svg`) ; couleur conforme à la charte du ministère (Pantone 173) : [charte graphique de la marque HVE](https://agriculture.gouv.fr/telecharger/132467) | **Non vérifié** : la charte vise les produits des exploitations certifiées ; aucune règle publique trouvée pour un usage éditorial. |
+| VDC | **sigle « VDC »** | — | Le logo officiel figure sur la couverture du [référentiel technique VDC, version 8.4, octobre 2023](https://www.champagne.fr/system/files/2024-12/Referentiel_VDC.pdf) (Comité Champagne). **Non repris** : ce document est sous licence Creative Commons « pas de modification », et aucune charte publique ne permet d'extraire le logo. Le seul fichier séparé trouvé est sur un site non officiel (docplayer), écarté. | À demander au Comité Champagne. |
+| Terra Vitis | logo | `logo-terra-vitis.png` | [terravitis.com](https://terravitis.com/) (fichier `TerraVitis_NEW_Logo_FR_RVB-1.png`) | **Non vérifié** (marque de l'association). |
+| AB | **sigle « AB »** | — | Logo officiel disponible sur [INAO – règles d'utilisation des logos bio](https://www.inao.gouv.fr/regles-logos-agriculture-biologique). **Non affiché** : les [règles d'usage de la marque AB (révision 2025), article 7](https://www.inao.gouv.fr/sites/default/files/2026-09/Rg_usage_AB_r%C3%A9vision2025_VF_sign%C3%A9.pdf) imposent un **accord préalable de l'Agence Bio** pour toute personne non certifiée qui utilise le logo AB en communication (demande avec la maquette). | **Autorisation à demander** à l'Agence Bio. |
+| Eurofeuille (bio, UE) | logo | `logo-eurofeuille-bio-union-europeenne.png` | Fichier officiel publié par l'INAO : [page INAO](https://www.inao.gouv.fr/regles-logos-agriculture-biologique) (`eurofeuille_image_full.png`). Il remplace la copie Wikimedia Commons utilisée avant. | **Autorisé** : article 33 du règlement (UE) 2018/848, « le logo […] peut aussi être utilisé à des fins d'information et d'éducation » ([texte](https://legislation.gov.uk/eur/2018/848/article/33/2020-01-31)). Logo non déformé, non combiné ([manuel d'utilisation](https://agriculture.ec.europa.eu/system/files/2018-11/organic-logo-user-manual_fr_0.pdf)). |
+| Demeter | logo | `logo-demeter.png` | [demeter.fr](https://www.demeter.fr/) (fichier `cropped-Demeter-logo.png`) | **Non vérifié** (marque déposée). |
+| Biodyvin | logo | `logo-biodyvin.png` | [biodyvin.com](https://www.biodyvin.com/) (fichier `logo-biodyvin.png`) | **Non vérifié** (marque déposée). |
 
-**Règles d'usage.** Ces logos sont des marques. Sur un produit, seuls les opérateurs certifiés peuvent les apposer. Ici, ils servent seulement à **identifier** le label dans un article d'information, en petit format, sans modification, avec un lien vers le site officiel : c'est l'usage habituel des sites d'information. Si un organisme le demande, on les retire.
+Aucun logo n'a été redessiné, recoloré ni déformé. Les fichiers PNG trop grands ont seulement été réduits, proportions gardées.
+**À décider par Julien** : demander l'accord de l'Agence Bio (AB) et du Comité Champagne (VDC), et, par prudence, des autres organismes. Sinon, retirer les logos dont le droit d'usage n'est pas confirmé : le tableau affiche alors le sigle, déjà prévu.
 
 ## Vérifications (à relire par Julien : ce qui est inexact est signalé, pas corrigé en silence)
 

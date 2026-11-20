@@ -61,7 +61,7 @@ export const LABELS: LabelLigne[] = [
     cle: "bio",
     sigle: "AB",
     nom: { fr: "Agriculture biologique", en: "Organic farming" },
-    logos: [{ src: "/labels/logo-eurofeuille-bio-union-europeenne.svg", nom: "Eurofeuille (bio, Union européenne)", largeur: 96, hauteur: 64 }],
+    logos: [{ src: "/labels/logo-eurofeuille-bio-union-europeenne.png", nom: "Eurofeuille (bio, Union européenne)", largeur: 97, hauteur: 64 }],
     site: "https://www.agencebio.org/",
     pesticides: { fr: "Interdits", en: "Banned" },
     promesse: {
