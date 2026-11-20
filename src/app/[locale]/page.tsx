@@ -10,13 +10,15 @@ import { Hero } from "@/components/ui/Hero";
 import { LineIcon } from "@/components/ui/LineIcon";
 import { Photo } from "@/components/ui/Photo";
 import { Section } from "@/components/ui/Section";
-import { Link } from "@/i18n/navigation";
-import { pageMetadata, SITE_URL } from "@/i18n/metadata";
+import { getPathname, Link } from "@/i18n/navigation";
+import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { terroirs } from "@/lib/brand";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
 import { nav, terroirPages } from "@/lib/site";
-import { getAccueil, getArticles, getCuvees, getTerroir } from "@/sanity/content";
+import { CalendrierAccueil } from "@/components/calendrier/CalendrierAccueil";
+import { getCalendrierVue } from "@/lib/calendrier-serveur";
+import { CATEGORIES_CALENDRIER, getAccueil, getArticles, getCuvees, getSlugArticleMarronnier, getTerroir } from "@/sanity/content";
 import { getReglages } from "@/sanity/queries";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
@@ -40,6 +42,8 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const tMag = await getTranslations("mag");
   const tLegal = await getTranslations("legal");
   const tSel = await getTranslations("selection");
+  const tCal = await getTranslations("calendrier");
+  const [calendrier, slugMarronnier] = await Promise.all([getCalendrierVue(locale), getSlugArticleMarronnier()]);
   const [a, reglages, cuvees, articles, labels, ...fiches] = await Promise.all([
     getAccueil(locale),
     getReglages(),
@@ -60,7 +64,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const derniers = withDates(articles.filter((x) => !dejaVus.has(x.slug)), locale).slice(0, 3);
 
   // Alternance blanc / crème clair, quelles que soient les sections affichées.
-  const sections = ["terroirs", "degustations", ...(portraits.length ? ["portraits"] : []), "pepites", "pro", "mag"] as const;
+  const sections = ["terroirs", "degustations", ...(portraits.length ? ["portraits"] : []), "pepites", "pro", "mag", "calendrier"] as const;
   const fond = (id: (typeof sections)[number]) => (sections.indexOf(id) % 2 === 1 ? "chaude" : "blanc");
 
   // Données structurées : l'organisation et son activité locale à Troyes.
@@ -243,6 +247,33 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           </ButtonLink>
         </div>
       </Section>
+
+      {/* 7 bis. Le calendrier : mes événements et les journées du marronnier, qui se répondent */}
+      {calendrier.length > 0 && (
+        <Section id="calendrier" fond={fond("calendrier")} align="gauche" surTitre={tCal("accueilSurTitre")} titre={tCal("accueilTitre")} intro={tCal("accueilIntro")}>
+          <CalendrierAccueil
+            dates={calendrier}
+            locale={locale}
+            aujourdhuiServeur={new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date())}
+            hrefTout={
+              slugMarronnier
+                ? withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slugMarronnier } }, locale }))
+                : withSlash(getPathname({ href: "/le-mag", locale }))
+            }
+            textes={{
+              categories: Object.fromEntries(CATEGORIES_CALENDRIER.map((c) => [c, tCal(`categories.${c}`)])) as Record<(typeof CATEGORIES_CALENDRIER)[number], string>,
+              precedent: tCal("precedent"),
+              suivant: tCal("suivant"),
+              prochaines: tCal("prochaines"),
+              voirTout: tCal("voirTout"),
+              aucuneProchaine: tCal("aucuneProchaine"),
+              legende: tCal("legende"),
+              aConfirmer: tCal("aConfirmer"),
+              fermer: tCal("fermer"),
+            }}
+          />
+        </Section>
+      )}
 
       {/* 8. Dernier appel : le motif vitrail, en décor discret */}
       <Section id="contact">

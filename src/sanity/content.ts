@@ -916,3 +916,119 @@ export async function getCuvees(locale: Locale, { accueil = false } = {}): Promi
       : [],
   );
 }
+
+// ---------------------------------------------------------------------------
+// Marronnier : journées du calendrier + « ⭐ Mes événements » (documents « Mon événement »)
+// ---------------------------------------------------------------------------
+export type CategorieCalendrier = "evenements" | "vins" | "gastronomie" | "spiritueux" | "salons";
+export const CATEGORIES_CALENDRIER: CategorieCalendrier[] = ["evenements", "vins", "gastronomie", "spiritueux", "salons"];
+
+export type DateCalendrier = {
+  id: string;
+  /** Premier jour, AAAA-MM-JJ (heure de Paris). */
+  debut: string;
+  /** Dernier jour, AAAA-MM-JJ (égal à debut pour une seule journée). */
+  fin: string;
+  /** Heure de début pour mes événements (ISO), pour les données structurées. */
+  debutIso?: string;
+  finIso?: string;
+  titre: string;
+  categorie: CategorieCalendrier;
+  emoji?: string;
+  anecdote?: string;
+  regle?: string;
+  lien?: string;
+  lieu?: { nom?: string; adresse?: string; codePostal?: string; ville?: string };
+  aConfirmer: boolean;
+};
+
+const jourParis = (iso: string) => new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date(iso));
+
+/**
+ * Toutes les dates du calendrier, triées : les journées du marronnier et mes événements
+ * (repris automatiquement des documents « Mon événement »). Rien n'est écrit en dur dans le code.
+ */
+export async function getCalendrier(locale: Locale): Promise<DateCalendrier[]> {
+  const data = await sanityFetch<{
+    journees: {
+      _id: string;
+      titre?: Localized;
+      debut?: string;
+      fin?: string;
+      categorie?: string;
+      emoji?: string;
+      anecdote?: Localized;
+      regle?: Localized;
+      lien?: string;
+      aConfirmer?: boolean;
+    }[];
+    evenements: {
+      _id: string;
+      titre?: Localized;
+      debut?: string;
+      fin?: string;
+      accroche?: Localized;
+      lien?: string;
+      lieu?: { nom?: string; adresse?: string; codePostal?: string; ville?: string };
+    }[];
+  }>({
+    query: `{
+      "journees": *[_type == "journeeCalendrier" && defined(debut)]{_id, titre, debut, fin, categorie, emoji, anecdote, regle, lien, aConfirmer},
+      "evenements": *[_type == "evenement" && defined(debut)]{_id, titre, debut, fin, accroche, lien, lieu}
+    }`,
+    tags: ["journeeCalendrier", "evenement"],
+    life: "hours",
+  });
+  const journees: DateCalendrier[] = (data?.journees ?? []).flatMap((j) => {
+    const titre = L(j.titre, locale);
+    if (!titre || !j.debut || !CATEGORIES_CALENDRIER.includes(j.categorie as CategorieCalendrier)) return [];
+    return [
+      {
+        id: j._id.replace(/^drafts\./, ""),
+        debut: j.debut,
+        fin: j.fin && j.fin > j.debut ? j.fin : j.debut,
+        titre,
+        categorie: j.categorie as CategorieCalendrier,
+        emoji: j.emoji,
+        anecdote: L(j.anecdote, locale),
+        regle: L(j.regle, locale),
+        lien: j.lien,
+        aConfirmer: j.aConfirmer === true,
+      },
+    ];
+  });
+  const evenements: DateCalendrier[] = (data?.evenements ?? []).flatMap((e) => {
+    const titre = L(e.titre, locale);
+    if (!titre || !e.debut) return [];
+    const debut = jourParis(e.debut);
+    const fin = e.fin ? jourParis(e.fin) : debut;
+    return [
+      {
+        id: e._id.replace(/^drafts\./, ""),
+        debut,
+        fin: fin > debut ? fin : debut,
+        debutIso: e.debut,
+        finIso: e.fin,
+        titre,
+        categorie: "evenements" as const,
+        emoji: "⭐",
+        anecdote: [L(e.accroche, locale), [e.lieu?.nom, e.lieu?.ville].filter(Boolean).join(", ")].filter(Boolean).join(" · ") || undefined,
+        lien: e.lien,
+        lieu: e.lieu,
+        aConfirmer: false,
+      },
+    ];
+  });
+  // Mes événements d'abord à date égale.
+  return [...evenements, ...journees].sort((a, b) => a.debut.localeCompare(b.debut) || (a.categorie === "evenements" ? -1 : b.categorie === "evenements" ? 1 : 0));
+}
+
+/** Adresse de l'article qui contient le calendrier du marronnier (le plus récent), pour « Voir tout le calendrier ». */
+export async function getSlugArticleMarronnier(): Promise<string | null> {
+  return (
+    (await sanityFetch<string | null>({
+      query: `*[_type == "article" && count(contenu.fr[_type == "calendrierMarronnier"]) > 0] | order(coalesce(date, _createdAt) desc)[0].slug.current`,
+      tags: ["article"],
+    })) ?? null
+  );
+}

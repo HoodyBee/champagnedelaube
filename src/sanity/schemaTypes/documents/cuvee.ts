@@ -8,7 +8,7 @@ import { requireFr, warnFrLength } from "../objects/localized";
  */
 export const cuvee = defineType({
   name: "cuvee",
-  title: "Cuvée (sélection du moment)",
+  title: "Cuvée (Notre sélection du moment)",
   type: "document",
   icon: icon("bottle"),
   fields: [

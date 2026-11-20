@@ -5,7 +5,7 @@ import { requireFr } from "../objects/localized";
 /** Expérience pour les particuliers (atelier, accords, dégustation sur-mesure) : carte + page + formulaire de réservation. */
 export const experience = defineType({
   name: "experience",
-  title: "Expérience (particuliers)",
+  title: "Format de dégustation (masqué sur le site)",
   type: "document",
   icon: icon("star"),
   groups: [

@@ -6,6 +6,7 @@ import { espaceParticuliers } from "./documents/espaceParticuliers";
 import { espacePro } from "./documents/espacePro";
 import { evenement } from "./documents/evenement";
 import { experience } from "./documents/experience";
+import { journeeCalendrier } from "./documents/journeeCalendrier";
 import { page } from "./documents/page";
 import { partenaire } from "./documents/partenaire";
 import { reglages } from "./documents/reglages";
@@ -35,6 +36,7 @@ export const schemaTypes = [
   cuvee,
   experience,
   evenement,
+  journeeCalendrier,
   article,
   rubrique,
   partenaire,

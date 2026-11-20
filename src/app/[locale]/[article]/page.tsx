@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { MarronnierBloc } from "@/components/calendrier/MarronnierBloc";
 import { MagCard } from "@/components/mag/MagCard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { DomaineCard } from "@/components/ui/DomaineCard";
@@ -56,6 +57,9 @@ export default async function ArticlePage({ params }: Props) {
   // Rubrique principale : fil d'Ariane, sur-titre et données structurées (l'adresse reste unique).
   const rubrique = a.rubriquePrincipale && labels[a.rubriquePrincipale] ? a.rubriquePrincipale : a.rubriques.find((r) => labels[r]);
   const [aDate] = withDates([a], locale);
+  // Bloc « Calendrier du marronnier » placé dans le texte (Studio) : tableau filtrable + PDF.
+  const blocCal = a.contenu?.find((b) => b._type === "calendrierMarronnier") as { annee?: number } | undefined;
+  const blocMarronnier = blocCal ? <MarronnierBloc locale={locale} annee={blocCal.annee} /> : null;
   const cites = vignerons.filter((v) => a.vignerons.includes(v.slug));
 
   // Articles liés : mêmes vignerons d'abord, puis même rubrique, puis les plus récents.
@@ -112,7 +116,7 @@ export default async function ArticlePage({ params }: Props) {
         </div>
         {a.contenu?.length ? (
           <div className="mx-auto max-w-3xl px-space-2 py-space-5 sm:px-space-4">
-            <RichText value={a.contenu} locale={locale} />
+            <RichText value={a.contenu} locale={locale} extras={blocMarronnier ? { calendrierMarronnier: blocMarronnier } : undefined} />
           </div>
         ) : null}
       </article>

@@ -4,7 +4,7 @@ import { icon } from "../../icons";
 /** Partenaire du réseau « Où trouver nos pépites ? » (restaurant, gîte, caviste…). */
 export const partenaire = defineType({
   name: "partenaire",
-  title: "Partenaire (Où trouver nos pépites ?)",
+  title: "Partenaire « Où trouver nos pépites ? » (masqué)",
   type: "document",
   icon: icon("marker"),
   fields: [

@@ -7,6 +7,7 @@ import { forms, HONEYPOT, isFormId, MIN_FILL_MS, profilParChoix, profilParSujet,
 import { clientIp, rateLimited, verifyTurnstile } from "@/lib/forms/guard";
 import { schemaFor } from "@/lib/forms/schema";
 import { sendNewsletterConfirmation } from "@/lib/newsletter";
+import { SITE_URL } from "@/i18n/metadata";
 import { getBrochureUrl, getCatalogueUrl, getReglages } from "@/sanity/queries";
 
 export type FormState = {
@@ -73,12 +74,15 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   const ownerAddress = reglages.emailsFormulaires || reglages.email;
   const brochureUrl = formId === "brochureCse" ? await getBrochureUrl() : null;
   const catalogueUrl = formId === "catalogue" ? await getCatalogueUrl() : null;
+  // Marronnier : PDF généré à la demande (année indiquée par le formulaire, sinon l'année prochaine).
+  const anneeMarronnier = Number(/\b(20\d\d)\b/.exec(context)?.[1] ?? new Date().getFullYear() + 1);
+  const marronnierUrl = formId === "marronnier" ? `${SITE_URL}/api/marronnier/${anneeMarronnier}/?lang=${locale}` : null;
   const owner = await ownerEmail(formId, data, { locale, context, page, newsletter: wantsNewsletter, catalogueUrl });
 
   if (!isBrevoConfigured()) {
     if (process.env.NODE_ENV !== "production") {
       console.info(`[formulaire ${formId}] (Brevo non configuré : rien n'est envoyé)\n${owner.text}`);
-      return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
+      return { status: "success", downloadUrl: brochureUrl ?? marronnierUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
     }
     console.error("[formulaire] BREVO_API_KEY manquante : demande non envoyée");
     return fail({ message: "config" });
@@ -119,7 +123,7 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
     }).catch((e) => console.error("[formulaire] Contact Brevo non enregistré :", describe(e)));
 
     // 5c. Accusé de réception, dans la langue du visiteur.
-    const ack = await visitorAck(formId, locale, brochureUrl, catalogueUrl);
+    const ack = await visitorAck(formId, locale, brochureUrl ?? marronnierUrl, catalogueUrl);
     await sendEmail({ to: visitorEmail, toName: String(data.nom ?? ""), replyTo: ownerAddress, subject: ack.subject, text: ack.text }).catch((e) =>
       console.warn("[formulaire] Accusé de réception non envoyé :", describe(e)),
     );
@@ -132,7 +136,7 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
     }
   }
 
-  return { status: "success", downloadUrl: brochureUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
+  return { status: "success", downloadUrl: brochureUrl ?? marronnierUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
 }
 
 /** E-mail reçu par Champagne de l'Aube (toujours en français). */
@@ -185,7 +189,7 @@ async function visitorAck(formId: FormId, locale: Locale, brochureUrl: string | 
       t("ack.hello"),
       "",
       t("ack.body", { form: t(`titles.${formId}`) }),
-      brochureUrl ? `\n${t("ack.brochure")}\n${brochureUrl}` : null,
+      brochureUrl ? `\n${t(formId === "marronnier" ? "ack.marronnier" : "ack.brochure")}\n${brochureUrl}` : null,
       formId === "catalogue" ? (catalogueUrl ? `\n${t("ack.catalogue")}\n${catalogueUrl}` : `\n${t("ack.catalogueSoon")}`) : null,
       "",
       t("ack.signature"),
