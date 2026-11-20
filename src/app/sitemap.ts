@@ -2,7 +2,22 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { SITE_URL, withSlash } from "@/i18n/metadata";
 import { defaultLocale, type Locale, type StaticPathname } from "@/i18n/routing";
-import { getArticleLangues, getArticles, getArticleSlugs, getVigneronSlugs, PAGES_RUBRIQUE } from "@/sanity/content";
+import { terroirPages } from "@/lib/site";
+import {
+  getAccueil,
+  getArticleLangues,
+  getArticles,
+  getArticleSlugs,
+  getEspaceEntreprises,
+  getEspaceParticuliers,
+  getEspacePro,
+  getPageContent,
+  getTerroir,
+  getTerroirAube,
+  getVigneronSlugs,
+  PAGES_RUBRIQUE,
+} from "@/sanity/content";
+import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
@@ -53,6 +68,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
   const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));
+  // Images importantes de chaque page (plan du site des images, pour Google Images).
+  const [accueil, particuliers, pro, entreprises, mariage, terroirAube, ...terroirsDocs] = await Promise.all([
+    getAccueil(defaultLocale),
+    getEspaceParticuliers(defaultLocale),
+    getEspacePro(defaultLocale),
+    getEspaceEntreprises(defaultLocale),
+    getPageContent("mariage", defaultLocale),
+    getTerroirAube(defaultLocale),
+    ...terroirPages.map((p) => getTerroir(p.key, defaultLocale)),
+  ]);
+  const src = (list: (Img | null | undefined)[]) => [...new Set(list.filter((i): i is Img => !!i).map((i) => i.src))];
+  const imagesDe = new Map<string, string[]>([
+    ["/", src([accueil.hero.image, accueil.degustationImage])],
+    ["/tasting-troyes", src([particuliers.hero.image, particuliers.evenementsPrives.image])],
+    ["/champagne-hotel-restaurants-et-cavistes", src([pro.hero.image, ...pro.profils.map((b) => b.image)])],
+    ["/cse-et-cadeaux-dentreprise", src([entreprises.hero.image, entreprises.coffrets.image, entreprises.animations.image])],
+    ["/champagne-mariage", src([mariage.image])],
+    ["/le-terroir-de-laube", src([terroirAube.hero.image, ...terroirAube.chapitres.map((c) => c.image)])],
+    ...terroirPages.map((p, i) => [p.href as string, src([terroirsDocs[i].image, ...terroirsDocs[i].galerie])] as [string, string[]]),
+    ...cartes.map((a) => [`article:${a.slug}`, src([a.image])] as [string, string[]]),
+  ]);
+  const cleImages = (href: Href) =>
+    typeof href === "string" ? href : href.pathname === "/[article]" ? `article:${(href.params as { article: string }).article}` : "";
+
   // Un article n'est listé que dans les langues où il a un texte (sinon la page affiche le français).
   const languesDe = (href: Href) => {
     const slug = typeof href === "object" && href.pathname === "/[article]" ? (href.params as { article: string }).article : null;
@@ -60,8 +99,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   };
   return hrefs.flatMap((href) => {
     const ls = languesDe(href);
+    const images = imagesDe.get(cleImages(href)) ?? [];
     return ls.map((locale) => ({
       url: url(href, locale),
+      ...(images.length ? { images } : {}),
       alternates: {
         languages: { ...Object.fromEntries(ls.map((l) => [l, url(href, l)])), "x-default": url(href, defaultLocale) },
       },

@@ -12,6 +12,7 @@ import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { terroirs, type CepageKey, type TerroirKey } from "@/lib/brand";
 import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
+import { imageObject } from "@/lib/image-jsonld";
 import { nav, terroirPages } from "@/lib/site";
 import { getArticleSlugs, getTerroir } from "@/sanity/content";
 
@@ -160,6 +161,14 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
           <ButtonLink href={nav.pro[0].href} variant="secondaire">{tT("offrePro")}</ButtonLink>
         </div>
       </Section>
+      {(t.image || t.galerie.length > 0) && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [t.image, ...t.galerie].filter((g): g is NonNullable<typeof g> => !!g).map(imageObject) }),
+          }}
+        />
+      )}
     </>
   );
 }

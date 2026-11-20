@@ -26,7 +26,7 @@ export type FallbackVigneron = {
 export const fallbackVignerons: FallbackVigneron[] = [
   {
     slug: "moutard-dangin",
-    nom: "Champagne Moutard-Dangin",
+    nom: "Champagne Moutard*Dangin",
     village: "Polisy",
     terroir: "cote-des-bar",
     accroche: {

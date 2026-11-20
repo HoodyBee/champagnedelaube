@@ -859,7 +859,11 @@
       },
       "propriete": {
         "title": "Intellectual property",
-        "text": "All content on this website (texts, photographs, logos, pictograms, layout) is protected by copyright. Any full or partial reproduction or reuse without prior written permission is prohibited.\nThe names and logos of the estates presented remain the property of their owners.\nPhotographs: Julien Mineo, unless stated otherwise."
+        "text": "All content on this website (texts, photographs, logos, pictograms, layout) is protected by copyright. Any full or partial reproduction or reuse without prior written permission is prohibited.\nThe names and logos of the estates presented remain the property of their owners.\nPhotographs: © Champagne de l'Aube / Detectezmoi.com, unless stated otherwise (see « Photo credits »)."
+      },
+      "credits": {
+        "title": "Photo credits",
+        "text": "Photo credits:"
       },
       "donnees": {
         "title": "Personal data",
@@ -875,7 +879,9 @@
       }
     },
     "privacyLink": "Read the privacy policy",
-    "mentionDefaut": "Administrative office only: no shop and no storage. Meetings and tastings by appointment."
+    "mentionDefaut": "Administrative office only: no shop and no storage. Meetings and tastings by appointment.",
+    "creditsBanques": "Photos from image libraries, with their author and licence:",
+    "creditsAucuneBanque": "No image-library photos are used at the moment."
   },
   "calendrier": {
     "categories": {

@@ -11,6 +11,7 @@ import { Section } from "@/components/ui/Section";
 import { getPathname, Link } from "@/i18n/navigation";
 import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
+import { imageObject } from "@/lib/image-jsonld";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
 import { getArticle, getArticleLangues, getArticles, getArticleSlugs, getVignerons, rubriqueHref } from "@/sanity/content";
 
@@ -88,7 +89,7 @@ export default async function ArticlePage({ params }: Props) {
     "@type": "Article",
     headline: a.titre,
     description: a.extrait,
-    image: a.image ? [a.image.src] : undefined,
+    image: a.image ? [imageObject(a.image)] : undefined,
     datePublished: a.date,
     dateModified: a.updatedAt ?? a.date,
     inLanguage: locale,

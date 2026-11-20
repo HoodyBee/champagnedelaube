@@ -24,7 +24,7 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 |---|---|
 | ✅ / 🔴 | **Tout est publié** (sauvegarde : `docs/sauvegardes/`), sauf le portrait Daniel Pétré & Fils, resté en brouillon. À relire dans le Studio |
 | ✅ / 🟠 | **Réglages du site** créés et publiés (e-mail, Instagram, Facebook, signature, siège, langues FR et EN). À vérifier : l'adresse qui reçoit les formulaires |
-| 🔴 | **Fiches vignerons** : au moins les domaines de votre sélection, avec portrait, village, terroir, philosophie. Aujourd'hui seules 2 fiches par défaut s'affichent (Moutard-Dangin, Mennetrier) |
+| 🔴 | **Fiches vignerons** : au moins les domaines de votre sélection, avec portrait, village, terroir, philosophie. Aujourd'hui seules 2 fiches par défaut s'affichent (Moutard*Dangin, Mennetrier) |
 | ✅ | **Langues au lancement : français et anglais** (NL, IT, DE masquées, réactivables dans « Langues actives ») |
 | ✅ | **Traductions anglaises** publiées. L'article sur le rap (français seulement) n'est pas indexé en anglais |
 | 🟠 | Relire les 18 articles publiés ; sources dans `docs/articles-cepages-sources.md` et `docs/marronnier-2027-sources.md` |

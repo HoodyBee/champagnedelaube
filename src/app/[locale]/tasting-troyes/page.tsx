@@ -218,6 +218,11 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
       <DansLeMag locale={locale} chemins={["/tasting-troyes"]} rubrique="accords" fond="chaude" />
 
       <Section id="grands-evenements" fond="chaude">
+        {p.evenementsPrives.image && (
+          <div className="mx-auto mb-space-4 max-w-3xl overflow-hidden rounded-carte">
+            <Photo image={p.evenementsPrives.image} ratio="16/9" sizes="(min-width: 768px) 768px, 100vw" />
+          </div>
+        )}
         <div className="mx-auto max-w-3xl text-center">
           <LineIcon name="calendrier" size={32} className="mx-auto block text-or" />
           <h2 className="mt-space-2 text-titre-section sm:text-[2rem]">{p.evenementsPrives.titre ?? t("evenementsTitre")}</h2>

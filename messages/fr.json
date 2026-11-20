@@ -859,7 +859,11 @@
       },
       "propriete": {
         "title": "Propriété intellectuelle",
-        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nPhotographies : Julien Mineo, sauf mention contraire."
+        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nPhotographies : © Champagne de l'Aube / Detectezmoi.com, sauf mention contraire (voir « Crédits photos »)."
+      },
+      "credits": {
+        "title": "Crédits photos",
+        "text": "Crédits photos :"
       },
       "donnees": {
         "title": "Données personnelles",
@@ -875,7 +879,9 @@
       }
     },
     "privacyLink": "Consulter la politique de confidentialité",
-    "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous."
+    "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous.",
+    "creditsBanques": "Photos issues de banques d'images, avec leur auteur et leur licence :",
+    "creditsAucuneBanque": "Aucune photo de banque d'images n'est utilisée pour le moment."
   },
   "calendrier": {
     "categories": {

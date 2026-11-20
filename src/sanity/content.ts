@@ -1094,3 +1094,14 @@ export async function getSlugsArticlesLiantVers(chemins: string[]): Promise<stri
     })) ?? []
   );
 }
+
+/** Crédits des photos de banques d'images (crédit différent du crédit maison), pour les mentions légales. */
+export async function getCreditsBanquesImages(): Promise<string[]> {
+  return (
+    (await sanityFetch<string[]>({
+      query: `array::unique(*[_type == "sanity.imageAsset" && defined(creditLine) && creditLine != $maison].creditLine)`,
+      params: { maison: CREDIT_PAR_DEFAUT },
+      tags: ["sanity.imageAsset"],
+    })) ?? []
+  ).sort();
+}
