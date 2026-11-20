@@ -2,6 +2,7 @@ import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/react";
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { lienLocalise } from "@/i18n/liens";
 import type { Locale } from "@/i18n/routing";
 import { localize } from "@/sanity/lib/i18n";
 import { urlFor } from "@/sanity/lib/image";
@@ -41,7 +42,8 @@ const components = (locale: Locale, extras?: Record<string, ReactNode>): Portabl
   marks: {
     strong: ({ children }) => <strong className="font-bold">{children}</strong>,
     link: ({ value, children }) => {
-      const href: string = value?.href ?? "#";
+      // Liens internes : adresse exacte dans la langue de la page (/en/winemakers/…).
+      const href: string = lienLocalise(value?.href, locale) ?? "#";
       const external = /^https?:/.test(href);
       return (
         <a href={href} className="text-bronze underline" {...(external ? { target: "_blank", rel: "noopener" } : {})}>

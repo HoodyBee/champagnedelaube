@@ -4,6 +4,9 @@ import { useMemo, useState } from "react";
 import { COULEUR_CATEGORIE, estExterne, type DateCalendrierVue } from "@/lib/calendrier";
 import type { CategorieCalendrier } from "@/sanity/content";
 
+/** Libellé de catégorie sans son emoji (la pastille de couleur suffit dans le tableau). */
+const sansEmoji = (s: string) => s.replace(/^\S+\s+/, "");
+
 type Textes = {
   categories: Record<CategorieCalendrier, string>;
   filtreCategorie: string;
@@ -139,7 +142,7 @@ export function MarronnierTable({ dates, locale, textes, annee }: { dates: DateC
                     <td className="px-space-2 py-space-1">
                       <span className="inline-flex items-center gap-1.5">
                         {pastille(d.categorie)}
-                        {textes.categories[d.categorie]}
+                        {sansEmoji(textes.categories[d.categorie])}
                       </span>
                     </td>
                     <td className="px-space-2 py-space-1 text-gris-chaud">{d.anecdote}</td>
@@ -169,7 +172,7 @@ export function MarronnierTable({ dates, locale, textes, annee }: { dates: DateC
                       <span aria-hidden="true">·</span>
                       <span className="inline-flex items-center gap-1.5">
                         {pastille(d.categorie)}
-                        {textes.categories[d.categorie]}
+                        {sansEmoji(textes.categories[d.categorie])}
                       </span>
                     </p>
                     <p className="mt-1">

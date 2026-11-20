@@ -322,7 +322,8 @@
       "contactParticulier": "Envoyer le message",
       "contactPro": "Envoyer le message",
       "contactEntreprise": "Envoyer le message",
-      "degustationPrivee": "Organiser ma dégustation"
+      "degustationPrivee": "Organiser ma dégustation",
+      "marronnier": "Recevoir le calendrier"
     },
     "errors": {
       "required": "Ce champ est obligatoire.",
@@ -402,7 +403,8 @@
       "degustation": "Réserver une dégustation",
       "evenement": "Préparer un grand événement"
     },
-    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine"
+    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
+    "metaTitle": "Nous contacter à Troyes : dégustations, pros, entreprises"
   },
   "newsletter": {
     "bar": {
@@ -755,7 +757,13 @@
       "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons."
     },
     "aLaUne": "À la une",
-    "tousLesArticles": "Tous les articles"
+    "tousLesArticles": "Tous les articles",
+    "dansLeMag": "Pour aller plus loin",
+    "plusLoin": "Continuer la découverte",
+    "rubriquesNav": "Les rubriques du Mag",
+    "tousArticlesRubrique": "Tous les articles « {rubrique} »",
+    "lienDegustations": "Nos dégustations privées de champagnes de vignerons, à Troyes ou chez vous",
+    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons"
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",

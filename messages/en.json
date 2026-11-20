@@ -322,7 +322,8 @@
       "contactParticulier": "Send the message",
       "contactPro": "Send the message",
       "contactEntreprise": "Send the message",
-      "degustationPrivee": "Arrange my tasting"
+      "degustationPrivee": "Arrange my tasting",
+      "marronnier": "Get the calendar"
     },
     "errors": {
       "required": "This field is required.",
@@ -402,7 +403,8 @@
       "degustation": "Book a tasting",
       "evenement": "Plan a special occasion"
     },
-    "vigneron": "Are you a winemaker? Tell us about your estate"
+    "vigneron": "Are you a winemaker? Tell us about your estate",
+    "metaTitle": "Contact us in Troyes: tastings, trade, businesses"
   },
   "newsletter": {
     "bar": {
@@ -755,7 +757,13 @@
       "actualites": "Vineyard events, the calendar of wine and food days, news from our winemakers."
     },
     "aLaUne": "Featured",
-    "tousLesArticles": "All articles"
+    "tousLesArticles": "All articles",
+    "dansLeMag": "Further reading",
+    "plusLoin": "Keep exploring",
+    "rubriquesNav": "Sections of the Mag",
+    "tousArticlesRubrique": "All « {rubrique} » articles",
+    "lienDegustations": "Our private tastings of winemakers' champagnes, in Troyes or at your home",
+    "lienSelection": "Our current selection: the Aube winemakers we follow"
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DansLeMag } from "@/components/mag/DansLeMag";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -152,6 +153,8 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
           <Faq items={p.faq} />
         </Section>
       )}
+
+      <DansLeMag locale={locale} chemins={["/champagne-hotel-restaurants-et-cavistes"]} rubrique="actualites" />
 
       <Section id="vignerons-partenaires" fond="chaude">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-space-2 text-center">

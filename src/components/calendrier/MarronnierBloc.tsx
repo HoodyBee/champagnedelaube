@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { SITE_URL } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { getCalendrierVue } from "@/lib/calendrier-serveur";
+import { dateDuJourParis, getCalendrierVue } from "@/lib/calendrier-serveur";
 import { CATEGORIES_CALENDRIER } from "@/sanity/content";
 import { MarronnierTable } from "./MarronnierTable";
 
@@ -11,12 +11,13 @@ import { MarronnierTable } from "./MarronnierTable";
  * le formulaire du PDF, la mention sanitaire et les données structurées Event de mes événements.
  */
 export async function MarronnierBloc({ locale, annee }: { locale: Locale; annee?: number }) {
-  const [t, tLegal, dates] = await Promise.all([
+  const [t, tLegal, dates, aujourdhui] = await Promise.all([
     getTranslations({ locale, namespace: "calendrier" }),
     getTranslations({ locale, namespace: "legal" }),
     getCalendrierVue(locale),
+    dateDuJourParis(),
   ]);
-  const anneePdf = annee ?? Number(dates.find((d) => d.categorie !== "evenements")?.debut.slice(0, 4) ?? new Date().getFullYear() + 1);
+  const anneePdf = annee ?? Number(dates.find((d) => d.categorie !== "evenements")?.debut.slice(0, 4) ?? Number(aujourdhui.slice(0, 4)) + 1);
 
   // Données structurées : uniquement mes événements (de vrais rendez-vous avec un lieu).
   const evenements = dates

@@ -24,6 +24,7 @@ const ajouterMois = (cle: string, n: number) => {
   return moisCle(d.getUTCFullYear(), d.getUTCMonth());
 };
 const pasDAbonnement = () => () => {};
+const dureeJours = (d: { debut: string; fin: string }) => (Date.parse(d.fin) - Date.parse(d.debut)) / 86_400_000 + 1;
 const aujourdhuiParis = () => new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date());
 
 /**
@@ -109,7 +110,8 @@ export function CalendrierAccueil({
             ))}
             {Array.from({ length: nbJours }, (_, i) => {
               const jour = `${cle}-${pad(i + 1)}`;
-              const items = dates.filter((d) => couvre(d, jour));
+              // Les longues périodes (ex. Dry January) ne sont marquées que le premier jour, pour garder le calendrier lisible.
+              const items = dates.filter((d) => couvre(d, jour) && (d.debut === jour || dureeJours(d) <= 7));
               const estAujourdhui = jour === aujourdhui;
               const passe = jour < aujourdhui;
               const cats = [...new Set(items.map((d) => d.categorie))].slice(0, 3);
@@ -153,7 +155,7 @@ export function CalendrierAccueil({
     );
   };
 
-  const itemsActifs = jourActif ? dates.filter((d) => couvre(d, jourActif)) : [];
+  const itemsActifs = jourActif ? dates.filter((d) => couvre(d, jourActif) && (d.debut === jourActif || dureeJours(d) <= 7)) : [];
 
   const ligne = (d: DateCalendrierVue) => (
     <span className="flex items-start gap-space-1">

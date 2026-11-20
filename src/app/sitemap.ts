@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { SITE_URL, withSlash } from "@/i18n/metadata";
 import { defaultLocale, type Locale, type StaticPathname } from "@/i18n/routing";
-import { getArticles, getArticleSlugs, getVigneronSlugs, PAGES_RUBRIQUE } from "@/sanity/content";
+import { getArticleLangues, getArticles, getArticleSlugs, getVigneronSlugs, PAGES_RUBRIQUE } from "@/sanity/content";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
 
 type Href = Parameters<typeof getPathname>[0]["href"];
@@ -35,12 +35,13 @@ const PAGES: StaticPathname[] = [
  * page avec ses équivalents dans les autres langues (hreflang).
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [locales, vignerons, articles, reglages, cartes] = await Promise.all([
+  const [locales, vignerons, articles, reglages, cartes, langues] = await Promise.all([
     getActiveLocales(),
     getVigneronSlugs(),
     getArticleSlugs(),
     getReglages(),
     getArticles(defaultLocale),
+    getArticleLangues(),
   ]);
   // Pages de rubrique /le-mag/<code>/ : seulement celles qui ont des articles.
   const rubriques = [...new Set(cartes.flatMap((a) => a.rubriques))].filter((r) => !(r in PAGES_RUBRIQUE));
@@ -52,12 +53,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
   const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));
-  return hrefs.flatMap((href) =>
-    locales.map((locale) => ({
+  // Un article n'est listé que dans les langues où il a un texte (sinon la page affiche le français).
+  const languesDe = (href: Href) => {
+    const slug = typeof href === "object" && href.pathname === "/[article]" ? (href.params as { article: string }).article : null;
+    return slug && langues[slug] ? locales.filter((l) => langues[slug].includes(l)) : locales;
+  };
+  return hrefs.flatMap((href) => {
+    const ls = languesDe(href);
+    return ls.map((locale) => ({
       url: url(href, locale),
       alternates: {
-        languages: { ...Object.fromEntries(locales.map((l) => [l, url(href, l)])), "x-default": url(href, defaultLocale) },
+        languages: { ...Object.fromEntries(ls.map((l) => [l, url(href, l)])), "x-default": url(href, defaultLocale) },
       },
-    })),
-  );
+    }));
+  });
 }

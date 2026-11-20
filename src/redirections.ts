@@ -26,6 +26,11 @@ const pages: Redirect[] = [
   r("/feed", "/le-mag/"),
   r("/comments/feed", "/"),
   r("/:slug/feed", "/:slug/"),
+  // Rubriques du Mag qui gardent leur adresse historique : une seule adresse, pas de doublon.
+  r("/le-mag/tout-savoir", "/tout-savoir-sur-le-champagne/"),
+  r("/le-mag/accords", "/recettes-accords-mets-champagne/"),
+  r("/en/le-mag/tout-savoir", "/en/all-about-champagne/"),
+  r("/en/le-mag/accords", "/en/champagne-food-pairing-recipes/"),
   // Article remplacé par le marronnier 2027 (novembre 2026).
   r("/journees-du-champagne-et-des-cepages", "/marronnier-2027-calendrier-vin-gastronomie/"),
   r("/en/journees-du-champagne-et-des-cepages", "/en/marronnier-2027-calendrier-vin-gastronomie/"),

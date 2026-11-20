@@ -31,6 +31,22 @@ export async function robotsFor(locale: Locale): Promise<Metadata["robots"]> {
 }
 
 /**
+ * Google affiche environ 60 caractères de titre : au-delà, on retire d'abord le nom du site
+ * en suffixe (« | Champagne de l'Aube »), qui figure déjà dans les données structurées.
+ */
+export function titreCourt(titre: string): string {
+  const m = /^(.*?)\s*[|·–-]\s*Champagne de l['’]Aube$/.exec(titre);
+  return titre.length > 62 && m ? m[1] : titre;
+}
+
+/** Description limitée à ~160 caractères, coupée proprement à la fin d'un mot. */
+export function descriptionCourte(texte: string): string {
+  if (texte.length <= 160) return texte;
+  const coupe = texte.slice(0, 157);
+  return `${coupe.slice(0, coupe.lastIndexOf(" ")).replace(/[\s,;:.]+$/, "")}…`;
+}
+
+/**
  * Métadonnées d'une page : les réglages « Référencement » saisis dans Sanity
  * l'emportent sur les textes par défaut. Le titre est utilisé tel quel (sans suffixe).
  */
@@ -43,8 +59,8 @@ export async function pageMetadata(opts: {
 }): Promise<Metadata> {
   const robots = opts.seo?.noIndex ? { index: false, follow: true } : await robotsFor(opts.locale);
   return {
-    title: { absolute: opts.seo?.title || opts.title },
-    description: opts.seo?.description || opts.description,
+    title: { absolute: titreCourt(opts.seo?.title || opts.title) },
+    description: descriptionCourte(opts.seo?.description || opts.description),
     alternates: await localizedAlternates(opts.href, opts.locale),
     ...(robots ? { robots } : {}),
   };

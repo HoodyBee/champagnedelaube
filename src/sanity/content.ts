@@ -507,6 +507,17 @@ export async function getArticle(slug: string, locale: Locale): Promise<ArticleD
   return { ...card, contenu: localize(a.contenu, locale), seo: seoOf(a.seo, locale), updatedAt: a._updatedAt };
 }
 
+/** Langues dans lesquelles chaque article a vraiment un texte (les autres affichent le français : pas d'indexation). */
+export async function getArticleLangues(): Promise<Record<string, string[]>> {
+  const list = await sanityFetch<{ slug: string; langs: string[] }[]>({
+    query: `*[_type == "article" && defined(slug.current)]{"slug": slug.current, "langs": array::compact([
+      select(count(contenu.fr) > 0 => "fr"), select(count(contenu.en) > 0 => "en"), select(count(contenu.nl) > 0 => "nl"),
+      select(count(contenu.it) > 0 => "it"), select(count(contenu.de) > 0 => "de")])}`,
+    tags: ["article"],
+  });
+  return Object.fromEntries((list ?? []).map((a) => [a.slug, a.langs]));
+}
+
 export async function getArticleSlugs(): Promise<string[]> {
   return (await sanityFetch<string[]>({ query: `*[_type == "article" && defined(slug.current)].slug.current`, tags: ["article"] })) ?? [];
 }
@@ -1030,5 +1041,17 @@ export async function getSlugArticleMarronnier(): Promise<string | null> {
       query: `*[_type == "article" && count(contenu.fr[_type == "calendrierMarronnier"]) > 0] | order(coalesce(date, _createdAt) desc)[0].slug.current`,
       tags: ["article"],
     })) ?? null
+  );
+}
+
+/** Articles du Mag dont le texte contient un lien vers l'une de ces pages (/la-cote-des-bar, /tasting-troyes…). */
+export async function getSlugsArticlesLiantVers(chemins: string[]): Promise<string[]> {
+  const hrefs = chemins.flatMap((c) => [c, `${c}/`]);
+  return (
+    (await sanityFetch<string[]>({
+      query: `*[_type == "article" && defined(slug.current) && count(contenu.fr[].markDefs[href in $hrefs]) > 0] | order(coalesce(date, _createdAt) desc).slug.current`,
+      params: { hrefs },
+      tags: ["article"],
+    })) ?? []
   );
 }

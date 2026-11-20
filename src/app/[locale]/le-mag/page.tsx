@@ -8,7 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { getRubriqueLabels, ordreRubriques, withDates } from "@/lib/mag";
-import { getArticles } from "@/sanity/content";
+import { getArticles, rubriqueHref } from "@/sanity/content";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/le-mag">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -39,6 +39,20 @@ export default async function MagPage({ params }: PageProps<"/[locale]/le-mag">)
           <span className="h-px bg-or" />
           <span className="h-px bg-or/40" />
         </div>
+        {/* Les rubriques, chacune avec sa page (liens explorables par Google) */}
+        <nav aria-label={t("rubriquesNav")} className="mt-space-3">
+          <ul className="flex flex-wrap justify-center gap-x-space-3 gap-y-space-1">
+            {ordreRubriques(labels)
+              .filter((r) => labels[r] && articles.some((x) => x.rubriques.includes(r)))
+              .map((r) => (
+                <li key={r}>
+                  <Link href={rubriqueHref(r)} className="text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                    {labels[r]}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </nav>
       </header>
 
       {une && (

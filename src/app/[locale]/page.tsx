@@ -17,7 +17,7 @@ import { terroirs } from "@/lib/brand";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
 import { nav, terroirPages } from "@/lib/site";
 import { CalendrierAccueil } from "@/components/calendrier/CalendrierAccueil";
-import { getCalendrierVue } from "@/lib/calendrier-serveur";
+import { dateDuJourParis, getCalendrierVue } from "@/lib/calendrier-serveur";
 import { CATEGORIES_CALENDRIER, getAccueil, getArticles, getCuvees, getSlugArticleMarronnier, getTerroir } from "@/sanity/content";
 import { getReglages } from "@/sanity/queries";
 
@@ -43,7 +43,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const tLegal = await getTranslations("legal");
   const tSel = await getTranslations("selection");
   const tCal = await getTranslations("calendrier");
-  const [calendrier, slugMarronnier] = await Promise.all([getCalendrierVue(locale), getSlugArticleMarronnier()]);
+  const [calendrier, slugMarronnier, aujourdhui] = await Promise.all([getCalendrierVue(locale), getSlugArticleMarronnier(), dateDuJourParis()]);
   const [a, reglages, cuvees, articles, labels, ...fiches] = await Promise.all([
     getAccueil(locale),
     getReglages(),
@@ -254,7 +254,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           <CalendrierAccueil
             dates={calendrier}
             locale={locale}
-            aujourdhuiServeur={new Intl.DateTimeFormat("fr-CA", { timeZone: "Europe/Paris" }).format(new Date())}
+            aujourdhuiServeur={aujourdhui}
             hrefTout={
               slugMarronnier
                 ? withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slugMarronnier } }, locale }))
