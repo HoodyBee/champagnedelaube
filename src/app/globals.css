@@ -26,6 +26,15 @@
     text-underline-offset: 0.2em;
   }
 
+  /* Tailwind 4 ne met plus la main sur les boutons : on la remet partout. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary,
+  select,
+  label[for] {
+    cursor: pointer;
+  }
+
   /* Contour de focus visible pour la navigation au clavier. */
   :focus-visible {
     outline: 2px solid var(--color-bronze);

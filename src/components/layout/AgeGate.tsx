@@ -35,14 +35,14 @@ export async function AgeGate({ locales }: { locales: readonly Locale[] }) {
           <button
             type="button"
             data-age-confirm
-            className="min-h-12 whitespace-nowrap rounded-etiquette bg-anthracite px-space-3 text-sur-titre text-blanc transition-colors hover:bg-bleu-nuit"
+            className="min-h-12 whitespace-nowrap rounded-etiquette bg-anthracite px-space-3 text-sur-titre text-blanc shadow-sm transition-all duration-200 hover:-translate-y-px hover:bg-bronze hover:shadow-md active:translate-y-0 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-or"
           >
             {t("confirm")}
           </button>
           <button
             type="button"
             data-age-deny
-            className="min-h-12 whitespace-nowrap rounded-etiquette border border-filet px-space-3 text-sur-titre text-anthracite transition-colors hover:border-bronze"
+            className="min-h-12 whitespace-nowrap rounded-etiquette border border-anthracite/30 px-space-3 text-sur-titre text-anthracite transition-all duration-200 hover:-translate-y-px hover:border-bronze hover:bg-creme-clair hover:text-bronze active:translate-y-0 cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-or"
           >
             {t("deny")}
           </button>

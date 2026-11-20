@@ -75,6 +75,8 @@ const script = `
       var actions = g.querySelector("[data-age-actions]"), denied = g.querySelector("[data-age-denied]");
       if (actions) actions.hidden = true;
       if (denied) denied.hidden = false;
+      // Refus : on quitte le site (message affiché le temps de la redirection).
+      window.location.replace("https://www.google.com");
     }
   }, true);
 
