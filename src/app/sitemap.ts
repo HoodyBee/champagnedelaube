@@ -40,7 +40,6 @@ const PAGES: StaticPathname[] = [
   "/cse-et-cadeaux-dentreprise",
   "/vignerons-de-laube-devenez-partenaire-de-nos-degustations",
   "/communication-marketing",
-  "/nos-partenaires",
   "/le-mag",
   "/tout-savoir-sur-le-champagne",
   "/recettes-accords-mets-champagne",

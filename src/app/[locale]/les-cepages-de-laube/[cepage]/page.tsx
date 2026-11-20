@@ -12,13 +12,16 @@ import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
 import { cepages, terroirs, type CepageKey } from "@/lib/brand";
-import { ORDRE_CEPAGES } from "@/lib/cepages-contenu";
+import { CEPAGES_MASQUES, ORDRE_CEPAGES } from "@/lib/cepages-contenu";
+import { CatalogueDialog } from "@/components/selection/CatalogueDialog";
 import { imageObject } from "@/lib/image-jsonld";
 import { nav, terroirPages } from "@/lib/site";
 import { getCepage, getVignerons } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/les-cepages-de-laube/[cepage]">;
-const estCepage = (c: string): c is CepageKey => c in cepages;
+/** false tant que les fiches des vignerons partenaires ne sont pas complètes (photo + cépages). */
+const AFFICHER_PARTENAIRES = false;
+const estCepage = (c: string): c is CepageKey => c in cepages && !CEPAGES_MASQUES.includes(c as CepageKey);
 
 export async function generateStaticParams() {
   return routing.locales.flatMap((locale) => ORDRE_CEPAGES.map((cepage) => ({ locale, cepage })));
@@ -64,7 +67,7 @@ export default async function CepageDetailPage({ params }: Props) {
       </div>
 
       <section className="border-b border-filet bg-creme-clair">
-        <div className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:py-space-5">
+        <div className={`mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:gap-space-5 lg:py-space-5 ${c.image ? "lg:grid-cols-2" : ""}`}>
           <div className="order-2 lg:order-1">
             <p className="text-sur-titre text-bronze">{c.statut === "vifa" ? t("statutVifa") : t("statutPrincipal")}</p>
             <h1 className="mt-space-2 flex items-center gap-space-2 text-titre-post">
@@ -78,7 +81,8 @@ export default async function CepageDetailPage({ params }: Props) {
             {c.accroche && <p className="mt-space-3 text-accroche">{c.accroche}</p>}
             <p className="mt-space-2 max-w-xl text-[1.125rem] text-gris-chaud">{c.resume}</p>
           </div>
-          <Photo image={c.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile placeholder="sobre" className="order-1 lg:order-2" />
+          {/* Pas de photo de ce cépage : pas d'emplacement vide, le texte prend toute la largeur. */}
+          {c.image && <Photo image={c.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />}
         </div>
       </section>
 
@@ -137,7 +141,8 @@ export default async function CepageDetailPage({ params }: Props) {
         </Section>
       )}
 
-      {partenaires.length > 0 && (
+      {/* Vignerons partenaires : réactivé quand leurs fiches seront complètes (photo + cépages). */}
+      {AFFICHER_PARTENAIRES && partenaires.length > 0 ? (
         <Section titre={t("partenairesTitre")} intro={t("partenairesIntro")}>
           <ul className="mx-auto grid max-w-4xl gap-space-3 sm:grid-cols-2">
             {partenaires.map((v) => (
@@ -147,9 +152,17 @@ export default async function CepageDetailPage({ params }: Props) {
             ))}
           </ul>
         </Section>
+      ) : (
+        <Section>
+          <div className="mx-auto max-w-2xl rounded-carte border border-filet bg-creme-clair px-space-3 py-space-4 text-center">
+            <h2 className="text-accroche">{t("gouterTitre")}</h2>
+            <p className="mt-space-1 text-gris-chaud">{t("gouterTexte")}</p>
+            <CatalogueDialog className="mt-space-3 justify-center" />
+          </div>
+        </Section>
       )}
 
-      <Section fond={partenaires.length > 0 === c.galerie.length > 0 ? "chaude" : "blanc"} titre={t("tous")}>
+      <Section fond="chaude" titre={t("tousLien")}>
         <ul className="mx-auto grid max-w-4xl grid-cols-2 gap-x-space-2 gap-y-space-2 sm:grid-cols-4">
           {autres.map((k) => (
             <li key={k}>

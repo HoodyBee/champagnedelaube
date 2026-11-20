@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
+import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -31,6 +32,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
   const t = await getTerroir(cle, locale);
   const tT = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
+  const tC = await getTranslations("cepagesPage");
   const couleur = `var(--color-${terroirs[cle].color})`;
 
   return (
@@ -107,6 +109,9 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                     </div>
                   );
                 })}
+                <Link href="/les-cepages-de-laube" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                  {tC("tousLien")} <span aria-hidden="true">→</span>
+                </Link>
               </div>
             )}
             {t.villages.length > 0 && (

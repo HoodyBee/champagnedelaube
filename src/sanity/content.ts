@@ -150,6 +150,20 @@ const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   cepages: v.cepages ?? [],
 });
 
+/** Photo d'une fiche par défaut (image de la Médiathèque désignée par son identifiant). */
+const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, width = 900): Img | null => {
+  if (!f.photo) return null;
+  const [, w, h] = /-(\d+)x(\d+)-/.exec(f.photo.asset) ?? [];
+  return toImg(
+    {
+      alt: f.photo.alt,
+      asset: { _id: f.photo.asset, url: "", originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
+    },
+    locale,
+    width,
+  );
+};
+
 const fallbackCards = (locale: Locale): Vigneron[] =>
   fallbackVignerons.map((f) => ({
     slug: f.slug,
@@ -158,7 +172,7 @@ const fallbackCards = (locale: Locale): Vigneron[] =>
     terroir: f.terroir,
     philosophie: f.philosophie[locale],
     accroche: f.accroche[locale],
-    portrait: null,
+    portrait: photoFallback(f, locale),
     thematiques: f.thematiques,
     labels: f.labels,
     espacePro: true,
@@ -234,7 +248,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
   if (!f) return null;
   return {
     ...fallbackCards(locale).find((c) => c.slug === slug)!,
-    image: null,
+    image: photoFallback(f, locale, 1600),
     intro: undefined,
     histoire: undefined,
     personnes: f.personnes.map((p) => ({ nom: p.nom, role: p.role[locale], photo: null })),

@@ -1,5 +1,7 @@
 # Pages cépages : liste officielle, sources et vérifications (étape 13)
 
+> **Mise à jour (retours PR #15)** : la page générale s'appelle « Les cépages de l'appellation Champagne ». Le **voltis est masqué** pour l'instant (page en brouillon dans le Studio et dans le code : `CEPAGES_MASQUES` dans `src/lib/cepages-contenu.ts`) ; ses textes et ses sources sont gardés ci-dessous pour plus tard.
+
 Une page générale (`/les-cepages-de-laube/`, anglais `/en/aube-grape-varieties/`) et une page par cépage (`/les-cepages-de-laube/pinot-noir/`…). Textes dans `src/lib/cepages-contenu.ts` (français, anglais), repris des articles cépages du Mag et complétés. Photos : fiches **Cépage** du Studio (menu **Notre Terroir → Les cépages**). Si vous remplissez « Accroche » et « Texte de la page » dans une fiche, ce texte remplace celui du dépôt.
 
 Règle : chaque fait est recoupé par **au moins deux sources** ; une partie sans source n'est pas écrite (ex. pas de partie « culture » pour le pinot blanc, le pinot gris ni le chardonnay rose).
@@ -17,6 +19,11 @@ Recoupements : [Comité Champagne – chardonnay rose](https://www.champagne.fr/
 ### Le chardonnay rose est-il un cépage distinct ?
 
 **Oui pour l'appellation** : le cahier des charges le cite à part (« Chardonnay rose Rs ») parmi les huit cépages principaux. **Botaniquement**, c'est une mutation naturelle du chardonnay (peau rosée). La page dit les deux.
+
+Sources :
+- Cahier des charges de l'AOC Champagne homologué par l'arrêté du 31 juillet 2025, chapitre V « Encépagement » ([Bulletin officiel du ministère de l'Agriculture, 7 août 2025](https://info.agriculture.gouv.fr/boagri/document_administratif-677d59b2-d392-4220-9fa3-e65dbc723244/telechargement)) : « Chardonnay rose Rs » dans la liste des cépages principaux.
+- [Comité Champagne – « Le chardonnay rose, un cépage oublié qui retrouve sa place »](https://www.champagne.fr/fr/approfondir/mediaroom/communique-presse-champagne/le-chardonnay-rose-un-cepage-oublie-qui-retrouve) : mutation naturelle du chardonnay, connue en Champagne et en Bourgogne au début du XXe siècle.
+- [Vitisphere](https://www.vitisphere.com/actualite-105578--le-chardonnay-rose-entre-dans-le-cahier-des-charges-de-laoc-champagne.html) · [iDealwine](https://www.idealwine.net/le-chardonnay-rose-entre-dans-laoc-champagne/) : entrée dans le cahier des charges.
 
 ## 2. Faits ajoutés par rapport aux anciens articles
 
@@ -68,4 +75,4 @@ Les 8 anciens articles sont **masqués, pas supprimés** : ils sont repassés en
 | Arbane | Vigne en fleurs | « (illustration) » |
 | Petit meslier | Vignes à Spoy | « (illustration) » |
 | Chardonnay rose | Jeune pousse de vigne | « (illustration) » |
-| Voltis | Jeune plantation de vigne | « (illustration) » |
+| Voltis (masqué) | Jeune plantation de vigne | « (illustration) » |

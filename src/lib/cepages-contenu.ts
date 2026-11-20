@@ -627,5 +627,13 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
   },
 };
 
-/** Ordre d'affichage sur la page générale. */
-export const ORDRE_CEPAGES: CepageKey[] = ["pinot-noir", "chardonnay", "meunier", "pinot-blanc", "pinot-gris", "arbane", "petit-meslier", "chardonnay-rose", "voltis"];
+/**
+ * Cépages masqués pour l'instant (page « en brouillon ») : ni sur la page générale, ni dans les pastilles,
+ * ni dans le plan du site ; leur adresse renvoie une page introuvable. Retirer « voltis » d'ici pour le ressortir.
+ */
+export const CEPAGES_MASQUES: CepageKey[] = ["voltis"];
+
+/** Ordre d'affichage sur la page générale (sans les cépages masqués). */
+export const ORDRE_CEPAGES: CepageKey[] = (
+  ["pinot-noir", "chardonnay", "meunier", "pinot-blanc", "pinot-gris", "arbane", "petit-meslier", "chardonnay-rose", "voltis"] as CepageKey[]
+).filter((c) => !CEPAGES_MASQUES.includes(c));

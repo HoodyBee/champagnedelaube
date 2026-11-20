@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
+import { Link } from "@/i18n/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -30,6 +31,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
   const p = await getTerroirAube(locale);
   const t = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
+  const tC = await getTranslations("cepagesPage");
   const tPro = await getTranslations("terroirPage");
 
   return (
@@ -65,6 +67,11 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
             </li>
           ))}
         </ul>
+        <div className="mt-space-3 text-center">
+          <Link href="/les-cepages-de-laube" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+            {tC("tousLien")} <span aria-hidden="true">→</span>
+          </Link>
+        </div>
       </Section>
 
       {p.faq.length > 0 && (

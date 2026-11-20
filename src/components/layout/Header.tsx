@@ -70,17 +70,14 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
   const terroirMenu: Item[] = [
     { href: nav.terroirHub.href, cle: nav.terroirHub.href, label: t("terroirHubLink") },
     ...terroirItems,
-    { href: "/les-cepages-de-laube", cle: "/les-cepages-de-laube", label: t("cepages") },
   ];
-  // Le Mag : tous les articles, puis les cinq rubriques (Cépages et Terroirs rangés sous « Tout savoir »).
+  // Le Mag : tous les articles, puis les cinq rubriques.
   const rubrique = (code: string, label: string): Item => ({ href: { pathname: "/le-mag/[rubrique]", params: { rubrique: code } }, cle: `/le-mag/${code}`, label });
   const magMenu: Item[] = [
     { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
     rubrique("actualites", tMag("actualites")),
     { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
-    { href: "/les-cepages-de-laube", cle: "/les-cepages-de-laube#mag", label: t("cepages"), retrait: true },
-    { href: nav.terroirHub.href, cle: `${nav.terroirHub.href}#mag`, label: t("terroirs"), retrait: true },
     rubrique("portraits", tMag("portraits")),
     rubrique("autres-horizons", tMag("autresHorizons")),
   ];

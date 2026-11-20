@@ -14,7 +14,8 @@ const HREF = "/nos-partenaires";
 export async function generateMetadata({ params }: PageProps<"/[locale]/nos-partenaires">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "partenairesPage" });
-  return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription") });
+  // Cachée à Google pour l'instant (page prête pour plus tard).
+  return pageMetadata({ locale, href: HREF, seo: { noIndex: true }, title: t("metaTitle"), description: t("metaDescription") });
 }
 
 /** Nos partenaires : UNIQUEMENT les vignerons partenaires (case « Partenaire » de leur fiche), avec un lien vers leur fiche. */

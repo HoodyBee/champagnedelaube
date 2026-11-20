@@ -68,13 +68,13 @@ export const nav = {
   contact: { key: "contact", href: "/contact" } satisfies NavLink,
 };
 
-/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons, communication, partenaires. */
+/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons, communication. */
 export const proEntreprises: NavLink[] = [
   nav.pro[0],
   nav.entreprises,
   nav.pro[1],
   { key: "communication", href: "/communication-marketing" },
-  { key: "partenaires", href: "/nos-partenaires" },
+  // « Nos partenaires » (/nos-partenaires) : page prête, retirée du menu pour l'instant.
 ];
 
 /** Contenus éditoriaux (pied de page, et liens depuis les pages Terroir et Particuliers). */

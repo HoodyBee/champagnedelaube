@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { cepages, type CepageKey } from "@/lib/brand";
+import { CEPAGES_MASQUES } from "@/lib/cepages-contenu";
 
 /**
  * Cépage en version légère (règle du brand book pour les cépages) : la grappe blanche
@@ -24,6 +25,8 @@ export function CepagePastille({
   nomVisible?: boolean;
 }) {
   const c = cepages[cepage];
+  // Cépage masqué (page en brouillon) : pas de lien.
+  const avecLien = lien && !CEPAGES_MASQUES.includes(cepage);
   const contenu = (
     <>
       <span
@@ -50,7 +53,7 @@ export function CepagePastille({
       {nomVisible && (
         <span className="leading-tight">
           <span
-            className={`block text-[0.9375rem] font-bold ${lien ? "underline decoration-or/60 underline-offset-4 transition-colors group-hover:text-bronze group-hover:decoration-bronze" : ""}`}
+            className={`block text-[0.9375rem] font-bold ${avecLien ? "underline decoration-or/60 underline-offset-4 transition-colors group-hover:text-bronze group-hover:decoration-bronze" : ""}`}
           >
             {c.label}
           </span>
@@ -62,7 +65,7 @@ export function CepagePastille({
     </>
   );
   // Toute la pastille est un lien vers la page du cépage.
-  return lien ? (
+  return avecLien ? (
     <Link
       href={{ pathname: "/les-cepages-de-laube/[cepage]", params: { cepage } }}
       className="group inline-flex items-center gap-space-1 rounded-etiquette transition-transform hover:-translate-y-px"

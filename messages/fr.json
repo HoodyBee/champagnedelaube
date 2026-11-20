@@ -31,8 +31,6 @@
     "tastingLink": "Toutes nos dégustations",
     "communication": "Communication & marketing",
     "partenaires": "Nos partenaires",
-    "cepages": "Les cépages de l'Aube",
-    "terroirs": "Les terroirs",
     "magTout": "Tous les articles"
   },
   "langSwitcher": {
@@ -112,7 +110,7 @@
     "chiffres": {
       "vignoble": {
         "valeur": "≈ 8 000 ha",
-        "label": "le vignoble de l'Aube, un quart du vignoble champenois"
+        "label": "le vignoble de l'Aube, près d'un quart du vignoble champenois"
       },
       "appellations": {
         "valeur": "3 appellations",
@@ -771,8 +769,8 @@
     "sousParties": {
       "label": "Les dossiers de Tout savoir",
       "surTitre": "Tout savoir",
-      "cepagesTitre": "Cépages",
-      "cepagesTexte": "Les huit cépages de l'appellation et le voltis : où ils poussent dans l'Aube et ce qu'ils apportent.",
+      "cepagesTitre": "Les cépages de l'appellation Champagne",
+      "cepagesTexte": "Les huit cépages de l'appellation : ce qu'ils apportent, et où ils poussent dans l'Aube.",
       "terroirsTitre": "Terroirs",
       "terroirsTexte": "La Côte des Bar, Les Riceys, Montgueux et Villenauxe-la-Grande : sols, climat et villages.",
       "voir": "Découvrir"
@@ -939,11 +937,11 @@
   },
   "cepagesPage": {
     "surTitre": "Notre terroir",
-    "titre": "Les cépages de l'Aube",
-    "metaTitle": "Les cépages du champagne dans l'Aube",
-    "metaDescription": "Les 8 cépages principaux de l'appellation Champagne et le voltis : pinot noir, chardonnay, meunier, cépages rares. Où ils poussent dans l'Aube et ce qu'ils apportent.",
+    "titre": "Les cépages de l'appellation Champagne",
+    "metaTitle": "Les cépages de l'appellation Champagne",
+    "metaDescription": "Les 8 cépages de l'appellation Champagne : pinot noir, chardonnay, meunier et cépages rares. Ce qu'ils apportent, et leur place dans l'Aube.",
     "listeTitre": "Tous les cépages de l'appellation",
-    "listeIntro": "Le cahier des charges de l'appellation Champagne (version homologuée en 2025) autorise huit cépages principaux et une variété d'adaptation, le voltis.",
+    "listeIntro": "Le cahier des charges de l'appellation Champagne (version homologuée en 2025) autorise huit cépages principaux.",
     "groupes": {
       "grands": "Les trois grands cépages",
       "rares": "Les cépages rares et anciens",
@@ -963,7 +961,11 @@
     "selectionBouton": "Voir notre sélection",
     "tastingBouton": "Venir le goûter en dégustation",
     "sourcesNote": "Chaque fait de cette page est recoupé par au moins deux sources. Les chiffres qui divergent d'une source à l'autre ne sont pas donnés.",
-    "illustration": "Photo d'illustration"
+    "illustration": "Photo d'illustration",
+    "intro": "Le champagne naît de huit cépages autorisés par l'appellation : trois grands, le pinot noir, le chardonnay et le meunier, et cinq plus rares. Dans l'Aube, le pinot noir est majoritaire dans la [Côte des Bar](/la-cote-des-bar), tandis que le chardonnay domine à [Montgueux](/montgueux) et à [Villenauxe-la-Grande](/villenauxe-la-grande). Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
+    "gouterTitre": "Envie de le goûter ?",
+    "gouterTexte": "Recevez notre sélection de champagnes de vignerons de l'Aube : nous vous la présentons cuvée par cuvée.",
+    "tousLien": "Tous les cépages de l'appellation"
   },
   "communicationPage": {
     "surTitre": "Espace Pro",

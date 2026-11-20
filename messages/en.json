@@ -31,8 +31,6 @@
     "tastingLink": "All our tastings",
     "communication": "Communication & marketing",
     "partenaires": "Our partners",
-    "cepages": "Aube grape varieties",
-    "terroirs": "Terroirs",
     "magTout": "All articles"
   },
   "langSwitcher": {
@@ -112,7 +110,7 @@
     "chiffres": {
       "vignoble": {
         "valeur": "≈ 8,000 ha",
-        "label": "the Aube vineyard, a quarter of the Champagne vineyard"
+        "label": "the Aube vineyard, nearly a quarter of the Champagne vineyard"
       },
       "appellations": {
         "valeur": "3 appellations",
@@ -771,8 +769,8 @@
     "sousParties": {
       "label": "All about champagne: topics",
       "surTitre": "All about champagne",
-      "cepagesTitre": "Grape varieties",
-      "cepagesTexte": "The eight grapes of the appellation and voltis: where they grow in the Aube and what they bring.",
+      "cepagesTitre": "The grapes of the Champagne appellation",
+      "cepagesTexte": "The eight grapes of the appellation: what they bring, and where they grow in the Aube.",
       "terroirsTitre": "Terroirs",
       "terroirsTexte": "The Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande: soils, climate and villages.",
       "voir": "Discover"
@@ -939,11 +937,11 @@
   },
   "cepagesPage": {
     "surTitre": "Our terroir",
-    "titre": "The grape varieties of the Aube",
-    "metaTitle": "Champagne grape varieties in the Aube",
-    "metaDescription": "The 8 main grapes of the Champagne appellation and voltis: pinot noir, chardonnay, meunier, rare grapes. Where they grow in the Aube and what they bring.",
+    "titre": "The grapes of the Champagne appellation",
+    "metaTitle": "The grapes of the Champagne appellation",
+    "metaDescription": "The 8 grapes of the Champagne appellation: pinot noir, chardonnay, meunier and rare grapes. What they bring, and their place in the Aube.",
     "listeTitre": "All the grapes of the appellation",
-    "listeIntro": "The Champagne appellation rules (version approved in 2025) allow eight main grape varieties and one adaptation variety, voltis.",
+    "listeIntro": "The Champagne appellation rules (version approved in 2025) allow eight main grape varieties.",
     "groupes": {
       "grands": "The three major grapes",
       "rares": "Rare and old grapes",
@@ -963,7 +961,11 @@
     "selectionBouton": "See our selection",
     "tastingBouton": "Taste it at one of our tastings",
     "sourcesNote": "Every fact on this page is cross-checked against at least two sources. Figures that differ between sources are not given.",
-    "illustration": "Illustrative photo"
+    "illustration": "Illustrative photo",
+    "intro": "Champagne is made from eight grapes permitted by the appellation: three major ones, pinot noir, chardonnay and meunier, and five rarer ones. In the Aube, pinot noir is the main grape in the [Côte des Bar](/la-cote-des-bar), while chardonnay dominates in [Montgueux](/montgueux) and [Villenauxe-la-Grande](/villenauxe-la-grande). To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
+    "gouterTitre": "Fancy tasting it?",
+    "gouterTexte": "Receive our selection of growers' champagnes from the Aube: we present it to you cuvée by cuvée.",
+    "tousLien": "All the grapes of the appellation"
   },
   "communicationPage": {
     "surTitre": "Pro area",

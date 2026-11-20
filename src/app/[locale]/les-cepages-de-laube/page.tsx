@@ -9,7 +9,7 @@ import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
-import { getCepages, getTerroirAube, type CepagePage } from "@/sanity/content";
+import { getCepages, type CepagePage } from "@/sanity/content";
 
 const HREF = "/les-cepages-de-laube";
 const GROUPES = ["grands", "rares", "nouveaux"] as const;
@@ -20,11 +20,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/les-cepa
   return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription") });
 }
 
-/** Page générale des cépages : l'intro de « Notre Terroir », puis tous les cépages de l'AOC, avec une ancre chacun (#pinot-noir…). */
+/** Page générale « Les cépages de l'appellation Champagne » : intro, puis les 8 cépages, avec une ancre chacun (#pinot-noir…). */
 export default async function CepagesPage({ params }: PageProps<"/[locale]/les-cepages-de-laube">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
-  const [aube, liste] = await Promise.all([getTerroirAube(locale), getCepages(locale)]);
+  const liste = await getCepages(locale);
+  const { paragrapheEnBloc } = await import("@/lib/terroirs-contenu");
   const t = await getTranslations("cepagesPage");
   const tNav = await getTranslations("nav");
 
@@ -54,7 +55,7 @@ export default async function CepagesPage({ params }: PageProps<"/[locale]/les-c
         <div className="mx-auto max-w-3xl px-space-2 py-space-5 text-center sm:px-space-4">
           <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
           <h1 className="mt-space-2 text-titre-post">{t("titre")}</h1>
-          <RichText value={aube.cepagesIntro} locale={locale} className="mt-space-3 text-[1.125rem] text-gris-chaud" />
+          <RichText value={[paragrapheEnBloc(t("intro"), locale)]} locale={locale} className="mt-space-3 text-[1.125rem] text-gris-chaud" />
         </div>
       </section>
 

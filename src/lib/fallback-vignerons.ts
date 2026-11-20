@@ -21,6 +21,8 @@ export type FallbackVigneron = {
   pratiques: L[];
   labels: string[];
   siteWeb: string;
+  /** Photo de la Médiathèque Sanity (identifiant de l'image) : jamais d'emplacement vide. */
+  photo?: { asset: string; fichier: string; alt: { fr: string; en: string } };
 };
 
 export const fallbackVignerons: FallbackVigneron[] = [
@@ -70,6 +72,11 @@ export const fallbackVignerons: FallbackVigneron[] = [
       },
     ],
     cepages: ["pinot-noir", "chardonnay", "meunier", "pinot-blanc"],
+    photo: {
+      asset: "image-d7e86ffecef958facd6e747f793f684e0382d4ea-1350x2400-jpg",
+      fichier: "service-champagne-moutard-dangin-salon-2024.jpg",
+      alt: { fr: "Service d'un verre de champagne Moutard*Dangin sur un salon", en: "A glass of Moutard*Dangin champagne being poured at a wine fair" },
+    },
     thematiques: [],
     pratiques: [
       {
