@@ -65,7 +65,7 @@ export const LABELS: LabelLigne[] = [
     site: "https://www.agencebio.org/",
     pesticides: { fr: "Interdits", en: "Banned" },
     promesse: {
-      fr: "Aucun produit chimique de synthèse : la vigne est protégée uniquement avec des produits d'origine naturelle (dont le cuivre et le soufre, en quantités limitées).",
+      fr: "Aucun produit chimique de synthèse : la vigne est protégée uniquement avec des produits d'origine naturelle (dont le cuivre et le soufre, en quantités limitées).",
       en: "No synthetic chemicals: the vines are protected only with products of natural origin (including copper and sulphur, in limited amounts).",
     },
     indice: 4,
@@ -81,7 +81,7 @@ export const LABELS: LabelLigne[] = [
     site: "https://www.demeter.fr/",
     pesticides: { fr: "Interdits", en: "Banned" },
     promesse: {
-      fr: "Va plus loin que le bio : préparations biodynamiques et soins naturels, travail souvent guidé par le calendrier lunaire.",
+      fr: "Va plus loin que le bio : préparations biodynamiques et soins naturels, travail souvent guidé par le calendrier lunaire.",
       en: "Goes further than organic: biodynamic preparations and natural treatments, work often guided by the lunar calendar.",
     },
     indice: 5,
@@ -94,7 +94,7 @@ export const ENTETES: Record<"label" | "demarche" | "pesticides" | "promesse" | 
   pesticides: { fr: "Pesticides de synthèse", en: "Synthetic pesticides" },
   promesse: { fr: "La promesse", en: "The promise" },
   indice: { fr: "Indice nature", en: "Nature index" },
-  indiceSr: { fr: "Indice nature : # sur 5", en: "Nature index: # out of 5" },
+  indiceSr: { fr: "Indice nature : # sur 5", en: "Nature index: # out of 5" },
   logo: { fr: "Logo du label #", en: "Logo of the # label" },
   legende: { fr: "Comparatif des labels environnementaux du vin", en: "Comparison of environmental wine labels" },
 };

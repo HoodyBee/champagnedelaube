@@ -47,6 +47,7 @@ export function Photo({
           placeholder={image.blurDataURL ? "blur" : "empty"}
           blurDataURL={image.blurDataURL}
           className="object-cover"
+          style={image.position ? { objectPosition: image.position } : undefined}
         />
       ) : (
         // Jamais de motif à la place d'une photo : notre logo (la bouteille) sur fond crème.

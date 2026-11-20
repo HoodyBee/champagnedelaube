@@ -12,6 +12,7 @@ import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
 import { sanityFetch } from "./lib/fetch";
 import { urlFor } from "./lib/image";
+import { dataset, projectId } from "./env";
 
 // ---------------------------------------------------------------------------
 // Images
@@ -21,7 +22,7 @@ type SanityImg = {
   alt?: Localized;
   legende?: Localized;
   credit?: string;
-  hotspot?: unknown;
+  hotspot?: { x?: number; y?: number } | null;
   crop?: unknown;
   asset?: { _id: string; url: string; originalFilename?: string; creditLine?: string; metadata?: { lqip?: string; dimensions?: { width: number; height: number } } };
 } | null;
@@ -57,6 +58,10 @@ export function toImg(img: SanityImg | undefined, locale: Locale, width = 1600):
     height: Math.round((width * d.height) / d.width),
     blurDataURL: img.asset.metadata?.lqip,
     legende: localize(img.legende, locale) || undefined,
+    position:
+      typeof img.hotspot?.x === "number" && typeof img.hotspot?.y === "number"
+        ? `${Math.round(img.hotspot.x * 100)}% ${Math.round(img.hotspot.y * 100)}%`
+        : undefined,
     credit: img.credit || img.asset.creditLine || CREDIT_PAR_DEFAUT,
     og: avecNomLisible(urlFor(img as never).width(1200).height(630).fit("crop").quality(80).url(), nom),
   };
@@ -153,11 +158,12 @@ const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
 /** Photo d'une fiche par défaut (image de la Médiathèque désignée par son identifiant). */
 const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, width = 900): Img | null => {
   if (!f.photo) return null;
-  const [, w, h] = /-(\d+)x(\d+)-/.exec(f.photo.asset) ?? [];
+  const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(f.photo.asset) ?? [];
+  const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
   return toImg(
     {
       alt: f.photo.alt,
-      asset: { _id: f.photo.asset, url: "", originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
+      asset: { _id: f.photo.asset, url, originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
     },
     locale,
     width,

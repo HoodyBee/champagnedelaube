@@ -25,11 +25,11 @@ export function Section({ id, surTitre, titre, intro, fond = "blanc", align = "c
       id={id}
       aria-labelledby={titre ? headingId : undefined}
       data-fond={fond}
-      className={`${fond === "chaude" ? "border-y border-filet bg-creme-clair" : ""} py-space-4 sm:py-space-5 ${className}`}
+      className={`${fond === "chaude" ? "border-y border-filet bg-creme-clair" : ""} py-space-4 lg:py-[56px] ${className}`}
     >
       <div data-reveal className="mx-auto max-w-7xl px-space-2 sm:px-space-4">
         {(surTitre || titre || intro) && (
-          <header className={`${align === "centre" ? "mx-auto text-center" : ""} mb-space-3 max-w-3xl sm:mb-space-4`}>
+          <header className={`${align === "centre" ? "mx-auto text-center" : ""} mb-space-3 max-w-3xl lg:mb-space-4`}>
             {ornement && <LineIcon name={ornement} size={28} className={`mb-space-1 block text-or ${align === "centre" ? "mx-auto" : ""}`} />}
             {surTitre && <p className="text-sur-titre text-bronze">{surTitre}</p>}
             {titre && (
