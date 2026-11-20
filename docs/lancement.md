@@ -7,7 +7,7 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 
 | | Tâche | Qui |
 |---|---|---|
-| 🔴 | Fusionner la PR de la Partie B (mentions légales, réseaux sociaux, articles, traductions) | Vous |
+| 🔴 | Fusionner la PR de l'étape 12 (publication, rubriques, Studio, marronnier, maillage) | Vous |
 | 🔴 | **Lever le blocage Google** : aujourd'hui tout le site est en `noindex, nofollow` (site en construction). À retirer le jour J seulement | Claude |
 | ✅ | **Mentions légales complètes** (éditeur, SIRET, siège, directeur de la publication, conception, Netlify, OVH, données, cookies, mention sanitaire). Adresse du siège modifiable dans Réglages → Contact, affichée uniquement sur les pages légales | Claude |
 | ✅ | **Icônes Instagram et Facebook** : en-tête (ordinateur), menu mobile, pied de page ; lien « Suivez-nous sur Instagram » dans l'appel final de l'accueil | Claude |
@@ -22,13 +22,15 @@ Qui : **Vous** (Studio Sanity, Netlify, Brevo, registrar) · **Claude** (code).
 
 | | Tâche |
 |---|---|
-| 🔴 | **Relire et publier** les brouillons repris de l'ancien site (accueil, Espace Pro, Entreprises & CSE, Nos Dégustations, pages). Rien n'est publié aujourd'hui : le site affiche les textes par défaut |
-| 🔴 | **Réglages du site** : adresse qui reçoit les formulaires, réseaux sociaux (Instagram, Facebook), signature ; langues actives : FR et EN |
+| ✅ / 🔴 | **Tout est publié** (sauvegarde : `docs/sauvegardes/`), sauf le portrait Daniel Pétré & Fils, resté en brouillon. À relire dans le Studio |
+| ✅ / 🟠 | **Réglages du site** créés et publiés (e-mail, Instagram, Facebook, signature, siège, langues FR et EN). À vérifier : l'adresse qui reçoit les formulaires |
 | 🔴 | **Fiches vignerons** : au moins les domaines de votre sélection, avec portrait, village, terroir, philosophie. Aujourd'hui seules 2 fiches par défaut s'affichent (Moutard-Dangin, Mennetrier) |
 | ✅ | **Langues au lancement : français et anglais** (NL, IT, DE masquées, réactivables dans « Langues actives ») |
-| ✅ / 🔴 | **Traductions anglaises** faites en brouillon (articles, pages, référencement, textes des photos) : à relire et publier. Seule exception : l'article sur le rap, gardé tel quel en français |
-| 🟠 | Relire et publier les brouillons importés : textes des terroirs, page « Les terroirs de l'Aube », **13 articles** (cépages, pinot noir, meunier, chardonnay, portrait Pétré, journées du champagne, vocabulaire, rap) ; sources dans `docs/articles-cepages-sources.md` |
-| 🟠 | Publier les 6 articles repris de l'ancien site (rubriques Accords / Tout savoir attribuées) |
+| ✅ | **Traductions anglaises** publiées. L'article sur le rap (français seulement) n'est pas indexé en anglais |
+| 🟠 | Relire les 18 articles publiés ; sources dans `docs/articles-cepages-sources.md` et `docs/marronnier-2027-sources.md` |
+| 🟠 | **Mes événements** : saisir vos rendez-vous dans « Mes événements (calendrier) » : ils apparaissent sur l'accueil, dans le marronnier et le PDF |
+| 🟠 | Marronnier : décocher « à confirmer » quand Bières à Troyes, la Route du Champagne en fête, le Week-end des Grands Crus et la Fête des vendanges de Montmartre annonceront leurs dates 2027 |
+| ✅ | 6 articles repris de l'ancien site publiés (rubriques attribuées) |
 | 🟠 | Portrait Daniel Pétré & Fils : préciser s'il s'agit d'une collaboration commerciale (case « Collaboration commerciale » de l'article) |
 | 🟠 | Au moins un **format de dégustation** (document « Expérience ») avec durée, nombre de personnes, prix « à partir de » ou vide (« Sur demande ») |
 | 🟠 | **Catalogue PDF « Notre sélection »** (Réglages du site) et **brochure CSE** (Entreprises & CSE) |
