@@ -923,5 +923,33 @@
     "pdfSurTitre": "The Champagne Mag · Champagne de l'Aube",
     "pdfDocTitre": "The {annee} wine and food calendar",
     "pdfIntro": "Grape, food and spirits days, major events and our own events: the editorial calendar to plan your posts and events. Dates checked; « to be confirmed » when the organiser has not announced them yet."
+  },
+  "cepagesPage": {
+    "surTitre": "Our terroir",
+    "titre": "The grape varieties of the Aube",
+    "metaTitle": "Champagne grape varieties in the Aube",
+    "metaDescription": "The 8 main grapes of the Champagne appellation and voltis: pinot noir, chardonnay, meunier, rare grapes. Where they grow in the Aube and what they bring.",
+    "listeTitre": "All the grapes of the appellation",
+    "listeIntro": "The Champagne appellation rules (version approved in 2025) allow eight main grape varieties and one adaptation variety, voltis.",
+    "groupes": {
+      "grands": "The three major grapes",
+      "rares": "Rare and old grapes",
+      "nouveaux": "The newcomers"
+    },
+    "enSavoirPlus": "Learn more: {nom}",
+    "enSavoirPlusCourt": "Learn more",
+    "tous": "All grape varieties",
+    "statutPrincipal": "Main grape of the appellation",
+    "statutVifa": "Adaptation variety (on trial)",
+    "aussiAppele": "Also called",
+    "terroirsTitre": "Its terroirs in the Aube",
+    "partenairesTitre": "Taste it with our partner winemakers",
+    "partenairesIntro": "These partner winemakers grow this grape.",
+    "selectionTitre": "Our current selection",
+    "selectionTexte": "The growers' champagnes we have chosen, terroir by terroir.",
+    "selectionBouton": "See our selection",
+    "tastingBouton": "Taste it at one of our tastings",
+    "sourcesNote": "Every fact on this page is cross-checked against at least two sources. Figures that differ between sources are not given.",
+    "illustration": "Illustrative photo"
   }
 }

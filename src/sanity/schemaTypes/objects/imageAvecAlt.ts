@@ -26,6 +26,13 @@ export const imageAvecAlt = defineType({
       ],
     }),
     defineField({
+      name: "legende",
+      title: "Légende (facultatif)",
+      description:
+        "Affichée sous la photo. À utiliser pour être honnête quand la photo illustre sans montrer exactement le sujet, ex. : « Vignes de la Côte des Bar (illustration) ».",
+      type: "localeString",
+    }),
+    defineField({
       name: "credit",
       title: "Crédit photo",
       description:

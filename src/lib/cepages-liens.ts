@@ -1,10 +1,10 @@
 import type { CepageKey } from "./brand";
 
 /**
- * Article du Mag consacré à chaque cépage (adresse de l'article). Les pastilles de cépage
- * deviennent des liens seulement si l'article est publié (vérifié à l'affichage).
+ * Anciennes adresses des articles du Mag consacrés aux cépages. Depuis l'étape 13, chaque cépage
+ * a sa propre page (/les-cepages-de-laube/<cépage>/) : ces adresses y redirigent (301).
  */
-export const ARTICLE_CEPAGE: Record<CepageKey, string> = {
+export const ANCIEN_ARTICLE_CEPAGE: Partial<Record<CepageKey, string>> = {
   "pinot-noir": "pinot-noir-champagne",
   meunier: "meunier-cepage-champagne",
   chardonnay: "chardonnay-champagne",
@@ -14,3 +14,6 @@ export const ARTICLE_CEPAGE: Record<CepageKey, string> = {
   "petit-meslier": "petit-meslier-cepage-champagne",
   "chardonnay-rose": "chardonnay-rose-champagne",
 };
+
+/** Ancien article général « Qu'est-ce qu'un cépage ? », redirigé vers la page générale. */
+export const ANCIEN_ARTICLE_CEPAGES_GENERAL = "quest-ce-quun-cepage";

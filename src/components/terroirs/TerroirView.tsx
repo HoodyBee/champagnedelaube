@@ -10,11 +10,10 @@ import { Section } from "@/components/ui/Section";
 import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { terroirs, type CepageKey, type TerroirKey } from "@/lib/brand";
-import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
+import { terroirs, type TerroirKey } from "@/lib/brand";
 import { imageObject } from "@/lib/image-jsonld";
 import { nav, terroirPages } from "@/lib/site";
-import { getArticleSlugs, getTerroir } from "@/sanity/content";
+import { getTerroir } from "@/sanity/content";
 
 const GRANDS = ["pinot-noir", "meunier", "chardonnay"] as const;
 const RARES = ["pinot-blanc", "pinot-gris", "arbane", "petit-meslier"] as const;
@@ -29,9 +28,7 @@ export async function terroirMetadata(cle: TerroirKey, locale: Locale): Promise<
 
 /** Page d'un terroir : ouverture, repères, texte, sols et cépages, secteurs, villages, liens. */
 export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Locale }) {
-  const [t, slugs] = await Promise.all([getTerroir(cle, locale), getArticleSlugs()]);
-  // Lien vers l'article du cépage, seulement s'il est publié (jamais de lien cassé).
-  const lienCepage = (c: CepageKey) => (slugs.includes(ARTICLE_CEPAGE[c]) ? ARTICLE_CEPAGE[c] : undefined);
+  const t = await getTerroir(cle, locale);
   const tT = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
   const couleur = `var(--color-${terroirs[cle].color})`;
@@ -84,7 +81,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                 <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
                   {t.cepagesMajoritaires.map((c) => (
                     <li key={c}>
-                      <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} article={lienCepage(c)} />
+                      <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} />
                     </li>
                   ))}
                 </ul>
@@ -103,7 +100,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                       <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
                         {items.map((c) => (
                           <li key={c}>
-                            <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} article={lienCepage(c)} />
+                            <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} />
                           </li>
                         ))}
                       </ul>

@@ -48,6 +48,21 @@ export const routing = defineRouting({
 
     // Terroirs
     "/la-cote-des-bar": "/la-cote-des-bar",
+    // Les cépages : page générale et une page par cépage (/les-cepages-de-laube/pinot-noir/)
+    "/les-cepages-de-laube": {
+      fr: "/les-cepages-de-laube",
+      en: "/aube-grape-varieties",
+      nl: "/druivenrassen-van-de-aube",
+      it: "/vitigni-dellaube",
+      de: "/rebsorten-der-aube",
+    },
+    "/les-cepages-de-laube/[cepage]": {
+      fr: "/les-cepages-de-laube/[cepage]",
+      en: "/aube-grape-varieties/[cepage]",
+      nl: "/druivenrassen-van-de-aube/[cepage]",
+      it: "/vitigni-dellaube/[cepage]",
+      de: "/rebsorten-der-aube/[cepage]",
+    },
     "/les-riceys": "/les-riceys",
     "/montgueux": "/montgueux",
     "/villenauxe-la-grande": "/villenauxe-la-grande",

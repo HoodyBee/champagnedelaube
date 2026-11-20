@@ -215,15 +215,16 @@
   {
    "fichier": "caisses-raisins-vendanges-champagne-polisy-2026.jpg",
    "alt": {
-    "fr": "Caisses remplies de raisins noirs pendant les vendanges 2026 à Polisy",
-    "en": "Crates full of black grapes during the 2026 harvest in Polisy"
+    "fr": "Caisses remplies de pinot noir pendant les vendanges 2026 à Polisy",
+    "en": "Crates filled with pinot noir during the 2026 harvest in Polisy"
    },
    "etiquettes": [
     "terroir-cote-des-bar",
     "commune-polisy",
     "secteur-bar-sur-seine",
     "theme-vendanges",
-    "vigneron-moutard-dangin"
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
    ],
    "usage": "Côte des Bar : galerie",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -231,8 +232,8 @@
   {
    "fichier": "grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg",
    "alt": {
-    "fr": "Grappe de raisin noir tenue à la main au-dessus des caisses de vendange, à Polisy",
-    "en": "Bunch of black grapes held above the harvest crates, in Polisy"
+    "fr": "Grappe de pinot noir tenue à la main au-dessus des caisses de vendange, à Polisy",
+    "en": "Bunch of pinot noir held above the harvest crates, in Polisy"
    },
    "etiquettes": [
     "terroir-cote-des-bar",
@@ -240,23 +241,25 @@
     "secteur-bar-sur-seine",
     "theme-vendanges",
     "theme-raisin",
-    "vigneron-moutard-dangin"
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
    ],
-   "usage": "Côte des Bar : galerie ; Accueil : section terroirs",
+   "usage": "Page Pinot noir : photo principale",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
   },
   {
    "fichier": "vendanges-champagne-cote-des-bar-2026.jpg",
    "alt": {
-    "fr": "Caisses de vendange chargées sur le tracteur au bord des vignes, à Celles-sur-Ource",
-    "en": "Harvest crates loaded on the tractor beside the vines, in Celles-sur-Ource"
+    "fr": "Caisses de pinot noir chargées sur le tracteur au bord des vignes, à Celles-sur-Ource",
+    "en": "Crates of pinot noir loaded on the tractor beside the vines, in Celles-sur-Ource"
    },
    "etiquettes": [
     "terroir-cote-des-bar",
     "commune-celles-sur-ource",
     "secteur-bar-sur-seine",
     "theme-vendanges",
-    "vigneron-moutard-dangin"
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
    ],
    "usage": "Côte des Bar : galerie",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -264,12 +267,13 @@
   {
    "fichier": "grappe-raisin-noir-feuilles-automne-vigne.jpg",
    "alt": {
-    "fr": "Grappe de raisin noir entre des feuilles de vigne aux couleurs d'automne",
-    "en": "Bunch of black grapes among vine leaves in autumn colours"
+    "fr": "Grappe de pinot noir entre des feuilles de vigne aux couleurs d'automne",
+    "en": "Bunch of pinot noir among autumn-coloured vine leaves"
    },
    "etiquettes": [
     "theme-raisin",
-    "theme-vignes"
+    "theme-vignes",
+    "cepage-pinot-noir"
    ],
    "usage": "Article « Qu'est-ce qu'un cépage ? »",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -302,11 +306,12 @@
   {
    "fichier": "grappes-vertes-vigne-ete-champagne.jpg",
    "alt": {
-    "fr": "Grappes de raisin encore vertes au cœur de l'été",
-    "en": "Bunches of grapes still green in midsummer"
+    "fr": "Grappes de pinot noir encore vertes au cœur de l'été",
+    "en": "Pinot noir bunches still green in midsummer"
    },
    "etiquettes": [
-    "theme-raisin"
+    "theme-raisin",
+    "cepage-pinot-noir"
    ],
    "usage": "Article « Le petit meslier » (en attendant une photo du cépage)",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -314,11 +319,12 @@
   {
    "fichier": "veraison-raisin-vigne-champagne.jpg",
    "alt": {
-    "fr": "Grappes en pleine véraison : les grains changent de couleur",
-    "en": "Bunches at véraison: the berries are changing colour"
+    "fr": "Grappes de pinot noir en pleine véraison : les grains changent de couleur",
+    "en": "Pinot noir bunches at véraison: the berries are changing colour"
    },
    "etiquettes": [
-    "theme-raisin"
+    "theme-raisin",
+    "cepage-pinot-noir"
    ],
    "usage": "Article « Le pinot gris » (en attendant une photo du cépage)",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -517,12 +523,13 @@
   {
    "fichier": "raisins-noirs-pressoir-vendanges-2024.jpg",
    "alt": {
-    "fr": "Raisins noirs déversés dans le pressoir pendant les vendanges 2024",
-    "en": "Black grapes tipped into the press during the 2024 harvest"
+    "fr": "Pinot noir déversé dans le pressoir pendant les vendanges 2024",
+    "en": "Pinot noir poured into the press during the 2024 harvest"
    },
    "etiquettes": [
     "theme-vendanges",
-    "theme-raisin"
+    "theme-raisin",
+    "cepage-pinot-noir"
    ],
    "usage": "Médiathèque (vendanges)",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
@@ -551,6 +558,33 @@
     "theme-vignes"
    ],
    "usage": "Médiathèque (Sézannais, hors Aube : pas sur la page Villenauxe)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "caisses-pinot-noir-vendanges-2024.jpg",
+   "alt": {
+    "fr": "Pinot noir dans les caisses de vendange, pendant les vendanges 2024",
+    "en": "Pinot noir in harvest crates during the 2024 harvest"
+   },
+   "etiquettes": [
+    "theme-vendanges",
+    "theme-raisin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Page Pinot noir : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "grappe-chardonnay-vigne-champagne.jpg",
+   "alt": {
+    "fr": "Grappe de chardonnay encore verte, entre les feuilles de la vigne",
+    "en": "Chardonnay bunch still green among the vine leaves"
+   },
+   "etiquettes": [
+    "theme-raisin",
+    "cepage-chardonnay"
+   ],
+   "usage": "Page Chardonnay : photo principale",
    "credit": "© Champagne de l'Aube / Detectezmoi.com"
   }
  ]

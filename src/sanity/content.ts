@@ -16,9 +16,10 @@ import { urlFor } from "./lib/image";
 // ---------------------------------------------------------------------------
 // Images
 // ---------------------------------------------------------------------------
-const IMG = `{alt, credit, hotspot, crop, asset->{_id, url, originalFilename, creditLine, metadata{lqip, dimensions{width, height}}}}`;
+const IMG = `{alt, legende, credit, hotspot, crop, asset->{_id, url, originalFilename, creditLine, metadata{lqip, dimensions{width, height}}}}`;
 type SanityImg = {
   alt?: Localized;
+  legende?: Localized;
   credit?: string;
   hotspot?: unknown;
   crop?: unknown;
@@ -55,6 +56,7 @@ export function toImg(img: SanityImg | undefined, locale: Locale, width = 1600):
     width,
     height: Math.round((width * d.height) / d.width),
     blurDataURL: img.asset.metadata?.lqip,
+    legende: localize(img.legende, locale) || undefined,
     credit: img.credit || img.asset.creditLine || CREDIT_PAR_DEFAUT,
     og: avecNomLisible(urlFor(img as never).width(1200).height(630).fit("crop").quality(80).url(), nom),
   };
@@ -131,7 +133,7 @@ type VigneronRaw = {
   image?: SanityImg;
 };
 
-export type Vigneron = DomaineCardData & { accroche?: string; espacePro: boolean; partenaire: boolean };
+export type Vigneron = DomaineCardData & { accroche?: string; espacePro: boolean; partenaire: boolean; cepages: CepageKey[] };
 
 const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   slug: v.slug,
@@ -145,6 +147,7 @@ const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   labels: v.labels ?? [],
   espacePro: v.espacePro !== false,
   partenaire: v.partenaire !== false,
+  cepages: v.cepages ?? [],
 });
 
 const fallbackCards = (locale: Locale): Vigneron[] =>
@@ -160,6 +163,7 @@ const fallbackCards = (locale: Locale): Vigneron[] =>
     labels: f.labels,
     espacePro: true,
     partenaire: true,
+    cepages: f.cepages,
   }));
 
 /** Tous les vignerons publiés ; à défaut, les fiches par défaut. */
@@ -926,6 +930,74 @@ export async function getTerroirAube(locale: Locale): Promise<TerroirAubePage> {
     faq: faq.length ? faq : a.faq.map((q) => ({ question: tr(q.question, locale), reponse: tr(q.reponse, locale) })),
     seo: { ...seoOf(p?.seo, locale), title: L(p?.seo?.title, locale) ?? tr(a.seo.title, locale), description: L(p?.seo?.description, locale) ?? tr(a.seo.description, locale) },
   };
+}
+
+// ---------------------------------------------------------------------------
+// Cépages : fiche Sanity (photos, et textes si remplis), sinon textes sourcés du dépôt
+// ---------------------------------------------------------------------------
+export type CepagePage = {
+  cle: CepageKey;
+  nom: string;
+  statut: "principal" | "vifa";
+  groupe: "grands" | "rares" | "nouveaux";
+  couleur: string;
+  aussiAppele?: string;
+  resume: string;
+  accroche?: string;
+  image: Img | null;
+  galerie: Img[];
+  /** Texte saisi dans le Studio (sinon : sections sourcées ci-dessous). */
+  contenu?: PortableTextBlock[];
+  sections: { id: string; titre: string; texte: PortableTextBlock[] }[];
+  terroirs: TerroirKey[];
+  seo: Seo;
+};
+
+type CepageRaw = {
+  cle?: CepageKey;
+  image?: SanityImg;
+  galerie?: SanityImg[];
+  resume?: Localized;
+  accroche?: Localized;
+  contenu?: LocalizedBlocks;
+  seo?: SeoRaw;
+};
+const CEPAGE_PROJ = `{cle, image ${IMG}, galerie[] ${IMG}, resume, accroche, contenu, seo}`;
+
+async function cepageDepuis(cle: CepageKey, raw: CepageRaw | undefined, locale: Locale): Promise<CepagePage> {
+  const { cepagesContenu } = await import("@/lib/cepages-contenu");
+  const { tr, paragrapheEnBloc } = await import("@/lib/terroirs-contenu");
+  const { cepages } = await import("@/lib/brand");
+  const d = cepagesContenu[cle];
+  const contenu = localize(raw?.contenu, locale);
+  const seo = seoOf(raw?.seo, locale);
+  return {
+    cle,
+    nom: cepages[cle].label,
+    statut: d.statut,
+    groupe: d.groupe,
+    couleur: tr(d.couleur, locale),
+    aussiAppele: d.aussiAppele ? tr(d.aussiAppele, locale) : undefined,
+    resume: L(raw?.resume, locale) ?? tr(d.resume, locale),
+    accroche: L(raw?.accroche, locale) ?? tr(d.accroche, locale),
+    image: toImg(raw?.image, locale),
+    galerie: (raw?.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
+    contenu: contenu?.length ? contenu : undefined,
+    sections: d.sections.map((s) => ({ id: s.id, titre: tr(s.titre, locale), texte: s.paragraphes.map((p) => paragrapheEnBloc(tr(p, locale), locale)) })),
+    terroirs: d.terroirs,
+    seo: { ...seo, title: seo.title ?? tr(d.seo.title, locale), description: seo.description ?? tr(d.seo.description, locale) },
+  };
+}
+
+export async function getCepage(cle: CepageKey, locale: Locale): Promise<CepagePage> {
+  const raw = await sanityFetch<CepageRaw | null>({ query: `*[_type == "cepage" && cle == $cle][0]${CEPAGE_PROJ}`, params: { cle }, tags: ["cepage"] });
+  return cepageDepuis(cle, raw ?? undefined, locale);
+}
+
+export async function getCepages(locale: Locale): Promise<CepagePage[]> {
+  const { ORDRE_CEPAGES } = await import("@/lib/cepages-contenu");
+  const raws = (await sanityFetch<CepageRaw[]>({ query: `*[_type == "cepage"]${CEPAGE_PROJ}`, tags: ["cepage"] })) ?? [];
+  return Promise.all(ORDRE_CEPAGES.map((cle) => cepageDepuis(cle, raws.find((r) => r.cle === cle), locale)));
 }
 
 // ---------------------------------------------------------------------------

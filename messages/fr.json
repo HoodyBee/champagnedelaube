@@ -923,5 +923,33 @@
     "pdfSurTitre": "Le Mag du Champagne · Champagne de l'Aube",
     "pdfDocTitre": "Le marronnier {annee} du vin et de la gastronomie",
     "pdfIntro": "Journées des cépages, de la gastronomie et des spiritueux, grands rendez-vous et nos événements : le calendrier éditorial pour préparer vos publications et vos animations. Dates vérifiées ; « à confirmer » quand l'organisateur ne les a pas encore annoncées."
+  },
+  "cepagesPage": {
+    "surTitre": "Notre terroir",
+    "titre": "Les cépages de l'Aube",
+    "metaTitle": "Les cépages du champagne dans l'Aube",
+    "metaDescription": "Les 8 cépages principaux de l'appellation Champagne et le voltis : pinot noir, chardonnay, meunier, cépages rares. Où ils poussent dans l'Aube et ce qu'ils apportent.",
+    "listeTitre": "Tous les cépages de l'appellation",
+    "listeIntro": "Le cahier des charges de l'appellation Champagne (version homologuée en 2025) autorise huit cépages principaux et une variété d'adaptation, le voltis.",
+    "groupes": {
+      "grands": "Les trois grands cépages",
+      "rares": "Les cépages rares et anciens",
+      "nouveaux": "Les nouveaux venus"
+    },
+    "enSavoirPlus": "En savoir plus : {nom}",
+    "enSavoirPlusCourt": "En savoir plus",
+    "tous": "Tous les cépages",
+    "statutPrincipal": "Cépage principal de l'appellation",
+    "statutVifa": "Variété d'adaptation (à l'essai)",
+    "aussiAppele": "Aussi appelé",
+    "terroirsTitre": "Ses terroirs dans l'Aube",
+    "partenairesTitre": "Le goûter chez nos vignerons partenaires",
+    "partenairesIntro": "Ces vignerons partenaires cultivent ce cépage.",
+    "selectionTitre": "Notre sélection du moment",
+    "selectionTexte": "Les champagnes de vignerons que nous avons choisis, terroir par terroir.",
+    "selectionBouton": "Voir notre sélection",
+    "tastingBouton": "Venir le goûter en dégustation",
+    "sourcesNote": "Chaque fait de cette page est recoupé par au moins deux sources. Les chiffres qui divergent d'une source à l'autre ne sont pas donnés.",
+    "illustration": "Photo d'illustration"
   }
 }

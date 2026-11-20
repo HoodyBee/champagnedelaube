@@ -5,6 +5,7 @@
 // (?elementor_library=…) affichent simplement l'accueil, dont l'adresse canonique est « / ». Liste établie à partir du
 // sitemap de l'ancien site (novembre 2026).
 import type { Redirect } from "next/dist/lib/load-custom-routes";
+import { ANCIEN_ARTICLE_CEPAGE } from "./lib/cepages-liens";
 
 const r = (source: string, destination: string): Redirect => ({ source, destination, statusCode: 301 });
 
@@ -73,4 +74,10 @@ const liensCourts: Redirect[] = [
   })),
 ];
 
-export const redirections: Redirect[] = [...pages, ...liensCourts];
+/** Étape 13 : chaque cépage a sa page ; les anciens articles du Mag y redirigent (FR et EN). */
+const cepages: Redirect[] = Object.entries(ANCIEN_ARTICLE_CEPAGE).flatMap(([cle, slug]) => [
+  r(`/${slug}`, `/les-cepages-de-laube/${cle}/`),
+  r(`/en/${slug}`, `/en/aube-grape-varieties/${cle}/`),
+]);
+
+export const redirections: Redirect[] = [...pages, ...cepages, ...liensCourts];

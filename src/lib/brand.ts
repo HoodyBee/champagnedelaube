@@ -135,6 +135,9 @@ export const cepages = {
   "petit-meslier": vignette("/brand/cepages/petit-meslier.png", "Petit Meslier", "cepage-blanc"),
   "pinot-gris": vignette("/brand/cepages/pinot-gris.png", "Pinot gris", "cepage-gris"),
   "chardonnay-rose": vignette("/brand/cepages/chardonnay-rose.png", "Chardonnay rose", "cepage-gris"),
+  // Variété « d'intérêt à fin d'adaptation » (cahier des charges 2022) : pas encore de vignette dédiée,
+  // on affiche la grappe blanche du chardonnay (fichier inchangé) avec son propre nom.
+  voltis: vignette("/brand/cepages/chardonnay.png", "Voltis", "cepage-blanc"),
 } as const;
 
 export type TerroirKey = keyof typeof terroirs;

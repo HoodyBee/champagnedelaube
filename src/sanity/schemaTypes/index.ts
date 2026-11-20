@@ -1,5 +1,6 @@
 import { accueil } from "./documents/accueil";
 import { article } from "./documents/article";
+import { cepage } from "./documents/cepage";
 import { cuvee } from "./documents/cuvee";
 import { espaceEntreprises } from "./documents/espaceEntreprises";
 import { espaceParticuliers } from "./documents/espaceParticuliers";
@@ -32,6 +33,7 @@ export const schemaTypes = [
   // Documents
   page,
   terroir,
+  cepage,
   vigneron,
   cuvee,
   experience,

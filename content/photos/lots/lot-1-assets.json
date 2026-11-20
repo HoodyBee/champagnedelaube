@@ -100,29 +100,29 @@
  "caisses-raisins-vendanges-champagne-polisy-2026.jpg": {
   "id": "image-37c50371fbc7d6a127aa6c1c9252c17a45669d52-1807x2400-jpg",
   "alt": {
-   "fr": "Caisses remplies de raisins noirs pendant les vendanges 2026 à Polisy",
-   "en": "Crates full of black grapes during the 2026 harvest in Polisy"
+   "fr": "Caisses remplies de pinot noir pendant les vendanges 2026 à Polisy",
+   "en": "Crates filled with pinot noir during the 2026 harvest in Polisy"
   }
  },
  "grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg": {
   "id": "image-70917720f7666f367b84d5974e71fa70247d5a4c-1807x2400-jpg",
   "alt": {
-   "fr": "Grappe de raisin noir tenue à la main au-dessus des caisses de vendange, à Polisy",
-   "en": "Bunch of black grapes held above the harvest crates, in Polisy"
+   "fr": "Grappe de pinot noir tenue à la main au-dessus des caisses de vendange, à Polisy",
+   "en": "Bunch of pinot noir held above the harvest crates, in Polisy"
   }
  },
  "vendanges-champagne-cote-des-bar-2026.jpg": {
   "id": "image-a9136e1e9c658b4086ac773c14c6058b06b4b383-1807x2400-jpg",
   "alt": {
-   "fr": "Caisses de vendange chargées sur le tracteur au bord des vignes, à Celles-sur-Ource",
-   "en": "Harvest crates loaded on the tractor beside the vines, in Celles-sur-Ource"
+   "fr": "Caisses de pinot noir chargées sur le tracteur au bord des vignes, à Celles-sur-Ource",
+   "en": "Crates of pinot noir loaded on the tractor beside the vines, in Celles-sur-Ource"
   }
  },
  "grappe-raisin-noir-feuilles-automne-vigne.jpg": {
   "id": "image-0c682b4c0ac168ff54015780552b4daef38ea891-1350x2400-jpg",
   "alt": {
-   "fr": "Grappe de raisin noir entre des feuilles de vigne aux couleurs d'automne",
-   "en": "Bunch of black grapes among vine leaves in autumn colours"
+   "fr": "Grappe de pinot noir entre des feuilles de vigne aux couleurs d'automne",
+   "en": "Bunch of pinot noir among autumn-coloured vine leaves"
   }
  },
  "fleurs-de-vigne-printemps-champagne.jpg": {
@@ -142,15 +142,15 @@
  "grappes-vertes-vigne-ete-champagne.jpg": {
   "id": "image-ec9cad8dc8a3f8babdbb540e441aa833de564bda-1350x2400-jpg",
   "alt": {
-   "fr": "Grappes de raisin encore vertes au cœur de l'été",
-   "en": "Bunches of grapes still green in midsummer"
+   "fr": "Grappes de pinot noir encore vertes au cœur de l'été",
+   "en": "Pinot noir bunches still green in midsummer"
   }
  },
  "veraison-raisin-vigne-champagne.jpg": {
   "id": "image-0af4509a58b7e5e7858fbcbe07c9a97126396ea3-1350x2400-jpg",
   "alt": {
-   "fr": "Grappes en pleine véraison : les grains changent de couleur",
-   "en": "Bunches at véraison: the berries are changing colour"
+   "fr": "Grappes de pinot noir en pleine véraison : les grains changent de couleur",
+   "en": "Pinot noir bunches at véraison: the berries are changing colour"
   }
  },
  "rangs-vigne-vallee-champagne-ete.jpg": {
@@ -261,8 +261,8 @@
  "raisins-noirs-pressoir-vendanges-2024.jpg": {
   "id": "image-76142adcdc6f0cddcc7abb64bf3225df5daa252c-1350x2400-jpg",
   "alt": {
-   "fr": "Raisins noirs déversés dans le pressoir pendant les vendanges 2024",
-   "en": "Black grapes tipped into the press during the 2024 harvest"
+   "fr": "Pinot noir déversé dans le pressoir pendant les vendanges 2024",
+   "en": "Pinot noir poured into the press during the 2024 harvest"
   }
  },
  "jeune-plantation-vigne-champagne-2025.jpg": {
@@ -277,6 +277,20 @@
   "alt": {
    "fr": "Vignes sous la neige dans le Sézannais",
    "en": "Vines under snow in the Sézanne area"
+  }
+ },
+ "caisses-pinot-noir-vendanges-2024.jpg": {
+  "id": "image-a18bcc5436bfc8269ff5b19ac75f816947b45675-1350x2400-jpg",
+  "alt": {
+   "fr": "Pinot noir dans les caisses de vendange, pendant les vendanges 2024",
+   "en": "Pinot noir in harvest crates during the 2024 harvest"
+  }
+ },
+ "grappe-chardonnay-vigne-champagne.jpg": {
+  "id": "image-7983b0de01ac7a77afee3c6168c12248487dbe0c-1350x2400-jpg",
+  "alt": {
+   "fr": "Grappe de chardonnay encore verte, entre les feuilles de la vigne",
+   "en": "Chardonnay bunch still green among the vine leaves"
   }
  }
 }

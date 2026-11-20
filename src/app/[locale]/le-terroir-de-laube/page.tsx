@@ -13,8 +13,7 @@ import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
-import { ARTICLE_CEPAGE } from "@/lib/cepages-liens";
-import { getArticleSlugs, getTerroirAube } from "@/sanity/content";
+import { getTerroirAube } from "@/sanity/content";
 
 const HREF = "/le-terroir-de-laube";
 
@@ -28,7 +27,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/le-terro
 export default async function TerroirAubePage({ params }: PageProps<"/[locale]/le-terroir-de-laube">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
-  const [p, slugs] = await Promise.all([getTerroirAube(locale), getArticleSlugs()]);
+  const p = await getTerroirAube(locale);
   const t = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
   const tPro = await getTranslations("terroirPage");
@@ -61,7 +60,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         <ul className="mt-space-4 grid gap-space-3 sm:grid-cols-3">
           {p.cepagesTextes.map((c) => (
             <li key={c.cepage} className="flex flex-col items-center text-center">
-              <CepagePastille cepage={c.cepage} size={44} article={slugs.includes(ARTICLE_CEPAGE[c.cepage]) ? ARTICLE_CEPAGE[c.cepage] : undefined} />
+              <CepagePastille cepage={c.cepage} size={44} />
               <p className="mt-space-2 max-w-xs text-gris-chaud">{c.texte}</p>
             </li>
           ))}

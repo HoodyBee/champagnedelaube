@@ -30,6 +30,7 @@ export const structure: StructureResolver = (S) =>
       dossier(S, "notre-terroir", "Notre Terroir", [
         singleton(S, "terroirAube", "Les terroirs de l'Aube (page centrale)"),
         S.documentTypeListItem("terroir").title("Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande"),
+        S.documentTypeListItem("cepage").title("Les cépages (une fiche par cépage)"),
       ]),
       dossier(S, "notre-selection", "Notre sélection du moment", [
         pageFixe(S, "vignerons", "Page « Notre sélection du moment »"),
