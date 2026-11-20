@@ -109,7 +109,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                     </div>
                   );
                 })}
-                <Link href="/les-cepages-de-laube" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                <Link href="/cepages-champagne" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
                   {tC("tousLien")} <span aria-hidden="true">→</span>
                 </Link>
               </div>

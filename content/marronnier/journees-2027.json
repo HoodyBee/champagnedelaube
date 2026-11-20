@@ -441,7 +441,7 @@
    "en": "In Champagne, this rare grape is called fromenteau."
   },
   "aConfirmer": false,
-  "lien": "/les-cepages-de-laube/pinot-gris"
+  "lien": "/cepages-champagne/pinot-gris"
  },
  {
   "debut": "2027-05-21",
@@ -471,7 +471,7 @@
    "en": "The Thursday before the American Memorial Day. In Champagne, it is the grape of finesse."
   },
   "aConfirmer": false,
-  "lien": "/les-cepages-de-laube/chardonnay",
+  "lien": "/cepages-champagne/chardonnay",
   "regle": {
    "fr": "Jeudi avant le Memorial Day (USA)",
    "en": "Thursday before Memorial Day (USA)"
@@ -829,7 +829,7 @@
    "en": "Champagne's leading grape and king of the Côte des Bar."
   },
   "aConfirmer": false,
-  "lien": "/les-cepages-de-laube/pinot-noir"
+  "lien": "/cepages-champagne/pinot-noir"
  },
  {
   "debut": "2027-08-28",
@@ -1238,7 +1238,7 @@
    "en": "One of Champagne's three main grapes."
   },
   "aConfirmer": false,
-  "lien": "/les-cepages-de-laube/meunier"
+  "lien": "/cepages-champagne/meunier"
  },
  {
   "debut": "2027-12-20",

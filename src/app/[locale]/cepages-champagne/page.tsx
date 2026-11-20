@@ -11,17 +11,17 @@ import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
 import { getCepages, type CepagePage } from "@/sanity/content";
 
-const HREF = "/les-cepages-de-laube";
+const HREF = "/cepages-champagne";
 const GROUPES = ["grands", "rares", "nouveaux"] as const;
 
-export async function generateMetadata({ params }: PageProps<"/[locale]/les-cepages-de-laube">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/[locale]/cepages-champagne">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "cepagesPage" });
   return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription") });
 }
 
 /** Page générale « Les cépages de l'appellation Champagne » : intro, puis les 8 cépages, avec une ancre chacun (#pinot-noir…). */
-export default async function CepagesPage({ params }: PageProps<"/[locale]/les-cepages-de-laube">) {
+export default async function CepagesPage({ params }: PageProps<"/[locale]/cepages-champagne">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const liste = await getCepages(locale);
@@ -39,7 +39,7 @@ export default async function CepagesPage({ params }: PageProps<"/[locale]/les-c
       </p>
       <p className="mt-space-2 flex-1 text-gris-chaud">{c.resume}</p>
       <Link
-        href={{ pathname: "/les-cepages-de-laube/[cepage]", params: { cepage: c.cle } }}
+        href={{ pathname: "/cepages-champagne/[cepage]", params: { cepage: c.cle } }}
         className="mt-space-2 inline-flex min-h-11 items-center gap-space-1 self-start text-sur-titre-petit text-anthracite underline decoration-or underline-offset-4 hover:text-bronze"
         aria-label={t("enSavoirPlus", { nom: c.nom })}
       >

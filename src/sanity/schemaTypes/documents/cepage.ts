@@ -3,7 +3,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 import { cepages } from "../../../lib/brand";
 
 /**
- * Les cépages de l'appellation Champagne : une fiche par cépage (page /les-cepages-de-laube/<cépage>/).
+ * Les cépages de l'appellation Champagne : une fiche par cépage (page /cepages-champagne/<cépage>/).
  * Tant que « Accroche » et « Texte de la page » sont vides, la page affiche les textes sourcés
  * rédigés dans le dépôt (src/lib/cepages-contenu.ts) ; la photo et la galerie viennent toujours d'ici.
  */

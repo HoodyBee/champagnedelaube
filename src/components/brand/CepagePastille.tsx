@@ -9,7 +9,7 @@ import { CEPAGES_MASQUES } from "@/lib/cepages-contenu";
  * La pastille est un simple cadrage, à l'affichage, de la vignette officielle :
  * le fichier n'est ni modifié ni recoloré.
  */
-/** `lien` : toute la pastille mène à la page du cépage (/les-cepages-de-laube/<cépage>/). */
+/** `lien` : toute la pastille mène à la page du cépage (/cepages-champagne/<cépage>/). */
 export function CepagePastille({
   cepage,
   size = 32,
@@ -67,7 +67,7 @@ export function CepagePastille({
   // Toute la pastille est un lien vers la page du cépage.
   return avecLien ? (
     <Link
-      href={{ pathname: "/les-cepages-de-laube/[cepage]", params: { cepage } }}
+      href={{ pathname: "/cepages-champagne/[cepage]", params: { cepage } }}
       className="group inline-flex items-center gap-space-1 rounded-etiquette transition-transform hover:-translate-y-px"
     >
       {contenu}

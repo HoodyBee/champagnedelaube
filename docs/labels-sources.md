@@ -52,3 +52,17 @@ Sources : [Demeter – fiche technique viticulture 2026](https://www.demeter.fr/
 
 ### 7. Indice nature
 Échelle **éditoriale** (la vôtre), pas une note officielle. Je n'y ai pas touché.
+
+## Corrections faites dans l'article (validées par Julien, retours PR #15)
+
+| Passage | Avant | Après | Source |
+|---|---|---|---|
+| HVE, pilier « eau » | « chaque goutte utilisée pour nettoyer la cave est comptée » | Le pilier porte sur l'**irrigation** des cultures ; en Champagne, le cahier des charges **interdit d'irriguer** la vigne, donc il est respecté d'office | Référentiel HVE 2022 (sources ci-dessus) · cahier des charges AOC Champagne, ch. I « Irrigation : l'irrigation est interdite » |
+| HVE, piliers | le paragraphe « irrigation » apparaissait **deux fois** | doublon supprimé (FR et EN) | — |
+| HVE, stratégie phytosanitaire | « uniquement si la météo l'impose » | traitements raisonnés et notés selon la pression des maladies ; CMR 1 interdits depuis 2023 | Référentiel HVE 2022, note des Chambres d'agriculture |
+| Terra Vitis, traçabilité | « justifier qu'aucune alternative naturelle n'était possible pour sauver la récolte » | « il doit pouvoir le justifier » (règle exacte non publiée) | Chambre d'agriculture de Gironde, Terra Vitis |
+| Biodynamie | « Elle interdit tous les produits chimiques… et le calendrier lunaire » | reprend les règles du bio : pas de chimie de synthèse, **cuivre et soufre autorisés** en quantités encore plus limitées ; calendrier lunaire **souvent suivi, sans obligation** | Demeter (fiche viticulture 2026, comparatif bio/Demeter) · Réussir |
+| Demeter et Biodyvin | « Biodyvin est plus spécifique au monde viticole français… garantit des raisins sains et de haute qualité » | Demeter : marque internationale, toutes productions ; Biodyvin : réservé aux vignerons, admission avec dégustation ; les deux exigent la certification bio | Réussir – « Biodynamie, une démarche mais deux marques » · Demeter |
+
+Vérifié et **gardé tel quel** : HVE certification d'État, seul le niveau 3 porte un logo ; Terra Vitis propre au vin ; VDC propre à la Champagne (sols, eau, intrants, biodiversité, carbone ; 46 % des surfaces en 2022, d'où « une grande partie ») ; bio sans pesticides ni herbicides de synthèse, cuivre, soufre et désherbage mécanique ; climat humide qui favorise les maladies.
+Dans le **tableau**, la phrase Terra Vitis « que si la récolte est menacée » est gardée (votre texte) ; dites-moi si vous préférez « seulement quand c'est justifié ».

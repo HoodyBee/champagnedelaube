@@ -18,7 +18,7 @@ import { imageObject } from "@/lib/image-jsonld";
 import { nav, terroirPages } from "@/lib/site";
 import { getCepage, getVignerons } from "@/sanity/content";
 
-type Props = PageProps<"/[locale]/les-cepages-de-laube/[cepage]">;
+type Props = PageProps<"/[locale]/cepages-champagne/[cepage]">;
 /** false tant que les fiches des vignerons partenaires ne sont pas complètes (photo + cépages). */
 const AFFICHER_PARTENAIRES = false;
 const estCepage = (c: string): c is CepageKey => c in cepages && !CEPAGES_MASQUES.includes(c as CepageKey);
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const c = await getCepage(cepage, locale);
   return pageMetadata({
     locale,
-    href: { pathname: "/les-cepages-de-laube/[cepage]", params: { cepage } },
+    href: { pathname: "/cepages-champagne/[cepage]", params: { cepage } },
     seo: c.seo,
     title: c.seo.title ?? c.nom,
     description: c.seo.description ?? c.resume,
@@ -58,10 +58,10 @@ export default async function CepageDetailPage({ params }: Props) {
     <>
       <Breadcrumb
         locale={locale}
-        items={[{ label: tNav("terroirHub"), href: nav.terroirHub.href }, { label: t("titre"), href: "/les-cepages-de-laube" }, { label: c.nom }]}
+        items={[{ label: tNav("terroirHub"), href: nav.terroirHub.href }, { label: t("titre"), href: "/cepages-champagne" }, { label: c.nom }]}
       />
       <div className="mx-auto max-w-7xl px-space-2 pt-space-2 sm:px-space-4">
-        <Link href="/les-cepages-de-laube" className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit text-anthracite hover:text-bronze">
+        <Link href="/cepages-champagne" className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit text-anthracite hover:text-bronze">
           <span aria-hidden="true">←</span> {t("tous")}
         </Link>
       </div>
@@ -171,7 +171,7 @@ export default async function CepageDetailPage({ params }: Props) {
           ))}
         </ul>
         <div className="mt-space-4 text-center">
-          <Link href="/les-cepages-de-laube" className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit hover:text-bronze">
+          <Link href="/cepages-champagne" className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit hover:text-bronze">
             <span aria-hidden="true">←</span> {t("tous")}
           </Link>
         </div>

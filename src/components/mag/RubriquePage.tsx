@@ -80,7 +80,7 @@ export async function RubriquePage({ code, locale }: { code: string; locale: Loc
           <nav aria-label={t("sousParties.label")} className="mb-space-4 grid gap-space-3 sm:grid-cols-2">
             {(
               [
-                ["cepages", "/les-cepages-de-laube"],
+                ["cepages", "/cepages-champagne"],
                 ["terroirs", "/le-terroir-de-laube"],
               ] as const
             ).map(([cle, href]) => (

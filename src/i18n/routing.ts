@@ -48,20 +48,20 @@ export const routing = defineRouting({
 
     // Terroirs
     "/la-cote-des-bar": "/la-cote-des-bar",
-    // Les cépages : page générale et une page par cépage (/les-cepages-de-laube/pinot-noir/)
-    "/les-cepages-de-laube": {
-      fr: "/les-cepages-de-laube",
-      en: "/aube-grape-varieties",
-      nl: "/druivenrassen-van-de-aube",
-      it: "/vitigni-dellaube",
-      de: "/rebsorten-der-aube",
+    // Les cépages de l'appellation : page générale et une page par cépage (/cepages-champagne/pinot-noir/)
+    "/cepages-champagne": {
+      fr: "/cepages-champagne",
+      en: "/champagne-grape-varieties",
+      nl: "/champagne-druivenrassen",
+      it: "/vitigni-champagne",
+      de: "/champagner-rebsorten",
     },
-    "/les-cepages-de-laube/[cepage]": {
-      fr: "/les-cepages-de-laube/[cepage]",
-      en: "/aube-grape-varieties/[cepage]",
-      nl: "/druivenrassen-van-de-aube/[cepage]",
-      it: "/vitigni-dellaube/[cepage]",
-      de: "/rebsorten-der-aube/[cepage]",
+    "/cepages-champagne/[cepage]": {
+      fr: "/cepages-champagne/[cepage]",
+      en: "/champagne-grape-varieties/[cepage]",
+      nl: "/champagne-druivenrassen/[cepage]",
+      it: "/vitigni-champagne/[cepage]",
+      de: "/champagner-rebsorten/[cepage]",
     },
     "/les-riceys": "/les-riceys",
     // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires

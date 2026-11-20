@@ -79,10 +79,10 @@ const liensCourts: Redirect[] = [
   })),
 ];
 
-/** Étape 13 : chaque cépage a sa page ; les anciens articles du Mag y redirigent (FR et EN). */
+/** Étape 13 : chaque cépage a sa page ; les anciens articles du Mag y redirigent directement (FR et EN, sans chaîne). */
 const cepages: Redirect[] = Object.entries(ANCIEN_ARTICLE_CEPAGE).flatMap(([cle, slug]) => [
-  r(`/${slug}`, `/les-cepages-de-laube/${cle}/`),
-  r(`/en/${slug}`, `/en/aube-grape-varieties/${cle}/`),
+  r(`/${slug}`, `/cepages-champagne/${cle}/`),
+  r(`/en/${slug}`, `/en/champagne-grape-varieties/${cle}/`),
 ]);
 
 export const redirections: Redirect[] = [...pages, ...cepages, ...liensCourts];

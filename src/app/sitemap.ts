@@ -28,7 +28,7 @@ type Href = Parameters<typeof getPathname>[0]["href"];
 const PAGES: StaticPathname[] = [
   "/",
   "/le-terroir-de-laube",
-  "/les-cepages-de-laube",
+  "/cepages-champagne",
   "/la-cote-des-bar",
   "/les-riceys",
   "/montgueux",
@@ -67,7 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const hrefs: Href[] = [
     ...PAGES,
     ...(reglages.pepitesActive ? (["/ou-trouver-nos-pepites"] as Href[]) : []),
-    ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/les-cepages-de-laube/[cepage]", params: { cepage } }) as Href),
+    ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/cepages-champagne/[cepage]", params: { cepage } }) as Href),
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...rubriques.map((rubrique) => ({ pathname: "/le-mag/[rubrique]", params: { rubrique } }) as Href),
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
@@ -103,7 +103,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ? href
       : href.pathname === "/[article]"
         ? `article:${(href.params as { article: string }).article}`
-        : href.pathname === "/les-cepages-de-laube/[cepage]"
+        : href.pathname === "/cepages-champagne/[cepage]"
           ? `cepage:${(href.params as { cepage: string }).cepage}`
           : "";
 

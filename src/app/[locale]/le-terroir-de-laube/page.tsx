@@ -68,7 +68,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
           ))}
         </ul>
         <div className="mt-space-3 text-center">
-          <Link href="/les-cepages-de-laube" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+          <Link href="/cepages-champagne" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
             {tC("tousLien")} <span aria-hidden="true">→</span>
           </Link>
         </div>

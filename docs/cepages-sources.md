@@ -2,7 +2,7 @@
 
 > **Mise à jour (retours PR #15)** : la page générale s'appelle « Les cépages de l'appellation Champagne ». Le **voltis est masqué** pour l'instant (page en brouillon dans le Studio et dans le code : `CEPAGES_MASQUES` dans `src/lib/cepages-contenu.ts`) ; ses textes et ses sources sont gardés ci-dessous pour plus tard.
 
-Une page générale (`/les-cepages-de-laube/`, anglais `/en/aube-grape-varieties/`) et une page par cépage (`/les-cepages-de-laube/pinot-noir/`…). Textes dans `src/lib/cepages-contenu.ts` (français, anglais), repris des articles cépages du Mag et complétés. Photos : fiches **Cépage** du Studio (menu **Notre Terroir → Les cépages**). Si vous remplissez « Accroche » et « Texte de la page » dans une fiche, ce texte remplace celui du dépôt.
+Une page générale (`/cepages-champagne/`, anglais `/en/champagne-grape-varieties/`) et une page par cépage (`/cepages-champagne/pinot-noir/`…). Textes dans `src/lib/cepages-contenu.ts` (français, anglais), repris des articles cépages du Mag et complétés. Photos : fiches **Cépage** du Studio (menu **Notre Terroir → Les cépages**). Si vous remplissez « Accroche » et « Texte de la page » dans une fiche, ce texte remplace celui du dépôt.
 
 Règle : chaque fait est recoupé par **au moins deux sources** ; une partie sans source n'est pas écrite (ex. pas de partie « culture » pour le pinot blanc, le pinot gris ni le chardonnay rose).
 
@@ -52,14 +52,14 @@ Tous les autres faits (rôle de chaque cépage dans l'assemblage, blanc de noirs
 
 | Ancienne adresse (FR et `/en/…`) | Nouvelle adresse |
 |---|---|
-| `/pinot-noir-champagne/` | `/les-cepages-de-laube/pinot-noir/` |
-| `/meunier-cepage-champagne/` | `/les-cepages-de-laube/meunier/` |
-| `/chardonnay-champagne/` | `/les-cepages-de-laube/chardonnay/` |
-| `/chardonnay-rose-champagne/` | `/les-cepages-de-laube/chardonnay-rose/` |
-| `/pinot-blanc-champagne/` | `/les-cepages-de-laube/pinot-blanc/` |
-| `/pinot-gris-fromenteau-champagne/` | `/les-cepages-de-laube/pinot-gris/` |
-| `/arbane-cepage-champagne/` | `/les-cepages-de-laube/arbane/` |
-| `/petit-meslier-cepage-champagne/` | `/les-cepages-de-laube/petit-meslier/` |
+| `/pinot-noir-champagne/` | `/cepages-champagne/pinot-noir/` |
+| `/meunier-cepage-champagne/` | `/cepages-champagne/meunier/` |
+| `/chardonnay-champagne/` | `/cepages-champagne/chardonnay/` |
+| `/chardonnay-rose-champagne/` | `/cepages-champagne/chardonnay-rose/` |
+| `/pinot-blanc-champagne/` | `/cepages-champagne/pinot-blanc/` |
+| `/pinot-gris-fromenteau-champagne/` | `/cepages-champagne/pinot-gris/` |
+| `/arbane-cepage-champagne/` | `/cepages-champagne/arbane/` |
+| `/petit-meslier-cepage-champagne/` | `/cepages-champagne/petit-meslier/` |
 
 Les 8 anciens articles sont **masqués, pas supprimés** : ils sont repassés en brouillon dans le Studio. L'article « Qu'est-ce qu'un cépage ? » reste dans Le Mag (rubrique Tout savoir).
 
