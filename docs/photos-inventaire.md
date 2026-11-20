@@ -24,6 +24,13 @@
 | Écartées : personnelle | 2 |
 | Écartées : hors sujet ou prudence | 8 |
 
+## Retours PR #15 (novembre 2026)
+
+- **Raisins** : d'après Julien, tous les raisins noirs du lot sont du **pinot noir** et tous les blancs du **chardonnay** (Polisy et Celles 2026, pressoir et caisses 2024, véraison, grappes vertes, #4, #95). Textes alternatifs et étiquettes `cepage-pinot-noir` / `cepage-chardonnay` mis à jour dans la Médiathèque.
+- **Meunier** : la bouteille #78/#79 est un Coteaux champenois rouge (Morize Père & Fils, Les Riceys), **pas du meunier**. Aucune photo de meunier dans le lot : la page Meunier n'a pas de photo.
+- **Les Riceys** : dans la galerie, le service d'un verre (#149, trop proche du verre #147) est remplacé par l'étiquette du rosé de saignée (#45).
+- **Cépages rares** : photos de vignes, de fleurs ou de jeunes pousses avec la légende « (illustration) » (voir `docs/cepages-sources.md`).
+
 ## À valider par Julien (Pétré avant 2025)
 
 Photos d'avant le 1er janvier 2025 où l'on voit une bouteille, une étiquette ou un verre Daniel Pétré & Fils, ou une bouteille illisible (dans le doute). **Ni sur le site, ni dans Sanity.** Dites-moi lesquelles je peux utiliser.
@@ -345,7 +352,7 @@ Photos d'avant le 1er janvier 2025 où l'on voit une bouteille, une étiquette o
 | 89 | PXL_20240810_172851922.jpg | grappes-vertes-vigne-ete-champagne.jpg | 2024-08-10 | non renseignée (pas de GPS) | Grappes vertes avant la véraison (cépage incertain) | bonne, 2268×4032 | Article « Le petit meslier » (en attendant une photo du cépage) |
 | 90 | PXL_20240810_172852989.jpg | — | 2024-08-10 | non renseignée (pas de GPS) | Grappes vertes | bonne, 2268×4032 | écartée : doublon |
 | 94 | PXL_20240821_162545956.jpg | veraison-raisin-vigne-champagne.jpg | 2024-08-21 | non renseignée (pas de GPS) | Grappes en cours de véraison (raisin noir) | bonne, 2268×4032 | Article « Le pinot gris » (en attendant une photo du cépage) |
-| 95 | PXL_20240821_163646865.jpg | — | 2024-08-21 | non renseignée (pas de GPS) | Grappes de raisin vert (cépage incertain) | bonne, 2268×4032 | disponible (Médiathèque à venir : non envoyée) |
+| 95 | PXL_20240821_163646865.jpg | — | 2024-08-21 | non renseignée (pas de GPS) | Grappe de chardonnay (confirmé par Julien, retours PR #15) | bonne, 2268×4032 | envoyée : `grappe-chardonnay-vigne-champagne.jpg`, page Chardonnay |
 
 ### vignes-et-vendanges/travaux-de-la-vigne
 
@@ -364,7 +371,7 @@ Photos d'avant le 1er janvier 2025 où l'on voit une bouteille, une étiquette o
 | N° | Fichier d'origine | Nouveau nom | Date | Commune | Thème | Qualité | Usage |
 |---|---|---|---|---|---|---|---|
 | 99 | PXL_20240916_171333040.jpg | raisins-noirs-pressoir-vendanges-2024.jpg | 2024-09-16 | non renseignée (pas de GPS) | Raisins noirs vendangés dans le pressoir (2024) | bonne, 2268×4032 | Médiathèque (vendanges) |
-| 100 | PXL_20240916_173009549.jpg | — | 2024-09-16 | non renseignée (pas de GPS) | Caisses de raisins noirs (2024) | moyenne, 2268×4032 | disponible (Médiathèque à venir : non envoyée) |
+| 100 | PXL_20240916_173009549.jpg | — | 2024-09-16 | non renseignée (pas de GPS) | Caisses de pinot noir (2024, confirmé par Julien) | moyenne, 2268×4032 | envoyée : `caisses-pinot-noir-vendanges-2024.jpg`, galerie Pinot noir |
 | 191 | PXL_20260821_121318241.jpg | caisses-raisins-vendanges-champagne-polisy-2026.jpg | 2026-08-21 | Polisy (10) | Caisses de raisins noirs, vendanges 2026 à Polisy | bonne, 6144×8160 | Côte des Bar : galerie |
 | 192 | PXL_20260821_121416843.jpg | grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg | 2026-08-21 | Polisy (10) | Caisses de raisins noirs, vendanges 2026 à Polisy | bonne, 6144×8160 | Côte des Bar : galerie ; Accueil : section terroirs |
 | 193 | PXL_20260821_130946820.jpg | vendanges-champagne-cote-des-bar-2026.jpg | 2026-08-21 | Celles-sur-Ource (10) | Caisses de vendange sur le tracteur, Celles-sur-Ource | bonne, 6144×8160 | Côte des Bar : galerie |
