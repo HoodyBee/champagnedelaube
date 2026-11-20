@@ -2,6 +2,7 @@
 // Sources et points vérifiés : docs/labels-sources.md. Logos officiels dans public/labels/.
 // Colonne « Label » : le logo officiel ; `logos` vide = logo pas encore fourni (sigle affiché à la place).
 import type { Locale } from "@/i18n/routing";
+import { typoFr } from "./typo";
 
 type T = { fr: string; en: string };
 export type LabelLigne = {
@@ -99,4 +100,4 @@ export const ENTETES: Record<"label" | "demarche" | "pesticides" | "promesse" | 
   legende: { fr: "Comparatif des labels environnementaux du vin", en: "Comparison of environmental wine labels" },
 };
 
-export const tl = (v: T, locale: Locale) => (locale === "fr" ? v.fr : v.en);
+export const tl = (v: T, locale: Locale) => (locale === "fr" ? typoFr(v.fr) : v.en);

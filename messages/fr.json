@@ -3,13 +3,13 @@
     "siteName": "Champagne de l'Aube",
     "tagline": "Terroirs et champagnes de caractère",
     "defaultTitle": "Champagne de l'Aube — Terroirs et champagnes de caractère",
-    "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
+    "defaultDescription": "Découvrez le champagne de l'Aube et ses vignerons : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande."
   },
   "nav": {
     "vignerons": "Notre sélection du moment",
     "tasting": "Dégustations privées",
     "proChr": "Restaurants, cavistes, hôtels",
-    "proVignerons": "Vignerons : devenez partenaire",
+    "proVignerons": "Vignerons : devenez partenaire",
     "recettes": "Accords mets et champagne",
     "toutSavoir": "Tout savoir sur le champagne",
     "contact": "Contact",
@@ -36,7 +36,7 @@
   },
   "langSwitcher": {
     "label": "Choisir la langue",
-    "current": "Langue : {language}"
+    "current": "Langue : {language}"
   },
   "legal": {
     "health": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération.",
@@ -57,11 +57,11 @@
   },
   "ageGate": {
     "eyebrow": "Bienvenue",
-    "title": "Avez-vous l'âge légal pour consommer de l'alcool ?",
-    "text": "Ce site présente des boissons alcoolisées. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
+    "title": "Avez-vous l'âge légal pour consommer de l'alcool ?",
+    "text": "Ce site présente des boissons alcoolisées. Pour le consulter, vous devez avoir l'âge légal de consommer de l'alcool dans votre pays : 18 ans en France.",
     "confirm": "J'ai 18 ans ou plus",
     "deny": "Je n'ai pas 18 ans",
-    "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",
+    "denied": "Merci de votre honnêteté. Ce site est réservé aux personnes majeures : revenez nous voir plus tard !",
     "remember": "Votre réponse est mémorisée pendant un an dans un cookie technique, sans aucun suivi."
   },
   "social": {
@@ -130,12 +130,12 @@
     "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
     "heroIntro": "À la rencontre des vignerons indépendants, des terroirs et des cuvées de caractère. Une sélection singulière, portée par un passionné au cœur de l'Aube.",
     "heroCtaTerroir": "Découvrir le terroir",
-    "entreesTitre": "Pour qui ?",
+    "entreesTitre": "Pour qui ?",
     "terroirSurTitre": "Le terroir",
     "terroirTitre": "La Côte des Bar et l'Aube, au sud de la Champagne",
     "terroirTexte": "L'Aube compte quatre terroirs. La Côte des Bar, sur ses marnes kimméridgiennes, est le pays du pinot noir. Les Riceys sont le seul village champenois à posséder trois appellations. Montgueux, colline de craie aux portes de Troyes, est la terre du chardonnay. Villenauxe-la-Grande regarde vers le Sézannais.",
     "terroirCta": "Découvrir le terroir de l'Aube",
-    "reassuranceTitre": "Pourquoi Champagne de l'Aube ?",
+    "reassuranceTitre": "Pourquoi Champagne de l'Aube ?",
     "reassurance": {
       "selection": {
         "titre": "Vignerons indépendants",
@@ -184,19 +184,19 @@
     "degustCtaSecondaire": "En savoir plus",
     "proSurTitre": "Espace Pro & Entreprises",
     "proTitre": "Votre interlocuteur auprès des vignerons de l'Aube",
-    "proIntro": "Nous représentons des domaines indépendants auprès des professionnels et des entreprises : nous les présentons, nous vous conseillons et nous développons leur présence, avec un seul interlocuteur.",
+    "proIntro": "Nous représentons des domaines indépendants auprès des professionnels et des entreprises : nous les présentons, nous vous conseillons et nous développons leur présence, avec un seul interlocuteur.",
     "proCarteTitre": "Restaurants, cavistes, hôtels",
-    "proCarteTexte": "Bars, traiteurs et épiceries fines aussi : une carte de champagnes de vignerons, aux tarifs pro, et une dégustation avec votre équipe.",
+    "proCarteTexte": "Bars, traiteurs et épiceries fines aussi : une carte de champagnes de vignerons, aux tarifs pro, et une dégustation avec votre équipe.",
     "proCarteCta": "Découvrir l'offre pro",
     "entCarteTitre": "Entreprises & CSE",
     "entCarteTexte": "Des coffrets composés avec des vignerons de l'Aube et des dégustations pour vos équipes et vos clients.",
     "entCarteCta": "Découvrir l'offre entreprises",
     "magSurTitre": "Le Mag du Champagne",
     "magTitre": "Histoires de vignerons, de terroirs et d'accords",
-    "magIntro": "Portraits, cépages, accords mets et champagnes, découvertes : le champagne de l'Aube raconté par ceux qui le font.",
+    "magIntro": "Portraits, cépages, accords mets et champagnes, découvertes : le champagne de l'Aube raconté par ceux qui le font.",
     "magCta": "Lire Le Mag du Champagne",
-    "finalTitre": "Une question, un projet ?",
-    "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
+    "finalTitre": "Une question, un projet ?",
+    "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
     "finalCta": "Nous écrire",
     "heroCtaDegustation": "Réserver une dégustation",
     "pepitesLien": "Découvrir toute notre sélection",
@@ -210,7 +210,7 @@
       },
       "interlocuteur": {
         "titre": "Interlocuteur unique",
-        "texte": "Un seul contact pour plusieurs domaines : sélection, échantillons et suivi."
+        "texte": "Un seul contact pour plusieurs domaines : sélection, échantillons et suivi."
       },
       "degustation": {
         "titre": "Dégustation sur place",
@@ -336,7 +336,7 @@
       "number": "Indiquez un nombre valide.",
       "date": "Indiquez une date valide.",
       "tooLong": "Ce texte est trop long.",
-      "majeur": "Cochez cette case pour continuer : ce service est réservé aux personnes majeures.",
+      "majeur": "Cochez cette case pour continuer : ce service est réservé aux personnes majeures.",
       "emailOrPhone": "Indiquez au moins un e-mail ou un téléphone pour que nous puissions vous répondre.",
       "invalid": "Certains champs sont à corriger, voir ci-dessous.",
       "spam": "Votre demande n'a pas pu être envoyée. Merci de patienter quelques secondes puis de réessayer.",
@@ -349,28 +349,28 @@
     "choose": "Choisir…",
     "majeur": "Je certifie avoir 18 ans ou plus",
     "requiredHint": "* Champs obligatoires.",
-    "rgpd": "Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. En savoir plus : <link>politique de confidentialité</link>.",
+    "rgpd": "Vos informations servent uniquement à répondre à votre demande et ne sont jamais revendues. En savoir plus : <link>politique de confidentialité</link>.",
     "sending": "Envoi en cours…",
     "success": {
-      "title": "Merci !",
+      "title": "Merci !",
       "text": "Nous revenons vers vous très vite.",
       "download": "Télécharger la brochure (PDF)",
       "brochureByEmail": "Nous vous envoyons la brochure par e-mail très prochainement.",
-      "newsletter": "Pour recevoir les actualités, il reste une étape : cliquez sur le lien de confirmation que nous venons de vous envoyer par e-mail.",
-      "catalogueSent": "Notre sélection est en route : vous la trouverez dans votre boîte mail d'ici quelques minutes.",
+      "newsletter": "Pour recevoir les actualités, il reste une étape : cliquez sur le lien de confirmation que nous venons de vous envoyer par e-mail.",
+      "catalogueSent": "Notre sélection est en route : vous la trouverez dans votre boîte mail d'ici quelques minutes.",
       "catalogueSoon": "Nous vous envoyons notre sélection très vite par e-mail.",
       "downloadMarronnier": "Télécharger le calendrier (PDF)",
-      "marronnier": "Le calendrier est prêt : le lien vient aussi de partir dans votre boîte mail."
+      "marronnier": "Le calendrier est prêt : le lien vient aussi de partir dans votre boîte mail."
     },
     "ack": {
-      "subject": "Champagne de l'Aube : votre demande est bien reçue",
+      "subject": "Champagne de l'Aube : votre demande est bien reçue",
       "hello": "Bonjour,",
       "body": "Merci pour votre message ({form}). Nous l'avons bien reçu et nous revenons vers vous très vite.",
-      "brochure": "Votre brochure est disponible ici :",
+      "brochure": "Votre brochure est disponible ici :",
       "signature": "À très bientôt,\nJulien Mineo",
-      "catalogue": "Voici notre sélection du moment, à télécharger ici :",
+      "catalogue": "Voici notre sélection du moment, à télécharger ici :",
       "catalogueSoon": "Nous vous envoyons notre sélection du moment très vite, par retour d'e-mail.",
-      "marronnier": "Votre calendrier est prêt : vous pouvez le télécharger ici :"
+      "marronnier": "Votre calendrier est prêt : vous pouvez le télécharger ici :"
     },
     "newsletterOptIn": "Je souhaite recevoir les actualités de Champagne de l'Aube (vignerons, dégustations, événements).",
     "faisonsConnaissance": "Faisons connaissance",
@@ -382,12 +382,12 @@
   },
   "contactPage": {
     "title": "Contact",
-    "intro": "Une question sur une cuvée, une dégustation, un coffret ou un partenariat ? Écrivez-nous : nous vous répondons personnellement.",
-    "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de vignerons de l'Aube.",
+    "intro": "Une question sur une cuvée, une dégustation, un coffret ou un partenariat ? Écrivez-nous : nous vous répondons personnellement.",
+    "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de vignerons de l'Aube.",
     "details": "Coordonnées",
     "formTitle": "Faisons connaissance",
-    "vousEtes": "Vous êtes… ?",
-    "vousEtesAide": "Choisissez votre profil : le formulaire s'adapte à votre demande.",
+    "vousEtes": "Vous êtes… ?",
+    "vousEtesAide": "Choisissez votre profil : le formulaire s'adapte à votre demande.",
     "profils": {
       "particulier": {
         "titre": "Particulier",
@@ -407,19 +407,19 @@
       "degustation": "Réserver une dégustation",
       "evenement": "Préparer un grand événement"
     },
-    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
+    "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
     "metaTitle": "Nous contacter à Troyes"
   },
   "newsletter": {
     "bar": {
-      "text": "Vignerons, dégustations, événements dans l'Aube :",
+      "text": "Vignerons, dégustations, événements dans l'Aube :",
       "cta": "recevoir les actualités",
       "close": "Fermer ce bandeau"
     },
     "surTitre": "Newsletter",
     "title": "Les actualités des vignerons de l'Aube",
     "intro": "Recevez par e-mail les nouvelles des domaines que nous suivons, les dates des prochaines dégustations et les rendez-vous dans l'Aube.",
-    "metaDescription": "Inscrivez-vous aux actualités de Champagne de l'Aube : vignerons indépendants de la Côte des Bar et de l'Aube, dégustations à Troyes, événements.",
+    "metaDescription": "Inscrivez-vous aux actualités de Champagne de l'Aube : vignerons indépendants de la Côte des Bar et de l'Aube, dégustations à Troyes, événements.",
     "points": {
       "vignerons": "Les portraits et nouvelles des vignerons indépendants",
       "degustations": "Les dates des prochains ateliers de dégustation à Troyes",
@@ -436,7 +436,7 @@
     "errors": {
       "required": "Indiquez votre adresse e-mail.",
       "email": "Cette adresse e-mail ne semble pas valide.",
-      "majeur": "Cochez cette case : ce service est réservé aux personnes majeures.",
+      "majeur": "Cochez cette case : ce service est réservé aux personnes majeures.",
       "consentement": "Cochez cette case pour recevoir les actualités.",
       "invalid": "Certains champs sont à corriger.",
       "spam": "Merci de patienter quelques secondes puis de réessayer.",
@@ -454,22 +454,22 @@
       "intro": "Un dernier clic pour recevoir les actualités de Champagne de l'Aube.",
       "button": "Confirmer mon inscription",
       "sending": "Confirmation…",
-      "success": "C'est fait, merci !",
+      "success": "C'est fait, merci !",
       "successText": "Votre inscription est confirmée. Vous pourrez vous désinscrire à tout moment grâce au lien présent dans chaque e-mail.",
       "invalid": "Ce lien de confirmation n'est pas valide.",
       "expired": "Ce lien de confirmation a expiré.",
       "error": "Un problème technique a empêché la confirmation.",
-      "retry": "Vous pouvez recommencer l'inscription : un nouveau lien vous sera envoyé.",
+      "retry": "Vous pouvez recommencer l'inscription : un nouveau lien vous sera envoyé.",
       "retryButton": "Recommencer l'inscription",
       "backHome": "Retour à l'accueil"
     },
     "email": {
       "subject": "Confirmez votre inscription aux actualités de Champagne de l'Aube",
       "hello": "Bonjour,",
-      "body": "Merci de votre intérêt pour les vignerons de l'Aube ! Pour confirmer votre inscription aux actualités de Champagne de l'Aube, cliquez sur le lien ci-dessous :",
+      "body": "Merci de votre intérêt pour les vignerons de l'Aube ! Pour confirmer votre inscription aux actualités de Champagne de l'Aube, cliquez sur le lien ci-dessous :",
       "button": "Confirmer mon inscription",
       "expiry": "Ce lien est valable 7 jours.",
-      "ignore": "Si vous n'êtes pas à l'origine de cette demande, ignorez simplement cet e-mail : vous ne serez pas inscrit.",
+      "ignore": "Si vous n'êtes pas à l'origine de cette demande, ignorez simplement cet e-mail : vous ne serez pas inscrit.",
       "signature": "À très bientôt,\nJulien Mineo · Champagne de l'Aube"
     },
     "footer": {
@@ -480,29 +480,29 @@
   },
   "privacy": {
     "title": "Politique de confidentialité",
-    "metaDescription": "Comment Champagne de l'Aube collecte et protège vos données personnelles : formulaires, newsletter, sous-traitants (Brevo, Netlify), cookies et vos droits.",
-    "updated": "Dernière mise à jour : novembre 2026",
+    "metaDescription": "Comment Champagne de l'Aube collecte et protège vos données personnelles : formulaires, newsletter, sous-traitants (Brevo, Netlify), cookies et vos droits.",
+    "updated": "Dernière mise à jour : novembre 2026",
     "intro": "Cette page explique simplement quelles données personnelles nous collectons sur ce site, pourquoi, avec qui elles sont partagées et comment exercer vos droits.",
     "sections": {
       "responsable": {
         "title": "Responsable du traitement",
-        "text": "Champagne de l'Aube, Julien Mineo, entrepreneur individuel (micro-entreprise), SIRET 527 744 528 00029. Siège administratif : {adresse}.\nContact : contact@champagnedelaube.fr"
+        "text": "Champagne de l'Aube, Julien Mineo, entrepreneur individuel (micro-entreprise), SIRET 527 744 528 00029. Siège administratif : {adresse}.\nContact : contact@champagnedelaube.fr"
       },
       "donnees": {
         "title": "Données collectées",
-        "text": "• Formulaires (devis, réservation, inscription, contact) : nom, e-mail et/ou téléphone, établissement ou entreprise, ville, nombre de personnes, date souhaitée, message.\n• Newsletter : adresse e-mail, langue, page d'inscription et date de votre consentement.\n• Dans tous les cas : la confirmation que vous avez 18 ans ou plus, la langue du site et la page d'où vous écrivez."
+        "text": "• Formulaires (devis, réservation, inscription, contact) : nom, e-mail et/ou téléphone, établissement ou entreprise, ville, nombre de personnes, date souhaitée, message.\n• Newsletter : adresse e-mail, langue, page d'inscription et date de votre consentement.\n• Dans tous les cas : la confirmation que vous avez 18 ans ou plus, la langue du site et la page d'où vous écrivez."
       },
       "finalites": {
         "title": "Pourquoi ces données sont utilisées",
-        "text": "• Répondre à votre demande et préparer un devis ou une réservation (mesures précontractuelles).\n• Suivre notre échange : votre contact est enregistré dans notre carnet d'adresses (Brevo), classé selon votre profil (professionnel, entreprise, particulier, vigneron) (intérêt légitime). Vous ne recevez pas la newsletter pour autant.\n• Vous envoyer les actualités, uniquement si vous l'avez demandé et confirmé en cliquant sur le lien reçu par e-mail (consentement).\n• Protéger les formulaires contre les envois automatiques (intérêt légitime)."
+        "text": "• Répondre à votre demande et préparer un devis ou une réservation (mesures précontractuelles).\n• Suivre notre échange : votre contact est enregistré dans notre carnet d'adresses (Brevo), classé selon votre profil (professionnel, entreprise, particulier, vigneron) (intérêt légitime). Vous ne recevez pas la newsletter pour autant.\n• Vous envoyer les actualités, uniquement si vous l'avez demandé et confirmé en cliquant sur le lien reçu par e-mail (consentement).\n• Protéger les formulaires contre les envois automatiques (intérêt légitime)."
       },
       "destinataires": {
         "title": "Qui a accès à vos données",
-        "text": "Vos données ne sont jamais vendues ni louées. Seul Julien Mineo y a accès, ainsi que ces prestataires techniques (sous-traitants), pour les besoins du site :\n• Brevo (Sendinblue SAS, France) : envoi des e-mails et carnet d'adresses. Données hébergées dans l'Union européenne.\n• Netlify (États-Unis) : hébergement du site. Transferts encadrés par les clauses contractuelles types de la Commission européenne.\n• Sanity (États-Unis) : gestion des textes et photos du site. Aucune donnée des formulaires n'y est enregistrée.\n• Cloudflare Turnstile (si activé) : protection anti-robots des formulaires, sans cookie publicitaire."
+        "text": "Vos données ne sont jamais vendues ni louées. Seul Julien Mineo y a accès, ainsi que ces prestataires techniques (sous-traitants), pour les besoins du site :\n• Brevo (Sendinblue SAS, France) : envoi des e-mails et carnet d'adresses. Données hébergées dans l'Union européenne.\n• Netlify (États-Unis) : hébergement du site. Transferts encadrés par les clauses contractuelles types de la Commission européenne.\n• Sanity (États-Unis) : gestion des textes et photos du site. Aucune donnée des formulaires n'y est enregistrée.\n• Cloudflare Turnstile (si activé) : protection anti-robots des formulaires, sans cookie publicitaire."
       },
       "conservation": {
         "title": "Combien de temps",
-        "text": "• Demandes et contacts : 3 ans après notre dernier échange, puis suppression.\n• Newsletter : jusqu'à votre désinscription (un lien figure dans chaque e-mail). La preuve de votre consentement est conservée tant que vous êtes inscrit."
+        "text": "• Demandes et contacts : 3 ans après notre dernier échange, puis suppression.\n• Newsletter : jusqu'à votre désinscription (un lien figure dans chaque e-mail). La preuve de votre consentement est conservée tant que vous êtes inscrit."
       },
       "droits": {
         "title": "Vos droits",
@@ -510,18 +510,18 @@
       },
       "cookies": {
         "title": "Cookies et stockage dans le navigateur",
-        "text": "Ce site n'utilise aucun cookie publicitaire ni de mesure d'audience. Il enregistre seulement, dans votre navigateur, des informations techniques indispensables :\n• cda_age (cookie et stockage local, 1 an) : votre réponse à la vérification de l'âge ;\n• NEXT_LOCALE (cookie, durée de la visite) : la langue choisie ;\n• cda_nl_bar (stockage local) : le bandeau des actualités que vous avez fermé."
+        "text": "Ce site n'utilise aucun cookie publicitaire ni de mesure d'audience. Il enregistre seulement, dans votre navigateur, des informations techniques indispensables :\n• cda_age (cookie et stockage local, 1 an) : votre réponse à la vérification de l'âge ;\n• NEXT_LOCALE (cookie, durée de la visite) : la langue choisie ;\n• cda_nl_bar (stockage local) : le bandeau des actualités que vous avez fermé."
       }
     }
   },
   "proPage": {
     "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
-    "metaDescription": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte : tarifs directs domaine, interlocuteur unique, dégustation dans votre établissement.",
+    "metaDescription": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte : tarifs directs domaine, interlocuteur unique, dégustation dans votre établissement.",
     "h1": "Des champagnes de vignerons de l'Aube pour votre carte",
-    "intro": "Nous représentons des vignerons indépendants de l'Aube auprès des professionnels : nous les présentons, nous vous conseillons pour votre carte et nous développons leur présence chez vous. Tarifs pro, un interlocuteur unique et une dégustation avec votre équipe.",
+    "intro": "Nous représentons des vignerons indépendants de l'Aube auprès des professionnels : nous les présentons, nous vous conseillons pour votre carte et nous développons leur présence chez vous. Tarifs pro, un interlocuteur unique et une dégustation avec votre équipe.",
     "ctaGrille": "Recevoir notre sélection et ses tarifs pro",
     "ctaDegustation": "Organiser une dégustation",
-    "profilsTitre": "Pour quels établissements ?",
+    "profilsTitre": "Pour quels établissements ?",
     "profils": {
       "restaurants": {
         "titre": "Restaurants",
@@ -550,17 +550,17 @@
     "grilleTexte": "Nous vous envoyons par e-mail la sélection du moment, avec les tarifs pro de chaque domaine.",
     "degustationTitre": "Organiser une dégustation dans votre établissement",
     "degustationTexte": "Nous venons présenter une sélection de cuvées à votre équipe, dans votre établissement.",
-    "partenaireTitre": "Vous êtes vigneron ?",
-    "partenaireTexte": "Présentez-nous votre domaine : la sélection reste volontairement courte.",
+    "partenaireTitre": "Vous êtes vigneron ?",
+    "partenaireTexte": "Présentez-nous votre domaine : la sélection reste volontairement courte.",
     "partenaireCta": "Devenir partenaire",
     "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines"
   },
   "vigneronsPage": {
-    "metaTitle": "Notre sélection du moment : champagnes de vignerons de l'Aube | Champagne de l'Aube",
-    "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
+    "metaTitle": "Notre sélection du moment : champagnes de vignerons de l'Aube | Champagne de l'Aube",
+    "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
     "surTitre": "Cuvées, découvertes et coups de cœur",
     "h1": "Notre sélection du moment",
-    "intro": "Une sélection vivante, qui évolue au fil des rencontres : des domaines indépendants de l'Aube, leurs cuvées et les personnes qui les élaborent.",
+    "intro": "Une sélection vivante, qui évolue au fil des rencontres : des domaines indépendants de l'Aube, leurs cuvées et les personnes qui les élaborent.",
     "filtres": "Filtrer les domaines",
     "tous": "Tous",
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
@@ -578,7 +578,7 @@
     "labels": "Labels et certifications",
     "site": "Site du domaine",
     "galerie": "En images",
-    "ctaProTitre": "Restaurant, caviste, hôtel ?",
+    "ctaProTitre": "Restaurant, caviste, hôtel ?",
     "ctaProTexte": "Recevez notre sélection et ses tarifs pro.",
     "ctaPartTitre": "Découvrir ses cuvées",
     "ctaPartTexte": "À Troyes ou chez vous, lors d'une dégustation de 6 à 13 personnes.",
@@ -586,11 +586,11 @@
     "autres": "D'autres vignerons de la sélection"
   },
   "partenairePage": {
-    "metaTitle": "Vignerons de l'Aube : devenez partenaire | Champagne de l'Aube",
-    "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "metaTitle": "Vignerons de l'Aube : devenez partenaire | Champagne de l'Aube",
+    "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "surTitre": "Vignerons de l'Aube",
-    "h1": "Vignerons : devenez partenaire",
-    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Nous présentons une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "h1": "Vignerons : devenez partenaire",
+    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Nous présentons une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "points": {
       "selection": {
         "titre": "Une sélection courte",
@@ -606,12 +606,12 @@
       }
     },
     "formTitre": "Présentez-nous votre domaine",
-    "formTexte": "Quelques mots sur votre domaine et vos cuvées : nous vous recontactons pour une rencontre au domaine."
+    "formTexte": "Quelques mots sur votre domaine et vos cuvées : nous vous recontactons pour une rencontre au domaine."
   },
   "selection": {
     "surTitre": "Le catalogue",
     "titre": "Notre sélection évolue au fil des rencontres",
-    "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
+    "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
     "bouton": "Recevoir notre sélection",
     "dialogTitre": "Recevez notre sélection",
     "dialogTexte": "Les domaines du moment, leurs villages et leurs cuvées, dans un document envoyé par e-mail.",
@@ -619,9 +619,9 @@
     "decouvrirDomaine": "Découvrir le domaine"
   },
   "degustationsPage": {
-    "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue.",
+    "intro": "À Troyes ou chez vous, autour d'une table de 6 à 13 personnes, nous vous présentons des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler. Une heure et demie, avec un quiz, pour comprendre ce qui les distingue.",
     "metaTitle": "Dégustations privées de champagne à Troyes, dans l'Aube ou chez vous | Champagne de l'Aube",
-    "metaDescription": "Des dégustations privées sur mesure pour découvrir les champagnes de vignerons indépendants de l'Aube : à Troyes, dans l'Aube ou chez vous. La Côte des Bar vient à vous.",
+    "metaDescription": "Des dégustations privées sur mesure pour découvrir les champagnes de vignerons indépendants de l'Aube : à Troyes, dans l'Aube ou chez vous. La Côte des Bar vient à vous.",
     "surTitre": "Troyes · Aube · Chez vous",
     "h1": "Dégustations privées",
     "ctaReserver": "Réserver une dégustation",
@@ -641,25 +641,25 @@
       }
     },
     "experiencesTitre": "Nos formats de dégustation",
-    "experiencesIntro": "Chaque dégustation vous présente des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler.",
-    "aucuneExperience": "Nos formats de dégustation sont en préparation. Dites-nous ce que vous imaginez : nous revenons vers vous très vite.",
+    "experiencesIntro": "Chaque dégustation vous présente des vignerons de notre sélection : leur village, leurs parcelles, leur façon de travailler.",
+    "aucuneExperience": "Nos formats de dégustation sont en préparation. Dites-nous ce que vous imaginez : nous revenons vers vous très vite.",
     "reserverTitre": "Réserver une dégustation",
-    "reserverTexte": "Le nombre de personnes, la date qui vous convient, à Troyes ou chez vous : nous revenons vers vous très vite pour confirmer.",
+    "reserverTexte": "Le nombre de personnes, la date qui vous convient, à Troyes ou chez vous : nous revenons vers vous très vite pour confirmer.",
     "rendezVousTitre": "Nos prochains rendez-vous",
     "places": "{places} places",
     "complet": "Complet",
     "prix": "{prix} € par personne",
     "inscription": "S'inscrire",
-    "inscriptionTitre": "S'inscrire : {titre}",
+    "inscriptionTitre": "S'inscrire : {titre}",
     "carte": "Voir sur la carte",
-    "privesTitre": "Un mariage, un baptême, une commande groupée ?",
+    "privesTitre": "Un mariage, un baptême, une commande groupée ?",
     "privesTexte": "Nous vous conseillons des champagnes de vignerons pour vos grandes occasions, aux tarifs directs vignerons.",
     "accroche": "Le champagne se découvre, se partage et se raconte.",
-    "texte": "Le temps d'une dégustation privée, découvrez les champagnes de vignerons indépendants de l'Aube, leurs terroirs et ceux qui les élaborent. Entre amis, en famille ou pour une occasion particulière, nous composons avec vous un moment sur mesure. À Troyes, ailleurs dans l'Aube ou selon vos envies : la Côte des Bar vient à vous.",
+    "texte": "Le temps d'une dégustation privée, découvrez les champagnes de vignerons indépendants de l'Aube, leurs terroirs et ceux qui les élaborent. Entre amis, en famille ou pour une occasion particulière, nous composons avec vous un moment sur mesure. À Troyes, ailleurs dans l'Aube ou selon vos envies : la Côte des Bar vient à vous.",
     "signature": "La Côte des Bar vient à vous.",
     "ctaOrganiser": "Organiser une dégustation privée",
     "surMesureTitre": "Un moment sur mesure",
-    "occasionsTitre": "Pour quelle occasion ?",
+    "occasionsTitre": "Pour quelle occasion ?",
     "occasions": {
       "amis": "Entre amis",
       "famille": "En famille",
@@ -668,29 +668,29 @@
       "sejour": "Un séjour touristique",
       "entreprise": "Une entreprise ou un événement professionnel"
     },
-    "lieuxTitre": "Où ?",
-    "lieuxIntro": "Selon votre demande : nous venons à vous, ou nous vous accueillons.",
+    "lieuxTitre": "Où ?",
+    "lieuxIntro": "Selon votre demande : nous venons à vous, ou nous vous accueillons.",
     "lieux": {
       "domicile": "À domicile",
       "privatise": "Dans un lieu privatisé",
       "partenaire": "Chez un partenaire",
       "troyes": "À Troyes"
     },
-    "touristesTitre": "De passage à Troyes ?",
-    "touristesTexte": "Découvrez les champagnes de la Côte des Bar sans prendre la route des vignobles : nous vous les faisons goûter à Troyes, avec l'histoire de leurs villages et de leurs vignerons.",
+    "touristesTitre": "De passage à Troyes ?",
+    "touristesTexte": "Découvrez les champagnes de la Côte des Bar sans prendre la route des vignobles : nous vous les faisons goûter à Troyes, avec l'histoire de leurs villages et de leurs vignerons.",
     "formTitre": "Organiser une dégustation privée",
-    "formTexte": "L'occasion, le lieu, le nombre de personnes, une date : quelques mots suffisent. Nous revenons vers vous très vite avec une proposition.",
-    "evenementsTitre": "Un mariage, un baptême, une commande groupée ?",
+    "formTexte": "L'occasion, le lieu, le nombre de personnes, une date : quelques mots suffisent. Nous revenons vers vous très vite avec une proposition.",
+    "evenementsTitre": "Un mariage, un baptême, une commande groupée ?",
     "touristesLien": "Que faire à Troyes autour du champagne"
   },
   "evenementsPage": {
     "metaTitle": "Champagne pour mariage à Troyes et dans l'Aube | Champagne de l'Aube",
-    "metaDescription": "Mariage, baptême, commande groupée : choisissez des champagnes de vignerons de l'Aube avec nos conseils et des tarifs directs vignerons.",
+    "metaDescription": "Mariage, baptême, commande groupée : choisissez des champagnes de vignerons de l'Aube avec nos conseils et des tarifs directs vignerons.",
     "surTitre": "Mariage · Baptême · Commandes groupées",
     "h1": "Champagne pour mariage et grands événements",
-    "intro": "Besoin d'un champagne pour une grande occasion, un mariage, un baptême, ou d'une commande groupée ? Bénéficiez de nos conseils et de tarifs directs vignerons, avec des domaines de notre sélection.",
+    "intro": "Besoin d'un champagne pour une grande occasion, un mariage, un baptême, ou d'une commande groupée ? Bénéficiez de nos conseils et de tarifs directs vignerons, avec des domaines de notre sélection.",
     "cta": "Demander conseil pour mon événement",
-    "occasionsTitre": "Pour quelle occasion ?",
+    "occasionsTitre": "Pour quelle occasion ?",
     "occasions": {
       "mariage": {
         "titre": "Mariage",
@@ -702,18 +702,18 @@
       },
       "famille": {
         "titre": "Anniversaires et fêtes de famille",
-        "texte": "Une date qui compte, un repas qui réunit : nous vous orientons vers des domaines de notre sélection, de la Côte des Bar aux Riceys."
+        "texte": "Une date qui compte, un repas qui réunit : nous vous orientons vers des domaines de notre sélection, de la Côte des Bar aux Riceys."
       },
       "groupee": {
         "titre": "Commandes groupées",
-        "texte": "Associations, comités, amis : regroupez vos commandes et profitez de tarifs directs vignerons."
+        "texte": "Associations, comités, amis : regroupez vos commandes et profitez de tarifs directs vignerons."
       }
     },
-    "etapesTitre": "Comment ça se passe ?",
+    "etapesTitre": "Comment ça se passe ?",
     "etapes": {
       "1": {
         "titre": "Parlez-nous de votre événement",
-        "texte": "La date, le nombre d'invités, le menu, votre budget : quelques lignes suffisent."
+        "texte": "La date, le nombre d'invités, le menu, votre budget : quelques lignes suffisent."
       },
       "2": {
         "titre": "Nous vous conseillons",
@@ -726,14 +726,14 @@
     },
     "faqTitre": "Vos questions",
     "formTitre": "Demander conseil pour mon événement",
-    "formTexte": "Racontez-nous votre projet : nous revenons vers vous très vite avec des propositions."
+    "formTexte": "Racontez-nous votre projet : nous revenons vers vous très vite avec des propositions."
   },
   "mag": {
-    "metaTitle": "Le Mag du Champagne : vignerons, terroirs et accords de l'Aube | Champagne de l'Aube",
+    "metaTitle": "Le Mag du Champagne : vignerons, terroirs et accords de l'Aube | Champagne de l'Aube",
     "metaDescription": "Tout savoir sur le champagne, accords mets & champagne et portraits de vignerons de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande.",
     "surTitre": "Portraits, terroirs, accords",
     "h1": "Le Mag du Champagne",
-    "intro": "Des vignerons, des villages, des cépages et des accords : les histoires que nous rapportons du terrain, de Montgueux aux Riceys.",
+    "intro": "Des vignerons, des villages, des cépages et des accords : les histoires que nous rapportons du terrain, de Montgueux aux Riceys.",
     "filtres": "Filtrer par rubrique",
     "tous": "Tout",
     "count": "{count, plural, one {# article} other {# articles}}",
@@ -756,25 +756,25 @@
     "rubriquesIntro": {
       "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons.",
       "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
-      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
-      "portraits": "À la rencontre de vignerons, d'artisans et de passionnés : leur histoire, leur savoir-faire, ce qui les anime.",
-      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois."
+      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
+      "portraits": "À la rencontre de vignerons, d'artisans et de passionnés : leur histoire, leur savoir-faire, ce qui les anime.",
+      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois."
     },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles",
     "dansLeMag": "Pour aller plus loin",
     "plusLoin": "Continuer la découverte",
     "rubriquesNav": "Les rubriques du Mag",
-    "tousArticlesRubrique": "Tous les articles « {rubrique} »",
+    "tousArticlesRubrique": "Tous les articles « {rubrique} »",
     "lienDegustations": "Nos dégustations privées de champagnes de vignerons, à Troyes ou chez vous",
-    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons",
+    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons",
     "sousParties": {
       "label": "Les dossiers de Tout savoir",
       "surTitre": "Tout savoir",
       "cepagesTitre": "Les cépages de l'appellation Champagne",
-      "cepagesTexte": "Les huit cépages de l'appellation : ce qu'ils apportent, et où ils poussent dans l'Aube.",
+      "cepagesTexte": "Les huit cépages de l'appellation : ce qu'ils apportent, et où ils poussent dans l'Aube.",
       "terroirsTitre": "Terroirs",
-      "terroirsTexte": "La Côte des Bar, Les Riceys, Montgueux et Villenauxe-la-Grande : sols, climat et villages.",
+      "terroirsTexte": "La Côte des Bar, Les Riceys, Montgueux et Villenauxe-la-Grande : sols, climat et villages.",
       "voir": "Découvrir"
     }
   },
@@ -804,7 +804,7 @@
         "Terroirs, cépages et vignerons racontés simplement"
       ]
     },
-    "argumentsTitre": "Pourquoi nous confier vos cadeaux ?",
+    "argumentsTitre": "Pourquoi nous confier vos cadeaux ?",
     "arguments": {
       "interlocuteur": {
         "titre": "Un interlocuteur unique",
@@ -820,17 +820,17 @@
       }
     },
     "devisTitre": "Demander un devis sur-mesure",
-    "devisTexte": "Coffrets, animation ou les deux : décrivez-nous votre projet, nous revenons vers vous très vite avec une proposition.",
+    "devisTexte": "Coffrets, animation ou les deux : décrivez-nous votre projet, nous revenons vers vous très vite avec une proposition.",
     "brochureTitre": "Recevoir la brochure CSE",
     "brochureTexte": "Nos offres pour les comités d'entreprise, à télécharger ou à recevoir par e-mail."
   },
   "experiencePage": {
-    "metaTitle": "{titre} : dégustation de champagne à Troyes | Champagne de l'Aube",
+    "metaTitle": "{titre} : dégustation de champagne à Troyes | Champagne de l'Aube",
     "inclus": "Ce qui est compris",
     "lieu": "Le lieu",
     "vignerons": "Les vignerons de cette dégustation",
     "galerie": "En images",
-    "reserverTitre": "Réserver : {titre}",
+    "reserverTitre": "Réserver : {titre}",
     "autres": "Nos autres dégustations"
   },
   "terroirPage": {
@@ -848,16 +848,16 @@
       "rares": "Les cépages rares",
       "nouveau": "Le nouveau venu"
     },
-    "troyesLien": "Troyes et son vignoble : Montgueux à une dizaine de kilomètres, la Côte des Bar à une demi-heure"
+    "troyesLien": "Troyes et son vignoble : Montgueux à une dizaine de kilomètres, la Côte des Bar à une demi-heure"
   },
   "legalNoticePage": {
     "title": "Mentions légales",
-    "metaDescription": "Mentions légales du site champagnedelaube.fr : éditeur, hébergement, propriété intellectuelle et données personnelles.",
-    "updated": "Mise à jour : novembre 2026",
+    "metaDescription": "Mentions légales du site champagnedelaube.fr : éditeur, hébergement, propriété intellectuelle et données personnelles.",
+    "updated": "Mise à jour : novembre 2026",
     "sections": {
       "editeur": {
         "title": "Éditeur du site",
-        "text": "Le site champagnedelaube.fr est édité par Champagne de l'Aube, activité de Julien Mineo, entrepreneur individuel sous le régime de la micro-entreprise (même entreprise que Detectezmoi.com).\n• SIRET : 527 744 528 00029\n• Siège administratif : {adresse}\n{mention}\n• E-mail : contact@champagnedelaube.fr"
+        "text": "Le site champagnedelaube.fr est édité par Champagne de l'Aube, activité de Julien Mineo, entrepreneur individuel sous le régime de la micro-entreprise (même entreprise que Detectezmoi.com).\n• SIRET : 527 744 528 00029\n• Siège administratif : {adresse}\n{mention}\n• E-mail : contact@champagnedelaube.fr"
       },
       "directeur": {
         "title": "Directeur de la publication",
@@ -869,23 +869,23 @@
       },
       "hebergement": {
         "title": "Hébergement",
-        "text": "• Hébergeur du site : Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis (www.netlify.com).\n• Contenus éditoriaux et images : Sanity AS, Norvège (www.sanity.io).\n• Nom de domaine : enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France."
+        "text": "• Hébergeur du site : Netlify, Inc., 101 2nd Street, San Francisco, CA 94105, États-Unis (www.netlify.com).\n• Contenus éditoriaux et images : Sanity AS, Norvège (www.sanity.io).\n• Nom de domaine : enregistré auprès d'OVH SAS, 2 rue Kellermann, 59100 Roubaix, France."
       },
       "propriete": {
         "title": "Propriété intellectuelle",
-        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nPhotographies : © Champagne de l'Aube / Detectezmoi.com, sauf mention contraire (voir « Crédits photos »)."
+        "text": "L'ensemble des contenus de ce site (textes, photographies, logos, pictogrammes, mise en page) est protégé par le droit d'auteur. Toute reproduction ou réutilisation, totale ou partielle, sans autorisation écrite préalable est interdite.\nLes noms et logos des domaines présentés restent la propriété de leurs titulaires.\nPhotographies : © Champagne de l'Aube / Detectezmoi.com, sauf mention contraire (voir « Crédits photos »)."
       },
       "credits": {
         "title": "Crédits photos",
-        "text": "Crédits photos :"
+        "text": "Crédits photos :"
       },
       "donnees": {
         "title": "Données personnelles",
-        "text": "Les informations envoyées par les formulaires servent uniquement à répondre à vos demandes et, si vous l'avez accepté, à vous envoyer nos actualités. Elles sont gérées avec Brevo (envoi des e-mails et carnet d'adresses) et transitent par notre hébergeur, Netlify. Elles ne sont jamais vendues.\nVous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition : écrivez à contact@champagnedelaube.fr. Vous pouvez aussi adresser une réclamation à la CNIL (www.cnil.fr).\nLe détail des traitements et des durées de conservation figure dans notre politique de confidentialité."
+        "text": "Les informations envoyées par les formulaires servent uniquement à répondre à vos demandes et, si vous l'avez accepté, à vous envoyer nos actualités. Elles sont gérées avec Brevo (envoi des e-mails et carnet d'adresses) et transitent par notre hébergeur, Netlify. Elles ne sont jamais vendues.\nVous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition : écrivez à contact@champagnedelaube.fr. Vous pouvez aussi adresser une réclamation à la CNIL (www.cnil.fr).\nLe détail des traitements et des durées de conservation figure dans notre politique de confidentialité."
       },
       "cookies": {
         "title": "Cookies",
-        "text": "Le site n'utilise aucun cookie de mesure d'audience ni de publicité.\nUn seul cookie technique, « cda_age », garde pendant un an votre réponse à la fenêtre de vérification de l'âge. Indispensable au fonctionnement du site, il ne nécessite pas de consentement.\nVotre navigateur retient aussi, sans cookie, votre choix de fermer le bandeau des actualités."
+        "text": "Le site n'utilise aucun cookie de mesure d'audience ni de publicité.\nUn seul cookie technique, « cda_age », garde pendant un an votre réponse à la fenêtre de vérification de l'âge. Indispensable au fonctionnement du site, il ne nécessite pas de consentement.\nVotre navigateur retient aussi, sans cookie, votre choix de fermer le bandeau des actualités."
       },
       "alcool": {
         "title": "Alcool et mineurs",
@@ -894,7 +894,7 @@
     },
     "privacyLink": "Consulter la politique de confidentialité",
     "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous.",
-    "creditsBanques": "Photos issues de banques d'images, avec leur auteur et leur licence :",
+    "creditsBanques": "Photos issues de banques d'images, avec leur auteur et leur licence :",
     "creditsAucuneBanque": "Aucune photo de banque d'images n'est utilisée pour le moment."
   },
   "calendrier": {
@@ -914,7 +914,7 @@
     "colCategorie": "Catégorie",
     "colAnecdote": "Le petit plus",
     "aConfirmer": "à confirmer",
-    "regle": "Règle : {regle}",
+    "regle": "Règle : {regle}",
     "aucune": "Aucune date pour ce filtre.",
     "resultats": "{count, plural, =0 {aucune date} one {# date} other {# dates}}",
     "lienExterne": "site officiel",
@@ -936,13 +936,13 @@
     "pdfTelecharger": "Télécharger le calendrier (PDF)",
     "pdfSurTitre": "Le Mag du Champagne · Champagne de l'Aube",
     "pdfDocTitre": "Le marronnier {annee} du vin et de la gastronomie",
-    "pdfIntro": "Journées des cépages, de la gastronomie et des spiritueux, grands rendez-vous et nos événements : le calendrier éditorial pour préparer vos publications et vos animations. Dates vérifiées ; « à confirmer » quand l'organisateur ne les a pas encore annoncées."
+    "pdfIntro": "Journées des cépages, de la gastronomie et des spiritueux, grands rendez-vous et nos événements : le calendrier éditorial pour préparer vos publications et vos animations. Dates vérifiées ; « à confirmer » quand l'organisateur ne les a pas encore annoncées."
   },
   "cepagesPage": {
     "surTitre": "Notre terroir",
     "titre": "Les cépages de l'appellation Champagne",
     "metaTitle": "Les cépages de l'appellation Champagne",
-    "metaDescription": "Les 8 cépages de l'appellation Champagne : pinot noir, chardonnay, meunier et cépages rares. Ce qu'ils apportent, et leur place dans l'Aube.",
+    "metaDescription": "Les 8 cépages de l'appellation Champagne : pinot noir, chardonnay, meunier et cépages rares. Ce qu'ils apportent, et leur place dans l'Aube.",
     "listeTitre": "Tous les cépages de l'appellation",
     "listeIntro": "Le cahier des charges de l'appellation Champagne (version homologuée en 2025) autorise huit cépages principaux.",
     "groupes": {
@@ -950,7 +950,7 @@
       "rares": "Les cépages rares et anciens",
       "nouveaux": "Les nouveaux venus"
     },
-    "enSavoirPlus": "En savoir plus : {nom}",
+    "enSavoirPlus": "En savoir plus : {nom}",
     "enSavoirPlusCourt": "En savoir plus",
     "tous": "Tous les cépages",
     "statutPrincipal": "Cépage principal de l'appellation",
@@ -965,19 +965,19 @@
     "tastingBouton": "Venir le goûter en dégustation",
     "sourcesNote": "Chaque fait de cette page est recoupé par au moins deux sources. Les chiffres qui divergent d'une source à l'autre ne sont pas donnés.",
     "illustration": "Photo d'illustration",
-    "intro": "Le champagne naît de huit cépages autorisés par l'appellation : trois grands, le pinot noir, le chardonnay et le meunier, et cinq plus rares. Dans l'Aube, le pinot noir est majoritaire dans la [Côte des Bar](/la-cote-des-bar), tandis que le chardonnay domine à [Montgueux](/montgueux) et à [Villenauxe-la-Grande](/villenauxe-la-grande). Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
-    "gouterTitre": "Envie de le goûter ?",
-    "gouterTexte": "Recevez notre sélection de champagnes de vignerons de l'Aube : nous vous la présentons cuvée par cuvée.",
+    "intro": "Le champagne naît de huit cépages autorisés par l'appellation : trois grands, le pinot noir, le chardonnay et le meunier, et cinq plus rares. Dans l'Aube, le pinot noir est majoritaire dans la [Côte des Bar](/la-cote-des-bar), tandis que le chardonnay domine à [Montgueux](/montgueux) et à [Villenauxe-la-Grande](/villenauxe-la-grande). Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
+    "gouterTitre": "Envie de le goûter ?",
+    "gouterTexte": "Recevez notre sélection de champagnes de vignerons de l'Aube : nous vous la présentons cuvée par cuvée.",
     "tousLien": "Tous les cépages de l'appellation"
   },
   "communicationPage": {
     "surTitre": "Espace Pro",
     "titre": "Communication & marketing",
     "metaTitle": "Communication et marketing pour vignerons, caves et restaurants",
-    "metaDescription": "Photo, vidéo, réseaux sociaux : les services de communication de Detectezmoi.com pour les vignerons, caves, bars et restaurants.",
+    "metaDescription": "Photo, vidéo, réseaux sociaux : les services de communication de Detectezmoi.com pour les vignerons, caves, bars et restaurants.",
     "intro": "Champagne de l'Aube est porté par Detectezmoi.com. Nous proposons aussi nos services de communication aux professionnels du vin et de la table.",
     "servicesTitre": "Nos services",
-    "publicTitre": "Pour qui ?",
+    "publicTitre": "Pour qui ?",
     "services": {
       "photo": "Photo",
       "video": "Vidéo",
@@ -998,24 +998,24 @@
     "surTitre": "Espace Pro",
     "titre": "Nos partenaires",
     "metaTitle": "Nos vignerons partenaires dans l'Aube",
-    "metaDescription": "Les vignerons de l'Aube partenaires de Champagne de l'Aube : Moutard*Dangin à Polisy et Mennetrier à Arrentières.",
-    "intro": "Les vignerons avec qui nous travaillons au quotidien : nous présentons leurs champagnes lors de nos dégustations et auprès des professionnels.",
-    "devenir": "Vous êtes vigneron dans l'Aube ?",
+    "metaDescription": "Les vignerons de l'Aube partenaires de Champagne de l'Aube : Moutard*Dangin à Polisy et Mennetrier à Arrentières.",
+    "intro": "Les vignerons avec qui nous travaillons au quotidien : nous présentons leurs champagnes lors de nos dégustations et auprès des professionnels.",
+    "devenir": "Vous êtes vigneron dans l'Aube ?",
     "devenirBouton": "Devenir partenaire"
   },
   "troyesPage": {
-    "metaTitle": "Champagne à Troyes : dégustation et vignoble tout proche",
-    "metaDescription": "Que faire à Troyes autour du champagne ? La ville des comtes de Champagne, le vignoble de Montgueux à 13 km, la Côte des Bar, et nos dégustations privées.",
+    "metaTitle": "Champagne à Troyes : dégustation et vignoble tout proche",
+    "metaDescription": "Que faire à Troyes autour du champagne ? La ville des comtes de Champagne, le vignoble de Montgueux à 13 km, la Côte des Bar, et nos dégustations privées.",
     "fil": "Troyes",
     "surTitre": "Troyes · Aube",
     "titre": "Le champagne à Troyes, au cœur de l'Aube",
-    "intro": "Troyes est la ville des comtes de Champagne, et le vignoble commence à ses portes : la colline de Montgueux est à une dizaine de kilomètres. C'est ici que nous organisons nos dégustations privées de champagnes de vignerons de l'Aube.",
+    "intro": "Troyes est la ville des comtes de Champagne, et le vignoble commence à ses portes : la colline de Montgueux est à une dizaine de kilomètres. C'est ici que nous organisons nos dégustations privées de champagnes de vignerons de l'Aube.",
     "cta": "Organiser une dégustation privée",
     "histoireTitre": "Troyes, capitale historique de la Champagne",
-    "histoire1": "Au Moyen Âge, Troyes est la capitale des comtes de Champagne. La ville prospère grâce aux foires de Champagne : six grandes foires rythment alors l'année dans la région, deux à Provins, une à Lagny, une à Bar-sur-Aube et deux à Troyes, la « foire chaude », l'été, et la « foire froide », à l'automne. Marchands et changeurs viennent de toute l'Europe.",
-    "histoire2": "Vu du ciel, le centre ancien a la forme d'un bouchon de champagne : les Troyens l'appellent d'ailleurs « le Bouchon ». Ses rues sont bordées de maisons à pans de bois, reconstruites pour beaucoup après le grand incendie de 1524. Une promenade à faire le nez en l'air, avant ou après une dégustation.",
+    "histoire1": "Au Moyen Âge, Troyes est la capitale des comtes de Champagne. La ville prospère grâce aux foires de Champagne : six grandes foires rythment alors l'année dans la région, deux à Provins, une à Lagny, une à Bar-sur-Aube et deux à Troyes, la « foire chaude », l'été, et la « foire froide », à l'automne. Marchands et changeurs viennent de toute l'Europe.",
+    "histoire2": "Vu du ciel, le centre ancien a la forme d'un bouchon de champagne : les Troyens l'appellent d'ailleurs « le Bouchon ». Ses rues sont bordées de maisons à pans de bois, reconstruites pour beaucoup après le grand incendie de 1524. Une promenade à faire le nez en l'air, avant ou après une dégustation.",
     "vignobleTitre": "La porte d'entrée du vignoble aubois",
-    "vignobleIntro": "Depuis Troyes, les vignes sont toutes proches. Quelques repères en voiture :",
+    "vignobleIntro": "Depuis Troyes, les vignes sont toutes proches. Quelques repères en voiture :",
     "trajets": {
       "montgueux": "Montgueux",
       "cdb": "Bar-sur-Seine (Côte des Bar)",
@@ -1028,13 +1028,13 @@
       "riceys": "environ 47 km · un peu moins d'une heure",
       "bsa": "environ 57 km · une heure environ"
     },
-    "trajetsNote": "Distances routières indicatives, de centre à centre, calculées avec OpenStreetMap ; temps hors trafic.",
+    "trajetsNote": "Distances routières indicatives, de centre à centre, calculées avec OpenStreetMap ; temps hors trafic.",
     "trajetsColLieu": "Destination",
     "trajetsColTrajet": "Depuis Troyes",
-    "vignobleTexte": "À Montgueux, la colline de craie est plantée surtout en chardonnay. Plus au sud, la Côte des Bar est le royaume du pinot noir, et Les Riceys produisent trois appellations : champagne, coteaux champenois et rosé des Riceys.",
-    "venirTitre": "De passage à Troyes ? Le champagne vient à vous",
-    "venirTexte1": "Vous n'avez pas le temps de prendre la route des vignobles ? Nous vous faisons goûter les champagnes de vignerons de l'Aube à Troyes, chez vous ou dans le lieu de votre choix, avec l'histoire de leurs villages et de ceux qui les élaborent.",
-    "venirTexte2": "Entre amis, en famille, pour une occasion particulière ou un séjour : dites-nous ce qui vous ferait plaisir, et nous composons la dégustation avec vous.",
+    "vignobleTexte": "À Montgueux, la colline de craie est plantée surtout en chardonnay. Plus au sud, la Côte des Bar est le royaume du pinot noir, et Les Riceys produisent trois appellations : champagne, coteaux champenois et rosé des Riceys.",
+    "venirTitre": "De passage à Troyes ? Le champagne vient à vous",
+    "venirTexte1": "Vous n'avez pas le temps de prendre la route des vignobles ? Nous vous faisons goûter les champagnes de vignerons de l'Aube à Troyes, chez vous ou dans le lieu de votre choix, avec l'histoire de leurs villages et de ceux qui les élaborent.",
+    "venirTexte2": "Entre amis, en famille, pour une occasion particulière ou un séjour : dites-nous ce qui vous ferait plaisir, et nous composons la dégustation avec vous.",
     "gastroTitre": "Champagne et gastronomie troyenne",
     "gastro1": "Troyes a ses spécialités. La plus célèbre est l'andouillette de Troyes, préparée avec du porc. Le chaource, fromage AOP à pâte molle et croûte fleurie, est fabriqué au sud de Troyes, dans l'Aube et l'Yonne voisine.",
     "gastro2": "Avec le chaource, un champagne de vigneron fait un bel accord, et le rosé des Riceys accompagne volontiers la cuisine du terroir. Pour d'autres idées, voyez nos [recettes et accords mets et champagne](/recettes-accords-mets-champagne).",
@@ -1054,11 +1054,11 @@
     "altAccord": "Chou à la crème servi avec un verre de champagne",
     "faqTitre": "Vos questions",
     "faq": {
-      "q1": "Où trouver des vignes près de Troyes ?",
+      "q1": "Où trouver des vignes près de Troyes ?",
       "r1": "La colline de Montgueux, à une dizaine de kilomètres à l'ouest de Troyes, est le vignoble le plus proche. Bar-sur-Seine, au cœur de la Côte des Bar, est à une trentaine de kilomètres au sud-est.",
-      "q2": "Peut-on faire une dégustation de champagne à Troyes ?",
-      "r2": "Oui : nous organisons des dégustations privées de champagnes de vignerons de l'Aube, à Troyes, chez vous ou dans un lieu de votre choix. Décrivez-nous votre projet et nous revenons vers vous avec une proposition.",
-      "q3": "Pourquoi le centre de Troyes s'appelle-t-il « le Bouchon » ?",
+      "q2": "Peut-on faire une dégustation de champagne à Troyes ?",
+      "r2": "Oui : nous organisons des dégustations privées de champagnes de vignerons de l'Aube, à Troyes, chez vous ou dans un lieu de votre choix. Décrivez-nous votre projet et nous revenons vers vous avec une proposition.",
+      "q3": "Pourquoi le centre de Troyes s'appelle-t-il « le Bouchon » ?",
       "r3": "Parce que, vu du ciel, le tracé du centre ancien a la forme d'un bouchon de champagne."
     }
   }

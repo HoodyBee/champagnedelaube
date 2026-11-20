@@ -10,6 +10,7 @@ import villenauxe from "../../content/terroirs/villenauxe.json";
 import { getPathname } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import type { CepageKey, TerroirKey } from "./brand";
+import { typoFr } from "./typo";
 
 export type T = Partial<Record<Locale, string>>;
 export type TerroirContenu = {
@@ -42,7 +43,7 @@ export const terroirsContenu = { "cote-des-bar": coteDesBar, "les-riceys": lesRi
 export const aubeContenu = aube as unknown as AubeContenu;
 
 /** Texte dans la langue demandée (secours : anglais, puis français). */
-export const tr = (v: T | undefined, locale: Locale) => v?.[locale] ?? v?.en ?? v?.fr ?? "";
+export const tr = (v: T | undefined, locale: Locale) => (locale === "fr" && v?.fr ? typoFr(v.fr) : (v?.[locale] ?? v?.en ?? v?.fr ?? ""));
 
 let n = 0;
 const key = () => `k${(n++).toString(36)}`;
