@@ -3,7 +3,7 @@
 import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { useEffect, useId, useRef, useState, type ComponentProps, type ReactNode } from "react";
 import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
@@ -12,7 +12,9 @@ import { nav, proEntreprises, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
-type Item = { href: AppPathname; label: string; color?: string; short?: string };
+type LinkHref = ComponentProps<typeof Link>["href"];
+/** `cle` : adresse interne en texte (comparaison avec la page en cours) ; `retrait` : sous-entrée (ex. Cépages sous Tout savoir). */
+type Item = { href: LinkHref; cle: string; label: string; color?: string; short?: string; retrait?: boolean };
 
 /**
  * En-tête en deux étages :
@@ -25,6 +27,7 @@ type Item = { href: AppPathname; label: string; color?: string; short?: string }
  */
 export function Header({ social, locales }: { social: Social; locales: readonly Locale[] }) {
   const t = useTranslations("nav");
+  const tMag = useTranslations("mag.rubriques");
   const tSocial = useTranslations("social");
   const socialLabels = {
     label: tSocial("label"),
@@ -55,19 +58,36 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
     };
   }, []);
 
-  const toItem = (p: { key: NavKey; href: AppPathname }): Item => ({ href: p.href, label: t(p.key) });
+  const toItem = (p: { key: NavKey; href: AppPathname }): Item => ({ href: p.href, cle: p.href, label: t(p.key) });
   const terroirItems: Item[] = terroirPages.map((p) => ({
     href: p.href,
+    cle: p.href,
     label: p.label,
     short: p.short,
     color: `var(--color-${terroirs[p.key].color})`,
   }));
   // Premier lien de chaque groupe : un libellé distinct du titre du groupe (pas de doublon).
-  const terroirMenu: Item[] = [{ href: nav.terroirHub.href, label: t("terroirHubLink") }, ...terroirItems];
+  const terroirMenu: Item[] = [
+    { href: nav.terroirHub.href, cle: nav.terroirHub.href, label: t("terroirHubLink") },
+    ...terroirItems,
+    { href: "/les-cepages-de-laube", cle: "/les-cepages-de-laube", label: t("cepages") },
+  ];
+  // Le Mag : tous les articles, puis les cinq rubriques (Cépages et Terroirs rangés sous « Tout savoir »).
+  const rubrique = (code: string, label: string): Item => ({ href: { pathname: "/le-mag/[rubrique]", params: { rubrique: code } }, cle: `/le-mag/${code}`, label });
+  const magMenu: Item[] = [
+    { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
+    rubrique("actualites", tMag("actualites")),
+    { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
+    { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
+    { href: "/les-cepages-de-laube", cle: "/les-cepages-de-laube#mag", label: t("cepages"), retrait: true },
+    { href: nav.terroirHub.href, cle: `${nav.terroirHub.href}#mag`, label: t("terroirs"), retrait: true },
+    rubrique("portraits", tMag("portraits")),
+    rubrique("autres-horizons", tMag("autresHorizons")),
+  ];
   const proItems = proEntreprises.map(toItem);
 
-  const isActive = (href: AppPathname) => pathname === href || pathname.startsWith(`${href}/`);
-  const isGroupActive = (items: Item[]) => items.some((i) => isActive(i.href));
+  const isActive = (href: string) => pathname === href || (href !== "/le-mag" && pathname.startsWith(`${href}/`));
+  const isGroupActive = (items: Item[]) => items.some((i) => isActive(i.cle));
 
   // Le menu mobile se ferme quand on change de page.
   const [lastPath, setLastPath] = useState(pathname);
@@ -96,14 +116,14 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
           <nav aria-label={t("terroirBand")} className="hidden lg:block">
             <ul className="flex items-center justify-center gap-space-1">
               {terroirItems.map((item, i) => (
-                <li key={item.href} className="flex items-center gap-space-1">
+                <li key={item.cle} className="flex items-center gap-space-1">
                   {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud">·</span>}
                   <Link
                     href={item.href}
                     tabIndex={compact ? -1 : undefined}
-                    aria-current={isActive(item.href) ? "page" : undefined}
+                    aria-current={isActive(item.cle) ? "page" : undefined}
                     className={`inline-flex items-center gap-[6px] py-1 text-sur-titre-petit transition-colors hover:text-bronze ${
-                      isActive(item.href) ? "text-bronze" : "text-gris-chaud"
+                      isActive(item.cle) ? "text-bronze" : "text-gris-chaud"
                     }`}
                   >
                     <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
@@ -152,7 +172,7 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
                     <NavLink href={nav.particuliers[0].href} active={isActive(nav.particuliers[0].href)}>{t("tasting")}</NavLink>
                   </li>
                   <li>
-                    <NavLink href={nav.mag.href} active={isActive(nav.mag.href)}>{t("mag")}</NavLink>
+                    <Dropdown label={t("mag")} items={magMenu} active={pathname.startsWith("/le-mag") || isGroupActive(magMenu)} isActive={isActive} />
                   </li>
                 </ul>
               </nav>
@@ -198,10 +218,10 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
           { title: t("terroirHub"), items: terroirMenu },
           { items: [toItem(nav.vignerons)] },
           { items: [toItem(nav.particuliers[0])] },
-          { items: [toItem(nav.mag)] },
+          { title: t("mag"), items: magMenu },
           { title: t("proEntreprises"), items: proItems },
         ]}
-        contact={{ href: "/contact", label: t("contact") }}
+        contact={{ href: "/contact", cle: "/contact", label: t("contact") }}
         isActive={isActive}
         locales={locales}
         social={<SocialLinks links={social} labels={socialLabels} className="-ml-3" linkClassName="text-anthracite hover:text-bronze" />}
@@ -235,7 +255,7 @@ function Dropdown({
   label: string;
   items: Item[];
   active: boolean;
-  isActive: (href: AppPathname) => boolean;
+  isActive: (href: string) => boolean;
   align?: "left" | "right";
 }) {
   const [open, setOpen] = useState(false);
@@ -313,15 +333,16 @@ function Dropdown({
           >
             <ul className="w-72 overflow-hidden rounded-carte border border-filet bg-blanc py-space-1 shadow-[0_8px_24px_rgba(30,30,32,0.08)]">
               {items.map((item) => (
-                <li key={item.href}>
+                <li key={item.cle}>
                   <Link
                     href={item.href}
-                    aria-current={isActive(item.href) ? "page" : undefined}
+                    aria-current={isActive(item.cle) ? "page" : undefined}
                     onClick={() => setOpen(false)}
-                    className={`flex min-h-11 items-center gap-space-1 px-space-2 py-space-1 leading-snug transition-colors hover:bg-creme-clair ${
-                      isActive(item.href) ? "text-bronze" : ""
-                    }`}
+                    className={`flex min-h-11 items-center gap-space-1 py-space-1 leading-snug transition-colors hover:bg-creme-clair hover:text-bronze ${
+                      item.retrait ? "pl-space-4 pr-space-2 text-[0.9375rem] text-gris-chaud" : "px-space-2"
+                    } ${isActive(item.cle) ? "text-bronze" : ""}`}
                   >
+                    {item.retrait && <span aria-hidden="true">↳</span>}
                     {item.color && (
                       <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
                     )}
@@ -351,7 +372,7 @@ function MobileMenu({
   onClose: () => void;
   groups: { title?: string; items: Item[] }[];
   contact: Item;
-  isActive: (href: AppPathname) => boolean;
+  isActive: (href: string) => boolean;
   locales: readonly Locale[];
 }) {
   const t = useTranslations("nav");
@@ -406,19 +427,20 @@ function MobileMenu({
           </div>
           <nav aria-label={t("mainNav")} className="mx-auto max-w-xl px-space-2 pb-space-5 pt-space-1 sm:px-space-4">
             {groups.map((group) => (
-              <div key={group.title ?? group.items[0].href} className="border-b border-filet py-space-2">
+              <div key={group.title ?? group.items[0].cle} className="border-b border-filet py-space-2">
                 {group.title && <p className="text-sur-titre text-bronze">{group.title}</p>}
                 <ul className={group.title ? "mt-space-1" : ""}>
                   {group.items.map((item) => (
-                    <li key={item.href}>
+                    <li key={item.cle}>
                       <Link
                         href={item.href}
-                        aria-current={isActive(item.href) ? "page" : undefined}
+                        aria-current={isActive(item.cle) ? "page" : undefined}
                         onClick={onClose}
-                        className={`flex min-h-11 items-center gap-space-1 text-[1.125rem] ${
-                          isActive(item.href) ? "text-bronze" : ""
+                        className={`flex min-h-11 items-center gap-space-1 ${item.retrait ? "pl-space-3 text-[1rem] text-gris-chaud" : "text-[1.125rem]"} ${
+                          isActive(item.cle) ? "text-bronze" : ""
                         }`}
                       >
+                        {item.retrait && <span aria-hidden="true">↳</span>}
                         {item.color && (
                           <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
                         )}

@@ -32,6 +32,11 @@ const pages: Redirect[] = [
   r("/le-mag/accords", "/recettes-accords-mets-champagne/"),
   r("/en/le-mag/tout-savoir", "/en/all-about-champagne/"),
   r("/en/le-mag/accords", "/en/champagne-food-pairing-recipes/"),
+  // Étape 13 : rubriques fusionnées (Terroirs & cépages -> Tout savoir ; Œnotourisme -> Autres horizons).
+  r("/le-mag/terroirs-cepages", "/tout-savoir-sur-le-champagne/"),
+  r("/en/le-mag/terroirs-cepages", "/en/all-about-champagne/"),
+  r("/le-mag/oenotourisme", "/le-mag/autres-horizons/"),
+  r("/en/le-mag/oenotourisme", "/en/le-mag/autres-horizons/"),
   // Article remplacé par le marronnier 2027 (novembre 2026).
   r("/journees-du-champagne-et-des-cepages", "/marronnier-2027-calendrier-vin-gastronomie/"),
   r("/en/journees-du-champagne-et-des-cepages", "/en/marronnier-2027-calendrier-vin-gastronomie/"),

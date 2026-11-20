@@ -28,7 +28,12 @@
     "menu": "Menu",
     "proEntreprises": "Trade & Business",
     "terroirHubLink": "The Aube terroirs",
-    "tastingLink": "All our tastings"
+    "tastingLink": "All our tastings",
+    "communication": "Communication & marketing",
+    "partenaires": "Our partners",
+    "cepages": "Aube grape varieties",
+    "terroirs": "Terroirs",
+    "magTout": "All articles"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -561,7 +566,8 @@
     "tous": "All",
     "aucun": "No estate matches this filter at the moment.",
     "count": "{count, plural, one {# estate} other {# estates}}",
-    "domainesTitre": "The estates in the selection"
+    "domainesTitre": "The estates in the selection",
+    "bientot": "Our selection grows as we meet new winemakers. More estates will be joining us soon."
   },
   "vigneronPage": {
     "metaTitle": "{nom}, winemaker in {village} | Champagne de l'Aube",
@@ -740,21 +746,19 @@
     "lies": "Related articles",
     "vigneronMag": "Featured in Le Mag",
     "rubriques": {
+      "actualites": "News",
+      "accords": "Food & champagne pairing",
       "toutSavoir": "All about champagne",
-      "accords": "Food & champagne pairings",
-      "portraits": "Winemaker portraits",
-      "terroirsCepages": "Terroirs & grape varieties",
-      "oenotourisme": "Wine tourism",
-      "actualites": "News"
+      "portraits": "Portraits",
+      "autresHorizons": "Further afield"
     },
     "autresRubriques": "Other sections of the Mag",
     "rubriquesIntro": {
-      "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
+      "actualites": "Vineyard events, the wine and food calendar, news from our winemakers.",
       "accords": "Recipes and food & champagne pairings, from starter to dessert, with cuvées from Aube winemakers.",
-      "portraits": "Meet the independent winemakers of the Aube: their story, their plots, their cuvées.",
-      "terroirsCepages": "Pinot noir, meunier, chardonnay and rare grapes: understanding champagne's grape varieties and the Aube terroirs that reveal them.",
-      "oenotourisme": "Cellar visits, vineyard routes and villages: planning your stay in the Aube vineyards.",
-      "actualites": "Vineyard events, the calendar of wine and food days, news from our winemakers."
+      "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
+      "portraits": "Meet winemakers, artisans and enthusiasts: their story, their craft, what drives them.",
+      "autresHorizons": "Ciders and beers from the Pays d'Othe, wines from other regions, champagnes from the Marne, travel and heritage: our trips beyond Aube champagne."
     },
     "aLaUne": "Featured",
     "tousLesArticles": "All articles",
@@ -763,7 +767,16 @@
     "rubriquesNav": "Sections of the Mag",
     "tousArticlesRubrique": "All « {rubrique} » articles",
     "lienDegustations": "Our private tastings of winemakers' champagnes, in Troyes or at your home",
-    "lienSelection": "Our current selection: the Aube winemakers we follow"
+    "lienSelection": "Our current selection: the Aube winemakers we follow",
+    "sousParties": {
+      "label": "All about champagne: topics",
+      "surTitre": "All about champagne",
+      "cepagesTitre": "Grape varieties",
+      "cepagesTexte": "The eight grapes of the appellation and voltis: where they grow in the Aube and what they bring.",
+      "terroirsTitre": "Terroirs",
+      "terroirsTexte": "The Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande: soils, climate and villages.",
+      "voir": "Discover"
+    }
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",
@@ -951,5 +964,38 @@
     "tastingBouton": "Taste it at one of our tastings",
     "sourcesNote": "Every fact on this page is cross-checked against at least two sources. Figures that differ between sources are not given.",
     "illustration": "Illustrative photo"
+  },
+  "communicationPage": {
+    "surTitre": "Pro area",
+    "titre": "Communication & marketing",
+    "metaTitle": "Communication and marketing for winemakers, wine shops and restaurants",
+    "metaDescription": "Photo, video, social media: Detectezmoi.com communication services for winemakers, wine shops, bars and restaurants.",
+    "intro": "Champagne de l'Aube is run by Detectezmoi.com. We also offer our communication services to wine and hospitality professionals.",
+    "servicesTitre": "Our services",
+    "publicTitre": "Who for?",
+    "services": {
+      "photo": "Photography",
+      "video": "Video",
+      "reseaux": "Social media",
+      "communication": "Communication"
+    },
+    "publics": {
+      "vignerons": "Winemakers",
+      "caves": "Wine shops",
+      "bars": "Bars",
+      "restaurants": "Restaurants"
+    },
+    "bouton": "Visit Detectezmoi.com",
+    "nouvelOnglet": "(opens in a new tab)",
+    "contact": "Write to us"
+  },
+  "partenairesPage": {
+    "surTitre": "Pro area",
+    "titre": "Our partners",
+    "metaTitle": "Our partner winemakers in the Aube",
+    "metaDescription": "The Aube winemakers who partner with Champagne de l'Aube: Moutard*Dangin in Polisy and Mennetrier in Arrentières.",
+    "intro": "The winemakers we work with every day: we present their champagnes at our tastings and to professionals.",
+    "devenir": "Are you a winemaker in the Aube?",
+    "devenirBouton": "Become a partner"
   }
 }

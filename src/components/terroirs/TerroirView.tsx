@@ -146,7 +146,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
         </Section>
       )}
 
-      <DansLeMag locale={locale} chemins={[hrefOf(cle)]} rubrique="terroirs-cepages" fond={t.secteurs.length ? "chaude" : "blanc"} />
+      <DansLeMag locale={locale} chemins={[hrefOf(cle)]} rubrique="tout-savoir" fond={t.secteurs.length ? "chaude" : "blanc"} />
 
       <Section fond={t.secteurs.length ? "blanc" : "chaude"} titre={tT("autres")}>
         <div className="mx-auto max-w-2xl">

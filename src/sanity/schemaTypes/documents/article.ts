@@ -2,14 +2,13 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
 
-/** Les six rubriques prêtes à l'emploi (codes utilisés dans les adresses /le-mag/<code>/). */
+/** Les cinq rubriques du Mag (codes utilisés dans les adresses /le-mag/<code>/). */
 export const RUBRIQUES_OPTIONS = [
-  { title: "Portraits de vignerons", value: "portraits" },
-  { title: "Terroirs & cépages", value: "terroirs-cepages" },
+  { title: "Actu", value: "actualites" },
   { title: "Accords mets & champagne", value: "accords" },
-  { title: "Tout savoir sur le champagne", value: "tout-savoir" },
-  { title: "Œnotourisme", value: "oenotourisme" },
-  { title: "Actualités", value: "actualites" },
+  { title: "Tout savoir sur le champagne (dont cépages et terroirs)", value: "tout-savoir" },
+  { title: "Portraits (vignerons, artisans, passionnés)", value: "portraits" },
+  { title: "Autres horizons (cidres, bières, autres vins, voyages, patrimoine)", value: "autres-horizons" },
 ];
 
 /** Article du Mag (recette, accord, pédagogie, portrait). Publié à la racine du site : /mon-article/. */

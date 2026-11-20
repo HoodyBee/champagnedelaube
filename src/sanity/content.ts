@@ -434,7 +434,7 @@ export async function getPageContent(cle: string, locale: Locale) {
 // ---------------------------------------------------------------------------
 
 /** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["portraits", "terroirs-cepages", "accords", "tout-savoir", "oenotourisme", "actualites"] as const;
+export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
@@ -447,7 +447,9 @@ export function rubriqueHref(code: string) {
     : ({ pathname: "/le-mag/[rubrique]", params: { rubrique: code } } as const);
 }
 /** Anciennes rubriques de WordPress -> codes du Mag. */
-const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords" };
+/** Étape 13 : « Terroirs & cépages » rejoint « Tout savoir », « Œnotourisme » rejoint « Autres horizons ». */
+const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords", "terroirs-cepages": "tout-savoir", oenotourisme: "autres-horizons" };
+const rubriqueActuelle = (r: string) => RUBRIQUE_ANCIENNE[r] ?? r;
 
 export type Rubrique = { cle: string; titre?: string; description?: string };
 
@@ -491,11 +493,12 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
   const titre = L(a.titre, locale);
   if (!titre || !a.slug) return null;
   const ancienne = a.rubrique ? RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique : undefined;
-  const principale = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
+  const principaleBrute = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
+  const principale = principaleBrute ? rubriqueActuelle(principaleBrute) : undefined;
   const rubriques = [
     ...(principale ? [principale] : []),
-    ...(a.rubriques ?? []),
-    ...(a.autresRubriques ?? []).filter((r): r is string => !!r),
+    ...(a.rubriques ?? []).map(rubriqueActuelle),
+    ...(a.autresRubriques ?? []).filter((r): r is string => !!r).map(rubriqueActuelle),
     ...(ancienne && !a.rubriques?.length ? [ancienne] : []),
   ];
   return {

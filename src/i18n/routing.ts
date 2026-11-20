@@ -64,6 +64,21 @@ export const routing = defineRouting({
       de: "/rebsorten-der-aube/[cepage]",
     },
     "/les-riceys": "/les-riceys",
+    // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires
+    "/communication-marketing": {
+      fr: "/communication-marketing",
+      en: "/communication-and-marketing",
+      nl: "/communicatie-en-marketing",
+      it: "/comunicazione-e-marketing",
+      de: "/kommunikation-und-marketing",
+    },
+    "/nos-partenaires": {
+      fr: "/nos-partenaires",
+      en: "/our-partners",
+      nl: "/onze-partners",
+      it: "/i-nostri-partner",
+      de: "/unsere-partner",
+    },
     "/montgueux": "/montgueux",
     "/villenauxe-la-grande": "/villenauxe-la-grande",
 

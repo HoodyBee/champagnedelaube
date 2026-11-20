@@ -73,7 +73,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         </Section>
       )}
 
-      <DansLeMag locale={locale} chemins={["/le-terroir-de-laube"]} rubrique="terroirs-cepages" />
+      <DansLeMag locale={locale} chemins={["/le-terroir-de-laube"]} rubrique="tout-savoir" />
 
       <Section fond="chaude">
         <div className="flex flex-col items-center justify-center gap-space-1 sm:flex-row">

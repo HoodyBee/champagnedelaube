@@ -36,6 +36,8 @@ export type NavKey =
   | "toutSavoir"
   | "mag"
   | "proEntreprises"
+  | "communication"
+  | "partenaires"
   | "contact";
 
 type NavLink = { key: NavKey; href: AppPathname };
@@ -66,8 +68,14 @@ export const nav = {
   contact: { key: "contact", href: "/contact" } satisfies NavLink,
 };
 
-/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons. */
-export const proEntreprises: NavLink[] = [nav.pro[0], nav.entreprises, nav.pro[1]];
+/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons, communication, partenaires. */
+export const proEntreprises: NavLink[] = [
+  nav.pro[0],
+  nav.entreprises,
+  nav.pro[1],
+  { key: "communication", href: "/communication-marketing" },
+  { key: "partenaires", href: "/nos-partenaires" },
+];
 
 /** Contenus éditoriaux (pied de page, et liens depuis les pages Terroir et Particuliers). */
 export const contentPages: NavLink[] = [

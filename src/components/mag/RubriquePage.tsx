@@ -16,12 +16,11 @@ import { getArticles, getPageContent, getRubriquesSanity, rubriqueHref } from "@
 const CLE_PAGE: Record<string, string> = { "tout-savoir": "tout-savoir", accords: "recettes" };
 /** Textes par défaut des rubriques (messages), si la page ou la rubrique du Studio n'en a pas. */
 const CLE_INTRO: Record<string, string> = {
-  "tout-savoir": "toutSavoir",
-  accords: "accords",
-  portraits: "portraits",
-  "terroirs-cepages": "terroirsCepages",
-  oenotourisme: "oenotourisme",
   actualites: "actualites",
+  accords: "accords",
+  "tout-savoir": "toutSavoir",
+  portraits: "portraits",
+  "autres-horizons": "autresHorizons",
 };
 
 async function contenuRubrique(code: string, locale: Locale) {
@@ -37,12 +36,14 @@ async function contenuRubrique(code: string, locale: Locale) {
 }
 
 export async function rubriqueMetadata(code: string, locale: Locale): Promise<Metadata> {
-  const { page, titre, intro } = await contenuRubrique(code, locale);
+  const [{ page, titre, intro }, articles] = await Promise.all([contenuRubrique(code, locale), getArticles(locale)]);
   const t = await getTranslations({ locale, namespace: "mag" });
+  // Rubrique encore vide : pas de page creuse dans Google.
+  const vide = !articles.some((a) => a.rubriques.includes(code));
   return pageMetadata({
     locale,
     href: rubriqueHref(code),
-    seo: page?.seo,
+    seo: vide ? { ...page?.seo, noIndex: true } : page?.seo,
     title: `${titre} | ${t("h1")}`,
     description: intro ?? t("metaDescription"),
   });
@@ -74,6 +75,26 @@ export async function RubriquePage({ code, locale }: { code: string; locale: Loc
         </Section>
       ) : null}
       <Section fond={page?.contenu?.length ? "chaude" : "blanc"} className={page?.contenu?.length ? "" : "!pt-space-3"}>
+        {code === "tout-savoir" && (
+          // « Tout savoir » regroupe aussi les cépages et les terroirs : leurs pages de référence.
+          <nav aria-label={t("sousParties.label")} className="mb-space-4 grid gap-space-3 sm:grid-cols-2">
+            {(
+              [
+                ["cepages", "/les-cepages-de-laube"],
+                ["terroirs", "/le-terroir-de-laube"],
+              ] as const
+            ).map(([cle, href]) => (
+              <Link key={cle} href={href} className="group rounded-carte border border-filet bg-creme-clair p-space-3 transition-colors hover:border-or">
+                <span className="text-sur-titre-petit text-bronze">{t("sousParties.surTitre")}</span>
+                <span className="mt-1 block text-[1.375rem] font-bold leading-tight group-hover:text-bronze">{t(`sousParties.${cle}Titre`)}</span>
+                <span className="mt-space-1 block text-gris-chaud">{t(`sousParties.${cle}Texte`)}</span>
+                <span className="mt-space-1 inline-flex items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4">
+                  {t("sousParties.voir")} <span aria-hidden="true">→</span>
+                </span>
+              </Link>
+            ))}
+          </nav>
+        )}
         {liste.length ? (
           <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
             {liste.map((a) => (

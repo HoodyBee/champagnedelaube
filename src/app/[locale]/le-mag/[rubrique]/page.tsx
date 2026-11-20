@@ -9,10 +9,13 @@ import { getArticles, PAGES_RUBRIQUE, RUBRIQUES_PAR_DEFAUT } from "@/sanity/cont
 
 type Props = PageProps<"/[locale]/le-mag/[rubrique]">;
 
-/** Rubriques qui ont des articles (les rubriques vides n'ont pas de page : pas de page creuse pour Google). */
+/**
+ * Rubriques qui ont une page : celles du menu (même vides : « les premiers articles arrivent »,
+ * page non indexée tant qu'elle est vide) et celles du Studio qui ont des articles.
+ */
 async function rubriquesAvecArticles(locale: Locale) {
   const [articles, labels] = await Promise.all([getArticles(locale), getRubriqueLabels(locale)]);
-  return Object.keys(labels).filter((code) => articles.some((a) => a.rubriques.includes(code)));
+  return Object.keys(labels).filter((code) => (RUBRIQUES_PAR_DEFAUT as readonly string[]).includes(code) || articles.some((a) => a.rubriques.includes(code)));
 }
 
 export async function generateStaticParams() {
@@ -27,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return rubriqueMetadata(rubrique, locale);
 }
 
-/** Page d'une rubrique du Mag sans adresse historique : /le-mag/terroirs-cepages/, /le-mag/portraits/… */
+/** Page d'une rubrique du Mag sans adresse historique : /le-mag/actualites/, /le-mag/portraits/… */
 export default async function RubriqueMagPage({ params }: Props) {
   const { locale, rubrique } = (await params) as { locale: Locale; rubrique: string };
   setRequestLocale(locale);

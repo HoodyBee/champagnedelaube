@@ -28,7 +28,12 @@
     "menu": "Menu",
     "proEntreprises": "Espace Pro & Entreprises",
     "terroirHubLink": "Les terroirs de l'Aube",
-    "tastingLink": "Toutes nos dégustations"
+    "tastingLink": "Toutes nos dégustations",
+    "communication": "Communication & marketing",
+    "partenaires": "Nos partenaires",
+    "cepages": "Les cépages de l'Aube",
+    "terroirs": "Les terroirs",
+    "magTout": "Tous les articles"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -561,7 +566,8 @@
     "tous": "Tous",
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
     "count": "{count, plural, one {# domaine} other {# domaines}}",
-    "domainesTitre": "Les domaines de la sélection"
+    "domainesTitre": "Les domaines de la sélection",
+    "bientot": "Notre sélection s'enrichit au fil des rencontres. D'autres domaines nous rejoignent bientôt."
   },
   "vigneronPage": {
     "metaTitle": "{nom}, vigneron à {village} | Champagne de l'Aube",
@@ -740,21 +746,19 @@
     "lies": "Articles liés",
     "vigneronMag": "Ils en parlent dans Le Mag",
     "rubriques": {
-      "toutSavoir": "Tout savoir sur le champagne",
+      "actualites": "Actu",
       "accords": "Accords mets & champagne",
-      "portraits": "Portraits de vignerons",
-      "terroirsCepages": "Terroirs & cépages",
-      "oenotourisme": "Œnotourisme",
-      "actualites": "Actualités"
+      "toutSavoir": "Tout savoir sur le champagne",
+      "portraits": "Portraits",
+      "autresHorizons": "Autres horizons"
     },
     "autresRubriques": "Les autres rubriques du Mag",
     "rubriquesIntro": {
-      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
+      "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons.",
       "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
-      "portraits": "À la rencontre des vignerons indépendants de l'Aube : leur histoire, leurs parcelles, leurs cuvées.",
-      "terroirsCepages": "Pinot noir, meunier, chardonnay et cépages rares : comprendre les cépages du champagne et les terroirs de l'Aube qui les révèlent.",
-      "oenotourisme": "Visites de caves, routes des vignes et villages : préparer son séjour dans le vignoble de l'Aube.",
-      "actualites": "Rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, nouvelles de nos vignerons."
+      "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
+      "portraits": "À la rencontre de vignerons, d'artisans et de passionnés : leur histoire, leur savoir-faire, ce qui les anime.",
+      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois."
     },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles",
@@ -763,7 +767,16 @@
     "rubriquesNav": "Les rubriques du Mag",
     "tousArticlesRubrique": "Tous les articles « {rubrique} »",
     "lienDegustations": "Nos dégustations privées de champagnes de vignerons, à Troyes ou chez vous",
-    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons"
+    "lienSelection": "Notre sélection du moment : les vignerons de l'Aube que nous suivons",
+    "sousParties": {
+      "label": "Les dossiers de Tout savoir",
+      "surTitre": "Tout savoir",
+      "cepagesTitre": "Cépages",
+      "cepagesTexte": "Les huit cépages de l'appellation et le voltis : où ils poussent dans l'Aube et ce qu'ils apportent.",
+      "terroirsTitre": "Terroirs",
+      "terroirsTexte": "La Côte des Bar, Les Riceys, Montgueux et Villenauxe-la-Grande : sols, climat et villages.",
+      "voir": "Découvrir"
+    }
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
@@ -951,5 +964,38 @@
     "tastingBouton": "Venir le goûter en dégustation",
     "sourcesNote": "Chaque fait de cette page est recoupé par au moins deux sources. Les chiffres qui divergent d'une source à l'autre ne sont pas donnés.",
     "illustration": "Photo d'illustration"
+  },
+  "communicationPage": {
+    "surTitre": "Espace Pro",
+    "titre": "Communication & marketing",
+    "metaTitle": "Communication et marketing pour vignerons, caves et restaurants",
+    "metaDescription": "Photo, vidéo, réseaux sociaux : les services de communication de Detectezmoi.com pour les vignerons, caves, bars et restaurants.",
+    "intro": "Champagne de l'Aube est porté par Detectezmoi.com. Nous proposons aussi nos services de communication aux professionnels du vin et de la table.",
+    "servicesTitre": "Nos services",
+    "publicTitre": "Pour qui ?",
+    "services": {
+      "photo": "Photo",
+      "video": "Vidéo",
+      "reseaux": "Réseaux sociaux",
+      "communication": "Communication"
+    },
+    "publics": {
+      "vignerons": "Vignerons",
+      "caves": "Caves",
+      "bars": "Bars",
+      "restaurants": "Restaurants"
+    },
+    "bouton": "Découvrir Detectezmoi.com",
+    "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
+    "contact": "Nous écrire"
+  },
+  "partenairesPage": {
+    "surTitre": "Espace Pro",
+    "titre": "Nos partenaires",
+    "metaTitle": "Nos vignerons partenaires dans l'Aube",
+    "metaDescription": "Les vignerons de l'Aube partenaires de Champagne de l'Aube : Moutard*Dangin à Polisy et Mennetrier à Arrentières.",
+    "intro": "Les vignerons avec qui nous travaillons au quotidien : nous présentons leurs champagnes lors de nos dégustations et auprès des professionnels.",
+    "devenir": "Vous êtes vigneron dans l'Aube ?",
+    "devenirBouton": "Devenir partenaire"
   }
 }

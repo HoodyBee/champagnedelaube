@@ -2,12 +2,14 @@ import type { MetadataRoute } from "next";
 import { getPathname } from "@/i18n/navigation";
 import { SITE_URL, withSlash } from "@/i18n/metadata";
 import { defaultLocale, type Locale, type StaticPathname } from "@/i18n/routing";
+import { ORDRE_CEPAGES } from "@/lib/cepages-contenu";
 import { terroirPages } from "@/lib/site";
 import {
   getAccueil,
   getArticleLangues,
   getArticles,
   getArticleSlugs,
+  getCepages,
   getEspaceEntreprises,
   getEspaceParticuliers,
   getEspacePro,
@@ -26,6 +28,7 @@ type Href = Parameters<typeof getPathname>[0]["href"];
 const PAGES: StaticPathname[] = [
   "/",
   "/le-terroir-de-laube",
+  "/les-cepages-de-laube",
   "/la-cote-des-bar",
   "/les-riceys",
   "/montgueux",
@@ -36,6 +39,8 @@ const PAGES: StaticPathname[] = [
   "/champagne-hotel-restaurants-et-cavistes",
   "/cse-et-cadeaux-dentreprise",
   "/vignerons-de-laube-devenez-partenaire-de-nos-degustations",
+  "/communication-marketing",
+  "/nos-partenaires",
   "/le-mag",
   "/tout-savoir-sur-le-champagne",
   "/recettes-accords-mets-champagne",
@@ -63,13 +68,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const hrefs: Href[] = [
     ...PAGES,
     ...(reglages.pepitesActive ? (["/ou-trouver-nos-pepites"] as Href[]) : []),
+    ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/les-cepages-de-laube/[cepage]", params: { cepage } }) as Href),
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...rubriques.map((rubrique) => ({ pathname: "/le-mag/[rubrique]", params: { rubrique } }) as Href),
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
   const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));
   // Images importantes de chaque page (plan du site des images, pour Google Images).
-  const [accueil, particuliers, pro, entreprises, mariage, terroirAube, ...terroirsDocs] = await Promise.all([
+  const [cepagesDocs, selection, accueil, particuliers, pro, entreprises, mariage, terroirAube, ...terroirsDocs] = await Promise.all([
+    getCepages(defaultLocale),
+    getPageContent("vignerons", defaultLocale),
     getAccueil(defaultLocale),
     getEspaceParticuliers(defaultLocale),
     getEspacePro(defaultLocale),
@@ -87,10 +95,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/champagne-mariage", src([mariage.image])],
     ["/le-terroir-de-laube", src([terroirAube.hero.image, ...terroirAube.chapitres.map((c) => c.image)])],
     ...terroirPages.map((p, i) => [p.href as string, src([terroirsDocs[i].image, ...terroirsDocs[i].galerie])] as [string, string[]]),
+    ["/vignerons", src([selection.image])],
+    ...cepagesDocs.map((c) => [`cepage:${c.cle}`, src([c.image, ...c.galerie])] as [string, string[]]),
     ...cartes.map((a) => [`article:${a.slug}`, src([a.image])] as [string, string[]]),
   ]);
   const cleImages = (href: Href) =>
-    typeof href === "string" ? href : href.pathname === "/[article]" ? `article:${(href.params as { article: string }).article}` : "";
+    typeof href === "string"
+      ? href
+      : href.pathname === "/[article]"
+        ? `article:${(href.params as { article: string }).article}`
+        : href.pathname === "/les-cepages-de-laube/[cepage]"
+          ? `cepage:${(href.params as { cepage: string }).cepage}`
+          : "";
 
   // Un article n'est listé que dans les langues où il a un texte (sinon la page affiche le français).
   const languesDe = (href: Href) => {
