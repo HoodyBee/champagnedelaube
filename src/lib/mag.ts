@@ -5,7 +5,6 @@ import { getRubriquesSanity, RUBRIQUES_PAR_DEFAUT, type ArticleCard } from "@/sa
 const CLE_MESSAGE: Record<string, string> = {
   actualites: "actualites",
   accords: "accords",
-  marketing: "marketing",
   "tout-savoir": "toutSavoir",
   portraits: "portraits",
   "autres-horizons": "autresHorizons",

@@ -6,7 +6,6 @@ import { requireFr } from "../objects/localized";
 export const RUBRIQUES_OPTIONS = [
   { title: "Actu", value: "actualites" },
   { title: "Accords mets & champagne", value: "accords" },
-  { title: "Champagne & marketing (réseaux sociaux, photo, vidéo, œnotourisme…)", value: "marketing" },
   { title: "Tout savoir sur le champagne (dont cépages et terroirs)", value: "tout-savoir" },
   { title: "Portraits (vignerons, artisans, passionnés)", value: "portraits" },
   { title: "Autres horizons (cidres, bières, autres vins, voyages, patrimoine)", value: "autres-horizons" },
@@ -59,6 +58,15 @@ export const article = defineType({
       type: "array",
       group: "contenu",
       of: [defineArrayMember({ type: "reference", to: [{ type: "rubrique" }] })],
+    }),
+    defineField({
+      name: "etiquettes",
+      title: "Étiquettes de l'article",
+      description: "Plusieurs possibles (ex. : Marketing, Champagne & art). Chaque étiquette a sa section dans Le Mag ; l'adresse de l'article ne change pas. Pour en créer une : Le Mag du Champagne > Étiquettes d'article.",
+      type: "array",
+      group: "contenu",
+      of: [defineArrayMember({ type: "reference", to: [{ type: "etiquetteArticle" }] })],
+      validation: (r) => r.unique(),
     }),
     defineField({
       name: "rubrique",

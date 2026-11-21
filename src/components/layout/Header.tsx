@@ -83,7 +83,6 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
     { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
     ...(publiee("actualites") ? [rubrique("actualites", tMag("actualites"))] : []),
     { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
-    ...(publiee("marketing") ? [rubrique("marketing", tMag("marketing"))] : []),
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
     ...(publiee("portraits") ? [rubrique("portraits", tMag("portraits"))] : []),
     ...(publiee("autres-horizons") ? [rubrique("autres-horizons", tMag("autresHorizons"))] : []),

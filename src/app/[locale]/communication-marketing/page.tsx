@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ArticlesEtiquette } from "@/components/mag/ArticlesEtiquette";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { ButtonLink, buttonClass } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
@@ -68,7 +69,11 @@ export default async function CommunicationPage({ params }: PageProps<"/[locale]
             </ul>
           </div>
         </div>
-        <div className="mt-space-4 flex flex-col items-center justify-center gap-space-1 sm:flex-row">
+      </Section>
+      {/* Nos articles marketing (étiquette « Marketing » du Mag), avant les boutons de contact. Masqué s'il n'y en a aucun. */}
+      <ArticlesEtiquette cle="marketing" locale={locale} titre={t("articlesTitre")} fond="chaude" max={3} lienMag />
+      <Section>
+        <div className="flex flex-col items-center justify-center gap-space-1 sm:flex-row">
           <a href="https://www.detectezmoi.com" target="_blank" rel="noopener" className={buttonClass("primaire")}>
             {t("bouton")} <span aria-hidden="true">↗</span>
             <span className="sr-only"> {t("nouvelOnglet")}</span>

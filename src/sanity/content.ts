@@ -482,7 +482,7 @@ export async function getPageContent(cle: string, locale: Locale) {
 // ---------------------------------------------------------------------------
 
 /** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "marketing", "tout-savoir", "portraits", "autres-horizons"] as const;
+export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
@@ -509,8 +509,22 @@ export async function getRubriquesSanity(locale: Locale): Promise<Rubrique[]> {
   return (list ?? []).flatMap((r) => (r.cle ? [{ cle: r.cle, titre: L(r.titre, locale), description: L(r.description, locale) }] : []));
 }
 
+/** Étiquettes d'article du Studio (sections du Mag), dans l'ordre choisi. */
+export type Etiquette = { cle: string; nom: string; intro?: string };
+export async function getEtiquettes(locale: Locale): Promise<Etiquette[]> {
+  const list = await sanityFetch<{ cle?: string; nom?: Localized; intro?: Localized }[]>({
+    query: `*[_type == "etiquetteArticle" && defined(cle.current)] | order(coalesce(ordre, 10) asc){"cle": cle.current, nom, intro}`,
+    tags: ["etiquetteArticle"],
+  });
+  return (list ?? []).flatMap((e) => {
+    const nom = L(e.nom, locale);
+    return e.cle && nom ? [{ cle: e.cle, nom, intro: L(e.intro, locale) }] : [];
+  });
+}
+
 const ARTICLE_CARD = `"slug": slug.current, titre, date, extrait, image ${IMG}, collaborationCommerciale,
-  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
+  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current,
+  "etiquettes": etiquettes[]->cle.current`;
 type ArticleRaw = {
   slug: string;
   titre?: Localized;
@@ -523,6 +537,7 @@ type ArticleRaw = {
   rubriques?: string[];
   autresRubriques?: (string | null)[];
   vignerons?: (string | null)[];
+  etiquettes?: (string | null)[];
 };
 export type ArticleCard = {
   slug: string;
@@ -535,6 +550,8 @@ export type ArticleCard = {
   /** Toutes les rubriques où l'article apparaît, la principale en premier. */
   rubriques: string[];
   vignerons: string[];
+  /** Codes des étiquettes d'article (ex. « marketing »). */
+  etiquettes: string[];
   collaborationCommerciale: boolean;
 };
 const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
@@ -558,6 +575,7 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
     rubriquePrincipale: principale,
     rubriques: [...new Set(rubriques)],
     vignerons: (a.vignerons ?? []).filter((v): v is string => !!v),
+    etiquettes: (a.etiquettes ?? []).filter((v): v is string => !!v),
     collaborationCommerciale: a.collaborationCommerciale === true,
   };
 };

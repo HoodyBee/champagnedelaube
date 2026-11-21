@@ -45,6 +45,7 @@ export const structure: StructureResolver = (S) =>
         S.documentTypeListItem("article").title("Articles"),
         S.documentTypeListItem("journeeCalendrier").title("Marronnier : journées du calendrier"),
         S.documentTypeListItem("rubrique").title("Rubriques (pour en ajouter ou les renommer)"),
+        S.documentTypeListItem("etiquetteArticle").title("Étiquettes d'article (sections du Mag)"),
         pageFixe(S, "tout-savoir", "Page « Tout savoir sur le champagne »"),
         pageFixe(S, "recettes", "Page « Accords mets et champagne »"),
       ]),
