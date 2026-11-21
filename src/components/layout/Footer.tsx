@@ -5,7 +5,7 @@ import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
-import { contentPages, nav, proEntreprises, siteCredit, telHref, terroirPages } from "@/lib/site";
+import { contentPages, nav, proEntreprises, proEntreprisesHub, siteCredit, telHref, terroirPages } from "@/lib/site";
 import { localize } from "@/sanity/lib/i18n";
 import { getReglages, socialLinks } from "@/sanity/queries";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
@@ -70,6 +70,7 @@ export async function Footer({ locales }: { locales: readonly Locale[] }) {
         </FooterColumn>
 
         <FooterColumn title={t("offers")}>
+          <FooterLink href={proEntreprisesHub}>{tNav("proEntreprises")}</FooterLink>
           {proEntreprises.map((p) => (
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}

@@ -66,6 +66,14 @@ export const routing = defineRouting({
     "/les-riceys": "/les-riceys",
     // Troyes : la ville, porte d'entrée du vignoble aubois (nom de lieu non traduit)
     "/champagne-troyes": "/champagne-troyes",
+    // Espace Pro & Entreprises : page d'accueil de l'espace (les 4 profils)
+    "/espace-pro-entreprises": {
+      fr: "/espace-pro-entreprises",
+      en: "/trade-and-business",
+      nl: "/professionals-en-bedrijven",
+      it: "/professionisti-e-aziende",
+      de: "/profis-und-unternehmen",
+    },
     // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires
     "/communication-marketing": {
       fr: "/communication-marketing",

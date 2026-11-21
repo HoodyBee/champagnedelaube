@@ -9,13 +9,13 @@ import { CoeurTroyes } from "@/components/ui/CoeurTroyes";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
-import { nav, proEntreprises, terroirPages, type NavKey } from "@/lib/site";
+import { nav, proEntreprises, proEntreprisesHub, terroirPages, type NavKey } from "@/lib/site";
 import type { SocialLinks as Social } from "@/sanity/queries";
 import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
 type LinkHref = ComponentProps<typeof Link>["href"];
 /** `cle` : adresse interne en texte (comparaison avec la page en cours) ; `retrait` : sous-entrée (ex. Cépages sous Tout savoir). */
-type Item = { href: LinkHref; cle: string; label: string; color?: string; short?: string; retrait?: boolean; coeur?: boolean };
+type Item = { href: LinkHref; cle: string; label: string; color?: string; short?: string; retrait?: boolean; coeur?: boolean; separe?: boolean };
 
 /**
  * En-tête en deux étages :
@@ -68,10 +68,10 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
     color: `var(--color-${terroirs[p.key].color})`,
   }));
   // Troyes : un cœur azur (blason de la ville) au lieu du rond de couleur des terroirs.
-  const troyesItem: Item = { href: "/champagne-troyes", cle: "/champagne-troyes", label: t("troyes"), short: "Troyes", coeur: true };
+  const troyesItem: Item = { href: "/champagne-troyes", cle: "/champagne-troyes", label: t("troyes"), short: "Troyes", coeur: true, separe: true };
   // Premier lien de chaque groupe : un libellé distinct du titre du groupe (pas de doublon).
+  // Le titre « Notre Terroir » mène à la page globale : plus de ligne en double dans le sous-menu.
   const terroirMenu: Item[] = [
-    { href: nav.terroirHub.href, cle: nav.terroirHub.href, label: t("terroirHubLink") },
     ...terroirItems,
     troyesItem,
   ];
@@ -80,7 +80,6 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
   const publiee = (code: string) => rubriquesPubliees.includes(code);
   const rubrique = (code: string, label: string): Item => ({ href: { pathname: "/le-mag/[rubrique]", params: { rubrique: code } }, cle: `/le-mag/${code}`, label });
   const magMenu: Item[] = [
-    { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
     ...(publiee("actualites") ? [rubrique("actualites", tMag("actualites"))] : []),
     { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
@@ -118,7 +117,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
           </Link>
           <nav aria-label={t("terroirBand")} className="hidden lg:block">
             <ul className="flex items-center justify-center gap-space-1">
-              {[...terroirItems, troyesItem].map((item, i) => (
+              {terroirItems.map((item, i) => (
                 <li key={item.cle} className="flex items-center gap-space-1">
                   {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud">·</span>}
                   <Link
@@ -166,7 +165,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
               <nav aria-label={t("mainNav")} className="hidden xl:block">
                 <ul className="flex items-center gap-1 2xl:gap-space-1">
                   <li>
-                    <Dropdown label={t("terroirHub")} items={terroirMenu} active={isGroupActive(terroirMenu)} isActive={isActive} />
+                    <Dropdown label={t("terroirHub")} href={nav.terroirHub.href} items={terroirMenu} active={isGroupActive(terroirMenu)} isActive={isActive} />
                   </li>
                   <li>
                     <NavLink href={nav.vignerons.href} active={isActive(nav.vignerons.href)}>{t("vignerons")}</NavLink>
@@ -175,7 +174,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
                     <NavLink href={nav.particuliers[0].href} active={isActive(nav.particuliers[0].href)}>{t("tasting")}</NavLink>
                   </li>
                   <li>
-                    <Dropdown label={t("mag")} items={magMenu} active={pathname.startsWith("/le-mag") || isGroupActive(magMenu)} isActive={isActive} />
+                    <Dropdown label={t("mag")} href={nav.mag.href} items={magMenu} active={pathname.startsWith("/le-mag") || isGroupActive(magMenu)} isActive={isActive} />
                   </li>
                 </ul>
               </nav>
@@ -184,10 +183,10 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
             {/* Groupe de droite, d'un seul tenant : Espace Pro & Entreprises | FR / EN | Contact */}
             <div className="flex items-center gap-space-1 2xl:gap-space-2">
               <div className="hidden xl:block">
-                <Dropdown label={t("proEntreprises")} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
+                <Dropdown label={t("proEntreprises")} href={proEntreprisesHub} items={proItems} active={isGroupActive(proItems)} isActive={isActive} align="right" />
               </div>
               <span aria-hidden="true" className="hidden h-5 w-px bg-filet 2xl:block" />
-              <SocialLinks links={social} labels={socialLabels} compact iconSize={17} className="hidden xl:flex" linkClassName="text-gris-chaud hover:text-bronze" />
+              <SocialLinks links={social} labels={socialLabels} compact iconSize={17} className="hidden 2xl:flex" linkClassName="text-gris-chaud hover:text-bronze" />
               <div className="hidden xl:block">
                 <LanguageSwitcher variant="compact" locales={locales} />
               </div>
@@ -218,11 +217,11 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
         groups={[
-          { title: t("terroirHub"), items: terroirMenu },
+          { title: t("terroirHub"), href: nav.terroirHub.href, items: terroirMenu },
           { items: [toItem(nav.vignerons)] },
           { items: [toItem(nav.particuliers[0])] },
-          { title: t("mag"), items: magMenu },
-          { title: t("proEntreprises"), items: proItems },
+          { title: t("mag"), href: nav.mag.href, items: magMenu },
+          { title: t("proEntreprises"), href: proEntreprisesHub, items: proItems },
         ]}
         contact={{ href: "/contact", cle: "/contact", label: t("contact") }}
         isActive={isActive}
@@ -247,26 +246,32 @@ function NavLink({ href, active, children }: { href: AppPathname; active: boolea
   );
 }
 
-/** Menu déroulant : s'ouvre au clic ou au survol, se ferme avec Échap ou en cliquant ailleurs. */
+/**
+ * Menu déroulant (ordinateur) : le titre est un lien vers la page globale ; le sous-menu s'ouvre
+ * au survol, ou avec la petite flèche (vrai bouton, utilisable au clavier et au doigt).
+ * Se ferme avec Échap ou en cliquant ailleurs.
+ */
 function Dropdown({
   label,
+  href,
   items,
   active,
   isActive,
   align = "left",
 }: {
   label: string;
+  href: LinkHref;
   items: Item[];
   active: boolean;
   isActive: (href: string) => boolean;
   align?: "left" | "right";
 }) {
+  const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
-  // Ouvert par le survol : le clic qui suit ne doit pas le refermer aussitôt.
-  const openedByHover = useRef(false);
   const ref = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const id = useId();
+  const hrefCle = typeof href === "string" ? href : "";
 
   useEffect(() => {
     if (!open) return;
@@ -290,38 +295,35 @@ function Dropdown({
   return (
     <div
       ref={ref}
-      className="relative"
+      className="relative flex items-center"
       onPointerEnter={(e) => {
-        if (e.pointerType !== "mouse" || open) return;
-        openedByHover.current = true;
-        setOpen(true);
+        if (e.pointerType === "mouse") setOpen(true);
       }}
       onPointerLeave={(e) => {
-        if (e.pointerType !== "mouse") return;
-        openedByHover.current = false;
-        setOpen(false);
+        if (e.pointerType === "mouse") setOpen(false);
       }}
       onBlur={(e) => {
         if (!ref.current?.contains(e.relatedTarget as Node)) setOpen(false);
       }}
     >
+      <Link
+        href={href}
+        aria-current={isActive(hrefCle) ? "page" : undefined}
+        className={`inline-flex min-h-11 items-center whitespace-nowrap pl-[6px] 2xl:pl-space-1 transition-colors hover:text-bronze ${
+          active || isActive(hrefCle) ? "text-bronze" : ""
+        }`}
+      >
+        {label}
+      </Link>
       <button
         ref={buttonRef}
         type="button"
         aria-expanded={open}
         aria-controls={id}
-        onClick={() => {
-          if (openedByHover.current) {
-            openedByHover.current = false;
-            return;
-          }
-          setOpen((v) => !v);
-        }}
-        className={`inline-flex min-h-11 items-center gap-1 whitespace-nowrap px-[6px] 2xl:px-space-1 transition-colors hover:text-bronze ${
-          active ? "text-bronze" : ""
-        }`}
+        aria-label={t(open ? "fermerSousMenu" : "ouvrirSousMenu", { menu: label })}
+        onClick={() => setOpen((v) => !v)}
+        className={`inline-flex min-h-11 min-w-6 items-center justify-center pl-0.5 pr-1 2xl:pr-space-1 transition-colors hover:text-bronze ${active ? "text-bronze" : ""}`}
       >
-        {label}
         <Chevron open={open} />
       </button>
       <AnimatePresence>
@@ -336,7 +338,7 @@ function Dropdown({
           >
             <ul className="w-72 overflow-hidden rounded-carte border border-filet bg-blanc py-space-1 shadow-[0_8px_24px_rgba(30,30,32,0.08)]">
               {items.map((item) => (
-                <li key={item.cle}>
+                <li key={item.cle} className={item.separe ? "mt-space-1 border-t border-filet pt-space-1" : undefined}>
                   <Link
                     href={item.href}
                     aria-current={isActive(item.cle) ? "page" : undefined}
@@ -374,7 +376,7 @@ function MobileMenu({
   social: ReactNode;
   open: boolean;
   onClose: () => void;
-  groups: { title?: string; items: Item[] }[];
+  groups: { title?: string; href?: LinkHref; items: Item[] }[];
   contact: Item;
   isActive: (href: string) => boolean;
   locales: readonly Locale[];
@@ -430,32 +432,21 @@ function MobileMenu({
             </div>
           </div>
           <nav aria-label={t("mainNav")} className="mx-auto max-w-xl px-space-2 pb-space-5 pt-space-1 sm:px-space-4">
-            {groups.map((group) => (
-              <div key={group.title ?? group.items[0].cle} className="border-b border-filet py-space-2">
-                {group.title && <p className="text-sur-titre text-bronze">{group.title}</p>}
-                <ul className={group.title ? "mt-space-1" : ""}>
-                  {group.items.map((item) => (
-                    <li key={item.cle}>
-                      <Link
-                        href={item.href}
-                        aria-current={isActive(item.cle) ? "page" : undefined}
-                        onClick={onClose}
-                        className={`flex min-h-11 items-center gap-space-1 ${item.retrait ? "pl-space-3 text-[1rem] text-gris-chaud" : "text-[1.125rem]"} ${
-                          isActive(item.cle) ? "text-bronze" : ""
-                        }`}
-                      >
-                        {item.retrait && <span aria-hidden="true">↳</span>}
-                        {item.coeur && <CoeurTroyes className="h-2.5 w-2.5" />}
-                        {item.color && (
-                          <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
-                        )}
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {groups.map((group) =>
+              group.title && group.href ? (
+                <MobileGroup key={group.title} title={group.title} href={group.href} items={group.items} isActive={isActive} onNavigate={onClose} />
+              ) : (
+                <div key={group.items[0].cle} className="border-b border-filet py-space-1">
+                  <ul>
+                    {group.items.map((item) => (
+                      <li key={item.cle}>
+                        <MobileLink item={item} active={isActive(item.cle)} onNavigate={onClose} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ),
+            )}
             <Link
               href={contact.href}
               onClick={onClose}
@@ -471,6 +462,64 @@ function MobileMenu({
         </motion.div>
       )}
     </AnimatePresence>
+  );
+}
+
+function MobileLink({ item, active, onNavigate }: { item: Item; active: boolean; onNavigate: () => void }) {
+  return (
+    <Link
+      href={item.href}
+      aria-current={active ? "page" : undefined}
+      onClick={onNavigate}
+      className={`flex min-h-11 items-center gap-space-1 ${item.retrait ? "pl-space-3 text-[1rem] text-gris-chaud" : "text-[1.125rem]"} ${active ? "text-bronze" : ""}`}
+    >
+      {item.retrait && <span aria-hidden="true">↳</span>}
+      {item.coeur && <CoeurTroyes className="h-2.5 w-2.5" />}
+      {item.color && <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />}
+      {item.label}
+    </Link>
+  );
+}
+
+/**
+ * Groupe du menu mobile : le titre est un lien vers la page globale ; la flèche à droite
+ * (zone de 48 px, vrai bouton) déroule ou replie le sous-menu. Ouvert d'office si l'on est sur l'une de ses pages.
+ */
+function MobileGroup({ title, href, items, isActive, onNavigate }: { title: string; href: LinkHref; items: Item[]; isActive: (href: string) => boolean; onNavigate: () => void }) {
+  const t = useTranslations("nav");
+  const hrefCle = typeof href === "string" ? href : "";
+  const [open, setOpen] = useState(() => items.some((i) => isActive(i.cle)));
+  const id = useId();
+  return (
+    <div className="border-b border-filet py-space-1">
+      <div className="flex items-center justify-between gap-space-1">
+        <Link
+          href={href}
+          aria-current={isActive(hrefCle) ? "page" : undefined}
+          onClick={onNavigate}
+          className={`flex min-h-12 flex-1 items-center text-sur-titre ${isActive(hrefCle) ? "text-bronze underline decoration-or underline-offset-4" : "text-bronze"}`}
+        >
+          {title}
+        </Link>
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls={id}
+          aria-label={t(open ? "fermerSousMenu" : "ouvrirSousMenu", { menu: title })}
+          onClick={() => setOpen((v) => !v)}
+          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-etiquette border border-filet bg-blanc text-anthracite"
+        >
+          <Chevron open={open} />
+        </button>
+      </div>
+      <ul id={id} hidden={!open} className="pb-space-1">
+        {items.map((item) => (
+          <li key={item.cle} className={item.separe ? "mt-space-1 border-t border-filet pt-space-1" : undefined}>
+            <MobileLink item={item} active={isActive(item.cle)} onNavigate={onNavigate} />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

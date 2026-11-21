@@ -27,11 +27,23 @@
   }
 
   /* Tailwind 4 ne met plus la main sur les boutons : on la remet partout. */
+  /* Main sur tout ce qui est cliquable, y compris le lien de la page en cours (aria-current)
+     et ce qu'il contient (texte, icônes, pastilles), dans tous les navigateurs. */
+  a[href],
+  a[href] *,
+  area[href],
   button:not(:disabled),
+  button:not(:disabled) *,
   [role="button"]:not([aria-disabled="true"]),
+  [role="link"],
   summary,
   select,
-  label[for] {
+  label[for],
+  label:has(input:not(:disabled)),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  input[type="submit"]:not(:disabled),
+  input[type="file"]:not(:disabled) {
     cursor: pointer;
   }
 
@@ -150,4 +162,14 @@ html[data-age-gate="open"] .age-gate-panel {
 [data-fond="blanc"] + [data-fond="blanc"],
 [data-fond="chaude"] + [data-fond="chaude"] {
   padding-top: 0;
+}
+
+/* Carte des terroirs (accueil) : zones cliquables invisibles, halo doré au survol et au clavier. */
+.zone-terroir:hover,
+.zone-terroir:focus-visible {
+  outline: none;
+  background-color: color-mix(in srgb, var(--color-or) 14%, transparent);
+  box-shadow:
+    0 0 0 2px var(--color-or),
+    0 0 18px 2px color-mix(in srgb, var(--color-or) 55%, transparent);
 }
