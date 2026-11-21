@@ -6,7 +6,15 @@
 const NBSP = " ";
 
 export function typoFr(s: string): string {
-  return s.replace(/ ([:;!?»])/g, `${NBSP}$1`).replace(/« /g, `«${NBSP}`);
+  return (
+    s
+      .replace(/ ([:;!?»])/g, `${NBSP}$1`)
+      .replace(/« /g, `«${NBSP}`)
+      // « Pesto? » -> « Pesto ? » (lettre collée à ; ! ?, hors adresses web)
+      .replace(/([A-Za-zÀ-ÿ»)])([;!?])(?=\s|$)/g, `$1${NBSP}$2`)
+      // « 100% » ou « 100 % » -> « 100 % » insécable
+      .replace(/(\d) ?%/g, `$1${NBSP}%`)
+  );
 }
 
 /** Applique typoFr à une chaîne, ou aux textes d'un contenu enrichi (blocs Portable Text). */

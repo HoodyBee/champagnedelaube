@@ -8,6 +8,7 @@ import type { DomaineCardData } from "@/components/ui/DomaineCard";
 import type { Locale } from "@/i18n/routing";
 import type { CepageKey, PictoKey, TerroirKey } from "@/lib/brand";
 import { fallbackVignerons } from "@/lib/fallback-vignerons";
+import { typoFr } from "@/lib/typo";
 import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
 import { sanityFetch } from "./lib/fetch";
@@ -198,8 +199,8 @@ const fallbackCards = (locale: Locale): Vigneron[] =>
     nom: f.nom,
     village: f.village,
     terroir: f.terroir,
-    philosophie: f.philosophie[locale],
-    accroche: f.accroche[locale],
+    philosophie: locale === "fr" ? typoFr(f.philosophie.fr) : f.philosophie[locale],
+    accroche: locale === "fr" ? typoFr(f.accroche.fr) : f.accroche[locale],
     portrait: photoFallback(f, locale),
     thematiques: f.thematiques,
     labels: f.labels,
