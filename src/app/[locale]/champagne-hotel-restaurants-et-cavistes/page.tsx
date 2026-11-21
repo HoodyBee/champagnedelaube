@@ -56,7 +56,7 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
 
   return (
     <>
-      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: tNav("proChr") }]} />
+      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises"), href: "/espace-pro-entreprises" }, { label: tNav("proChr") }]} />
       <Hero
         surTitre={p.hero.surTitre ?? t("surTitre")}
         titre={p.hero.titre ?? t("h1")}

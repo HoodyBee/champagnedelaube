@@ -24,6 +24,7 @@ import {
 } from "@/sanity/content";
 import { urlFor } from "@/sanity/lib/image";
 import { PHOTOS_TROYES } from "@/lib/troyes-photos";
+import { PHOTOS_ESPACE_PRO } from "@/lib/espace-pro-photos";
 import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
 
@@ -33,6 +34,7 @@ type Href = Parameters<typeof getPathname>[0]["href"];
 const PAGES: StaticPathname[] = [
   "/",
   "/le-terroir-de-laube",
+  "/espace-pro-entreprises",
   "/cepages-champagne",
   "/champagne-troyes",
   "/la-cote-des-bar",
@@ -114,6 +116,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...terroirPages.map((p, i) => [p.href as string, src([terroirsDocs[i].image, ...terroirsDocs[i].galerie])] as [string, string[]]),
     ["/vignerons", src([selection.image])],
     ["/champagne-troyes", src(troyes)],
+    ["/espace-pro-entreprises", src(Object.values(PHOTOS_ESPACE_PRO).map((p) => imgDepuisAsset(p.asset, p.fichier, { fr: "", en: "" }, defaultLocale, 1600)))],
     ["/contact", src([contact.image])],
     ["/communication-marketing", src([communication.image])],
     ...vignerons.map((slug, i) => [`vigneron:${slug}`, src([fichesVignerons[i]?.image, ...(fichesVignerons[i]?.galerie ?? [])])] as [string, string[]]),
