@@ -119,6 +119,7 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
         PAGE_ORIGINE: page,
         PROFIL: profil,
         ETABLISSEMENT: String(data.etablissement ?? data.entreprise ?? data.domaine ?? "") || undefined,
+        OCCASION: data.occasion ? await libelleFr("occasion", String(data.occasion)) : undefined,
       },
     }).catch((e) => console.error("[formulaire] Contact Brevo non enregistré :", describe(e)));
 
@@ -137,6 +138,12 @@ export async function submitLead(_prev: FormState, formData: FormData): Promise<
   }
 
   return { status: "success", downloadUrl: brochureUrl ?? marronnierUrl ?? undefined, newsletter: wantsNewsletter, catalogueSent: !!catalogueUrl };
+}
+
+/** Libellé français d'un choix de liste (pour Brevo, lisible par l'équipe). */
+async function libelleFr(champ: string, valeur: string) {
+  const t = await getTranslations({ locale: "fr", namespace: "forms" });
+  return t(`options.${champ}.${valeur}`);
 }
 
 /** E-mail reçu par Champagne de l'Aube (toujours en français). */
