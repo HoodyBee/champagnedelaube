@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { CarteTerroirs } from "@/components/home/CarteTerroirs";
 import { TerroirsVideo } from "@/components/home/TerroirsVideo";
 import { VIDEO_ACCUEIL } from "@/lib/video-accueil";
 import { SocialIcon } from "@/components/icons/SocialLinks";
@@ -144,7 +143,8 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
               video={VIDEO_ACCUEIL.video}
               poster={VIDEO_ACCUEIL.poster}
               alt={t("videoAlt")}
-              terroirs={terroirPages.map((p) => ({ key: p.key, label: p.label, href: p.href, color: `var(--color-${terroirs[p.key].color})` }))}
+              terroirs={terroirPages.map((p) => ({ key: p.key, label: p.label, url: withSlash(getPathname({ href: p.href, locale })), color: `var(--color-${terroirs[p.key].color})` }))}
+              troyes={{ label: t("videoTroyes"), url: withSlash(getPathname({ href: "/champagne-troyes", locale })) }}
               textes={{ revoir: t("videoRevoir"), consigne: t("videoConsigne"), voir: t.raw("videoVoir") as string }}
             />
             {/* Mobile : la liste sous la carte */}
@@ -165,16 +165,13 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
 
       <Chiffres items={chiffres} />
 
-      {/* 2. Les terroirs de l'Aube : carte stylisée et 4 portes d'entrée */}
+      {/* 2. Les terroirs de l'Aube : 4 portes d'entrée (la carte est dans la vidéo, plus haut) */}
       <Section id="terroirs" fond={fond("terroirs")}>
         <div className="grid items-center gap-space-4 lg:grid-cols-[1fr_1fr] lg:gap-space-5">
           <div className="flex flex-col">
             <p className="text-sur-titre text-bronze">{t("terroirsSurTitre")}</p>
             <h2 className="mt-space-1 text-titre-section sm:text-[2rem]">{t("terroirsTitre")}</h2>
             <p className="mt-space-2 max-w-lg text-[1.0625rem] text-gris-chaud">{t("terroirsIntro")}</p>
-            <div className="mx-auto mt-space-4 w-full max-w-md lg:max-w-[440px]">
-              <CarteTerroirs legende={t("carteLegende")} troyes={t("carteTroyes")} />
-            </div>
           </div>
           <ul className="grid gap-space-2 sm:grid-cols-2">
             {terroirPages.map((p, i) => (

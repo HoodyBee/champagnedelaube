@@ -393,5 +393,18 @@
    "_type": "localeText",
    "fr": "Reels, coulisses, posts Collab, localisation, loi Évin : 5 idées concrètes et vérifiées pour faire connaître son domaine viticole sur Instagram."
   }
+ },
+ "image": {
+  "_type": "imageAvecAlt",
+  "asset": {
+   "_type": "reference",
+   "_ref": "image-14cbd21f85155f4fdbabcf28364c15c2e9049901-1280x853-jpg"
+  },
+  "alt": {
+   "_type": "localeString",
+   "fr": "Téléphone, tasse de café et carnet de notes sur une table en bois",
+   "en": "Phone, cup of coffee and notebook on a wooden table"
+  },
+  "credit": "Photo : kaboompics / Pixabay"
  }
 }

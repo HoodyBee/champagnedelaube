@@ -164,12 +164,34 @@ html[data-age-gate="open"] .age-gate-panel {
   padding-top: 0;
 }
 
-/* Carte des terroirs (accueil) : zones cliquables invisibles, halo doré au survol et au clavier. */
-.zone-terroir:hover,
-.zone-terroir:focus-visible {
-  outline: none;
-  background-color: color-mix(in srgb, var(--color-or) 14%, transparent);
-  box-shadow:
-    0 0 0 2px var(--color-or),
-    0 0 18px 2px color-mix(in srgb, var(--color-or) 55%, transparent);
+/* Carte des terroirs (accueil) : formes exactes des terroirs (SVG). Au survol ou au clavier,
+   la forme elle-même s'illumine (lueur dorée qui suit le contour, surbrillance de sa couleur). */
+.carte-terroirs a { cursor: pointer; outline: none; }
+.carte-terroirs .forme {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease;
 }
+.carte-terroirs .etiquette {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: stroke 0.2s ease, fill 0.2s ease;
+}
+.carte-terroirs .terroir:hover .forme,
+.carte-terroirs .terroir:focus-visible .forme {
+  fill: color-mix(in srgb, var(--teinte) 22%, transparent);
+  stroke: var(--color-or);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--color-or) 85%, transparent)) drop-shadow(0 0 14px color-mix(in srgb, var(--color-or) 55%, transparent));
+}
+.carte-terroirs .terroir:hover .etiquette,
+.carte-terroirs .terroir:focus-visible .etiquette,
+.carte-terroirs .ville:hover .etiquette,
+.carte-terroirs .ville:focus-visible .etiquette {
+  fill: color-mix(in srgb, var(--color-or) 16%, transparent);
+  stroke: var(--color-or);
+}
+.carte-terroirs .coeur { fill: var(--color-azur-troyes); opacity: 0; transition: opacity 0.2s ease; }
+.carte-terroirs .ville:hover .coeur,
+.carte-terroirs .ville:focus-visible .coeur { opacity: 1; }

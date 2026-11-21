@@ -1,55 +1,48 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { SanityImage } from "@/components/ui/SanityImage";
-import { Link } from "@/i18n/navigation";
-import type { StaticPathname } from "@/i18n/routing";
+import { APPARITION, ETIQUETTES, FORMES, PHASES, type Cadrage } from "./carte-terroirs-formes";
+
+export type TerroirLien = { key: string; label: string; url: string; color: string };
 
 /**
- * Zones cliquables de la carte, en pourcentage de l'image (1440 × 1080, dernière image de la vidéo = poster) :
- * elles restent justes à toutes les tailles d'écran. Chaque zone couvre l'étiquette ET la zone colorée.
- * « Troyes » n'est pas un terroir : pas de zone.
+ * Carte vidéo des terroirs (accueil). Chaque terroir est cliquable par sa forme EXACTE (tracé SVG
+ * détouré sur l'image) et par son étiquette ; au survol ou au clavier, la forme s'illumine (lueur dorée
+ * qui suit le contour, surbrillance de sa couleur). Troyes est cliquable par son point et son étiquette.
+ * Les zones sont actives dès que la carte est immobile : cadrage « milieu » (4,4 à 10,6 s, chaque terroir
+ * dès son apparition) puis cadrage « final » (à partir de 13,4 s, à la fin et sur le poster).
  */
-type Zone = { x: number; y: number; w: number; h: number };
-const ZONES: Record<string, Zone[]> = {
-  villenauxe: [{ x: 10.8, y: 16.2, w: 17.8, h: 9.6 }],
-  montgueux: [{ x: 31.1, y: 42.6, w: 17.9, h: 9.4 }],
-  "cote-des-bar": [
-    { x: 67.0, y: 61.0, w: 19.4, h: 13.0 },
-    { x: 75.3, y: 47.7, w: 19.9, h: 13.5 },
-  ],
-  "les-riceys": [{ x: 57.2, y: 76.5, w: 16.7, h: 11.5 }],
-};
-
-export type TerroirLien = { key: string; label: string; href: StaticPathname; color: string };
-
 export function TerroirsVideo({
   video,
   poster,
   alt,
   terroirs,
+  troyes,
   textes,
 }: {
   video: string;
   poster: string;
   alt: string;
   terroirs: TerroirLien[];
+  troyes: { label: string; url: string };
   /** voir : modèle avec « {nom} », ex. « {nom} : découvrir ce terroir ». */
   textes: { revoir: string; consigne: string; voir: string };
 }) {
+  const router = useRouter();
   const boite = useRef<HTMLDivElement>(null);
   const lecteur = useRef<HTMLVideoElement>(null);
-  // « attente » : poster seul ; « lecture » : vidéo en cours ; « fin » : dernière image, zones actives.
   const [etat, setEtat] = useState<"attente" | "lecture" | "fin">("attente");
   const [charger, setCharger] = useState(false);
+  const [temps, setTemps] = useState(0);
 
-  // La vidéo n'est chargée que lorsque la section approche de l'écran, et jamais si
-  // le visiteur a demandé de réduire les animations : il voit alors directement le poster.
+  // Chargement de la vidéo : après celui de la page, quand un tiers de la carte est visible ;
+  // jamais si le visiteur demande de réduire les animations (il voit le poster, cliquable).
   useEffect(() => {
     const el = boite.current;
     if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let io: IntersectionObserver | undefined;
-    // On attend la fin du chargement de la page (le haut de page passe d'abord), puis qu'un tiers de la carte soit visible.
     const observer = () => {
       io = new IntersectionObserver(
         (entrees) => {
@@ -70,17 +63,37 @@ export function TerroirsVideo({
     };
   }, []);
 
-  const lancer = () => {
+  // Pendant la lecture : on suit le temps pour activer les zones aux bons moments.
+  useEffect(() => {
+    if (etat !== "lecture") return;
+    let id = 0;
+    const tick = () => {
+      setTemps(lecteur.current?.currentTime ?? 0);
+      id = window.setTimeout(tick, 120);
+    };
+    tick();
+    return () => window.clearTimeout(id);
+  }, [etat]);
+
+  const cadrage: Cadrage | null =
+    etat !== "lecture" ? "final" : temps >= PHASES.final.debut ? "final" : temps >= PHASES.milieu.debut && temps < PHASES.milieu.fin ? "milieu" : null;
+  const visible = (cle: string) => cadrage === "final" || (cadrage === "milieu" && temps >= (APPARITION[cle] ?? 99));
+
+  const relancer = () => {
     const v = lecteur.current;
     if (!v) return;
     v.currentTime = 0;
     v.play().then(
       () => setEtat("lecture"),
-      () => setEtat("attente"), // lecture impossible : on garde le poster, cliquable
+      () => setEtat("attente"),
     );
   };
 
-  const zonesActives = etat !== "lecture";
+  const aller = (url: string) => (e: MouseEvent) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    router.push(url);
+  };
 
   return (
     <div>
@@ -106,41 +119,49 @@ export function TerroirsVideo({
             className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${etat === "attente" ? "opacity-0" : "opacity-100"}`}
           />
         )}
-        {/* Zones cliquables : sur le poster et à la fin de la vidéo. */}
-        {terroirs.map((t) =>
-          (ZONES[t.key] ?? []).map((z, i) => (
-            <Link
-              key={`${t.key}-${i}`}
-              href={t.href}
-              aria-label={textes.voir.replace("{nom}", t.label)}
-              aria-hidden={i > 0 || !zonesActives ? true : undefined}
-              tabIndex={i > 0 || !zonesActives ? -1 : undefined}
-              className={`zone-terroir absolute -translate-x-1/2 -translate-y-1/2 rounded-etiquette transition-[box-shadow,background-color] duration-200 ${
-                zonesActives ? "" : "pointer-events-none"
-              }`}
-              style={{
-                left: `${z.x + z.w / 2}%`,
-                top: `${z.y + z.h / 2}%`,
-                width: `max(${z.w}%, 44px)`,
-                height: `max(${z.h}%, 44px)`,
-                ["--halo" as string]: t.color,
-              }}
-            />
-          )),
+
+        {cadrage && (
+          <svg viewBox="0 0 1440 1080" className="carte-terroirs absolute inset-0 h-full w-full" role="group" aria-label={textes.consigne}>
+            {terroirs.map((t) => {
+              if (!visible(t.key)) return null;
+              const [x0, y0, x1, y1] = ETIQUETTES[cadrage][t.key];
+              const etiquetteGrande = [x0 - 14, y0 - 18, x1 - x0 + 28, y1 - y0 + 36] as const;
+              return (
+                <a key={`${cadrage}-${t.key}`} href={t.url} onClick={aller(t.url)} aria-label={textes.voir.replace("{nom}", t.label)} className="terroir" style={{ ["--teinte" as string]: t.color }}>
+                  <path d={FORMES[cadrage][t.key]} className="forme" />
+                  <rect x={etiquetteGrande[0]} y={etiquetteGrande[1]} width={etiquetteGrande[2]} height={etiquetteGrande[3]} rx={18} className="etiquette" />
+                </a>
+              );
+            })}
+            {visible("troyes") &&
+              (() => {
+                const [x0, y0, x1, y1] = ETIQUETTES[cadrage].troyes;
+                return (
+                  <a href={troyes.url} onClick={aller(troyes.url)} aria-label={troyes.label} className="ville">
+                    <rect x={x0 - 12} y={y0 - 12} width={x1 - x0 + 24} height={y1 - y0 + 24} rx={14} className="etiquette" />
+                    {/* Petit cœur azur (couleur du blason de Troyes) qui apparaît au survol */}
+                    <path
+                      className="coeur"
+                      transform={`translate(${x1 + 10} ${y0 + (y1 - y0) / 2 - 13}) scale(1.7)`}
+                      d="M8 13.6 6.9 12.6C2.9 9 .3 6.6.3 3.9.3 1.7 2 0 4.2 0c1.2 0 2.4.6 3.1 1.5h1.4C9.4.6 10.6 0 11.8 0 14 0 15.7 1.7 15.7 3.9c0 2.7-2.6 5.1-6.6 8.7L8 13.6Z"
+                    />
+                  </a>
+                );
+              })()}
+          </svg>
         )}
+
         {etat === "fin" && (
           <button
             type="button"
-            onClick={lancer}
+            onClick={relancer}
             className="absolute bottom-[3%] left-[2.5%] inline-flex min-h-9 items-center gap-1 rounded-etiquette border border-or/60 bg-[#0D1929]/70 px-space-1 text-sur-titre-petit text-creme transition-colors hover:border-or hover:text-or"
           >
             <span aria-hidden="true">↻</span> {textes.revoir}
           </button>
         )}
       </div>
-      <p className="mt-space-1 text-center text-legende text-creme/80">
-        {textes.consigne}
-      </p>
+      <p className="mt-space-1 text-center text-legende text-creme/80">{textes.consigne}</p>
     </div>
   );
 }
