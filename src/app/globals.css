@@ -192,6 +192,10 @@ html[data-age-gate="open"] .age-gate-panel {
   fill: color-mix(in srgb, var(--color-or) 16%, transparent);
   stroke: var(--color-or);
 }
+.carte-terroirs .zone-doigt { fill: transparent; display: none; }
+@media (max-width: 640px), (pointer: coarse) {
+  .carte-terroirs .zone-doigt { display: inline; }
+}
 .carte-terroirs .coeur { fill: var(--color-azur-troyes); opacity: 0; transition: opacity 0.2s ease; }
 .carte-terroirs .ville:hover .coeur,
 .carte-terroirs .ville:focus-visible .coeur { opacity: 1; }

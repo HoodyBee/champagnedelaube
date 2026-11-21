@@ -91,7 +91,7 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
         <p className="mt-space-2 max-w-xl text-pretty text-[1.0625rem] text-gris-chaud">{t("presentation")}</p>
         <p className="mt-space-2 max-w-xl text-pretty text-[1.0625rem] text-gris-chaud">{t("presentation2")}</p>
         <p className="mt-space-2 max-w-xl text-[1.0625rem] text-gris-chaud">
-          {t("signatureIntro")} <strong className="font-bold italic text-bronze">{t("signature")}</strong>
+          <strong className="font-bold italic text-bronze">{t("signature")}</strong>
         </p>
       </Hero>
       {p.chiffres.length > 0 && <Chiffres items={chiffres} />}

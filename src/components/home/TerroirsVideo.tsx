@@ -14,6 +14,19 @@ export type TerroirLien = { key: string; label: string; url: string; color: stri
  * Les zones sont actives dès que la carte est immobile : cadrage « milieu » (4,4 à 10,6 s, chaque terroir
  * dès son apparition) puis cadrage « final » (à partir de 13,4 s, à la fin et sur le poster).
  */
+/**
+ * Zones de toucher (mobile), en unités de la carte (1440 × 1080) : marge [gauche, haut, droite, bas]
+ * autour de chaque étiquette. Environ 44 px de haut sur un téléphone, sans que deux zones se chevauchent
+ * (Montgueux s'agrandit vers le haut, Troyes vers le bas, car leurs étiquettes sont proches).
+ */
+const DOIGT: Record<string, [number, number, number, number]> = {
+  villenauxe: [40, 60, 40, 60],
+  montgueux: [40, 90, 40, 20],
+  "cote-des-bar": [40, 70, 40, 55],
+  "les-riceys": [40, 55, 40, 70],
+  troyes: [30, 20, 30, 100],
+};
+
 export function TerroirsVideo({
   video,
   poster,
@@ -129,6 +142,8 @@ export function TerroirsVideo({
               return (
                 <a key={`${cadrage}-${t.key}`} href={t.url} onClick={aller(t.url)} aria-label={textes.voir.replace("{nom}", t.label)} className="terroir" style={{ ["--teinte" as string]: t.color }}>
                   <path d={FORMES[cadrage][t.key]} className="forme" />
+                  {/* Sur mobile, une zone de toucher plus large autour de l'étiquette (invisible) */}
+                  <rect x={x0 - DOIGT[t.key][0]} y={y0 - DOIGT[t.key][1]} width={x1 - x0 + DOIGT[t.key][0] + DOIGT[t.key][2]} height={y1 - y0 + DOIGT[t.key][1] + DOIGT[t.key][3]} className="zone-doigt" />
                   <rect x={etiquetteGrande[0]} y={etiquetteGrande[1]} width={etiquetteGrande[2]} height={etiquetteGrande[3]} rx={18} className="etiquette" />
                 </a>
               );
@@ -138,6 +153,7 @@ export function TerroirsVideo({
                 const [x0, y0, x1, y1] = ETIQUETTES[cadrage].troyes;
                 return (
                   <a href={troyes.url} onClick={aller(troyes.url)} aria-label={troyes.label} className="ville">
+                    <rect x={x0 - DOIGT.troyes[0]} y={y0 - DOIGT.troyes[1]} width={x1 - x0 + DOIGT.troyes[0] + DOIGT.troyes[2]} height={y1 - y0 + DOIGT.troyes[1] + DOIGT.troyes[3]} className="zone-doigt" />
                     <rect x={x0 - 12} y={y0 - 12} width={x1 - x0 + 24} height={y1 - y0 + 24} rx={14} className="etiquette" />
                     {/* Petit cœur azur (couleur du blason de Troyes) qui apparaît au survol */}
                     <path
@@ -161,7 +177,13 @@ export function TerroirsVideo({
           </button>
         )}
       </div>
-      <p className="mt-space-1 text-center text-legende text-creme/80">{textes.consigne}</p>
+      {/* Consigne bien lisible : crème sur fond sombre, taille de texte courant, petite main dorée. */}
+      <p className="mt-space-2 flex items-center justify-center gap-space-1 text-center text-[1rem] font-bold leading-snug text-creme sm:text-[1.0625rem]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0 text-or" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V11m0-.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1-6 6h-.6a6 6 0 0 1-4.9-2.5L4 15.4a1.5 1.5 0 0 1 2.3-1.9L9 16" />
+        </svg>
+        {textes.consigne}
+      </p>
     </div>
   );
 }
