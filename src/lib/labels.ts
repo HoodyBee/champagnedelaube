@@ -36,7 +36,7 @@ export const LABELS: LabelLigne[] = [
     cle: "vdc",
     sigle: "VDC",
     nom: { fr: "VDC (Viticulture Durable en Champagne)", en: "VDC (Sustainable Viticulture in Champagne)" },
-    logos: [],
+    logos: [{ src: "/labels/logo-vdc-viticulture-durable-en-champagne.png", nom: "Viticulture Durable en Champagne", largeur: 64, hauteur: 64 }],
     site: "https://www.champagne.fr/fr/les-engagements-dans-le-champagne",
     pesticides: { fr: "Limités et contrôlés", en: "Limited and monitored" },
     promesse: {
@@ -53,8 +53,8 @@ export const LABELS: LabelLigne[] = [
     site: "https://terravitis.com/",
     pesticides: { fr: "En dernier recours", en: "As a last resort" },
     promesse: {
-      fr: "Les produits de synthèse ne sont utilisés que si la récolte est menacée. Traçabilité totale des interventions.",
-      en: "Synthetic products are used only when the harvest is at risk. Every intervention is fully traceable.",
+      fr: "Les produits de synthèse ne sont utilisés que lorsque c'est justifié. Traçabilité totale des interventions.",
+      en: "Synthetic products are used only when justified. Every intervention is fully traceable.",
     },
     indice: 3,
   },
@@ -62,7 +62,10 @@ export const LABELS: LabelLigne[] = [
     cle: "bio",
     sigle: "AB",
     nom: { fr: "Agriculture biologique", en: "Organic farming" },
-    logos: [{ src: "/labels/logo-eurofeuille-bio-union-europeenne.png", nom: "Eurofeuille (bio, Union européenne)", largeur: 97, hauteur: 64 }],
+    logos: [
+      { src: "/labels/logo-ab-agriculture-biologique.png", nom: "AB (agriculture biologique)", largeur: 53, hauteur: 64 },
+      { src: "/labels/logo-eurofeuille-bio-union-europeenne.png", nom: "Eurofeuille (bio, Union européenne)", largeur: 97, hauteur: 64 },
+    ],
     site: "https://www.agencebio.org/",
     pesticides: { fr: "Interdits", en: "Banned" },
     promesse: {

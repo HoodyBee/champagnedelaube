@@ -4,20 +4,19 @@ Le tableau est un vrai tableau (bloc « Tableau comparatif des labels » dans le
 
 Colonnes : **Label** (logo officiel, lien vers le site du label) · **La démarche** (nom complet) · **Pesticides de synthèse** · **La promesse** · **Indice nature** (🌿, lu « Indice nature : 3 sur 5 » par les lecteurs d'écran).
 
-## Logos (recherche du 20-21 novembre 2026)
+## Logos — utilisation validée par Julien (21 novembre 2026)
 
-| Label | Affiché | Fichier | Source exacte | Droit d'usage pour un site d'information |
-|---|---|---|---|---|
-| HVE | logo | `logo-hve-haute-valeur-environnementale.svg` | [hve-asso.com/la-hve](https://hve-asso.com/la-hve/) (fichier `HVE-Haute-valeur-environnementale.svg`) ; couleur conforme à la charte du ministère (Pantone 173) : [charte graphique de la marque HVE](https://agriculture.gouv.fr/telecharger/132467) | **Non vérifié** : la charte vise les produits des exploitations certifiées ; aucune règle publique trouvée pour un usage éditorial. |
-| VDC | **sigle « VDC »** | — | Le logo officiel figure sur la couverture du [référentiel technique VDC, version 8.4, octobre 2023](https://www.champagne.fr/system/files/2024-12/Referentiel_VDC.pdf) (Comité Champagne). **Non repris** : ce document est sous licence Creative Commons « pas de modification », et aucune charte publique ne permet d'extraire le logo. Le seul fichier séparé trouvé est sur un site non officiel (docplayer), écarté. | À demander au Comité Champagne. |
-| Terra Vitis | logo | `logo-terra-vitis.png` | [terravitis.com](https://terravitis.com/) (fichier `TerraVitis_NEW_Logo_FR_RVB-1.png`) | **Non vérifié** (marque de l'association). |
-| AB | **sigle « AB »** | — | Logo officiel disponible sur [INAO – règles d'utilisation des logos bio](https://www.inao.gouv.fr/regles-logos-agriculture-biologique). **Non affiché** : les [règles d'usage de la marque AB (révision 2025), article 7](https://www.inao.gouv.fr/sites/default/files/2026-09/Rg_usage_AB_r%C3%A9vision2025_VF_sign%C3%A9.pdf) imposent un **accord préalable de l'Agence Bio** pour toute personne non certifiée qui utilise le logo AB en communication (demande avec la maquette). | **Autorisation à demander** à l'Agence Bio. |
-| Eurofeuille (bio, UE) | logo | `logo-eurofeuille-bio-union-europeenne.png` | Fichier officiel publié par l'INAO : [page INAO](https://www.inao.gouv.fr/regles-logos-agriculture-biologique) (`eurofeuille_image_full.png`). Il remplace la copie Wikimedia Commons utilisée avant. | **Autorisé** : article 33 du règlement (UE) 2018/848, « le logo […] peut aussi être utilisé à des fins d'information et d'éducation » ([texte](https://legislation.gov.uk/eur/2018/848/article/33/2020-01-31)). Logo non déformé, non combiné ([manuel d'utilisation](https://agriculture.ec.europa.eu/system/files/2018-11/organic-logo-user-manual_fr_0.pdf)). |
-| Demeter | logo | `logo-demeter.png` | [demeter.fr](https://www.demeter.fr/) (fichier `cropped-Demeter-logo.png`) | **Non vérifié** (marque déposée). |
-| Biodyvin | logo | `logo-biodyvin.png` | [biodyvin.com](https://www.biodyvin.com/) (fichier `logo-biodyvin.png`) | **Non vérifié** (marque déposée). |
+Julien a décidé d'utiliser tous les logos et en prend la responsabilité. Aucun logo n'a été redessiné, recoloré ni déformé (proportions gardées). Chaque logo renvoie au site officiel du label et a un texte alternatif « Logo du label X ».
 
-Aucun logo n'a été redessiné, recoloré ni déformé. Les fichiers PNG trop grands ont seulement été réduits, proportions gardées.
-**À décider par Julien** : demander l'accord de l'Agence Bio (AB) et du Comité Champagne (VDC), et, par prudence, des autres organismes. Sinon, retirer les logos dont le droit d'usage n'est pas confirmé : le tableau affiche alors le sigle, déjà prévu.
+| Label | Fichier | Source exacte | Remarque |
+|---|---|---|---|
+| HVE | `logo-hve-haute-valeur-environnementale.svg` | [hve-asso.com/la-hve](https://hve-asso.com/la-hve/) (`HVE-Haute-valeur-environnementale.svg`) | Couleur conforme à la [charte du ministère](https://agriculture.gouv.fr/telecharger/132467) (Pantone 173). Utilisation validée par Julien. |
+| VDC | `logo-vdc-viticulture-durable-en-champagne.png` (320 px ; original 1 336 px conservé hors du dépôt) | Couverture du [référentiel technique VDC, version 8.4, octobre 2023](https://www.champagne.fr/system/files/2024-12/Referentiel_VDC.pdf) (Comité Champagne), page 1 rendue à 600 dpi | Extraction : le badge rond seul, à l'identique ; le fond de couverture autour du cercle est rendu transparent, sans autre modification. Utilisation validée par Julien. |
+| Terra Vitis | `logo-terra-vitis.png` | [terravitis.com](https://terravitis.com/) (`TerraVitis_NEW_Logo_FR_RVB-1.png`) | Utilisation validée par Julien. |
+| AB | `logo-ab-agriculture-biologique.png` | [INAO – règles d'utilisation des logos bio](https://www.inao.gouv.fr/regles-logos-agriculture-biologique) (`ab_image_full.png`), version « communication » (sans la mention « Certifié ») | Marges blanches retirées seulement. Les [règles d'usage AB (révision 2025), art. 7](https://www.inao.gouv.fr/sites/default/files/2026-09/Rg_usage_AB_r%C3%A9vision2025_VF_sign%C3%A9.pdf) prévoient un accord de l'Agence Bio pour un non-certifié : utilisation validée par Julien malgré tout. Fichier en faible résolution (147 × 177 px), suffisant à la taille affichée. |
+| Eurofeuille (bio, UE) | `logo-eurofeuille-bio-union-europeenne.png` | [INAO – règles d'utilisation des logos bio](https://www.inao.gouv.fr/regles-logos-agriculture-biologique) (`eurofeuille_image_full.png`) | Usage d'information permis par l'article 33 du règlement (UE) 2018/848. |
+| Demeter | `logo-demeter.png` | [demeter.fr](https://www.demeter.fr/) (`cropped-Demeter-logo.png`) | Utilisation validée par Julien. |
+| Biodyvin | `logo-biodyvin.png` | [biodyvin.com](https://www.biodyvin.com/) (`logo-biodyvin.png`) | Utilisation validée par Julien. |
 
 ## Vérifications (à relire par Julien : ce qui est inexact est signalé, pas corrigé en silence)
 
@@ -66,4 +65,4 @@ Sources : [Demeter – fiche technique viticulture 2026](https://www.demeter.fr/
 | Demeter et Biodyvin | « Biodyvin est plus spécifique au monde viticole français… garantit des raisins sains et de haute qualité » | Demeter : marque internationale, toutes productions ; Biodyvin : réservé aux vignerons, admission avec dégustation ; les deux exigent la certification bio | Réussir – « Biodynamie, une démarche mais deux marques » · Demeter |
 
 Vérifié et **gardé tel quel** : HVE certification d'État, seul le niveau 3 porte un logo ; Terra Vitis propre au vin ; VDC propre à la Champagne (sols, eau, intrants, biodiversité, carbone ; 46 % des surfaces en 2022, d'où « une grande partie ») ; bio sans pesticides ni herbicides de synthèse, cuivre, soufre et désherbage mécanique ; climat humide qui favorise les maladies.
-Dans le **tableau**, la phrase Terra Vitis « que si la récolte est menacée » est gardée (votre texte) ; dites-moi si vous préférez « seulement quand c'est justifié ».
+Dans le **tableau**, Terra Vitis dit désormais « que lorsque c'est justifié » (choix de Julien).
