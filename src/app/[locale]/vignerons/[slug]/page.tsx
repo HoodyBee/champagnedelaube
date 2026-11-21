@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   const v = await getVigneron(slug, locale);
-  if (!v) return {};
+  if (!v) notFound();
   const t = await getTranslations({ locale, namespace: "vigneronPage" });
   return pageMetadata({
     locale,

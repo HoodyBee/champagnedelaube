@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, cepage } = (await params) as { locale: Locale; cepage: string };
-  if (!estCepage(cepage)) return {};
+  if (!estCepage(cepage)) notFound();
   const c = await getCepage(cepage, locale);
   return pageMetadata({
     locale,

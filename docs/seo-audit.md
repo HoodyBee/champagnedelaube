@@ -25,6 +25,11 @@ Audit fait sur le site construit en mode « en ligne », sur les **88 adresses**
 
 **Articles futurs** : titre = « Titre de l'article | Champagne de l'Aube » s'il tient en 60 caractères, sinon le titre seul ; description = le chapeau, coupé proprement à 160 caractères ; image de partage = la photo principale. Tout est modifiable dans le Studio (onglet « Référencement » de chaque article et de chaque page), avec un avertissement au-delà de 60 et 160 caractères.
 
+## Pages 404
+
+- Page 404 dans la charte, traduite (FR, EN), avec liens vers l'accueil, les terroirs, les dégustations privées et le Mag ; version bilingue pour les adresses qui ne correspondent à aucune page.
+- Google reçoit un **vrai code 404** sur toutes les adresses inconnues (vérifié avec l'identité Googlebot). Pour un navigateur, Next.js peut répondre 200 avec une balise `noindex` (comportement normal de Next.js 16 quand la page est envoyée en continu) : sans effet sur le référencement.
+
 ## À vérifier après la mise en ligne
 
 - Rendu des partages : [débogueur Facebook](https://developers.facebook.com/tools/debug/), [inspecteur LinkedIn](https://www.linkedin.com/post-inspector/), puis un envoi test sur WhatsApp. Je n'ai pas pu le faire : ces outils doivent lire le vrai site en ligne.
@@ -63,7 +68,7 @@ Audit fait sur le site construit en mode « en ligne », sur les **88 adresses**
 | `/cse-et-cadeaux-dentreprise/` | Champagnes pour Entreprises & CSE \| Cadeaux & Événements (56) | Coffrets de champagnes de vignerons indépendants de l'Aube pour vos collaborateurs et vos clients : cadeaux CSE, commandes groupées et dégustations sur mesure. (159) | coffret-cadeau-dore-entreprise | BreadcrumbList |
 | `/en/business-gifts-and-events/` | Champagne for companies & works councils \| Gifts & events (57) | Gift boxes put together with independent Aube winemakers, for your staff and clients. Works council gift boxes, group orders and tailor-made tasting events. (156) | coffret-cadeau-dore-entreprise | BreadcrumbList |
 | `/vignerons-de-laube-devenez-partenaire-de-nos-degustations/` | Partenariat Vignerons \| Trouvez votre apporteur d'affaires (58) | Vignerons de l'Aube, développez votre visibilité. Nous valorisons vos cuvées auprès des professionnels (CHR, CSE) et amateurs. Rencontrons-nous au domaine ! (156) | logo (image par défaut) | BreadcrumbList |
-| `/en/aube-winemakers-become-a-tasting-partner/` | Winemaker partnership \| Find your business introducer (53) | Aube winemakers, grow your visibility. We showcase your cuvées to professionals (hotels, restaurants, works councils) and enthusiasts. Let's meet at your… (154) | logo (image par défaut) | BreadcrumbList |
+| `/en/aube-winemakers-become-a-tasting-partner/` | Winemaker partnership \| Find your business introducer (53) | Aube winemakers, grow your visibility: we showcase your cuvées to professionals (hotels, restaurants, works councils) and enthusiasts. Let's meet at the estate. (160) | logo (image par défaut) | BreadcrumbList |
 | `/communication-marketing/` | Communication et marketing pour vignerons et restaurants (56) | Photo, vidéo, réseaux sociaux : Detectezmoi.com, qui porte Champagne de l'Aube, propose ses services de communication aux vignerons, caves, bars et restaurants. (160) | logo (image par défaut) | BreadcrumbList |
 | `/en/communication-and-marketing/` | Communication and marketing for winemakers and restaurants (58) | Photo, video, social media: Detectezmoi.com, the team behind Champagne de l'Aube, offers its services to winemakers, wine shops, bars and restaurants. (150) | logo (image par défaut) | BreadcrumbList |
 | `/le-mag/` | Le Mag du Champagne : vignerons, terroirs et accords (52) | Tout savoir sur le champagne, accords mets & champagne et portraits de vignerons de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande. (153) | logo (image par défaut) | BreadcrumbList |

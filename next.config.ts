@@ -5,6 +5,8 @@ import { redirections } from "./src/redirections";
 const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
+  // Page 404 pour les adresses qui ne correspondent à aucune page (src/app/global-not-found.tsx).
+  experimental: { globalNotFound: true },
   // Les URL de l'ancien site WordPress se terminent par « / » : on garde ce format
   // pour préserver le référencement (/vignerons/ et non /vignerons).
   trailingSlash: true,

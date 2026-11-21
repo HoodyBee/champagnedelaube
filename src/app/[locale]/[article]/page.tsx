@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, article: slug } = (await params) as { locale: Locale; article: string };
   const [a, langues] = await Promise.all([getArticle(slug, locale), getArticleLangues()]);
-  if (!a) return {};
+  if (!a) notFound();
   // Article sans traduction dans cette langue : la page affiche le français -> pas d'indexation, canonique vers le français.
   const traduit = (langues[slug] ?? []).includes(locale);
   const meta = await pageMetadata({

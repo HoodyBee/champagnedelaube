@@ -25,7 +25,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   const e = formatsDegustationActifs ? await getExperience(slug, locale) : null;
-  if (!e) return {};
+  if (!e) notFound();
   const t = await getTranslations({ locale, namespace: "experiencePage" });
   return pageMetadata({
     locale,

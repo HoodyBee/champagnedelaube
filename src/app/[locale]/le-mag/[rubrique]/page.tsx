@@ -26,7 +26,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, rubrique } = (await params) as { locale: Locale; rubrique: string };
-  if (rubrique in PAGES_RUBRIQUE || !(await rubriquesAvecArticles(locale)).includes(rubrique)) return {};
+  if (rubrique in PAGES_RUBRIQUE) permanentRedirect(getPathname({ href: PAGES_RUBRIQUE[rubrique as keyof typeof PAGES_RUBRIQUE], locale }));
+  if (!(await rubriquesAvecArticles(locale)).includes(rubrique)) notFound();
   return rubriqueMetadata(rubrique, locale);
 }
 
