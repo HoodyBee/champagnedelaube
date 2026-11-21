@@ -566,7 +566,13 @@
     "rubriques": {
       "toutSavoir": "Alles über Champagner",
       "accords": "Speisen & Champagner",
+      "marketing": "Champagne & Marketing",
       "portraits": "Winzerporträts"
+    },
+    "encartMarketing": {
+      "titre": "Möchten Sie weitergehen?",
+      "texte": "Fotografie, Video, soziale Medien: Entdecken Sie unsere Kommunikationsleistungen für Winzer, Weinhandlungen, Bars und Restaurants.",
+      "bouton": "Zu Kommunikation & Marketing"
     }
   },
   "notFound": {

@@ -752,6 +752,7 @@
     "rubriques": {
       "actualites": "Actu",
       "accords": "Accords mets & champagne",
+      "marketing": "Champagne & marketing",
       "toutSavoir": "Tout savoir sur le champagne",
       "portraits": "Portraits",
       "autresHorizons": "Autres horizons"
@@ -762,7 +763,8 @@
       "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
       "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
       "portraits": "À la rencontre de vignerons, d'artisans et de passionnés : leur histoire, leur savoir-faire, ce qui les anime.",
-      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois."
+      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois.",
+      "marketing": "Réseaux sociaux, photo, vidéo, œnotourisme : idées et méthodes pour faire connaître un domaine, une cave, un bar ou un restaurant."
     },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles",
@@ -786,6 +788,11 @@
         "title": "Actualités du Mag : vignerons, rendez-vous et calendrier",
         "description": "Les actualités du Mag du Champagne : rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, et nouvelles de nos vignerons de l'Aube."
       }
+    },
+    "encartMarketing": {
+      "titre": "Envie d'aller plus loin ?",
+      "texte": "Photo, vidéo, réseaux sociaux : découvrez nos services de communication pour les vignerons, cavistes, bars et restaurants.",
+      "bouton": "Voir Communication & marketing"
     }
   },
   "entreprisesPage": {
@@ -1060,7 +1067,7 @@
     },
     "legendeVignes": "Vignes de la Côte des Bar, à Colombé-le-Sec",
     "legendeAccord": "Accord mets et champagne (illustration)",
-    "altHero": "Bouteilles de champagne de vignerons et cartes de présentation sur une table en bois, à Troyes",
+    "altHero": "Maisons à pans de bois du centre historique de Troyes, sous un ciel bleu",
     "altVignes": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été",
     "altAccord": "Chou à la crème servi avec un verre de champagne",
     "faqTitre": "Vos questions",

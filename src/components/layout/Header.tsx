@@ -347,6 +347,7 @@ function Dropdown({
                     } ${isActive(item.cle) ? "text-bronze" : ""}`}
                   >
                     {item.retrait && <span aria-hidden="true">↳</span>}
+                    {item.coeur && <CoeurTroyes className="h-3.5 w-3.5" />}
                     {item.color && (
                       <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
                     )}
@@ -445,6 +446,7 @@ function MobileMenu({
                         }`}
                       >
                         {item.retrait && <span aria-hidden="true">↳</span>}
+                        {item.coeur && <CoeurTroyes className="h-2.5 w-2.5" />}
                         {item.color && (
                           <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
                         )}

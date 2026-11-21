@@ -18,6 +18,7 @@ const CLE_PAGE: Record<string, string> = { "tout-savoir": "tout-savoir", accords
 const CLE_INTRO: Record<string, string> = {
   actualites: "actualites",
   accords: "accords",
+  marketing: "marketing",
   "tout-savoir": "toutSavoir",
   portraits: "portraits",
   "autres-horizons": "autresHorizons",

@@ -752,6 +752,7 @@
     "rubriques": {
       "actualites": "News",
       "accords": "Food & champagne pairing",
+      "marketing": "Champagne & marketing",
       "toutSavoir": "All about champagne",
       "portraits": "Portraits",
       "autresHorizons": "Further afield"
@@ -762,7 +763,8 @@
       "accords": "Recipes and food & champagne pairings, from starter to dessert, with cuvées from Aube winemakers.",
       "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
       "portraits": "Meet winemakers, artisans and enthusiasts: their story, their craft, what drives them.",
-      "autresHorizons": "Ciders and beers from the Pays d'Othe, wines from other regions, champagnes from the Marne, travel and heritage: our trips beyond Aube champagne."
+      "autresHorizons": "Ciders and beers from the Pays d'Othe, wines from other regions, champagnes from the Marne, travel and heritage: our trips beyond Aube champagne.",
+      "marketing": "Social media, photography, video, wine tourism: ideas and methods to promote an estate, a wine shop, a bar or a restaurant."
     },
     "aLaUne": "Featured",
     "tousLesArticles": "All articles",
@@ -786,6 +788,11 @@
         "title": "News from the Champagne Mag: winemakers and events",
         "description": "News from the Champagne Mag: vineyard events, the calendar of wine and food days, and the latest news from our independent winemakers in the Aube."
       }
+    },
+    "encartMarketing": {
+      "titre": "Want to go further?",
+      "texte": "Photography, video, social media: discover our communication services for winemakers, wine shops, bars and restaurants.",
+      "bouton": "See Communication & marketing"
     }
   },
   "entreprisesPage": {
@@ -1060,7 +1067,7 @@
     },
     "legendeVignes": "Côte des Bar vineyards, in Colombé-le-Sec",
     "legendeAccord": "Food and champagne pairing (illustration)",
-    "altHero": "Growers' champagne bottles and presentation cards on a wooden table, in Troyes",
+    "altHero": "Half-timbered houses in the historic centre of Troyes, under a blue sky",
     "altVignes": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
     "altAccord": "Cream puff served with a glass of champagne",
     "faqTitre": "Your questions",

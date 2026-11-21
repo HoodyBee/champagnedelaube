@@ -6,6 +6,7 @@ import { requireFr } from "../objects/localized";
 export const RUBRIQUES_OPTIONS = [
   { title: "Actu", value: "actualites" },
   { title: "Accords mets & champagne", value: "accords" },
+  { title: "Champagne & marketing (réseaux sociaux, photo, vidéo, œnotourisme…)", value: "marketing" },
   { title: "Tout savoir sur le champagne (dont cépages et terroirs)", value: "tout-savoir" },
   { title: "Portraits (vignerons, artisans, passionnés)", value: "portraits" },
   { title: "Autres horizons (cidres, bières, autres vins, voyages, patrimoine)", value: "autres-horizons" },

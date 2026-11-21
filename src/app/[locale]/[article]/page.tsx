@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MarronnierBloc } from "@/components/calendrier/MarronnierBloc";
 import { MagCard } from "@/components/mag/MagCard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { ButtonLink } from "@/components/ui/Button";
 import { DomaineCard } from "@/components/ui/DomaineCard";
 import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
@@ -130,6 +131,18 @@ export default async function ArticlePage({ params }: Props) {
             <RichText value={a.contenu} locale={locale} extras={blocMarronnier ? { calendrierMarronnier: blocMarronnier } : undefined} />
           </div>
         ) : null}
+        {/* Rubrique « Champagne & marketing » : chaque article se termine par un encart vers la page Communication & marketing. */}
+        {(a.rubriquePrincipale === "marketing" || a.rubriques.includes("marketing")) && (
+          <aside aria-labelledby="encart-marketing" className="mx-auto max-w-3xl px-space-2 pb-space-4 sm:px-space-4">
+            <div className="rounded-carte border border-or bg-champagne/40 p-space-3 sm:p-space-4">
+              <h2 id="encart-marketing" className="text-titre-section">{t("encartMarketing.titre")}</h2>
+              <p className="mt-space-1 text-[1.0625rem] text-gris-chaud">{t("encartMarketing.texte")}</p>
+              <ButtonLink href="/communication-marketing" className="mt-space-3">
+                {t("encartMarketing.bouton")}
+              </ButtonLink>
+            </div>
+          </aside>
+        )}
         {/* Continuer la découverte : la rubrique de l'article et deux pages clés, avec des ancres explicites */}
         <nav aria-label={t("plusLoin")} className="mx-auto max-w-3xl px-space-2 pb-space-5 sm:px-space-4">
           <div className="rounded-carte border border-filet bg-creme-clair p-space-3">
