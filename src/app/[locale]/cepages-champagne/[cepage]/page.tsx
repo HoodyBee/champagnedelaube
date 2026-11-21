@@ -101,7 +101,7 @@ export default async function CepageDetailPage({ params }: Props) {
             )}
             <p className="mt-space-4 text-legende text-gris-chaud">{t("sourcesNote")}</p>
           </div>
-          <aside className="space-y-space-4 lg:pt-space-2">
+          <div className="space-y-space-4 lg:pt-space-2">
             {terroirsLies.length > 0 && (
               <div>
                 <h2 className="text-sur-titre text-bronze">{t("terroirsTitre")}</h2>
@@ -125,7 +125,7 @@ export default async function CepageDetailPage({ params }: Props) {
                 <ButtonLink href={nav.particuliers[0].href} variant="secondaire">{t("tastingBouton")}</ButtonLink>
               </div>
             </div>
-          </aside>
+          </div>
         </div>
       </Section>
 

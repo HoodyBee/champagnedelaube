@@ -606,7 +606,8 @@
       }
     },
     "formTitre": "Tell us about your estate",
-    "formTexte": "A few words about your estate and your cuvées: we will get back to you to arrange a visit to the estate."
+    "formTexte": "A few words about your estate and your cuvées: we will get back to you to arrange a visit to the estate.",
+    "argumentsTitre": "Why join us"
   },
   "selection": {
     "surTitre": "The catalogue",

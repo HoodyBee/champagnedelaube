@@ -1,0 +1,1992 @@
+{
+ "_createdAt": "2026-11-20T10:08:04Z",
+ "_id": "article-champagne-labels-et-certifications",
+ "_rev": "3N6pJ2SYgkS05vKV2GTVt4",
+ "_type": "article",
+ "_updatedAt": "2026-11-20T23:13:48Z",
+ "collaborationCommerciale": false,
+ "contenu": {
+  "_type": "localeRichText",
+  "en": [
+   {
+    "_key": "eq0dg6rieqxg",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "o21qu5a38pvb",
+      "_type": "span",
+      "marks": [],
+      "text": "Our winemakers are increasingly committed to the planet. But between organic, HVE, biodynamics and VDC, it is easy to get lost. This guide, written with "
+     },
+     {
+      "_key": "7hh4mwj4zhsp",
+      "_type": "span",
+      "marks": [
+       "o4dunzksn6m2"
+      ],
+      "text": "our partner communications agency"
+     },
+     {
+      "_key": "dsw6zhro2hnu",
+      "_type": "span",
+      "marks": [],
+      "text": ", decodes the labels to help you choose your next cuvée with full knowledge."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "o4dunzksn6m2",
+      "_type": "link",
+      "href": "https://www.detectezmoi.com/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "v75bjc2c6zh9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "btg2vtwkwz85",
+      "_type": "span",
+      "marks": [],
+      "text": "Quick comparison: what does each label guarantee?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "2hsbtsqa2h21",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "k4ycnlzug7he",
+      "_type": "span",
+      "marks": [],
+      "text": "To understand a label at a glance"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "tableaulabelsen",
+    "_type": "tableauLabels",
+    "note": "Labels table"
+   },
+   {
+    "_key": "hgezb2dk27k4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "502oprcqjeps",
+      "_type": "span",
+      "marks": [],
+      "text": "What is the HVE label? (Level 3 in detail)🌳"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "c9yvbkaim0yf",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ypmvtmv7m80a",
+      "_type": "span",
+      "marks": [],
+      "text": "The "
+     },
+     {
+      "_key": "azmqucoolap8",
+      "_type": "span",
+      "marks": [
+       "p5n8q2hqh2lo"
+      ],
+      "text": "High Environmental Value (HVE)"
+     },
+     {
+      "_key": "uns6qmp6ibor",
+      "_type": "span",
+      "marks": [],
+      "text": " label is a state certification. On bottles, you will only find "
+     },
+     {
+      "_key": "il9nb6e80top",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Level 3"
+     },
+     {
+      "_key": "cb60q023a3ul",
+      "_type": "span",
+      "marks": [],
+      "text": ", the only level that guarantees real results with a logo."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "p5n8q2hqh2lo",
+      "_type": "link",
+      "href": "https://hve-asso.com/la-hve/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "87oylordl4g3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "063f1wewmtv5",
+      "_type": "span",
+      "marks": [],
+      "text": "HVE 3 sets performance requirements on "
+     },
+     {
+      "_key": "7skollsaifk6",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "4 technical pillars"
+     },
+     {
+      "_key": "fw8u3k365hgm",
+      "_type": "span",
+      "marks": [],
+      "text": ":"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "cz57oqto36wq",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "vh459thwsi2c",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Irrigation management:"
+     },
+     {
+      "_key": "mjsf3z0yvfwo",
+      "_type": "span",
+      "marks": [],
+      "text": " this pillar concerns the water supplied to crops. In Champagne, the appellation rules ban irrigating the vines, so it is met by default."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "je34108yn6wc",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6hq43i2bcx4l",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Plant protection strategy:"
+     },
+     {
+      "_key": "6imm0telhx9p",
+      "_type": "span",
+      "marks": [],
+      "text": " the crucial point. Treatments are not applied out of habit: each one is reasoned and recorded, according to disease pressure (weather, observations in the vineyard). The most hazardous products, classed CMR 1, have been banned since 2023."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "wt2f5kyhi1so",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "hzvb82fm3rmc",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Biodiversity:"
+     },
+     {
+      "_key": "wd6lxp919l8p",
+      "_type": "span",
+      "marks": [],
+      "text": " the winemaker must show that the plots are refuges for wildlife (hedges, low walls, beneficial insects)."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "dtypx7b8qgsh",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "3grte4bosc3w",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Fertilisation management:"
+     },
+     {
+      "_key": "voh6z27cfs2y",
+      "_type": "span",
+      "marks": [],
+      "text": " fertiliser inputs are limited to protect soils and groundwater."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "0mnbvb42fpp5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "zmabn9gurmw9",
+      "_type": "span",
+      "marks": [],
+      "text": "Unlike organic farming, chemical products are not completely banned, but their use must be "
+     },
+     {
+      "_key": "2bzqdtmj5l1c",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "strictly limited and controlled"
+     },
+     {
+      "_key": "vhtsvjjwzpfi",
+      "_type": "span",
+      "marks": [],
+      "text": ". It is now one of the most widespread labels in Champagne."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "crc1f0274hql",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "jnn0j1q0bnah",
+      "_type": "span",
+      "marks": [],
+      "text": "Terra Vitis: why this label?⭐"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "ci5nhjbg9bvq",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "lg2o0ihf18h7",
+      "_type": "span",
+      "marks": [],
+      "text": "The "
+     },
+     {
+      "_key": "dun4r0h30lt0",
+      "_type": "span",
+      "marks": [
+       "dcguggi9440c"
+      ],
+      "text": "Terra Vitis"
+     },
+     {
+      "_key": "5pbq8vapdyzu",
+      "_type": "span",
+      "marks": [
+       "vcla96iw4v6z"
+      ],
+      "text": " "
+     },
+     {
+      "_key": "zejj7h0s9h2n",
+      "_type": "span",
+      "marks": [],
+      "text": "label is specific to the wine world."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "dcguggi9440c",
+      "_type": "link",
+      "href": "https://terravitis.com/"
+     },
+     {
+      "_key": "vcla96iw4v6z",
+      "_type": "link",
+      "href": "https://terravitis.com/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "47oj4l19d1g2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "zw8gmxlmm6lb",
+      "_type": "span",
+      "marks": [],
+      "text": "Traceability: every action of the winemaker is recorded. If a synthetic treatment is used, the winemaker must be able to justify it."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "xjdlc2mq3rmm",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "t9vpuk7nq6rw",
+      "_type": "span",
+      "marks": [],
+      "text": "The difference: a « farmer's common sense » commitment that always favours natural solutions without ruling out action in a major crisis (such as mildew, particularly virulent in our latitudes)."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "pyrnz1h5rk1u",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "osp5m3p9knfy",
+      "_type": "span",
+      "marks": [],
+      "text": "Sustainable Viticulture in Champagne (VDC)💧"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "atnupuld7xgk",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5dix6gmag9eh",
+      "_type": "span",
+      "marks": [],
+      "text": "The "
+     },
+     {
+      "_key": "gjoprt1vsd3n",
+      "_type": "span",
+      "marks": [
+       "675dpevsb9iw"
+      ],
+      "text": "Sustainable Viticulture in Champagne"
+     },
+     {
+      "_key": "3yywogj40tzj",
+      "_type": "span",
+      "marks": [],
+      "text": " certification is specific to the Champagne appellation."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "675dpevsb9iw",
+      "_type": "link",
+      "href": "https://www.champagne.fr/fr/les-engagements-dans-le-champagne"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "mweoyukhdzpg",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "t5zdz8n4mkvo",
+      "_type": "span",
+      "marks": [],
+      "text": "It was set up by the Champagne wine industry to encourage sustainable practices in the vineyards."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e5ig2ho6ajn0",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "oorwz4igzben",
+      "_type": "span",
+      "marks": [],
+      "text": "It covers several issues:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "xq9xaj8vwu1q",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "yregx6x505ab",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "soil preservation"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "0ujufig2og1m",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "mcyiv5wv1z8k",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "water management"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "mah9i05edee2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "vikwonk6a1c9",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "reduced inputs"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6lm920ey2h13",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "qbrzdexiuel8",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "biodiversity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9vrdxylckm3r",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "muk5zei3317e",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "a lower carbon footprint"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "77gvi4u6mdhr",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8d5t1cslgwg7",
+      "_type": "span",
+      "marks": [],
+      "text": "Today, a large part of the Champagne vineyard is committed to this approach."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "g1yofe1nyjx6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "hrtq8j0mj0mf",
+      "_type": "span",
+      "marks": [],
+      "text": "The Organic Farming label (AB)🌿"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "4bra40juvf3x",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "wkvt2rcrfo9f",
+      "_type": "span",
+      "marks": [],
+      "text": "The "
+     },
+     {
+      "_key": "hkrv61yics13",
+      "_type": "span",
+      "marks": [
+       "ll7qiglhg3fa"
+      ],
+      "text": "Organic Farming"
+     },
+     {
+      "_key": "qt0un50ds7xk",
+      "_type": "span",
+      "marks": [],
+      "text": " label is probably the best known. It guarantees that vines are grown "
+     },
+     {
+      "_key": "hsokb5v8nqb7",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "without synthetic chemical pesticides or herbicides"
+     },
+     {
+      "_key": "oz6e4jdjspq3",
+      "_type": "span",
+      "marks": [],
+      "text": "."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "ll7qiglhg3fa",
+      "_type": "link",
+      "href": "https://www.agencebio.org/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "5bse1tx2vya2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "vx3c1p5j18tf",
+      "_type": "span",
+      "marks": [],
+      "text": "Organic winemakers mainly use:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c8659uhn0j2v",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "fpjhxze72b7v",
+      "_type": "span",
+      "marks": [],
+      "text": "natural products"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "j9f295r30hf2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a06i7fy86bz0",
+      "_type": "span",
+      "marks": [],
+      "text": "copper and sulphur to protect the vine"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "cc1fo3qwqdo6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ghzikjfppf5x",
+      "_type": "span",
+      "marks": [],
+      "text": "mechanical methods to manage weeds"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "vn0x9oomqvng",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4j2rzd01f9tt",
+      "_type": "span",
+      "marks": [],
+      "text": "In Champagne, organic winegrowing takes a lot of commitment because the climate is "
+     },
+     {
+      "_key": "k8gwj8846qld",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "damp"
+     },
+     {
+      "_key": "ea32rweqtyy5",
+      "_type": "span",
+      "marks": [],
+      "text": ", which encourages vine diseases. But more and more estates are taking the step."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "ggpx6gm6ntr3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ziy3j66x64ys",
+      "_type": "span",
+      "marks": [],
+      "text": "Biodynamics (Demeter / Biodyvin): the ultimate step… and a slightly wild one! 🌙"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "lfgyuk1w5kul",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5l9yh4fc0gmt",
+      "_type": "span",
+      "marks": [],
+      "text": "Biodynamics takes winegrowing "
+     },
+     {
+      "_key": "ohpmen1px5jx",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "well beyond organic"
+     },
+     {
+      "_key": "ekl4warrtytn",
+      "_type": "span",
+      "marks": [],
+      "text": ", whose rules it keeps: no synthetic chemicals, but copper and sulphur are still allowed, in even smaller amounts. It strengthens the vine with preparations made from plants, cow manure or compost, following the cycles of nature. The lunar calendar is often followed, but it is not compulsory. The aim is to make the vine self-sufficient, alive and fully balanced."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6241u32bm47o",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "bvlm8mmtosy2",
+      "_type": "span",
+      "marks": [
+       "k8gtyou30bcz"
+      ],
+      "text": "Biodyvin"
+     },
+     {
+      "_key": "loqgod6umt7l",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " and "
+     },
+     {
+      "_key": "jd64p0vnd9ds",
+      "_type": "span",
+      "marks": [
+       "g4g63o6niydm"
+      ],
+      "text": "Demeter"
+     },
+     {
+      "_key": "502xaruyz8bd",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " are two biodynamic certifications"
+     },
+     {
+      "_key": "4ripzx1kyibr",
+      "_type": "span",
+      "marks": [],
+      "text": " that may appear on bottles. Demeter is an international label, open to all farm produce; Biodyvin is reserved for winegrowers, and admission also involves tasting the wines. Both require the estate to be certified organic first."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "k8gtyou30bcz",
+      "_type": "link",
+      "href": "https://www.biodyvin.com/"
+     },
+     {
+      "_key": "g4g63o6niydm",
+      "_type": "link",
+      "href": "https://www.demeter.fr/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "jf4mh6gnwn7g",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "sdk7p7enq13h",
+      "_type": "span",
+      "marks": [],
+      "text": "Labels don't tell the whole story"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "f8hheeywgpvz",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "9pajlufe4ivg",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "It is important to remember that a label does not say everything about a winemaker's work."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "5f6ou3ldwv4t",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ajbfxn81e2aw",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Some estates work in a very nature-friendly way without seeking certification"
+     },
+     {
+      "_key": "mmtvf7ob9t1s",
+      "_type": "span",
+      "marks": [],
+      "text": ", often for administrative or financial reasons."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b4wdzdlpid99",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "hn7pto33oazh",
+      "_type": "span",
+      "marks": [],
+      "text": "Conversely, a label remains a frame of reference, but the winemaker's philosophy and approach to the vine remain essential."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "ormep24gubad",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "wqx0nc0louli",
+      "_type": "span",
+      "marks": [],
+      "text": "An increasingly committed Champagne"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "7cwgcwj4p0uc",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2kl27p182he4",
+      "_type": "span",
+      "marks": [],
+      "text": "In recent years, Champagne has strongly committed to an environmental transition."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "rnufxaf2u4x0",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "9lh6a9ytmgp7",
+      "_type": "span",
+      "marks": [],
+      "text": "The industry's goal is clear: "
+     },
+     {
+      "_key": "sz9wkh5mf26h",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "to develop ever more sustainable winegrowing"
+     },
+     {
+      "_key": "f0xekwov4az0",
+      "_type": "span",
+      "marks": [],
+      "text": ", able to preserve soils, landscapes and the quality of the wines."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fso29ec2r37c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "guj2ih0t5etn",
+      "_type": "span",
+      "marks": [],
+      "text": "Whether through organic farming, HVE or sustainable viticulture, these labels help consumers "
+     },
+     {
+      "_key": "18pz4shhmpgj",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "better understand winemakers' practices"
+     },
+     {
+      "_key": "7i3szlkruk10",
+      "_type": "span",
+      "marks": [],
+      "text": "."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "fr": [
+   {
+    "_key": "15794f6c86c2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0dd7b1db320f",
+      "_type": "span",
+      "marks": [],
+      "text": "Nos vignerons s’engagent de plus en plus pour la planète. Mais entre le Bio, le HVE, la biodynamie ou le VDC, il est facile de s’y perdre. Ce guide, conçu en collaboration avec "
+     },
+     {
+      "_key": "b04c446d83ec",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "4e5147d5a5d4"
+      ],
+      "text": "notre agence de communication partenaire"
+     },
+     {
+      "_key": "34cd8280b93e",
+      "_type": "span",
+      "marks": [],
+      "text": ", décrypte pour vous les étiquettes pour vous aider à choisir votre prochaine cuvée en toute conscience."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "4e5147d5a5d4",
+      "_type": "link",
+      "href": "https://www.detectezmoi.com/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "a940720d64fa",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "950aa24e60ea",
+      "_type": "span",
+      "marks": [],
+      "text": "Le comparatif rapide : Quel label garantit quoi ?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "6766d0669e04",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "18f58c3460b7",
+      "_type": "span",
+      "marks": [],
+      "text": "Pour comprendre un label en un coup d’œil"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "tableaulabelsfr",
+    "_type": "tableauLabels",
+    "note": "Tableau des labels"
+   },
+   {
+    "_key": "f6d6c7dec255",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2283c0d36362",
+      "_type": "span",
+      "marks": [],
+      "text": "C’est quoi le label HVE ? (Le niveau 3 en détail)🌳"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "fb62094b5706",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "74eae89ccac2",
+      "_type": "span",
+      "marks": [],
+      "text": "Le label "
+     },
+     {
+      "_key": "ef4ba64d2eba",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "8893e3e4b2f4"
+      ],
+      "text": "Haute Valeur Environnementale (HVE)"
+     },
+     {
+      "_key": "315d7a173416",
+      "_type": "span",
+      "marks": [],
+      "text": " est une certification d’État. Sur vos bouteilles, vous ne trouverez que le "
+     },
+     {
+      "_key": "2369ec6f34a7",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Niveau 3"
+     },
+     {
+      "_key": "bc510fe2bb2d",
+      "_type": "span",
+      "marks": [],
+      "text": ", le seul stade qui garantit des résultats réels avec un logo."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "8893e3e4b2f4",
+      "_type": "link",
+      "href": "https://hve-asso.com/la-hve/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "d649682b8fc3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "acaeaa0a1677",
+      "_type": "span",
+      "marks": [],
+      "text": "Le HVE 3 impose des performances sur "
+     },
+     {
+      "_key": "ab43dbc67f23",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "4 piliers techniques"
+     },
+     {
+      "_key": "e2b2d0e33a04",
+      "_type": "span",
+      "marks": [],
+      "text": " :"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c066053eb639",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "w5by8dbnsmhr",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "La gestion de l’irrigation :"
+     },
+     {
+      "_key": "hrlsbbld9gqj",
+      "_type": "span",
+      "marks": [],
+      "text": " ce pilier porte sur l’eau apportée aux cultures. En Champagne, le cahier des charges de l’appellation interdit d’irriguer la vigne : il est donc respecté d’office."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "42989d619f12",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "rlx3fufm0967",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "La stratégie phytosanitaire"
+     },
+     {
+      "_key": "uxh847f7jhy2",
+      "_type": "span",
+      "marks": [],
+      "text": " : c’est le point crucial. On ne traite pas par habitude : chaque traitement est raisonné et noté, selon la pression des maladies (météo, observations à la vigne). Les produits les plus dangereux, classés CMR 1, sont interdits depuis 2023."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "297877d119d2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "76a447ff0fb5",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "La Biodiversité :"
+     },
+     {
+      "_key": "f359d2b6c94f",
+      "_type": "span",
+      "marks": [],
+      "text": " Le vigneron doit prouver que ses parcelles sont des refuges de vie (entretien des haies, murets, présence d’insectes auxiliaires)."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8a673b1ad24e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8321c68e4aaa",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "La Gestion de la Fertilisation :"
+     },
+     {
+      "_key": "e28130a49f7a",
+      "_type": "span",
+      "marks": [],
+      "text": " On limite les apports en engrais pour protéger les sols et les nappes phréatiques."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "147c0804164c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "34c4e82c237c",
+      "_type": "span",
+      "marks": [],
+      "text": "Contrairement au bio, les produits chimiques ne sont pas totalement interdits, mais leur utilisation doit être "
+     },
+     {
+      "_key": "ce0a6a1c5bdc",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "fortement limitée et encadrée"
+     },
+     {
+      "_key": "75bf272740b5",
+      "_type": "span",
+      "marks": [],
+      "text": ". C’est aujourd’hui l’un des labels les plus répandus en Champagne."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8bf065a5d5ce",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c1fd111b6c97",
+      "_type": "span",
+      "marks": [],
+      "text": "Terra Vitis : Pourquoi ce label ?⭐"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "3e5006f1edf7",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "337a2c438fd0",
+      "_type": "span",
+      "marks": [],
+      "text": "Le label "
+     },
+     {
+      "_key": "2b50f137d4b1",
+      "_type": "span",
+      "marks": [
+       "d6d1b80f6939",
+       "strong"
+      ],
+      "text": "Terra Vitis"
+     },
+     {
+      "_key": "8500e79da1e6",
+      "_type": "span",
+      "marks": [
+       "d6d1b80f6939"
+      ],
+      "text": " "
+     },
+     {
+      "_key": "62deb8e1a460",
+      "_type": "span",
+      "marks": [],
+      "text": "concerne spécifiquement le monde du vin."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "d6d1b80f6939",
+      "_type": "link",
+      "href": "https://terravitis.com/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "0e6d1a8db486",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "pbqj7t57uk46",
+      "_type": "span",
+      "marks": [],
+      "text": "La traçabilité : chaque geste du vigneron est consigné. S’il utilise un traitement de synthèse, il doit pouvoir le justifier."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f0aad51a9678",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "37dba0ce4552",
+      "_type": "span",
+      "marks": [],
+      "text": "La différence : C’est un engagement de « bon sens paysan » qui privilégie toujours les solutions naturelles sans s’interdire d’intervenir en cas de crise majeure (comme le mildiou, particulièrement virulent sous nos latitudes)."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "bdaeae099cdc",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "40f993a0713e",
+      "_type": "span",
+      "marks": [],
+      "text": "Viticulture Durable en Champagne (VDC)💧"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "d06d1c2d7714",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2e11c4899a04",
+      "_type": "span",
+      "marks": [],
+      "text": "La certification "
+     },
+     {
+      "_key": "a92ab802a02c",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "4aa66c54020e"
+      ],
+      "text": "Viticulture Durable en Champagne"
+     },
+     {
+      "_key": "b22b53c93fb3",
+      "_type": "span",
+      "marks": [],
+      "text": " est propre à l’appellation Champagne."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "4aa66c54020e",
+      "_type": "link",
+      "href": "https://www.champagne.fr/fr/les-engagements-dans-le-champagne"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "2fa1bc29d0ab",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "997ba70fe2a9",
+      "_type": "span",
+      "marks": [],
+      "text": "Elle a été mise en place par la filière champenoise pour encourager les pratiques durables dans les vignobles."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "80b5f701a96a",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8a155190abd3",
+      "_type": "span",
+      "marks": [],
+      "text": "Elle prend en compte plusieurs enjeux :"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "43676a958198",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c3a036bcde31",
+      "_type": "span",
+      "marks": [],
+      "text": "la "
+     },
+     {
+      "_key": "315a91017fc6",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "préservation des sols"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "4b62f8b59c6e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ccc38d17088e",
+      "_type": "span",
+      "marks": [],
+      "text": "la "
+     },
+     {
+      "_key": "43b08387a72b",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "gestion de l’eau"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c96770a59331",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a0f95b49138e",
+      "_type": "span",
+      "marks": [],
+      "text": "la "
+     },
+     {
+      "_key": "10988fe4af86",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "réduction des intrants"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9c531378e033",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "22251f9e001b",
+      "_type": "span",
+      "marks": [],
+      "text": "la "
+     },
+     {
+      "_key": "8946e315f31c",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "biodiversité"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "cd0b4b87390c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "406ce5ca900e",
+      "_type": "span",
+      "marks": [],
+      "text": "la "
+     },
+     {
+      "_key": "1efdc33db5df",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "réduction de l’empreinte carbone"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "5a51ad18c235",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "aa7dad632fcb",
+      "_type": "span",
+      "marks": [],
+      "text": "Aujourd’hui, une grande partie du vignoble champenois est engagée dans cette démarche."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "dbd6a35a742e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ce93c81129f3",
+      "_type": "span",
+      "marks": [],
+      "text": "Le label Agriculture Biologique (AB)🌿"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "7bfb77492d98",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1249bda1c972",
+      "_type": "span",
+      "marks": [],
+      "text": "Le label "
+     },
+     {
+      "_key": "1e99c15e5fd3",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "4a8dabf7ffac"
+      ],
+      "text": "Agriculture Biologique"
+     },
+     {
+      "_key": "890f0cb2ebca",
+      "_type": "span",
+      "marks": [],
+      "text": " est sans doute le plus connu. Il garantit que la vigne est cultivée "
+     },
+     {
+      "_key": "ba982d41b486",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "sans pesticides ni herbicides chimiques de synthèse"
+     },
+     {
+      "_key": "f14a51a5f8f0",
+      "_type": "span",
+      "marks": [],
+      "text": "."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "4a8dabf7ffac",
+      "_type": "link",
+      "href": "https://www.agencebio.org/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "d061a1a78d66",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1fbf87705cba",
+      "_type": "span",
+      "marks": [],
+      "text": "Les vignerons bio utilisent principalement :"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "bc2aa5072b92",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c6b89de9880b",
+      "_type": "span",
+      "marks": [],
+      "text": "des produits naturels"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d18fc35fa396",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5b53f1dbbd27",
+      "_type": "span",
+      "marks": [],
+      "text": "du cuivre et du soufre pour protéger la vigne"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "affa00843f39",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4faa10706485",
+      "_type": "span",
+      "marks": [],
+      "text": "des méthodes mécaniques pour gérer les mauvaises herbes"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "aea2704c6c42",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "aa1f91c839cb",
+      "_type": "span",
+      "marks": [],
+      "text": "En Champagne, la viticulture biologique demande beaucoup d’engagement car le climat est "
+     },
+     {
+      "_key": "9a9c4d75a1eb",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "humide"
+     },
+     {
+      "_key": "68f077e89f37",
+      "_type": "span",
+      "marks": [],
+      "text": ", ce qui favorise les maladies de la vigne. Mais de plus en plus de domaines franchissent le pas."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "4d593ad4f829",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "393511c603a3",
+      "_type": "span",
+      "marks": [],
+      "text": "La Biodynamie (Demeter / Biodyvin) : l’étape ultime… et un peu folle ! 🌙"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "904d7ab6b125",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "nu3uashxnyui",
+      "_type": "span",
+      "marks": [],
+      "text": "La biodynamie pousse la viticulture "
+     },
+     {
+      "_key": "c9zqd26hbxqa",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "bien au-delà du bio"
+     },
+     {
+      "_key": "dsnuqtfdebsw",
+      "_type": "span",
+      "marks": [],
+      "text": ", dont elle reprend les règles : aucun produit chimique de synthèse, mais le cuivre et le soufre restent autorisés, en quantités encore plus limitées. Elle renforce la vigne avec des préparations à base de plantes, de bouse ou de compost, en respectant les cycles de la nature. Le calendrier lunaire est souvent suivi, sans être une obligation. L’objectif est de rendre la vigne autonome, vivante et pleinement équilibrée."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3e31ec9fc6b7",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d79ef21759cd",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "30c0ba121f4a"
+      ],
+      "text": "Biodyvin"
+     },
+     {
+      "_key": "17ed5e0006de",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " et "
+     },
+     {
+      "_key": "41546fd2c2ab",
+      "_type": "span",
+      "marks": [
+       "strong",
+       "6a64250916ae"
+      ],
+      "text": "Demeter"
+     },
+     {
+      "_key": "84838757b7e4",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " sont deux certifications biodynamiques"
+     },
+     {
+      "_key": "8ed1cjdju9xh",
+      "_type": "span",
+      "marks": [],
+      "text": " peuvent figurer sur les bouteilles. Demeter est une marque internationale, ouverte à toutes les productions agricoles ; Biodyvin est réservé aux vignerons, et l’admission passe aussi par une dégustation des vins. Les deux exigent d’être déjà certifié bio."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "30c0ba121f4a",
+      "_type": "link",
+      "href": "https://www.biodyvin.com/"
+     },
+     {
+      "_key": "6a64250916ae",
+      "_type": "link",
+      "href": "https://www.demeter.fr/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "670d318d14ef",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4761abe26d3a",
+      "_type": "span",
+      "marks": [],
+      "text": "Les labels ne racontent pas toute l’histoire"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "38e3e933bc7c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "dbb5fcea4252",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Il est important de rappeler qu’un label ne dit pas tout du travail d’un vigneron."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "ec80dcfac967",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b39b45582f09",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Certains domaines travaillent de manière très respectueuse de la nature sans forcément demander de certification"
+     },
+     {
+      "_key": "4c506ea44948",
+      "_type": "span",
+      "marks": [],
+      "text": ", souvent pour des raisons administratives ou financières."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9fbfce1ab3c4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "e0413e96c400",
+      "_type": "span",
+      "marks": [],
+      "text": "À l’inverse, un label reste un cadre de référence, mais la philosophie du vigneron et son approche de la vigne restent essentielles."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "795e318cc2f5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "62a96caa7a07",
+      "_type": "span",
+      "marks": [],
+      "text": "Une Champagne de plus en plus engagée"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "cf448a3dadb1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d1917121b860",
+      "_type": "span",
+      "marks": [],
+      "text": "Ces dernières années, la Champagne s’est fortement engagée dans une transition environnementale."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6c94f4f7840d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d9acbc264022",
+      "_type": "span",
+      "marks": [],
+      "text": "L’objectif de la filière est clair : "
+     },
+     {
+      "_key": "3344b5e619db",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "développer une viticulture toujours plus durable"
+     },
+     {
+      "_key": "f4b36a1c47bc",
+      "_type": "span",
+      "marks": [],
+      "text": ", capable de préserver les sols, les paysages et la qualité des vins."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "1dfe9f752f42",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "26d0815854d2",
+      "_type": "span",
+      "marks": [],
+      "text": "Que ce soit à travers le bio, la HVE ou la viticulture durable, ces labels permettent aux consommateurs de "
+     },
+     {
+      "_key": "7fe3db523eb9",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "mieux comprendre les pratiques des vignerons"
+     },
+     {
+      "_key": "e096252a3be9",
+      "_type": "span",
+      "marks": [],
+      "text": "."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ]
+ },
+ "date": "2026-03-16",
+ "extrait": {
+  "_type": "localeText",
+  "en": "Our winemakers are increasingly committed to the planet. But between organic, HVE, biodynamics and VDC, it is easy to get lost. This guide, written with our partner communications agency, decodes the labels to help you choose your next cuvée with full knowledge.",
+  "fr": "Nos vignerons s’engagent de plus en plus pour la planète. Mais entre le Bio, le HVE, la biodynamie ou le VDC, il est facile de s’y perdre. Ce guide, conçu en collaboration avec notre agence de communication partenaire, décrypte pour vous les étiquettes pour vous aider à choisir votre prochaine cuvée en toute conscience. Le…"
+ },
+ "image": {
+  "_type": "imageAvecAlt",
+  "alt": {
+   "_type": "localeString",
+   "en": "Aerial view of a tractor between rows of vines",
+   "fr": "Vue aérienne d’un tracteur entre les rangs de vigne"
+  },
+  "asset": {
+   "_ref": "image-fba6151ae033b41ca21905e0122cbc842491e5a4-2560x427-jpg",
+   "_type": "reference"
+  }
+ },
+ "rubrique": "comprendre",
+ "rubriquePrincipale": "tout-savoir",
+ "rubriques": [],
+ "seo": {
+  "_type": "seo",
+  "description": {
+   "_type": "localeText",
+   "en": "Discover the labels and certifications in Champagne: organic, HVE, Terra Vitis and biodynamics. Understand their commitments to the vine and choose your champagne with confidence.",
+   "fr": "Découvrez les labels et certifications en Champagne : Bio, HVE, Terra Vitis et Biodynamie. Comprenez leurs engagements et le respect de la vigne pour choisir votre champagne en toute confiance."
+  },
+  "title": {
+   "_type": "localeString",
+   "en": "Champagne labels: organic, HVE, Terra Vitis, biodynamics",
+   "fr": "Labels du champagne : bio, HVE, Terra Vitis, biodynamie"
+  }
+ },
+ "slug": {
+  "_type": "slug",
+  "current": "champagne-labels-et-certifications"
+ },
+ "titre": {
+  "_type": "localeString",
+  "en": "Champagne: a guide to finally understanding labels and certifications",
+  "fr": "Champagne : Le guide pour enfin comprendre les labels et certifications"
+ }
+}

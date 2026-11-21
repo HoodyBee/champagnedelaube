@@ -96,6 +96,9 @@ export async function RubriquePage({ code, locale }: { code: string; locale: Loc
           </nav>
         )}
         {liste.length ? (
+          <h2 className="sr-only">{t("tousLesArticles")}</h2>
+        ) : null}
+        {liste.length ? (
           <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
             {liste.map((a) => (
               <li key={a.slug}>

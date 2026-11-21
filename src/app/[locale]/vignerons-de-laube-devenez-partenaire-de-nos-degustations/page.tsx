@@ -53,6 +53,7 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
       </header>
 
       <Section>
+        <h2 className="sr-only">{t("argumentsTitre")}</h2>
         <Arguments items={points} />
         {page.contenu?.length ? <RichText value={page.contenu} locale={locale} className="mx-auto mt-space-5 max-w-3xl" /> : null}
       </Section>

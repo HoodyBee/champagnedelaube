@@ -69,7 +69,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
       <Section>
         <div className="grid gap-space-5 lg:grid-cols-[1.6fr_1fr]">
           <RichText value={t.contenu} locale={locale} className="max-w-3xl" />
-          <aside className="space-y-space-4 lg:pt-space-2">
+          <div className="space-y-space-4 lg:pt-space-2">
             {t.sols && (
               <div className="surface-chaude rounded-carte p-space-3">
                 <h2 className="text-sur-titre text-bronze">{tT("sols")}</h2>
@@ -124,7 +124,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                 </ul>
               </div>
             )}
-          </aside>
+          </div>
         </div>
       </Section>
 
