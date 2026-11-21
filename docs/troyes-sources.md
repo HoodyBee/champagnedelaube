@@ -39,8 +39,17 @@ Calculés le 21 novembre 2026 avec le calcul d'itinéraire OpenStreetMap (OSRM, 
 
 | Emplacement | Photo | Lieu réel |
 |---|---|---|
-| Ouverture | Bouteilles de champagne et cartes de présentation (`bouteilles-champagne-degustation-privee-troyes.jpg`) | Troyes |
+| Ouverture | Maisons à pans de bois du centre historique (`troyes-maisons-pans-de-bois-centre-historique.jpg`), [Pixabay n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/), photo : derbocholter | Troyes |
 | « La porte d'entrée du vignoble » | Coteaux de Colombé-le-Sec (`vignes-champagne-colombe-le-sec-2026.jpg`) | Côte des Bar, avec la légende « Vignes de la Côte des Bar, à Colombé-le-Sec » |
 | « Champagne et gastronomie » | Chou à la crème et verre de champagne (`accord-chou-creme-champagne.jpg`) | lieu non renseigné, avec la légende « (illustration) » |
 
-**Photos de Troyes qui manquent** : le centre ancien et ses maisons à pans de bois, la ruelle des Chats, la cathédrale Saint-Pierre-et-Saint-Paul, une vue du « Bouchon », les halles. Une vue de la colline de Montgueux depuis Troyes serait aussi précieuse.
+**Autres vraies photos de Troyes trouvées** : [rue à colombages et arcades, Pixabay n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/) (placée sur la page Contact) ; [nef de la cathédrale, Pixabay n° 6843472](https://pixabay.com/photos/church-cathedral-france-travel-6843472/) (non utilisée, disponible). La photo d'ouverture était déjà dans la Médiathèque (ancienne photo de la page Montgueux, qui montrait en fait Troyes).
+
+**Photos de Troyes qui manquent encore** : le centre ancien et ses maisons à pans de bois, la ruelle des Chats, la cathédrale Saint-Pierre-et-Saint-Paul, une vue du « Bouchon », les halles. Une vue de la colline de Montgueux depuis Troyes serait aussi précieuse.
+
+## Cœur azur devant « Troyes, capitale de l'Aube »
+
+- **Blason de Troyes** : « D'azur à la bande d'argent côtoyée de deux doubles cotices potencées d'or de treize pièces, au chef aussi d'azur chargé de trois fleurs de lis d'or » ([Wikipédia – Troyes](https://fr.wikipedia.org/wiki/Troyes), [Heraldry of the World – Troyes](https://www.heraldry-wiki.com/wiki/Troyes)).
+- **Nuance** : la ville ne publie pas de charte graphique en ligne, et l'héraldique ne fixe pas de nuance précise pour l'azur. Couleur retenue : **#325DE0**, teinte médiane du champ azur relevée sur le dessin de référence du blason ([Wikimedia Commons – Blason_ville_fr_Troyes.svg](https://commons.wikimedia.org/wiki/File:Blason_ville_fr_Troyes.svg)). Contraste 5,6:1 sur blanc.
+- **À valider** : si le service communication de la ville de Troyes vous donne son bleu officiel, il suffit de changer `azur-troyes` dans `tokens.json`.
+- Utilisé dans : bandeau des terroirs (ordinateur), menus « Notre Terroir » (ordinateur et mobile), liste des terroirs (page Les terroirs de l'Aube et pages de chaque terroir).

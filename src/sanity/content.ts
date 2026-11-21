@@ -169,12 +169,13 @@ export function imgDepuisAsset(
   locale: Locale,
   width = 1600,
   legende?: { fr: string; en: string },
+  credit?: string,
 ): Img | null {
   const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(asset) ?? [];
   if (!hash) return null;
   const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
   return toImg(
-    { alt, legende, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
+    { alt, legende, credit, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
     locale,
     width,
   );
@@ -188,6 +189,8 @@ const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, wi
   return toImg(
     {
       alt: f.photo.alt,
+      legende: f.photo.legende,
+      credit: f.photo.credit,
       asset: { _id: f.photo.asset, url, originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
     },
     locale,
@@ -506,8 +509,22 @@ export async function getRubriquesSanity(locale: Locale): Promise<Rubrique[]> {
   return (list ?? []).flatMap((r) => (r.cle ? [{ cle: r.cle, titre: L(r.titre, locale), description: L(r.description, locale) }] : []));
 }
 
+/** Étiquettes d'article du Studio (sections du Mag), dans l'ordre choisi. */
+export type Etiquette = { cle: string; nom: string; intro?: string };
+export async function getEtiquettes(locale: Locale): Promise<Etiquette[]> {
+  const list = await sanityFetch<{ cle?: string; nom?: Localized; intro?: Localized }[]>({
+    query: `*[_type == "etiquetteArticle" && defined(cle.current)] | order(coalesce(ordre, 10) asc){"cle": cle.current, nom, intro}`,
+    tags: ["etiquetteArticle"],
+  });
+  return (list ?? []).flatMap((e) => {
+    const nom = L(e.nom, locale);
+    return e.cle && nom ? [{ cle: e.cle, nom, intro: L(e.intro, locale) }] : [];
+  });
+}
+
 const ARTICLE_CARD = `"slug": slug.current, titre, date, extrait, image ${IMG}, collaborationCommerciale,
-  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current`;
+  rubrique, rubriquePrincipale, rubriques, "autresRubriques": autresRubriques[]->cle.current, "vignerons": vignerons[]->slug.current,
+  "etiquettes": etiquettes[]->cle.current`;
 type ArticleRaw = {
   slug: string;
   titre?: Localized;
@@ -520,6 +537,7 @@ type ArticleRaw = {
   rubriques?: string[];
   autresRubriques?: (string | null)[];
   vignerons?: (string | null)[];
+  etiquettes?: (string | null)[];
 };
 export type ArticleCard = {
   slug: string;
@@ -532,6 +550,8 @@ export type ArticleCard = {
   /** Toutes les rubriques où l'article apparaît, la principale en premier. */
   rubriques: string[];
   vignerons: string[];
+  /** Codes des étiquettes d'article (ex. « marketing »). */
+  etiquettes: string[];
   collaborationCommerciale: boolean;
 };
 const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
@@ -555,6 +575,7 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
     rubriquePrincipale: principale,
     rubriques: [...new Set(rubriques)],
     vignerons: (a.vignerons ?? []).filter((v): v is string => !!v),
+    etiquettes: (a.etiquettes ?? []).filter((v): v is string => !!v),
     collaborationCommerciale: a.collaborationCommerciale === true,
   };
 };

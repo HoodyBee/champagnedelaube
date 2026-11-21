@@ -76,6 +76,7 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
   return (
     <>
       <Breadcrumb locale={locale} items={[{ label: tNav("tasting") }]} />
+      {/* Ouverture : tout le texte de présentation à côté de la photo (plus de section isolée ni de citation en double). */}
       <Hero
         surTitre={p.hero.surTitre ?? t("surTitre")}
         titre={p.hero.titre ?? t("h1")}
@@ -84,17 +85,27 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
         placeholder="sobre"
         placeholderText={tHome("photoAVenir")}
         actions={<ButtonLink href={{ pathname: HREF, hash: "organiser" }}>{t("ctaOrganiser")}</ButtonLink>}
-      />
+        texteDabordMobile
+      >
+        <p className="mt-space-2 max-w-xl text-pretty text-[1.0625rem] text-gris-chaud">{t("presentation")}</p>
+        <p className="mt-space-2 max-w-xl text-[1.0625rem] text-gris-chaud">
+          {t("signatureIntro")} <strong className="font-bold italic text-bronze">{t("signature")}</strong>
+        </p>
+      </Hero>
       {p.chiffres.length > 0 && <Chiffres items={chiffres} />}
 
-      {/* Une offre unique, sur mesure */}
-      <Section id="sur-mesure">
+      {/* 1. Les particuliers de passage à Troyes */}
+      <Section id="de-passage">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-titre-section sm:text-[2rem]">{t("surMesureTitre")}</h2>
-          <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("texte")}</p>
-          <p className="mt-space-4 border-l-2 border-or pl-space-3 text-[1.5rem] font-bold italic leading-snug text-bronze sm:text-[1.75rem]">
-            {t("signature")}
-          </p>
+          <h2 className="text-titre-section sm:text-[2rem]">{t("passageTitre")}</h2>
+          <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("passageTexte1")}</p>
+          <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("passageTexte2")}</p>
+          <div className="mt-space-3 flex flex-col items-start gap-space-2 sm:flex-row sm:items-center">
+            <ButtonLink href={{ pathname: HREF, hash: "organiser" }}>{t("passageCta")}</ButtonLink>
+            <Link href="/champagne-troyes" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+              {t("touristesLien")} <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </Section>
 
@@ -122,14 +133,30 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
                 </li>
               ))}
             </ul>
-            <div className="mt-space-4 rounded-carte border border-filet bg-blanc p-space-3">
-              <p className="font-bold">{t("touristesTitre")}</p>
-              <p className="mt-space-1 text-gris-chaud">{t("touristesTexte")}</p>
-              <Link href="/champagne-troyes" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
-                {t("touristesLien")} <span aria-hidden="true">→</span>
-              </Link>
-            </div>
           </div>
+        </div>
+      </Section>
+
+      {/* 2. Bars, restaurants, entreprises et organisateurs, puis l'invitation au partenariat */}
+      <Section id="evenements-pro">
+        <div className="grid gap-space-4 lg:grid-cols-[1.3fr_1fr] lg:gap-space-5">
+          <div>
+            <p className="text-sur-titre text-bronze">{t("proSurTitre")}</p>
+            <h2 className="mt-space-1 text-titre-section sm:text-[2rem]">{t("proTitre")}</h2>
+            <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("proTexte1")}</p>
+            <p className="mt-space-2 text-[1.125rem] text-gris-chaud">{t("proTexte2")}</p>
+            <ButtonLink href={{ pathname: "/contact", hash: "pro" }} className="mt-space-3">
+              {t("proCta")}
+            </ButtonLink>
+          </div>
+          <aside aria-labelledby="partenariat-titre" className="self-start rounded-carte border border-filet bg-creme-clair p-space-3 sm:p-space-4">
+            <LineIcon name="interlocuteur" size={32} className="text-or" />
+            <h3 id="partenariat-titre" className="mt-space-2 text-[1.375rem] font-bold leading-tight">{t("partenariatTitre")}</h3>
+            <p className="mt-space-1 text-gris-chaud">{t("partenariatTexte")}</p>
+            <ButtonLink href={{ pathname: "/contact", hash: "pro" }} variant="secondaire" className="mt-space-3">
+              {t("partenariatCta")}
+            </ButtonLink>
+          </aside>
         </div>
       </Section>
 
@@ -192,7 +219,7 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
                   {e.description?.length ? <RichText value={e.description} locale={locale} className="mt-space-2 text-gris-chaud" /> : null}
                   {!e.complet && (
                     <details className="group mt-space-3">
-                      <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-etiquette bg-anthracite px-space-3 text-sur-titre text-blanc hover:bg-bleu-nuit [&::-webkit-details-marker]:hidden">
+                      <summary className="inline-flex min-h-11 cursor-pointer list-none items-center rounded-etiquette bg-anthracite px-space-3 text-sur-titre text-blanc hover:bg-anthracite/85 [&::-webkit-details-marker]:hidden">
                         {t("inscription")}
                       </summary>
                       <div className="mt-space-3">

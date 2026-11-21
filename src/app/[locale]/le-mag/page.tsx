@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ArticlesEtiquette } from "@/components/mag/ArticlesEtiquette";
 import { MagFiltres } from "@/components/mag/MagFiltres";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Photo } from "@/components/ui/Photo";
@@ -8,7 +9,7 @@ import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { getRubriqueLabels, ordreRubriques, withDates } from "@/lib/mag";
-import { getArticles, rubriqueHref } from "@/sanity/content";
+import { getArticles, getEtiquettes, rubriqueHref } from "@/sanity/content";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/le-mag">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -21,7 +22,9 @@ export default async function MagPage({ params }: PageProps<"/[locale]/le-mag">)
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("mag");
-  const [articles, labels] = await Promise.all([getArticles(locale), getRubriqueLabels(locale)]);
+  const [articles, labels, toutesEtiquettes] = await Promise.all([getArticles(locale), getRubriqueLabels(locale), getEtiquettes(locale)]);
+  // Étiquettes qui ont au moins un article publié (les autres sont masquées).
+  const etiquettes = toutesEtiquettes.filter((e) => articles.some((a) => a.etiquettes.includes(e.cle)));
   const datees = withDates(articles, locale);
   // « À la une » : l'article le plus récent, en grand, dès qu'il y en a au moins 3.
   const une = datees.length >= 3 ? datees[0] : undefined;
@@ -53,6 +56,19 @@ export default async function MagPage({ params }: PageProps<"/[locale]/le-mag">)
               ))}
           </ul>
         </nav>
+        {etiquettes.length > 0 && (
+          <nav aria-label={t("etiquettesNav")} className="mt-space-2">
+            <ul className="flex flex-wrap justify-center gap-space-1">
+              {etiquettes.map((e) => (
+                <li key={e.cle}>
+                  <a href={`#etiquette-${e.cle}`} className="inline-flex min-h-9 items-center rounded-etiquette border border-or px-space-2 text-sur-titre-petit hover:bg-champagne">
+                    {e.nom}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </header>
 
       {une && (
@@ -76,6 +92,11 @@ export default async function MagPage({ params }: PageProps<"/[locale]/le-mag">)
           </Link>
         </Section>
       )}
+
+      {/* Une section par étiquette d'article (Champagne & art, Marketing…), juste après « À la une ». */}
+      {etiquettes.map((e, i) => (
+        <ArticlesEtiquette key={e.cle} cle={e.cle} locale={locale} fond={i % 2 === 0 ? "chaude" : "blanc"} lienMag={false} max={3} />
+      ))}
 
       <Section className={une ? "" : "!pt-space-3"} align="gauche" titre={une && suite.length ? t("tousLesArticles") : undefined}>
         <MagFiltres articles={une ? suite : datees} labels={labels} ordre={ordreRubriques(labels)} />

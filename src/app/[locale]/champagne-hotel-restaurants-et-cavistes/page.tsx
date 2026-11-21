@@ -156,6 +156,16 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
 
       <DansLeMag locale={locale} chemins={["/champagne-hotel-restaurants-et-cavistes"]} rubrique="actualites" />
 
+      {/* Invitation au partenariat pour les établissements (même texte que sur Dégustations privées). */}
+      <Section id="partenariat-etablissements">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-space-2 text-center">
+          <LineIcon name="interlocuteur" size={32} className="text-or" />
+          <h2 className="text-titre-section">{t("etablissementTitre")}</h2>
+          <p className="text-[1.0625rem] text-gris-chaud">{t("etablissementTexte")}</p>
+          <ButtonLink href={{ pathname: "/contact", hash: "pro" }}>{t("etablissementCta")}</ButtonLink>
+        </div>
+      </Section>
+
       <Section id="vignerons-partenaires" fond="chaude">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-space-2 text-center">
           <h2 className="text-titre-section">{t("partenaireTitre")}</h2>

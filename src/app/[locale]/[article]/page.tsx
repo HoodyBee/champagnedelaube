@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MarronnierBloc } from "@/components/calendrier/MarronnierBloc";
+import { EtiquettesArticle } from "@/components/mag/ArticlesEtiquette";
 import { MagCard } from "@/components/mag/MagCard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
+import { ButtonLink } from "@/components/ui/Button";
 import { DomaineCard } from "@/components/ui/DomaineCard";
 import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
@@ -85,6 +87,10 @@ export default async function ArticlePage({ params }: Props) {
     locale,
   );
 
+  // Chapeau identique au début du texte (ex. article labels) : on ne l'affiche pas deux fois.
+  const premierParagraphe = (a.contenu?.find((b) => b._type === "block") as { children?: { text?: string }[] } | undefined)?.children?.map((c) => c.text ?? "").join("") ?? "";
+  const norm = (x: string) => x.replace(/\s+/g, " ").trim().toLowerCase();
+  const chapeauRepete = !!a.extrait && norm(premierParagraphe).startsWith(norm(a.extrait).slice(0, 80));
   const url = SITE_URL + withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale }));
   const jsonLd = {
     "@context": "https://schema.org",
@@ -120,7 +126,8 @@ export default async function ArticlePage({ params }: Props) {
           {a.collaborationCommerciale && (
             <p className="mt-space-2 inline-block rounded-etiquette border border-filet px-space-1 py-0.5 text-sur-titre-petit text-gris-chaud">{tLegal("sponsored")}</p>
           )}
-          {a.extrait && <p className="mt-space-3 text-accroche text-gris-chaud">{a.extrait}</p>}
+          {a.extrait && !chapeauRepete && <p className="mt-space-3 text-accroche text-gris-chaud">{a.extrait}</p>}
+          <EtiquettesArticle codes={a.etiquettes} locale={locale} className="mt-space-3" />
         </header>
         <div data-reveal className="mx-auto max-w-5xl px-space-2 sm:px-space-4">
           <Photo image={a.image} ratio="16/9" sizes="(min-width: 1024px) 1024px, 100vw" priority compactMobile />
@@ -130,6 +137,18 @@ export default async function ArticlePage({ params }: Props) {
             <RichText value={a.contenu} locale={locale} extras={blocMarronnier ? { calendrierMarronnier: blocMarronnier } : undefined} />
           </div>
         ) : null}
+        {/* Étiquette « Marketing » : l'article se termine par un encart vers la page Communication & marketing. */}
+        {a.etiquettes.includes("marketing") && (
+          <aside aria-labelledby="encart-marketing" className="mx-auto max-w-3xl px-space-2 pb-space-4 sm:px-space-4">
+            <div className="rounded-carte border border-or bg-champagne/40 p-space-3 sm:p-space-4">
+              <h2 id="encart-marketing" className="text-titre-section">{t("encartMarketing.titre")}</h2>
+              <p className="mt-space-1 text-[1.0625rem] text-gris-chaud">{t("encartMarketing.texte")}</p>
+              <ButtonLink href="/communication-marketing" className="mt-space-3">
+                {t("encartMarketing.bouton")}
+              </ButtonLink>
+            </div>
+          </aside>
+        )}
         {/* Continuer la découverte : la rubrique de l'article et deux pages clés, avec des ancres explicites */}
         <nav aria-label={t("plusLoin")} className="mx-auto max-w-3xl px-space-2 pb-space-5 sm:px-space-4">
           <div className="rounded-carte border border-filet bg-creme-clair p-space-3">

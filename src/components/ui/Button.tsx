@@ -5,7 +5,7 @@ type Variant = "primaire" | "secondaire" | "clair";
 
 const styles: Record<Variant, string> = {
   // Anthracite plein : l'action principale de la section.
-  primaire: "bg-anthracite text-blanc hover:bg-bleu-nuit",
+  primaire: "bg-anthracite text-blanc hover:bg-anthracite/85",
   // Contour : action secondaire.
   secondaire: "border border-anthracite text-anthracite hover:bg-anthracite hover:text-blanc",
   // Sur fond sombre ou photo.

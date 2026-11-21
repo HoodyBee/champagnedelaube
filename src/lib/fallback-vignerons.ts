@@ -24,7 +24,7 @@ export type FallbackVigneron = {
   labels: string[];
   siteWeb: string;
   /** Photo de la Médiathèque Sanity (identifiant de l'image) : jamais d'emplacement vide. */
-  photo?: { asset: string; fichier: string; alt: { fr: string; en: string } };
+  photo?: { asset: string; fichier: string; alt: { fr: string; en: string }; legende?: { fr: string; en: string }; credit?: string };
 };
 
 export const fallbackVignerons: FallbackVigneron[] = [
@@ -110,6 +110,14 @@ export const fallbackVignerons: FallbackVigneron[] = [
       nl: "Van druif tot fles gebeurt alles op het domein: handmatige pluk, zachte persing, temperatuurgestuurde roestvrijstalen tanks.",
       it: "Dall'uva alla bottiglia, tutto avviene in tenuta: vendemmia manuale, pressatura soffice, vasche inox termoregolate.",
       de: "Von der Traube bis zur Flasche geschieht alles auf dem Weingut: Handlese, schonende Pressung, temperaturgesteuerte Edelstahltanks.",
+    },
+    // Photo d'illustration (banque d'images) en attendant une photo du domaine : jamais présentée comme le domaine.
+    photo: {
+      asset: "image-73efdfbf42763f2ba877b2799cd7cefdd2e1cbd3-1280x853-jpg",
+      fichier: "chemin-vignes-coucher-de-soleil.jpg",
+      alt: { fr: "Chemin entre les rangs de vigne au coucher du soleil (illustration)", en: "Path between rows of vines at sunset (illustration)" },
+      legende: { fr: "Illustration", en: "Illustration" },
+      credit: "Photo : Pexels / Pixabay",
     },
     description: {
       fr: "Champagne Mennetrier, à Arrentières dans la Côte des Bar : du raisin à la bouteille, tout se fait au domaine, des vendanges à la main aux cuves inox.",
