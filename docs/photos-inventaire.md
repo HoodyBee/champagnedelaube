@@ -401,3 +401,20 @@ Photos d'avant le 1er janvier 2025 où l'on voit une bouteille, une étiquette o
 | 108 | PXL_20241025_075841480.MP.jpg | — | 2024-10-25 | non renseignée (pas de GPS) | Vignes à contre-jour | bonne, 2268×4032 | écartée : doublon |
 | 117 | PXL_20250201_105334030.jpg | — | 2025-02-01 | Tours-sur-Marne (51) | Vignes en hiver près de Tours-sur-Marne (Marne) | bonne, 4590×8160 | disponible (Médiathèque à venir : non envoyée) |
 | 127 | PXL_20250502_160807508.jpg | — | 2025-05-02 | non renseignée (pas de GPS) | Village viticole vu des vignes (mai 2025) | bonne, 6144×8160 | disponible (Médiathèque à venir : non envoyée) |
+
+## Banques d'images (nuit du 20 au 21 novembre 2026) : rien n'a été ajouté
+
+Aucune photo de banque d'images n'a été mise en ligne. La licence et le téléchargement n'ont pas pu être vérifiés par une voie autorisée :
+
+- **Unsplash** : les pages photo affichent une vérification « navigateur » qui bloque les robots, et l'API officielle demande une clé personnelle (à créer sur unsplash.com/developers) ;
+- **Pexels** et **Pixabay** : accès refusé (403).
+
+Emplacements qui en profiteraient, avec des candidates repérées (à valider : licence à vérifier sur la page de chaque photo ; une photo Unsplash+ est payante) :
+
+| Emplacement | Aujourd'hui | Candidate (Unsplash) |
+|---|---|---|
+| Page Pro, profil « Restaurants » | pas de photo | [Plat et verre de champagne sur une terrasse, Katarzyna Pracuch](https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-beside-glass-of-champagne-IzRqHCdzauw) |
+| Page Pro, profil « Hôtels » | pas de photo | [Hall avec comptoir en marbre et plantes, Aalo Lens](https://unsplash.com/photos/modern-lobby-with-marble-reception-desk-and-plants-pt0nGH-NvoA) |
+| Entreprises & CSE, ouverture | votre photo à l'ordinateur (déjà utilisée sur Contact et Communication) | à chercher : coffret cadeau sans marque visible (les deux trouvées sont « Unsplash+ », payantes) |
+
+Pour avancer : soit vous me confiez une clé d'API Unsplash (je la demanderai par le formulaire sécurisé), soit vous m'envoyez les photos choisies.
