@@ -9,7 +9,6 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { nav } from "@/lib/site";
 import { getPageContent } from "@/sanity/content";
 
 const HREF = "/vignerons-de-laube-devenez-partenaire-de-nos-degustations";
@@ -68,13 +67,8 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
         </section>
       </Section>
 
-      <Section>
-        <div className="text-center">
-          <ButtonLink href={nav.vignerons.href} variant="secondaire">
-            {tNav("vignerons")}
-          </ButtonLink>
-        </div>
-      </Section>
+      {/* Lien « Notre sélection du moment » retiré à la demande de Julien : le formulaire de candidature
+          ci-dessus est déjà le contact des vignerons (profil Vignerons dans Brevo). */}
     </>
   );
 }

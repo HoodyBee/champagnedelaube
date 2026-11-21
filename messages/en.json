@@ -568,7 +568,9 @@
     "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens",
     "etablissementTitre": "Shall we work together?",
     "etablissementTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
-    "etablissementCta": "Suggest a partnership"
+    "etablissementCta": "Suggest a partnership",
+    "contactTitre": "A question? Write to us",
+    "contactIntro": "A wine list to build, a sample, a meeting: tell us what you need and we will get back to you quickly."
   },
   "vigneronsPage": {
     "metaTitle": "Our current selection: grower champagnes from the Aube",

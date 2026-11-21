@@ -568,7 +568,9 @@
     "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines",
     "etablissementTitre": "Et si on travaillait ensemble ?",
     "etablissementTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
-    "etablissementCta": "Proposer un partenariat"
+    "etablissementCta": "Proposer un partenariat",
+    "contactTitre": "Une question ? Écrivez-nous",
+    "contactIntro": "Une carte des vins à composer, un échantillon, un rendez-vous : dites-nous ce qu'il vous faut, nous vous répondons rapidement."
   },
   "vigneronsPage": {
     "metaTitle": "Notre sélection : champagnes de vignerons de l'Aube",

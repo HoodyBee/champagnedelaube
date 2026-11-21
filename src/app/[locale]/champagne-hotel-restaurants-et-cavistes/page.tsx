@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
 import { SanityImage as Image } from "@/components/ui/SanityImage";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { ContactProfils } from "@/components/contact/ContactProfils";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Arguments } from "@/components/ui/Arguments";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -19,6 +20,8 @@ import { nav } from "@/lib/site";
 import { getEspacePro, getVignerons } from "@/sanity/content";
 
 const HREF = "/champagne-hotel-restaurants-et-cavistes" as const;
+/** Bloc « Les domaines de la sélection » : masqué (demande de Julien), à remettre en passant à true. */
+const AFFICHER_SELECTION = false;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/champagne-hotel-restaurants-et-cavistes">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -96,18 +99,28 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
         </ul>
       </Section>
 
-      <Section id="domaines" surTitre={t("portfolioSurTitre")} titre={p.portfolioTitre ?? t("portfolioTitre")} intro={p.portfolioIntro ?? t("portfolioIntro")}>
-        <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-4">
-          {domaines.map((v) => (
-            <li key={v.slug}>
-              <DomaineCard domaine={v} />
-            </li>
-          ))}
-        </ul>
-        <div className="mt-space-4 text-center">
-          <ButtonLink href={nav.vignerons.href} variant="secondaire">
-            {t("portfolioCta")}
-          </ButtonLink>
+      {/* « Les domaines de la sélection » : masqué à la demande de Julien (contenu gardé dans Sanity).
+          Remplacé par le formulaire de contact, profil « Professionnel » déjà choisi. */}
+      {AFFICHER_SELECTION && (
+        <Section id="domaines" surTitre={t("portfolioSurTitre")} titre={p.portfolioTitre ?? t("portfolioTitre")} intro={p.portfolioIntro ?? t("portfolioIntro")}>
+          <ul className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-4">
+            {domaines.map((v) => (
+              <li key={v.slug}>
+                <DomaineCard domaine={v} />
+              </li>
+            ))}
+          </ul>
+          <div className="mt-space-4 text-center">
+            <ButtonLink href={nav.vignerons.href} variant="secondaire">
+              {t("portfolioCta")}
+            </ButtonLink>
+          </div>
+        </Section>
+      )}
+
+      <Section id="contact-pro" fond="chaude" titre={t("contactTitre")} intro={t("contactIntro")}>
+        <div className="mx-auto max-w-3xl rounded-carte border border-filet bg-blanc p-space-3 sm:p-space-4">
+          <ContactProfils initial="pro" ancres={false} />
         </div>
       </Section>
 
@@ -162,7 +175,7 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
           <LineIcon name="interlocuteur" size={32} className="text-or" />
           <h2 className="text-titre-section">{t("etablissementTitre")}</h2>
           <p className="text-[1.0625rem] text-gris-chaud">{t("etablissementTexte")}</p>
-          <ButtonLink href={{ pathname: "/contact", hash: "pro" }}>{t("etablissementCta")}</ButtonLink>
+          <ButtonLink href={{ pathname: HREF, hash: "contact-pro" }}>{t("etablissementCta")}</ButtonLink>
         </div>
       </Section>
 

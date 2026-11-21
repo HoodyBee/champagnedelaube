@@ -16,7 +16,15 @@ const PROFILS = [
  * « Vous êtes… ? » : le visiteur choisit son profil, le formulaire s'adapte et le
  * contact est classé dans la bonne liste Brevo (Particuliers, Professionnels, Entreprises & CSE).
  */
-export function ContactProfils() {
+export function ContactProfils({
+  initial,
+  ancres = true,
+}: {
+  /** Profil déjà choisi à l'ouverture (formulaire intégré dans une page de l'Espace Pro). */
+  initial?: (typeof PROFILS)[number]["key"];
+  /** Ancres #pro, #entreprise, #particulier : seulement sur la page Contact (évite les doublons d'id). */
+  ancres?: boolean;
+} = {}) {
   const t = useTranslations("contactPage");
   const [choixVisiteur, setProfil] = useState<(typeof PROFILS)[number]["key"] | null>(null);
   // Lien direct vers un profil (ex. /contact/#pro depuis Dégustations privées) : le formulaire s'ouvre tout seul.
@@ -28,15 +36,13 @@ export function ContactProfils() {
     () => window.location.hash.slice(1),
     () => "",
   );
-  const profil = choixVisiteur ?? PROFILS.find((p) => p.key === ancre)?.key ?? null;
+  const profil = choixVisiteur ?? (ancres ? PROFILS.find((p) => p.key === ancre)?.key : undefined) ?? initial ?? null;
   const choisi = PROFILS.find((p) => p.key === profil);
 
   return (
     <div>
       <fieldset>
-        {PROFILS.map((p) => (
-          <span key={p.key} id={p.key} className="block scroll-mt-28" aria-hidden="true" />
-        ))}
+        {ancres && PROFILS.map((p) => <span key={p.key} id={p.key} className="block scroll-mt-28" aria-hidden="true" />)}
         <legend className="text-titre-section">{t("vousEtes")}</legend>
         <p className="mt-space-1 text-gris-chaud">{t("vousEtesAide")}</p>
         <div className="mt-space-3 grid gap-space-1 sm:grid-cols-3">
