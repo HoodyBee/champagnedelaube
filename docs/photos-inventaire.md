@@ -527,3 +527,22 @@ Recherches : environ 30 requêtes (anglais et français, plusieurs pages), photo
 - Les 7 images (pochettes, photos de presse, publicités) ont désormais le crédit **« D.R. »** (droits réservés), dans l'article et dans la Médiathèque : plus aucune mention de Detectezmoi.com. La source exacte de chaque image n'est pas connue avec certitude.
 - **Image principale** : la photo de Jay-Z et du Cristal remplace la sculpture lumineuse (Ville-sur-Arce), qui reste dans la Médiathèque. Elle a été **déplacée** du haut du texte vers l'image principale, pour ne pas apparaître deux fois de suite.
 - Sauvegarde : `docs/sauvegardes/sanity-avant-rap-credits.json`.
+
+## Série du 22 novembre 2026 : photos changées
+
+| Page | Ancienne photo (gardée dans la Médiathèque) | Nouvelle photo |
+|---|---|---|
+| Les terroirs de l'Aube (ouverture) | salle voûtée (`caves-voutees.jpg`) | rangs de vigne à Colombé-le-Sec (`rangs-vigne-colombe-le-sec-cote-des-bar-2026.jpg`, notre photo) |
+| Les Riceys (ouverture) | façade fleurie (gardée dans la galerie de la page) | rangs de vigne en été (`rangs-vigne-vallee-champagne-ete.jpg`, notre photo), légende « Illustration » |
+| Vignerons : devenez partenaire (ouverture) | aucune | grappe de pinot noir au-dessus des caisses, Polisy (`grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg`, notre photo) |
+| Article « L'importance des accords » | verre de vin rouge et saucisson (Pixabay) | aumônière de boudin blanc et flûte de champagne (`Aumonieres-…-Fourrier-5.webp`, notre photo) |
+| Espace Pro & Entreprises (nouvelle page, 4 cartes) | — | rayon de champagnes rosés (notre photo), coffret doré (Pixabay), vendanges à Polisy (notre photo), bureau ordinateur/téléphone/carnet ([Pixabay n° 620817](https://pixabay.com/photos/office-notes-notepad-entrepreneur-620817/), Firmbee) |
+
+**Photos qui manquent** : des vignes **des Riceys** et de **Montgueux** (les deux pages utilisent une illustration), une vue du **coteau de Montgueux** depuis Troyes.
+
+**Article Instagram (brouillon), 3 photos possibles** pour l'image principale (rien n'est publié) :
+1. `coucher-soleil-vignes-merrey-sur-arce-2025.jpg` (notre photo : vignes au coucher du soleil, très « Instagram ») ;
+2. `vendanges-champagne-cote-des-bar-2026.jpg` (notre photo : caisses de pinot noir sur le tracteur, l'idée des coulisses) ;
+3. [Pixabay n° 792113](https://pixabay.com/photos/coffee-phone-paper-business-792113/) (téléphone, café, carnet sur bois : le thème réseaux sociaux, sans marque ni visage).
+
+**Autres articles vérifiés** : aucune image principale ne montre du vin rouge, de la bière ou un autre alcool. Les seules autres boissons visibles sont dans l'article rap (Cîroc, Moscato, Hennessy, Jack Daniel's) : ce sont les images d'origine, liées au sujet même de l'article.

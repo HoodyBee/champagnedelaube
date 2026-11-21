@@ -32,7 +32,10 @@
     "communication": "Communication & marketing",
     "partenaires": "Nos partenaires",
     "magTout": "Tous les articles",
-    "troyes": "Troyes, capitale de l'Aube"
+    "troyes": "Troyes, capitale de l'Aube",
+    "ouvrirSousMenu": "Ouvrir le sous-menu {menu}",
+    "fermerSousMenu": "Fermer le sous-menu {menu}",
+    "proEntreprisesHub": "Espace Pro & Entreprises"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -200,7 +203,13 @@
     "finalCta": "Nous écrire",
     "heroCtaDegustation": "Réserver une dégustation",
     "pepitesLien": "Découvrir toute notre sélection",
-    "instagram": "Suivez-nous sur Instagram"
+    "instagram": "Suivez-nous sur Instagram",
+    "videoTitre": "Nos terroirs en un coup d'œil",
+    "videoPhrase": "Quatre terroirs, de Villenauxe-la-Grande au nord-ouest jusqu'à la Côte des Bar et aux Riceys au sud : choisissez celui que vous voulez découvrir.",
+    "videoConsigne": "Cliquez sur un terroir de la carte pour le découvrir.",
+    "videoRevoir": "Revoir",
+    "videoVoir": "{nom} : découvrir ce terroir",
+    "videoAlt": "Carte de l'Aube vue du ciel : les quatre terroirs de champagne, Villenauxe-la-Grande au nord-ouest, Montgueux près de Troyes, la Côte des Bar au sud-est et Les Riceys au sud. Images Google Earth."
   },
   "pro": {
     "arguments": {
@@ -1016,8 +1025,9 @@
     "servicesTitre": "Nos services",
     "publicTitre": "Pour qui ?",
     "services": {
+      "conseils": "Conseils",
+      "audit": "Audit",
       "photo": "Photo",
-      "video": "Vidéo",
       "reseaux": "Réseaux sociaux",
       "communication": "Communication"
     },
@@ -1110,5 +1120,41 @@
     "degustations": "Dégustations privées",
     "mag": "Le Mag du Champagne",
     "contact": "Vous cherchiez quelque chose de précis ? Écrivez-nous."
+  },
+  "espaceProPage": {
+    "metaTitle": "Espace Pro & Entreprises : champagnes de vignerons de l'Aube",
+    "metaDescription": "Restaurants, cavistes, hôtels, entreprises et vignerons : un interlocuteur unique auprès des vignerons indépendants de l'Aube, et nos services de communication.",
+    "surTitre": "Professionnels",
+    "titre": "Espace Pro & Entreprises",
+    "intro": "Restaurants, cavistes, hôtels, entreprises, vignerons : nous sommes votre interlocuteur unique auprès des vignerons indépendants de l'Aube. Dites-nous qui vous êtes, nous vous montrons ce que nous pouvons faire ensemble.",
+    "cartes": {
+      "pro": {
+        "titre": "Restaurants, cavistes, hôtels",
+        "texte": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte, avec un interlocuteur unique.",
+        "lien": "Découvrir",
+        "alt": "Rayon de champagnes rosés chez un caviste de Troyes"
+      },
+      "entreprises": {
+        "titre": "Entreprises & CSE",
+        "texte": "Des coffrets de champagnes de vignerons de l'Aube et des dégustations pour vos équipes et vos clients, sur devis.",
+        "lien": "Découvrir",
+        "alt": "Mains tenant un coffret cadeau doré noué d'un ruban"
+      },
+      "vignerons": {
+        "titre": "Vignerons : devenez partenaire",
+        "texte": "Vigneron indépendant dans l'Aube ? Nous présentons une sélection courte de domaines aux professionnels et aux particuliers.",
+        "lien": "Découvrir",
+        "alt": "Caisses remplies de pinot noir pendant les vendanges 2026 à Polisy"
+      },
+      "communication": {
+        "titre": "Communication & marketing",
+        "texte": "Conseils, photo, réseaux sociaux : nos services de communication pour les vignerons, caves, bars et restaurants.",
+        "lien": "Découvrir",
+        "alt": "Ordinateur portable, téléphone et carnet de notes sur un bureau en bois"
+      }
+    },
+    "partenariatTitre": "Et si on travaillait ensemble ?",
+    "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
+    "contactCta": "Nous écrire"
   }
 }

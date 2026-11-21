@@ -40,7 +40,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
       <Breadcrumb locale={locale} items={[{ label: tNav("terroirHub"), href: nav.terroirHub.href }, { label: t.nom }]} />
       <section className="border-b border-filet bg-creme-clair">
         <div className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:py-space-5">
-          <div className="order-2 lg:order-1">
+          <div className="lg:order-1">
             <p className="inline-flex items-center gap-1.5 text-sur-titre text-bronze">
               <span aria-hidden="true" className="h-2.5 w-2.5 rounded-rond" style={{ backgroundColor: couleur }} />
               {tNav("terroirHub")}
@@ -48,23 +48,21 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
             <h1 className="mt-space-2 text-titre-post">{t.nom}</h1>
             {t.accroche && <p className="mt-space-3 text-accroche">{t.accroche}</p>}
             {t.intro && <p className="mt-space-2 max-w-xl text-[1.125rem] text-gris-chaud">{t.intro}</p>}
+            {/* Repères (surface, communes, cépage…) : dans le bloc du haut, plus en bandeau isolé. */}
+            {t.reperes.length > 0 && (
+              <dl className="mt-space-3 grid max-w-xl grid-cols-2 gap-x-space-3 gap-y-space-2 border-t border-filet pt-space-2">
+                {t.reperes.map((r) => (
+                  <div key={r.label}>
+                    <dt className="text-sur-titre-petit text-gris-chaud">{r.label}</dt>
+                    <dd className="mt-1 text-[1.0625rem] font-bold leading-snug">{r.valeur}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
           </div>
-          <Photo image={t.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />
+          <Photo image={t.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="lg:order-2" />
         </div>
       </section>
-
-      {t.reperes.length > 0 && (
-        <div className="border-b border-filet bg-blanc">
-          <dl className="mx-auto grid max-w-7xl gap-space-3 px-space-2 py-space-3 sm:grid-cols-2 sm:px-space-4 lg:grid-cols-4">
-            {t.reperes.map((r) => (
-              <div key={r.label}>
-                <dt className="text-sur-titre-petit text-gris-chaud">{r.label}</dt>
-                <dd className="mt-1 text-[1.125rem] font-bold leading-snug">{r.valeur}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      )}
 
       <Section>
         <div className="grid gap-space-5 lg:grid-cols-[1.6fr_1fr]">

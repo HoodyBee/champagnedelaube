@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- page 404 autonome, hors du gabarit du site : liens HTML simples voulus. */
 import type { Metadata } from "next";
 import { inter, vollkorn } from "@/styles/fonts";
 import "./globals.css";

@@ -73,7 +73,7 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
       <Breadcrumb locale={locale} items={[{ label: t("fil") }]} />
       <section className="border-b border-filet bg-creme-clair">
         <div className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:py-space-5">
-          <div className="order-2 lg:order-1">
+          <div className="lg:order-1">
             <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
             <h1 className="mt-space-2 text-titre-post">{t("titre")}</h1>
             <p className="mt-space-3 max-w-xl text-[1.125rem] text-gris-chaud">{t("intro")}</p>
@@ -81,14 +81,28 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
               {t("cta")}
             </ButtonLink>
           </div>
-          <Photo image={hero} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />
+          <Photo image={hero} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="lg:order-2" />
         </div>
       </section>
 
-      <Section titre={t("histoireTitre")} align="gauche">
-        <div className="max-w-3xl space-y-space-2 text-[1.0625rem]">
-          <p>{t("histoire1")}</p>
-          <p>{t("histoire2")}</p>
+      {/* Histoire et « De passage à Troyes ? » côte à côte : plus d'encadré isolé plus bas. */}
+      <Section>
+        <div className="grid items-start gap-space-4 lg:grid-cols-[1.5fr_1fr] lg:gap-space-5">
+          <div>
+            <h2 className="text-titre-section sm:text-[2rem]">{t("histoireTitre")}</h2>
+            <div className="mt-space-2 space-y-space-2 text-[1.0625rem]">
+              <p>{t("histoire1")}</p>
+              <p>{t("histoire2")}</p>
+            </div>
+          </div>
+          <aside aria-labelledby="venir-titre" className="rounded-carte border border-filet bg-creme-clair p-space-3 sm:p-space-4">
+            <h2 id="venir-titre" className="text-[1.375rem] font-bold leading-tight">{t("venirTitre")}</h2>
+            <p className="mt-space-2">{t("venirTexte1")}</p>
+            <p className="mt-space-1 text-gris-chaud">{t("venirTexte2")}</p>
+            <ButtonLink href={DEMANDE} className="mt-space-3">
+              {t("cta")}
+            </ButtonLink>
+          </aside>
         </div>
       </Section>
 
@@ -121,17 +135,6 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
             <p className="mt-space-3">{t("vignobleTexte")}</p>
           </div>
           <Photo image={vignes} ratio="4/3" sizes="(min-width: 1024px) 40vw, 100vw" />
-        </div>
-      </Section>
-
-      <Section>
-        <div className="mx-auto max-w-3xl rounded-carte border border-filet bg-creme-clair px-space-3 py-space-4 text-center sm:px-space-5">
-          <h2 className="text-titre-section">{t("venirTitre")}</h2>
-          <p className="mt-space-2">{t("venirTexte1")}</p>
-          <p className="mt-space-1 text-gris-chaud">{t("venirTexte2")}</p>
-          <ButtonLink href={DEMANDE} className="mt-space-3">
-            {t("cta")}
-          </ButtonLink>
         </div>
       </Section>
 

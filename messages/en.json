@@ -32,7 +32,10 @@
     "communication": "Communication & marketing",
     "partenaires": "Our partners",
     "magTout": "All articles",
-    "troyes": "Troyes, capital of the Aube"
+    "troyes": "Troyes, capital of the Aube",
+    "ouvrirSousMenu": "Open the {menu} submenu",
+    "fermerSousMenu": "Close the {menu} submenu",
+    "proEntreprisesHub": "Trade & Business"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -200,7 +203,13 @@
     "finalCta": "Write to us",
     "heroCtaDegustation": "Book a tasting",
     "pepitesLien": "Discover our whole selection",
-    "instagram": "Follow us on Instagram"
+    "instagram": "Follow us on Instagram",
+    "videoTitre": "Our terroirs at a glance",
+    "videoPhrase": "Four terroirs, from Villenauxe-la-Grande in the north-west to the Côte des Bar and Les Riceys in the south: pick the one you'd like to discover.",
+    "videoConsigne": "Click a terroir on the map to discover it.",
+    "videoRevoir": "Replay",
+    "videoVoir": "{nom}: discover this terroir",
+    "videoAlt": "Map of the Aube seen from above: the four champagne terroirs, Villenauxe-la-Grande in the north-west, Montgueux near Troyes, the Côte des Bar in the south-east and Les Riceys in the south. Google Earth imagery."
   },
   "pro": {
     "arguments": {
@@ -1016,8 +1025,9 @@
     "servicesTitre": "Our services",
     "publicTitre": "Who for?",
     "services": {
+      "conseils": "Advice",
+      "audit": "Audit",
       "photo": "Photography",
-      "video": "Video",
       "reseaux": "Social media",
       "communication": "Communication"
     },
@@ -1110,5 +1120,41 @@
     "degustations": "Private tastings",
     "mag": "The Champagne Mag",
     "contact": "Looking for something specific? Write to us."
+  },
+  "espaceProPage": {
+    "metaTitle": "Trade & Business: grower champagnes from the Aube region",
+    "metaDescription": "Restaurants, wine shops, hotels, companies and winemakers: a single point of contact with independent Aube winemakers, plus our communication services.",
+    "surTitre": "Professionals",
+    "titre": "Trade & Business",
+    "intro": "Restaurants, wine shops, hotels, companies, winemakers: we are your single point of contact with the independent winemakers of the Aube. Tell us who you are and we'll show you what we can do together.",
+    "cartes": {
+      "pro": {
+        "titre": "Restaurants, wine shops, hotels",
+        "texte": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list, with a single point of contact.",
+        "lien": "Discover",
+        "alt": "Shelf of rosé champagnes at a wine shop in Troyes"
+      },
+      "entreprises": {
+        "titre": "Companies & works councils",
+        "texte": "Gift boxes of Aube grower champagnes and tastings for your teams and clients, on quotation.",
+        "lien": "Discover",
+        "alt": "Hands holding a gold gift box tied with a ribbon"
+      },
+      "vignerons": {
+        "titre": "Winemakers: become a partner",
+        "texte": "An independent winemaker in the Aube? We present a small selection of estates to professionals and private clients.",
+        "lien": "Discover",
+        "alt": "Crates full of pinot noir during the 2026 harvest in Polisy"
+      },
+      "communication": {
+        "titre": "Communication & marketing",
+        "texte": "Advice, photography, social media: our communication services for winemakers, wine shops, bars and restaurants.",
+        "lien": "Discover",
+        "alt": "Laptop, phone and notebook on a wooden desk"
+      }
+    },
+    "partenariatTitre": "Shall we work together?",
+    "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "contactCta": "Write to us"
   }
 }
