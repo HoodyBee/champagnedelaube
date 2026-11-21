@@ -10,7 +10,7 @@ export const defaultContact = {
 };
 
 /** Agence qui a réalisé le site (crédit en bas du pied de page). */
-export const siteCredit = { name: "Detectezmoi.com", url: "http://www.detectezmoi.com/" };
+export const siteCredit = { name: "Detectezmoi.com", url: "https://www.detectezmoi.com/" };
 
 /** Terroirs : clé du brand book (couleur, picto) -> adresse de la page. Côte des Bar en premier. */
 /** `short` : nom court pour la ligne graphique de l'en-tête (« Villenauxe ») ; le nom officiel reste ailleurs. */
