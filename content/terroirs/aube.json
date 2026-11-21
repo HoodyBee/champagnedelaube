@@ -94,43 +94,43 @@
     }
   ],
   "cepagesTitre": {
-    "fr": "Les cépages de l'Aube",
-    "en": "The grape varieties of the Aube",
-    "nl": "De druivenrassen van de Aube",
-    "it": "I vitigni dell'Aube"
+    "fr": "Les cépages de l'appellation Champagne",
+    "en": "The grape varieties of the Champagne appellation",
+    "nl": "De druivenrassen van de appellatie Champagne",
+    "it": "I vitigni della denominazione Champagne"
   },
   "cepagesIntro": {
-    "fr": "Trois cépages principaux font le champagne de l'Aube : le pinot noir, le chardonnay et le meunier. Quelques vignerons cultivent aussi des cépages plus rares, comme le pinot blanc ou le petit meslier. Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
-    "en": "Three main grape varieties make the champagne of the Aube: pinot noir, chardonnay and meunier. A few winemakers also grow rarer varieties, such as pinot blanc or petit meslier. To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
-    "nl": "Drie hoofddruivenrassen maken de champagne van de Aube: pinot noir, chardonnay en meunier. Enkele wijnmakers telen ook zeldzamere rassen, zoals pinot blanc of petit meslier. Om ze te proeven: kom naar een van [onze proeverijen](/tasting-troyes) of ontdek [onze selectie](/vignerons).",
-    "it": "Tre vitigni principali fanno lo champagne dell'Aube: pinot noir, chardonnay e meunier. Alcuni vignaioli coltivano anche vitigni più rari, come il pinot blanc o il petit meslier. Per assaggiarli, partecipate a una delle [nostre degustazioni](/tasting-troyes) o scoprite [la nostra selezione](/vignerons)."
+    "fr": "Trois cépages principaux font le champagne : le pinot noir, le chardonnay et le meunier. D'autres, plus rares, sont aussi autorisés dans l'appellation, comme le pinot blanc ou le petit meslier. Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
+    "en": "Three main grape varieties make champagne: pinot noir, chardonnay and meunier. Others, rarer, are also permitted in the appellation, such as pinot blanc or petit meslier. To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
+    "nl": "Drie hoofddruivenrassen maken champagne: pinot noir, chardonnay en meunier. Andere, zeldzamere rassen zijn ook toegestaan in de appellatie, zoals pinot blanc of petit meslier. Om ze te proeven: kom naar een van [onze proeverijen](/tasting-troyes) of ontdek [onze selectie](/vignerons).",
+    "it": "Tre vitigni principali fanno lo champagne: pinot noir, chardonnay e meunier. Altri, più rari, sono ammessi nella denominazione, come il pinot blanc o il petit meslier. Per assaggiarli, partecipate a una delle [nostre degustazioni](/tasting-troyes) o scoprite [la nostra selezione](/vignerons)."
   },
   "cepagesTextes": [
     {
       "cepage": "pinot-noir",
       "texte": {
-        "fr": "Le cépage roi de la Côte des Bar, où il couvre plus de 80 % des vignes.",
-        "en": "The leading grape of the Côte des Bar, where it covers more than 80% of the vines.",
-        "nl": "Het belangrijkste ras van de Côte des Bar, waar het meer dan 80% van de wijngaarden beslaat.",
-        "it": "Il vitigno re della Côte des Bar, dove copre oltre l'80% delle vigne."
+        "fr": "Le premier cépage de l'appellation. Dans l'assemblage, il donne au champagne sa structure : sa charpente et son ampleur.",
+        "en": "The leading grape of the appellation. In a blend, it gives champagne its structure: its backbone and body.",
+        "nl": "Het belangrijkste ras van de appellatie. In een assemblage geeft het de champagne structuur: ruggengraat en volume.",
+        "it": "Il primo vitigno della denominazione. Nell'assemblaggio dà allo champagne struttura: ossatura e ampiezza."
       }
     },
     {
       "cepage": "chardonnay",
       "texte": {
-        "fr": "Très majoritaire sur la colline de Montgueux et à Villenauxe-la-Grande.",
-        "en": "By far the main grape on the hill of Montgueux and in Villenauxe-la-Grande.",
-        "nl": "Veruit het belangrijkste ras op de heuvel van Montgueux en in Villenauxe-la-Grande.",
-        "it": "Nettamente maggioritario sulla collina di Montgueux e a Villenauxe-la-Grande."
+        "fr": "Le grand cépage blanc de la Champagne. Dans l'assemblage, il apporte la finesse et la fraîcheur ; seul, il donne les blancs de blancs.",
+        "en": "Champagne's great white grape. In a blend, it brings finesse and freshness; on its own, it makes blanc de blancs.",
+        "nl": "De grote witte druif van de Champagne. In een assemblage brengt hij finesse en frisheid; alleen maakt hij blanc de blancs.",
+        "it": "Il grande vitigno bianco della Champagne. Nell'assemblaggio porta finezza e freschezza; da solo dà i blanc de blancs."
       }
     },
     {
       "cepage": "meunier",
       "texte": {
-        "fr": "Le troisième grand cépage champenois, plus discret dans l'Aube.",
-        "en": "The third great Champagne grape, more discreet in the Aube.",
-        "nl": "Het derde grote champagneras, bescheidener in de Aube.",
-        "it": "Il terzo grande vitigno champenois, più discreto nell'Aube."
+        "fr": "Le troisième grand cépage champenois. Dans l'assemblage, il apporte la rondeur et le fruit, et donne de la souplesse au vin.",
+        "en": "The third great Champagne grape. In a blend, it brings roundness and fruit, and gives the wine suppleness.",
+        "nl": "Het derde grote champagneras. In een assemblage brengt hij rondheid en fruit, en maakt hij de wijn soepel.",
+        "it": "Il terzo grande vitigno champenois. Nell'assemblaggio porta rotondità e frutto, e rende il vino morbido."
       }
     }
   ],

@@ -39,7 +39,7 @@ export const cepage = defineType({
     defineField({
       name: "resume",
       title: "Résumé (2 lignes)",
-      description: "Affiché sur la page « Les cépages de l'Aube ».",
+      description: "Affiché sur la page « Les cépages de l'appellation Champagne ».",
       type: "localeText",
       group: "contenu",
     }),
