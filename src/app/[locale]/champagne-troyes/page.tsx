@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PHOTOS_TROYES as PHOTOS } from "@/lib/troyes-photos";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { DansLeMag } from "@/components/mag/DansLeMag";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -23,11 +24,6 @@ const LIEN_TRAJET = { montgueux: "/montgueux", cdb: "/la-cote-des-bar", riceys: 
  * Photos de la Médiathèque (seulement des photos prises à Troyes pour illustrer Troyes ;
  * ailleurs, une légende honnête). Sources des textes : docs/troyes-sources.md.
  */
-const PHOTOS = {
-  hero: { asset: "image-d2b1e368224f660494d8042582e74994e50ebbca-1807x2400-jpg", fichier: "bouteilles-champagne-degustation-privee-troyes.jpg" },
-  vignes: { asset: "image-587e12618ba2f2e084e7a29a07dc47d291c618d7-1807x2400-jpg", fichier: "vignes-champagne-colombe-le-sec-2026.jpg" },
-  accord: { asset: "image-ca2a3326897897027569cbcde811d059b734ac73-1350x2400-jpg", fichier: "accord-chou-creme-champagne.jpg" },
-};
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/champagne-troyes">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };

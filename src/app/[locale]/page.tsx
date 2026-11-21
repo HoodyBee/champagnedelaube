@@ -68,17 +68,34 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const fond = (id: (typeof sections)[number]) => (sections.indexOf(id) % 2 === 1 ? "chaude" : "blanc");
 
   // Données structurées : l'organisation et son activité locale à Troyes.
+  // Adresse du siège saisie dans le Studio (Réglages), ex. « rue Carré, 10000 Troyes » : rue et code postal.
+  const [rue, villeCp] = (reglages.adresseSiege ?? "").split(",").map((x) => x.trim());
+  const cp = /\b(\d{5})\b/.exec(villeCp ?? "")?.[1];
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness"],
+    "@id": `${SITE_URL}/#organisation`,
     name: "Champagne de l'Aube",
-    url: SITE_URL,
-    logo: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png`,
+    description: t("metaDescription"),
+    url: `${SITE_URL}/`,
+    logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png`, width: 3000, height: 3000 },
     image: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png`,
     email: reglages.email,
-    address: { "@type": "PostalAddress", addressLocality: "Troyes", addressRegion: "Aube", addressCountry: "FR" },
-    areaServed: "Aube",
-    sameAs: ["https://www.instagram.com/champagnedelaube/", "https://www.facebook.com/292357553960308/"],
+    address: {
+      "@type": "PostalAddress",
+      ...(rue && cp ? { streetAddress: rue, postalCode: cp } : {}),
+      addressLocality: "Troyes",
+      addressRegion: "Aube",
+      addressCountry: "FR",
+    },
+    contactPoint: reglages.email
+      ? { "@type": "ContactPoint", contactType: "customer service", email: reglages.email, url: `${SITE_URL}${withSlash(getPathname({ href: "/contact", locale }))}`, availableLanguage: ["fr", "en"] }
+      : undefined,
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Aube" },
+      { "@type": "Country", name: "France" },
+    ],
+    sameAs: [reglages.instagramUrl, reglages.facebookUrl].filter(Boolean),
   };
 
   return (

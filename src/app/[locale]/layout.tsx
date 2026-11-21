@@ -11,7 +11,7 @@ import { ageGateScript } from "@/lib/age-gate";
 import { newsletterBarScript } from "@/lib/newsletter-bar";
 import { NewsletterBar } from "@/components/newsletter/NewsletterBar";
 import { getActiveLocales, getReglages, socialLinks } from "@/sanity/queries";
-import { SITE_URL } from "@/i18n/metadata";
+import { IMAGE_PARTAGE_DEFAUT, robotsFor, SITE_URL } from "@/i18n/metadata";
 import { inter, vollkorn } from "@/styles/fonts";
 import "../globals.css";
 
@@ -27,14 +27,20 @@ export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Pr
     metadataBase: new URL(SITE_URL),
     title: { default: t("defaultTitle"), template: `%s · ${t("siteName")}` },
     description: t("defaultDescription"),
-    // Site en construction : indexation interdite tant que la refonte n'est pas en ligne
-    // (sera levé à l'étape 7, au moment de la mise en production).
-    robots: { index: false, follow: false },
+    applicationName: t("siteName"),
+    // Indexation seulement sur le site en ligne (voir SITE_INDEXABLE) ; chaque page précise ensuite.
+    robots: await robotsFor(locale as Locale),
+    // Valeurs par défaut des pages qui n'ont pas les leurs.
+    openGraph: { type: "website", siteName: t("siteName"), images: [{ url: IMAGE_PARTAGE_DEFAUT, width: 1200, height: 630, alt: t("siteName") }] },
+    twitter: { card: "summary_large_image" },
+    // Balise de vérification Google Search Console : coller la valeur dans Netlify (GOOGLE_SITE_VERIFICATION).
+    ...(process.env.GOOGLE_SITE_VERIFICATION ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } } : {}),
   };
 }
 
+// Couleur de la barre du navigateur sur mobile : l'or de l'avatar (charte, « or » #BF9140).
 export const viewport: Viewport = {
-  themeColor: "#FFFFFF",
+  themeColor: "#BF9140",
 };
 
 export default async function LocaleLayout({ children, params }: LayoutProps<"/[locale]">) {

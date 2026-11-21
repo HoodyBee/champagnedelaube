@@ -3,18 +3,13 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { NewsletterForm } from "@/components/newsletter/NewsletterForm";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LineIcon } from "@/components/ui/LineIcon";
-import { localizedAlternates, robotsFor } from "@/i18n/metadata";
+import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/newsletter">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "newsletter" });
-  return {
-    title: t("title"),
-    description: t("metaDescription"),
-    alternates: await localizedAlternates("/newsletter", locale),
-    robots: await robotsFor(locale),
-  };
+  return pageMetadata({ locale, href: "/newsletter", title: t("metaTitle"), description: t("metaDescription") });
 }
 
 export default async function NewsletterPage({ params }: PageProps<"/[locale]/newsletter">) {

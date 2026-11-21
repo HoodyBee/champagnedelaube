@@ -16,9 +16,14 @@ import {
   getPageContent,
   getTerroir,
   getTerroirAube,
+  getArticle,
+  getVigneron,
   getVigneronSlugs,
+  imgDepuisAsset,
   PAGES_RUBRIQUE,
 } from "@/sanity/content";
+import { urlFor } from "@/sanity/lib/image";
+import { PHOTOS_TROYES } from "@/lib/troyes-photos";
 import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
 
@@ -86,6 +91,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getTerroirAube(defaultLocale),
     ...terroirPages.map((p) => getTerroir(p.key, defaultLocale)),
   ]);
+  const [contact, communication, fichesVignerons, articlesComplets] = await Promise.all([
+    getPageContent("contact", defaultLocale),
+    getPageContent("communication", defaultLocale),
+    Promise.all(vignerons.map((slug) => getVigneron(slug, defaultLocale))),
+    Promise.all(cartes.map((a) => getArticle(a.slug, defaultLocale))),
+  ]);
+  const troyes = Object.values(PHOTOS_TROYES).map((p) => imgDepuisAsset(p.asset, p.fichier, { fr: "", en: "" }, defaultLocale, 1600));
+  // Images placées dans le texte des articles.
+  const imagesTexte = (contenu: unknown) =>
+    ((contenu as { _type?: string; asset?: { _ref?: string } }[] | undefined) ?? [])
+      .filter((b) => b._type === "imageAvecAlt" && b.asset?._ref)
+      .map((b) => urlFor(b as never).width(1600).url());
   const src = (list: (Img | null | undefined)[]) => [...new Set(list.filter((i): i is Img => !!i).map((i) => i.src))];
   const imagesDe = new Map<string, string[]>([
     ["/", src([accueil.hero.image, accueil.degustationImage])],
@@ -96,8 +113,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ["/le-terroir-de-laube", src([terroirAube.hero.image, ...terroirAube.chapitres.map((c) => c.image)])],
     ...terroirPages.map((p, i) => [p.href as string, src([terroirsDocs[i].image, ...terroirsDocs[i].galerie])] as [string, string[]]),
     ["/vignerons", src([selection.image])],
+    ["/champagne-troyes", src(troyes)],
+    ["/contact", src([contact.image])],
+    ["/communication-marketing", src([communication.image])],
+    ...vignerons.map((slug, i) => [`vigneron:${slug}`, src([fichesVignerons[i]?.image, ...(fichesVignerons[i]?.galerie ?? [])])] as [string, string[]]),
     ...cepagesDocs.map((c) => [`cepage:${c.cle}`, src([c.image, ...c.galerie])] as [string, string[]]),
-    ...cartes.map((a) => [`article:${a.slug}`, src([a.image])] as [string, string[]]),
+    ...cartes.map((a, i) => [`article:${a.slug}`, [...src([a.image]), ...imagesTexte(articlesComplets[i]?.contenu)]] as [string, string[]]),
   ]);
   const cleImages = (href: Href) =>
     typeof href === "string"
@@ -106,7 +127,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         ? `article:${(href.params as { article: string }).article}`
         : href.pathname === "/cepages-champagne/[cepage]"
           ? `cepage:${(href.params as { cepage: string }).cepage}`
-          : "";
+          : href.pathname === "/vignerons/[slug]"
+            ? `vigneron:${(href.params as { slug: string }).slug}`
+            : "";
 
   // Un article n'est listé que dans les langues où il a un texte (sinon la page affiche le français).
   const languesDe = (href: Href) => {

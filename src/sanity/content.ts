@@ -12,7 +12,7 @@ import { typoFr } from "@/lib/typo";
 import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
 import { sanityFetch } from "./lib/fetch";
-import { urlFor } from "./lib/image";
+import { urlFor, urlPartage } from "./lib/image";
 import { dataset, projectId } from "./env";
 
 // ---------------------------------------------------------------------------
@@ -64,18 +64,20 @@ export function toImg(img: SanityImg | undefined, locale: Locale, width = 1600):
         ? `${Math.round(img.hotspot.x * 100)}% ${Math.round(img.hotspot.y * 100)}%`
         : undefined,
     credit: img.credit || img.asset.creditLine || CREDIT_PAR_DEFAUT,
-    og: avecNomLisible(urlFor(img as never).width(1200).height(630).fit("crop").quality(80).url(), nom),
+    og: avecNomLisible(urlPartage(img as never), nom?.replace(/\.\w+$/, ".jpg")),
   };
 }
 
 const L = (v: Localized | undefined, locale: Locale) => localize(v, locale) || undefined;
 type LocalizedBlocks = Localized<PortableTextBlock[]>;
 type SeoRaw = { title?: Localized; description?: Localized; noIndex?: boolean; image?: SanityImg };
-export type Seo = { title?: string; description?: string; noIndex?: boolean };
+/** image : « Image de partage » du Studio, déjà recadrée en 1200 × 630. */
+export type Seo = { title?: string; description?: string; noIndex?: boolean; image?: string };
 const seoOf = (s: SeoRaw | undefined, locale: Locale): Seo => ({
   title: L(s?.title, locale),
   description: L(s?.description, locale),
   noIndex: s?.noIndex,
+  image: s?.image?.asset ? urlPartage(s.image as never) : undefined,
 });
 
 // ---------------------------------------------------------------------------
@@ -287,7 +289,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
     logo: null,
     galerie: [],
     collaborationCommerciale: false,
-    seo: {},
+    seo: { description: f.description?.[locale] ? typoFr(f.description[locale]!) : undefined },
   };
 }
 

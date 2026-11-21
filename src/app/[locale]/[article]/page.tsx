@@ -9,7 +9,7 @@ import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { getPathname, Link } from "@/i18n/navigation";
-import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
+import { NOINDEX, pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
 import { imageObject } from "@/lib/image-jsonld";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
@@ -33,24 +33,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale,
     href: { pathname: "/[article]", params: { article: slug } },
     seo: a.seo,
-    title: `${a.titre} | Champagne de l'Aube`,
+    title: titreArticle(a.titre),
     description: a.extrait ?? a.titre,
     image: a.image,
+    type: "article",
+    article: { publishedTime: a.date, modifiedTime: a.updatedAt },
   });
   if (!traduit && locale !== "fr") {
-    meta.robots = { index: false, follow: true };
+    meta.robots = NOINDEX;
     meta.alternates = { canonical: withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale: "fr" })) };
   }
-  return {
-    ...meta,
-    openGraph: {
-      type: "article",
-      title: a.titre,
-      description: a.extrait,
-      publishedTime: a.date,
-      images: a.image?.og ? [{ url: a.image.og, width: 1200, height: 630, alt: a.image.alt }] : undefined,
-    },
-  };
+  return meta;
+}
+
+/**
+ * Titre pour Google d'un article sans « Titre pour Google » dans le Studio : on ajoute le nom
+ * du site s'il reste de la place (60 caractères au plus), sinon le titre seul.
+ */
+function titreArticle(titre: string) {
+  const long = `${titre} | Champagne de l'Aube`;
+  return long.length <= 60 ? long : titre;
 }
 
 /** Article du Mag, à son adresse historique (racine du site). */
@@ -83,7 +85,7 @@ export default async function ArticlePage({ params }: Props) {
     locale,
   );
 
-  const url = SITE_URL + getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale });
+  const url = SITE_URL + withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale }));
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -95,11 +97,12 @@ export default async function ArticlePage({ params }: Props) {
     inLanguage: locale,
     mainEntityOfPage: url,
     articleSection: rubrique ? labels[rubrique] : undefined,
-    author: { "@type": "Organization", name: "Champagne de l'Aube", url: SITE_URL },
+    author: { "@type": "Organization", name: "Champagne de l'Aube", url: `${SITE_URL}/` },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#organisation`,
       name: "Champagne de l'Aube",
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png`, width: 3000, height: 3000 },
     },
     about: cites.map((v) => ({ "@type": "Organization", name: v.nom })),
   };

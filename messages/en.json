@@ -383,7 +383,7 @@
   "contactPage": {
     "title": "Contact",
     "intro": "A question about a cuvée, a tasting, a gift box or a partnership? Write to us: we will reply personally.",
-    "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for winemaker champagnes from the Aube.",
+    "metaDescription": "Contact Champagne de l'Aube in Troyes: professionals, companies, private clients and winemakers. A single point of contact for Aube grower champagnes.",
     "details": "Details",
     "formTitle": "Let's get acquainted",
     "vousEtes": "You are…?",
@@ -408,7 +408,7 @@
       "evenement": "Plan a special occasion"
     },
     "vigneron": "Are you a winemaker? Tell us about your estate",
-    "metaTitle": "Contact us in Troyes"
+    "metaTitle": "Contact us in Troyes: winemakers, trade and private clients"
   },
   "newsletter": {
     "bar": {
@@ -419,7 +419,7 @@
     "surTitre": "Newsletter",
     "title": "News from the winemakers of the Aube",
     "intro": "Receive by email news from the estates we follow, the dates of upcoming tastings and events in the Aube.",
-    "metaDescription": "Sign up for news from Champagne de l'Aube: independent winemakers of the Côte des Bar and the Aube, tastings in Troyes, events.",
+    "metaDescription": "Sign up for news from Champagne de l'Aube: independent winemakers of the Côte des Bar and the Aube, private tastings in Troyes and upcoming events.",
     "points": {
       "vignerons": "Portraits and news of independent winemakers",
       "degustations": "Dates of upcoming tasting workshops in Troyes",
@@ -476,11 +476,12 @@
       "surTitre": "Newsletter",
       "title": "News from the winemakers of the Aube",
       "text": "Estates, tastings in Troyes and events in the Aube, straight to your inbox."
-    }
+    },
+    "metaTitle": "Newsletter: news, tastings and events from Aube winemakers"
   },
   "privacy": {
     "title": "Privacy policy",
-    "metaDescription": "How Champagne de l'Aube collects and protects your personal data: forms, newsletter, processors (Brevo, Netlify), cookies and your rights.",
+    "metaDescription": "How Champagne de l'Aube collects and protects your personal data: forms, newsletter, processors (Brevo, Netlify), cookies and how to exercise your rights.",
     "updated": "Last updated: November 2026",
     "intro": "This page explains simply what personal data we collect on this website, why, who it is shared with and how to exercise your rights.",
     "sections": {
@@ -512,7 +513,8 @@
         "title": "Cookies and browser storage",
         "text": "This website uses no advertising or audience measurement cookies. It only stores essential technical information in your browser:\n• cda_age (cookie and local storage, 1 year): your answer to the age check;\n• NEXT_LOCALE (cookie, for the visit): the chosen language;\n• cda_nl_bar (local storage): the news banner you closed."
       }
-    }
+    },
+    "metaTitle": "Privacy policy: your personal data and your rights"
   },
   "proPage": {
     "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
@@ -556,8 +558,8 @@
     "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens"
   },
   "vigneronsPage": {
-    "metaTitle": "Our current selection: Aube grower champagnes | Champagne de l'Aube",
-    "metaDescription": "The independent winemakers in the Champagne de l'Aube selection: Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Their villages, grape varieties and methods.",
+    "metaTitle": "Our current selection: grower champagnes from the Aube",
+    "metaDescription": "The independent winemakers in our selection, from the Côte des Bar to Villenauxe-la-Grande: their villages, grape varieties, methods and cuvées.",
     "surTitre": "Cuvées, discoveries and favourites",
     "h1": "Our current selection",
     "intro": "A living selection that grows with every encounter: independent Aube estates, their cuvées and the people who make them.",
@@ -569,7 +571,7 @@
     "bientot": "Our selection grows as we meet new winemakers. More estates will be joining us soon."
   },
   "vigneronPage": {
-    "metaTitle": "{nom}, winemaker in {village} | Champagne de l'Aube",
+    "metaTitle": "{nom}, winemaker in {village}, Aube",
     "personnes": "The winemakers",
     "histoire": "The estate",
     "cepages": "Grape varieties",
@@ -685,8 +687,8 @@
     "touristesLien": "Things to do in Troyes around champagne"
   },
   "evenementsPage": {
-    "metaTitle": "Wedding champagne in Troyes and the Aube | Champagne de l'Aube",
-    "metaDescription": "Weddings, christenings, group orders: choose champagnes from Aube winemakers with our advice and direct winemaker prices.",
+    "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",
+    "metaDescription": "Weddings, christenings, group orders in Troyes or the Aube: choose champagnes from independent winemakers with our advice and direct winemaker prices.",
     "surTitre": "Weddings · Christenings · Group orders",
     "h1": "Champagne for weddings and special occasions",
     "intro": "Need champagne for a special occasion, a wedding, a christening, or a group order? Benefit from our advice and direct winemaker prices, with estates from our selection.",
@@ -777,6 +779,12 @@
       "terroirsTitre": "Terroirs",
       "terroirsTexte": "The Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande: soils, climate and villages.",
       "voir": "Discover"
+    },
+    "rubriquesMeta": {
+      "actualites": {
+        "title": "News from the Champagne Mag: winemakers and events",
+        "description": "News from the Champagne Mag: vineyard events, the calendar of wine and food days, and the latest news from our independent winemakers in the Aube."
+      }
     }
   },
   "entreprisesPage": {
@@ -853,7 +861,7 @@
   },
   "legalNoticePage": {
     "title": "Legal notice",
-    "metaDescription": "Legal notice of champagnedelaube.fr: publisher, hosting, intellectual property and personal data.",
+    "metaDescription": "Legal notice of champagnedelaube.fr: publisher, publication director, hosting, intellectual property, photo credits and personal data protection.",
     "updated": "Last updated: November 2026",
     "sections": {
       "editeur": {
@@ -896,7 +904,8 @@
     "privacyLink": "Read the privacy policy",
     "mentionDefaut": "Administrative office only: no shop and no storage. Meetings and tastings by appointment.",
     "creditsBanques": "Photos from image libraries, with their author and licence:",
-    "creditsAucuneBanque": "No image-library photos are used at the moment."
+    "creditsAucuneBanque": "No image-library photos are used at the moment.",
+    "metaTitle": "Legal notice: publisher, hosting and photo credits"
   },
   "calendrier": {
     "categories": {
@@ -942,8 +951,8 @@
   "cepagesPage": {
     "surTitre": "Our terroir",
     "titre": "The grapes of the Champagne appellation",
-    "metaTitle": "The grapes of the Champagne appellation",
-    "metaDescription": "The 8 grapes of the Champagne appellation: pinot noir, chardonnay, meunier and rare grapes. What they bring, and their place in the Aube.",
+    "metaTitle": "The 8 Champagne grape varieties, from pinot noir to arbane",
+    "metaDescription": "The 8 grape varieties of the Champagne appellation: pinot noir, chardonnay, meunier and the rare grapes. What each one brings, and its place in the Aube.",
     "listeTitre": "All the grapes of the appellation",
     "listeIntro": "The Champagne appellation rules (version approved in 2025) allow eight main grape varieties.",
     "groupes": {
@@ -974,8 +983,8 @@
   "communicationPage": {
     "surTitre": "Pro area",
     "titre": "Communication & marketing",
-    "metaTitle": "Marketing for winemakers, wine shops and restaurants",
-    "metaDescription": "Photo, video, social media: Detectezmoi.com communication services for winemakers, wine shops, bars and restaurants.",
+    "metaTitle": "Communication and marketing for winemakers and restaurants",
+    "metaDescription": "Photo, video, social media: Detectezmoi.com, the team behind Champagne de l'Aube, offers its services to winemakers, wine shops, bars and restaurants.",
     "intro": "Champagne de l'Aube is run by Detectezmoi.com. We also offer our communication services to wine and hospitality professionals.",
     "servicesTitre": "Our services",
     "publicTitre": "Who for?",
@@ -1006,7 +1015,7 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capital of the Aube: champagne and tastings",
-    "metaDescription": "Troyes, capital of the Aube and city of the Counts of Champagne: its history, the Montgueux vineyard 13 km away, the Côte des Bar and our private tastings.",
+    "metaDescription": "Troyes, capital of the Aube and city of the Counts of Champagne: its history, the Montgueux vineyard about 13 km away, the Côte des Bar and our tastings.",
     "fil": "Troyes, capital of the Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capital of the Aube",

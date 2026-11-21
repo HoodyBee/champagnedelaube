@@ -383,7 +383,7 @@
   "contactPage": {
     "title": "Contact",
     "intro": "Une question sur une cuvée, une dégustation, un coffret ou un partenariat ? Écrivez-nous : nous vous répondons personnellement.",
-    "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de vignerons de l'Aube.",
+    "metaDescription": "Contactez Champagne de l'Aube à Troyes : professionnels, entreprises, particuliers et vignerons. Un interlocuteur unique pour les champagnes de l'Aube.",
     "details": "Coordonnées",
     "formTitle": "Faisons connaissance",
     "vousEtes": "Vous êtes… ?",
@@ -408,7 +408,7 @@
       "evenement": "Préparer un grand événement"
     },
     "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
-    "metaTitle": "Nous contacter à Troyes"
+    "metaTitle": "Nous contacter à Troyes : vignerons, pros et particuliers"
   },
   "newsletter": {
     "bar": {
@@ -476,7 +476,8 @@
       "surTitre": "Newsletter",
       "title": "Les actualités des vignerons de l'Aube",
       "text": "Domaines, dégustations à Troyes et rendez-vous dans l'Aube, directement dans votre boîte mail."
-    }
+    },
+    "metaTitle": "Newsletter : actualités, dégustations et vignerons de l'Aube"
   },
   "privacy": {
     "title": "Politique de confidentialité",
@@ -512,7 +513,8 @@
         "title": "Cookies et stockage dans le navigateur",
         "text": "Ce site n'utilise aucun cookie publicitaire ni de mesure d'audience. Il enregistre seulement, dans votre navigateur, des informations techniques indispensables :\n• cda_age (cookie et stockage local, 1 an) : votre réponse à la vérification de l'âge ;\n• NEXT_LOCALE (cookie, durée de la visite) : la langue choisie ;\n• cda_nl_bar (stockage local) : le bandeau des actualités que vous avez fermé."
       }
-    }
+    },
+    "metaTitle": "Politique de confidentialité : vos données et vos droits"
   },
   "proPage": {
     "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
@@ -556,8 +558,8 @@
     "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines"
   },
   "vigneronsPage": {
-    "metaTitle": "Notre sélection du moment : champagnes de vignerons de l'Aube | Champagne de l'Aube",
-    "metaDescription": "Les vignerons indépendants de la sélection Champagne de l'Aube : Côte des Bar, Les Riceys, Montgueux, Villenauxe-la-Grande. Leurs villages, leurs cépages, leurs méthodes.",
+    "metaTitle": "Notre sélection : champagnes de vignerons de l'Aube",
+    "metaDescription": "Les vignerons indépendants de notre sélection, de la Côte des Bar à Villenauxe-la-Grande : leurs villages, leurs cépages, leurs méthodes et leurs cuvées.",
     "surTitre": "Cuvées, découvertes et coups de cœur",
     "h1": "Notre sélection du moment",
     "intro": "Une sélection vivante, qui évolue au fil des rencontres : des domaines indépendants de l'Aube, leurs cuvées et les personnes qui les élaborent.",
@@ -569,7 +571,7 @@
     "bientot": "Notre sélection s'enrichit au fil des rencontres. D'autres domaines nous rejoignent bientôt."
   },
   "vigneronPage": {
-    "metaTitle": "{nom}, vigneron à {village} | Champagne de l'Aube",
+    "metaTitle": "{nom}, vigneron à {village}, dans l'Aube",
     "personnes": "Les vignerons",
     "histoire": "Le domaine",
     "cepages": "Cépages",
@@ -685,8 +687,8 @@
     "touristesLien": "Que faire à Troyes autour du champagne"
   },
   "evenementsPage": {
-    "metaTitle": "Champagne pour mariage à Troyes et dans l'Aube | Champagne de l'Aube",
-    "metaDescription": "Mariage, baptême, commande groupée : choisissez des champagnes de vignerons de l'Aube avec nos conseils et des tarifs directs vignerons.",
+    "metaTitle": "Champagne de mariage à Troyes et dans l'Aube : nos conseils",
+    "metaDescription": "Mariage, baptême, commande groupée à Troyes ou dans l'Aube : choisissez des champagnes de vignerons indépendants avec nos conseils et des tarifs directs.",
     "surTitre": "Mariage · Baptême · Commandes groupées",
     "h1": "Champagne pour mariage et grands événements",
     "intro": "Besoin d'un champagne pour une grande occasion, un mariage, un baptême, ou d'une commande groupée ? Bénéficiez de nos conseils et de tarifs directs vignerons, avec des domaines de notre sélection.",
@@ -730,7 +732,7 @@
     "formTexte": "Racontez-nous votre projet : nous revenons vers vous très vite avec des propositions."
   },
   "mag": {
-    "metaTitle": "Le Mag du Champagne : vignerons, terroirs et accords de l'Aube | Champagne de l'Aube",
+    "metaTitle": "Le Mag du Champagne : vignerons, terroirs et accords",
     "metaDescription": "Tout savoir sur le champagne, accords mets & champagne et portraits de vignerons de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande.",
     "surTitre": "Portraits, terroirs, accords",
     "h1": "Le Mag du Champagne",
@@ -777,6 +779,12 @@
       "terroirsTitre": "Terroirs",
       "terroirsTexte": "La Côte des Bar, Les Riceys, Montgueux et Villenauxe-la-Grande : sols, climat et villages.",
       "voir": "Découvrir"
+    },
+    "rubriquesMeta": {
+      "actualites": {
+        "title": "Actualités du Mag : vignerons, rendez-vous et calendrier",
+        "description": "Les actualités du Mag du Champagne : rendez-vous du vignoble, calendrier des journées du vin et de la gastronomie, et nouvelles de nos vignerons de l'Aube."
+      }
     }
   },
   "entreprisesPage": {
@@ -853,7 +861,7 @@
   },
   "legalNoticePage": {
     "title": "Mentions légales",
-    "metaDescription": "Mentions légales du site champagnedelaube.fr : éditeur, hébergement, propriété intellectuelle et données personnelles.",
+    "metaDescription": "Mentions légales du site champagnedelaube.fr : éditeur, directeur de publication, hébergeur, propriété intellectuelle, crédits photos et données personnelles.",
     "updated": "Mise à jour : novembre 2026",
     "sections": {
       "editeur": {
@@ -896,7 +904,8 @@
     "privacyLink": "Consulter la politique de confidentialité",
     "mentionDefaut": "Siège administratif, ni boutique ni lieu de stockage. Rencontres et dégustations sur rendez-vous.",
     "creditsBanques": "Photos issues de banques d'images, avec leur auteur et leur licence :",
-    "creditsAucuneBanque": "Aucune photo de banque d'images n'est utilisée pour le moment."
+    "creditsAucuneBanque": "Aucune photo de banque d'images n'est utilisée pour le moment.",
+    "metaTitle": "Mentions légales : éditeur, hébergement et crédits photos"
   },
   "calendrier": {
     "categories": {
@@ -942,7 +951,7 @@
   "cepagesPage": {
     "surTitre": "Notre terroir",
     "titre": "Les cépages de l'appellation Champagne",
-    "metaTitle": "Les cépages de l'appellation Champagne",
+    "metaTitle": "Les 8 cépages du champagne, du pinot noir à l'arbane",
     "metaDescription": "Les 8 cépages de l'appellation Champagne : pinot noir, chardonnay, meunier et cépages rares. Ce qu'ils apportent, et leur place dans l'Aube.",
     "listeTitre": "Tous les cépages de l'appellation",
     "listeIntro": "Le cahier des charges de l'appellation Champagne (version homologuée en 2025) autorise huit cépages principaux.",
@@ -974,8 +983,8 @@
   "communicationPage": {
     "surTitre": "Espace Pro",
     "titre": "Communication & marketing",
-    "metaTitle": "Communication et marketing pour vignerons, caves et restaurants",
-    "metaDescription": "Photo, vidéo, réseaux sociaux : les services de communication de Detectezmoi.com pour les vignerons, caves, bars et restaurants.",
+    "metaTitle": "Communication et marketing pour vignerons et restaurants",
+    "metaDescription": "Photo, vidéo, réseaux sociaux : Detectezmoi.com, qui porte Champagne de l'Aube, propose ses services de communication aux vignerons, caves, bars et restaurants.",
     "intro": "Champagne de l'Aube est porté par Detectezmoi.com. Nous proposons aussi nos services de communication aux professionnels du vin et de la table.",
     "servicesTitre": "Nos services",
     "publicTitre": "Pour qui ?",
@@ -1006,7 +1015,7 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capitale de l'Aube : champagne et dégustations",
-    "metaDescription": "Troyes, capitale de l'Aube et ville des comtes de Champagne : son histoire, le vignoble de Montgueux à 13 km, la Côte des Bar et nos dégustations privées.",
+    "metaDescription": "Troyes, capitale de l'Aube et ville des comtes de Champagne : son histoire, le vignoble de Montgueux à environ 13 km, la Côte des Bar et nos dégustations.",
     "fil": "Troyes, capitale de l'Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capitale de l'Aube",

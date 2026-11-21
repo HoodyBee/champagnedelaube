@@ -44,8 +44,9 @@ export async function rubriqueMetadata(code: string, locale: Locale): Promise<Me
     locale,
     href: rubriqueHref(code),
     seo: vide ? { ...page?.seo, noIndex: true } : page?.seo,
-    title: `${titre} | ${t("h1")}`,
-    description: intro ?? t("metaDescription"),
+    // Titre et description dédiés (fichiers de traduction) pour les rubriques sans page dans le Studio.
+    title: t.has(`rubriquesMeta.${code}.title`) ? t(`rubriquesMeta.${code}.title` as "h1") : `${titre} | ${t("h1")}`,
+    description: t.has(`rubriquesMeta.${code}.description`) ? t(`rubriquesMeta.${code}.description` as "h1") : (intro ?? t("metaDescription")),
   });
 }
 

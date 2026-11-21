@@ -44,9 +44,9 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
       en: "A black grape that makes white wines, and the grape that shapes the landscape of the Côte des Bar.",
     },
     seo: {
-      title: { fr: "Pinot noir : le cépage de la Côte des Bar", en: "Pinot noir: the grape of the Côte des Bar" },
+      title: { fr: "Pinot noir : le grand cépage noir de la Côte des Bar", en: "Pinot noir: the great black grape of the Côte des Bar" },
       description: {
-        fr: "Le pinot noir, premier cépage de la Champagne et très largement majoritaire dans la Côte des Bar : ce qu'il apporte, où il pousse dans l'Aube, le rosé des Riceys.",
+        fr: "Le pinot noir, premier cépage champenois et très largement majoritaire dans la Côte des Bar : ce qu'il apporte, où il pousse dans l'Aube, le rosé des Riceys.",
         en: "Pinot noir, Champagne's leading grape and by far the main one in the Côte des Bar: what it brings, where it grows in the Aube, Rosé des Riceys.",
       },
     },
@@ -132,7 +132,7 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
       en: "The grape of blanc de blancs, which finds two terroirs of its own in the Aube.",
     },
     seo: {
-      title: { fr: "Chardonnay : finesse et fraîcheur, de Montgueux à Villenauxe", en: "Chardonnay: finesse and freshness in the Aube" },
+      title: { fr: "Chardonnay : finesse et fraîcheur, de Montgueux à Villenauxe", en: "Chardonnay: finesse and freshness, Montgueux to Villenauxe" },
       description: {
         fr: "Le chardonnay, seul grand cépage blanc de la Champagne : ce qu'il apporte, le blanc de blancs, ses terroirs dans l'Aube (Montgueux, Villenauxe-la-Grande).",
         en: "Chardonnay, Champagne's only major white grape: what it brings, blanc de blancs, its terroirs in the Aube (Montgueux, Villenauxe-la-Grande).",
@@ -221,10 +221,10 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
       en: "A name that comes from flour, a hardy grape, and fruit in the blend.",
     },
     seo: {
-      title: { fr: "Meunier : le cépage du fruit et de la rondeur", en: "Meunier: the grape of fruit and roundness" },
+      title: { fr: "Meunier : le cépage champenois du fruit et de la rondeur", en: "Meunier: the Champagne grape of fruit and roundness" },
       description: {
         fr: "Le meunier, l'un des trois grands cépages de la Champagne : d'où vient son nom, ce qu'il apporte au champagne, pourquoi il craint moins les gelées.",
-        en: "Meunier, one of Champagne's three great grapes: where its name comes from, what it brings to champagne, why it fears frost less.",
+        en: "Meunier, one of Champagne's three great grapes: where its name comes from, what it brings to champagne, and why it is less exposed to spring frosts.",
       },
     },
     terroirs: ["montgueux"],
@@ -295,10 +295,10 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     },
     accroche: { fr: "Un cépage ancien et discret, qu'on appelle parfois « blanc vrai » dans l'Aube.", en: "A discreet old grape, sometimes called “blanc vrai” in the Aube." },
     seo: {
-      title: { fr: "Pinot blanc : un cépage rare de la Côte des Bar", en: "Pinot blanc: a rare grape of the Côte des Bar" },
+      title: { fr: "Pinot blanc ou « blanc vrai » : un cépage rare de l'Aube", en: "Pinot blanc or “blanc vrai”: a rare grape of the Aube" },
       description: {
         fr: "Le pinot blanc, cépage autorisé en Champagne mais rarement planté, appelé « blanc vrai » dans l'Aube et encore cultivé dans la Côte des Bar.",
-        en: "Pinot blanc, a grape permitted in Champagne but rarely planted, called “blanc vrai” in the Aube and still grown in the Côte des Bar.",
+        en: "Pinot blanc, a grape permitted in Champagne but rarely planted, known as “blanc vrai” in the Aube and still grown by a few winemakers in the Côte des Bar.",
       },
     },
     terroirs: ["cote-des-bar", "villenauxe"],
@@ -349,10 +349,10 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     },
     accroche: { fr: "En Champagne, le pinot gris porte un nom ancien : le fromenteau.", en: "In Champagne, pinot gris goes by an old name: fromenteau." },
     seo: {
-      title: { fr: "Pinot gris ou fromenteau : un cépage rare du champagne", en: "Pinot gris or fromenteau: a rare champagne grape" },
+      title: { fr: "Pinot gris ou fromenteau : un cépage rare du champagne", en: "Pinot gris or fromenteau: a rare grape of Champagne" },
       description: {
-        fr: "Le pinot gris, appelé fromenteau en Champagne : un cépage rare de l'appellation, replanté par des vignerons de la Côte des Bar.",
-        en: "Pinot gris, called fromenteau in Champagne: a rare grape of the appellation, replanted by Côte des Bar winemakers.",
+        fr: "Le pinot gris, appelé fromenteau en Champagne : un cépage rare de l'appellation, son histoire et sa place, replanté par des vignerons de la Côte des Bar.",
+        en: "Pinot gris, known as fromenteau in Champagne: a rare grape of the appellation, its history and its place today, replanted by Côte des Bar winemakers.",
       },
     },
     terroirs: ["cote-des-bar"],
@@ -402,10 +402,10 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     },
     accroche: { fr: "Difficile, sensible au gel, presque disparu : l'arbane doit sa survie à quelques vignerons de l'Aube.", en: "Difficult, frost-sensitive, almost gone: arbane owes its survival to a few Aube winemakers." },
     seo: {
-      title: { fr: "Arbane : le plus rare des cépages du champagne", en: "Arbane: the rarest champagne grape" },
+      title: { fr: "Arbane : le plus rare des cépages du champagne, dans l'Aube", en: "Arbane: the rarest champagne grape, found in the Aube" },
       description: {
         fr: "L'arbane, cépage blanc autorisé en Champagne, difficile à cultiver et sensible au gel, dont les dernières vignes se trouvent surtout dans l'Aube.",
-        en: "Arbane, a white grape permitted in Champagne, hard to grow and frost-sensitive, whose last vines are mostly in the Aube.",
+        en: "Arbane, a white grape permitted in Champagne, hard to grow and sensitive to frost, whose last vines are mostly found in the Aube. Its history and character.",
       },
     },
     terroirs: ["cote-des-bar"],
@@ -465,10 +465,10 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     },
     accroche: { fr: "Un cépage ancien, apprécié pour sa fraîcheur et ses notes citronnées.", en: "An old grape, prized for its freshness and lemony notes." },
     seo: {
-      title: { fr: "Petit meslier : un cépage rare de fraîcheur", en: "Petit meslier: a rare grape of freshness" },
+      title: { fr: "Petit meslier : cépage rare du champagne, plein de vivacité", en: "Petit meslier: a rare champagne grape prized for freshness" },
       description: {
-        fr: "Le petit meslier, croisement de gouais et de savagnin, cépage rare du champagne apprécié pour sa fraîcheur, présent surtout dans l'Aube.",
-        en: "Petit meslier, a cross of gouais and savagnin, a rare champagne grape prized for its freshness, found mostly in the Aube.",
+        fr: "Le petit meslier, croisement de gouais et de savagnin : un cépage rare du champagne, apprécié pour sa fraîcheur et présent surtout dans l'Aube.",
+        en: "Petit meslier, a cross of gouais and savagnin: a rare champagne grape, prized for its freshness and found mostly in the Aube. Its history and character.",
       },
     },
     terroirs: ["cote-des-bar", "villenauxe"],
@@ -531,7 +531,7 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
       title: { fr: "Chardonnay rose : le cépage entré dans l'AOC en 2025", en: "Chardonnay rose: the grape added to the AOC in 2025" },
       description: {
         fr: "Le chardonnay rose, mutation naturelle du chardonnay, inscrit au cahier des charges de l'appellation Champagne par un arrêté du 31 juillet 2025.",
-        en: "Chardonnay rose, a natural mutation of chardonnay, added to the Champagne appellation rules by an order of 31 July 2025.",
+        en: "Chardonnay rose, a natural mutation of chardonnay with pinkish skin, added to the rules of the Champagne appellation by an order of 31 July 2025.",
       },
     },
     terroirs: [],

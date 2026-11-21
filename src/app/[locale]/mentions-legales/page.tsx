@@ -4,7 +4,7 @@ import { Paragraphs } from "@/components/legal/Paragraphs";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { RichText } from "@/components/ui/RichText";
 import { Link } from "@/i18n/navigation";
-import { localizedAlternates, robotsFor } from "@/i18n/metadata";
+import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { adresseSiege } from "@/lib/legal";
 import { localize } from "@/sanity/lib/i18n";
@@ -17,12 +17,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/mentions
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "legalNoticePage" });
   const page = await getPage("mentions-legales");
-  return {
-    title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
+  return pageMetadata({
+    locale,
+    href: "/mentions-legales",
+    title: localize(page?.seo?.title, locale) ?? t("metaTitle"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: await localizedAlternates("/mentions-legales", locale),
-    robots: await robotsFor(locale),
-  };
+  });
 }
 
 /**

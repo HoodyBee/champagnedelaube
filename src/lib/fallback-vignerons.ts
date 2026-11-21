@@ -15,6 +15,8 @@ export type FallbackVigneron = {
   terroir: TerroirKey;
   accroche: L;
   philosophie: L;
+  /** Description pour Google (environ 140 à 160 caractères) ; sinon la philosophie. */
+  description?: Partial<L>;
   personnes: { nom: string; role: L }[];
   cepages: CepageKey[];
   thematiques: PictoKey[];
@@ -108,6 +110,10 @@ export const fallbackVignerons: FallbackVigneron[] = [
       nl: "Van druif tot fles gebeurt alles op het domein: handmatige pluk, zachte persing, temperatuurgestuurde roestvrijstalen tanks.",
       it: "Dall'uva alla bottiglia, tutto avviene in tenuta: vendemmia manuale, pressatura soffice, vasche inox termoregolate.",
       de: "Von der Traube bis zur Flasche geschieht alles auf dem Weingut: Handlese, schonende Pressung, temperaturgesteuerte Edelstahltanks.",
+    },
+    description: {
+      fr: "Champagne Mennetrier, à Arrentières dans la Côte des Bar : du raisin à la bouteille, tout se fait au domaine, des vendanges à la main aux cuves inox.",
+      en: "Champagne Mennetrier, in Arrentières in the Côte des Bar: from grape to bottle, everything happens at the estate, from hand harvesting to bottling.",
     },
     personnes: [],
     cepages: [],
