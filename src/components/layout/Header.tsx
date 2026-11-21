@@ -25,7 +25,7 @@ type Item = { href: LinkHref; cle: string; label: string; color?: string; short?
  * Pas de saut de mise en page : l'en-tête est « collant » avec un décalage égal à la
  * hauteur du premier étage.
  */
-export function Header({ social, locales }: { social: Social; locales: readonly Locale[] }) {
+export function Header({ social, locales, rubriquesPubliees }: { social: Social; locales: readonly Locale[]; rubriquesPubliees: string[] }) {
   const t = useTranslations("nav");
   const tMag = useTranslations("mag.rubriques");
   const tSocial = useTranslations("social");
@@ -70,16 +70,19 @@ export function Header({ social, locales }: { social: Social; locales: readonly 
   const terroirMenu: Item[] = [
     { href: nav.terroirHub.href, cle: nav.terroirHub.href, label: t("terroirHubLink") },
     ...terroirItems,
+    { href: "/champagne-troyes", cle: "/champagne-troyes", label: t("troyes") },
   ];
   // Le Mag : tous les articles, puis les cinq rubriques.
+  // Rubriques sans article publié (ex. Portraits, Autres horizons) : masquées du menu tant qu'elles sont vides.
+  const publiee = (code: string) => rubriquesPubliees.includes(code);
   const rubrique = (code: string, label: string): Item => ({ href: { pathname: "/le-mag/[rubrique]", params: { rubrique: code } }, cle: `/le-mag/${code}`, label });
   const magMenu: Item[] = [
     { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
-    rubrique("actualites", tMag("actualites")),
+    ...(publiee("actualites") ? [rubrique("actualites", tMag("actualites"))] : []),
     { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
-    rubrique("portraits", tMag("portraits")),
-    rubrique("autres-horizons", tMag("autresHorizons")),
+    ...(publiee("portraits") ? [rubrique("portraits", tMag("portraits"))] : []),
+    ...(publiee("autres-horizons") ? [rubrique("autres-horizons", tMag("autresHorizons"))] : []),
   ];
   const proItems = proEntreprises.map(toItem);
 

@@ -5,7 +5,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AgeGate } from "@/components/layout/AgeGate";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { routing } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
+import { getArticles } from "@/sanity/content";
 import { ageGateScript } from "@/lib/age-gate";
 import { newsletterBarScript } from "@/lib/newsletter-bar";
 import { NewsletterBar } from "@/components/newsletter/NewsletterBar";
@@ -43,7 +44,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "nav" });
-  const [reglages, activeLocales] = await Promise.all([getReglages(), getActiveLocales()]);
+  const [reglages, activeLocales, articles] = await Promise.all([getReglages(), getActiveLocales(), getArticles(locale as Locale)]);
+  // Rubriques du Mag qui ont au moins un article publié : les autres sont masquées du menu (et y reviennent seules).
+  const rubriquesPubliees = [...new Set(articles.flatMap((a) => a.rubriques))];
 
   return (
     // suppressHydrationWarning : le script de vérification de l'âge peut ajouter
@@ -64,7 +67,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
               {t("skipToContent")}
             </a>
             <NewsletterBar />
-            <Header social={socialLinks(reglages)} locales={activeLocales} />
+            <Header social={socialLinks(reglages)} locales={activeLocales} rubriquesPubliees={rubriquesPubliees} />
             <main id="contenu" className="flex-1">
               {children}
             </main>
