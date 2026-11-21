@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   const t = await getTranslations({ locale, namespace: "troyesPage" });
   const fr = await getTranslations({ locale: "fr", namespace: "troyesPage" });
   const en = await getTranslations({ locale: "en", namespace: "troyesPage" });
-  const image = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, { fr: fr("altHero"), en: en("altHero") }, locale);
+  const image = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, { fr: fr("altHero"), en: en("altHero") }, locale, 1600, undefined, PHOTOS.hero.credit);
   return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription"), image });
 }
 
@@ -43,7 +43,7 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
   const en = await getTranslations({ locale: "en", namespace: "troyesPage" });
   const alt = (k: "altHero" | "altVignes" | "altAccord") => ({ fr: fr(k), en: en(k) });
   const leg = (k: "legendeVignes" | "legendeAccord") => ({ fr: fr(k), en: en(k) });
-  const hero = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, alt("altHero"), locale);
+  const hero = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, alt("altHero"), locale, 1600, undefined, PHOTOS.hero.credit);
   const vignes = imgDepuisAsset(PHOTOS.vignes.asset, PHOTOS.vignes.fichier, alt("altVignes"), locale, 1200, leg("legendeVignes"));
   const accord = imgDepuisAsset(PHOTOS.accord.asset, PHOTOS.accord.fichier, alt("altAccord"), locale, 1200, leg("legendeAccord"));
   const faq = (["1", "2", "3"] as const).map((n) => ({ question: t(`faq.q${n}`), reponse: t(`faq.r${n}`) }));

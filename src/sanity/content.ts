@@ -169,12 +169,13 @@ export function imgDepuisAsset(
   locale: Locale,
   width = 1600,
   legende?: { fr: string; en: string },
+  credit?: string,
 ): Img | null {
   const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(asset) ?? [];
   if (!hash) return null;
   const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
   return toImg(
-    { alt, legende, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
+    { alt, legende, credit, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
     locale,
     width,
   );
@@ -188,6 +189,8 @@ const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, wi
   return toImg(
     {
       alt: f.photo.alt,
+      legende: f.photo.legende,
+      credit: f.photo.credit,
       asset: { _id: f.photo.asset, url, originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
     },
     locale,
@@ -479,7 +482,7 @@ export async function getPageContent(cle: string, locale: Locale) {
 // ---------------------------------------------------------------------------
 
 /** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
+export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "marketing", "tout-savoir", "portraits", "autres-horizons"] as const;
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
