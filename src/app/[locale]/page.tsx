@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CarteTerroirs } from "@/components/home/CarteTerroirs";
+import { TerroirsVideo } from "@/components/home/TerroirsVideo";
+import { VIDEO_ACCUEIL } from "@/lib/video-accueil";
 import { SocialIcon } from "@/components/icons/SocialLinks";
 import { MagCard } from "@/components/mag/MagCard";
 import { CatalogueDialog } from "@/components/selection/CatalogueDialog";
@@ -117,6 +119,50 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           </>
         }
       />
+      {/* Nos terroirs en un coup d'œil : la vidéo de la carte, dans une section aux teintes de la vidéo
+          (elle s'y fond, sans bord), avec les terroirs cliquables et leur liste. */}
+      <section aria-labelledby="carte-video-titre" className="bg-[linear-gradient(180deg,#0D1929_0%,#112033_50%,#121C28_100%)] text-creme [&_:focus-visible]:outline-or">
+        <div className="mx-auto grid max-w-7xl items-center gap-space-3 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-[1fr_1.45fr] lg:gap-space-5 lg:py-[56px]">
+          <div>
+            <p className="text-sur-titre text-or">{t("terroirsSurTitre")}</p>
+            <h2 id="carte-video-titre" className="mt-space-1 text-titre-section text-creme sm:text-[2rem]">{t("videoTitre")}</h2>
+            <p className="mt-space-2 max-w-md text-[1.0625rem] text-creme/85">{t("videoPhrase")}</p>
+            <ul className="mt-space-3 hidden max-w-sm divide-y divide-creme/15 border-y border-creme/15 lg:block">
+              {terroirPages.map((p) => (
+                <li key={p.key}>
+                  <Link href={p.href} className="group flex min-h-11 items-center gap-space-2 py-space-1">
+                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />
+                    <span className="flex-1 font-bold group-hover:text-or">{p.label}</span>
+                    <span aria-hidden="true" className="text-or">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <TerroirsVideo
+              video={VIDEO_ACCUEIL.video}
+              poster={VIDEO_ACCUEIL.poster}
+              alt={t("videoAlt")}
+              terroirs={terroirPages.map((p) => ({ key: p.key, label: p.label, href: p.href, color: `var(--color-${terroirs[p.key].color})` }))}
+              textes={{ revoir: t("videoRevoir"), consigne: t("videoConsigne"), voir: t.raw("videoVoir") as string }}
+            />
+            {/* Mobile : la liste sous la carte */}
+            <ul className="mt-space-2 grid grid-cols-2 gap-x-space-2 border-t border-creme/15 pt-space-1 lg:hidden">
+              {terroirPages.map((p) => (
+                <li key={p.key}>
+                  <Link href={p.href} className="flex min-h-11 items-center gap-space-1 font-bold">
+                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />
+                    {p.short ?? p.label}
+                    <span aria-hidden="true" className="text-or">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <Chiffres items={chiffres} />
 
       {/* 2. Les terroirs de l'Aube : carte stylisée et 4 portes d'entrée */}
