@@ -1,0 +1,21 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "page-contact",
+  "_rev": "R9dLj3QxhjzSE72fqXvEIJ",
+  "_type": "page",
+  "_updatedAt": "2026-11-21T10:31:08Z",
+  "cle": "contact",
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Street in Troyes lined with half-timbered houses and stone arcades",
+      "fr": "Rue de Troyes bordée de maisons à colombages et d'arcades en pierre"
+    },
+    "asset": {
+      "_ref": "image-713400b7ef1102140d5fc629e28e4faeb42b9e9c-1280x853-jpg",
+      "_type": "reference"
+    },
+    "credit": "Photo : sergeboutrou / Pixabay"
+  }
+}

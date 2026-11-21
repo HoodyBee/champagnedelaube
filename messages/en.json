@@ -895,7 +895,7 @@
       "rares": "The rare grapes",
       "nouveau": "The newcomer"
     },
-    "troyesLien": "Troyes and its vineyards: Montgueux about ten kilometres away, the Côte des Bar half an hour"
+    "troyesLien": "From Troyes, the vineyards within easy reach: Montgueux about ten kilometres away, the Côte des Bar half an hour"
   },
   "legalNoticePage": {
     "title": "Legal notice",
@@ -1055,17 +1055,17 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capital of the Aube: champagne and tastings",
-    "metaDescription": "Troyes, capital of the Aube and city of the Counts of Champagne: its history, the Montgueux vineyard about 13 km away, the Côte des Bar and our tastings.",
+    "metaDescription": "Troyes, capital of the Aube: its history, its food, its factory outlets, the vineyards within easy reach (Montgueux, the Côte des Bar) and our tastings.",
     "fil": "Troyes, capital of the Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capital of the Aube",
-    "intro": "Capital of the Aube and former capital of the Counts of Champagne, Troyes has the vineyards right on its doorstep: the hill of Montgueux is about ten kilometres away. This is where we hold our private tastings of growers' champagnes from the Aube, hoping you will come to love our city as much as our wines.",
+    "intro": "Capital of the Aube and former capital of the Counts of Champagne, Troyes is the ideal starting point for the vineyards: the hill of Montgueux is about ten kilometres away, the Côte des Bar around half an hour. This is where we hold our private tastings of growers' champagnes from the Aube, hoping you will come to love our city as much as our wines.",
     "cta": "Arrange a private tasting",
     "histoireTitre": "Troyes, historic capital of Champagne",
     "histoire1": "In the Middle Ages, Troyes was the capital of the Counts of Champagne. The city prospered thanks to the Champagne fairs: six great fairs punctuated the year in the region, two in Provins, one in Lagny, one in Bar-sur-Aube and two in Troyes, the “hot fair” in summer and the “cold fair” in autumn. Merchants and money-changers came from all over Europe.",
     "histoire2": "Seen from the air, the old town is shaped like a champagne cork, and locals call it “le Bouchon” (the cork). Its streets are lined with half-timbered houses, many rebuilt after the great fire of 1524. A walk to take with your head up, before or after a tasting.",
-    "vignobleTitre": "The gateway to the Aube vineyards",
-    "vignobleIntro": "From Troyes, the vines are close at hand. A few landmarks by car:",
+    "vignobleTitre": "From Troyes, the vineyards within easy reach",
+    "vignobleIntro": "Troyes has no vines of its own, but they are only a short drive away. A few landmarks by car:",
     "trajets": {
       "montgueux": "Montgueux",
       "cdb": "Bar-sur-Seine (Côte des Bar)",
@@ -1085,9 +1085,9 @@
     "venirTitre": "Passing through Troyes? Champagne comes to you",
     "venirTexte1": "No time to drive out to the vineyards? We bring the growers' champagnes of the Aube to you in Troyes, at your home or at a venue of your choice, with the stories of their villages and of the people who make them.",
     "venirTexte2": "With friends, family, for a special occasion or during a stay: tell us what you would enjoy, and we will put the tasting together with you.",
-    "gastroTitre": "Champagne and Troyes cuisine",
-    "gastro1": "Troyes has its specialities. The best known is andouillette de Troyes, made with pork. Chaource, a PDO soft cheese with a bloomy rind, is made south of Troyes, in the Aube and the neighbouring Yonne.",
-    "gastro2": "With chaource, a grower's champagne makes a lovely pairing, and rosé des Riceys goes well with local cooking. For more ideas, see our [champagne food pairing recipes](/recettes-accords-mets-champagne).",
+    "gastroTitre": "Troyes food and craftsmanship",
+    "gastro1": "In Troyes, good food is taken seriously. Its most famous speciality, the andouillette de Troyes, is the pride of the city's charcutiers; try it baked with Chaource cheese. Chaource itself is a PDO cheese with a soft, bloomy rind, made south of Troyes, in the Aube and the neighbouring Yonne. A real treat.",
+    "gastro2": "The Aube has more delights in store: cider from the Pays d'Othe, the Aube's orchard country, beers from the department's small craft breweries, now in full revival, and, in town, excellent chocolate makers, including a Meilleur Ouvrier de France, alongside many artisan food producers. Enough to fill a basket that is 100% Aube.",
     "allerTitre": "Keep exploring",
     "liens": {
       "terroirs": "The terroirs of the Aube",
@@ -1099,7 +1099,7 @@
     },
     "legendeVignes": "Côte des Bar vineyards, in Colombé-le-Sec",
     "legendeAccord": "Food and champagne pairing (illustration)",
-    "altHero": "Half-timbered houses in the historic centre of Troyes, under a blue sky",
+    "altHero": "Bottles of champagne from Aube growers and tasting cards on a wooden table, at one of our private tastings",
     "altVignes": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
     "altAccord": "Cream puff served with a glass of champagne",
     "faqTitre": "Your questions",
@@ -1110,7 +1110,10 @@
       "r2": "Yes: we organise private tastings of growers' champagnes from the Aube, in Troyes, at your home or at a venue of your choice. Tell us about your plans and we will come back to you with a proposal.",
       "q3": "Why is the centre of Troyes called “le Bouchon”?",
       "r3": "Because, seen from the air, the layout of the old town is shaped like a champagne cork."
-    }
+    },
+    "gastro3": "With Chaource, a grower's champagne makes a lovely pairing, and rosé des Riceys goes well with local cooking. For more ideas, see our [recipes and food and champagne pairings](/recettes-accords-mets-champagne).",
+    "shoppingTitre": "Troyes, a top spot for factory outlets",
+    "shoppingTexte": "Heir to a long textile tradition, Troyes is also a major shopping destination: its tourist office calls it the \"European capital of brand outlet centres\". On the edge of town, several factory outlet centres welcome bargain hunters all year round. The perfect day: shopping in the morning, a champagne tasting later on."
   },
   "notFound": {
     "metaTitle": "Page not found",

@@ -895,7 +895,7 @@
       "rares": "Les cépages rares",
       "nouveau": "Le nouveau venu"
     },
-    "troyesLien": "Troyes et son vignoble : Montgueux à une dizaine de kilomètres, la Côte des Bar à une demi-heure"
+    "troyesLien": "Depuis Troyes, les vignobles à portée de main : Montgueux à une dizaine de kilomètres, la Côte des Bar à une demi-heure"
   },
   "legalNoticePage": {
     "title": "Mentions légales",
@@ -1055,17 +1055,17 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capitale de l'Aube : champagne et dégustations",
-    "metaDescription": "Troyes, capitale de l'Aube et ville des comtes de Champagne : son histoire, le vignoble de Montgueux à environ 13 km, la Côte des Bar et nos dégustations.",
+    "metaDescription": "Troyes, capitale de l'Aube : son histoire, sa gastronomie, ses magasins d'usine, les vignobles à portée de main (Montgueux, la Côte des Bar) et nos dégustations.",
     "fil": "Troyes, capitale de l'Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capitale de l'Aube",
-    "intro": "Capitale de l'Aube et ancienne capitale des comtes de Champagne, Troyes a le vignoble à ses portes : la colline de Montgueux est à une dizaine de kilomètres. C'est ici que nous organisons nos dégustations privées de champagnes de vignerons de l'Aube, avec l'envie de vous faire aimer notre ville autant que nos vins.",
+    "intro": "Capitale de l'Aube et ancienne capitale des comtes de Champagne, Troyes est le point de départ idéal vers les vignobles : la colline de Montgueux est à une dizaine de kilomètres, la Côte des Bar à une demi-heure environ. C'est ici que nous organisons nos dégustations privées de champagnes de vignerons de l'Aube, avec l'envie de vous faire aimer notre ville autant que nos vins.",
     "cta": "Organiser une dégustation privée",
     "histoireTitre": "Troyes, capitale historique de la Champagne",
     "histoire1": "Au Moyen Âge, Troyes est la capitale des comtes de Champagne. La ville prospère grâce aux foires de Champagne : six grandes foires rythment alors l'année dans la région, deux à Provins, une à Lagny, une à Bar-sur-Aube et deux à Troyes, la « foire chaude », l'été, et la « foire froide », à l'automne. Marchands et changeurs viennent de toute l'Europe.",
     "histoire2": "Vu du ciel, le centre ancien a la forme d'un bouchon de champagne : les Troyens l'appellent d'ailleurs « le Bouchon ». Ses rues sont bordées de maisons à pans de bois, reconstruites pour beaucoup après le grand incendie de 1524. Une promenade à faire le nez en l'air, avant ou après une dégustation.",
-    "vignobleTitre": "La porte d'entrée du vignoble aubois",
-    "vignobleIntro": "Depuis Troyes, les vignes sont toutes proches. Quelques repères en voiture :",
+    "vignobleTitre": "Depuis Troyes, les vignobles à portée de main",
+    "vignobleIntro": "Troyes n'a pas de vignes, mais il suffit de quelques minutes de route pour les rejoindre. Quelques repères en voiture :",
     "trajets": {
       "montgueux": "Montgueux",
       "cdb": "Bar-sur-Seine (Côte des Bar)",
@@ -1085,9 +1085,9 @@
     "venirTitre": "De passage à Troyes ? Le champagne vient à vous",
     "venirTexte1": "Vous n'avez pas le temps de prendre la route des vignobles ? Nous vous faisons goûter les champagnes de vignerons de l'Aube à Troyes, chez vous ou dans le lieu de votre choix, avec l'histoire de leurs villages et de ceux qui les élaborent.",
     "venirTexte2": "Entre amis, en famille, pour une occasion particulière ou un séjour : dites-nous ce qui vous ferait plaisir, et nous composons la dégustation avec vous.",
-    "gastroTitre": "Champagne et gastronomie troyenne",
-    "gastro1": "Troyes a ses spécialités. La plus célèbre est l'andouillette de Troyes, préparée avec du porc. Le chaource, fromage AOP à pâte molle et croûte fleurie, est fabriqué au sud de Troyes, dans l'Aube et l'Yonne voisine.",
-    "gastro2": "Avec le chaource, un champagne de vigneron fait un bel accord, et le rosé des Riceys accompagne volontiers la cuisine du terroir. Pour d'autres idées, voyez nos [recettes et accords mets et champagne](/recettes-accords-mets-champagne).",
+    "gastroTitre": "Gastronomie et savoir-faire troyens",
+    "gastro1": "À Troyes, la gourmandise est une affaire sérieuse. Sa spécialité la plus célèbre, l'andouillette de Troyes, fait la fierté des charcutiers de la ville ; on la savoure notamment gratinée au chaource. Le chaource, justement : un fromage AOP à pâte molle et croûte fleurie, fabriqué au sud de Troyes, dans l'Aube et dans l'Yonne voisine. Un pur régal.",
+    "gastro2": "Le terroir aubois réserve d'autres belles surprises : le cidre du Pays d'Othe, le verger de l'Aube, les bières des petites brasseries artisanales du département, en plein renouveau, et, en ville, d'excellents chocolatiers, dont un Meilleur Ouvrier de France, entourés de nombreux artisans gourmands. De quoi composer un panier 100 % aubois.",
     "allerTitre": "Continuer la découverte",
     "liens": {
       "terroirs": "Les terroirs de l'Aube",
@@ -1099,7 +1099,7 @@
     },
     "legendeVignes": "Vignes de la Côte des Bar, à Colombé-le-Sec",
     "legendeAccord": "Accord mets et champagne (illustration)",
-    "altHero": "Maisons à pans de bois du centre historique de Troyes, sous un ciel bleu",
+    "altHero": "Bouteilles de champagne de vignerons de l'Aube et cartes de présentation sur une table en bois, lors d'une de nos dégustations privées",
     "altVignes": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été",
     "altAccord": "Chou à la crème servi avec un verre de champagne",
     "faqTitre": "Vos questions",
@@ -1110,7 +1110,10 @@
       "r2": "Oui : nous organisons des dégustations privées de champagnes de vignerons de l'Aube, à Troyes, chez vous ou dans un lieu de votre choix. Décrivez-nous votre projet et nous revenons vers vous avec une proposition.",
       "q3": "Pourquoi le centre de Troyes s'appelle-t-il « le Bouchon » ?",
       "r3": "Parce que, vu du ciel, le tracé du centre ancien a la forme d'un bouchon de champagne."
-    }
+    },
+    "gastro3": "Avec le chaource, un champagne de vigneron fait un bel accord, et le rosé des Riceys accompagne volontiers la cuisine du terroir. Pour d'autres idées, voyez nos [recettes et accords mets et champagne](/recettes-accords-mets-champagne).",
+    "shoppingTitre": "Troyes, haut lieu des magasins d'usine",
+    "shoppingTexte": "Héritière d'une longue tradition textile, Troyes est aussi une grande destination shopping : son office de tourisme la présente comme la « capitale européenne des centres de marques ». Aux portes de la ville, plusieurs centres de magasins d'usine accueillent les amateurs de bonnes affaires toute l'année. Une journée idéale : shopping le matin, dégustation de champagne en fin de journée."
   },
   "notFound": {
     "metaTitle": "Page introuvable",

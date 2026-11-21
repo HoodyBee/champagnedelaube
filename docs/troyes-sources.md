@@ -13,8 +13,12 @@ Textes dans `messages/fr.json` et `messages/en.json`, rubrique `troyesPage`.
 | Maisons à pans de bois, beaucoup reconstruites après le grand incendie de 1524 | [Office de tourisme – Cœur historique](https://www.troyeslachampagne.com/decouvrez/coeur-historique/) · [Office de tourisme (EN)](https://en.troyeslachampagne.com/?p=401) · [Aube Champagne – maisons à pans de bois du XVIe siècle](https://www.aube-champagne.com/en/poi/les-maisons-a-pans-de-bois-du-xvi0-siecle) |
 | Montgueux à une dizaine de kilomètres, à l'ouest de Troyes ; chardonnay très majoritaire | [Office de tourisme – le champagne](https://www.troyeslachampagne.com/savourez/le-champagne/) · voir `docs/terroirs-sources.md` |
 | Les Riceys : trois appellations | voir `docs/terroirs-sources.md` |
-| Andouillette de Troyes, préparée avec du porc (chaudins) | [Office de tourisme – spécialités culinaires](https://www.troyeslachampagne.com/2-quelles-sont-les-specialites-culinaires-a-tester-a-troyes/) · [GaultMillau – l'andouillette de Troyes](https://fr.gaultmillau.com/fr/news/l-andouillette-de-troyes-comment-bien-la-reconnaitre) |
+| Andouillette de Troyes, la spécialité la plus célèbre de la ville ; recette de l'andouillette gratinée au chaource | [Office de tourisme – spécialités culinaires](https://www.troyeslachampagne.com/2-quelles-sont-les-specialites-culinaires-a-tester-a-troyes/) · [Office de tourisme – produits du terroir](https://en.troyeslachampagne.com/enjoy/local-products/) · [GaultMillau – l'andouillette de Troyes](https://fr.gaultmillau.com/fr/news/l-andouillette-de-troyes-comment-bien-la-reconnaitre) |
 | Chaource : AOP, lait de vache, pâte molle à croûte fleurie, produit dans l'Aube et l'Yonne | [INAO – cahier des charges Chaource](https://extranet.inao.gouv.fr/fichier/cdcchaource.pdf) · [Office de tourisme – spécialités](https://www.troyeslachampagne.com/2-quelles-sont-les-specialites-culinaires-a-tester-a-troyes/) |
+| Pays d'Othe : le verger de l'Aube, réputé pour son cidre ; route du cidre | [Aube en Champagne – gastronomie et spécialités](https://www.aube-champagne.com/en/portfolio-post/local-gastronomy/) · [Aube en Champagne – pommes et cidre du Pays d'Othe](https://www.aube-champagne.com/en/portfolio-post/apples-and-cider-in-pays-dothe/) · [GR Infos – GR de Pays « Tour du cidre »](https://www.gr-infos.com/en/grp-cidre.htm) |
+| Petites brasseries artisanales dans l'Aube, en plein renouveau | [Aube en Champagne – les brasseries artisanales de l'Aube](https://www.aube-champagne.com/en/portfolio-post/the-7-craft-breweries-of-the-aube/) · [Aube en Champagne – gastronomie](https://www.aube-champagne.com/en/portfolio-post/local-gastronomy/) (« brasseries auboises, aujourd'hui en pleine renaissance ») · [Gilles Pudlowski – une brasserie à Buchères](https://www.gillespudlowski.com/?p=437742) |
+| Chocolatiers à Troyes, dont un Meilleur Ouvrier de France ; artisans gourmands, panier « 100 % troyen et aubois » | [SNCF Connect – itinéraire à Troyes](https://www.sncf-connect.com/article/itineraire-la-decouverte-de-troyes-90601) · [Gilles Pudlowski](https://www.gillespudlowski.com/?p=437353) · [Office de tourisme – repas 100 % troyen et aubois](https://www.troyeslachampagne.com/savourez/les-produits-du-terroir/tous-les-ingredients-pour-faire-un-repas-100-troyen-et-aubois/) (aucun nom de boutique sur la page) |
+| Magasins d'usine : formule exacte de l'office de tourisme « capitale européenne des centres de marques » ; héritage textile ; plusieurs centres aux portes de la ville | [Office de tourisme – « Troyes capitale européenne des centres de marques »](https://www.troyeslachampagne.com/shopping/troyes-capitale-europeenne-des-centres-de-marques/) · [Office de tourisme – le textile et les magasins d'usine](https://en.troyeslachampagne.com/discover/made-in-troyes/factory-outlet-shops/) · [Ville de Troyes – les centres de marques](https://www.ville-troyes.fr/decouvrir-troyes/les-centres-de-marques/) · [Aube en Champagne – shopping](https://www.aube-champagne.com/en/shopping/) |
 
 ## Distances et temps de trajet
 
@@ -29,6 +33,12 @@ Calculés le 21 novembre 2026 avec le calcul d'itinéraire OpenStreetMap (OSRM, 
 
 ## Volontairement non repris (une seule source, ou sources en désaccord)
 
+- La composition de l'andouillette (« préparée avec du porc » retiré à votre demande ; les sources varient sur le détail).
+- Le nombre de magasins d'usine, de centres et de visiteurs (chiffres différents selon les pages officielles) et la date des premiers magasins (années 1950, 1960 ou 1970 selon les sources).
+- « Capitale européenne des magasins d'usine » : formule trouvée seulement chez des tiers ; on garde la formule de l'office de tourisme, « capitale européenne des centres de marques », entre guillemets.
+- Le statut d'IGP du cidre du Pays d'Othe (démarche citée, statut à jour introuvable).
+- La prunelle de Troyes (liqueur) : non citée, pour rester sobre sur l'alcool.
+
 - La date exacte de la foire froide (Saint-Rémi, octobre selon l'office de tourisme ; 1er ou 2 novembre selon Aube Champagne) : « à l'automne ».
 - Le nombre de maisons à pans de bois (chiffres variables selon les sources).
 - Le mécénat d'Henri le Libéral envers Chrétien de Troyes (débattu par les historiens).
@@ -37,15 +47,23 @@ Calculés le 21 novembre 2026 avec le calcul d'itinéraire OpenStreetMap (OSRM, 
 
 ## Photos
 
-| Emplacement | Photo | Lieu réel |
+Règle (série 20) : **pour Troyes, seulement nos propres photos**. Une photo de banque d'images ne peut pas prouver qu'elle montre Troyes (la page Pixabay ne donne que des mots-clés) : les deux photos Pixabay de Troyes ont été retirées du site et **gardées dans la Médiathèque**.
+
+| Emplacement | Photo actuelle | Avant |
 |---|---|---|
-| Ouverture | Maisons à pans de bois du centre historique (`troyes-maisons-pans-de-bois-centre-historique.jpg`), [Pixabay n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/), photo : derbocholter | Troyes |
-| « La porte d'entrée du vignoble » | Coteaux de Colombé-le-Sec (`vignes-champagne-colombe-le-sec-2026.jpg`) | Côte des Bar, avec la légende « Vignes de la Côte des Bar, à Colombé-le-Sec » |
-| « Champagne et gastronomie » | Chou à la crème et verre de champagne (`accord-chou-creme-champagne.jpg`) | lieu non renseigné, avec la légende « (illustration) » |
+| Page Troyes, ouverture | Nos bouteilles et cartes de présentation lors d'une dégustation privée (`bouteilles-champagne-degustation-privee-troyes.jpg`), texte alternatif sans dire que c'est la ville | maisons à pans de bois, [Pixabay n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/) |
+| Page Troyes, « Depuis Troyes, les vignobles à portée de main » | Coteaux de Colombé-le-Sec, légende « Vignes de la Côte des Bar, à Colombé-le-Sec » | inchangé |
+| Page Troyes, gastronomie | Chou à la crème et verre de champagne, légende « (illustration) » | inchangé |
+| Page Contact | Nos vignes au coucher du soleil à Merrey-sur-Arce (`coucher-soleil-vignes-merrey-sur-arce-2025.jpg`) | rue à colombages, [Pixabay n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/) (pas Troyes de façon vérifiable) |
 
-**Autres vraies photos de Troyes trouvées** : [rue à colombages et arcades, Pixabay n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/) (placée sur la page Contact) ; [nef de la cathédrale, Pixabay n° 6843472](https://pixabay.com/photos/church-cathedral-france-travel-6843472/) (non utilisée, disponible). La photo d'ouverture était déjà dans la Médiathèque (ancienne photo de la page Montgueux, qui montrait en fait Troyes).
+**Emplacements qui attendent une vraie photo de Troyes (vos prochaines photos)** :
+1. Page Troyes, ouverture (idéalement en largeur) : le centre ancien, ses maisons à pans de bois.
+2. Page Troyes, section histoire (aujourd'hui sans photo) : la cathédrale, la ruelle des Chats ou une vue du « Bouchon ».
+3. Page Troyes, section gastronomie et magasins d'usine : les halles, un étal d'andouillettes ou de chaource.
+4. Page Dégustations privées, section « De passage à Troyes ? » (aujourd'hui du texte seul : une photo de Troyes y serait bienvenue).
+5. Bonus : une vue de la colline de Montgueux depuis Troyes.
 
-**Photos de Troyes qui manquent encore** : le centre ancien et ses maisons à pans de bois, la ruelle des Chats, la cathédrale Saint-Pierre-et-Saint-Paul, une vue du « Bouchon », les halles. Une vue de la colline de Montgueux depuis Troyes serait aussi précieuse.
+Nos photos réellement prises à Troyes (relevé GPS) et déjà en ligne : les rayons de champagnes chez un caviste (Espace Pro) et les bouteilles de la dégustation (Dégustations privées, Notre sélection, page Troyes).
 
 ## Cœur azur devant « Troyes, capitale de l'Aube »
 

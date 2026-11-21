@@ -1,0 +1,922 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "terroir-montgueux",
+  "_rev": "R9dLj3QxhjzSE72fqXvEIJ",
+  "_type": "terroir",
+  "_updatedAt": "2026-11-21T10:31:08Z",
+  "accroche": {
+    "_type": "localeString",
+    "en": "A chalk hill on the edge of Troyes, nicknamed the \"Montrachet of Champagne\".",
+    "fr": "Une colline de craie aux portes de Troyes, que l'on surnomme le « Montrachet de la Champagne ».",
+    "it": "Una collina di gesso alle porte di Troyes, soprannominata il \"Montrachet della Champagne\".",
+    "nl": "Een krijtheuvel aan de rand van Troyes, bijgenaamd de \"Montrachet van de Champagne\"."
+  },
+  "cepagesDominants": [
+    "chardonnay",
+    "pinot-noir",
+    "meunier"
+  ],
+  "cepagesMajoritaires": [
+    "chardonnay"
+  ],
+  "chiffres": [
+    {
+      "_key": "t8h",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Main grape",
+        "fr": "Cépage principal",
+        "it": "Vitigno principale",
+        "nl": "Belangrijkste ras"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Chardonnay, by far",
+        "fr": "Chardonnay, très majoritaire",
+        "it": "Chardonnay, nettamente",
+        "nl": "Chardonnay, veruit"
+      }
+    },
+    {
+      "_key": "t8i",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Subsoil",
+        "fr": "Sous-sol",
+        "it": "Sottosuolo",
+        "nl": "Ondergrond"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Turonian chalk",
+        "fr": "Craie du Turonien",
+        "it": "Gesso del Turoniano",
+        "nl": "Krijt uit het Turonien"
+      }
+    },
+    {
+      "_key": "t8j",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Aspect",
+        "fr": "Exposition",
+        "it": "Esposizione",
+        "nl": "Ligging"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "South and south-east",
+        "fr": "Sud et sud-est",
+        "it": "Sud e sud-est",
+        "nl": "Zuid en zuidoost"
+      }
+    },
+    {
+      "_key": "t8k",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Champagne appellation",
+        "fr": "Appellation Champagne",
+        "it": "Denominazione Champagne",
+        "nl": "Appellatie Champagne"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Since 1927",
+        "fr": "Depuis 1927",
+        "it": "Dal 1927",
+        "nl": "Sinds 1927"
+      }
+    }
+  ],
+  "cle": "montgueux",
+  "contenu": {
+    "_type": "localeRichText",
+    "en": [
+      {
+        "_key": "t9e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9d",
+            "_type": "span",
+            "marks": [],
+            "text": "A chalk hill"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t9j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9f",
+            "_type": "span",
+            "marks": [],
+            "text": "Montgueux sits on a mound of Turonian chalk, facing south and south-east. A subsoil very different from the Kimmeridgian marl of the "
+          },
+          {
+            "_key": "t9h",
+            "_type": "span",
+            "marks": [
+              "t9g"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "t9i",
+            "_type": "span",
+            "marks": [],
+            "text": ", and one that gives the vineyard its personality."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t9g",
+            "_type": "link",
+            "href": "/en/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t9l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9k",
+            "_type": "span",
+            "marks": [],
+            "text": "The kingdom of chardonnay"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t9n",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9m",
+            "_type": "span",
+            "marks": [],
+            "text": "Chardonnay covers most of the hill, completed by a little pinot noir and meunier. People often describe citrus and exotic fruit aromas here, with lovely tension. Its nickname, the \"Montrachet of Champagne\", says how highly it is regarded."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t9p",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9o",
+            "_type": "span",
+            "marks": [],
+            "text": "From Montgueux to Japan"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t9r",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9q",
+            "_type": "span",
+            "marks": [],
+            "text": "The vineyard joined the Champagne appellation in 1927. At the end of the 19th century, chardonnay cuttings from Montgueux travelled all the way to Japan: a surprising story for such a discreet hill."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t9t",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9s",
+            "_type": "span",
+            "marks": [],
+            "text": "Taste this terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ta4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t9u",
+            "_type": "span",
+            "marks": [],
+            "text": "The best way to understand this terroir is to taste it with the people who farm it. Join one of "
+          },
+          {
+            "_key": "t9w",
+            "_type": "span",
+            "marks": [
+              "t9v"
+            ],
+            "text": "our tastings"
+          },
+          {
+            "_key": "t9x",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes or at your home, or discover "
+          },
+          {
+            "_key": "t9z",
+            "_type": "span",
+            "marks": [
+              "t9y"
+            ],
+            "text": "our selection"
+          },
+          {
+            "_key": "ta0",
+            "_type": "span",
+            "marks": [],
+            "text": ". Are you a restaurant, wine shop or hotel? Discover "
+          },
+          {
+            "_key": "ta2",
+            "_type": "span",
+            "marks": [
+              "ta1"
+            ],
+            "text": "our trade offer"
+          },
+          {
+            "_key": "ta3",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t9v",
+            "_type": "link",
+            "href": "/en/tasting-troyes/"
+          },
+          {
+            "_key": "t9y",
+            "_type": "link",
+            "href": "/en/winemakers/"
+          },
+          {
+            "_key": "ta1",
+            "_type": "link",
+            "href": "/en/champagne-for-hotels-restaurants-and-wine-shops/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "fr": [
+      {
+        "_key": "t8m",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8l",
+            "_type": "span",
+            "marks": [],
+            "text": "Une colline de craie"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t8r",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8n",
+            "_type": "span",
+            "marks": [],
+            "text": "Montgueux tient sur une butte de craie du Turonien, exposée au sud et au sud-est. Un sous-sol bien différent des marnes kimméridgiennes de la "
+          },
+          {
+            "_key": "t8p",
+            "_type": "span",
+            "marks": [
+              "t8o"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "t8q",
+            "_type": "span",
+            "marks": [],
+            "text": ", et qui donne au vignoble sa personnalité."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t8o",
+            "_type": "link",
+            "href": "/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t8t",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8s",
+            "_type": "span",
+            "marks": [],
+            "text": "Le royaume du chardonnay"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t8v",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8u",
+            "_type": "span",
+            "marks": [],
+            "text": "Le chardonnay couvre l'essentiel de la colline, complété par un peu de pinot noir et de meunier. On y décrit souvent des arômes d'agrumes et de fruits exotiques, avec une belle tension. Son surnom de « Montrachet de la Champagne » dit l'estime qu'on lui porte."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t8x",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8w",
+            "_type": "span",
+            "marks": [],
+            "text": "De Montgueux au Japon"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t8z",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t8y",
+            "_type": "span",
+            "marks": [],
+            "text": "Le vignoble entre dans l'appellation Champagne en 1927. À la fin du XIXe siècle, des plants de chardonnay de Montgueux sont partis jusqu'au Japon : une histoire étonnante pour une colline si discrète."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t91",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t90",
+            "_type": "span",
+            "marks": [],
+            "text": "Goûter ce terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t9c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t92",
+            "_type": "span",
+            "marks": [],
+            "text": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de "
+          },
+          {
+            "_key": "t94",
+            "_type": "span",
+            "marks": [
+              "t93"
+            ],
+            "text": "nos dégustations"
+          },
+          {
+            "_key": "t95",
+            "_type": "span",
+            "marks": [],
+            "text": ", à Troyes ou chez vous, ou découvrez "
+          },
+          {
+            "_key": "t97",
+            "_type": "span",
+            "marks": [
+              "t96"
+            ],
+            "text": "notre sélection"
+          },
+          {
+            "_key": "t98",
+            "_type": "span",
+            "marks": [],
+            "text": ". Vous êtes restaurateur, caviste ou hôtelier ? Découvrez "
+          },
+          {
+            "_key": "t9a",
+            "_type": "span",
+            "marks": [
+              "t99"
+            ],
+            "text": "notre offre pro"
+          },
+          {
+            "_key": "t9b",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t93",
+            "_type": "link",
+            "href": "/tasting-troyes/"
+          },
+          {
+            "_key": "t96",
+            "_type": "link",
+            "href": "/vignerons/"
+          },
+          {
+            "_key": "t99",
+            "_type": "link",
+            "href": "/champagne-hotel-restaurants-et-cavistes/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "it": [
+      {
+        "_key": "tay",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tax",
+            "_type": "span",
+            "marks": [],
+            "text": "Una collina di gesso"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "tb3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "taz",
+            "_type": "span",
+            "marks": [],
+            "text": "Montgueux poggia su un rilievo di gesso del Turoniano, esposto a sud e a sud-est. Un sottosuolo molto diverso dalle marne kimmeridgiane della "
+          },
+          {
+            "_key": "tb1",
+            "_type": "span",
+            "marks": [
+              "tb0"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "tb2",
+            "_type": "span",
+            "marks": [],
+            "text": ", che dà al vigneto la sua personalità."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "tb0",
+            "_type": "link",
+            "href": "/it/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "tb5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tb4",
+            "_type": "span",
+            "marks": [],
+            "text": "Il regno dello chardonnay"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "tb7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tb6",
+            "_type": "span",
+            "marks": [],
+            "text": "Lo chardonnay copre la maggior parte della collina, completato da un po' di pinot noir e meunier. Vi si descrivono spesso aromi di agrumi e frutti esotici, con una bella tensione. Il soprannome di \"Montrachet della Champagne\" dice quanto sia stimato."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tb9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tb8",
+            "_type": "span",
+            "marks": [],
+            "text": "Da Montgueux al Giappone"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "tbb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tba",
+            "_type": "span",
+            "marks": [],
+            "text": "Il vigneto entra nella denominazione Champagne nel 1927. Alla fine dell'Ottocento, talee di chardonnay di Montgueux partirono fino in Giappone: una storia sorprendente per una collina così discreta."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tbd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tbc",
+            "_type": "span",
+            "marks": [],
+            "text": "Assaggiare questo terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "tbo",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tbe",
+            "_type": "span",
+            "marks": [],
+            "text": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle "
+          },
+          {
+            "_key": "tbg",
+            "_type": "span",
+            "marks": [
+              "tbf"
+            ],
+            "text": "nostre degustazioni"
+          },
+          {
+            "_key": "tbh",
+            "_type": "span",
+            "marks": [],
+            "text": ", a Troyes o a casa vostra, oppure scoprite "
+          },
+          {
+            "_key": "tbj",
+            "_type": "span",
+            "marks": [
+              "tbi"
+            ],
+            "text": "la nostra selezione"
+          },
+          {
+            "_key": "tbk",
+            "_type": "span",
+            "marks": [],
+            "text": ". Siete ristoratori, enotecari o albergatori? Scoprite "
+          },
+          {
+            "_key": "tbm",
+            "_type": "span",
+            "marks": [
+              "tbl"
+            ],
+            "text": "la nostra offerta per professionisti"
+          },
+          {
+            "_key": "tbn",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "tbf",
+            "_type": "link",
+            "href": "/it/tasting-troyes/"
+          },
+          {
+            "_key": "tbi",
+            "_type": "link",
+            "href": "/it/vignaioli/"
+          },
+          {
+            "_key": "tbl",
+            "_type": "link",
+            "href": "/it/champagne-per-hotel-ristoranti-ed-enoteche/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "nl": [
+      {
+        "_key": "ta6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ta5",
+            "_type": "span",
+            "marks": [],
+            "text": "Een krijtheuvel"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "tab",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ta7",
+            "_type": "span",
+            "marks": [],
+            "text": "Montgueux ligt op een krijtheuvel uit het Turonien, op het zuiden en zuidoosten. Een ondergrond die sterk verschilt van de kimmeridgiaanse mergel van de "
+          },
+          {
+            "_key": "ta9",
+            "_type": "span",
+            "marks": [
+              "ta8"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "taa",
+            "_type": "span",
+            "marks": [],
+            "text": ", en die de wijngaard zijn karakter geeft."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "ta8",
+            "_type": "link",
+            "href": "/nl/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "tad",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tac",
+            "_type": "span",
+            "marks": [],
+            "text": "Het rijk van de chardonnay"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "taf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tae",
+            "_type": "span",
+            "marks": [],
+            "text": "Chardonnay beslaat het grootste deel van de heuvel, aangevuld met wat pinot noir en meunier. Men beschrijft er vaak aroma's van citrus en exotisch fruit, met mooie spanning. De bijnaam \"Montrachet van de Champagne\" zegt hoezeer hij gewaardeerd wordt."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tah",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tag",
+            "_type": "span",
+            "marks": [],
+            "text": "Van Montgueux naar Japan"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "taj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tai",
+            "_type": "span",
+            "marks": [],
+            "text": "De wijngaard kreeg in 1927 de appellatie Champagne. Eind 19e eeuw reisden chardonnaystekken uit Montgueux helemaal naar Japan: een verrassend verhaal voor zo'n bescheiden heuvel."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tal",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tak",
+            "_type": "span",
+            "marks": [],
+            "text": "Dit terroir proeven"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "taw",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tam",
+            "_type": "span",
+            "marks": [],
+            "text": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van "
+          },
+          {
+            "_key": "tao",
+            "_type": "span",
+            "marks": [
+              "tan"
+            ],
+            "text": "onze proeverijen"
+          },
+          {
+            "_key": "tap",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes of bij u thuis, of ontdek "
+          },
+          {
+            "_key": "tar",
+            "_type": "span",
+            "marks": [
+              "taq"
+            ],
+            "text": "onze selectie"
+          },
+          {
+            "_key": "tas",
+            "_type": "span",
+            "marks": [],
+            "text": ". Bent u restaurateur, wijnhandelaar of hotelier? Ontdek "
+          },
+          {
+            "_key": "tau",
+            "_type": "span",
+            "marks": [
+              "tat"
+            ],
+            "text": "ons aanbod voor professionals"
+          },
+          {
+            "_key": "tav",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "tan",
+            "_type": "link",
+            "href": "/nl/tasting-troyes/"
+          },
+          {
+            "_key": "taq",
+            "_type": "link",
+            "href": "/nl/wijnmakers/"
+          },
+          {
+            "_key": "tat",
+            "_type": "link",
+            "href": "/nl/champagne-voor-hotels-restaurants-en-wijnhandels/"
+          }
+        ],
+        "style": "normal"
+      }
+    ]
+  },
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Rows of vines on a hillside under a cloudy sky (illustration)",
+      "fr": "Rangs de vigne sur un coteau, sous un ciel nuageux (illustration)"
+    },
+    "asset": {
+      "_ref": "image-9b8d1050e31ba2a186124c0715ff63ff43fd7b72-1280x852-jpg",
+      "_type": "reference"
+    },
+    "credit": "Photo : Tama66 / Pixabay",
+    "legende": {
+      "_type": "localeString",
+      "en": "Illustration",
+      "fr": "Illustration"
+    }
+  },
+  "intro": {
+    "_type": "localeText",
+    "en": "About ten kilometres from Troyes, the hill of Montgueux is a vineyard apart in the Aube. Here, it is not pinot noir that dominates, but chardonnay.",
+    "fr": "À une dizaine de kilomètres de Troyes, la colline de Montgueux est un vignoble à part dans l'Aube. Ici, ce n'est pas le pinot noir qui domine, mais le chardonnay.",
+    "it": "A una decina di chilometri da Troyes, la collina di Montgueux è un vigneto a sé nell'Aube. Qui non domina il pinot noir, ma lo chardonnay.",
+    "nl": "Op een tiental kilometer van Troyes is de heuvel van Montgueux een aparte wijngaard in de Aube. Hier overheerst niet de pinot noir, maar de chardonnay."
+  },
+  "nom": "Montgueux",
+  "secteurs": [],
+  "seo": {
+    "_type": "seo",
+    "description": {
+      "_type": "localeText",
+      "en": "Montgueux, about ten kilometres west of Troyes: a chalk hill facing south and south-east, planted mostly with chardonnay. Its soils, exposure and history.",
+      "fr": "Montgueux, à une dizaine de kilomètres de Troyes : une colline de craie exposée au sud et au sud-est, plantée très majoritairement de chardonnay.",
+      "it": "Montgueux, a una decina di chilometri da Troyes: una collina di gesso esposta a sud e a sud-est, piantata in gran parte a chardonnay.",
+      "nl": "Montgueux, op een tiental kilometer van Troyes: een krijtheuvel op het zuiden en zuidoosten, grotendeels beplant met chardonnay."
+    },
+    "title": {
+      "_type": "localeString",
+      "en": "Montgueux champagne: the chardonnay hill near Troyes",
+      "fr": "Champagne de Montgueux : la colline du chardonnay à Troyes",
+      "it": "Champagne di Montgueux: la collina dello chardonnay vicino a Troyes | Champagne de l'Aube",
+      "nl": "Champagne uit Montgueux: de chardonnayheuvel bij Troyes | Champagne de l'Aube"
+    }
+  },
+  "sols": {
+    "_type": "localeText",
+    "en": "Turonian chalk, from the Upper Cretaceous.",
+    "fr": "Une craie du Turonien, datant du Crétacé supérieur.",
+    "it": "Gesso del Turoniano, del Cretaceo superiore.",
+    "nl": "Krijt uit het Turonien, uit het Boven-Krijt."
+  },
+  "villages": [
+    "Montgueux"
+  ]
+}

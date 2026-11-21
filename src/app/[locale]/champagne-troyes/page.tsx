@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription"), image });
 }
 
-/** Troyes : la ville des comtes de Champagne, porte d'entrée du vignoble, et nos dégustations privées. */
+/** Troyes : la ville des comtes de Champagne (sans vignes : les vignobles sont à portée de main), et nos dégustations privées. */
 export default async function TroyesPage({ params }: PageProps<"/[locale]/champagne-troyes">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
@@ -144,7 +144,10 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
           <div className="lg:order-2">
             <h2 className="text-titre-section">{t("gastroTitre")}</h2>
             <p className="mt-space-2">{t("gastro1")}</p>
-            <RichText value={[paragrapheEnBloc(t("gastro2"), locale)]} locale={locale} className="mt-space-2" />
+            <p className="mt-space-2">{t("gastro2")}</p>
+            <RichText value={[paragrapheEnBloc(t("gastro3"), locale)]} locale={locale} className="mt-space-2" />
+            <h3 className="mt-space-4 text-[1.375rem] font-bold leading-tight">{t("shoppingTitre")}</h3>
+            <p className="mt-space-2">{t("shoppingTexte")}</p>
           </div>
         </div>
       </Section>
