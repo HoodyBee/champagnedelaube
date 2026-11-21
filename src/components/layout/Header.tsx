@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState, type ComponentProps, type ReactNode } from "react";
 import { SocialLinks } from "@/components/icons/SocialLinks";
+import { CoeurTroyes } from "@/components/ui/CoeurTroyes";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos, terroirs } from "@/lib/brand";
@@ -14,7 +15,7 @@ import { Chevron, LanguageSwitcher } from "./LanguageSwitcher";
 
 type LinkHref = ComponentProps<typeof Link>["href"];
 /** `cle` : adresse interne en texte (comparaison avec la page en cours) ; `retrait` : sous-entrée (ex. Cépages sous Tout savoir). */
-type Item = { href: LinkHref; cle: string; label: string; color?: string; short?: string; retrait?: boolean };
+type Item = { href: LinkHref; cle: string; label: string; color?: string; short?: string; retrait?: boolean; coeur?: boolean };
 
 /**
  * En-tête en deux étages :
@@ -66,11 +67,13 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
     short: p.short,
     color: `var(--color-${terroirs[p.key].color})`,
   }));
+  // Troyes : un cœur azur (blason de la ville) au lieu du rond de couleur des terroirs.
+  const troyesItem: Item = { href: "/champagne-troyes", cle: "/champagne-troyes", label: t("troyes"), short: "Troyes", coeur: true };
   // Premier lien de chaque groupe : un libellé distinct du titre du groupe (pas de doublon).
   const terroirMenu: Item[] = [
     { href: nav.terroirHub.href, cle: nav.terroirHub.href, label: t("terroirHubLink") },
     ...terroirItems,
-    { href: "/champagne-troyes", cle: "/champagne-troyes", label: t("troyes") },
+    troyesItem,
   ];
   // Le Mag : tous les articles, puis les cinq rubriques.
   // Rubriques sans article publié (ex. Portraits, Autres horizons) : masquées du menu tant qu'elles sont vides.
@@ -80,6 +83,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
     { href: nav.mag.href, cle: nav.mag.href, label: t("magTout") },
     ...(publiee("actualites") ? [rubrique("actualites", tMag("actualites"))] : []),
     { href: "/recettes-accords-mets-champagne", cle: "/recettes-accords-mets-champagne", label: tMag("accords") },
+    ...(publiee("marketing") ? [rubrique("marketing", tMag("marketing"))] : []),
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
     ...(publiee("portraits") ? [rubrique("portraits", tMag("portraits"))] : []),
     ...(publiee("autres-horizons") ? [rubrique("autres-horizons", tMag("autresHorizons"))] : []),
@@ -115,7 +119,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
           </Link>
           <nav aria-label={t("terroirBand")} className="hidden lg:block">
             <ul className="flex items-center justify-center gap-space-1">
-              {terroirItems.map((item, i) => (
+              {[...terroirItems, troyesItem].map((item, i) => (
                 <li key={item.cle} className="flex items-center gap-space-1">
                   {i > 0 && <span aria-hidden="true" className="text-sur-titre-petit text-gris-chaud">·</span>}
                   <Link
@@ -126,7 +130,7 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
                       isActive(item.cle) ? "text-bronze" : "text-gris-chaud"
                     }`}
                   >
-                    <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />
+                    {item.coeur ? <CoeurTroyes className="h-2.5 w-2.5" /> : <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: item.color }} />}
                     {item.short ?? item.label}
                   </Link>
                 </li>
