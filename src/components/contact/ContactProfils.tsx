@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { LineIcon } from "@/components/ui/LineIcon";
 import type { LineIconName } from "@/lib/line-icons";
@@ -18,12 +18,25 @@ const PROFILS = [
  */
 export function ContactProfils() {
   const t = useTranslations("contactPage");
-  const [profil, setProfil] = useState<(typeof PROFILS)[number]["key"] | null>(null);
+  const [choixVisiteur, setProfil] = useState<(typeof PROFILS)[number]["key"] | null>(null);
+  // Lien direct vers un profil (ex. /contact/#pro depuis Dégustations privées) : le formulaire s'ouvre tout seul.
+  const ancre = useSyncExternalStore(
+    (rappel) => {
+      window.addEventListener("hashchange", rappel);
+      return () => window.removeEventListener("hashchange", rappel);
+    },
+    () => window.location.hash.slice(1),
+    () => "",
+  );
+  const profil = choixVisiteur ?? PROFILS.find((p) => p.key === ancre)?.key ?? null;
   const choisi = PROFILS.find((p) => p.key === profil);
 
   return (
     <div>
       <fieldset>
+        {PROFILS.map((p) => (
+          <span key={p.key} id={p.key} className="block scroll-mt-28" aria-hidden="true" />
+        ))}
         <legend className="text-titre-section">{t("vousEtes")}</legend>
         <p className="mt-space-1 text-gris-chaud">{t("vousEtesAide")}</p>
         <div className="mt-space-3 grid gap-space-1 sm:grid-cols-3">

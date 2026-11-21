@@ -556,7 +556,10 @@
     "partenaireTitre": "Are you a winemaker?",
     "partenaireTexte": "Tell us about your estate: the selection is deliberately kept small.",
     "partenaireCta": "Become a partner",
-    "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens"
+    "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens",
+    "etablissementTitre": "Shall we work together?",
+    "etablissementTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "etablissementCta": "Suggest a partnership"
   },
   "vigneronsPage": {
     "metaTitle": "Our current selection: grower champagnes from the Aube",
@@ -658,7 +661,7 @@
     "carte": "See on the map",
     "privesTitre": "A wedding, a christening, a group order?",
     "privesTexte": "We advise you on grower champagnes for your special occasions, at direct winemaker prices.",
-    "accroche": "Champagne is discovered, shared and told.",
+    "accroche": "Champagne is something to discover, share and talk about.",
     "texte": "During a private tasting, discover the champagnes of independent Aube winemakers, their terroirs and the people who make them. With friends, with family or for a special occasion, we design a tailor-made moment with you. In Troyes, elsewhere in the Aube or wherever you like: the Côte des Bar comes to you.",
     "signature": "The Côte des Bar comes to you.",
     "ctaOrganiser": "Arrange a private tasting",
@@ -685,7 +688,21 @@
     "formTitre": "Arrange a private tasting",
     "formTexte": "The occasion, the place, the number of guests, a date: a few words are enough. We will get back to you very soon with a proposal.",
     "evenementsTitre": "A wedding, a christening, a group order?",
-    "touristesLien": "Things to do in Troyes around champagne"
+    "touristesLien": "Things to do in Troyes around champagne",
+    "presentation": "At Champagne de l'Aube, we introduce you to champagnes from independent Aube winemakers, their terroirs and the people who make them. With friends, with family, for a birthday or a business get-together, I put together a tailor-made moment with you, in Troyes, elsewhere in the Aube or at your place.",
+    "signatureIntro": "In short:",
+    "passageTitre": "Passing through Troyes?",
+    "passageTexte1": "No time to head down to the Côte des Bar? Or too many villages, too many estates, and no idea which one to pick? Here's the thing: I'll give you the tour without you having to move. We taste, we talk terroir, and you chat directly with the winemakers.",
+    "passageTexte2": "Didn't know they made champagne around here? Nobody will hold it against you… as long as you don't leave without discovering our little gems, which I've carefully chosen for you.",
+    "passageCta": "Plan my tasting",
+    "proSurTitre": "Bars · Restaurants · Companies · Event organisers",
+    "proTitre": "Planning an event?",
+    "proTexte1": "You run a bar, a restaurant, a company or events, and you're looking for an activity with real flavour? We offer hosted tastings, champagne evenings and meetings with the winemakers in our selection, for your customers, your teams or your guests.",
+    "proTexte2": "Tell us your idea and we'll build the proposal with you. All that's left for you is to pick the date (and the guests).",
+    "proCta": "Tell us about your event",
+    "partenariatTitre": "Shall we work together?",
+    "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "partenariatCta": "Suggest a partnership"
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",
@@ -752,7 +769,6 @@
     "rubriques": {
       "actualites": "News",
       "accords": "Food & champagne pairing",
-      "marketing": "Champagne & marketing",
       "toutSavoir": "All about champagne",
       "portraits": "Portraits",
       "autresHorizons": "Further afield"
@@ -763,8 +779,7 @@
       "accords": "Recipes and food & champagne pairings, from starter to dessert, with cuvées from Aube winemakers.",
       "toutSavoir": "Traditional method, dosage, labels, vocabulary: the essentials to understand champagne and choose it better.",
       "portraits": "Meet winemakers, artisans and enthusiasts: their story, their craft, what drives them.",
-      "autresHorizons": "Ciders and beers from the Pays d'Othe, wines from other regions, champagnes from the Marne, travel and heritage: our trips beyond Aube champagne.",
-      "marketing": "Social media, photography, video, wine tourism: ideas and methods to promote an estate, a wine shop, a bar or a restaurant."
+      "autresHorizons": "Ciders and beers from the Pays d'Othe, wines from other regions, champagnes from the Marne, travel and heritage: our trips beyond Aube champagne."
     },
     "aLaUne": "Featured",
     "tousLesArticles": "All articles",
@@ -793,7 +808,11 @@
       "titre": "Want to go further?",
       "texte": "Photography, video, social media: discover our communication services for winemakers, wine shops, bars and restaurants.",
       "bouton": "See Communication & marketing"
-    }
+    },
+    "etiquette": "Tag",
+    "etiquettesArticle": "Article tags",
+    "tousArticlesEtiquette": "All “{etiquette}” articles",
+    "etiquettesNav": "Mag tags"
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",
@@ -1010,7 +1029,8 @@
     },
     "bouton": "Visit Detectezmoi.com",
     "nouvelOnglet": "(opens in a new tab)",
-    "contact": "Write to us"
+    "contact": "Write to us",
+    "articlesTitre": "Our marketing articles"
   },
   "partenairesPage": {
     "surTitre": "Pro area",

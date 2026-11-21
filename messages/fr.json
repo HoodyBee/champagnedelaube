@@ -556,7 +556,10 @@
     "partenaireTitre": "Vous êtes vigneron ?",
     "partenaireTexte": "Présentez-nous votre domaine : la sélection reste volontairement courte.",
     "partenaireCta": "Devenir partenaire",
-    "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines"
+    "surTitre": "Restaurants · Cavistes · Hôtels · Bars · Traiteurs · Épiceries fines",
+    "etablissementTitre": "Et si on travaillait ensemble ?",
+    "etablissementTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
+    "etablissementCta": "Proposer un partenariat"
   },
   "vigneronsPage": {
     "metaTitle": "Notre sélection : champagnes de vignerons de l'Aube",
@@ -685,7 +688,21 @@
     "formTitre": "Organiser une dégustation privée",
     "formTexte": "L'occasion, le lieu, le nombre de personnes, une date : quelques mots suffisent. Nous revenons vers vous très vite avec une proposition.",
     "evenementsTitre": "Un mariage, un baptême, une commande groupée ?",
-    "touristesLien": "Que faire à Troyes autour du champagne"
+    "touristesLien": "Que faire à Troyes autour du champagne",
+    "presentation": "Chez Champagne de l'Aube, nous vous faisons découvrir les champagnes de vignerons indépendants de l'Aube, leurs terroirs et celles et ceux qui les élaborent. Entre amis, en famille, pour un anniversaire ou un rendez-vous professionnel, je compose avec vous un moment sur mesure, à Troyes, ailleurs dans l'Aube ou chez vous.",
+    "signatureIntro": "Bref :",
+    "passageTitre": "De passage à Troyes ?",
+    "passageTexte1": "Pas le temps de filer jusqu'à la Côte des Bar ? Ou alors trop de villages, trop de maisons, et aucune idée de laquelle choisir ? Vous savez quoi ? Je vous fais la visite, sans que vous ayez à bouger. On goûte, on parle terroir, et vous échangez en direct avec les vignerons.",
+    "passageTexte2": "Vous ne saviez pas qu'on faisait du champagne dans le coin ? Personne ne vous en voudra… à condition de ne pas repartir sans avoir découvert nos pépites, que j'ai soigneusement choisies pour vous.",
+    "passageCta": "Organiser ma dégustation",
+    "proSurTitre": "Bars · Restaurants · Entreprises · Organisateurs",
+    "proTitre": "Vous organisez un événement ?",
+    "proTexte1": "Vous êtes un bar, un restaurant, une entreprise ou un organisateur, et vous cherchez une animation qui a du goût ? Nous vous proposons une dégustation animée, une soirée autour du champagne ou une rencontre avec les vignerons de notre sélection, pour vos clients, vos équipes ou vos invités.",
+    "proTexte2": "Vous nous racontez votre idée, nous construisons la proposition avec vous. Il ne vous restera qu'à choisir la date (et les invités).",
+    "proCta": "Parler de votre événement",
+    "partenariatTitre": "Et si on travaillait ensemble ?",
+    "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
+    "partenariatCta": "Proposer un partenariat"
   },
   "evenementsPage": {
     "metaTitle": "Champagne de mariage à Troyes et dans l'Aube : nos conseils",
@@ -752,7 +769,6 @@
     "rubriques": {
       "actualites": "Actu",
       "accords": "Accords mets & champagne",
-      "marketing": "Champagne & marketing",
       "toutSavoir": "Tout savoir sur le champagne",
       "portraits": "Portraits",
       "autresHorizons": "Autres horizons"
@@ -763,8 +779,7 @@
       "accords": "Recettes et accords mets & champagne, de l'entrée au dessert, avec les cuvées de vignerons de l'Aube.",
       "toutSavoir": "Méthode champenoise, dosages, labels, vocabulaire : l'essentiel pour comprendre le champagne et mieux le choisir.",
       "portraits": "À la rencontre de vignerons, d'artisans et de passionnés : leur histoire, leur savoir-faire, ce qui les anime.",
-      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois.",
-      "marketing": "Réseaux sociaux, photo, vidéo, œnotourisme : idées et méthodes pour faire connaître un domaine, une cave, un bar ou un restaurant."
+      "autresHorizons": "Cidres et bières du Pays d'Othe, vins d'autres régions, champagnes de la Marne, voyages et patrimoine : nos escapades hors des sentiers du champagne aubois."
     },
     "aLaUne": "À la une",
     "tousLesArticles": "Tous les articles",
@@ -793,7 +808,11 @@
       "titre": "Envie d'aller plus loin ?",
       "texte": "Photo, vidéo, réseaux sociaux : découvrez nos services de communication pour les vignerons, cavistes, bars et restaurants.",
       "bouton": "Voir Communication & marketing"
-    }
+    },
+    "etiquette": "Étiquette",
+    "etiquettesArticle": "Étiquettes de l'article",
+    "tousArticlesEtiquette": "Tous les articles « {etiquette} »",
+    "etiquettesNav": "Les étiquettes du Mag"
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
@@ -1010,7 +1029,8 @@
     },
     "bouton": "Découvrir Detectezmoi.com",
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
-    "contact": "Nous écrire"
+    "contact": "Nous écrire",
+    "articlesTitre": "Nos articles marketing"
   },
   "partenairesPage": {
     "surTitre": "Espace Pro",
