@@ -514,7 +514,8 @@
         "text": "This website uses no advertising or audience measurement cookies. It only stores essential technical information in your browser:\n• cda_age (cookie and local storage, 1 year): your answer to the age check;\n• NEXT_LOCALE (cookie, for the visit): the chosen language;\n• cda_nl_bar (local storage): the news banner you closed."
       }
     },
-    "metaTitle": "Privacy policy: your personal data and your rights"
+    "metaTitle": "Privacy policy: your personal data and your rights",
+    "audience": "Audience measurement: we use Plausible Analytics (Plausible Insights OÜ, Estonia, data hosted in the European Union), a tool that sets no cookies and stores nothing in your browser. It counts page views anonymously and in aggregate (page, referring site, country, device type), without identifying visitors or tracking them across sites. Your IP address is not kept."
   },
   "proPage": {
     "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
@@ -894,7 +895,7 @@
       },
       "cookies": {
         "title": "Cookies",
-        "text": "This website uses no analytics or advertising cookies.\nA single technical cookie, \"cda_age\", stores your answer to the age check for one year. It is essential to the website and does not require consent.\nYour browser also remembers, without a cookie, your choice to close the news banner."
+        "text": "The site uses no advertising cookies.\nTwo essential technical cookies do not require consent: “cda_age”, which keeps your answer to the age check for one year, and “NEXT_LOCALE”, which remembers the chosen language during your visit.\nYour browser also remembers, without a cookie, that you closed the news bar.\nIf audience measurement is enabled, it works without cookies: see the privacy policy."
       },
       "alcool": {
         "title": "Alcohol and minors",
@@ -1071,5 +1072,16 @@
       "q3": "Why is the centre of Troyes called “le Bouchon”?",
       "r3": "Because, seen from the air, the layout of the old town is shaped like a champagne cork."
     }
+  },
+  "notFound": {
+    "metaTitle": "Page not found",
+    "surTitre": "Error 404",
+    "titre": "This page has vanished like a bubble",
+    "texte": "The address may have changed with the new version of the site, or the page no longer exists. Here is where to pick up your visit:",
+    "accueil": "Back to the home page",
+    "terroirs": "The Aube terroirs",
+    "degustations": "Private tastings",
+    "mag": "The Champagne Mag",
+    "contact": "Looking for something specific? Write to us."
   }
 }

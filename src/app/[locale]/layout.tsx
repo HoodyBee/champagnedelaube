@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AgeGate } from "@/components/layout/AgeGate";
+import { Audience } from "@/components/layout/Audience";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { routing, type Locale } from "@/i18n/routing";
@@ -80,6 +81,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             <Footer locales={activeLocales} />
           </div>
           <AgeGate locales={activeLocales} />
+          <Audience />
         </NextIntlClientProvider>
       </body>
     </html>

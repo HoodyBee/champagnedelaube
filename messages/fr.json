@@ -514,7 +514,8 @@
         "text": "Ce site n'utilise aucun cookie publicitaire ni de mesure d'audience. Il enregistre seulement, dans votre navigateur, des informations techniques indispensables :\n• cda_age (cookie et stockage local, 1 an) : votre réponse à la vérification de l'âge ;\n• NEXT_LOCALE (cookie, durée de la visite) : la langue choisie ;\n• cda_nl_bar (stockage local) : le bandeau des actualités que vous avez fermé."
       }
     },
-    "metaTitle": "Politique de confidentialité : vos données et vos droits"
+    "metaTitle": "Politique de confidentialité : vos données et vos droits",
+    "audience": "Mesure d'audience : nous utilisons Plausible Analytics (Plausible Insights OÜ, Estonie, données hébergées dans l'Union européenne), un outil qui ne dépose aucun cookie et ne stocke rien dans votre navigateur. Il compte les pages vues de façon anonyme et agrégée (page, site d'origine, pays, type d'appareil), sans identifier les visiteurs ni les suivre d'un site à l'autre. Votre adresse IP n'est pas conservée."
   },
   "proPage": {
     "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
@@ -894,7 +895,7 @@
       },
       "cookies": {
         "title": "Cookies",
-        "text": "Le site n'utilise aucun cookie de mesure d'audience ni de publicité.\nUn seul cookie technique, « cda_age », garde pendant un an votre réponse à la fenêtre de vérification de l'âge. Indispensable au fonctionnement du site, il ne nécessite pas de consentement.\nVotre navigateur retient aussi, sans cookie, votre choix de fermer le bandeau des actualités."
+        "text": "Le site n'utilise aucun cookie publicitaire.\nDeux cookies techniques, indispensables, ne nécessitent pas de consentement : « cda_age », qui garde pendant un an votre réponse à la fenêtre de vérification de l'âge, et « NEXT_LOCALE », qui retient la langue choisie pendant la visite.\nVotre navigateur retient aussi, sans cookie, votre choix de fermer le bandeau des actualités.\nSi une mesure d'audience est activée, elle se fait sans cookie : voir la politique de confidentialité."
       },
       "alcool": {
         "title": "Alcool et mineurs",
@@ -1071,5 +1072,16 @@
       "q3": "Pourquoi le centre de Troyes s'appelle-t-il « le Bouchon » ?",
       "r3": "Parce que, vu du ciel, le tracé du centre ancien a la forme d'un bouchon de champagne."
     }
+  },
+  "notFound": {
+    "metaTitle": "Page introuvable",
+    "surTitre": "Erreur 404",
+    "titre": "Cette page s'est évaporée comme une bulle",
+    "texte": "L'adresse a peut-être changé avec la nouvelle version du site, ou la page n'existe plus. Voici de quoi reprendre la visite :",
+    "accueil": "Retour à l'accueil",
+    "terroirs": "Les terroirs de l'Aube",
+    "degustations": "Dégustations privées",
+    "mag": "Le Mag du Champagne",
+    "contact": "Vous cherchiez quelque chose de précis ? Écrivez-nous."
   }
 }

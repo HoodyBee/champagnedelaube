@@ -6,6 +6,7 @@ import { RichText } from "@/components/ui/RichText";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { adresseSiege } from "@/lib/legal";
+import { AUDIENCE_ACTIVE } from "@/lib/audience";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages } from "@/sanity/queries";
 
@@ -52,6 +53,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/polit
               <section key={key} aria-labelledby={`pc-${key}`} className="mt-space-4">
                 <h2 id={`pc-${key}`} className="text-titre-section">{t(`sections.${key}.title`)}</h2>
                 <Paragraphs text={t(`sections.${key}.text`, { adresse })} />
+                {key === "cookies" && AUDIENCE_ACTIVE && <Paragraphs text={t("audience")} />}
               </section>
             ))}
           </>
