@@ -1024,10 +1024,10 @@
       "bsa": "Bar-sur-Aube (Côte des Bar)"
     },
     "trajetsValeurs": {
-      "montgueux": "environ 13 km · une vingtaine de minutes",
-      "cdb": "environ 32 km · 35 minutes environ",
-      "riceys": "environ 47 km · un peu moins d'une heure",
-      "bsa": "environ 57 km · une heure environ"
+      "montgueux": "environ 13 km · environ 20 minutes",
+      "cdb": "environ 32 km · environ 35 minutes",
+      "riceys": "environ 47 km · environ 55 minutes",
+      "bsa": "environ 57 km · environ 1 heure"
     },
     "trajetsNote": "Distances routières indicatives, de centre à centre, calculées avec OpenStreetMap ; temps hors trafic.",
     "trajetsColLieu": "Destination",
