@@ -104,7 +104,7 @@
     "chiffres": {
       "vignoble": {
         "valeur": "≈ 8.000 ha",
-        "label": "die Rebfläche der Aube, ein Viertel der Champagne"
+        "label": "die Rebfläche der Aube, mehr als ein Fünftel der Champagne"
       },
       "appellations": {
         "valeur": "3 Appellationen",
@@ -399,7 +399,8 @@
         "title": "Cookies und Speicherung im Browser",
         "text": "Diese Website verwendet keine Werbe- oder Analyse-Cookies. Sie speichert in Ihrem Browser nur unbedingt erforderliche technische Informationen:\n• cda_age (Cookie und lokaler Speicher, 1 Jahr): Ihre Antwort auf die Altersabfrage;\n• NEXT_LOCALE (Cookie, für die Dauer des Besuchs): die gewählte Sprache;\n• cda_nl_bar (lokaler Speicher): das Neuigkeiten-Banner, das Sie geschlossen haben."
       }
-    }
+    },
+    "audience": "Audience measurement: we use Plausible Analytics (Plausible Insights OÜ, Estonia, data hosted in the European Union), a tool that sets no cookies and stores nothing in your browser. It counts page views anonymously and in aggregate (page, referring site, country, device type), without identifying visitors or tracking them across sites. Your IP address is not kept."
   },
   "proPage": {
     "metaTitle": "Champagner für Restaurants, Weinhandlungen und Hotels | Champagne de l'Aube",
@@ -567,5 +568,16 @@
       "accords": "Speisen & Champagner",
       "portraits": "Winzerporträts"
     }
+  },
+  "notFound": {
+    "metaTitle": "Seite nicht gefunden",
+    "surTitre": "Fehler 404",
+    "titre": "Diese Seite ist verflogen wie ein Perlchen",
+    "texte": "Die Adresse hat sich mit der neuen Version der Website vielleicht geändert, oder die Seite existiert nicht mehr. Hier geht es weiter:",
+    "accueil": "Zur Startseite",
+    "terroirs": "Die Terroirs der Aube",
+    "degustations": "Private Verkostungen",
+    "mag": "Das Champagner-Magazin",
+    "contact": "Suchen Sie etwas Bestimmtes? Schreiben Sie uns."
   }
 }

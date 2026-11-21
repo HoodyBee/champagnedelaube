@@ -9,8 +9,9 @@ import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { getPathname, Link } from "@/i18n/navigation";
-import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
+import { NOINDEX, pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
 import { routing, type Locale } from "@/i18n/routing";
+import { imageObject } from "@/lib/image-jsonld";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
 import { getArticle, getArticleLangues, getArticles, getArticleSlugs, getVignerons, rubriqueHref } from "@/sanity/content";
 
@@ -25,30 +26,33 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, article: slug } = (await params) as { locale: Locale; article: string };
   const [a, langues] = await Promise.all([getArticle(slug, locale), getArticleLangues()]);
-  if (!a) return {};
+  if (!a) notFound();
   // Article sans traduction dans cette langue : la page affiche le français -> pas d'indexation, canonique vers le français.
   const traduit = (langues[slug] ?? []).includes(locale);
   const meta = await pageMetadata({
     locale,
     href: { pathname: "/[article]", params: { article: slug } },
     seo: a.seo,
-    title: `${a.titre} | Champagne de l'Aube`,
+    title: titreArticle(a.titre),
     description: a.extrait ?? a.titre,
+    image: a.image,
+    type: "article",
+    article: { publishedTime: a.date, modifiedTime: a.updatedAt },
   });
   if (!traduit && locale !== "fr") {
-    meta.robots = { index: false, follow: true };
+    meta.robots = NOINDEX;
     meta.alternates = { canonical: withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale: "fr" })) };
   }
-  return {
-    ...meta,
-    openGraph: {
-      type: "article",
-      title: a.titre,
-      description: a.extrait,
-      publishedTime: a.date,
-      images: a.image ? [{ url: a.image.src, alt: a.image.alt }] : undefined,
-    },
-  };
+  return meta;
+}
+
+/**
+ * Titre pour Google d'un article sans « Titre pour Google » dans le Studio : on ajoute le nom
+ * du site s'il reste de la place (60 caractères au plus), sinon le titre seul.
+ */
+function titreArticle(titre: string) {
+  const long = `${titre} | Champagne de l'Aube`;
+  return long.length <= 60 ? long : titre;
 }
 
 /** Article du Mag, à son adresse historique (racine du site). */
@@ -81,23 +85,24 @@ export default async function ArticlePage({ params }: Props) {
     locale,
   );
 
-  const url = SITE_URL + getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale });
+  const url = SITE_URL + withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale }));
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: a.titre,
     description: a.extrait,
-    image: a.image ? [a.image.src] : undefined,
+    image: a.image ? [imageObject(a.image)] : undefined,
     datePublished: a.date,
     dateModified: a.updatedAt ?? a.date,
     inLanguage: locale,
     mainEntityOfPage: url,
     articleSection: rubrique ? labels[rubrique] : undefined,
-    author: { "@type": "Organization", name: "Champagne de l'Aube", url: SITE_URL },
+    author: { "@type": "Organization", name: "Champagne de l'Aube", url: `${SITE_URL}/` },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_URL}/#organisation`,
       name: "Champagne de l'Aube",
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/brand/logos/logo-empile-rond-bandeau.png`, width: 3000, height: 3000 },
     },
     about: cites.map((v) => ({ "@type": "Organization", name: v.nom })),
   };

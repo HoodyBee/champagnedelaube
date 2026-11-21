@@ -58,7 +58,7 @@ export const journeeCalendrier = defineType({
     defineField({
       name: "lien",
       title: "Lien (facultatif)",
-      description: "Page du site (/pinot-noir-champagne) ou site officiel (https://…).",
+      description: "Page du site (/cepages-champagne/pinot-noir) ou site officiel (https://…).",
       type: "url",
       validation: (r) => r.uri({ scheme: ["http", "https"], allowRelative: true }),
     }),

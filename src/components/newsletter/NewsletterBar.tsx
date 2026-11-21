@@ -31,7 +31,7 @@ export function NewsletterBar() {
   }
 
   return (
-    <div className="nl-bar bg-bleu-nuit text-creme" data-nosnippet>
+    <aside aria-label={t("cta")} className="nl-bar bg-bleu-nuit text-creme" data-nosnippet>
       <div className="relative mx-auto flex min-h-9 max-w-7xl items-center justify-center px-space-5 py-1 text-center">
         <p className="text-sur-titre-petit">
           <span className="hidden sm:inline">{t("text")} </span>
@@ -50,6 +50,6 @@ export function NewsletterBar() {
           </svg>
         </button>
       </div>
-    </div>
+    </aside>
   );
 }

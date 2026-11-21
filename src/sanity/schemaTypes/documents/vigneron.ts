@@ -20,7 +20,7 @@ export const vigneron = defineType({
     defineField({
       name: "nom",
       title: "Nom du domaine",
-      description: "Ex. : Champagne Moutard-Dangin.",
+      description: "Ex. : Champagne Moutard*Dangin.",
       type: "string",
       group: "identite",
       validation: (rule) => rule.required(),

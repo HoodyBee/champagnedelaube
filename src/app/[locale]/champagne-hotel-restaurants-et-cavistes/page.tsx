@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Arguments } from "@/components/ui/Arguments";
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "proPage" });
   const p = await getEspacePro(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription"), image: p.hero.image });
 }
 
 /** Espace Professionnels : restaurants, cavistes, hôtels. */

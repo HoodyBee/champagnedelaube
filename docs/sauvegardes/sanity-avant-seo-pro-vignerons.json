@@ -1,0 +1,908 @@
+{
+ "_createdAt": "2026-11-20T10:08:04Z",
+ "_id": "page-pro-vignerons",
+ "_rev": "pJq64BDg0PZsjRe9EBWG4K",
+ "_type": "page",
+ "_updatedAt": "2026-11-20T10:08:04Z",
+ "cle": "pro-vignerons",
+ "contenu": {
+  "_type": "localeRichText",
+  "en": [
+   {
+    "_key": "n2w8fo8z2r4h",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4jgbgvbbq62t",
+      "_type": "span",
+      "marks": [],
+      "text": "Your champagne ambassador"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "nri71lqjnq84",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "n47mitd0wp2g",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "You put your energy into making cuvées with character, true reflections of the Aube terroirs. Our role is to introduce your work to people who will appreciate it."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "nfcrb17tr3g1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "eiaad0boc5y9",
+      "_type": "span",
+      "marks": [],
+      "text": "After building the "
+     },
+     {
+      "_key": "ex445wrvloxo",
+      "_type": "span",
+      "marks": [
+       "0a1eqeoxk9hr"
+      ],
+      "text": "Champagne de l'Aube Instagram page"
+     },
+     {
+      "_key": "6ot5olvibvbu",
+      "_type": "span",
+      "marks": [],
+      "text": " and bringing together a community of enthusiasts around the winemakers and gems of our area, we now want to go further."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "0a1eqeoxk9hr",
+      "_type": "link",
+      "href": "https://www.instagram.com/champagnedelaube/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "bobpkgxcv7lh",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ze1ottkj7k8a",
+      "_type": "span",
+      "marks": [],
+      "text": "Our approach is simple: "
+     },
+     {
+      "_key": "s426rtaigf0p",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "to build bridges between Aube winemakers and new audiences"
+     },
+     {
+      "_key": "hbim9l5nutyz",
+      "_type": "span",
+      "marks": [],
+      "text": ", drawing on our knowledge of the area, the people we meet in the field and the relationships we build with professionals."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "0vpjpk7pf9xw",
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "Hands of a grape picker cutting a bunch of grapes in the vines",
+     "fr": "Mains d’un vendangeur cueillant une grappe de raisin dans les vignes"
+    },
+    "asset": {
+     "_ref": "image-cf971ac9c0f80da0a9c69fd283f0b1b66328eacb-2560x1696-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "mqa5rn60mlzs",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "gdiagtzvejwt",
+      "_type": "span",
+      "marks": [],
+      "text": "Telling your story, beyond the label"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "8h9q7dspnft8",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "9qi00ztg43tk",
+      "_type": "span",
+      "marks": [],
+      "text": "A cuvée is more than a label."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f02vbc4sv2sm",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "mqc7juw41tkr",
+      "_type": "span",
+      "marks": [],
+      "text": "We take the time to discover your estate, your story, the way you work and what gives your champagnes their identity. Our goal is then to "
+     },
+     {
+      "_key": "aecnufofp2jc",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "highlight what makes you unique"
+     },
+     {
+      "_key": "329pyidn1dy1",
+      "_type": "span",
+      "marks": [],
+      "text": ", to audiences who can truly appreciate your work."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "yhkqffcdwo3c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "k8rwlzbvjz6c",
+      "_type": "span",
+      "marks": [],
+      "text": "We favour estates that share our vision: "
+     },
+     {
+      "_key": "zi382zl1f73e",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "authenticity, know-how, terroir and closeness."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "j8par6sytq3p",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "er02qw13iyns",
+      "_type": "span",
+      "marks": [],
+      "text": "Targeted introductions, for your estate"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "lz5hgokccat7",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "at0q1jcux05y",
+      "_type": "span",
+      "marks": [],
+      "text": "Our role is to create opportunities and put you directly in touch with people interested in your work."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "islkr4kysgfr",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "aq0bz6p8kbmc",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Hotels, restaurants & wine shops"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "q7ac2mudj0ui",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "3is5rgb07v3p",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Tastings & discoveries"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "io6z83ph0j4s",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "wzxpy2ojhzq4",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Works councils & companies"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "tbnfloqtvl65",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4a8h6u3qpogi",
+      "_type": "span",
+      "marks": [],
+      "text": "A direct, transparent and respectful relationship"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "jtkp0q4llbt5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "p3c5ct183yzn",
+      "_type": "span",
+      "marks": [],
+      "text": "We do not try to take your place. "
+     },
+     {
+      "_key": "67f57qfx56oi",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Our role is to make the contact, present your work and make exchanges easier."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "lhdjnfzhm6zm",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "s24zelvhy5e5",
+      "_type": "span",
+      "marks": [],
+      "text": "Each collaboration is built with you, respecting your identity, your commercial terms and the way you work."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "dzqhnani18ay",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ytd0n8az0nqo",
+      "_type": "span",
+      "marks": [],
+      "text": "We favour a "
+     },
+     {
+      "_key": "475o8ab2i3e8",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "direct, transparent and lasting"
+     },
+     {
+      "_key": "ufe84e0e6gli",
+      "_type": "span",
+      "marks": [],
+      "text": " relationship, with one simple idea: everyone should benefit."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "1t0i5rihevim",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "hu1va4w2sc4p",
+      "_type": "span",
+      "marks": [],
+      "text": "Shall we get to know each other?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "nei3alox9ydj",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "mjivbwiun26r",
+      "_type": "span",
+      "marks": [],
+      "text": "We would be delighted to come and meet you at your estate, discover your world and taste your cuvées."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "q8vrif9llr8n",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "msperxkyhggs",
+      "_type": "span",
+      "marks": [],
+      "text": "A chance to present "
+     },
+     {
+      "_key": "zisy5huuum1i",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Champagne de l'Aube, our approach and the possibilities for working together"
+     },
+     {
+      "_key": "4331n3zghlwc",
+      "_type": "span",
+      "marks": [],
+      "text": ", simply, over a conversation."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e11ffr37jslu",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "69vlealwbhov",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "+33 6 50 96 45 59"
+     },
+     {
+      "_key": "0foi9v5bz3wa",
+      "_type": "span",
+      "marks": [],
+      "text": " "
+     },
+     {
+      "_key": "lg5diih9ijap",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " "
+     },
+     {
+      "_key": "2noecvns2tv4",
+      "_type": "span",
+      "marks": [
+       "txyg115oyzne"
+      ],
+      "text": "contact@champagnedelaube.fr"
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "txyg115oyzne",
+      "_type": "link",
+      "href": "mailto:contact@champagnedelaube.fr"
+     }
+    ],
+    "style": "normal"
+   }
+  ],
+  "fr": [
+   {
+    "_key": "818543c261e5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "16366e7dff76",
+      "_type": "span",
+      "marks": [],
+      "text": "Votre ambassadeur champagne"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "ee0f25ff69d3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c09440d7c5bc",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Vous consacrez votre énergie à élaborer des cuvées de caractère, véritables reflets des terroirs de l’Aube. Notre rôle est de faire découvrir votre travail à ceux qui sauront l’apprécier."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d446ae2033dd",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "7f8f8825f581",
+      "_type": "span",
+      "marks": [],
+      "text": "Après avoir développé la "
+     },
+     {
+      "_key": "afdbfdd50850",
+      "_type": "span",
+      "marks": [
+       "426617c78e62"
+      ],
+      "text": "page Instagram Champagne de l’Aube"
+     },
+     {
+      "_key": "65b0ae2e8d43",
+      "_type": "span",
+      "marks": [],
+      "text": " et fédéré une communauté d’amateurs autour des vignerons et des pépites de notre territoire, nous souhaitons aujourd’hui aller plus loin."
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "426617c78e62",
+      "_type": "link",
+      "href": "https://www.instagram.com/champagnedelaube/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "9adee7d33ab6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a4ecca00ff3b",
+      "_type": "span",
+      "marks": [],
+      "text": "Notre démarche est simple : "
+     },
+     {
+      "_key": "fbb8e7440629",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "créer des passerelles entre les vignerons de l’Aube et de nouveaux publics"
+     },
+     {
+      "_key": "b5ebfb29442d",
+      "_type": "span",
+      "marks": [],
+      "text": ", en nous appuyant sur notre connaissance du territoire, les rencontres que nous faisons sur le terrain et les relations que nous développons avec les professionnels."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "2e9c56c9aac8",
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "Hands of a grape picker cutting a bunch of grapes in the vines",
+     "fr": "Mains d’un vendangeur cueillant une grappe de raisin dans les vignes"
+    },
+    "asset": {
+     "_ref": "image-cf971ac9c0f80da0a9c69fd283f0b1b66328eacb-2560x1696-jpg",
+     "_type": "reference"
+    }
+   },
+   {
+    "_key": "ed2dfe12e534",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d09490bfc79d",
+      "_type": "span",
+      "marks": [],
+      "text": "Raconter votre histoire, au-delà de l’étiquette"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "56cb6bcf9b84",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "857e46e26b36",
+      "_type": "span",
+      "marks": [],
+      "text": "Une cuvée ne se résume pas à une étiquette."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "2cd0b1e0be71",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "560018bf4a76",
+      "_type": "span",
+      "marks": [],
+      "text": "Nous prenons le temps de découvrir votre domaine, votre histoire, votre façon de travailler et ce qui fait l’identité de vos Champagnes. Notre objectif est ensuite de "
+     },
+     {
+      "_key": "136ea1bc45f8",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "mettre en avant ce qui vous rend unique"
+     },
+     {
+      "_key": "19e0f277c507",
+      "_type": "span",
+      "marks": [],
+      "text": ", auprès de publics qui peuvent réellement être sensibles à votre travail."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b4b7678283d1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5c0bae2d2bcf",
+      "_type": "span",
+      "marks": [],
+      "text": "Nous privilégions des domaines avec lesquels nous partageons une même vision : "
+     },
+     {
+      "_key": "95cff19c0a44",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "l’authenticité, le savoir-faire, le terroir et la proximité."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "7e438c4b9156",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "cb7c6b96233a",
+      "_type": "span",
+      "marks": [],
+      "text": "Des mises en relation ciblées, au service de votre domaine"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "c40f3ec8a600",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "e9b5254bc370",
+      "_type": "span",
+      "marks": [],
+      "text": "Notre rôle est de créer des opportunités et de vous mettre en relation directement avec les personnes intéressées par votre travail."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fd167af6934f",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "22ce30c50cb2",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "CHR & cavistes"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c5357336e0aa",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "003669221103",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Dégustations & découvertes"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "ec3986c5442e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "68aee21e5386",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "CSE & entreprises"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9b58dd3f4049",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "cffc32c47dc7",
+      "_type": "span",
+      "marks": [],
+      "text": "Une relation directe, transparente et respectueuse"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "61a5bf25482e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ec3cb693d04a",
+      "_type": "span",
+      "marks": [],
+      "text": "Nous ne cherchons pas à nous substituer à vous. "
+     },
+     {
+      "_key": "0e7ea996f667",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Notre rôle est de créer le contact, de présenter votre travail et de faciliter les échanges."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "68de5f206ac9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0ef970f226dd",
+      "_type": "span",
+      "marks": [],
+      "text": "Chaque collaboration est construite avec vous, dans le respect de votre identité, de vos conditions commerciales et de votre façon de travailler."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "92ae5caa7106",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "794bc33862c9",
+      "_type": "span",
+      "marks": [],
+      "text": "Nous privilégions une relation "
+     },
+     {
+      "_key": "7b9969d6bb59",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "directe, transparente et durable"
+     },
+     {
+      "_key": "c3c5a05af934",
+      "_type": "span",
+      "marks": [],
+      "text": ", avec une idée simple : que chacun y trouve son intérêt."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e9d0b63d6630",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "956c90ef1e36",
+      "_type": "span",
+      "marks": [],
+      "text": "Et si nous faisions connaissance ?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h3"
+   },
+   {
+    "_key": "a50c093d4393",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "3d402ab797c1",
+      "_type": "span",
+      "marks": [],
+      "text": "Nous serions ravis de venir vous rencontrer au domaine, découvrir votre univers et déguster vos cuvées."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f4f89ffd21a5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "bb979ae36665",
+      "_type": "span",
+      "marks": [],
+      "text": "L’occasion de vous présenter "
+     },
+     {
+      "_key": "cd8fbc25240c",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Champagne de l’Aube, notre démarche et les possibilités de collaboration"
+     },
+     {
+      "_key": "1d4647f8e3b6",
+      "_type": "span",
+      "marks": [],
+      "text": ", simplement, autour d’un échange."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "cff23a338dfe",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6156a7e8f808",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "06 50 96 45 59"
+     },
+     {
+      "_key": "f63aadaf3ec2",
+      "_type": "span",
+      "marks": [],
+      "text": " "
+     },
+     {
+      "_key": "b8258c6c42a2",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": " "
+     },
+     {
+      "_key": "819c12e3a1db",
+      "_type": "span",
+      "marks": [
+       "715f5fe05f71",
+       "strong"
+      ],
+      "text": "contact@champagnedelaube.fr"
+     }
+    ],
+    "markDefs": [
+     {
+      "_key": "715f5fe05f71",
+      "_type": "link",
+      "href": "mailto:contact@champagnedelaube.fr"
+     }
+    ],
+    "style": "normal"
+   }
+  ]
+ },
+ "seo": {
+  "_type": "seo",
+  "description": {
+   "_type": "localeText",
+   "en": "Aube winemakers, grow your visibility. We showcase your cuvées to professionals (hotels, restaurants, works councils) and enthusiasts. Let's meet at your estate!",
+   "fr": "Vignerons de l'Aube, développez votre visibilité. Nous valorisons vos cuvées auprès des professionnels (CHR, CSE) et amateurs. Rencontrons-nous au domaine !"
+  },
+  "title": {
+   "_type": "localeString",
+   "en": "Winemaker partnership | Find your business introducer",
+   "fr": "Partenariat Vignerons | Trouvez votre apporteur d'affaires"
+  }
+ },
+ "titre": {
+  "_type": "localeString",
+  "en": "Winemakers: let's grow your visibility together",
+  "fr": "Vignerons : développons ensemble votre visibilité"
+ }
+}

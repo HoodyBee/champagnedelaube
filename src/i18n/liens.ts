@@ -22,6 +22,9 @@ export function lienLocalise(lien: string | undefined, locale: Locale): string |
   // Fiche vigneron (/vignerons/slug) ou article du Mag (/mon-article).
   const vigneron = /^\/(?:vignerons|winemakers|wijnmakers|vignaioli|winzer)\/([^/]+)$/.exec(seg);
   if (vigneron) return withSlash(getPathname({ href: { pathname: "/vignerons/[slug]", params: { slug: vigneron[1] } }, locale })) + suite;
+  // Page d'un cépage (/cepages-champagne/pinot-noir, ou son adresse traduite).
+  const cepage = /^\/(?:cepages-champagne|champagne-grape-varieties|champagne-druivenrassen|vitigni-champagne|champagner-rebsorten)\/([^/]+)$/.exec(seg);
+  if (cepage) return withSlash(getPathname({ href: { pathname: "/cepages-champagne/[cepage]", params: { cepage: cepage[1] } }, locale })) + suite;
   if (/^\/[^/]+$/.test(seg)) return withSlash(getPathname({ href: { pathname: "/[article]", params: { article: seg.slice(1) } }, locale })) + suite;
   return withSlash(seg) + suite;
 }

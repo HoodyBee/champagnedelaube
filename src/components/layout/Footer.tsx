@@ -61,6 +61,7 @@ export async function Footer({ locales }: { locales: readonly Locale[] }) {
           {terroirPages.map((p) => (
             <FooterLink key={p.href} href={p.href}>{p.label}</FooterLink>
           ))}
+          <FooterLink href="/champagne-troyes">{tNav("troyes")}</FooterLink>
           <FooterLink href={nav.vignerons.href}>{tNav("vignerons")}</FooterLink>
           <FooterLink href={nav.mag.href}>{tNav("mag")}</FooterLink>
           {contentPages.map((p) => (

@@ -5,6 +5,7 @@
 // (?elementor_library=…) affichent simplement l'accueil, dont l'adresse canonique est « / ». Liste établie à partir du
 // sitemap de l'ancien site (novembre 2026).
 import type { Redirect } from "next/dist/lib/load-custom-routes";
+import { ANCIEN_ARTICLE_CEPAGE } from "./lib/cepages-liens";
 
 const r = (source: string, destination: string): Redirect => ({ source, destination, statusCode: 301 });
 
@@ -31,6 +32,11 @@ const pages: Redirect[] = [
   r("/le-mag/accords", "/recettes-accords-mets-champagne/"),
   r("/en/le-mag/tout-savoir", "/en/all-about-champagne/"),
   r("/en/le-mag/accords", "/en/champagne-food-pairing-recipes/"),
+  // Étape 13 : rubriques fusionnées (Terroirs & cépages -> Tout savoir ; Œnotourisme -> Autres horizons).
+  r("/le-mag/terroirs-cepages", "/tout-savoir-sur-le-champagne/"),
+  r("/en/le-mag/terroirs-cepages", "/en/all-about-champagne/"),
+  r("/le-mag/oenotourisme", "/le-mag/autres-horizons/"),
+  r("/en/le-mag/oenotourisme", "/en/le-mag/autres-horizons/"),
   // Article remplacé par le marronnier 2027 (novembre 2026).
   r("/journees-du-champagne-et-des-cepages", "/marronnier-2027-calendrier-vin-gastronomie/"),
   r("/en/journees-du-champagne-et-des-cepages", "/en/marronnier-2027-calendrier-vin-gastronomie/"),
@@ -73,4 +79,10 @@ const liensCourts: Redirect[] = [
   })),
 ];
 
-export const redirections: Redirect[] = [...pages, ...liensCourts];
+/** Étape 13 : chaque cépage a sa page ; les anciens articles du Mag y redirigent directement (FR et EN, sans chaîne). */
+const cepages: Redirect[] = Object.entries(ANCIEN_ARTICLE_CEPAGE).flatMap(([cle, slug]) => [
+  r(`/${slug}`, `/cepages-champagne/${cle}/`),
+  r(`/en/${slug}`, `/en/champagne-grape-varieties/${cle}/`),
+]);
+
+export const redirections: Redirect[] = [...pages, ...cepages, ...liensCourts];

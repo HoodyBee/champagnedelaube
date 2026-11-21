@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/routing";
+import { typoFrValeur } from "@/lib/typo";
 
 /** Champ traduit tel qu'il est stocké dans Sanity : { fr, en, nl, it }. */
 export type Localized<T = string> = Partial<Record<Locale, T>>;
@@ -9,5 +10,7 @@ export type Localized<T = string> = Partial<Record<Locale, T>>;
  */
 export function localize<T>(value: Localized<T> | null | undefined, locale: Locale): T | undefined {
   if (!value) return undefined;
-  return value[locale] ?? value.en ?? value.fr;
+  const v = value[locale] ?? value.en ?? value.fr;
+  // Français : espaces insécables avant la ponctuation haute (affichage seulement, rien n'est modifié dans Sanity).
+  return locale === "fr" && v !== undefined && (value[locale] !== undefined || value.en === undefined) ? typoFrValeur(v) : v;
 }

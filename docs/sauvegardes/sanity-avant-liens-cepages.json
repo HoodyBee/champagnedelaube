@@ -1,0 +1,2325 @@
+[
+ {
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "article-marronnier-2027-calendrier-vin-gastronomie",
+  "_rev": "pJq64BDg0PZsjRe9EBWG4K",
+  "_type": "article",
+  "_updatedAt": "2026-11-20T10:08:04Z",
+  "contenu": {
+   "_type": "localeRichText",
+   "en": [
+    {
+     "_key": "aao",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aan",
+       "_type": "span",
+       "marks": [],
+       "text": "The calendar, an ally for your digital communication"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aaq",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aap",
+       "_type": "span",
+       "marks": [],
+       "text": "A pinot noir day, a cheese day or a coffee day: and you have a ready-made idea for a post. In French media jargon, these subjects that come back every year on the same date are called « marronniers ». For a wine shop, a restaurant or a winemaker, they are a valuable tool: they give rhythm to your digital communication, feed your social media and newsletter, and help you plan events in store or at the table."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aas",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aar",
+       "_type": "span",
+       "marks": [],
+       "text": "We built it as a ready-to-use editorial calendar: days dedicated to grape varieties, food and spirits, the major trade fairs, and our own events in the Aube. Every date has been checked; when an organiser has not yet announced its 2027 edition, we mark it « to be confirmed »."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aau",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aat",
+       "_type": "span",
+       "marks": [],
+       "text": "How to use it for your social media and events"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aaw",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aav",
+       "_type": "span",
+       "marks": [],
+       "text": "The idea is simple: choose three or four dates a month with a real link to your menu, your shop or your vines, and prepare them in advance. A few well-told moments are better than a post every day."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aay",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aax",
+       "_type": "span",
+       "marks": [],
+       "text": "Wine shops"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "ab0",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aaz",
+       "_type": "span",
+       "marks": [],
+       "text": "A grape day is a chance to showcase a selection, explain a terroir or offer a guided tasting. Meunier Day, for example, lets you introduce champagnes from winemakers who devote whole cuvées to it."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "ab2",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ab1",
+       "_type": "span",
+       "marks": [],
+       "text": "Restaurants"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "ab7",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ab3",
+       "_type": "span",
+       "marks": [],
+       "text": "Food days (cheese, pasta, olive tree, raclette…) lend themselves to food and wine pairings: a dish of the day, a pairing suggestion, a shared recipe. Our "
+      },
+      {
+       "_key": "ab5",
+       "_type": "span",
+       "marks": [
+        "ab4"
+       ],
+       "text": "food and champagne pairings"
+      },
+      {
+       "_key": "ab6",
+       "_type": "span",
+       "marks": [],
+       "text": " can inspire you."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "ab4",
+       "_type": "link",
+       "href": "/en/recettes-accords-mets-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "ab9",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ab8",
+       "_type": "span",
+       "marks": [],
+       "text": "Winemakers"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "abb",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aba",
+       "_type": "span",
+       "marks": [],
+       "text": "The calendar also follows life in the vineyard: Saint Vincent's Day in January, the grape days, Champagne Day in October. So many chances to tell the story of your work, your plots and your method, on social media as well as in the local press."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "abd",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "abc",
+       "_type": "span",
+       "marks": [],
+       "text": "The 2027 calendar, month by month"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "abf",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "abe",
+       "_type": "span",
+       "marks": [],
+       "text": "Filter by category or by month. Dates marked ⭐ are our own events; links lead to the official site or to an article in the Mag."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "abg",
+     "_type": "calendrierMarronnier",
+     "annee": 2027
+    },
+    {
+     "_key": "abi",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "abh",
+       "_type": "span",
+       "marks": [],
+       "text": "The Champagne dates not to miss"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "abn",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "abj",
+       "_type": "span",
+       "marks": [],
+       "text": "For Champagne, three highlights shape the year: Saint Vincent's Day, patron saint of winemakers, on 22 January; Champagne Day, on the fourth Friday of October (22 October in 2027); and, every summer, La Route du Champagne en fête, which opens the cellars of a different part of the "
+      },
+      {
+       "_key": "abl",
+       "_type": "span",
+       "marks": [
+        "abk"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "abm",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "abk",
+       "_type": "link",
+       "href": "/en/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "ac1",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "abo",
+       "_type": "span",
+       "marks": [],
+       "text": "The days of the three main grapes are also a chance to talk about blending: "
+      },
+      {
+       "_key": "abq",
+       "_type": "span",
+       "marks": [
+        "abp"
+       ],
+       "text": "pinot noir"
+      },
+      {
+       "_key": "abr",
+       "_type": "span",
+       "marks": [],
+       "text": " on 18 August, "
+      },
+      {
+       "_key": "abt",
+       "_type": "span",
+       "marks": [
+        "abs"
+       ],
+       "text": "chardonnay"
+      },
+      {
+       "_key": "abu",
+       "_type": "span",
+       "marks": [],
+       "text": " on 27 May and "
+      },
+      {
+       "_key": "abw",
+       "_type": "span",
+       "marks": [
+        "abv"
+       ],
+       "text": "meunier"
+      },
+      {
+       "_key": "abx",
+       "_type": "span",
+       "marks": [],
+       "text": " on 16 December. Not forgetting "
+      },
+      {
+       "_key": "abz",
+       "_type": "span",
+       "marks": [
+        "aby"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "ac0",
+       "_type": "span",
+       "marks": [],
+       "text": ", called fromenteau in Champagne, on 17 May."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "abp",
+       "_type": "link",
+       "href": "/en/pinot-noir-champagne/"
+      },
+      {
+       "_key": "abs",
+       "_type": "link",
+       "href": "/en/chardonnay-champagne/"
+      },
+      {
+       "_key": "abv",
+       "_type": "link",
+       "href": "/en/meunier-cepage-champagne/"
+      },
+      {
+       "_key": "aby",
+       "_type": "link",
+       "href": "/en/pinot-gris-fromenteau-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "ac3",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ac2",
+       "_type": "span",
+       "marks": [],
+       "text": "Communicating within the Évin law"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "ac5",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ac4",
+       "_type": "span",
+       "marks": [],
+       "text": "In France, the Évin law regulates communication about alcohol. It allows objective information: origin, terroir, grape varieties, production method, awards. This is precisely where the calendar is valuable: it encourages you to talk about taste education, terroir and heritage rather than parties or consumption."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "ac7",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ac6",
+       "_type": "span",
+       "marks": [],
+       "text": "A few good habits: the health warning on your visuals, no association with social success or seduction, no encouragement to drink. In influencer marketing, collaborations with content creators must also respect the Évin law and be clearly flagged as commercial."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "ac9",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ac8",
+       "_type": "span",
+       "marks": [],
+       "text": "We have left out some days that directly encourage drinking."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "acb",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aca",
+       "_type": "span",
+       "marks": [],
+       "text": "Come and taste with us"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "acj",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "acc",
+       "_type": "span",
+       "marks": [],
+       "text": "Want to illustrate one of these days with champagnes from Aube winemakers? We organise "
+      },
+      {
+       "_key": "ace",
+       "_type": "span",
+       "marks": [
+        "acd"
+       ],
+       "text": "private tastings"
+      },
+      {
+       "_key": "acf",
+       "_type": "span",
+       "marks": [],
+       "text": ", in Troyes or at your home, and help "
+      },
+      {
+       "_key": "ach",
+       "_type": "span",
+       "marks": [
+        "acg"
+       ],
+       "text": "restaurants, wine shops and hotels"
+      },
+      {
+       "_key": "aci",
+       "_type": "span",
+       "marks": [],
+       "text": " choose their cuvées."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "acd",
+       "_type": "link",
+       "href": "/en/tasting-troyes/"
+      },
+      {
+       "_key": "acg",
+       "_type": "link",
+       "href": "/en/champagne-hotel-restaurants-et-cavistes/"
+      }
+     ],
+     "style": "normal"
+    }
+   ],
+   "fr": [
+    {
+     "_key": "a8r",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a8q",
+       "_type": "span",
+       "marks": [],
+       "text": "Le marronnier, l'allié de votre communication digitale"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "a8t",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a8s",
+       "_type": "span",
+       "marks": [],
+       "text": "Une journée du pinot noir, du fromage ou du café, et c'est une idée de publication toute trouvée. Dans le jargon des médias, on appelle « marronnier » ces sujets qui reviennent chaque année à la même date. Pour un caviste, un restaurateur ou un vigneron, c'est un outil précieux : il donne du rythme à la communication digitale, nourrit les réseaux sociaux et la newsletter, et aide à programmer des animations en boutique ou à table."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a8v",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a8u",
+       "_type": "span",
+       "marks": [],
+       "text": "Nous l'avons construit comme un calendrier éditorial prêt à l'emploi : les journées dédiées aux cépages, à la gastronomie et aux spiritueux, les grands salons, et nos propres rendez-vous dans l'Aube. Chaque date a été vérifiée ; quand un organisateur n'a pas encore annoncé son édition 2027, nous l'indiquons « à confirmer »."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a8x",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a8w",
+       "_type": "span",
+       "marks": [],
+       "text": "Comment l'utiliser pour vos réseaux sociaux et vos animations"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "a8z",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a8y",
+       "_type": "span",
+       "marks": [],
+       "text": "Le principe est simple : choisissez trois ou quatre dates par mois qui ont un vrai lien avec votre carte, votre cave ou vos vignes, et préparez-les à l'avance. Mieux vaut quelques rendez-vous bien racontés qu'une publication par jour."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a91",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a90",
+       "_type": "span",
+       "marks": [],
+       "text": "Cavistes"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "a93",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a92",
+       "_type": "span",
+       "marks": [],
+       "text": "Une journée de cépage est l'occasion de mettre en avant une sélection, d'expliquer un terroir ou de proposer une dégustation commentée. La journée du meunier, par exemple, permet de faire découvrir des champagnes de vignerons qui lui consacrent des cuvées entières."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a95",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a94",
+       "_type": "span",
+       "marks": [],
+       "text": "Restaurateurs"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "a9a",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a96",
+       "_type": "span",
+       "marks": [],
+       "text": "Les journées gastronomiques (fromage, pâtes, olivier, raclette…) se prêtent aux accords mets et vins : un plat du jour, une suggestion d'accord, une recette partagée. Nos "
+      },
+      {
+       "_key": "a98",
+       "_type": "span",
+       "marks": [
+        "a97"
+       ],
+       "text": "accords mets et champagne"
+      },
+      {
+       "_key": "a99",
+       "_type": "span",
+       "marks": [],
+       "text": " peuvent vous inspirer."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "a97",
+       "_type": "link",
+       "href": "/recettes-accords-mets-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "a9c",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9b",
+       "_type": "span",
+       "marks": [],
+       "text": "Vignerons"
+      }
+     ],
+     "markDefs": [],
+     "style": "h3"
+    },
+    {
+     "_key": "a9e",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9d",
+       "_type": "span",
+       "marks": [],
+       "text": "Le calendrier rythme aussi la vie du vignoble : la Saint-Vincent en janvier, les journées des cépages, Champagne Day en octobre. Ce sont autant d'occasions de raconter votre travail, vos parcelles et votre méthode, sur vos réseaux comme dans la presse locale."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a9g",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9f",
+       "_type": "span",
+       "marks": [],
+       "text": "Le calendrier 2027, mois par mois"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "a9i",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9h",
+       "_type": "span",
+       "marks": [],
+       "text": "Filtrez par catégorie ou par mois. Les dates signalées ⭐ sont nos propres événements ; les liens mènent vers le site officiel ou vers un article du Mag."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "a9j",
+     "_type": "calendrierMarronnier",
+     "annee": 2027
+    },
+    {
+     "_key": "a9l",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9k",
+       "_type": "span",
+       "marks": [],
+       "text": "Les rendez-vous champenois à ne pas manquer"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "a9q",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9m",
+       "_type": "span",
+       "marks": [],
+       "text": "Pour la Champagne, trois temps forts structurent l'année : la Saint-Vincent, patron des vignerons, le 22 janvier ; Champagne Day, le quatrième vendredi d'octobre (le 22 octobre en 2027) ; et, chaque été, la Route du Champagne en fête, qui ouvre les caves d'un secteur différent de la "
+      },
+      {
+       "_key": "a9o",
+       "_type": "span",
+       "marks": [
+        "a9n"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "a9p",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "a9n",
+       "_type": "link",
+       "href": "/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "aa4",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "a9r",
+       "_type": "span",
+       "marks": [],
+       "text": "Les journées des trois grands cépages sont aussi l'occasion de parler d'assemblage : le "
+      },
+      {
+       "_key": "a9t",
+       "_type": "span",
+       "marks": [
+        "a9s"
+       ],
+       "text": "pinot noir"
+      },
+      {
+       "_key": "a9u",
+       "_type": "span",
+       "marks": [],
+       "text": " le 18 août, le "
+      },
+      {
+       "_key": "a9w",
+       "_type": "span",
+       "marks": [
+        "a9v"
+       ],
+       "text": "chardonnay"
+      },
+      {
+       "_key": "a9x",
+       "_type": "span",
+       "marks": [],
+       "text": " le 27 mai et le "
+      },
+      {
+       "_key": "a9z",
+       "_type": "span",
+       "marks": [
+        "a9y"
+       ],
+       "text": "meunier"
+      },
+      {
+       "_key": "aa0",
+       "_type": "span",
+       "marks": [],
+       "text": " le 16 décembre. Sans oublier le "
+      },
+      {
+       "_key": "aa2",
+       "_type": "span",
+       "marks": [
+        "aa1"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "aa3",
+       "_type": "span",
+       "marks": [],
+       "text": ", appelé fromenteau en Champagne, le 17 mai."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "a9s",
+       "_type": "link",
+       "href": "/pinot-noir-champagne/"
+      },
+      {
+       "_key": "a9v",
+       "_type": "link",
+       "href": "/chardonnay-champagne/"
+      },
+      {
+       "_key": "a9y",
+       "_type": "link",
+       "href": "/meunier-cepage-champagne/"
+      },
+      {
+       "_key": "aa1",
+       "_type": "link",
+       "href": "/pinot-gris-fromenteau-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "aa6",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aa5",
+       "_type": "span",
+       "marks": [],
+       "text": "Communiquer dans le respect de la loi Évin"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aa8",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aa7",
+       "_type": "span",
+       "marks": [],
+       "text": "En France, la loi Évin encadre la communication sur l'alcool. Elle autorise une information objective : l'origine, le terroir, les cépages, le mode d'élaboration, les distinctions. C'est justement là que le marronnier est précieux : il invite à parler d'éducation au goût, de terroir et de patrimoine plutôt que de fête ou de consommation."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aaa",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aa9",
+       "_type": "span",
+       "marks": [],
+       "text": "Quelques réflexes : la mention sanitaire sur vos visuels, aucune association avec la réussite sociale ou la séduction, pas d'incitation à boire. En marketing d'influence, les collaborations avec des créateurs de contenu doivent aussi respecter la loi Évin et être clairement signalées comme commerciales."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aac",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aab",
+       "_type": "span",
+       "marks": [],
+       "text": "Nous n'avons pas retenu certaines journées qui incitent directement à boire."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aae",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aad",
+       "_type": "span",
+       "marks": [],
+       "text": "Venir déguster avec nous"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aam",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aaf",
+       "_type": "span",
+       "marks": [],
+       "text": "Envie d'illustrer une de ces journées avec des champagnes de vignerons de l'Aube ? Nous organisons des "
+      },
+      {
+       "_key": "aah",
+       "_type": "span",
+       "marks": [
+        "aag"
+       ],
+       "text": "dégustations privées"
+      },
+      {
+       "_key": "aai",
+       "_type": "span",
+       "marks": [],
+       "text": ", à Troyes ou chez vous, et accompagnons les "
+      },
+      {
+       "_key": "aak",
+       "_type": "span",
+       "marks": [
+        "aaj"
+       ],
+       "text": "restaurants, cavistes et hôtels"
+      },
+      {
+       "_key": "aal",
+       "_type": "span",
+       "marks": [],
+       "text": " dans le choix de leurs cuvées."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "aag",
+       "_type": "link",
+       "href": "/tasting-troyes/"
+      },
+      {
+       "_key": "aaj",
+       "_type": "link",
+       "href": "/champagne-hotel-restaurants-et-cavistes/"
+      }
+     ],
+     "style": "normal"
+    }
+   ]
+  },
+  "date": "2026-11-20",
+  "extrait": {
+   "_type": "localeText",
+   "en": "Grape, food and spirits days, major trade fairs and our events in the Aube: every 2027 date checked, to filter by month and download as a PDF to build your editorial calendar.",
+   "fr": "Journées des cépages, de la gastronomie et des spiritueux, grands salons et nos rendez-vous dans l'Aube : toutes les dates 2027 vérifiées, à filtrer par mois et à télécharger en PDF pour bâtir votre calendrier éditorial."
+  },
+  "image": {
+   "_type": "imageAvecAlt",
+   "alt": {
+    "_type": "localeString",
+    "en": "A crêpe served with a glass of champagne, for Candlemas",
+    "fr": "Une crêpe servie avec un verre de champagne, pour la Chandeleur"
+   },
+   "asset": {
+    "_ref": "image-ec144c6caf18bd0fc0b6dd6d3f1c92b11d18b5f5-2400x1600-jpg",
+    "_type": "reference"
+   }
+  },
+  "rubriquePrincipale": "actualites",
+  "rubriques": [
+   "tout-savoir"
+  ],
+  "seo": {
+   "_type": "seo",
+   "description": {
+    "_type": "localeText",
+    "en": "All the 2027 wine, food and grape days, checked, to build your editorial calendar, plan your social media posts and organise tastings.",
+    "fr": "Marronnier 2027 : les journées du vin, de la gastronomie et des cépages, vérifiées, pour bâtir votre calendrier éditorial et vos animations."
+   },
+   "title": {
+    "_type": "localeString",
+    "en": "2027 wine & food days: editorial calendar for wine pros",
+    "fr": "Marronnier 2027 : calendrier éditorial vin et gastronomie"
+   }
+  },
+  "slug": {
+   "_type": "slug",
+   "current": "marronnier-2027-calendrier-vin-gastronomie"
+  },
+  "titre": {
+   "_type": "localeString",
+   "en": "2027 wine and food calendar: the editorial calendar for wine professionals",
+   "fr": "Marronnier 2027 : le calendrier éditorial du vin et de la gastronomie"
+  }
+ },
+ {
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "article-quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne",
+  "_rev": "3N6pJ2SYgkS05vKV2FmoDo",
+  "_type": "article",
+  "_updatedAt": "2026-11-20T20:44:04Z",
+  "collaborationCommerciale": false,
+  "contenu": {
+   "_type": "localeRichText",
+   "en": [
+    {
+     "_key": "aum",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aul",
+       "_type": "span",
+       "marks": [],
+       "text": "A variety of vine"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "auo",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aun",
+       "_type": "span",
+       "marks": [],
+       "text": "A grape variety is a variety of vine. Like apples, all bunches look alike from afar, but each variety has its own colour, acidity and aromas. A Golden is not a Granny Smith; a pinot noir is not a chardonnay."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "auq",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aup",
+       "_type": "span",
+       "marks": [],
+       "text": "Three main grapes"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aus",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aur",
+       "_type": "span",
+       "marks": [],
+       "text": "Three grapes cover almost the entire Champagne vineyard. Pinot noir comes first, followed by meunier and chardonnay, almost level. Pinot noir brings structure, meunier roundness and fruit, chardonnay finesse and freshness."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "auu",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aut",
+       "_type": "span",
+       "marks": [],
+       "text": "Five rarer grapes"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "avb",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "auv",
+       "_type": "span",
+       "marks": [],
+       "text": "The appellation rules also allow four old varieties: "
+      },
+      {
+       "_key": "aux",
+       "_type": "span",
+       "marks": [
+        "auw"
+       ],
+       "text": "pinot blanc"
+      },
+      {
+       "_key": "auy",
+       "_type": "span",
+       "marks": [],
+       "text": ", "
+      },
+      {
+       "_key": "av0",
+       "_type": "span",
+       "marks": [
+        "auz"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "av1",
+       "_type": "span",
+       "marks": [],
+       "text": ", "
+      },
+      {
+       "_key": "av3",
+       "_type": "span",
+       "marks": [
+        "av2"
+       ],
+       "text": "arbane"
+      },
+      {
+       "_key": "av4",
+       "_type": "span",
+       "marks": [],
+       "text": " and "
+      },
+      {
+       "_key": "av6",
+       "_type": "span",
+       "marks": [
+        "av5"
+       ],
+       "text": "petit meslier"
+      },
+      {
+       "_key": "av7",
+       "_type": "span",
+       "marks": [],
+       "text": ". Since 2025, an eighth has joined them: "
+      },
+      {
+       "_key": "av9",
+       "_type": "span",
+       "marks": [
+        "av8"
+       ],
+       "text": "chardonnay rose"
+      },
+      {
+       "_key": "ava",
+       "_type": "span",
+       "marks": [],
+       "text": ". Together they occupy only a tiny place in the vineyard."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "auw",
+       "_type": "link",
+       "href": "/en/pinot-blanc-champagne/"
+      },
+      {
+       "_key": "auz",
+       "_type": "link",
+       "href": "/en/pinot-gris-fromenteau-champagne/"
+      },
+      {
+       "_key": "av2",
+       "_type": "link",
+       "href": "/en/arbane-cepage-champagne/"
+      },
+      {
+       "_key": "av5",
+       "_type": "link",
+       "href": "/en/petit-meslier-cepage-champagne/"
+      },
+      {
+       "_key": "av8",
+       "_type": "link",
+       "href": "/en/chardonnay-rose-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "avd",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "avc",
+       "_type": "span",
+       "marks": [],
+       "text": "One grape, two terroirs"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "avl",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ave",
+       "_type": "span",
+       "marks": [],
+       "text": "In the "
+      },
+      {
+       "_key": "avg",
+       "_type": "span",
+       "marks": [
+        "avf"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "avh",
+       "_type": "span",
+       "marks": [],
+       "text": ", pinot noir dominates on Kimmeridgian marl. In "
+      },
+      {
+       "_key": "avj",
+       "_type": "span",
+       "marks": [
+        "avi"
+       ],
+       "text": "Montgueux"
+      },
+      {
+       "_key": "avk",
+       "_type": "span",
+       "marks": [],
+       "text": ", it is chardonnay, on Turonian chalk. Soil, aspect and climate give each grape a different signature. The winemaker then blends the wines to find the balance of each cuvée; some are even made from a single grape."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "avf",
+       "_type": "link",
+       "href": "/en/la-cote-des-bar/"
+      },
+      {
+       "_key": "avi",
+       "_type": "link",
+       "href": "/en/montgueux/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "avn",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "avm",
+       "_type": "span",
+       "marks": [],
+       "text": "Tasting them"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "avv",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "avo",
+       "_type": "span",
+       "marks": [],
+       "text": "To taste these grapes and meet the people who grow them, join one of "
+      },
+      {
+       "_key": "avq",
+       "_type": "span",
+       "marks": [
+        "avp"
+       ],
+       "text": "our tastings"
+      },
+      {
+       "_key": "avr",
+       "_type": "span",
+       "marks": [],
+       "text": ", in Troyes or at your home, or discover "
+      },
+      {
+       "_key": "avt",
+       "_type": "span",
+       "marks": [
+        "avs"
+       ],
+       "text": "the Côte des Bar"
+      },
+      {
+       "_key": "avu",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "avp",
+       "_type": "link",
+       "href": "/en/tasting-troyes/"
+      },
+      {
+       "_key": "avs",
+       "_type": "link",
+       "href": "/en/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    }
+   ],
+   "fr": [
+    {
+     "_key": "atb",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ata",
+       "_type": "span",
+       "marks": [],
+       "text": "Une variété de vigne"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "atd",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "atc",
+       "_type": "span",
+       "marks": [],
+       "text": "Un cépage, c'est une variété de vigne. Comme les pommes, toutes les grappes se ressemblent de loin, mais chaque variété a sa couleur, son acidité, ses arômes. Une golden n'est pas une granny ; un pinot noir n'est pas un chardonnay."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "atf",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ate",
+       "_type": "span",
+       "marks": [],
+       "text": "Trois grands cépages"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "ath",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "atg",
+       "_type": "span",
+       "marks": [],
+       "text": "Trois cépages couvrent la quasi-totalité du vignoble champenois. Le pinot noir arrive en tête, suivi du meunier et du chardonnay, presque à égalité. Le pinot noir apporte la structure, le meunier la rondeur et le fruit, le chardonnay la finesse et la fraîcheur."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "atj",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ati",
+       "_type": "span",
+       "marks": [],
+       "text": "Cinq cépages plus rares"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "au0",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "atk",
+       "_type": "span",
+       "marks": [],
+       "text": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le "
+      },
+      {
+       "_key": "atm",
+       "_type": "span",
+       "marks": [
+        "atl"
+       ],
+       "text": "pinot blanc"
+      },
+      {
+       "_key": "atn",
+       "_type": "span",
+       "marks": [],
+       "text": ", le "
+      },
+      {
+       "_key": "atp",
+       "_type": "span",
+       "marks": [
+        "ato"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "atq",
+       "_type": "span",
+       "marks": [],
+       "text": ", l'"
+      },
+      {
+       "_key": "ats",
+       "_type": "span",
+       "marks": [
+        "atr"
+       ],
+       "text": "arbane"
+      },
+      {
+       "_key": "att",
+       "_type": "span",
+       "marks": [],
+       "text": " et le "
+      },
+      {
+       "_key": "atv",
+       "_type": "span",
+       "marks": [
+        "atu"
+       ],
+       "text": "petit meslier"
+      },
+      {
+       "_key": "atw",
+       "_type": "span",
+       "marks": [],
+       "text": ". Depuis 2025, un huitième les a rejoints : le "
+      },
+      {
+       "_key": "aty",
+       "_type": "span",
+       "marks": [
+        "atx"
+       ],
+       "text": "chardonnay rose"
+      },
+      {
+       "_key": "atz",
+       "_type": "span",
+       "marks": [],
+       "text": ". Ensemble, ils n'occupent qu'une toute petite place dans le vignoble."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "atl",
+       "_type": "link",
+       "href": "/pinot-blanc-champagne/"
+      },
+      {
+       "_key": "ato",
+       "_type": "link",
+       "href": "/pinot-gris-fromenteau-champagne/"
+      },
+      {
+       "_key": "atr",
+       "_type": "link",
+       "href": "/arbane-cepage-champagne/"
+      },
+      {
+       "_key": "atu",
+       "_type": "link",
+       "href": "/petit-meslier-cepage-champagne/"
+      },
+      {
+       "_key": "atx",
+       "_type": "link",
+       "href": "/chardonnay-rose-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "au2",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "au1",
+       "_type": "span",
+       "marks": [],
+       "text": "Un même cépage, deux terroirs"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aua",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "au3",
+       "_type": "span",
+       "marks": [],
+       "text": "Dans la "
+      },
+      {
+       "_key": "au5",
+       "_type": "span",
+       "marks": [
+        "au4"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "au6",
+       "_type": "span",
+       "marks": [],
+       "text": ", le pinot noir domine sur des marnes du Kimméridgien. À "
+      },
+      {
+       "_key": "au8",
+       "_type": "span",
+       "marks": [
+        "au7"
+       ],
+       "text": "Montgueux"
+      },
+      {
+       "_key": "au9",
+       "_type": "span",
+       "marks": [],
+       "text": ", c'est le chardonnay, sur une craie du Turonien. Le sol, l'exposition et le climat donnent à chaque cépage une signature différente. Le vigneron assemble ensuite ses vins pour trouver l'équilibre de chaque cuvée ; certaines sont même issues d'un seul cépage."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "au4",
+       "_type": "link",
+       "href": "/la-cote-des-bar/"
+      },
+      {
+       "_key": "au7",
+       "_type": "link",
+       "href": "/montgueux/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "auc",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aub",
+       "_type": "span",
+       "marks": [],
+       "text": "Les goûter"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "auk",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aud",
+       "_type": "span",
+       "marks": [],
+       "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de "
+      },
+      {
+       "_key": "auf",
+       "_type": "span",
+       "marks": [
+        "aue"
+       ],
+       "text": "nos dégustations"
+      },
+      {
+       "_key": "aug",
+       "_type": "span",
+       "marks": [],
+       "text": ", à Troyes ou chez vous, ou découvrez "
+      },
+      {
+       "_key": "aui",
+       "_type": "span",
+       "marks": [
+        "auh"
+       ],
+       "text": "la Côte des Bar"
+      },
+      {
+       "_key": "auj",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "aue",
+       "_type": "link",
+       "href": "/tasting-troyes/"
+      },
+      {
+       "_key": "auh",
+       "_type": "link",
+       "href": "/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    }
+   ],
+   "it": [
+    {
+     "_key": "ax8",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ax7",
+       "_type": "span",
+       "marks": [],
+       "text": "Una varietà di vite"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "axa",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ax9",
+       "_type": "span",
+       "marks": [],
+       "text": "Un vitigno è una varietà di vite. Come per le mele, da lontano i grappoli si somigliano, ma ogni varietà ha il suo colore, la sua acidità, i suoi aromi. Una golden non è una granny smith; un pinot noir non è uno chardonnay."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "axc",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "axb",
+       "_type": "span",
+       "marks": [],
+       "text": "Tre grandi vitigni"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "axe",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "axd",
+       "_type": "span",
+       "marks": [],
+       "text": "Tre vitigni coprono quasi tutto il vigneto della Champagne. In testa il pinot noir, seguito da meunier e chardonnay, quasi alla pari. Il pinot noir porta struttura, il meunier rotondità e frutto, lo chardonnay finezza e freschezza."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "axg",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "axf",
+       "_type": "span",
+       "marks": [],
+       "text": "Cinque vitigni più rari"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "axx",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "axh",
+       "_type": "span",
+       "marks": [],
+       "text": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il "
+      },
+      {
+       "_key": "axj",
+       "_type": "span",
+       "marks": [
+        "axi"
+       ],
+       "text": "pinot blanc"
+      },
+      {
+       "_key": "axk",
+       "_type": "span",
+       "marks": [],
+       "text": ", il "
+      },
+      {
+       "_key": "axm",
+       "_type": "span",
+       "marks": [
+        "axl"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "axn",
+       "_type": "span",
+       "marks": [],
+       "text": ", l'"
+      },
+      {
+       "_key": "axp",
+       "_type": "span",
+       "marks": [
+        "axo"
+       ],
+       "text": "arbane"
+      },
+      {
+       "_key": "axq",
+       "_type": "span",
+       "marks": [],
+       "text": " e il "
+      },
+      {
+       "_key": "axs",
+       "_type": "span",
+       "marks": [
+        "axr"
+       ],
+       "text": "petit meslier"
+      },
+      {
+       "_key": "axt",
+       "_type": "span",
+       "marks": [],
+       "text": ". Dal 2025 se n'è aggiunto un ottavo: lo "
+      },
+      {
+       "_key": "axv",
+       "_type": "span",
+       "marks": [
+        "axu"
+       ],
+       "text": "chardonnay rose"
+      },
+      {
+       "_key": "axw",
+       "_type": "span",
+       "marks": [],
+       "text": ". Insieme occupano solo un piccolissimo spazio nel vigneto."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "axi",
+       "_type": "link",
+       "href": "/it/pinot-blanc-champagne/"
+      },
+      {
+       "_key": "axl",
+       "_type": "link",
+       "href": "/it/pinot-gris-fromenteau-champagne/"
+      },
+      {
+       "_key": "axo",
+       "_type": "link",
+       "href": "/it/arbane-cepage-champagne/"
+      },
+      {
+       "_key": "axr",
+       "_type": "link",
+       "href": "/it/petit-meslier-cepage-champagne/"
+      },
+      {
+       "_key": "axu",
+       "_type": "link",
+       "href": "/it/chardonnay-rose-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "axz",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "axy",
+       "_type": "span",
+       "marks": [],
+       "text": "Un vitigno, due terroir"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "ay7",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ay0",
+       "_type": "span",
+       "marks": [],
+       "text": "Nella "
+      },
+      {
+       "_key": "ay2",
+       "_type": "span",
+       "marks": [
+        "ay1"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "ay3",
+       "_type": "span",
+       "marks": [],
+       "text": " domina il pinot noir, sulle marne del Kimmeridgiano. A "
+      },
+      {
+       "_key": "ay5",
+       "_type": "span",
+       "marks": [
+        "ay4"
+       ],
+       "text": "Montgueux"
+      },
+      {
+       "_key": "ay6",
+       "_type": "span",
+       "marks": [],
+       "text": " è lo chardonnay, sul gesso del Turoniano. Suolo, esposizione e clima danno a ogni vitigno una firma diversa. Il vignaiolo assembla poi i suoi vini per trovare l'equilibrio di ogni cuvée; alcune nascono persino da un solo vitigno."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "ay1",
+       "_type": "link",
+       "href": "/it/la-cote-des-bar/"
+      },
+      {
+       "_key": "ay4",
+       "_type": "link",
+       "href": "/it/montgueux/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "ay9",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ay8",
+       "_type": "span",
+       "marks": [],
+       "text": "Assaggiarli"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "ayh",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aya",
+       "_type": "span",
+       "marks": [],
+       "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle "
+      },
+      {
+       "_key": "ayc",
+       "_type": "span",
+       "marks": [
+        "ayb"
+       ],
+       "text": "nostre degustazioni"
+      },
+      {
+       "_key": "ayd",
+       "_type": "span",
+       "marks": [],
+       "text": ", a Troyes o a casa vostra, oppure scoprite "
+      },
+      {
+       "_key": "ayf",
+       "_type": "span",
+       "marks": [
+        "aye"
+       ],
+       "text": "la Côte des Bar"
+      },
+      {
+       "_key": "ayg",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "ayb",
+       "_type": "link",
+       "href": "/it/tasting-troyes/"
+      },
+      {
+       "_key": "aye",
+       "_type": "link",
+       "href": "/it/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    }
+   ],
+   "nl": [
+    {
+     "_key": "avx",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "avw",
+       "_type": "span",
+       "marks": [],
+       "text": "Een wijnstokvariëteit"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "avz",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "avy",
+       "_type": "span",
+       "marks": [],
+       "text": "Een druivenras is een variëteit van de wijnstok. Net als bij appels lijken alle trossen van ver op elkaar, maar elke variëteit heeft haar eigen kleur, zuurgraad en aroma's. Een golden is geen granny smith; een pinot noir is geen chardonnay."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aw1",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aw0",
+       "_type": "span",
+       "marks": [],
+       "text": "Drie hoofdrassen"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aw3",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aw2",
+       "_type": "span",
+       "marks": [],
+       "text": "Drie rassen beslaan bijna de hele Champagne-wijngaard. Pinot noir staat bovenaan, gevolgd door meunier en chardonnay, bijna gelijk. Pinot noir brengt structuur, meunier rondheid en fruit, chardonnay finesse en frisheid."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aw5",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aw4",
+       "_type": "span",
+       "marks": [],
+       "text": "Vijf zeldzamere rassen"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "awm",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "aw6",
+       "_type": "span",
+       "marks": [],
+       "text": "Het lastenboek van de appellatie staat ook vier oude rassen toe: "
+      },
+      {
+       "_key": "aw8",
+       "_type": "span",
+       "marks": [
+        "aw7"
+       ],
+       "text": "pinot blanc"
+      },
+      {
+       "_key": "aw9",
+       "_type": "span",
+       "marks": [],
+       "text": ", "
+      },
+      {
+       "_key": "awb",
+       "_type": "span",
+       "marks": [
+        "awa"
+       ],
+       "text": "pinot gris"
+      },
+      {
+       "_key": "awc",
+       "_type": "span",
+       "marks": [],
+       "text": ", "
+      },
+      {
+       "_key": "awe",
+       "_type": "span",
+       "marks": [
+        "awd"
+       ],
+       "text": "arbane"
+      },
+      {
+       "_key": "awf",
+       "_type": "span",
+       "marks": [],
+       "text": " en "
+      },
+      {
+       "_key": "awh",
+       "_type": "span",
+       "marks": [
+        "awg"
+       ],
+       "text": "petit meslier"
+      },
+      {
+       "_key": "awi",
+       "_type": "span",
+       "marks": [],
+       "text": ". Sinds 2025 is er een achtste bij: "
+      },
+      {
+       "_key": "awk",
+       "_type": "span",
+       "marks": [
+        "awj"
+       ],
+       "text": "chardonnay rose"
+      },
+      {
+       "_key": "awl",
+       "_type": "span",
+       "marks": [],
+       "text": ". Samen nemen ze maar een heel klein deel van de wijngaard in."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "aw7",
+       "_type": "link",
+       "href": "/nl/pinot-blanc-champagne/"
+      },
+      {
+       "_key": "awa",
+       "_type": "link",
+       "href": "/nl/pinot-gris-fromenteau-champagne/"
+      },
+      {
+       "_key": "awd",
+       "_type": "link",
+       "href": "/nl/arbane-cepage-champagne/"
+      },
+      {
+       "_key": "awg",
+       "_type": "link",
+       "href": "/nl/petit-meslier-cepage-champagne/"
+      },
+      {
+       "_key": "awj",
+       "_type": "link",
+       "href": "/nl/chardonnay-rose-champagne/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "awo",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "awn",
+       "_type": "span",
+       "marks": [],
+       "text": "Eén ras, twee terroirs"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "aww",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "awp",
+       "_type": "span",
+       "marks": [],
+       "text": "In de "
+      },
+      {
+       "_key": "awr",
+       "_type": "span",
+       "marks": [
+        "awq"
+       ],
+       "text": "Côte des Bar"
+      },
+      {
+       "_key": "aws",
+       "_type": "span",
+       "marks": [],
+       "text": " overheerst pinot noir op kimmeridgiaanse mergel. In "
+      },
+      {
+       "_key": "awu",
+       "_type": "span",
+       "marks": [
+        "awt"
+       ],
+       "text": "Montgueux"
+      },
+      {
+       "_key": "awv",
+       "_type": "span",
+       "marks": [],
+       "text": " is het chardonnay, op krijt uit het Turonien. Bodem, ligging en klimaat geven elk ras een eigen handtekening. De wijnmaker assembleert daarna zijn wijnen tot het evenwicht van elke cuvée; sommige komen zelfs van één ras."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "awq",
+       "_type": "link",
+       "href": "/nl/la-cote-des-bar/"
+      },
+      {
+       "_key": "awt",
+       "_type": "link",
+       "href": "/nl/montgueux/"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "awy",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "awx",
+       "_type": "span",
+       "marks": [],
+       "text": "Ze proeven"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "ax6",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "awz",
+       "_type": "span",
+       "marks": [],
+       "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van "
+      },
+      {
+       "_key": "ax1",
+       "_type": "span",
+       "marks": [
+        "ax0"
+       ],
+       "text": "onze proeverijen"
+      },
+      {
+       "_key": "ax2",
+       "_type": "span",
+       "marks": [],
+       "text": ", in Troyes of bij u thuis, of ontdek "
+      },
+      {
+       "_key": "ax4",
+       "_type": "span",
+       "marks": [
+        "ax3"
+       ],
+       "text": "de Côte des Bar"
+      },
+      {
+       "_key": "ax5",
+       "_type": "span",
+       "marks": [],
+       "text": "."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "ax0",
+       "_type": "link",
+       "href": "/nl/tasting-troyes/"
+      },
+      {
+       "_key": "ax3",
+       "_type": "link",
+       "href": "/nl/la-cote-des-bar/"
+      }
+     ],
+     "style": "normal"
+    }
+   ]
+  },
+  "date": "2025-08-11",
+  "extrait": {
+   "_type": "localeText",
+   "en": "Pinot noir, meunier, chardonnay and five rarer grapes: what a grape variety is, and why it changes everything in your glass.",
+   "fr": "Pinot noir, meunier, chardonnay, et cinq cépages plus rares : ce qu'est un cépage, et pourquoi il change tout dans votre verre.",
+   "it": "Pinot noir, meunier, chardonnay e cinque vitigni più rari: che cos'è un vitigno e perché cambia tutto nel bicchiere.",
+   "nl": "Pinot noir, meunier, chardonnay en vijf zeldzamere rassen: wat een druivenras is, en waarom het alles verandert in uw glas."
+  },
+  "image": {
+   "_type": "imageAvecAlt",
+   "alt": {
+    "_type": "localeString",
+    "en": "Bunch of pinot noir among autumn-coloured vine leaves",
+    "fr": "Grappe de pinot noir entre des feuilles de vigne aux couleurs d'automne"
+   },
+   "asset": {
+    "_ref": "image-0c682b4c0ac168ff54015780552b4daef38ea891-1350x2400-jpg",
+    "_type": "reference"
+   },
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  "rubrique": "comprendre",
+  "rubriquePrincipale": "tout-savoir",
+  "rubriques": [],
+  "seo": {
+   "_type": "seo",
+   "description": {
+    "_type": "localeText",
+    "en": "What is a grape variety? The 8 grapes permitted in Champagne, from pinot noir to chardonnay rose, and how they express themselves in the Côte des Bar and Montgueux.",
+    "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages autorisés en Champagne, du pinot noir au chardonnay rose, et leur expression dans la Côte des Bar et à Montgueux.",
+    "it": "Che cos'è un vitigno? Gli 8 vitigni ammessi in Champagne, dal pinot noir allo chardonnay rose, e la loro espressione nella Côte des Bar e a Montgueux.",
+    "nl": "Wat is een druivenras? De 8 toegestane rassen in de Champagne, van pinot noir tot chardonnay rose, en hun uitdrukking in de Côte des Bar en Montgueux."
+   },
+   "title": {
+    "_type": "localeString",
+    "en": "Champagne grapes: pinot noir, meunier, chardonnay and more",
+    "fr": "Les cépages du champagne : pinot noir, meunier, chardonnay",
+    "it": "I vitigni dello champagne: pinot noir, meunier, chardonnay e vitigni rari | Champagne de l'Aube",
+    "nl": "Druivenrassen van champagne: pinot noir, meunier, chardonnay en zeldzame rassen | Champagne de l'Aube"
+   }
+  },
+  "slug": {
+   "_type": "slug",
+   "current": "quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne"
+  },
+  "titre": {
+   "_type": "localeString",
+   "en": "What is a grape variety? The 8 grapes of champagne",
+   "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages du champagne",
+   "it": "Che cos'è un vitigno? Gli 8 vitigni dello champagne",
+   "nl": "Wat is een druivenras? De 8 druivenrassen van champagne"
+  }
+ }
+]

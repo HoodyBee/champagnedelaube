@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
+import { Link } from "@/i18n/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -20,7 +21,7 @@ const HREF = "/le-terroir-de-laube";
 export async function generateMetadata({ params }: PageProps<"/[locale]/le-terroir-de-laube">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const p = await getTerroirAube(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: p.seo.title!, description: p.seo.description! });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: p.seo.title!, description: p.seo.description!, image: p.hero.image });
 }
 
 /** Les Terroirs Aubois : page centrale (situation, sols, climat, histoire, cépages, 4 terroirs). */
@@ -30,6 +31,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
   const p = await getTerroirAube(locale);
   const t = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
+  const tC = await getTranslations("cepagesPage");
   const tPro = await getTranslations("terroirPage");
 
   return (
@@ -41,6 +43,11 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         <div className="mx-auto max-w-2xl">
           <TerroirCards />
         </div>
+        <p className="mt-space-3 text-center">
+          <Link href="/champagne-troyes" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+            {t("troyesLien")} <span aria-hidden="true">→</span>
+          </Link>
+        </p>
       </Section>
 
       {p.chapitres.map((c, i) => (
@@ -65,6 +72,11 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
             </li>
           ))}
         </ul>
+        <div className="mt-space-3 text-center">
+          <Link href="/cepages-champagne" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+            {tC("tousLien")} <span aria-hidden="true">→</span>
+          </Link>
+        </div>
       </Section>
 
       {p.faq.length > 0 && (
@@ -73,7 +85,7 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
         </Section>
       )}
 
-      <DansLeMag locale={locale} chemins={["/le-terroir-de-laube"]} rubrique="terroirs-cepages" />
+      <DansLeMag locale={locale} chemins={["/le-terroir-de-laube"]} rubrique="tout-savoir" />
 
       <Section fond="chaude">
         <div className="flex flex-col items-center justify-center gap-space-1 sm:flex-row">

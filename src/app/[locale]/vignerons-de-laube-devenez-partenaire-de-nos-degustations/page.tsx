@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/vigneron
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "partenairePage" });
   const page = await getPageContent(CLE, locale);
-  return pageMetadata({ locale, href: HREF, seo: page.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: page.seo, title: t("metaTitle"), description: t("metaDescription"), image: page.image });
 }
 
 /** Vignerons : devenez partenaire. Présentation courte + formulaire de candidature. */
@@ -53,6 +53,7 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
       </header>
 
       <Section>
+        <h2 className="sr-only">{t("argumentsTitre")}</h2>
         <Arguments items={points} />
         {page.contenu?.length ? <RichText value={page.contenu} locale={locale} className="mx-auto mt-space-5 max-w-3xl" /> : null}
       </Section>

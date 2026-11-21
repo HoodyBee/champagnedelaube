@@ -3,11 +3,10 @@ import { icon } from "../../icons";
 import { requireFr } from "../objects/localized";
 
 /**
- * Rubrique du Mag. Six rubriques existent déjà sans rien créer ici : Portraits de
- * vignerons (portraits), Terroirs & cépages (terroirs-cepages), Accords mets & champagne
- * (accords), Tout savoir sur le champagne (tout-savoir), Œnotourisme (oenotourisme) et
- * Actualités (actualites). Créez une rubrique ici pour en ajouter une, ou pour renommer
- * l'une d'elles (même code).
+ * Rubrique du Mag. Cinq rubriques existent déjà sans rien créer ici : Actu (actualites),
+ * Accords mets & champagne (accords), Tout savoir sur le champagne (tout-savoir),
+ * Portraits (portraits) et Autres horizons (autres-horizons). Créez une rubrique ici pour
+ * en ajouter une, ou pour renommer l'une d'elles (même code).
  */
 export const rubrique = defineType({
   name: "rubrique",

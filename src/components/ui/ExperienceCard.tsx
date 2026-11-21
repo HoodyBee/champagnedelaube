@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { LineIcon } from "./LineIcon";

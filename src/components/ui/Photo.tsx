@@ -1,5 +1,7 @@
 import type React from "react";
-import Image from "next/image";
+import NextImage from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
+import { logos } from "@/lib/brand";
 import type { Img } from "./types";
 
 /**
@@ -30,7 +32,7 @@ export function Photo({
   /** Image d'ouverture : sur mobile et tablette, bandeau bas (16:9, un tiers de l'écran au plus) pour laisser lire le titre. */
   compactMobile?: boolean;
 }) {
-  return (
+  const cadre = (
     <div
       className={`relative overflow-hidden bg-creme-clair ${compactMobile ? "aspect-video max-h-[33svh] w-full lg:max-h-none lg:aspect-[var(--ar)]" : ""} ${className}`}
       style={compactMobile ? ({ "--ar": ratio.replace("/", " / ") } as React.CSSProperties) : { aspectRatio: ratio }}
@@ -45,17 +47,23 @@ export function Photo({
           placeholder={image.blurDataURL ? "blur" : "empty"}
           blurDataURL={image.blurDataURL}
           className="object-cover"
+          style={image.position ? { objectPosition: image.position } : undefined}
         />
       ) : (
-        // Visuel provisoire sobre (motif vitrail très discret), en attendant la photo.
-        placeholder === "sobre" ? (
-          <div data-photo-a-venir className="absolute inset-0 flex items-end justify-center border border-filet bg-gradient-to-b from-creme-clair to-creme/60 p-space-2">
-            {placeholderText && <span className="text-sur-titre-petit text-gris-chaud/70">{placeholderText}</span>}
-          </div>
-        ) : (
-          <div data-photo-a-venir className="vitrail absolute inset-0 border border-filet" aria-hidden="true" />
-        )
+        // Jamais de motif à la place d'une photo : notre logo (la bouteille) sur fond crème.
+        <div data-photo-a-venir aria-hidden="true" className="absolute inset-0 flex items-center justify-center border border-filet bg-creme-clair">
+          <NextImage src={logos.avatar.src} alt="" width={96} height={96} sizes="96px" className="h-[22%] max-h-24 min-h-12 w-auto opacity-90" />
+        </div>
       )}
     </div>
+  );
+  // Légende honnête sous la photo, si elle est renseignée dans le Studio.
+  return image?.legende ? (
+    <figure>
+      {cadre}
+      <figcaption className="mt-1 text-legende text-gris-chaud">{image.legende}</figcaption>
+    </figure>
+  ) : (
+    cadre
   );
 }

@@ -3,9 +3,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Paragraphs } from "@/components/legal/Paragraphs";
 import { RichText } from "@/components/ui/RichText";
-import { localizedAlternates, robotsFor } from "@/i18n/metadata";
+import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { adresseSiege } from "@/lib/legal";
+import { AUDIENCE_ACTIVE } from "@/lib/audience";
 import { localize } from "@/sanity/lib/i18n";
 import { getPage, getReglages } from "@/sanity/queries";
 
@@ -15,12 +16,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/politiqu
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "privacy" });
   const page = await getPage("confidentialite");
-  return {
-    title: localize(page?.seo?.title, locale) ?? localize(page?.titre, locale) ?? t("title"),
+  return pageMetadata({
+    locale,
+    href: "/politique-de-confidentialite",
+    title: localize(page?.seo?.title, locale) ?? t("metaTitle"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: await localizedAlternates("/politique-de-confidentialite", locale),
-    robots: await robotsFor(locale),
-  };
+  });
 }
 
 /**
@@ -52,6 +53,7 @@ export default async function PrivacyPage({ params }: PageProps<"/[locale]/polit
               <section key={key} aria-labelledby={`pc-${key}`} className="mt-space-4">
                 <h2 id={`pc-${key}`} className="text-titre-section">{t(`sections.${key}.title`)}</h2>
                 <Paragraphs text={t(`sections.${key}.text`, { adresse })} />
+                {key === "cookies" && AUDIENCE_ACTIVE && <Paragraphs text={t("audience")} />}
               </section>
             ))}
           </>

@@ -8,44 +8,76 @@ import type { DomaineCardData } from "@/components/ui/DomaineCard";
 import type { Locale } from "@/i18n/routing";
 import type { CepageKey, PictoKey, TerroirKey } from "@/lib/brand";
 import { fallbackVignerons } from "@/lib/fallback-vignerons";
+import { typoFr } from "@/lib/typo";
 import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
 import { sanityFetch } from "./lib/fetch";
-import { urlFor } from "./lib/image";
+import { urlFor, urlPartage } from "./lib/image";
+import { dataset, projectId } from "./env";
 
 // ---------------------------------------------------------------------------
 // Images
 // ---------------------------------------------------------------------------
-const IMG = `{alt, credit, hotspot, crop, asset->{_id, url, metadata{lqip, dimensions{width, height}}}}`;
+const IMG = `{alt, legende, credit, hotspot, crop, asset->{_id, url, originalFilename, creditLine, metadata{lqip, dimensions{width, height}}}}`;
 type SanityImg = {
   alt?: Localized;
+  legende?: Localized;
   credit?: string;
-  hotspot?: unknown;
+  hotspot?: { x?: number; y?: number } | null;
   crop?: unknown;
-  asset?: { _id: string; url: string; metadata?: { lqip?: string; dimensions?: { width: number; height: number } } };
+  asset?: { _id: string; url: string; originalFilename?: string; creditLine?: string; metadata?: { lqip?: string; dimensions?: { width: number; height: number } } };
 } | null;
+
+/** Crédit des photos maison (modifiable photo par photo dans le Studio). */
+export const CREDIT_PAR_DEFAUT = "© Champagne de l'Aube / Detectezmoi.com";
+
+/**
+ * Ajoute le nom lisible du fichier à l'adresse Sanity (vanity filename) :
+ * https://cdn.sanity.io/images/…/hash-2400x1600.jpg/degustation-champagne-les-riceys-2025.jpg?…
+ */
+export function avecNomLisible(url: string, nomFichier?: string): string {
+  if (!nomFichier || !url.startsWith("https://cdn.sanity.io/images/")) return url;
+  const propre = nomFichier
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9.]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const [chemin, requete] = url.split("?");
+  return `${chemin}/${propre}${requete ? `?${requete}` : ""}`;
+}
 
 /** Image Sanity -> image prête pour next/image (recadrée selon le point d'intérêt). */
 export function toImg(img: SanityImg | undefined, locale: Locale, width = 1600): Img | null {
   if (!img?.asset?._id) return null;
   const d = img.asset.metadata?.dimensions ?? { width: 1600, height: 1067 };
+  const nom = img.asset.originalFilename;
   return {
-    src: urlFor(img as never).width(width).fit("max").url(),
+    src: avecNomLisible(urlFor(img as never).width(width).fit("max").url(), nom),
     alt: localize(img.alt, locale) ?? "",
     width,
     height: Math.round((width * d.height) / d.width),
     blurDataURL: img.asset.metadata?.lqip,
+    legende: localize(img.legende, locale) || undefined,
+    position:
+      typeof img.hotspot?.x === "number" && typeof img.hotspot?.y === "number"
+        ? `${Math.round(img.hotspot.x * 100)}% ${Math.round(img.hotspot.y * 100)}%`
+        : undefined,
+    credit: img.credit || img.asset.creditLine || CREDIT_PAR_DEFAUT,
+    og: avecNomLisible(urlPartage(img as never), nom?.replace(/\.\w+$/, ".jpg")),
   };
 }
 
 const L = (v: Localized | undefined, locale: Locale) => localize(v, locale) || undefined;
 type LocalizedBlocks = Localized<PortableTextBlock[]>;
 type SeoRaw = { title?: Localized; description?: Localized; noIndex?: boolean; image?: SanityImg };
-export type Seo = { title?: string; description?: string; noIndex?: boolean };
+/** image : « Image de partage » du Studio, déjà recadrée en 1200 × 630. */
+export type Seo = { title?: string; description?: string; noIndex?: boolean; image?: string };
 const seoOf = (s: SeoRaw | undefined, locale: Locale): Seo => ({
   title: L(s?.title, locale),
   description: L(s?.description, locale),
   noIndex: s?.noIndex,
+  image: s?.image?.asset ? urlPartage(s.image as never) : undefined,
 });
 
 // ---------------------------------------------------------------------------
@@ -109,7 +141,7 @@ type VigneronRaw = {
   image?: SanityImg;
 };
 
-export type Vigneron = DomaineCardData & { accroche?: string; espacePro: boolean; partenaire: boolean };
+export type Vigneron = DomaineCardData & { accroche?: string; espacePro: boolean; partenaire: boolean; cepages: CepageKey[] };
 
 const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   slug: v.slug,
@@ -123,7 +155,45 @@ const cardOf = (v: VigneronRaw, locale: Locale): Vigneron => ({
   labels: v.labels ?? [],
   espacePro: v.espacePro !== false,
   partenaire: v.partenaire !== false,
+  cepages: v.cepages ?? [],
 });
+
+/**
+ * Photo de la Médiathèque désignée par son identifiant (image-<hash>-<l>x<h>-<ext>), pour les pages
+ * dont le texte est dans le dépôt (ex. Troyes). Texte alternatif et légende fournis par la page.
+ */
+export function imgDepuisAsset(
+  asset: string,
+  fichier: string,
+  alt: { fr: string; en: string },
+  locale: Locale,
+  width = 1600,
+  legende?: { fr: string; en: string },
+): Img | null {
+  const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(asset) ?? [];
+  if (!hash) return null;
+  const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
+  return toImg(
+    { alt, legende, asset: { _id: asset, url, originalFilename: fichier, metadata: { dimensions: { width: Number(w), height: Number(h) } } } },
+    locale,
+    width,
+  );
+}
+
+/** Photo d'une fiche par défaut (image de la Médiathèque désignée par son identifiant). */
+const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, width = 900): Img | null => {
+  if (!f.photo) return null;
+  const [, hash, w, h, ext] = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(f.photo.asset) ?? [];
+  const url = `https://cdn.sanity.io/images/${projectId}/${dataset}/${hash}-${w}x${h}.${ext}`;
+  return toImg(
+    {
+      alt: f.photo.alt,
+      asset: { _id: f.photo.asset, url, originalFilename: f.photo.fichier, metadata: { dimensions: { width: Number(w) || 1600, height: Number(h) || 1067 } } },
+    },
+    locale,
+    width,
+  );
+};
 
 const fallbackCards = (locale: Locale): Vigneron[] =>
   fallbackVignerons.map((f) => ({
@@ -131,13 +201,14 @@ const fallbackCards = (locale: Locale): Vigneron[] =>
     nom: f.nom,
     village: f.village,
     terroir: f.terroir,
-    philosophie: f.philosophie[locale],
-    accroche: f.accroche[locale],
-    portrait: null,
+    philosophie: locale === "fr" ? typoFr(f.philosophie.fr) : f.philosophie[locale],
+    accroche: locale === "fr" ? typoFr(f.accroche.fr) : f.accroche[locale],
+    portrait: photoFallback(f, locale),
     thematiques: f.thematiques,
     labels: f.labels,
     espacePro: true,
     partenaire: true,
+    cepages: f.cepages,
   }));
 
 /** Tous les vignerons publiés ; à défaut, les fiches par défaut. */
@@ -208,7 +279,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
   if (!f) return null;
   return {
     ...fallbackCards(locale).find((c) => c.slug === slug)!,
-    image: null,
+    image: photoFallback(f, locale, 1600),
     intro: undefined,
     histoire: undefined,
     personnes: f.personnes.map((p) => ({ nom: p.nom, role: p.role[locale], photo: null })),
@@ -218,7 +289,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
     logo: null,
     galerie: [],
     collaborationCommerciale: false,
-    seo: {},
+    seo: { description: f.description?.[locale] ? typoFr(f.description[locale]!) : undefined },
   };
 }
 
@@ -408,7 +479,7 @@ export async function getPageContent(cle: string, locale: Locale) {
 // ---------------------------------------------------------------------------
 
 /** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["portraits", "terroirs-cepages", "accords", "tout-savoir", "oenotourisme", "actualites"] as const;
+export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",
@@ -421,7 +492,9 @@ export function rubriqueHref(code: string) {
     : ({ pathname: "/le-mag/[rubrique]", params: { rubrique: code } } as const);
 }
 /** Anciennes rubriques de WordPress -> codes du Mag. */
-const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords" };
+/** Étape 13 : « Terroirs & cépages » rejoint « Tout savoir », « Œnotourisme » rejoint « Autres horizons ». */
+const RUBRIQUE_ANCIENNE: Record<string, string> = { comprendre: "tout-savoir", recettes: "accords", "terroirs-cepages": "tout-savoir", oenotourisme: "autres-horizons" };
+const rubriqueActuelle = (r: string) => RUBRIQUE_ANCIENNE[r] ?? r;
 
 export type Rubrique = { cle: string; titre?: string; description?: string };
 
@@ -465,11 +538,12 @@ const articleCardOf = (a: ArticleRaw, locale: Locale): ArticleCard | null => {
   const titre = L(a.titre, locale);
   if (!titre || !a.slug) return null;
   const ancienne = a.rubrique ? RUBRIQUE_ANCIENNE[a.rubrique] ?? a.rubrique : undefined;
-  const principale = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
+  const principaleBrute = a.rubriquePrincipale || a.rubriques?.[0] || ancienne;
+  const principale = principaleBrute ? rubriqueActuelle(principaleBrute) : undefined;
   const rubriques = [
     ...(principale ? [principale] : []),
-    ...(a.rubriques ?? []),
-    ...(a.autresRubriques ?? []).filter((r): r is string => !!r),
+    ...(a.rubriques ?? []).map(rubriqueActuelle),
+    ...(a.autresRubriques ?? []).filter((r): r is string => !!r).map(rubriqueActuelle),
     ...(ancienne && !a.rubriques?.length ? [ancienne] : []),
   ];
   return {
@@ -766,10 +840,24 @@ export type TerroirPage = {
   contenu?: PortableTextBlock[];
   sols?: string;
   cepagesDominants: CepageKey[];
+  /** Cépages majoritaires (vérifiés : docs/terroirs-sources.md). */
+  cepagesMajoritaires: CepageKey[];
   cepagesNotes?: Partial<Record<CepageKey, string>>;
   secteurs: { titre: string; texte?: PortableTextBlock[]; texteSimple?: string }[];
   galerie: Img[];
   seo: Seo;
+};
+
+/**
+ * Cépages majoritaires vérifiés (docs/terroirs-sources.md) : pinot noir dans la Côte des Bar (plus de 80 %)
+ * et aux Riceys (très largement majoritaire) ; chardonnay à Montgueux (85 à 90 %) et à Villenauxe-la-Grande.
+ * Modifiables dans le Studio (champ « Cépages majoritaires »).
+ */
+const MAJORITAIRES_PAR_DEFAUT: Record<TerroirKey, CepageKey[]> = {
+  "cote-des-bar": ["pinot-noir"],
+  "les-riceys": ["pinot-noir"],
+  montgueux: ["chardonnay"],
+  villenauxe: ["chardonnay"],
 };
 
 export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<TerroirPage> {
@@ -783,11 +871,12 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     contenu?: LocalizedBlocks;
     sols?: Localized;
     cepagesDominants?: CepageKey[];
+    cepagesMajoritaires?: CepageKey[];
     secteurs?: BlocRaw[];
     galerie?: SanityImg[];
     seo?: SeoRaw;
   } | null>({
-    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants,
+    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants, cepagesMajoritaires,
       secteurs[]{icone, surTitre, titre, texte, points, image ${IMG}}, galerie[] ${IMG}, seo}`,
     params: { cle },
     tags: ["terroir"],
@@ -812,6 +901,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
       contenu: contenuSanity,
       sols: L(t.sols, locale),
       cepagesDominants: t.cepagesDominants ?? [],
+      cepagesMajoritaires: t.cepagesMajoritaires?.length ? t.cepagesMajoritaires : MAJORITAIRES_PAR_DEFAUT[cle],
       secteurs: (t.secteurs ?? []).map((s) => blocOf(s, locale)).filter((s) => s.titre).map((s) => ({ titre: s.titre!, texte: s.texte })),
       galerie: (t.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
       seo: seoOf(t.seo, locale),
@@ -828,6 +918,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     contenu: sectionsEnBlocs(d.sections, locale),
     sols: d.sols ? tr(d.sols, locale) : undefined,
     cepagesDominants: d.cepagesDominants,
+    cepagesMajoritaires: MAJORITAIRES_PAR_DEFAUT[cle],
     cepagesNotes: Object.fromEntries(Object.entries(d.cepagesNotes ?? {}).map(([k, v]) => [k, tr(v, locale)])),
     secteurs: (d.secteurs ?? []).map((s) => ({ titre: tr(s.titre, locale), texteSimple: tr(s.texte, locale) })),
     galerie: [],
@@ -887,6 +978,74 @@ export async function getTerroirAube(locale: Locale): Promise<TerroirAubePage> {
     faq: faq.length ? faq : a.faq.map((q) => ({ question: tr(q.question, locale), reponse: tr(q.reponse, locale) })),
     seo: { ...seoOf(p?.seo, locale), title: L(p?.seo?.title, locale) ?? tr(a.seo.title, locale), description: L(p?.seo?.description, locale) ?? tr(a.seo.description, locale) },
   };
+}
+
+// ---------------------------------------------------------------------------
+// Cépages : fiche Sanity (photos, et textes si remplis), sinon textes sourcés du dépôt
+// ---------------------------------------------------------------------------
+export type CepagePage = {
+  cle: CepageKey;
+  nom: string;
+  statut: "principal" | "vifa";
+  groupe: "grands" | "rares" | "nouveaux";
+  couleur: string;
+  aussiAppele?: string;
+  resume: string;
+  accroche?: string;
+  image: Img | null;
+  galerie: Img[];
+  /** Texte saisi dans le Studio (sinon : sections sourcées ci-dessous). */
+  contenu?: PortableTextBlock[];
+  sections: { id: string; titre: string; texte: PortableTextBlock[] }[];
+  terroirs: TerroirKey[];
+  seo: Seo;
+};
+
+type CepageRaw = {
+  cle?: CepageKey;
+  image?: SanityImg;
+  galerie?: SanityImg[];
+  resume?: Localized;
+  accroche?: Localized;
+  contenu?: LocalizedBlocks;
+  seo?: SeoRaw;
+};
+const CEPAGE_PROJ = `{cle, image ${IMG}, galerie[] ${IMG}, resume, accroche, contenu, seo}`;
+
+async function cepageDepuis(cle: CepageKey, raw: CepageRaw | undefined, locale: Locale): Promise<CepagePage> {
+  const { cepagesContenu } = await import("@/lib/cepages-contenu");
+  const { tr, paragrapheEnBloc } = await import("@/lib/terroirs-contenu");
+  const { cepages } = await import("@/lib/brand");
+  const d = cepagesContenu[cle];
+  const contenu = localize(raw?.contenu, locale);
+  const seo = seoOf(raw?.seo, locale);
+  return {
+    cle,
+    nom: cepages[cle].label,
+    statut: d.statut,
+    groupe: d.groupe,
+    couleur: tr(d.couleur, locale),
+    aussiAppele: d.aussiAppele ? tr(d.aussiAppele, locale) : undefined,
+    resume: L(raw?.resume, locale) ?? tr(d.resume, locale),
+    accroche: L(raw?.accroche, locale) ?? tr(d.accroche, locale),
+    image: toImg(raw?.image, locale),
+    galerie: (raw?.galerie ?? []).map((g) => toImg(g, locale, 1200)).filter((g): g is Img => !!g),
+    contenu: contenu?.length ? contenu : undefined,
+    sections: d.sections.map((s) => ({ id: s.id, titre: tr(s.titre, locale), texte: s.paragraphes.map((p) => paragrapheEnBloc(tr(p, locale), locale)) })),
+    terroirs: d.terroirs,
+    seo: { ...seo, title: seo.title ?? tr(d.seo.title, locale), description: seo.description ?? tr(d.seo.description, locale) },
+  };
+}
+
+export async function getCepage(cle: CepageKey, locale: Locale): Promise<CepagePage> {
+  const raw = await sanityFetch<CepageRaw | null>({ query: `*[_type == "cepage" && cle == $cle][0]${CEPAGE_PROJ}`, params: { cle }, tags: ["cepage"] });
+  return cepageDepuis(cle, raw ?? undefined, locale);
+}
+
+export async function getCepages(locale: Locale): Promise<CepagePage[]> {
+  const { ORDRE_CEPAGES } = await import("@/lib/cepages-contenu");
+  const raws = (await sanityFetch<CepageRaw[]>({ query: `*[_type == "cepage"]${CEPAGE_PROJ}`, tags: ["cepage"] })) ?? [];
+  return Promise.all(ORDRE_CEPAGES.map((cle) => cepageDepuis(cle, raws.find((r) => r.cle === cle), locale)));
 }
 
 // ---------------------------------------------------------------------------
@@ -1054,4 +1213,15 @@ export async function getSlugsArticlesLiantVers(chemins: string[]): Promise<stri
       tags: ["article"],
     })) ?? []
   );
+}
+
+/** Crédits des photos de banques d'images (crédit différent du crédit maison), pour les mentions légales. */
+export async function getCreditsBanquesImages(): Promise<string[]> {
+  return (
+    (await sanityFetch<string[]>({
+      query: `array::unique(*[_type == "sanity.imageAsset" && defined(creditLine) && creditLine != $maison].creditLine)`,
+      params: { maison: CREDIT_PAR_DEFAUT },
+      tags: ["sanity.imageAsset"],
+    })) ?? []
+  ).sort();
 }

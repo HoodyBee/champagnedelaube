@@ -1,0 +1,37 @@
+{
+ "coffret-cadeau-dore-entreprise.jpg": {
+  "id": "image-b3dd4309a888aeccdde8392d7a809750058efb75-1024x683-jpg",
+  "alt": {
+   "fr": "Personne en tailleur tenant un coffret cadeau doré noué d'un ruban",
+   "en": "Person in a suit holding a gold gift box tied with a ribbon"
+  }
+ },
+ "coffrets-cadeaux-et-flutes-de-champagne.jpg": {
+  "id": "image-0d16659e22fb6654fb402b314fb400324a85b432-960x640-jpg",
+  "alt": {
+   "fr": "Petits coffrets cadeaux colorés et deux flûtes de champagne sur une table en bois",
+   "en": "Small colourful gift boxes and two champagne flutes on a wooden table"
+  }
+ },
+ "serveur-plateau-flutes-de-champagne.jpg": {
+  "id": "image-e6c7b73a269b4c69f29f38f37a21de4303cd1a31-960x1344-jpg",
+  "alt": {
+   "fr": "Serveur présentant un plateau de flûtes de champagne",
+   "en": "Waiter holding a tray of champagne flutes"
+  }
+ },
+ "table-de-restaurant-verres-lumiere-chaude.jpg": {
+  "id": "image-68abdb01277b4b8921a1c81f4407efc03c89495d-1024x682-jpg",
+  "alt": {
+   "fr": "Verres et couverts sur une table de restaurant, dans une lumière chaude",
+   "en": "Glasses and cutlery on a restaurant table in warm light"
+  }
+ },
+ "hall-hotel-elegant-lumiere-doree.jpg": {
+  "id": "image-08d972722e80507ed07081abb83627cebf6ca20d-1024x683-jpg",
+  "alt": {
+   "fr": "Hall d'hôtel élégant avec fauteuil et lampe, dans une lumière dorée",
+   "en": "Elegant hotel lobby with an armchair and a lamp, in golden light"
+  }
+ }
+}

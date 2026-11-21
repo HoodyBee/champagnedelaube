@@ -4,7 +4,7 @@ import { ContactProfils } from "@/components/contact/ContactProfils";
 import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LineIcon } from "@/components/ui/LineIcon";
-import { localizedAlternates, robotsFor } from "@/i18n/metadata";
+import { pageMetadata } from "@/i18n/metadata";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
@@ -16,13 +16,14 @@ import { getPage, getReglages, socialLinks } from "@/sanity/queries";
 export async function generateMetadata({ params }: PageProps<"/[locale]/contact">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "contactPage" });
-  const page = await getPage("contact");
-  return {
+  const [page, contenu] = await Promise.all([getPage("contact"), getPageContent("contact", locale)]);
+  return pageMetadata({
+    locale,
+    href: "/contact",
     title: localize(page?.seo?.title, locale) ?? t("metaTitle"),
     description: localize(page?.seo?.description, locale) ?? t("metaDescription"),
-    alternates: await localizedAlternates("/contact", locale),
-    robots: await robotsFor(locale),
-  };
+    image: contenu.image,
+  });
 }
 
 export default async function ContactPage({ params }: PageProps<"/[locale]/contact">) {

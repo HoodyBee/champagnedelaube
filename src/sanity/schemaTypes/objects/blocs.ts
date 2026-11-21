@@ -40,7 +40,7 @@ export const chiffre = defineType({
       type: "localeString",
       validation: requireFr,
     }),
-    defineField({ name: "label", title: "Légende", description: "Ex. : le vignoble de l'Aube, un quart du vignoble champenois.", type: "localeString", validation: requireFr }),
+    defineField({ name: "label", title: "Légende", description: "Ex. : le vignoble de l'Aube, plus d'un cinquième du vignoble champenois.", type: "localeString", validation: requireFr }),
   ],
   preview: { select: { title: "valeur.fr", subtitle: "label.fr" } },
 });

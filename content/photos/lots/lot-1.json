@@ -1,0 +1,591 @@
+{
+ "lot": "lot-1-google-photos",
+ "photos": [
+  {
+   "fichier": "facade-fleurie-champagne-les-riceys-2025.jpg",
+   "alt": {
+    "fr": "Façade fleurie aux fenêtres rouges et bouteilles de champagne en vitrine, aux Riceys",
+    "en": "Flower-decked façade with red windows and champagne bottles on display, in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-patrimoine"
+   ],
+   "usage": "Les Riceys : photo d'ouverture",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "panneau-les-riceys-ricey-bas-route-du-champagne-2025.jpg",
+   "alt": {
+    "fr": "Panneau d'entrée des Riceys, Ricey-Bas, le soir de la Route du Champagne en fête",
+    "en": "Entrance sign of Les Riceys, Ricey-Bas, on the evening of La Route du Champagne en fête"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-patrimoine"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "verre-champagne-route-du-champagne-les-riceys-2025.jpg",
+   "alt": {
+    "fr": "Verre de champagne servi lors de la Route du Champagne en fête aux Riceys",
+    "en": "Glass of champagne served at La Route du Champagne en fête in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-degustation"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "service-champagne-route-du-champagne-les-riceys-2025.jpg",
+   "alt": {
+    "fr": "Un vigneron sert un verre de champagne aux visiteurs de la Route du Champagne en fête, aux Riceys",
+    "en": "A winemaker pours a glass of champagne for visitors at La Route du Champagne en fête, in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-degustation"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "verre-rose-les-riceys-route-du-champagne-2025.jpg",
+   "alt": {
+    "fr": "Verre de rosé posé sur une palette en bois, à la Route du Champagne en fête aux Riceys",
+    "en": "Glass of rosé on a wooden pallet at La Route du Champagne en fête in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-degustation"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "abri-sarments-vigne-les-riceys-2025.jpg",
+   "alt": {
+    "fr": "Petit abri construit en sarments de vigne, décor de la Route du Champagne en fête aux Riceys",
+    "en": "Small shelter built from vine shoots, decoration at La Route du Champagne en fête in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-patrimoine"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "maison-champagne-illuminee-les-riceys-2025.jpg",
+   "alt": {
+    "fr": "Façade d'une cave de champagne illuminée la nuit, aux Riceys",
+    "en": "Façade of a champagne cellar lit up at night, in Les Riceys"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-patrimoine"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-les-riceys-degustation-2025.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne d'un vigneron des Riceys et verre, sous un chapiteau de la Route du Champagne en fête",
+    "en": "Bottle of champagne from a Les Riceys winemaker and a glass, under a marquee at La Route du Champagne en fête"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-les-riceys",
+    "evenement-route-du-champagne-2025",
+    "theme-bouteilles"
+   ],
+   "usage": "Les Riceys : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "coteau-vignes-champagne-spoy-cote-des-bar-2025.jpg",
+   "alt": {
+    "fr": "Coteau de vignes de Champagne à Spoy, dans la Côte des Bar, en été",
+    "en": "Champagne vineyard slope in Spoy, in the Côte des Bar, in summer"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-spoy",
+    "secteur-bar-sur-aube",
+    "theme-vignes"
+   ],
+   "usage": "Accueil : grande photo pleine largeur ; Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "panneau-vignoble-champagne-spoy-2025.jpg",
+   "alt": {
+    "fr": "Panneau « Vignoble de Champagne » et direction des pressoirs, à Spoy",
+    "en": "« Vignoble de Champagne » sign pointing to the presses, in Spoy"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-spoy",
+    "secteur-bar-sur-aube",
+    "theme-patrimoine"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "moutons-vignes-merrey-sur-arce-cote-des-bar-2025.jpg",
+   "alt": {
+    "fr": "Moutons pâturant entre les rangs de vigne au coucher du soleil, à Merrey-sur-Arce",
+    "en": "Sheep grazing between the vine rows at sunset, in Merrey-sur-Arce"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-merrey-sur-arce",
+    "secteur-bar-sur-seine",
+    "theme-travaux-de-la-vigne"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "coucher-soleil-vignes-merrey-sur-arce-2025.jpg",
+   "alt": {
+    "fr": "Coucher de soleil sur les vignes et le chemin, à Merrey-sur-Arce",
+    "en": "Sunset over the vines and the track, in Merrey-sur-Arce"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-merrey-sur-arce",
+    "secteur-bar-sur-seine",
+    "theme-vignes"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "vignes-champagne-colombe-le-sec-2026.jpg",
+   "alt": {
+    "fr": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été",
+    "en": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-colombe-le-sec",
+    "secteur-bar-sur-aube",
+    "theme-vignes",
+    "evenement-route-du-champagne-2026"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "rangs-vigne-colombe-le-sec-cote-des-bar-2026.jpg",
+   "alt": {
+    "fr": "Rangs de vigne à Colombé-le-Sec, dans le Barsuraubois",
+    "en": "Vine rows in Colombé-le-Sec, in the Bar-sur-Aube area"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-colombe-le-sec",
+    "secteur-bar-sur-aube",
+    "theme-vignes"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "caisses-raisins-vendanges-champagne-polisy-2026.jpg",
+   "alt": {
+    "fr": "Caisses remplies de pinot noir pendant les vendanges 2026 à Polisy",
+    "en": "Crates filled with pinot noir during the 2026 harvest in Polisy"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-polisy",
+    "secteur-bar-sur-seine",
+    "theme-vendanges",
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg",
+   "alt": {
+    "fr": "Grappe de pinot noir tenue à la main au-dessus des caisses de vendange, à Polisy",
+    "en": "Bunch of pinot noir held above the harvest crates, in Polisy"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-polisy",
+    "secteur-bar-sur-seine",
+    "theme-vendanges",
+    "theme-raisin",
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Page Pinot noir : photo principale",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "vendanges-champagne-cote-des-bar-2026.jpg",
+   "alt": {
+    "fr": "Caisses de pinot noir chargées sur le tracteur au bord des vignes, à Celles-sur-Ource",
+    "en": "Crates of pinot noir loaded on the tractor beside the vines, in Celles-sur-Ource"
+   },
+   "etiquettes": [
+    "terroir-cote-des-bar",
+    "commune-celles-sur-ource",
+    "secteur-bar-sur-seine",
+    "theme-vendanges",
+    "vigneron-moutard-dangin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Côte des Bar : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "grappe-raisin-noir-feuilles-automne-vigne.jpg",
+   "alt": {
+    "fr": "Grappe de pinot noir entre des feuilles de vigne aux couleurs d'automne",
+    "en": "Bunch of pinot noir among autumn-coloured vine leaves"
+   },
+   "etiquettes": [
+    "theme-raisin",
+    "theme-vignes",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Article « Qu'est-ce qu'un cépage ? »",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "fleurs-de-vigne-printemps-champagne.jpg",
+   "alt": {
+    "fr": "Fleurs de vigne au printemps, avant la formation des grains",
+    "en": "Vine flowers in spring, before the berries form"
+   },
+   "etiquettes": [
+    "theme-vignes",
+    "theme-travaux-de-la-vigne"
+   ],
+   "usage": "Article « Le pinot blanc » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "floraison-vigne-champagne-juin.jpg",
+   "alt": {
+    "fr": "Floraison de la vigne en juin, grappes en fleurs",
+    "en": "Vine flowering in June, bunches in bloom"
+   },
+   "etiquettes": [
+    "theme-vignes"
+   ],
+   "usage": "Article « L'arbane » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "grappes-vertes-vigne-ete-champagne.jpg",
+   "alt": {
+    "fr": "Grappes de pinot noir encore vertes au cœur de l'été",
+    "en": "Pinot noir bunches still green in midsummer"
+   },
+   "etiquettes": [
+    "theme-raisin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Article « Le petit meslier » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "veraison-raisin-vigne-champagne.jpg",
+   "alt": {
+    "fr": "Grappes de pinot noir en pleine véraison : les grains changent de couleur",
+    "en": "Pinot noir bunches at véraison: the berries are changing colour"
+   },
+   "etiquettes": [
+    "theme-raisin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Article « Le pinot gris » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "rangs-vigne-vallee-champagne-ete.jpg",
+   "alt": {
+    "fr": "Rangs de vigne descendant vers la vallée en été",
+    "en": "Vine rows running down to the valley in summer"
+   },
+   "etiquettes": [
+    "theme-vignes"
+   ],
+   "usage": "Article « Le meunier » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "jeune-pousse-vigne-printemps-2025.jpg",
+   "alt": {
+    "fr": "Jeune pousse de vigne au printemps",
+    "en": "Young vine shoot in spring"
+   },
+   "etiquettes": [
+    "theme-travaux-de-la-vigne",
+    "theme-vignes"
+   ],
+   "usage": "Article « Le chardonnay rose » (en attendant une photo du cépage)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "sculpture-verre-champagne-entree-village-nuit.jpg",
+   "alt": {
+    "fr": "Sculpture lumineuse en forme de verre de champagne à l'entrée d'un village, la nuit",
+    "en": "Illuminated champagne glass sculpture at the entrance of a village, at night"
+   },
+   "etiquettes": [
+    "theme-patrimoine",
+    "mag-divers"
+   ],
+   "usage": "Article « Pourquoi les vignerons devraient s'intéresser au rap »",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "rayon-champagnes-roses-caviste-troyes.jpg",
+   "alt": {
+    "fr": "Rayon de champagnes rosés chez un caviste de Troyes",
+    "en": "Shelf of rosé champagnes at a wine shop in Troyes"
+   },
+   "etiquettes": [
+    "theme-bouteilles",
+    "commune-troyes"
+   ],
+   "usage": "Espace Pro (restaurants, cavistes, hôtels) : ouverture",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "bouteilles-champagne-degustation-privee-troyes.jpg",
+   "alt": {
+    "fr": "Bouteilles de champagne et cartes de présentation sur une table en bois, à Troyes",
+    "en": "Champagne bottles and tasting cards on a wooden table, in Troyes"
+   },
+   "etiquettes": [
+    "theme-degustation",
+    "theme-bouteilles",
+    "commune-troyes"
+   ],
+   "usage": "Dégustations privées : section « Événements privés »",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-moutard-dangin-table-de-fete.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne Moutard*Dangin sur une table de fête",
+    "en": "Bottle of Moutard*Dangin champagne on a festive table"
+   },
+   "etiquettes": [
+    "theme-bouteilles",
+    "vigneron-moutard-dangin"
+   ],
+   "usage": "Entreprises & CSE : coffrets cadeaux",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "service-champagne-moutard-dangin-salon-2024.jpg",
+   "alt": {
+    "fr": "Service d'un verre de champagne Moutard*Dangin sur un salon",
+    "en": "A glass of Moutard*Dangin champagne being poured at a wine fair"
+   },
+   "etiquettes": [
+    "theme-degustation",
+    "vigneron-moutard-dangin",
+    "evenement-salon-2024"
+   ],
+   "usage": "Entreprises & CSE : animations et dégustations",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "accord-tarte-pommes-champagne.jpg",
+   "alt": {
+    "fr": "Tarte fine aux pommes servie avec un verre de champagne",
+    "en": "Thin apple tart served with a glass of champagne"
+   },
+   "etiquettes": [
+    "theme-accords-mets"
+   ],
+   "usage": "Page « Accords mets et champagne » : photo principale",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "accord-chou-creme-champagne.jpg",
+   "alt": {
+    "fr": "Chou à la crème servi avec un verre de champagne",
+    "en": "Cream puff served with a glass of champagne"
+   },
+   "etiquettes": [
+    "theme-accords-mets"
+   ],
+   "usage": "Médiathèque (disponible pour un futur article)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "rayon-champagnes-cave-troyes.jpg",
+   "alt": {
+    "fr": "Rayon de bouteilles de champagne chez un caviste de Troyes",
+    "en": "Shelf of champagne bottles at a wine shop in Troyes"
+   },
+   "etiquettes": [
+    "theme-bouteilles",
+    "commune-troyes"
+   ],
+   "usage": "Médiathèque (disponible)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-voyage-cinque-terre-italie-2025.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne et verre face à la mer, dans les Cinque Terre",
+    "en": "Bottle of champagne and a glass facing the sea, in the Cinque Terre"
+   },
+   "etiquettes": [
+    "mag-voyages"
+   ],
+   "usage": "Médiathèque (Mag, voyages)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-voyage-pise-italie-2025.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne tenue devant la tour de Pise",
+    "en": "Bottle of champagne held up in front of the Leaning Tower of Pisa"
+   },
+   "etiquettes": [
+    "mag-voyages"
+   ],
+   "usage": "Médiathèque (Mag, voyages)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-coucher-soleil-mer-ligurie-2025.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne sur un rocher au coucher du soleil, en Ligurie",
+    "en": "Bottle of champagne on a rock at sunset, in Liguria"
+   },
+   "etiquettes": [
+    "mag-voyages"
+   ],
+   "usage": "Médiathèque (Mag, voyages)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "champagne-montgueux-blanc-de-blancs-verre.jpg",
+   "alt": {
+    "fr": "Bouteille de champagne d'un vigneron de Montgueux et verre sur une table",
+    "en": "Bottle of champagne from a Montgueux winemaker and a glass on a table"
+   },
+   "etiquettes": [
+    "theme-bouteilles",
+    "terroir-montgueux"
+   ],
+   "usage": "Médiathèque (bouteilles)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "etiquette-rose-des-riceys-seve.jpg",
+   "alt": {
+    "fr": "Étiquette d'un champagne rosé de saignée des Riceys",
+    "en": "Label of a saignée rosé champagne from Les Riceys"
+   },
+   "etiquettes": [
+    "theme-bouteilles",
+    "commune-les-riceys"
+   ],
+   "usage": "Médiathèque (bouteilles)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "raisins-noirs-pressoir-vendanges-2024.jpg",
+   "alt": {
+    "fr": "Pinot noir déversé dans le pressoir pendant les vendanges 2024",
+    "en": "Pinot noir poured into the press during the 2024 harvest"
+   },
+   "etiquettes": [
+    "theme-vendanges",
+    "theme-raisin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Médiathèque (vendanges)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "jeune-plantation-vigne-champagne-2025.jpg",
+   "alt": {
+    "fr": "Jeune plantation de vigne sur un coteau au printemps",
+    "en": "Young vineyard planting on a slope in spring"
+   },
+   "etiquettes": [
+    "theme-travaux-de-la-vigne"
+   ],
+   "usage": "Médiathèque (travaux de la vigne)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "vignes-neige-sezannais-2026.jpg",
+   "alt": {
+    "fr": "Vignes sous la neige dans le Sézannais",
+    "en": "Vines under snow in the Sézanne area"
+   },
+   "etiquettes": [
+    "terroir-sezannais",
+    "commune-saudoy",
+    "theme-vignes"
+   ],
+   "usage": "Médiathèque (Sézannais, hors Aube : pas sur la page Villenauxe)",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "caisses-pinot-noir-vendanges-2024.jpg",
+   "alt": {
+    "fr": "Pinot noir dans les caisses de vendange, pendant les vendanges 2024",
+    "en": "Pinot noir in harvest crates during the 2024 harvest"
+   },
+   "etiquettes": [
+    "theme-vendanges",
+    "theme-raisin",
+    "cepage-pinot-noir"
+   ],
+   "usage": "Page Pinot noir : galerie",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  {
+   "fichier": "grappe-chardonnay-vigne-champagne.jpg",
+   "alt": {
+    "fr": "Grappe de chardonnay encore verte, entre les feuilles de la vigne",
+    "en": "Chardonnay bunch still green among the vine leaves"
+   },
+   "etiquettes": [
+    "theme-raisin",
+    "cepage-chardonnay"
+   ],
+   "usage": "Page Chardonnay : photo principale",
+   "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  }
+ ]
+}

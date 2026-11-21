@@ -3,12 +3,11 @@ import type { Locale } from "@/i18n/routing";
 import { getRubriquesSanity, RUBRIQUES_PAR_DEFAUT, type ArticleCard } from "@/sanity/content";
 
 const CLE_MESSAGE: Record<string, string> = {
-  "tout-savoir": "toutSavoir",
-  accords: "accords",
-  portraits: "portraits",
-  "terroirs-cepages": "terroirsCepages",
-  oenotourisme: "oenotourisme",
   actualites: "actualites",
+  accords: "accords",
+  "tout-savoir": "toutSavoir",
+  portraits: "portraits",
+  "autres-horizons": "autresHorizons",
 };
 
 /** Noms des rubriques dans la langue de la page (Sanity d'abord, sinon les noms par défaut). */

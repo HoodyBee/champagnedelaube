@@ -4,6 +4,7 @@
 import { frFRLocale } from "@sanity/locale-fr-fr";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
+import { media } from "sanity-plugin-media";
 import { structureTool } from "sanity/structure";
 import { apiVersion, dataset, projectId } from "./src/sanity/env";
 import { schemaTypes, singletonTypes } from "./src/sanity/schemaTypes";
@@ -29,6 +30,8 @@ export default defineConfig({
   plugins: [
     structureTool({ structure, title: "Contenus" }),
     frFRLocale(),
+    // Médiathèque : toutes les photos, avec leurs étiquettes (terroir, commune, thème, cépage) et leur crédit.
+    media({ creditLine: { enabled: true } }),
     // Outil avancé pour tester des requêtes : utile au développeur uniquement.
     visionTool({ defaultApiVersion: apiVersion, title: "Requêtes (développeur)" }),
   ],

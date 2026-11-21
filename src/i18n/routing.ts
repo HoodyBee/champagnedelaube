@@ -48,7 +48,39 @@ export const routing = defineRouting({
 
     // Terroirs
     "/la-cote-des-bar": "/la-cote-des-bar",
+    // Les cépages de l'appellation : page générale et une page par cépage (/cepages-champagne/pinot-noir/)
+    "/cepages-champagne": {
+      fr: "/cepages-champagne",
+      en: "/champagne-grape-varieties",
+      nl: "/champagne-druivenrassen",
+      it: "/vitigni-champagne",
+      de: "/champagner-rebsorten",
+    },
+    "/cepages-champagne/[cepage]": {
+      fr: "/cepages-champagne/[cepage]",
+      en: "/champagne-grape-varieties/[cepage]",
+      nl: "/champagne-druivenrassen/[cepage]",
+      it: "/vitigni-champagne/[cepage]",
+      de: "/champagner-rebsorten/[cepage]",
+    },
     "/les-riceys": "/les-riceys",
+    // Troyes : la ville, porte d'entrée du vignoble aubois (nom de lieu non traduit)
+    "/champagne-troyes": "/champagne-troyes",
+    // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires
+    "/communication-marketing": {
+      fr: "/communication-marketing",
+      en: "/communication-and-marketing",
+      nl: "/communicatie-en-marketing",
+      it: "/comunicazione-e-marketing",
+      de: "/kommunikation-und-marketing",
+    },
+    "/nos-partenaires": {
+      fr: "/nos-partenaires",
+      en: "/our-partners",
+      nl: "/onze-partners",
+      it: "/i-nostri-partner",
+      de: "/unsere-partner",
+    },
     "/montgueux": "/montgueux",
     "/villenauxe-la-grande": "/villenauxe-la-grande",
 

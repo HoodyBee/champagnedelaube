@@ -107,7 +107,7 @@
     "chiffres": {
       "vignoble": {
         "valeur": "≈ 8.000 ha",
-        "label": "il vigneto dell'Aube, un quarto della Champagne"
+        "label": "il vigneto dell'Aube, più di un quinto della Champagne"
       },
       "appellations": {
         "valeur": "3 denominazioni",
@@ -431,7 +431,8 @@
         "title": "Cookie e memorizzazione nel browser",
         "text": "Questo sito non utilizza cookie pubblicitari né di misurazione dell'audience. Memorizza nel browser solo informazioni tecniche indispensabili:\n• cda_age (cookie e memoria locale, 1 anno): la vostra risposta alla verifica dell'età;\n• NEXT_LOCALE (cookie, durata della visita): la lingua scelta;\n• cda_nl_bar (memoria locale): il banner delle novità che avete chiuso."
       }
-    }
+    },
+    "audience": "Audience measurement: we use Plausible Analytics (Plausible Insights OÜ, Estonia, data hosted in the European Union), a tool that sets no cookies and stores nothing in your browser. It counts page views anonymously and in aggregate (page, referring site, country, device type), without identifying visitors or tracking them across sites. Your IP address is not kept."
   },
   "proPage": {
     "metaTitle": "Champagne per ristoranti, enoteche e hotel | Champagne de l'Aube",
@@ -708,5 +709,16 @@
       "rares": "I vitigni rari",
       "nouveau": "Il nuovo arrivato"
     }
+  },
+  "notFound": {
+    "metaTitle": "Pagina non trovata",
+    "surTitre": "Errore 404",
+    "titre": "Questa pagina è svanita come una bollicina",
+    "texte": "L'indirizzo potrebbe essere cambiato con la nuova versione del sito, oppure la pagina non esiste più. Ecco da dove riprendere la visita:",
+    "accueil": "Torna alla home page",
+    "terroirs": "I terroir dell'Aube",
+    "degustations": "Degustazioni private",
+    "mag": "Il Mag dello Champagne",
+    "contact": "Cercava qualcosa di preciso? Ci scriva."
   }
 }

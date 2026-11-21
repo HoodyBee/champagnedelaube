@@ -7,6 +7,7 @@ import { requireFr } from "../objects/localized";
 export const pagesFixes = [
   { title: "Notre sélection du moment", value: "vignerons" },
   { title: "Vignerons : devenez partenaire", value: "pro-vignerons" },
+  { title: "Communication & marketing (photo de la page)", value: "communication" },
   { title: "Vos Grands Événements (champagne pour mariage)", value: "mariage" },
   { title: "Accords mets et champagne (rubrique du Mag)", value: "recettes" },
   { title: "Tout savoir sur le champagne (rubrique du Mag)", value: "tout-savoir" },

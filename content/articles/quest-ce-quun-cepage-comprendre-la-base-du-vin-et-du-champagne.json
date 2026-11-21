@@ -71,10 +71,10 @@
    },
    "paragraphes": [
     {
-     "fr": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le [pinot blanc](/pinot-blanc-champagne), le [pinot gris](/pinot-gris-fromenteau-champagne), l'[arbane](/arbane-cepage-champagne) et le [petit meslier](/petit-meslier-cepage-champagne). Depuis 2025, un huitième les a rejoints : le [chardonnay rose](/chardonnay-rose-champagne). Ensemble, ils n'occupent qu'une toute petite place dans le vignoble.",
-     "en": "The appellation rules also allow four old varieties: [pinot blanc](/pinot-blanc-champagne), [pinot gris](/pinot-gris-fromenteau-champagne), [arbane](/arbane-cepage-champagne) and [petit meslier](/petit-meslier-cepage-champagne). Since 2025, an eighth has joined them: [chardonnay rose](/chardonnay-rose-champagne). Together they occupy only a tiny place in the vineyard.",
-     "nl": "Het lastenboek van de appellatie staat ook vier oude rassen toe: [pinot blanc](/pinot-blanc-champagne), [pinot gris](/pinot-gris-fromenteau-champagne), [arbane](/arbane-cepage-champagne) en [petit meslier](/petit-meslier-cepage-champagne). Sinds 2025 is er een achtste bij: [chardonnay rose](/chardonnay-rose-champagne). Samen nemen ze maar een heel klein deel van de wijngaard in.",
-     "it": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il [pinot blanc](/pinot-blanc-champagne), il [pinot gris](/pinot-gris-fromenteau-champagne), l'[arbane](/arbane-cepage-champagne) e il [petit meslier](/petit-meslier-cepage-champagne). Dal 2025 se n'è aggiunto un ottavo: lo [chardonnay rose](/chardonnay-rose-champagne). Insieme occupano solo un piccolissimo spazio nel vigneto."
+     "fr": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le [pinot blanc](/cepages-champagne/pinot-blanc), le [pinot gris](/cepages-champagne/pinot-gris), l'[arbane](/cepages-champagne/arbane) et le [petit meslier](/cepages-champagne/petit-meslier). Depuis 2025, un huitième les a rejoints : le [chardonnay rose](/cepages-champagne/chardonnay-rose). Ensemble, ils n'occupent qu'une toute petite place dans le vignoble.",
+     "en": "The appellation rules also allow four old varieties: [pinot blanc](/cepages-champagne/pinot-blanc), [pinot gris](/cepages-champagne/pinot-gris), [arbane](/cepages-champagne/arbane) and [petit meslier](/cepages-champagne/petit-meslier). Since 2025, an eighth has joined them: [chardonnay rose](/cepages-champagne/chardonnay-rose). Together they occupy only a tiny place in the vineyard.",
+     "nl": "Het lastenboek van de appellatie staat ook vier oude rassen toe: [pinot blanc](/cepages-champagne/pinot-blanc), [pinot gris](/cepages-champagne/pinot-gris), [arbane](/cepages-champagne/arbane) en [petit meslier](/cepages-champagne/petit-meslier). Sinds 2025 is er een achtste bij: [chardonnay rose](/cepages-champagne/chardonnay-rose). Samen nemen ze maar een heel klein deel van de wijngaard in.",
+     "it": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il [pinot blanc](/cepages-champagne/pinot-blanc), il [pinot gris](/cepages-champagne/pinot-gris), l'[arbane](/cepages-champagne/arbane) e il [petit meslier](/cepages-champagne/petit-meslier). Dal 2025 se n'è aggiunto un ottavo: lo [chardonnay rose](/cepages-champagne/chardonnay-rose). Insieme occupano solo un piccolissimo spazio nel vigneto."
     }
    ]
   },
@@ -111,7 +111,7 @@
    ]
   }
  ],
- "rubriquePrincipale": "terroirs-cepages",
+ "rubriquePrincipale": "tout-savoir",
  "rubriques": [
   "tout-savoir"
  ]

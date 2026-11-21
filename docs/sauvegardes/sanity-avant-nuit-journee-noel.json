@@ -1,0 +1,22 @@
+{
+ "_createdAt": "2026-11-20T10:06:02Z",
+ "_id": "journee-2027-12-25-noel",
+ "_rev": "R9dLj3QxhjzSE72fqVviyL",
+ "_type": "journeeCalendrier",
+ "_updatedAt": "2026-11-20T10:06:02Z",
+ "aConfirmer": false,
+ "anecdote": {
+  "_type": "localeText",
+  "en": "A key period for wine shops, caterers and corporate gift boxes.",
+  "fr": "Une période clé pour les cavistes, les traiteurs et les coffrets d'entreprise."
+ },
+ "categorie": "gastronomie",
+ "debut": "2027-12-25",
+ "emoji": "🎄",
+ "lien": "/cse-et-cadeaux-dentreprise",
+ "titre": {
+  "_type": "localeString",
+  "en": "Christmas",
+  "fr": "Noël"
+ }
+}

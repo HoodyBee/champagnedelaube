@@ -29,7 +29,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = (await params) as { locale: Locale; slug: string };
   const v = await getVigneron(slug, locale);
-  if (!v) return {};
+  if (!v) notFound();
   const t = await getTranslations({ locale, namespace: "vigneronPage" });
   return pageMetadata({
     locale,
@@ -37,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     seo: v.seo,
     title: v.village ? t("metaTitle", { nom: v.nom, village: v.village }) : `${v.nom} | Champagne de l'Aube`,
     description: v.philosophie ?? v.accroche ?? v.nom,
+    image: v.image,
   });
 }
 

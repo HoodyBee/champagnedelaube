@@ -1,11 +1,18 @@
 import { PortableText, type PortableTextComponents } from "@portabletext/react";
 import type { PortableTextBlock } from "@portabletext/react";
-import Image from "next/image";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import type { ReactNode } from "react";
+import { TableauLabels } from "@/components/mag/TableauLabels";
 import { lienLocalise } from "@/i18n/liens";
 import type { Locale } from "@/i18n/routing";
 import { localize } from "@/sanity/lib/i18n";
 import { urlFor } from "@/sanity/lib/image";
+
+/** Hauteur à 1600 px de large, lue dans l'identifiant Sanity (« image-…-1807x2400-jpg ») : pas de saut de mise en page. */
+function hauteurPour1600(ref?: string) {
+  const m = /-(\d+)x(\d+)-/.exec(ref ?? "");
+  return m ? Math.round((1600 * Number(m[2])) / Number(m[1])) : 1067;
+}
 
 /** Affiche un texte enrichi saisi dans Sanity (paragraphes, H2/H3, listes, liens, images). */
 export function RichText({
@@ -54,6 +61,7 @@ const components = (locale: Locale, extras?: Record<string, ReactNode>): Portabl
   },
   types: {
     calendrierMarronnier: () => <>{extras?.calendrierMarronnier ?? null}</>,
+    tableauLabels: () => <TableauLabels locale={locale} />,
     imageAvecAlt: ({ value }) =>
       value?.asset ? (
         <figure>
@@ -61,7 +69,7 @@ const components = (locale: Locale, extras?: Record<string, ReactNode>): Portabl
             src={urlFor(value).width(1600).url()}
             alt={localize(value.alt, locale) ?? ""}
             width={1600}
-            height={1067}
+            height={hauteurPour1600(value.asset?._ref)}
             sizes="(min-width: 768px) 720px, 100vw"
             className="h-auto w-full"
           />

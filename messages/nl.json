@@ -107,7 +107,7 @@
     "chiffres": {
       "vignoble": {
         "valeur": "≈ 8.000 ha",
-        "label": "de wijngaard van de Aube, een kwart van de Champagne"
+        "label": "de wijngaard van de Aube, meer dan een vijfde van de Champagne"
       },
       "appellations": {
         "valeur": "3 herkomstbenamingen",
@@ -431,7 +431,8 @@
         "title": "Cookies en opslag in de browser",
         "text": "Deze website gebruikt geen advertentie- of statistiekcookies. Ze slaat alleen noodzakelijke technische informatie op in uw browser:\n• cda_age (cookie en lokale opslag, 1 jaar): uw antwoord op de leeftijdscontrole;\n• NEXT_LOCALE (cookie, tijdens het bezoek): de gekozen taal;\n• cda_nl_bar (lokale opslag): de nieuwsbanner die u heeft gesloten."
       }
-    }
+    },
+    "audience": "Audience measurement: we use Plausible Analytics (Plausible Insights OÜ, Estonia, data hosted in the European Union), a tool that sets no cookies and stores nothing in your browser. It counts page views anonymously and in aggregate (page, referring site, country, device type), without identifying visitors or tracking them across sites. Your IP address is not kept."
   },
   "proPage": {
     "metaTitle": "Champagne voor restaurants, wijnhandels en hotels | Champagne de l'Aube",
@@ -708,5 +709,16 @@
       "rares": "De zeldzame druivenrassen",
       "nouveau": "De nieuwkomer"
     }
+  },
+  "notFound": {
+    "metaTitle": "Pagina niet gevonden",
+    "surTitre": "Fout 404",
+    "titre": "Deze pagina is verdwenen als een belletje",
+    "texte": "Het adres is misschien gewijzigd met de nieuwe versie van de site, of de pagina bestaat niet meer. Hier kunt u verder:",
+    "accueil": "Terug naar de startpagina",
+    "terroirs": "De terroirs van de Aube",
+    "degustations": "Privéproeverijen",
+    "mag": "Het Champagne Magazine",
+    "contact": "Zoekt u iets specifieks? Schrijf ons."
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DansLeMag } from "@/components/mag/DansLeMag";
+import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { CepagePastille } from "@/components/brand/CepagePastille";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -11,6 +12,7 @@ import { TerroirCards } from "@/components/ui/TerroirCards";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { terroirs, type TerroirKey } from "@/lib/brand";
+import { imageObject } from "@/lib/image-jsonld";
 import { nav, terroirPages } from "@/lib/site";
 import { getTerroir } from "@/sanity/content";
 
@@ -22,7 +24,7 @@ const hrefOf = (cle: TerroirKey) => terroirPages.find((p) => p.key === cle)!.hre
 
 export async function terroirMetadata(cle: TerroirKey, locale: Locale): Promise<Metadata> {
   const t = await getTerroir(cle, locale);
-  return pageMetadata({ locale, href: hrefOf(cle), seo: t.seo, title: t.seo.title ?? t.nom, description: t.seo.description ?? t.intro ?? t.nom });
+  return pageMetadata({ locale, href: hrefOf(cle), seo: t.seo, title: t.seo.title ?? t.nom, description: t.seo.description ?? t.intro ?? t.nom, image: t.image });
 }
 
 /** Page d'un terroir : ouverture, repères, texte, sols et cépages, secteurs, villages, liens. */
@@ -30,6 +32,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
   const t = await getTerroir(cle, locale);
   const tT = await getTranslations("terroirPage");
   const tNav = await getTranslations("nav");
+  const tC = await getTranslations("cepagesPage");
   const couleur = `var(--color-${terroirs[cle].color})`;
 
   return (
@@ -66,7 +69,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
       <Section>
         <div className="grid gap-space-5 lg:grid-cols-[1.6fr_1fr]">
           <RichText value={t.contenu} locale={locale} className="max-w-3xl" />
-          <aside className="space-y-space-4 lg:pt-space-2">
+          <div className="space-y-space-4 lg:pt-space-2">
             {t.sols && (
               <div className="surface-chaude rounded-carte p-space-3">
                 <h2 className="text-sur-titre text-bronze">{tT("sols")}</h2>
@@ -76,6 +79,14 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
             {t.cepagesDominants.length > 0 && (
               <div>
                 <h2 className="text-sur-titre text-bronze">{tT("cepages")}</h2>
+                {/* Cépages majoritaires d'abord, puis les autres cépages cultivés (en minorité). */}
+                <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
+                  {t.cepagesMajoritaires.map((c) => (
+                    <li key={c}>
+                      <CepagePastille cepage={c} note={t.cepagesNotes?.[c]} />
+                    </li>
+                  ))}
+                </ul>
                 {(
                   [
                     ["principaux", GRANDS],
@@ -83,11 +94,11 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                     ["nouveau", NOUVEAUX],
                   ] as const
                 ).map(([groupe, liste]) => {
-                  const items = t.cepagesDominants.filter((c) => (liste as readonly string[]).includes(c));
+                  const items = t.cepagesDominants.filter((c) => (liste as readonly string[]).includes(c) && !t.cepagesMajoritaires.includes(c));
                   if (!items.length) return null;
                   return (
                     <div key={groupe} className="mt-space-2">
-                      {t.cepagesDominants.length > 3 && <p className="text-sur-titre-petit text-gris-chaud">{tT(`cepagesGroupes.${groupe}`)}</p>}
+                      <p className="text-sur-titre-petit text-gris-chaud">{tT(`cepagesGroupes.${groupe}`)}</p>
                       <ul className="mt-space-1 grid grid-cols-2 gap-x-space-2 gap-y-space-1">
                         {items.map((c) => (
                           <li key={c}>
@@ -98,6 +109,9 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                     </div>
                   );
                 })}
+                <Link href="/cepages-champagne" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                  {tC("tousLien")} <span aria-hidden="true">→</span>
+                </Link>
               </div>
             )}
             {t.villages.length > 0 && (
@@ -110,7 +124,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
                 </ul>
               </div>
             )}
-          </aside>
+          </div>
         </div>
       </Section>
 
@@ -137,7 +151,7 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
         </Section>
       )}
 
-      <DansLeMag locale={locale} chemins={[hrefOf(cle)]} rubrique="terroirs-cepages" fond={t.secteurs.length ? "chaude" : "blanc"} />
+      <DansLeMag locale={locale} chemins={[hrefOf(cle)]} rubrique="tout-savoir" fond={t.secteurs.length ? "chaude" : "blanc"} />
 
       <Section fond={t.secteurs.length ? "blanc" : "chaude"} titre={tT("autres")}>
         <div className="mx-auto max-w-2xl">
@@ -149,6 +163,14 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
           <ButtonLink href={nav.pro[0].href} variant="secondaire">{tT("offrePro")}</ButtonLink>
         </div>
       </Section>
+      {(t.image || t.galerie.length > 0) && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({ "@context": "https://schema.org", "@graph": [t.image, ...t.galerie].filter((g): g is NonNullable<typeof g> => !!g).map(imageObject) }),
+          }}
+        />
+      )}
     </>
   );
 }

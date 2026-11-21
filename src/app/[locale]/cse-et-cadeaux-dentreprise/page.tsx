@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/cse-et-c
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "entreprisesPage" });
   const p = await getEspaceEntreprises(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription"), image: p.hero.image });
 }
 
 /** Entreprises & CSE : coffrets, animations, devis sur-mesure et brochure CSE. */

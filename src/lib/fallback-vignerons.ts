@@ -15,18 +15,22 @@ export type FallbackVigneron = {
   terroir: TerroirKey;
   accroche: L;
   philosophie: L;
+  /** Description pour Google (environ 140 à 160 caractères) ; sinon la philosophie. */
+  description?: Partial<L>;
   personnes: { nom: string; role: L }[];
   cepages: CepageKey[];
   thematiques: PictoKey[];
   pratiques: L[];
   labels: string[];
   siteWeb: string;
+  /** Photo de la Médiathèque Sanity (identifiant de l'image) : jamais d'emplacement vide. */
+  photo?: { asset: string; fichier: string; alt: { fr: string; en: string } };
 };
 
 export const fallbackVignerons: FallbackVigneron[] = [
   {
     slug: "moutard-dangin",
-    nom: "Champagne Moutard-Dangin",
+    nom: "Champagne Moutard*Dangin",
     village: "Polisy",
     terroir: "cote-des-bar",
     accroche: {
@@ -70,6 +74,11 @@ export const fallbackVignerons: FallbackVigneron[] = [
       },
     ],
     cepages: ["pinot-noir", "chardonnay", "meunier", "pinot-blanc"],
+    photo: {
+      asset: "image-d7e86ffecef958facd6e747f793f684e0382d4ea-1350x2400-jpg",
+      fichier: "service-champagne-moutard-dangin-salon-2024.jpg",
+      alt: { fr: "Service d'un verre de champagne Moutard*Dangin sur un salon", en: "A glass of Moutard*Dangin champagne being poured at a wine fair" },
+    },
     thematiques: [],
     pratiques: [
       {
@@ -101,6 +110,10 @@ export const fallbackVignerons: FallbackVigneron[] = [
       nl: "Van druif tot fles gebeurt alles op het domein: handmatige pluk, zachte persing, temperatuurgestuurde roestvrijstalen tanks.",
       it: "Dall'uva alla bottiglia, tutto avviene in tenuta: vendemmia manuale, pressatura soffice, vasche inox termoregolate.",
       de: "Von der Traube bis zur Flasche geschieht alles auf dem Weingut: Handlese, schonende Pressung, temperaturgesteuerte Edelstahltanks.",
+    },
+    description: {
+      fr: "Champagne Mennetrier, à Arrentières dans la Côte des Bar : du raisin à la bouteille, tout se fait au domaine, des vendanges à la main aux cuves inox.",
+      en: "Champagne Mennetrier, in Arrentières in the Côte des Bar: from grape to bottle, everything happens at the estate, from hand harvesting to bottling.",
     },
     personnes: [],
     cepages: [],

@@ -1,0 +1,844 @@
+[
+ {
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "espaceEntreprises",
+  "_rev": "R9dLj3QxhjzSE72fqWcEkT",
+  "_type": "espaceEntreprises",
+  "_updatedAt": "2026-11-20T16:20:45Z",
+  "animations": {
+   "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "A glass of Moutard*Dangin champagne being poured at a wine fair",
+     "fr": "Service d'un verre de champagne Moutard*Dangin sur un salon"
+    },
+    "asset": {
+     "_ref": "image-d7e86ffecef958facd6e747f793f684e0382d4ea-1350x2400-jpg",
+     "_type": "reference"
+    },
+    "credit": "© Champagne de l'Aube / Detectezmoi.com"
+   }
+  },
+  "coffrets": {
+   "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "Bottle of Moutard*Dangin champagne on a festive table",
+     "fr": "Bouteille de champagne Moutard*Dangin sur une table de fête"
+    },
+    "asset": {
+     "_ref": "image-f925568960801c0205efcff4926e43771b2ceff0-1807x2400-jpg",
+     "_type": "reference"
+    },
+    "credit": "© Champagne de l'Aube / Detectezmoi.com"
+   }
+  },
+  "hero": {
+   "_type": "hero",
+   "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "Julien Mineo at a laptop, on a terrace",
+     "fr": "Julien Mineo à son ordinateur, en terrasse"
+    },
+    "asset": {
+     "_ref": "image-3d0526e78b7da1455e8bffe71ce6be10d0af89d5-1080x1350-jpg",
+     "_type": "reference"
+    }
+   }
+  },
+  "reprise": {
+   "_type": "localeRichText",
+   "fr": [
+    {
+     "_key": "feab6de40c71",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "f5561858b0f9",
+       "_type": "span",
+       "marks": [],
+       "text": "Ancien titre principal : Champagne pour votre CSE & entreprises"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "b6522befa94c",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "5ab00d26cbe1",
+       "_type": "span",
+       "marks": [],
+       "text": "Des propositions adaptées à votre entreprise"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "2ff6c85b9e7d",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "694291e83c63r",
+       "_type": "span",
+       "marks": [],
+       "text": "Un coffret de champagnes de vignerons de l’Aube fait découvrir à vos salariés, clients ou partenaires un terroir et les personnes qui le cultivent."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "9909cadb265a",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "1f1a18165e12",
+       "_type": "span",
+       "marks": [],
+       "text": "Au-delà des grandes marques que l’on connaît tous, faites découvrir à vos collaborateurs "
+      },
+      {
+       "_key": "0d2c1f398ae6",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "un autre visage du Champagne : celui de ses terroirs, de ses vignerons et de domaines parfois moins connus, mais qui ont une véritable histoire et des valeurs à partager."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "8f986e064331",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "c640fa069388",
+       "_type": "span",
+       "marks": [],
+       "text": "Nous imaginons des propositions autour du "
+      },
+      {
+       "_key": "98aa81e567fe",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "terroir aubois"
+      },
+      {
+       "_key": "423af8b3e6b0",
+       "_type": "span",
+       "marks": [],
+       "text": ", adaptées à vos besoins, à votre budget et à l’image de votre entreprise."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "18c859389ab5",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "0cac116c07ec",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Nous vous aidons à trouver une façon différente de faire découvrir le Champagne et de valoriser votre collaboration professionnelle."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "80761adea55b",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "b4217ec216c5",
+       "_type": "span",
+       "marks": [],
+       "text": "Que vous prépariez une "
+      },
+      {
+       "_key": "755cb5aa6bb3",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "dégustation, une offre pour vos salariés ou des cadeaux pour vos clients et partenaires"
+      },
+      {
+       "_key": "35070b714b6d",
+       "_type": "span",
+       "marks": [],
+       "text": ", nous étudions votre projet et vous proposons une formule adaptée : "
+      },
+      {
+       "_key": "c5541eaae609",
+       "_type": "span",
+       "marks": [
+        "496099e531b6",
+        "strong"
+       ],
+       "text": "contact@champagnedelaube.fr"
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "496099e531b6",
+       "_type": "link",
+       "href": "mailto:contact@champagnedelaube.fr"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "f54d742e0fdf",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "e75c922c55eb",
+       "_type": "span",
+       "marks": [],
+       "text": ""
+      },
+      {
+       "_key": "93fa924830f0",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Bouteilles Personnalisables"
+      },
+      {
+       "_key": "79cbd051a8dc",
+       "_type": "span",
+       "marks": [],
+       "text": ""
+      }
+     ],
+     "level": 1,
+     "listItem": "bullet",
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "e503b4a0eae8",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ea609de2bfb8",
+       "_type": "span",
+       "marks": [],
+       "text": ""
+      },
+      {
+       "_key": "0269007337a1",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "coffrets cadeaux"
+      },
+      {
+       "_key": "620b078898fd",
+       "_type": "span",
+       "marks": [],
+       "text": ""
+      }
+     ],
+     "level": 1,
+     "listItem": "bullet",
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "8a6fc9e9dc31",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "b0f20e79c9fer",
+       "_type": "span",
+       "marks": [],
+       "text": "Une offre privilégiée"
+      }
+     ],
+     "level": 1,
+     "listItem": "bullet",
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "4b90c1128360",
+     "_type": "imageAvecAlt",
+     "alt": {
+      "_type": "localeString",
+      "fr": "Coffrets cadeaux noirs et rouges noués de rubans"
+     },
+     "asset": {
+      "_ref": "image-d67519cb7b922d4be659a6aa5f0386cb52c073e4-1280x853-jpg",
+      "_type": "reference"
+     }
+    },
+    {
+     "_key": "f32ca6506425",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "d61a9fa5a7b7a",
+       "_type": "span",
+       "marks": [],
+       "text": "Une offre privilégiée pour vos salariés"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "8f60cabd6ad1",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "995a56ff5efe",
+       "_type": "span",
+       "marks": [],
+       "text": "Nous pouvons mettre en place une "
+      },
+      {
+       "_key": "ef8a171d8c7e",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "sélection de Champagnes directement auprès des vignerons"
+      },
+      {
+       "_key": "78be7e835276",
+       "_type": "span",
+       "marks": [],
+       "text": ", avec des conditions dédiées aux salariés de votre entreprise ou de votre CSE."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "f3a37e788c4d",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "9c6ce055691d",
+       "_type": "span",
+       "marks": [],
+       "text": "🥂 Ateliers dégustations, team building & événements"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "dd35b718c701",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "c0ceda1d0418",
+       "_type": "span",
+       "marks": [],
+       "text": "Organisez un moment au sein de votre entreprise ou à l’occasion d’un événement."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "8f8c930dfdac",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "8567a5eaefe6",
+       "_type": "span",
+       "marks": [],
+       "text": "Nous vous accompagnons dans la découverte de plusieurs "
+      },
+      {
+       "_key": "41a823b7b54b",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Champagnes de l’Aube"
+      },
+      {
+       "_key": "5fbf0a7cfea3",
+       "_type": "span",
+       "marks": [],
+       "text": ", en présentant les vignerons, leurs histoires et leurs terroirs. La dégustation est adaptée à votre groupe, à vos envies et à votre budget."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "d642da41d355",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "ee760cc390d3",
+       "_type": "span",
+       "marks": [],
+       "text": "Que vous prépariez une "
+      },
+      {
+       "_key": "b1d110ebab5a",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "dégustation, une offre pour vos salariés ou des cadeaux pour vos clients et partenaires"
+      },
+      {
+       "_key": "81555bccdbe2",
+       "_type": "span",
+       "marks": [],
+       "text": ", nous étudions votre projet et vous proposons une formule adaptée : "
+      },
+      {
+       "_key": "700544baf6c3",
+       "_type": "span",
+       "marks": [
+        "a2b3dc2ecc47",
+        "strong"
+       ],
+       "text": "contact@champagnedelaube.fr"
+      },
+      {
+       "_key": "2cbd27838145",
+       "_type": "span",
+       "marks": [],
+       "text": " Vous pouvez également nous préciser votre projet via le formulaire ci-dessous. Nous vous recontacterons rapidement."
+      }
+     ],
+     "markDefs": [
+      {
+       "_key": "a2b3dc2ecc47",
+       "_type": "link",
+       "href": "mailto:contact@champagnedelaube.fr"
+      }
+     ],
+     "style": "normal"
+    }
+   ]
+  },
+  "seo": {
+   "_type": "seo",
+   "description": {
+    "_type": "localeText",
+    "en": "Gift boxes put together with independent Aube winemakers, for your staff and clients. Works council gift boxes, group orders and tailor-made tasting events.",
+    "fr": "Des coffrets composés avec des vignerons indépendants de l’Aube, pour vos collaborateurs et vos clients. Coffrets cadeaux CSE, commandes groupées et animations de dégustation sur-mesure."
+   },
+   "title": {
+    "_type": "localeString",
+    "en": "Champagne for companies & works councils | Gifts & events",
+    "fr": "Champagnes pour Entreprises & CSE | Cadeaux & Événements"
+   }
+  }
+ },
+ {
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "espacePro",
+  "_rev": "R9dLj3QxhjzSE72fqWcEkT",
+  "_type": "espacePro",
+  "_updatedAt": "2026-11-20T16:20:45Z",
+  "hero": {
+   "_type": "hero",
+   "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+     "_type": "localeString",
+     "en": "Julien Mineo presenting a bottle of champagne at a trade fair",
+     "fr": "Julien Mineo présente une bouteille de champagne sur un salon professionnel"
+    },
+    "asset": {
+     "_ref": "image-ea278f1491036965dbba40a47e7aaae129a8737e-1080x722-jpg",
+     "_type": "reference"
+    }
+   }
+  },
+  "profils": [
+   {
+    "_key": "qj9t7h28f8",
+    "_type": "blocTexte",
+    "points": [
+     {
+      "_key": "cv8heusxxn",
+      "_type": "localeString",
+      "en": "Winemakers' cuvées for a wine list that tells the story of a terroir.",
+      "fr": "Des cuvées de vignerons pour une carte qui raconte un terroir."
+     }
+    ],
+    "titre": {
+     "_type": "localeString",
+     "en": "Restaurants",
+     "fr": "Restaurants"
+    }
+   },
+   {
+    "_key": "i4aynssfbw",
+    "_type": "blocTexte",
+    "image": {
+     "_type": "imageAvecAlt",
+     "alt": {
+      "_type": "localeString",
+      "en": "Shelf of rosé champagnes at a wine shop in Troyes",
+      "fr": "Rayon de champagnes rosés chez un caviste de Troyes"
+     },
+     "asset": {
+      "_ref": "image-0a91d76e5b62998d81c17692974a18d404d0b19d-1807x2400-jpg",
+      "_type": "reference"
+     },
+     "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    "points": [
+     {
+      "_key": "zo4yx1la4q",
+      "_type": "localeString",
+      "en": "Independent Aube estates to introduce to your customers.",
+      "fr": "Des domaines indépendants de l'Aube à faire découvrir à vos clients."
+     }
+    ],
+    "titre": {
+     "_type": "localeString",
+     "en": "Wine shops",
+     "fr": "Cavistes"
+    }
+   },
+   {
+    "_key": "pi7eaa8hds",
+    "_type": "blocTexte",
+    "points": [
+     {
+      "_key": "t0o0qeiy9s",
+      "_type": "localeString",
+      "en": "A selection of Aube champagnes for your guests passing through.",
+      "fr": "Une sélection de champagnes de l'Aube pour vos clients de passage."
+     }
+    ],
+    "titre": {
+     "_type": "localeString",
+     "en": "Hotels",
+     "fr": "Hôtels"
+    }
+   },
+   {
+    "_key": "vgx4x08mll",
+    "_type": "blocTexte",
+    "image": {
+     "_type": "imageAvecAlt",
+     "alt": {
+      "_type": "localeString",
+      "en": "Shelf of champagne bottles at a wine shop in Troyes",
+      "fr": "Rayon de bouteilles de champagne chez un caviste de Troyes"
+     },
+     "asset": {
+      "_ref": "image-56ec8d82731e3c8568e2af6893ad6a0b927b346f-1807x2400-jpg",
+      "_type": "reference"
+     },
+     "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    "points": [
+     {
+      "_key": "69s401tr5o",
+      "_type": "localeString",
+      "en": "Winemaker champagnes for your gift boxes and events.",
+      "fr": "Des champagnes de vignerons pour vos coffrets et vos événements."
+     }
+    ],
+    "titre": {
+     "_type": "localeString",
+     "en": "Delicatessens and caterers",
+     "fr": "Épiceries fines et traiteurs"
+    }
+   }
+  ],
+  "reprise": {
+   "_type": "localeRichText",
+   "fr": [
+    {
+     "_key": "c0df8f77da10",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "3cc7aeae5bf8",
+       "_type": "span",
+       "marks": [],
+       "text": "Ancien titre principal : Notre sélection de Champagnes pour les CHR & Cavistes"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "4a25a0e95bda",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "91afb24ef742",
+       "_type": "span",
+       "marks": [],
+       "text": "Et si vous proposiez plus qu’un Champagne : un terroir, une histoire et une rencontre ?"
+      }
+     ],
+     "markDefs": [],
+     "style": "h2"
+    },
+    {
+     "_key": "0ede86191c7f",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "3f0595332234",
+       "_type": "span",
+       "marks": [],
+       "text": "Chez "
+      },
+      {
+       "_key": "011073e6e830",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Champagne de l’Aube"
+      },
+      {
+       "_key": "e0e4ea9de5f7",
+       "_type": "span",
+       "marks": [],
+       "text": ", nous partons directement à la rencontre des "
+      },
+      {
+       "_key": "cc748c319649",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "vignerons"
+      },
+      {
+       "_key": "6713ceca7147",
+       "_type": "span",
+       "marks": [],
+       "text": " pour vous faire découvrir des domaines et des cuvées qui ont une véritable personnalité."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "1a1c70b7fc4e",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "d2f6b797d9e4",
+       "_type": "span",
+       "marks": [],
+       "text": "De la "
+      },
+      {
+       "_key": "01a912cee75e",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Côte des Bar à Montgueux, des Riceys à Villenauxe-la-Grande"
+      },
+      {
+       "_key": "51f42cc886be",
+       "_type": "span",
+       "marks": [],
+       "text": ", nous connaissons notre terroir et sélectionnons des Champagnes que nous avons pris le temps de découvrir, déguster et comprendre."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "aeea987d5d98",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "9d229b91c9cc",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "Restaurants, tables gastronomiques, hôtels, cafés, bars, traiteurs, cavistes ou épiceries fines"
+      },
+      {
+       "_key": "c824fce964eb",
+       "_type": "span",
+       "marks": [],
+       "text": " : nous vous aidons à trouver des Champagnes adaptés à votre établissement, votre clientèle et vos envies."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "3a1c4b5e12fd",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "1c0e0a80762f",
+       "_type": "span",
+       "marks": [],
+       "text": "Une nouvelle cuvée pour votre carte, une bouteille au verre, un accord mets & Champagne ou simplement l’envie de découvrir une "
+      },
+      {
+       "_key": "646df33039d2",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "pépite de l’Aube"
+      },
+      {
+       "_key": "e327a0110217",
+       "_type": "span",
+       "marks": [],
+       "text": " : "
+      },
+      {
+       "_key": "fa5c89cbcb8d",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "nous pouvons venir à votre rencontre et vous faire découvrir une sélection adaptée à votre activité, puis vous mettre en relation directement avec les vignerons."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "f37339bb699a",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "15537bfa4450",
+       "_type": "span",
+       "marks": [
+        "strong"
+       ],
+       "text": "06 50 96 45 59"
+      }
+     ],
+     "level": 1,
+     "listItem": "bullet",
+     "markDefs": [],
+     "style": "normal"
+    },
+    {
+     "_key": "368931e3bd54",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "fcd639b2bc94",
+       "_type": "span",
+       "marks": [],
+       "text": ""
+      },
+      {
+       "_key": "9bd7d301d17c",
+       "_type": "span",
+       "marks": [
+        "14cbe489b637"
+       ],
+       "text": "contact@champagnedelaube.fr"
+      }
+     ],
+     "level": 1,
+     "listItem": "bullet",
+     "markDefs": [
+      {
+       "_key": "14cbe489b637",
+       "_type": "link",
+       "href": "mailto:contact@champagnedelaube.fr"
+      }
+     ],
+     "style": "normal"
+    },
+    {
+     "_key": "2ccbf4ee0c01",
+     "_type": "imageAvecAlt",
+     "alt": {
+      "_type": "localeString",
+      "fr": "Table de restaurant dressée avec des assiettes gastronomiques et une flûte de champagne"
+     },
+     "asset": {
+      "_ref": "image-fb7a8e0a06ae5ed91d8db6053b5f6543a3c20553-2560x1920-jpg",
+      "_type": "reference"
+     }
+    },
+    {
+     "_key": "60c51fbec049",
+     "_type": "block",
+     "children": [
+      {
+       "_key": "f90c95b719bd",
+       "_type": "span",
+       "marks": [],
+       "text": "Vous pouvez également nous préciser votre recherche via le formulaire ci-dessous, et nous vous recontacterons très rapidement."
+      }
+     ],
+     "markDefs": [],
+     "style": "normal"
+    }
+   ]
+  },
+  "seo": {
+   "_type": "seo",
+   "description": {
+    "_type": "localeText",
+    "en": "Enrich your wine list with champagnes from independent Aube winemakers. Tailor-made sourcing, cuvées with character and trade prices.",
+    "fr": "Enrichissez votre carte des vins avec des champagnes de vignerons indépendants de l'Aube. Sourcing sur-mesure, cuvées identitaires et tarifs pro."
+   },
+   "title": {
+    "_type": "localeString",
+    "en": "Champagne for hotels, restaurants, delicatessens & wine shops",
+    "fr": "Champagne pour CHR, Epiceries fines, Restaurants & Cavistes"
+   }
+  }
+ },
+ {
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "page-contact",
+  "_rev": "pJq64BDg0PZsjRe9EBWG4K",
+  "_type": "page",
+  "_updatedAt": "2026-11-20T10:08:04Z",
+  "cle": "contact",
+  "image": {
+   "_type": "imageAvecAlt",
+   "alt": {
+    "_type": "localeString",
+    "en": "Julien Mineo working on a laptop on a terrace, with a coffee",
+    "fr": "Julien Mineo travaille sur son ordinateur en terrasse, un café à côté"
+   },
+   "asset": {
+    "_ref": "image-aef09e266096ab82a16b2eaa16e6ad1ac4908dff-1080x1690-jpg",
+    "_type": "reference"
+   }
+  }
+ }
+]

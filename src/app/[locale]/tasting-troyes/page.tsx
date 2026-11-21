@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
 import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/tasting-
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "degustationsPage" });
   const p = await getEspaceParticuliers(locale);
-  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription"), image: p.hero.image });
 }
 
 /**
@@ -124,6 +125,9 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
             <div className="mt-space-4 rounded-carte border border-filet bg-blanc p-space-3">
               <p className="font-bold">{t("touristesTitre")}</p>
               <p className="mt-space-1 text-gris-chaud">{t("touristesTexte")}</p>
+              <Link href="/champagne-troyes" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                {t("touristesLien")} <span aria-hidden="true">→</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -218,6 +222,11 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
       <DansLeMag locale={locale} chemins={["/tasting-troyes"]} rubrique="accords" fond="chaude" />
 
       <Section id="grands-evenements" fond="chaude">
+        {p.evenementsPrives.image && (
+          <div className="mx-auto mb-space-4 max-w-3xl overflow-hidden rounded-carte">
+            <Photo image={p.evenementsPrives.image} ratio="16/9" sizes="(min-width: 768px) 768px, 100vw" />
+          </div>
+        )}
         <div className="mx-auto max-w-3xl text-center">
           <LineIcon name="calendrier" size={32} className="mx-auto block text-or" />
           <h2 className="mt-space-2 text-titre-section sm:text-[2rem]">{p.evenementsPrives.titre ?? t("evenementsTitre")}</h2>

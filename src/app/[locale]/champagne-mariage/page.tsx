@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   const { locale } = (await params) as { locale: Locale };
   const t = await getTranslations({ locale, namespace: "evenementsPage" });
   const page = await getPageContent(CLE, locale);
-  return pageMetadata({ locale, href: HREF, seo: page.seo, title: t("metaTitle"), description: t("metaDescription") });
+  return pageMetadata({ locale, href: HREF, seo: page.seo, title: t("metaTitle"), description: t("metaDescription"), image: page.image });
 }
 
 /** Vos Grands Événements : mariage, baptême, fêtes de famille, commandes groupées. */

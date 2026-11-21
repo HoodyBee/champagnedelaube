@@ -10,7 +10,7 @@ export const defaultContact = {
 };
 
 /** Agence qui a réalisé le site (crédit en bas du pied de page). */
-export const siteCredit = { name: "Detectezmoi.com", url: "http://www.detectezmoi.com/" };
+export const siteCredit = { name: "Detectezmoi.com", url: "https://www.detectezmoi.com/" };
 
 /** Terroirs : clé du brand book (couleur, picto) -> adresse de la page. Côte des Bar en premier. */
 /** `short` : nom court pour la ligne graphique de l'en-tête (« Villenauxe ») ; le nom officiel reste ailleurs. */
@@ -36,6 +36,8 @@ export type NavKey =
   | "toutSavoir"
   | "mag"
   | "proEntreprises"
+  | "communication"
+  | "partenaires"
   | "contact";
 
 type NavLink = { key: NavKey; href: AppPathname };
@@ -66,8 +68,14 @@ export const nav = {
   contact: { key: "contact", href: "/contact" } satisfies NavLink,
 };
 
-/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons. */
-export const proEntreprises: NavLink[] = [nav.pro[0], nav.entreprises, nav.pro[1]];
+/** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons, communication. */
+export const proEntreprises: NavLink[] = [
+  nav.pro[0],
+  nav.entreprises,
+  nav.pro[1],
+  { key: "communication", href: "/communication-marketing" },
+  // « Nos partenaires » (/nos-partenaires) : page prête, retirée du menu pour l'instant.
+];
 
 /** Contenus éditoriaux (pied de page, et liens depuis les pages Terroir et Particuliers). */
 export const contentPages: NavLink[] = [
