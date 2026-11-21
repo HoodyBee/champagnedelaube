@@ -418,3 +418,38 @@ Emplacements qui en profiteraient, avec des candidates repérées (à valider : 
 | Entreprises & CSE, ouverture | votre photo à l'ordinateur (déjà utilisée sur Contact et Communication) | à chercher : coffret cadeau sans marque visible (les deux trouvées sont « Unsplash+ », payantes) |
 
 Pour avancer : soit vous me confiez une clé d'API Unsplash (je la demanderai par le formulaire sécurisé), soit vous m'envoyez les photos choisies.
+
+## Article « Pourquoi les vignerons devraient s'intéresser au rap » : images restaurées (21 novembre 2026)
+
+**Pourquoi elles manquaient** : l'article a été importé le 19 novembre (commit « Partie B : articles du Mag… ») par un convertisseur qui ne reprenait que le texte de la page detectezmoi.com. L'image d'ouverture et les 6 images du texte n'ont jamais été copiées : ce n'était pas un retrait volontaire, mais l'oubli n'avait pas été signalé. Les 6 images du texte étaient d'ailleurs placées en « arrière-plan CSS », invisibles pour le convertisseur.
+
+**Restauration** : les 7 images sont récupérées sur [l'article d'origine](https://www.detectezmoi.com/rap-et-alcool-comment-le-hip-hop-booste-les-marques-de-luxe-et-de-spiritueux/), en version d'origine (la plus grande), converties en JPEG sans aucune métadonnée, renommées et décrites. Elles sont remises au même endroit : l'ouverture en tête d'article, puis une image à la fin de chaque section de marque.
+
+| Fichier | Section | Texte alternatif |
+|---|---|---|
+| `rap-jay-z-champagne-cristal-roederer.jpg` | ouverture | Jay-Z et une bouteille de champagne Cristal Roederer, image tirée d'un clip |
+| `busta-rhymes-pass-the-courvoisier-pochette.jpg` | Courvoisier | Pochette du titre Pass the Courvoisier, Part II de Busta Rhymes |
+| `diddy-vodka-ciroc.jpg` | Cîroc | Diddy tenant une bouteille de vodka Cîroc lors d'un événement de la marque |
+| `nicki-minaj-myx-fusions-moscato.jpg` | Myx Fusions | Nicki Minaj dans une publicité pour Myx Fusions Moscato |
+| `nas-cognac-hennessy.jpg` | Hennessy | Nas sur scène lors d'un événement Hennessy |
+| `jay-z-champagne-armand-de-brignac.jpg` | Armand de Brignac | Jay-Z tenant plusieurs bouteilles de champagne Armand de Brignac |
+| `booba-jack-da-pochette.jpg` | Jack Daniel's | Pochette du titre Jack Da de Booba, inspirée de l'étiquette Jack Daniel's |
+
+- Étiquettes dans la Médiathèque : `mag-article-rap`, `origine-detectezmoi`, `droits-tiers`.
+- Crédit : aucun crédit n'était indiqué sur l'article d'origine. Crédit mis : « Image reprise de l'article d'origine sur detectezmoi.com (droits réservés à leurs auteurs) ».
+- Manifeste : `content/photos/lots/article-rap.json`. Sauvegarde de l'article avant modification : `docs/sauvegardes/sanity-avant-images-rap.json`.
+- **La photo principale actuelle (sculpture lumineuse en forme de verre) est gardée** : l'image d'ouverture d'origine est placée en tête du texte, sans rien retirer.
+- **À savoir** : ces images sont des photos de presse, des pochettes et des images de clips appartenant à des tiers. Elles montrent des célébrités avec des marques d'alcool (point sensible au regard de la loi Évin). Elles sont remises à votre demande.
+
+## Autres articles : contrôle des images perdues à la reprise
+
+| Article | Ancien site | Nouveau site | Bilan |
+|---|---|---|---|
+| Pâtes au pesto | 3 | 3 + photo principale | complet |
+| Agneau à l'orange | 4 | 5 + photo principale | complet |
+| Aumônières de boudin blanc | 5 | 5 + photo principale | complet |
+| Sushis | 2 | 2 + photo principale | complet |
+| Labels et certifications | 6 logos dans le texte | logos dans le tableau | complet (logos déplacés dans le tableau, à votre demande) |
+| L'importance des accords | 0 | photo principale | complet |
+| Qu'est-ce qu'un cépage ? | 1 | photo principale | l'image d'origine est **introuvable sur l'ancien serveur** (erreur 404, revérifié le 21 novembre) ; non récupérable |
+| Vocabulaire en anglais, marronnier, Pétré | articles réécrits ou nouveaux | — | sans objet (Pétré non vérifié, comme demandé) |
