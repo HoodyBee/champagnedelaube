@@ -17,6 +17,7 @@ export function Hero({
   placeholderText,
   children,
   texteDabordMobile = false,
+  ratioPhoto = "4/3",
 }: {
   surTitre?: string;
   titre: string;
@@ -31,6 +32,8 @@ export function Hero({
   children?: ReactNode;
   /** Sur mobile : le texte avant la photo (par défaut, la photo d'abord). */
   texteDabordMobile?: boolean;
+  /** Format de la photo (ex. « 1/1 » quand le texte est long, pour garder un bloc à la même hauteur). */
+  ratioPhoto?: "4/3" | "1/1" | "4/5";
 }) {
   return (
     <section className="border-b border-filet bg-creme-clair">
@@ -44,7 +47,7 @@ export function Hero({
         </div>
         <Photo
           image={image}
-          ratio="4/3"
+          ratio={ratioPhoto}
           sizes="(min-width: 1024px) 50vw, 100vw"
           priority
           compactMobile

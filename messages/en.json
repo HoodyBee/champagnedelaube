@@ -164,8 +164,6 @@
     "terroirsTitre": "The Aube terroirs",
     "terroirsIntro": "In the south of Champagne, four terroirs, four soils, four characters. Set out to discover them, and to meet the people who farm them.",
     "terroirsCta": "Explore the Aube terroirs",
-    "carteTroyes": "Troyes",
-    "carteLegende": "Stylised map of the Aube terroirs",
     "terroirsCartes": {
       "cote-des-bar": "Pinot noir country, on Kimmeridgian marl.",
       "les-riceys": "One village, three appellations, including Rosé des Riceys.",
@@ -206,10 +204,11 @@
     "instagram": "Follow us on Instagram",
     "videoTitre": "Our terroirs at a glance",
     "videoPhrase": "Four terroirs, from Villenauxe-la-Grande in the north-west to the Côte des Bar and Les Riceys in the south: pick the one you'd like to discover.",
-    "videoConsigne": "Click a terroir on the map to discover it.",
+    "videoConsigne": "Click a terroir (or Troyes) to discover it.",
     "videoRevoir": "Replay",
     "videoVoir": "{nom}: discover this terroir",
-    "videoAlt": "Map of the Aube seen from above: the four champagne terroirs, Villenauxe-la-Grande in the north-west, Montgueux near Troyes, the Côte des Bar in the south-east and Les Riceys in the south. Google Earth imagery."
+    "videoAlt": "Map of the Aube seen from above: the four champagne terroirs, Villenauxe-la-Grande in the north-west, Montgueux near Troyes, the Côte des Bar in the south-east and Les Riceys in the south. Google Earth imagery.",
+    "videoTroyes": "Troyes, capital of the Aube"
   },
   "pro": {
     "arguments": {
@@ -701,7 +700,7 @@
     "presentation": "At Champagne de l'Aube, we introduce you to champagnes from independent Aube winemakers, their terroirs and the people who make them. With friends, with family, for a birthday or a business get-together, I put together a tailor-made moment with you, in Troyes, elsewhere in the Aube or at your place.",
     "signatureIntro": "In short:",
     "passageTitre": "Passing through Troyes?",
-    "passageTexte1": "No time to head down to the Côte des Bar? Or too many villages, too many estates, and no idea which one to pick? Here's the thing: I'll give you the tour without you having to move. We taste, we talk terroir, and you chat directly with the winemakers.",
+    "passageTexte1": "No time to head down to the Côte des Bar? Or too many villages, too many estates, and no idea which one to pick? Here's the thing: I'll give you the tour without you having to move, with a live chat with the winemakers.",
     "passageTexte2": "Didn't know they made champagne around here? Nobody will hold it against you… as long as you don't leave without discovering our little gems, which I've carefully chosen for you.",
     "passageCta": "Plan my tasting",
     "proSurTitre": "Bars · Restaurants · Companies · Event organisers",
@@ -711,7 +710,8 @@
     "proCta": "Tell us about your event",
     "partenariatTitre": "Shall we work together?",
     "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
-    "partenariatCta": "Suggest a partnership"
+    "partenariatCta": "Suggest a partnership",
+    "presentation2": "No wine lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. No need to be an expert, just a wish to discover. And if a cuvée wins you over, you can order your bottles directly from the winemaker, with no pressure and no obligation to buy."
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",

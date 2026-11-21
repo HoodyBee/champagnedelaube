@@ -86,8 +86,10 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
         placeholderText={tHome("photoAVenir")}
         actions={<ButtonLink href={{ pathname: HREF, hash: "organiser" }}>{t("ctaOrganiser")}</ButtonLink>}
         texteDabordMobile
+        ratioPhoto="1/1"
       >
         <p className="mt-space-2 max-w-xl text-pretty text-[1.0625rem] text-gris-chaud">{t("presentation")}</p>
+        <p className="mt-space-2 max-w-xl text-pretty text-[1.0625rem] text-gris-chaud">{t("presentation2")}</p>
         <p className="mt-space-2 max-w-xl text-[1.0625rem] text-gris-chaud">
           {t("signatureIntro")} <strong className="font-bold italic text-bronze">{t("signature")}</strong>
         </p>
