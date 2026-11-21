@@ -1,0 +1,115 @@
+{
+ "lot": "banques-images-1",
+ "photos": [
+  {
+   "fichier": "coffret-cadeau-dore-entreprise.jpg",
+   "alt": {
+    "fr": "Personne en tailleur tenant un coffret cadeau doré noué d'un ruban",
+    "en": "Person in a suit holding a gold gift box tied with a ribbon"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-rawpixel"
+   ],
+   "usage": "Entreprises & CSE : photo d'ouverture",
+   "credit": "Photo : rawpixel (CC0)",
+   "source": {
+    "page": "https://www.rawpixel.com/image/5969503/gold-gift-box",
+    "fichier": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvaXMxNjE0MS1pbWFnZS1rd3lzY251cy5qcGc.jpg",
+    "openverse": "https://openverse.org/image/88f9c873-1048-4ab0-850f-0ee701e6b093",
+    "auteur": null,
+    "licence": "CC0 1.0 (domaine public)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "taille": "1024x683"
+   }
+  },
+  {
+   "fichier": "coffrets-cadeaux-et-flutes-de-champagne.jpg",
+   "alt": {
+    "fr": "Petits coffrets cadeaux colorés et deux flûtes de champagne sur une table en bois",
+    "en": "Small colourful gift boxes and two champagne flutes on a wooden table"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-stocksnap"
+   ],
+   "usage": "Entreprises & CSE : coffrets",
+   "credit": "Photo : Bruce Mars / StockSnap (CC0)",
+   "source": {
+    "page": "https://stocksnap.io/photo/gift-box-QYVIUVMVSA",
+    "fichier": "https://cdn.stocksnap.io/img-thumbs/960w/QYVIUVMVSA.jpg",
+    "openverse": "https://openverse.org/image/8e4362a7-dc88-432b-8abb-4d2b3089faee",
+    "auteur": "Bruce Mars",
+    "licence": "CC0 1.0 (domaine public)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "taille": "960x640"
+   }
+  },
+  {
+   "fichier": "serveur-plateau-flutes-de-champagne.jpg",
+   "alt": {
+    "fr": "Serveur présentant un plateau de flûtes de champagne",
+    "en": "Waiter holding a tray of champagne flutes"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-stocksnap"
+   ],
+   "usage": "Entreprises & CSE : animations",
+   "credit": "Photo : Matt Bango / StockSnap (CC0)",
+   "source": {
+    "page": "https://stocksnap.io/photo/waiter-drink-EWJPCRAR3S",
+    "fichier": "https://cdn.stocksnap.io/img-thumbs/960w/EWJPCRAR3S.jpg",
+    "openverse": "https://openverse.org/image/18454a65-e038-4629-b921-e4264d4f3fc4",
+    "auteur": "Matt Bango",
+    "licence": "CC0 1.0 (domaine public)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "taille": "960x1344"
+   }
+  },
+  {
+   "fichier": "table-de-restaurant-verres-lumiere-chaude.jpg",
+   "alt": {
+    "fr": "Verres et couverts sur une table de restaurant, dans une lumière chaude",
+    "en": "Glasses and cutlery on a restaurant table in warm light"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-rawpixel"
+   ],
+   "usage": "Restaurants, cavistes, hôtels : profil Restaurants",
+   "credit": "Photo : rawpixel (CC0)",
+   "source": {
+    "page": "https://www.rawpixel.com/image/5969431/wine-glass-table",
+    "fichier": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvaXMxNzM5Ny1pbWFnZS1rd3lzYXM2MC5qcGc.jpg",
+    "openverse": "https://openverse.org/image/7bb14888-8b44-4666-97c6-8224f89d3a2a",
+    "auteur": null,
+    "licence": "CC0 1.0 (domaine public)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "taille": "1024x682"
+   }
+  },
+  {
+   "fichier": "hall-hotel-elegant-lumiere-doree.jpg",
+   "alt": {
+    "fr": "Hall d'hôtel élégant avec fauteuil et lampe, dans une lumière dorée",
+    "en": "Elegant hotel lobby with an armchair and a lamp, in golden light"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-rawpixel"
+   ],
+   "usage": "Restaurants, cavistes, hôtels : profil Hôtels",
+   "credit": "Photo : rawpixel (CC0)",
+   "source": {
+    "page": "https://www.rawpixel.com/image/5969494/hotel-lobby",
+    "fichier": "https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvaXMxNTY1OC1pbWFnZS1rd3lzYzFsMy5qcGc.jpg",
+    "openverse": "https://openverse.org/image/5da2a9d4-b559-4ddd-b715-2161fc401f11",
+    "auteur": null,
+    "licence": "CC0 1.0 (domaine public)",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "taille": "1024x683"
+   }
+  }
+ ]
+}

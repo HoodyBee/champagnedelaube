@@ -453,3 +453,43 @@ Pour avancer : soit vous me confiez une clé d'API Unsplash (je la demanderai pa
 | L'importance des accords | 0 | photo principale | complet |
 | Qu'est-ce qu'un cépage ? | 1 | photo principale | l'image d'origine est **introuvable sur l'ancien serveur** (erreur 404, revérifié le 21 novembre) ; non récupérable |
 | Vocabulaire en anglais, marronnier, Pétré | articles réécrits ou nouveaux | — | sans objet (Pétré non vérifié, comme demandé) |
+
+
+## Banques d'images : lot 1 (21 novembre 2026, via l'API Openverse)
+
+Recherches : 44 requêtes en anglais et en français, jusqu'à 3 pages chacune, filtre « usage commercial et modification autorisés », photos seulement. Résultat : 589 photos, **toutes sous licence CC0** (domaine public), venant de StockSnap et rawpixel. Tri à l'œil sur des planches-contact.
+
+**Pixabay** : son API exige la clé dans l'adresse de la requête (`?key=…`). Le formulaire sécurisé ne sait injecter une clé que dans un en-tête : je n'ai donc pas pu l'utiliser sans que la clé apparaisse en clair. Je ne vous ai pas demandé de la coller dans la conversation.
+
+| Fichier | Où | Texte alternatif | Auteur | Source | Licence | Taille |
+|---|---|---|---|---|---|---|
+| `coffret-cadeau-dore-entreprise.jpg` | Entreprises & CSE : photo d'ouverture | Personne en tailleur tenant un coffret cadeau doré noué d'un ruban | non indiqué | [page d'origine](https://www.rawpixel.com/image/5969503/gold-gift-box) · [fiche Openverse](https://openverse.org/image/88f9c873-1048-4ab0-850f-0ee701e6b093) | CC0 1.0 (domaine public) | 1024x683 px |
+| `coffrets-cadeaux-et-flutes-de-champagne.jpg` | Entreprises & CSE : coffrets | Petits coffrets cadeaux colorés et deux flûtes de champagne sur une table en bois | Bruce Mars | [page d'origine](https://stocksnap.io/photo/gift-box-QYVIUVMVSA) · [fiche Openverse](https://openverse.org/image/8e4362a7-dc88-432b-8abb-4d2b3089faee) | CC0 1.0 (domaine public) | 960x640 px |
+| `serveur-plateau-flutes-de-champagne.jpg` | Entreprises & CSE : animations | Serveur présentant un plateau de flûtes de champagne | Matt Bango | [page d'origine](https://stocksnap.io/photo/waiter-drink-EWJPCRAR3S) · [fiche Openverse](https://openverse.org/image/18454a65-e038-4629-b921-e4264d4f3fc4) | CC0 1.0 (domaine public) | 960x1344 px |
+| `table-de-restaurant-verres-lumiere-chaude.jpg` | Restaurants, cavistes, hôtels : profil Restaurants | Verres et couverts sur une table de restaurant, dans une lumière chaude | non indiqué | [page d'origine](https://www.rawpixel.com/image/5969431/wine-glass-table) · [fiche Openverse](https://openverse.org/image/7bb14888-8b44-4666-97c6-8224f89d3a2a) | CC0 1.0 (domaine public) | 1024x682 px |
+| `hall-hotel-elegant-lumiere-doree.jpg` | Restaurants, cavistes, hôtels : profil Hôtels | Hall d'hôtel élégant avec fauteuil et lampe, dans une lumière dorée | non indiqué | [page d'origine](https://www.rawpixel.com/image/5969494/hotel-lobby) · [fiche Openverse](https://openverse.org/image/5da2a9d4-b559-4ddd-b715-2161fc401f11) | CC0 1.0 (domaine public) | 1024x683 px |
+
+- Étiquettes Médiathèque : `banque-images`, `banque-stocksnap` ou `banque-rawpixel`. Crédit dans Sanity : « Photo : [auteur] / [site] (CC0) » ; il apparaît automatiquement dans les **mentions légales** (rubrique Crédits photos).
+- Fichiers ré-enregistrés en JPEG **sans aucune métadonnée**, noms SEO, jamais présentés comme l'Aube, nos vignerons ou nos événements (pas de légende).
+- **Limites** : Openverse ne fournit ici que des versions de 960 à 1 024 px (assez pour ces emplacements, mais en dessous des 1 200 px conseillés pour Google Discover). Les pages d'origine (StockSnap, rawpixel) bloquent les robots : la licence CC0 vient des données d'Openverse, que je n'ai pas pu recouper sur ces pages.
+- Photos remplacées, **gardées dans la Médiathèque** : votre photo à l'ordinateur (Entreprises & CSE, et sa variante verticale sur Contact, remplacée par les bouteilles de la dégustation à Troyes), la bouteille Moutard*Dangin « table de fête » (coffrets) et le service Moutard*Dangin au salon (animations). La page Cavistes garde nos propres photos.
+
+## Candidates à télécharger vous-même (versions haute définition)
+
+| # | Page Pexels / Unsplash | Auteur | Licence | Où je la mettrais | Pourquoi |
+|---|---|---|---|---|---|
+| 1 | [Five Assorted Gift Boxes and Two Flute Glasses](https://www.pexels.com/photo/five-assorted-gift-boxes-and-two-flute-glasses-1050465/) | Bruce Mars (même photo que celle placée) | Licence Pexels | Entreprises & CSE, coffrets | version haute définition de la photo actuelle |
+| 2 | [Person Holding a Gift with Ribbon](https://www.pexels.com/photo/person-holding-a-gift-with-ribbon-5486829/) | à lire sur la page | Licence Pexels | Entreprises & CSE, ouverture | cadeau offert, mains seulement |
+| 3 | [Close-up of hands having a toast with champagne](https://www.pexels.com/photo/close-up-shot-of-hands-having-a-toast-using-a-glass-of-champagne-5834736/) | Tima Miroshnichenko (selon la recherche) | Licence Pexels | Entreprises & CSE, animations, ou Vos Grands Événements | convivialité, mains, pas de visage |
+| 4 | [Person Pouring Champagne on Champagne Flutes](https://www.pexels.com/photo/person-pouring-champagne-on-champagne-flutes-3171770/) | à lire sur la page | Licence Pexels | Restaurants, cavistes, hôtels (ouverture) | service, élégant |
+| 5 | [Shallow focus: pouring champagne in a coupe](https://www.pexels.com/photo/shallow-focus-photo-of-a-person-pouring-champagne-in-a-coupe-glass-6288693/) | cottonbro studio (selon la recherche) | Licence Pexels | Dégustations privées (section moment sur mesure) | coupe, tons chauds |
+| 6 | [Cooked food beside glass of champagne](https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-beside-glass-of-champagne-IzRqHCdzauw) | Katarzyna Pracuch | Licence Unsplash | Restaurants (profil) | table de restaurant, en haute définition |
+| 7 | [Modern lobby with marble reception desk and plants](https://unsplash.com/photos/modern-lobby-with-marble-reception-desk-and-plants-pt0nGH-NvoA) | Aalo Lens | Licence Unsplash | Hôtels (profil) | accueil d'hôtel, sans personne |
+| 8 | [People inside a warmly lit hotel lobby at night](https://unsplash.com/photos/people-inside-a-warmly-lit-hotel-lobby-at-night-Vl0-PSTGOCM) | Jan Suchánek | Licence Unsplash | Hôtels (variante) | lumière chaude (vérifier qu'aucun visage n'est reconnaissable) |
+
+Évitez les photos marquées « Unsplash+ » ou « Getty Images » (payantes ou sous d'autres conditions).
+
+**Comment les déposer (3 lignes)** :
+1. Téléchargez la photo depuis sa page (bouton « Télécharger gratuitement », taille originale).
+2. Dans le Studio, menu **Médiathèque**, glissez le fichier, puis ajoutez l'étiquette `banque-images-a-placer` et collez l'adresse de la page d'origine dans « Description ».
+3. Prévenez-moi : je la renomme, nettoie ses métadonnées, rédige le texte alternatif et le crédit, puis la place.
