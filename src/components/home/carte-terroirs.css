@@ -1,0 +1,39 @@
+/*
+ * Carte des terroirs de l'accueil (zones cliquables posées sur la vidéo).
+ * Importé directement par TerroirsVideo.tsx : ces règles voyagent avec le composant.
+ * En plus, chaque forme porte fill="transparent" dans le SVG : même sans cette feuille,
+ * rien ne s'affiche au repos (sans style, un SVG se remplit en noir par défaut).
+ */
+.carte-terroirs a { cursor: pointer; outline: none; }
+.carte-terroirs .forme {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease;
+}
+.carte-terroirs .etiquette {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: stroke 0.2s ease, fill 0.2s ease;
+}
+.carte-terroirs .terroir:hover .forme,
+.carte-terroirs .terroir:focus-visible .forme {
+  fill: color-mix(in srgb, var(--teinte) 22%, transparent);
+  stroke: var(--color-or);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--color-or) 85%, transparent)) drop-shadow(0 0 14px color-mix(in srgb, var(--color-or) 55%, transparent));
+}
+.carte-terroirs .terroir:hover .etiquette,
+.carte-terroirs .terroir:focus-visible .etiquette,
+.carte-terroirs .ville:hover .etiquette,
+.carte-terroirs .ville:focus-visible .etiquette {
+  fill: color-mix(in srgb, var(--color-or) 16%, transparent);
+  stroke: var(--color-or);
+}
+.carte-terroirs .zone-doigt { fill: transparent; display: none; }
+@media (max-width: 640px), (pointer: coarse) {
+  .carte-terroirs .zone-doigt { display: inline; }
+}
+.carte-terroirs .coeur { fill: var(--color-azur-troyes); opacity: 0; transition: opacity 0.2s ease; }
+.carte-terroirs .ville:hover .coeur,
+.carte-terroirs .ville:focus-visible .coeur { opacity: 1; }
