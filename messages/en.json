@@ -35,7 +35,8 @@
     "troyes": "Troyes, capital of the Aube",
     "ouvrirSousMenu": "Open the {menu} submenu",
     "fermerSousMenu": "Close the {menu} submenu",
-    "proEntreprisesHub": "Trade & Business"
+    "proEntreprisesHub": "Trade & Business",
+    "quiSuisJe": "About me"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -417,7 +418,8 @@
       "evenement": "Plan a special occasion"
     },
     "vigneron": "Are you a winemaker? Tell us about your estate",
-    "metaTitle": "Contact us in Troyes: winemakers, trade and private clients"
+    "metaTitle": "Contact us in Troyes: winemakers, trade and private clients",
+    "quiSuisJeLien": "About me: my story"
   },
   "newsletter": {
     "bar": {
@@ -715,7 +717,8 @@
     "partenariatTitre": "Shall we work together?",
     "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
     "partenariatCta": "Suggest a partnership",
-    "presentation2": "No lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. Curious newcomer, champagne lover or seasoned connoisseur: there is something for everyone, and enthusiasts will find plenty to talk about. And once the tasting is over, if a cuvée wins you over, it is the perfect moment to order your bottles directly from the winemaker, with no pressure and no obligation to buy."
+    "presentation2": "No lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. Curious newcomer, champagne lover or seasoned connoisseur: there is something for everyone, and enthusiasts will find plenty to talk about. And once the tasting is over, if a cuvée wins you over, it is the perfect moment to order your bottles directly from the winemaker, with no pressure and no obligation to buy.",
+    "quiSuisJeLien": "About me: my story"
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",
@@ -1171,5 +1174,14 @@
     "partenariatTitre": "Shall we work together?",
     "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
     "contactCta": "Write to us"
+  },
+  "quiSuisJePage": {
+    "titre": "About me",
+    "metaTitle": "About me: Julien, Champagne de l'Aube in Troyes",
+    "metaDescription": "Julien lives in Troyes and loves all things local and authentic: his journey, from home catering to champagne, and why he champions the winemakers of the Aube.",
+    "liensTitre": "Find out more",
+    "lienDegustations": "Our private tastings",
+    "lienPro": "Trade & Business",
+    "lienContact": "Contact me"
   }
 }

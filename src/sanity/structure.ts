@@ -58,6 +58,7 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
       dossier(S, "contact-legal", "Contact et pages légales", [
         pageFixe(S, "contact", "Contact"),
+        pageFixe(S, "qui-suis-je", "Page Qui suis-je"),
         pageFixe(S, "mentions-legales", "Mentions légales"),
         pageFixe(S, "confidentialite", "Politique de confidentialité"),
       ]),

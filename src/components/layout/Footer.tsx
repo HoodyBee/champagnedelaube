@@ -3,6 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import type { ReactNode } from "react";
 import { SocialLinks } from "@/components/icons/SocialLinks";
 import { Link } from "@/i18n/navigation";
+import { quiSuisJePubliee } from "@/lib/qui-suis-je";
 import type { Locale, StaticPathname as AppPathname } from "@/i18n/routing";
 import { logos } from "@/lib/brand";
 import { contentPages, nav, proEntreprises, proEntreprisesHub, siteCredit, telHref, terroirPages } from "@/lib/site";
@@ -20,6 +21,7 @@ export async function Footer({ locales }: { locales: readonly Locale[] }) {
   const locale = (await getLocale()) as Locale;
   const t = await getTranslations("footer");
   const tNav = await getTranslations("nav");
+  const quiSuisJe = await quiSuisJePubliee();
   const tLegal = await getTranslations("legal");
   const tMeta = await getTranslations("meta");
   const tSocial = await getTranslations("social");
@@ -78,6 +80,8 @@ export async function Footer({ locales }: { locales: readonly Locale[] }) {
             <FooterLink key={p.href} href={p.href}>{tNav(p.key)}</FooterLink>
           ))}
           <FooterLink href={nav.contact.href}>{tNav("contact")}</FooterLink>
+          {/* « Qui suis-je ? » : seulement une fois la page publiée dans le Studio. */}
+          {quiSuisJe && <FooterLink href="/qui-suis-je">{tNav("quiSuisJe")}</FooterLink>}
         </FooterColumn>
 
         <div>

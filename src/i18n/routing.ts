@@ -189,6 +189,8 @@ export const routing = defineRouting({
 
     // Contact et légal
     "/contact": { fr: "/contact", en: "/contact", nl: "/contact", it: "/contatti", de: "/kontakt" },
+    // Qui suis-je ? (page du Studio, visible seulement une fois publiée)
+    "/qui-suis-je": { fr: "/qui-suis-je", en: "/about-me", nl: "/over-mij", it: "/chi-sono", de: "/uber-mich" },
     "/mentions-legales": {
       fr: "/mentions-legales",
       en: "/legal-notice",

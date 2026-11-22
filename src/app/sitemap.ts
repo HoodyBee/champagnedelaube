@@ -25,6 +25,7 @@ import {
 import { urlFor } from "@/sanity/lib/image";
 import { PHOTOS_TROYES } from "@/lib/troyes-photos";
 import { THEMES_MAG } from "@/lib/themes-mag";
+import { quiSuisJePubliee } from "@/lib/qui-suis-je";
 import { PHOTOS_ESPACE_PRO } from "@/lib/espace-pro-photos";
 import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
@@ -63,19 +64,22 @@ const PAGES: StaticPathname[] = [
  * page avec ses équivalents dans les autres langues (hreflang).
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [locales, vignerons, articles, reglages, cartes, langues] = await Promise.all([
+  const [locales, vignerons, articles, reglages, cartes, langues, quiSuisJe] = await Promise.all([
     getActiveLocales(),
     getVigneronSlugs(),
     getArticleSlugs(),
     getReglages(),
     getArticles(defaultLocale),
     getArticleLangues(),
+    quiSuisJePubliee(),
   ]);
   // Pages de rubrique /le-mag/<code>/ : seulement celles qui ont des articles.
   const rubriques = [...new Set(cartes.flatMap((a) => a.rubriques))].filter((r) => !(r in PAGES_RUBRIQUE));
   const hrefs: Href[] = [
     ...PAGES,
     ...(reglages.pepitesActive ? (["/ou-trouver-nos-pepites"] as Href[]) : []),
+    // « Qui suis-je ? » : seulement une fois publiée dans le Studio.
+    ...(quiSuisJe ? (["/qui-suis-je"] as Href[]) : []),
     ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/cepages-champagne/[cepage]", params: { cepage } }) as Href),
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...rubriques.map((rubrique) => ({ pathname: "/le-mag/[rubrique]", params: { rubrique } }) as Href),
