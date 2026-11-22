@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { SanityImage } from "@/components/ui/SanityImage";
 import { APPARITION, ETIQUETTES, FORMES, PHASES, type Cadrage } from "./carte-terroirs-formes";
+import "./carte-terroirs.css";
 
 export type TerroirLien = { key: string; label: string; url: string; color: string };
 
@@ -141,10 +142,10 @@ export function TerroirsVideo({
               const etiquetteGrande = [x0 - 14, y0 - 18, x1 - x0 + 28, y1 - y0 + 36] as const;
               return (
                 <a key={`${cadrage}-${t.key}`} href={t.url} onClick={aller(t.url)} aria-label={textes.voir.replace("{nom}", t.label)} className="terroir" style={{ ["--teinte" as string]: t.color }}>
-                  <path d={FORMES[cadrage][t.key]} className="forme" />
+                  <path d={FORMES[cadrage][t.key]} className="forme" fill="transparent" stroke="transparent" />
                   {/* Sur mobile, une zone de toucher plus large autour de l'étiquette (invisible) */}
-                  <rect x={x0 - DOIGT[t.key][0]} y={y0 - DOIGT[t.key][1]} width={x1 - x0 + DOIGT[t.key][0] + DOIGT[t.key][2]} height={y1 - y0 + DOIGT[t.key][1] + DOIGT[t.key][3]} className="zone-doigt" />
-                  <rect x={etiquetteGrande[0]} y={etiquetteGrande[1]} width={etiquetteGrande[2]} height={etiquetteGrande[3]} rx={18} className="etiquette" />
+                  <rect x={x0 - DOIGT[t.key][0]} y={y0 - DOIGT[t.key][1]} width={x1 - x0 + DOIGT[t.key][0] + DOIGT[t.key][2]} height={y1 - y0 + DOIGT[t.key][1] + DOIGT[t.key][3]} className="zone-doigt" fill="transparent" />
+                  <rect x={etiquetteGrande[0]} y={etiquetteGrande[1]} width={etiquetteGrande[2]} height={etiquetteGrande[3]} rx={18} className="etiquette" fill="transparent" stroke="transparent" />
                 </a>
               );
             })}
@@ -153,11 +154,12 @@ export function TerroirsVideo({
                 const [x0, y0, x1, y1] = ETIQUETTES[cadrage].troyes;
                 return (
                   <a href={troyes.url} onClick={aller(troyes.url)} aria-label={troyes.label} className="ville">
-                    <rect x={x0 - DOIGT.troyes[0]} y={y0 - DOIGT.troyes[1]} width={x1 - x0 + DOIGT.troyes[0] + DOIGT.troyes[2]} height={y1 - y0 + DOIGT.troyes[1] + DOIGT.troyes[3]} className="zone-doigt" />
-                    <rect x={x0 - 12} y={y0 - 12} width={x1 - x0 + 24} height={y1 - y0 + 24} rx={14} className="etiquette" />
+                    <rect x={x0 - DOIGT.troyes[0]} y={y0 - DOIGT.troyes[1]} width={x1 - x0 + DOIGT.troyes[0] + DOIGT.troyes[2]} height={y1 - y0 + DOIGT.troyes[1] + DOIGT.troyes[3]} className="zone-doigt" fill="transparent" />
+                    <rect x={x0 - 12} y={y0 - 12} width={x1 - x0 + 24} height={y1 - y0 + 24} rx={14} className="etiquette" fill="transparent" stroke="transparent" />
                     {/* Petit cœur azur (couleur du blason de Troyes) qui apparaît au survol */}
                     <path
                       className="coeur"
+                      opacity={0}
                       transform={`translate(${x1 + 10} ${y0 + (y1 - y0) / 2 - 13}) scale(1.7)`}
                       d="M8 13.6 6.9 12.6C2.9 9 .3 6.6.3 3.9.3 1.7 2 0 4.2 0c1.2 0 2.4.6 3.1 1.5h1.4C9.4.6 10.6 0 11.8 0 14 0 15.7 1.7 15.7 3.9c0 2.7-2.6 5.1-6.6 8.7L8 13.6Z"
                     />
