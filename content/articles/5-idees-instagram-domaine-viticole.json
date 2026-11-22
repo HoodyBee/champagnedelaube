@@ -1,0 +1,410 @@
+{
+ "_id": "drafts.article-5-idees-instagram-domaine-viticole",
+ "_type": "article",
+ "titre": {
+  "_type": "localeString",
+  "fr": "5 idées pour faire connaître son domaine viticole sur Instagram"
+ },
+ "slug": {
+  "_type": "slug",
+  "current": "5-idees-instagram-domaine-viticole"
+ },
+ "rubriquePrincipale": "actualites",
+ "date": "2026-11-21",
+ "extrait": {
+  "_type": "localeText",
+  "fr": "Pas besoin d'une agence ni d'un studio photo pour exister sur Instagram : un téléphone, un peu de régularité et l'envie de raconter votre vigne suffisent pour commencer. Voici cinq idées concrètes, vérifiées dans les règles d'Instagram… et de la loi Évin."
+ },
+ "etiquettes": [
+  {
+   "_type": "reference",
+   "_ref": "etiquette-marketing",
+   "_key": "mkt"
+  }
+ ],
+ "contenu": {
+  "_type": "localeRichText",
+  "fr": [
+   {
+    "_type": "block",
+    "_key": "mg55kjtezu",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "hu25345cyh",
+      "text": "Vous passez vos journées entre les rangs, le pressoir et la cave, et Instagram vous semble être un métier à part entière ? Bonne nouvelle : ce que vous vivez au quotidien est exactement ce que vos futurs clients ont envie de voir. Le geste de la taille en plein hiver, la première grappe qui change de couleur, la caisse de vendange qu'on charge sur le tracteur… Pour vous, c'est la routine. Pour un amateur de champagne qui vit à Lille, à Lyon ou à Bruxelles, c'est une porte ouverte sur un monde qu'il ne connaît pas.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "1nqh118urt",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "5g001vrw1m",
+      "text": "1. Montrez les coulisses en vidéo verticale",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "e9u19xb4qd",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "9b4avd0h1w",
+      "text": "Instagram pousse aujourd'hui la vidéo courte et verticale, les Reels. Les conseils officiels d'Instagram et de Meta vont dans le même sens : filmer en vertical (format 9:16), capter l'attention dès les premières secondes, et surtout publier du contenu original, filmé par vous, plutôt que des vidéos reprises d'ailleurs. Et Instagram le dit lui-même : pas besoin de décor ni d'accessoires, il suffit d'utiliser ce que vous avez sous la main.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "1uto0do3s5",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "4ru19e6i1q",
+      "text": "Concrètement : quinze secondes sur le débourrement, un plan sur le pressoir qui tourne, la main qui retourne une bouteille sur pupitre. Ajoutez un texte à l'écran (« Ce matin, on presse le pinot noir ») pour ceux qui regardent sans le son. Pas de montage compliqué : la sincérité compte plus que la perfection.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "tsvps56nd9",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "w4ulu9ehp8",
+      "text": "2. Racontez votre terroir et les gens qui le font vivre",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "5sehcw3blk",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "ll3ojf81vh",
+      "text": "La loi Évin encadre strictement la communication sur l'alcool, mais elle laisse une large place à l'information : l'origine, le terroir, le cépage, la façon de travailler, les personnes. Et c'est justement ce qui rend un domaine unique.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "iso3v18j1i",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "0fqph02in2",
+      "text": "Présentez votre village, la parcelle dont vous êtes fier, le grand-père qui a planté les premières vignes, la nouvelle génération qui reprend le flambeau. Expliquez pourquoi votre sol donne tel caractère à votre pinot noir, ce que change une année de gel, comment se passe une journée de vendanges. Ces publications-là sont à la fois les plus conformes et les plus attachantes : on ne s'abonne pas à une étiquette, on s'abonne à une histoire.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "acsppfpr58",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "pajk38fon8",
+      "text": "Petite règle d'or : montrez le vin dans son contexte (la vigne, la cave, la table, le partage) et restez dans l'information. Pas de verres qui débordent, pas de scènes d'excès, pas de mise en scène sportive ou de séduction.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "5bs8ftfxwr",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "rcunoimd5d",
+      "text": "3. Publiez à plusieurs : les posts « Collab »",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "hu6wlscw8t",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "0hwhr514hf",
+      "text": "Instagram permet de publier un même post ou un même Reel à plusieurs comptes grâce à la fonction « Collab » : au moment de publier, vous invitez un autre compte comme collaborateur, et le post apparaît sur les deux profils. Selon l'aide d'Instagram, une collaboration peut réunir jusqu'à cinq comptes, et elle est disponible pour les posts du fil et les Reels (pas pour les stories).",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "0osubed3zm",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "r87pnou69r",
+      "text": "C'est une excellente façon de toucher le public de vos partenaires : le caviste qui référence votre cuvée, le restaurant qui la sert, l'office de tourisme qui organise une visite, ou un autre vigneron du village pour une journée portes ouvertes. Pensez à inviter le collaborateur avant de publier : c'est plus simple que de le faire après.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "3gs2wg86lw",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "wakx76n3xm",
+      "text": "4. Aidez-les à vous trouver (et à vous lire)",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "obxy6y78uy",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "25iwmd5bl9",
+      "text": "Deux réglages simples, souvent oubliés, font une vraie différence.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "iza1ms7dee",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "vs4metykz6",
+      "text": "La ",
+      "marks": []
+     },
+     {
+      "_type": "span",
+      "_key": "qzabn2b3yr",
+      "text": "localisation",
+      "marks": [
+       "strong"
+      ]
+     },
+     {
+      "_type": "span",
+      "_key": "7yhb8ykqjb",
+      "text": " d'abord : ajoutez le lieu (votre village, votre domaine) à vos publications. Les curieux qui regardent les photos prises dans un lieu tomberont sur les vôtres, et l'on peut ajouter ou modifier la localisation d'un post déjà publié.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "83r65ci4rs",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "dq1oez572d",
+      "text": "Le ",
+      "marks": []
+     },
+     {
+      "_type": "span",
+      "_key": "ai3uw1d6vf",
+      "text": "texte alternatif",
+      "marks": [
+       "strong"
+      ]
+     },
+     {
+      "_type": "span",
+      "_key": "aecgk1gsqv",
+      "text": " ensuite : Instagram permet de décrire chaque photo pour les personnes qui utilisent un lecteur d'écran. L'application en génère un automatiquement, mais il est souvent approximatif : écrire le vôtre (« Grappes de pinot noir au moment de la véraison, à Polisy ») rend votre compte plus accessible et plus précis. Vous pouvez aussi le modifier après publication.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "b3jqa1rxkv",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "9ei095xzw9",
+      "text": "Côté texte, écrivez comme vous parlez : une légende courte, une information utile, et quelques mots-clés que vos clients pourraient chercher (votre village, votre cépage, votre appellation).",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "4udm3ognt4",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "4na17k4atx",
+      "text": "5. Connaissez les règles du jeu (alcool et réseaux sociaux)",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "8c3hfp3jpa",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "7uz8u148fq",
+      "text": "Instagram n'est pas un espace sans règles pour les producteurs de vin. En France, la loi Évin s'applique aussi aux réseaux sociaux et aux influenceurs : le contenu doit rester informatif (origine, composition, mode d'élaboration, conditions de consommation). La justice l'a rappelé récemment, en ordonnant à Meta de retirer des publications d'influenceurs faisant la promotion d'alcool.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "tnh8fys9um",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "rf0pyz76kc",
+      "text": "Côté plateforme, Meta impose aussi ses propres règles : les publicités pour l'alcool ne peuvent pas cibler les moins de 18 ans, et pour un contenu de marque (un partenariat rémunéré), Instagram permet de fixer un âge minimum pour les personnes qui le voient. Attention : cet âge minimum doit être réglé au moment de publier, il ne s'ajoute pas après coup.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "yt0xi8juft",
+    "style": "normal",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "w145rk8jmk",
+      "text": "En pratique : pas de concours qui incite à boire, pas de partenariats flous avec des influenceurs, et toujours ce réflexe de l'information plutôt que de l'incitation. Vous pouvez être chaleureux, convivial, drôle même, tant que vous restez du bon côté de la ligne.",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "7g2cw73620",
+    "style": "h2",
+    "markDefs": [],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "06rqtwtwv3",
+      "text": "Et maintenant ?",
+      "marks": []
+     }
+    ]
+   },
+   {
+    "_type": "block",
+    "_key": "btnqvrkrat",
+    "style": "normal",
+    "markDefs": [
+     {
+      "_type": "link",
+      "_key": "lcom",
+      "href": "/communication-marketing/"
+     }
+    ],
+    "children": [
+     {
+      "_type": "span",
+      "_key": "n7zuvux79j",
+      "text": "Choisissez une seule de ces idées et testez-la pendant un mois, plutôt que de tout faire à moitié. Mieux vaut un Reel par semaine pendant les vendanges qu'une avalanche de publications un jour, puis le silence pendant trois mois. Et si vous manquez de temps (ce qui est bien normal entre la taille et le tirage), sachez que d'autres peuvent vous accompagner : ",
+      "marks": []
+     },
+     {
+      "_type": "span",
+      "_key": "ozkmgnq177",
+      "text": "photo, vidéo, réseaux sociaux",
+      "marks": [
+       "lcom"
+      ]
+     },
+     {
+      "_type": "span",
+      "_key": "1mfjrclo6f",
+      "text": ", c'est aussi notre métier.",
+      "marks": []
+     }
+    ]
+   }
+  ]
+ },
+ "seo": {
+  "_type": "seo",
+  "title": {
+   "_type": "localeString",
+   "fr": "Instagram pour vignerons : 5 idées pour son domaine"
+  },
+  "description": {
+   "_type": "localeText",
+   "fr": "Reels, coulisses, posts Collab, localisation, loi Évin : 5 idées concrètes et vérifiées pour faire connaître son domaine viticole sur Instagram."
+  }
+ },
+ "image": {
+  "_type": "imageAvecAlt",
+  "asset": {
+   "_type": "reference",
+   "_ref": "image-14cbd21f85155f4fdbabcf28364c15c2e9049901-1280x853-jpg"
+  },
+  "alt": {
+   "_type": "localeString",
+   "fr": "Téléphone, tasse de café et carnet de notes sur une table en bois",
+   "en": "Phone, cup of coffee and notebook on a wooden table"
+  },
+  "credit": "Photo : kaboompics / Pixabay"
+ }
+}

@@ -24,6 +24,9 @@ import {
 } from "@/sanity/content";
 import { urlFor } from "@/sanity/lib/image";
 import { PHOTOS_TROYES } from "@/lib/troyes-photos";
+import { THEMES_MAG } from "@/lib/themes-mag";
+import { quiSuisJePubliee } from "@/lib/qui-suis-je";
+import { PHOTOS_ESPACE_PRO } from "@/lib/espace-pro-photos";
 import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
 
@@ -33,6 +36,7 @@ type Href = Parameters<typeof getPathname>[0]["href"];
 const PAGES: StaticPathname[] = [
   "/",
   "/le-terroir-de-laube",
+  "/espace-pro-entreprises",
   "/cepages-champagne",
   "/champagne-troyes",
   "/la-cote-des-bar",
@@ -60,22 +64,27 @@ const PAGES: StaticPathname[] = [
  * page avec ses équivalents dans les autres langues (hreflang).
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [locales, vignerons, articles, reglages, cartes, langues] = await Promise.all([
+  const [locales, vignerons, articles, reglages, cartes, langues, quiSuisJe] = await Promise.all([
     getActiveLocales(),
     getVigneronSlugs(),
     getArticleSlugs(),
     getReglages(),
     getArticles(defaultLocale),
     getArticleLangues(),
+    quiSuisJePubliee(),
   ]);
   // Pages de rubrique /le-mag/<code>/ : seulement celles qui ont des articles.
   const rubriques = [...new Set(cartes.flatMap((a) => a.rubriques))].filter((r) => !(r in PAGES_RUBRIQUE));
   const hrefs: Href[] = [
     ...PAGES,
     ...(reglages.pepitesActive ? (["/ou-trouver-nos-pepites"] as Href[]) : []),
+    // « Qui suis-je ? » : seulement une fois publiée dans le Studio.
+    ...(quiSuisJe ? (["/qui-suis-je"] as Href[]) : []),
     ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/cepages-champagne/[cepage]", params: { cepage } }) as Href),
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...rubriques.map((rubrique) => ({ pathname: "/le-mag/[rubrique]", params: { rubrique } }) as Href),
+    // Pages des thèmes du Mag (Champagne & art) : seulement celles qui ont des articles.
+    ...THEMES_MAG.filter((theme) => cartes.some((a) => a.etiquettes.includes(theme))).map((theme) => ({ pathname: "/le-mag/theme/[theme]", params: { theme } }) as Href),
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
   const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));
@@ -114,6 +123,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...terroirPages.map((p, i) => [p.href as string, src([terroirsDocs[i].image, ...terroirsDocs[i].galerie])] as [string, string[]]),
     ["/vignerons", src([selection.image])],
     ["/champagne-troyes", src(troyes)],
+    ["/espace-pro-entreprises", src(Object.values(PHOTOS_ESPACE_PRO).map((p) => imgDepuisAsset(p.asset, p.fichier, { fr: "", en: "" }, defaultLocale, 1600)))],
     ["/contact", src([contact.image])],
     ["/communication-marketing", src([communication.image])],
     ...vignerons.map((slug, i) => [`vigneron:${slug}`, src([fichesVignerons[i]?.image, ...(fichesVignerons[i]?.galerie ?? [])])] as [string, string[]]),

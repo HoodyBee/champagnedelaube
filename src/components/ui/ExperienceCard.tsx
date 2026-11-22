@@ -95,7 +95,7 @@ export function ExperienceCard({ experience: e }: { experience: ExperienceCardDa
           </p>
           <Link
             href={{ pathname: "/tasting-troyes/[slug]", params: { slug: e.slug } }}
-            className="mt-space-2 flex min-h-11 w-full items-center justify-center rounded-etiquette bg-anthracite px-space-2 text-center text-sur-titre-petit text-blanc transition-colors after:absolute after:inset-0 hover:bg-bleu-nuit"
+            className="mt-space-2 flex min-h-11 w-full items-center justify-center rounded-etiquette bg-anthracite px-space-2 text-center text-sur-titre-petit text-blanc transition-colors after:absolute after:inset-0 hover:bg-anthracite/85"
           >
             {t("bookExperience")}
           </Link>

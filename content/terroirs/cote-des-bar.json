@@ -16,11 +16,9 @@
       "it": "La Côte des Bar, nel sud della Champagne: il Barséquanais e il Barsuraubois, suoli kimmeridgiani, oltre l'80% di pinot noir e vignaioli indipendenti."
     }
   },
-  "accroche": {
-    "fr": "Saviez-vous que la Côte des Bar partage son sous-sol avec Chablis ?",
-    "en": "Did you know that the Côte des Bar shares its subsoil with Chablis?",
-    "nl": "Wist u dat de Côte des Bar haar ondergrond deelt met Chablis?",
-    "it": "Sapevate che la Côte des Bar condivide il suo sottosuolo con Chablis?"
+  "anecdote": {
+    "fr": "Ici, la vigne pousse sur d'anciens fonds marins. Les marnes du Kimméridgien, déposées il y a environ 150 millions d'années, renferment d'innombrables petites huîtres fossiles en forme de virgule. Ce sous-sol de marnes et de calcaires fait partie de l'identité des champagnes de la Côte des Bar.",
+    "en": "Here, the vines grow on ancient seabeds. The Kimmeridgian marls, laid down some 150 million years ago, are packed with tiny comma-shaped fossil oysters. This subsoil of marl and limestone is part of the identity of Côte des Bar champagnes."
   },
   "intro": {
     "fr": "Au sud-est de Troyes, la Côte des Bar rassemble l'essentiel du vignoble de l'Aube. Deux secteurs, le Barséquanais et le Barsuraubois, un même sol kimméridgien, et un cépage qui domine : le pinot noir.",
@@ -107,10 +105,10 @@
     "chardonnay-rose"
   ],
   "sols": {
-    "fr": "Des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur. On retrouve ce même sous-sol à Chablis, en Bourgogne.",
-    "en": "Kimmeridgian marl and limestone, a layer from the Upper Jurassic. The same subsoil is found in Chablis, in Burgundy.",
-    "nl": "Mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura. Dezelfde ondergrond vind je in Chablis, in Bourgondië.",
-    "it": "Marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore. Lo stesso sottosuolo si ritrova a Chablis, in Borgogna."
+    "fr": "Des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur.",
+    "en": "Kimmeridgian marl and limestone, a layer from the Upper Jurassic.",
+    "nl": "Mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura.",
+    "it": "Marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore."
   },
   "secteurs": [
     {
@@ -209,17 +207,17 @@
     },
     {
       "titre": {
-        "fr": "Goûter ce terroir",
-        "en": "Taste this terroir",
-        "nl": "Dit terroir proeven",
-        "it": "Assaggiare questo terroir"
+        "fr": "Découvrir ce terroir",
+        "en": "Discover this terroir",
+        "nl": "Dit terroir ontdekken",
+        "it": "Scoprire questo terroir"
       },
       "paragraphes": [
         {
-          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
-          "en": "The best way to understand this terroir is to taste it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
-          "nl": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
-          "it": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
+          "fr": "Le meilleur moyen de comprendre ce terroir, c'est de le découvrir avec ceux qui le cultivent. Rejoignez l'une de [nos dégustations](/tasting-troyes), à Troyes ou chez vous, ou découvrez [notre sélection](/vignerons). Vous êtes restaurateur, caviste ou hôtelier ? Découvrez [notre offre pro](/champagne-hotel-restaurants-et-cavistes).",
+          "en": "The best way to understand this terroir is to discover it with the people who farm it. Join one of [our tastings](/tasting-troyes), in Troyes or at your home, or discover [our selection](/vignerons). Are you a restaurant, wine shop or hotel? Discover [our trade offer](/champagne-hotel-restaurants-et-cavistes).",
+          "nl": "De beste manier om dit terroir te begrijpen, is het te ontdekken met wie het bewerkt. Kom naar een van [onze proeverijen](/tasting-troyes), in Troyes of bij u thuis, of ontdek [onze selectie](/vignerons). Bent u restaurateur, wijnhandelaar of hotelier? Ontdek [ons aanbod voor professionals](/champagne-hotel-restaurants-et-cavistes).",
+          "it": "Il modo migliore per capire questo terroir è scoprirlo con chi lo coltiva. Partecipate a una delle [nostre degustazioni](/tasting-troyes), a Troyes o a casa vostra, oppure scoprite [la nostra selezione](/vignerons). Siete ristoratori, enotecari o albergatori? Scoprite [la nostra offerta per professionisti](/champagne-hotel-restaurants-et-cavistes)."
         }
       ]
     }

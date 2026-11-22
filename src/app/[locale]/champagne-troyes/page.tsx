@@ -30,11 +30,11 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/champagn
   const t = await getTranslations({ locale, namespace: "troyesPage" });
   const fr = await getTranslations({ locale: "fr", namespace: "troyesPage" });
   const en = await getTranslations({ locale: "en", namespace: "troyesPage" });
-  const image = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, { fr: fr("altHero"), en: en("altHero") }, locale);
+  const image = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, { fr: fr("altHero"), en: en("altHero") }, locale, 1600, undefined, PHOTOS.hero.credit);
   return pageMetadata({ locale, href: HREF, title: t("metaTitle"), description: t("metaDescription"), image });
 }
 
-/** Troyes : la ville des comtes de Champagne, porte d'entrée du vignoble, et nos dégustations privées. */
+/** Troyes : la ville des comtes de Champagne (sans vignes : les vignobles sont à portée de main), et nos dégustations privées. */
 export default async function TroyesPage({ params }: PageProps<"/[locale]/champagne-troyes">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
@@ -43,7 +43,7 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
   const en = await getTranslations({ locale: "en", namespace: "troyesPage" });
   const alt = (k: "altHero" | "altVignes" | "altAccord") => ({ fr: fr(k), en: en(k) });
   const leg = (k: "legendeVignes" | "legendeAccord") => ({ fr: fr(k), en: en(k) });
-  const hero = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, alt("altHero"), locale);
+  const hero = imgDepuisAsset(PHOTOS.hero.asset, PHOTOS.hero.fichier, alt("altHero"), locale, 1600, undefined, PHOTOS.hero.credit);
   const vignes = imgDepuisAsset(PHOTOS.vignes.asset, PHOTOS.vignes.fichier, alt("altVignes"), locale, 1200, leg("legendeVignes"));
   const accord = imgDepuisAsset(PHOTOS.accord.asset, PHOTOS.accord.fichier, alt("altAccord"), locale, 1200, leg("legendeAccord"));
   const faq = (["1", "2", "3"] as const).map((n) => ({ question: t(`faq.q${n}`), reponse: t(`faq.r${n}`) }));
@@ -73,7 +73,7 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
       <Breadcrumb locale={locale} items={[{ label: t("fil") }]} />
       <section className="border-b border-filet bg-creme-clair">
         <div className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 py-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:py-space-5">
-          <div className="order-2 lg:order-1">
+          <div className="lg:order-1">
             <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
             <h1 className="mt-space-2 text-titre-post">{t("titre")}</h1>
             <p className="mt-space-3 max-w-xl text-[1.125rem] text-gris-chaud">{t("intro")}</p>
@@ -81,14 +81,28 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
               {t("cta")}
             </ButtonLink>
           </div>
-          <Photo image={hero} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="order-1 lg:order-2" />
+          <Photo image={hero} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile className="lg:order-2" />
         </div>
       </section>
 
-      <Section titre={t("histoireTitre")} align="gauche">
-        <div className="max-w-3xl space-y-space-2 text-[1.0625rem]">
-          <p>{t("histoire1")}</p>
-          <p>{t("histoire2")}</p>
+      {/* Histoire et « De passage à Troyes ? » côte à côte : plus d'encadré isolé plus bas. */}
+      <Section>
+        <div className="grid items-start gap-space-4 lg:grid-cols-[1.5fr_1fr] lg:gap-space-5">
+          <div>
+            <h2 className="text-titre-section sm:text-[2rem]">{t("histoireTitre")}</h2>
+            <div className="mt-space-2 space-y-space-2 text-[1.0625rem]">
+              <p>{t("histoire1")}</p>
+              <p>{t("histoire2")}</p>
+            </div>
+          </div>
+          <aside aria-labelledby="venir-titre" className="rounded-carte border border-filet bg-creme-clair p-space-3 sm:p-space-4">
+            <h2 id="venir-titre" className="text-[1.375rem] font-bold leading-tight">{t("venirTitre")}</h2>
+            <p className="mt-space-2">{t("venirTexte1")}</p>
+            <p className="mt-space-1 text-gris-chaud">{t("venirTexte2")}</p>
+            <ButtonLink href={DEMANDE} className="mt-space-3">
+              {t("cta")}
+            </ButtonLink>
+          </aside>
         </div>
       </Section>
 
@@ -124,24 +138,16 @@ export default async function TroyesPage({ params }: PageProps<"/[locale]/champa
         </div>
       </Section>
 
-      <Section>
-        <div className="mx-auto max-w-3xl rounded-carte border border-filet bg-creme-clair px-space-3 py-space-4 text-center sm:px-space-5">
-          <h2 className="text-titre-section">{t("venirTitre")}</h2>
-          <p className="mt-space-2">{t("venirTexte1")}</p>
-          <p className="mt-space-1 text-gris-chaud">{t("venirTexte2")}</p>
-          <ButtonLink href={DEMANDE} className="mt-space-3">
-            {t("cta")}
-          </ButtonLink>
-        </div>
-      </Section>
-
       <Section fond="chaude">
         <div className="grid items-center gap-space-4 lg:grid-cols-[1fr_1.3fr] lg:gap-space-5">
           <Photo image={accord} ratio="4/3" sizes="(min-width: 1024px) 40vw, 100vw" className="lg:order-1" />
           <div className="lg:order-2">
             <h2 className="text-titre-section">{t("gastroTitre")}</h2>
             <p className="mt-space-2">{t("gastro1")}</p>
-            <RichText value={[paragrapheEnBloc(t("gastro2"), locale)]} locale={locale} className="mt-space-2" />
+            <p className="mt-space-2">{t("gastro2")}</p>
+            <RichText value={[paragrapheEnBloc(t("gastro3"), locale)]} locale={locale} className="mt-space-2" />
+            <h3 className="mt-space-4 text-[1.375rem] font-bold leading-tight">{t("shoppingTitre")}</h3>
+            <p className="mt-space-2">{t("shoppingTexte")}</p>
           </div>
         </div>
       </Section>

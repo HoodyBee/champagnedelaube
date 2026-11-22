@@ -1,7 +1,6 @@
 import { icon } from "../../icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 import { cepages, terroirs } from "../../../lib/brand";
-import { requireFr } from "../objects/localized";
 
 /** Les 4 terroirs de l'Aube. Leur adresse (URL) et leur couleur sont fixées par le site. */
 export const terroir = defineType({
@@ -47,11 +46,17 @@ export const terroir = defineType({
     }),
     defineField({
       name: "accroche",
-      title: "Accroche",
-      description: "Une question ou un fait étonnant.",
+      title: "Accroche (facultatif)",
+      description: "Une question ou un fait étonnant, affiché sous le titre. Laissez vide si vous utilisez plutôt l'encadré « Le saviez-vous ? ».",
       type: "localeString",
       group: "contenu",
-      validation: requireFr,
+    }),
+    defineField({
+      name: "anecdote",
+      title: "Le saviez-vous ? (facultatif)",
+      description: "Une anecdote courte, affichée dans un encadré à côté du texte (sous le texte sur mobile).",
+      type: "localeText",
+      group: "contenu",
     }),
     defineField({ name: "intro", title: "Introduction", type: "localeText", group: "contenu" }),
     defineField({ name: "image", title: "Photo principale", type: "imageAvecAlt", group: "contenu" }),

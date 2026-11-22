@@ -37,18 +37,18 @@ export default async function TerroirAubePage({ params }: PageProps<"/[locale]/l
   return (
     <>
       <Breadcrumb locale={locale} items={[{ label: tNav("terroirHub") }]} />
-      <Hero surTitre={p.hero.surTitre} titre={p.hero.titre!} intro={p.hero.intro} image={p.hero.image} />
-
-      <Section id="terroirs" titre={t("carteTitre")} intro={t("carteIntro")}>
-        <div className="mx-auto max-w-2xl">
-          <TerroirCards />
-        </div>
-        <p className="mt-space-3 text-center">
-          <Link href="/champagne-troyes" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+      {/* Un seul bloc à côté de la photo : présentation puis la liste compacte des quatre terroirs. */}
+      <Hero surTitre={p.hero.surTitre} titre={p.hero.titre!} intro={p.hero.intro} image={p.hero.image} texteDabordMobile>
+        <div id="terroirs" className="mt-space-3 max-w-xl scroll-mt-28">
+          <h2 className="text-sur-titre text-bronze">{t("carteTitre")}</h2>
+          <div className="mt-space-1">
+            <TerroirCards compact />
+          </div>
+          <Link href="/champagne-troyes" className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
             {t("troyesLien")} <span aria-hidden="true">→</span>
           </Link>
-        </p>
-      </Section>
+        </div>
+      </Hero>
 
       {p.chapitres.map((c, i) => (
         <Section key={c.titre} fond={i % 2 === 0 ? "chaude" : "blanc"}>

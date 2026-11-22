@@ -32,7 +32,11 @@
     "communication": "Communication & marketing",
     "partenaires": "Our partners",
     "magTout": "All articles",
-    "troyes": "Troyes, capital of the Aube"
+    "troyes": "Troyes, capital of the Aube",
+    "ouvrirSousMenu": "Open the {menu} submenu",
+    "fermerSousMenu": "Close the {menu} submenu",
+    "proEntreprisesHub": "Trade & Business",
+    "quiSuisJe": "About me"
   },
   "langSwitcher": {
     "label": "Choose language",
@@ -161,8 +165,6 @@
     "terroirsTitre": "The Aube terroirs",
     "terroirsIntro": "In the south of Champagne, four terroirs, four soils, four characters. Set out to discover them, and to meet the people who farm them.",
     "terroirsCta": "Explore the Aube terroirs",
-    "carteTroyes": "Troyes",
-    "carteLegende": "Stylised map of the Aube terroirs",
     "terroirsCartes": {
       "cote-des-bar": "Pinot noir country, on Kimmeridgian marl.",
       "les-riceys": "One village, three appellations, including Rosé des Riceys.",
@@ -200,7 +202,14 @@
     "finalCta": "Write to us",
     "heroCtaDegustation": "Book a tasting",
     "pepitesLien": "Discover our whole selection",
-    "instagram": "Follow us on Instagram"
+    "instagram": "Follow us on Instagram",
+    "videoTitre": "Our terroirs at a glance",
+    "videoPhrase": "Four terroirs, from Villenauxe-la-Grande in the north-west to the Côte des Bar and Les Riceys in the south: pick the one you'd like to discover.",
+    "videoConsigne": "Click a terroir (or Troyes) to discover it.",
+    "videoRevoir": "Replay",
+    "videoVoir": "{nom}: discover this terroir",
+    "videoAlt": "Map of the Aube seen from above: the four champagne terroirs, Villenauxe-la-Grande in the north-west, Montgueux near Troyes, the Côte des Bar in the south-east and Les Riceys in the south. Google Earth imagery.",
+    "videoTroyes": "Troyes, capital of the Aube"
   },
   "pro": {
     "arguments": {
@@ -283,6 +292,7 @@
         "amis": "With friends",
         "famille": "With family",
         "anniversaire": "Birthday or special occasion",
+        "evjfEvjg": "Hen or stag party",
         "groupe": "Group or association",
         "sejour": "Holiday stay",
         "entreprise": "Company or business event"
@@ -408,7 +418,8 @@
       "evenement": "Plan a special occasion"
     },
     "vigneron": "Are you a winemaker? Tell us about your estate",
-    "metaTitle": "Contact us in Troyes: winemakers, trade and private clients"
+    "metaTitle": "Contact us in Troyes: winemakers, trade and private clients",
+    "quiSuisJeLien": "About me: my story"
   },
   "newsletter": {
     "bar": {
@@ -520,8 +531,8 @@
   "proPage": {
     "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
     "metaDescription": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list: direct estate prices, a single point of contact, tastings at your venue.",
-    "h1": "Champagnes from Aube winemakers for your wine list",
-    "intro": "We represent independent Aube winemakers to trade professionals: we introduce them, advise you on your list and develop their presence with you. Trade prices, a single point of contact and a tasting with your team.",
+    "h1": "Growers' champagnes from the Aube for your wine list",
+    "intro": "No time to travel to Champagne to hunt down and sort through cuvées? That is our job. We represent independent winemakers from the Aube and make the selection for you: champagnes with character, chosen to suit the identity of your venue (bistro, fine-dining restaurant, wine shop, hotel or palace), your values (organic, biodynamic…) and your budget, from an aperitif champagne to an exceptional cuvée.",
     "ctaGrille": "Receive our selection and trade prices",
     "ctaDegustation": "Arrange a tasting",
     "profilsTitre": "For which businesses?",
@@ -556,7 +567,14 @@
     "partenaireTitre": "Are you a winemaker?",
     "partenaireTexte": "Tell us about your estate: the selection is deliberately kept small.",
     "partenaireCta": "Become a partner",
-    "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens"
+    "surTitre": "Restaurants · Wine shops · Hotels · Bars · Caterers · Delicatessens",
+    "etablissementTitre": "Shall we work together?",
+    "etablissementTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "etablissementCta": "Suggest a partnership",
+    "contactTitre": "A question? Write to us",
+    "contactIntro": "A wine list to build, a sample, a meeting: tell us what you need and we will get back to you quickly.",
+    "intro2": "In practice: we introduce you to the estates, advise you on your wine list, organise a tasting with your team, and you keep a single point of contact, with trade prices.",
+    "intro3": "A grower's champagne on your list is a story to tell your guests, and a real difference."
   },
   "vigneronsPage": {
     "metaTitle": "Our current selection: grower champagnes from the Aube",
@@ -569,7 +587,7 @@
     "aucun": "No estate matches this filter at the moment.",
     "count": "{count, plural, one {# estate} other {# estates}}",
     "domainesTitre": "The estates in the selection",
-    "bientot": "Our selection grows as we meet new winemakers. More estates will be joining us soon."
+    "bientot": "Our selection grows with every meeting and every targeted search."
   },
   "vigneronPage": {
     "metaTitle": "{nom}, winemaker in {village}, Aube",
@@ -592,8 +610,8 @@
     "metaTitle": "Aube winemakers: become a partner | Champagne de l'Aube",
     "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "surTitre": "Aube winemakers",
-    "h1": "Winemakers: become a partner",
-    "intro": "Are you an independent winemaker in the Aube? We present a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
+    "h1": "Winemakers: let's grow your visibility together",
+    "intro": "Are you an independent winemaker in the Aube? Your place is in your vines and your cellar, not on the road chasing customers. We take care of that: we present a short selection of estates to restaurants, wine shops, hotels, businesses and private customers.",
     "points": {
       "selection": {
         "titre": "A small selection",
@@ -658,7 +676,7 @@
     "carte": "See on the map",
     "privesTitre": "A wedding, a christening, a group order?",
     "privesTexte": "We advise you on grower champagnes for your special occasions, at direct winemaker prices.",
-    "accroche": "Champagne is discovered, shared and told.",
+    "accroche": "Champagne is something to discover, share and talk about.",
     "texte": "During a private tasting, discover the champagnes of independent Aube winemakers, their terroirs and the people who make them. With friends, with family or for a special occasion, we design a tailor-made moment with you. In Troyes, elsewhere in the Aube or wherever you like: the Côte des Bar comes to you.",
     "signature": "The Côte des Bar comes to you.",
     "ctaOrganiser": "Arrange a private tasting",
@@ -685,7 +703,22 @@
     "formTitre": "Arrange a private tasting",
     "formTexte": "The occasion, the place, the number of guests, a date: a few words are enough. We will get back to you very soon with a proposal.",
     "evenementsTitre": "A wedding, a christening, a group order?",
-    "touristesLien": "Things to do in Troyes around champagne"
+    "touristesLien": "Things to do in Troyes around champagne",
+    "presentation": "At Champagne de l'Aube, we introduce you to champagnes from independent Aube winemakers, their terroirs and the people who make them. With friends, with family, for a birthday or a business get-together, I put together a tailor-made moment with you, in Troyes, elsewhere in the Aube or at your place.",
+    "passageTitre": "Passing through Troyes?",
+    "passageTexte1": "No time to head down to the Côte des Bar? Or too many villages, too many estates, and no idea which one to pick? Here's the thing: I'll give you the tour without you having to move, with a live chat with the winemakers.",
+    "passageTexte2": "Didn't know they made champagne around here? Nobody will hold it against you… as long as you don't leave without discovering our little gems, which I've carefully chosen for you.",
+    "passageCta": "Plan my tasting",
+    "proSurTitre": "Bars · Restaurants · Companies · Event organisers",
+    "proTitre": "Planning an event?",
+    "proTexte1": "You run a bar, a restaurant, a company or events, and you're looking for an activity with real flavour? We offer hosted tastings, champagne evenings and meetings with the winemakers in our selection, for your customers, your teams or your guests.",
+    "proTexte2": "Tell us your idea and we'll build the proposal with you. All that's left for you is to pick the date (and the guests).",
+    "proCta": "Tell us about your event",
+    "partenariatTitre": "Shall we work together?",
+    "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "partenariatCta": "Suggest a partnership",
+    "presentation2": "No lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. Curious newcomer, champagne lover or seasoned connoisseur: there is something for everyone, and enthusiasts will find plenty to talk about. And once the tasting is over, if a cuvée wins you over, it is the perfect moment to order your bottles directly from the winemaker, with no pressure and no obligation to buy.",
+    "quiSuisJeLien": "About me: my story"
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",
@@ -754,7 +787,8 @@
       "accords": "Food & champagne pairing",
       "toutSavoir": "All about champagne",
       "portraits": "Portraits",
-      "autresHorizons": "Further afield"
+      "autresHorizons": "Further afield",
+      "champagneArt": "Champagne & art"
     },
     "autresRubriques": "Other sections of the Mag",
     "rubriquesIntro": {
@@ -785,6 +819,21 @@
       "actualites": {
         "title": "News from the Champagne Mag: winemakers and events",
         "description": "News from the Champagne Mag: vineyard events, the calendar of wine and food days, and the latest news from our independent winemakers in the Aube."
+      }
+    },
+    "encartMarketing": {
+      "titre": "Want to go further?",
+      "texte": "Photography, video, social media: discover our communication services for winemakers, wine shops, bars and restaurants.",
+      "bouton": "See Communication & marketing"
+    },
+    "etiquette": "Theme",
+    "etiquettesArticle": "Article themes",
+    "tousArticlesEtiquette": "All “{etiquette}” articles",
+    "etiquettesNav": "Mag themes",
+    "themesMeta": {
+      "champagne-art": {
+        "title": "Champagne & art: music, film and culture | The Mag",
+        "description": "Champagne in music, film, art and culture: when the bubbles take the stage, the screen or the museum. All our articles on champagne and the arts, in one place."
       }
     }
   },
@@ -858,7 +907,8 @@
       "rares": "The rare grapes",
       "nouveau": "The newcomer"
     },
-    "troyesLien": "Troyes and its vineyards: Montgueux about ten kilometres away, the Côte des Bar half an hour"
+    "troyesLien": "From Troyes, the vineyards within easy reach: Montgueux about ten kilometres away, the Côte des Bar half an hour",
+    "saviezVous": "Did you know?"
   },
   "legalNoticePage": {
     "title": "Legal notice",
@@ -968,16 +1018,16 @@
     "statutVifa": "Adaptation variety (on trial)",
     "aussiAppele": "Also called",
     "terroirsTitre": "Its terroirs in the Aube",
-    "partenairesTitre": "Taste it with our partner winemakers",
+    "partenairesTitre": "Discover it with our partner winemakers",
     "partenairesIntro": "These partner winemakers grow this grape.",
     "selectionTitre": "Our current selection",
     "selectionTexte": "The growers' champagnes we have chosen, terroir by terroir.",
     "selectionBouton": "See our selection",
-    "tastingBouton": "Taste it at one of our tastings",
+    "tastingBouton": "Discover it at one of our tastings",
     "sourcesNote": "Every fact on this page is cross-checked against at least two sources. Figures that differ between sources are not given.",
     "illustration": "Illustrative photo",
     "intro": "Champagne is made from eight grapes permitted by the appellation: three major ones, pinot noir, chardonnay and meunier, and five rarer ones. In the Aube, pinot noir is the main grape in the [Côte des Bar](/la-cote-des-bar), while chardonnay dominates in [Montgueux](/montgueux) and [Villenauxe-la-Grande](/villenauxe-la-grande). To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
-    "gouterTitre": "Fancy tasting it?",
+    "gouterTitre": "Want to discover it?",
     "gouterTexte": "Receive our selection of growers' champagnes from the Aube: we present it to you cuvée by cuvée.",
     "tousLien": "All the grapes of the appellation"
   },
@@ -990,8 +1040,9 @@
     "servicesTitre": "Our services",
     "publicTitre": "Who for?",
     "services": {
+      "conseils": "Advice",
+      "audit": "Audit",
       "photo": "Photography",
-      "video": "Video",
       "reseaux": "Social media",
       "communication": "Communication"
     },
@@ -1003,7 +1054,8 @@
     },
     "bouton": "Visit Detectezmoi.com",
     "nouvelOnglet": "(opens in a new tab)",
-    "contact": "Write to us"
+    "contact": "Write to us",
+    "articlesTitre": "Our marketing articles"
   },
   "partenairesPage": {
     "surTitre": "Pro area",
@@ -1016,17 +1068,17 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capital of the Aube: champagne and tastings",
-    "metaDescription": "Troyes, capital of the Aube and city of the Counts of Champagne: its history, the Montgueux vineyard about 13 km away, the Côte des Bar and our tastings.",
+    "metaDescription": "Troyes, capital of the Aube: its history, its food, its factory outlets, the vineyards within easy reach (Montgueux, the Côte des Bar) and our tastings.",
     "fil": "Troyes, capital of the Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capital of the Aube",
-    "intro": "Capital of the Aube and former capital of the Counts of Champagne, Troyes has the vineyards right on its doorstep: the hill of Montgueux is about ten kilometres away. This is where we hold our private tastings of growers' champagnes from the Aube, hoping you will come to love our city as much as our wines.",
+    "intro": "Capital of the Aube and former capital of the Counts of Champagne, Troyes is the ideal starting point for the vineyards: the hill of Montgueux is about ten kilometres away, the Côte des Bar around half an hour. This is where we hold our private tastings of growers' champagnes from the Aube, hoping you will come to love our city as much as our wines.",
     "cta": "Arrange a private tasting",
     "histoireTitre": "Troyes, historic capital of Champagne",
     "histoire1": "In the Middle Ages, Troyes was the capital of the Counts of Champagne. The city prospered thanks to the Champagne fairs: six great fairs punctuated the year in the region, two in Provins, one in Lagny, one in Bar-sur-Aube and two in Troyes, the “hot fair” in summer and the “cold fair” in autumn. Merchants and money-changers came from all over Europe.",
     "histoire2": "Seen from the air, the old town is shaped like a champagne cork, and locals call it “le Bouchon” (the cork). Its streets are lined with half-timbered houses, many rebuilt after the great fire of 1524. A walk to take with your head up, before or after a tasting.",
-    "vignobleTitre": "The gateway to the Aube vineyards",
-    "vignobleIntro": "From Troyes, the vines are close at hand. A few landmarks by car:",
+    "vignobleTitre": "From Troyes, the vineyards within easy reach",
+    "vignobleIntro": "Troyes has no vines of its own, but they are only a short drive away. A few landmarks by car:",
     "trajets": {
       "montgueux": "Montgueux",
       "cdb": "Bar-sur-Seine (Côte des Bar)",
@@ -1046,9 +1098,9 @@
     "venirTitre": "Passing through Troyes? Champagne comes to you",
     "venirTexte1": "No time to drive out to the vineyards? We bring the growers' champagnes of the Aube to you in Troyes, at your home or at a venue of your choice, with the stories of their villages and of the people who make them.",
     "venirTexte2": "With friends, family, for a special occasion or during a stay: tell us what you would enjoy, and we will put the tasting together with you.",
-    "gastroTitre": "Champagne and Troyes cuisine",
-    "gastro1": "Troyes has its specialities. The best known is andouillette de Troyes, made with pork. Chaource, a PDO soft cheese with a bloomy rind, is made south of Troyes, in the Aube and the neighbouring Yonne.",
-    "gastro2": "With chaource, a grower's champagne makes a lovely pairing, and rosé des Riceys goes well with local cooking. For more ideas, see our [champagne food pairing recipes](/recettes-accords-mets-champagne).",
+    "gastroTitre": "Troyes food and craftsmanship",
+    "gastro1": "In Troyes, good food is taken seriously. Its most famous speciality, the andouillette de Troyes, is the pride of the city's charcutiers; try it baked with Chaource cheese. Chaource itself is a PDO cheese with a soft, bloomy rind, made south of Troyes, in the Aube and the neighbouring Yonne. A real treat.",
+    "gastro2": "The Aube has more delights in store: cider from the Pays d'Othe, the Aube's orchard country, beers from the department's small craft breweries, now in full revival, and, in town, excellent chocolate makers, including a Meilleur Ouvrier de France, alongside many artisan food producers. Enough to fill a basket that is 100% Aube.",
     "allerTitre": "Keep exploring",
     "liens": {
       "terroirs": "The terroirs of the Aube",
@@ -1060,7 +1112,7 @@
     },
     "legendeVignes": "Côte des Bar vineyards, in Colombé-le-Sec",
     "legendeAccord": "Food and champagne pairing (illustration)",
-    "altHero": "Growers' champagne bottles and presentation cards on a wooden table, in Troyes",
+    "altHero": "Half-timbered houses in the historic centre of Troyes, under a blue sky",
     "altVignes": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
     "altAccord": "Cream puff served with a glass of champagne",
     "faqTitre": "Your questions",
@@ -1071,7 +1123,10 @@
       "r2": "Yes: we organise private tastings of growers' champagnes from the Aube, in Troyes, at your home or at a venue of your choice. Tell us about your plans and we will come back to you with a proposal.",
       "q3": "Why is the centre of Troyes called “le Bouchon”?",
       "r3": "Because, seen from the air, the layout of the old town is shaped like a champagne cork."
-    }
+    },
+    "gastro3": "With Chaource, a grower's champagne makes a lovely pairing, and rosé des Riceys goes well with local cooking. For more ideas, see our [recipes and food and champagne pairings](/recettes-accords-mets-champagne).",
+    "shoppingTitre": "Troyes, a top spot for factory outlets",
+    "shoppingTexte": "Heir to a long textile tradition, Troyes is also a major shopping destination: its tourist office calls it the \"European capital of brand outlet centres\". On the edge of town, several factory outlet centres welcome bargain hunters all year round. The perfect day: shopping in the morning, a champagne tasting later on."
   },
   "notFound": {
     "metaTitle": "Page not found",
@@ -1083,5 +1138,50 @@
     "degustations": "Private tastings",
     "mag": "The Champagne Mag",
     "contact": "Looking for something specific? Write to us."
+  },
+  "espaceProPage": {
+    "metaTitle": "Trade & Business: grower champagnes from the Aube region",
+    "metaDescription": "Restaurants, wine shops, hotels, companies and winemakers: a single point of contact with independent Aube winemakers, plus our communication services.",
+    "surTitre": "Professionals",
+    "titre": "Trade & Business",
+    "intro": "Restaurants, wine shops, hotels, companies, winemakers: we are your single point of contact with the independent winemakers of the Aube. Tell us who you are and we'll show you what we can do together.",
+    "cartes": {
+      "pro": {
+        "titre": "Restaurants, wine shops, hotels",
+        "texte": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list, with a single point of contact.",
+        "lien": "Discover",
+        "alt": "Shelf of rosé champagnes at a wine shop in Troyes"
+      },
+      "entreprises": {
+        "titre": "Companies & works councils",
+        "texte": "Gift boxes of Aube grower champagnes and tastings for your teams and clients, on quotation.",
+        "lien": "Discover",
+        "alt": "Hands holding a gold gift box tied with a ribbon"
+      },
+      "vignerons": {
+        "titre": "Winemakers: become a partner",
+        "texte": "An independent winemaker in the Aube? We present a small selection of estates to professionals and private clients.",
+        "lien": "Discover",
+        "alt": "Crates full of pinot noir during the 2026 harvest in Polisy"
+      },
+      "communication": {
+        "titre": "Communication & marketing",
+        "texte": "Advice, photography, social media: our communication services for winemakers, wine shops, bars and restaurants.",
+        "lien": "Discover",
+        "alt": "Laptop, phone and notebook on a wooden desk"
+      }
+    },
+    "partenariatTitre": "Shall we work together?",
+    "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
+    "contactCta": "Write to us"
+  },
+  "quiSuisJePage": {
+    "titre": "About me",
+    "metaTitle": "About me: Julien, Champagne de l'Aube in Troyes",
+    "metaDescription": "Julien lives in Troyes and loves all things local and authentic: his journey, from home catering to champagne, and why he champions the winemakers of the Aube.",
+    "liensTitre": "Find out more",
+    "lienDegustations": "Our private tastings",
+    "lienPro": "Trade & Business",
+    "lienContact": "Contact me"
   }
 }

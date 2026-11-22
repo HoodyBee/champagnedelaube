@@ -64,8 +64,16 @@ export const routing = defineRouting({
       de: "/champagner-rebsorten/[cepage]",
     },
     "/les-riceys": "/les-riceys",
-    // Troyes : la ville, porte d'entrée du vignoble aubois (nom de lieu non traduit)
+    // Troyes : la ville, point de départ vers les vignobles aubois (nom de lieu non traduit)
     "/champagne-troyes": "/champagne-troyes",
+    // Espace Pro & Entreprises : page d'accueil de l'espace (les 4 profils)
+    "/espace-pro-entreprises": {
+      fr: "/espace-pro-entreprises",
+      en: "/trade-and-business",
+      nl: "/professionals-en-bedrijven",
+      it: "/professionisti-e-aziende",
+      de: "/profis-und-unternehmen",
+    },
     // Espace Pro : services de communication (Detectezmoi.com) et nos vignerons partenaires
     "/communication-marketing": {
       fr: "/communication-marketing",
@@ -117,6 +125,8 @@ export const routing = defineRouting({
     "/le-mag": "/le-mag",
     // Pages des rubriques sans adresse historique (/le-mag/terroirs-cepages/…)
     "/le-mag/[rubrique]": "/le-mag/[rubrique]",
+    // Page d'un thème du Mag (ex. Champagne & art) : /le-mag/theme/champagne-art/
+    "/le-mag/theme/[theme]": "/le-mag/theme/[theme]",
     // Articles du Mag : à la racine du site, adresses historiques conservées (/mon-article/)
     "/[article]": "/[article]",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
@@ -179,6 +189,8 @@ export const routing = defineRouting({
 
     // Contact et légal
     "/contact": { fr: "/contact", en: "/contact", nl: "/contact", it: "/contatti", de: "/kontakt" },
+    // Qui suis-je ? (page du Studio, visible seulement une fois publiée)
+    "/qui-suis-je": { fr: "/qui-suis-je", en: "/about-me", nl: "/over-mij", it: "/chi-sono", de: "/uber-mich" },
     "/mentions-legales": {
       fr: "/mentions-legales",
       en: "/legal-notice",

@@ -55,7 +55,7 @@ export default async function EntreprisesPage({ params }: PageProps<"/[locale]/c
 
   return (
     <>
-      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: tNav("entreprises") }]} />
+      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises"), href: "/espace-pro-entreprises" }, { label: tNav("entreprises") }]} />
       <Hero
         surTitre={p.hero.surTitre ?? t("surTitre")}
         titre={p.hero.titre ?? t("h1")}

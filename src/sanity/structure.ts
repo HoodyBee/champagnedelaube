@@ -45,6 +45,7 @@ export const structure: StructureResolver = (S) =>
         S.documentTypeListItem("article").title("Articles"),
         S.documentTypeListItem("journeeCalendrier").title("Marronnier : journées du calendrier"),
         S.documentTypeListItem("rubrique").title("Rubriques (pour en ajouter ou les renommer)"),
+        S.documentTypeListItem("etiquetteArticle").title("Thèmes"),
         pageFixe(S, "tout-savoir", "Page « Tout savoir sur le champagne »"),
         pageFixe(S, "recettes", "Page « Accords mets et champagne »"),
       ]),
@@ -57,6 +58,7 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
       dossier(S, "contact-legal", "Contact et pages légales", [
         pageFixe(S, "contact", "Contact"),
+        pageFixe(S, "qui-suis-je", "Page Qui suis-je"),
         pageFixe(S, "mentions-legales", "Mentions légales"),
         pageFixe(S, "confidentialite", "Politique de confidentialité"),
       ]),

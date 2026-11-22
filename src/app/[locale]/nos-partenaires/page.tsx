@@ -28,7 +28,7 @@ export default async function PartenairesPage({ params }: PageProps<"/[locale]/n
 
   return (
     <>
-      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: t("titre") }]} />
+      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises"), href: "/espace-pro-entreprises" }, { label: t("titre") }]} />
       <section className="border-b border-filet bg-creme-clair">
         <div className="mx-auto max-w-3xl px-space-2 py-space-5 text-center sm:px-space-4">
           <p className="text-sur-titre text-bronze">{t("surTitre")}</p>

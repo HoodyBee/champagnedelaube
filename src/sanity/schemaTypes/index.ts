@@ -12,6 +12,7 @@ import { page } from "./documents/page";
 import { partenaire } from "./documents/partenaire";
 import { reglages } from "./documents/reglages";
 import { rubrique } from "./documents/rubrique";
+import { etiquetteArticle } from "./documents/etiquetteArticle";
 import { terroir } from "./documents/terroir";
 import { terroirAube } from "./documents/terroirAube";
 import { vigneron } from "./documents/vigneron";
@@ -41,6 +42,7 @@ export const schemaTypes = [
   journeeCalendrier,
   article,
   rubrique,
+  etiquetteArticle,
   partenaire,
   // Briques
   localeString,

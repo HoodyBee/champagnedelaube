@@ -637,6 +637,11 @@
       "toutSavoir": "Alles over champagne",
       "accords": "Gerechten & champagne",
       "portraits": "Portretten van wijnmakers"
+    },
+    "encartMarketing": {
+      "titre": "Wilt u verder gaan?",
+      "texte": "Fotografie, video, sociale media: ontdek onze communicatiediensten voor wijnmakers, wijnhandels, bars en restaurants.",
+      "bouton": "Naar Communicatie & marketing"
     }
   },
   "entreprisesPage": {

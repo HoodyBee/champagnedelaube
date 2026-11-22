@@ -24,6 +24,8 @@ export const BREVO_ATTRIBUTES = {
   PAGE_ORIGINE: "text",
   PROFIL: "text",
   ETABLISSEMENT: "text",
+  /** Occasion choisie dans « Organiser une dégustation privée » (libellé en français). */
+  OCCASION: "text",
   NEWSLETTER_CONSENTEMENT: "date",
 } as const;
 

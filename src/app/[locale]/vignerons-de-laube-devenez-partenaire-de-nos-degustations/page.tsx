@@ -9,7 +9,6 @@ import { RichText } from "@/components/ui/RichText";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { nav } from "@/lib/site";
 import { getPageContent } from "@/sanity/content";
 
 const HREF = "/vignerons-de-laube-devenez-partenaire-de-nos-degustations";
@@ -39,7 +38,7 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
 
   return (
     <>
-      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises") }, { label: titre }]} />
+      <Breadcrumb locale={locale} items={[{ label: tNav("proEntreprises"), href: "/espace-pro-entreprises" }, { label: titre }]} />
       <header className="mx-auto grid max-w-7xl items-center gap-space-4 px-space-2 pb-space-2 pt-space-4 sm:px-space-4 lg:grid-cols-2 lg:gap-space-5 lg:pt-space-5">
         <div>
           <p className="text-sur-titre text-bronze">{page.surTitre ?? t("surTitre")}</p>
@@ -68,13 +67,8 @@ export default async function PartenairePage({ params }: PageProps<"/[locale]/vi
         </section>
       </Section>
 
-      <Section>
-        <div className="text-center">
-          <ButtonLink href={nav.vignerons.href} variant="secondaire">
-            {tNav("vignerons")}
-          </ButtonLink>
-        </div>
-      </Section>
+      {/* Lien « Notre sélection du moment » retiré à la demande de Julien : le formulaire de candidature
+          ci-dessus est déjà le contact des vignerons (profil Vignerons dans Brevo). */}
     </>
   );
 }

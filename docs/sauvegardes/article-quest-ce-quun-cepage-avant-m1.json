@@ -1,0 +1,1327 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "article-quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne",
+  "_rev": "hei3rGJZplwTO6XvkXXhPe",
+  "_type": "article",
+  "_updatedAt": "2026-11-21T09:44:53Z",
+  "collaborationCommerciale": false,
+  "contenu": {
+    "_type": "localeRichText",
+    "en": [
+      {
+        "_key": "aum",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aul",
+            "_type": "span",
+            "marks": [],
+            "text": "A variety of vine"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "auo",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aun",
+            "_type": "span",
+            "marks": [],
+            "text": "A grape variety is a variety of vine. Like apples, all bunches look alike from afar, but each variety has its own colour, acidity and aromas. A Golden is not a Granny Smith; a pinot noir is not a chardonnay."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "auq",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aup",
+            "_type": "span",
+            "marks": [],
+            "text": "Three main grapes"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "aus",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aur",
+            "_type": "span",
+            "marks": [],
+            "text": "Three grapes cover almost the entire Champagne vineyard. Pinot noir comes first, followed by meunier and chardonnay, almost level. Pinot noir brings structure, meunier roundness and fruit, chardonnay finesse and freshness."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "auu",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aut",
+            "_type": "span",
+            "marks": [],
+            "text": "Five rarer grapes"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "avb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "auv",
+            "_type": "span",
+            "marks": [],
+            "text": "The appellation rules also allow four old varieties: "
+          },
+          {
+            "_key": "aux",
+            "_type": "span",
+            "marks": [
+              "auw"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "auy",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "av0",
+            "_type": "span",
+            "marks": [
+              "auz"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "av1",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "av3",
+            "_type": "span",
+            "marks": [
+              "av2"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "av4",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "av6",
+            "_type": "span",
+            "marks": [
+              "av5"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "av7",
+            "_type": "span",
+            "marks": [],
+            "text": ". Since 2025, an eighth has joined them: "
+          },
+          {
+            "_key": "av9",
+            "_type": "span",
+            "marks": [
+              "av8"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "ava",
+            "_type": "span",
+            "marks": [],
+            "text": ". Together they occupy only a tiny place in the vineyard."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "auw",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "auz",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "av2",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "av5",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "av8",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "avd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "avc",
+            "_type": "span",
+            "marks": [],
+            "text": "One grape, two terroirs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "avl",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ave",
+            "_type": "span",
+            "marks": [],
+            "text": "In the "
+          },
+          {
+            "_key": "avg",
+            "_type": "span",
+            "marks": [
+              "avf"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "avh",
+            "_type": "span",
+            "marks": [],
+            "text": ", pinot noir dominates on Kimmeridgian marl. In "
+          },
+          {
+            "_key": "avj",
+            "_type": "span",
+            "marks": [
+              "avi"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "avk",
+            "_type": "span",
+            "marks": [],
+            "text": ", it is chardonnay, on Turonian chalk. Soil, aspect and climate give each grape a different signature. The winemaker then blends the wines to find the balance of each cuvée; some are even made from a single grape."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "avf",
+            "_type": "link",
+            "href": "/en/la-cote-des-bar/"
+          },
+          {
+            "_key": "avi",
+            "_type": "link",
+            "href": "/en/montgueux/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "avn",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "avm",
+            "_type": "span",
+            "marks": [],
+            "text": "Tasting them"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "avv",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "avo",
+            "_type": "span",
+            "marks": [],
+            "text": "To taste these grapes and meet the people who grow them, join one of "
+          },
+          {
+            "_key": "avq",
+            "_type": "span",
+            "marks": [
+              "avp"
+            ],
+            "text": "our tastings"
+          },
+          {
+            "_key": "avr",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes or at your home, or discover "
+          },
+          {
+            "_key": "avt",
+            "_type": "span",
+            "marks": [
+              "avs"
+            ],
+            "text": "the Côte des Bar"
+          },
+          {
+            "_key": "avu",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "avp",
+            "_type": "link",
+            "href": "/en/tasting-troyes/"
+          },
+          {
+            "_key": "avs",
+            "_type": "link",
+            "href": "/en/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "fr": [
+      {
+        "_key": "atb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ata",
+            "_type": "span",
+            "marks": [],
+            "text": "Une variété de vigne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "atd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "atc",
+            "_type": "span",
+            "marks": [],
+            "text": "Un cépage, c'est une variété de vigne. Comme les pommes, toutes les grappes se ressemblent de loin, mais chaque variété a sa couleur, son acidité, ses arômes. Une golden n'est pas une granny ; un pinot noir n'est pas un chardonnay."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "atf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ate",
+            "_type": "span",
+            "marks": [],
+            "text": "Trois grands cépages"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ath",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "atg",
+            "_type": "span",
+            "marks": [],
+            "text": "Trois cépages couvrent la quasi-totalité du vignoble champenois. Le pinot noir arrive en tête, suivi du meunier et du chardonnay, presque à égalité. Le pinot noir apporte la structure, le meunier la rondeur et le fruit, le chardonnay la finesse et la fraîcheur."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "atj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ati",
+            "_type": "span",
+            "marks": [],
+            "text": "Cinq cépages plus rares"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "au0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "atk",
+            "_type": "span",
+            "marks": [],
+            "text": "Le cahier des charges de l'appellation autorise aussi quatre cépages anciens : le "
+          },
+          {
+            "_key": "atm",
+            "_type": "span",
+            "marks": [
+              "atl"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "atn",
+            "_type": "span",
+            "marks": [],
+            "text": ", le "
+          },
+          {
+            "_key": "atp",
+            "_type": "span",
+            "marks": [
+              "ato"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "atq",
+            "_type": "span",
+            "marks": [],
+            "text": ", l'"
+          },
+          {
+            "_key": "ats",
+            "_type": "span",
+            "marks": [
+              "atr"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "att",
+            "_type": "span",
+            "marks": [],
+            "text": " et le "
+          },
+          {
+            "_key": "atv",
+            "_type": "span",
+            "marks": [
+              "atu"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "atw",
+            "_type": "span",
+            "marks": [],
+            "text": ". Depuis 2025, un huitième les a rejoints : le "
+          },
+          {
+            "_key": "aty",
+            "_type": "span",
+            "marks": [
+              "atx"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "atz",
+            "_type": "span",
+            "marks": [],
+            "text": ". Ensemble, ils n'occupent qu'une toute petite place dans le vignoble."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "atl",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "ato",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "atr",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "atu",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "atx",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "au2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "au1",
+            "_type": "span",
+            "marks": [],
+            "text": "Un même cépage, deux terroirs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "aua",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "au3",
+            "_type": "span",
+            "marks": [],
+            "text": "Dans la "
+          },
+          {
+            "_key": "au5",
+            "_type": "span",
+            "marks": [
+              "au4"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "au6",
+            "_type": "span",
+            "marks": [],
+            "text": ", le pinot noir domine sur des marnes du Kimméridgien. À "
+          },
+          {
+            "_key": "au8",
+            "_type": "span",
+            "marks": [
+              "au7"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "au9",
+            "_type": "span",
+            "marks": [],
+            "text": ", c'est le chardonnay, sur une craie du Turonien. Le sol, l'exposition et le climat donnent à chaque cépage une signature différente. Le vigneron assemble ensuite ses vins pour trouver l'équilibre de chaque cuvée ; certaines sont même issues d'un seul cépage."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "au4",
+            "_type": "link",
+            "href": "/la-cote-des-bar/"
+          },
+          {
+            "_key": "au7",
+            "_type": "link",
+            "href": "/montgueux/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "auc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aub",
+            "_type": "span",
+            "marks": [],
+            "text": "Les goûter"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "auk",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aud",
+            "_type": "span",
+            "marks": [],
+            "text": "Pour goûter ces cépages et rencontrer ceux qui les cultivent, rejoignez l'une de "
+          },
+          {
+            "_key": "auf",
+            "_type": "span",
+            "marks": [
+              "aue"
+            ],
+            "text": "nos dégustations"
+          },
+          {
+            "_key": "aug",
+            "_type": "span",
+            "marks": [],
+            "text": ", à Troyes ou chez vous, ou découvrez "
+          },
+          {
+            "_key": "aui",
+            "_type": "span",
+            "marks": [
+              "auh"
+            ],
+            "text": "la Côte des Bar"
+          },
+          {
+            "_key": "auj",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "aue",
+            "_type": "link",
+            "href": "/tasting-troyes/"
+          },
+          {
+            "_key": "auh",
+            "_type": "link",
+            "href": "/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "it": [
+      {
+        "_key": "ax8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ax7",
+            "_type": "span",
+            "marks": [],
+            "text": "Una varietà di vite"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "axa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ax9",
+            "_type": "span",
+            "marks": [],
+            "text": "Un vitigno è una varietà di vite. Come per le mele, da lontano i grappoli si somigliano, ma ogni varietà ha il suo colore, la sua acidità, i suoi aromi. Una golden non è una granny smith; un pinot noir non è uno chardonnay."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "axc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "axb",
+            "_type": "span",
+            "marks": [],
+            "text": "Tre grandi vitigni"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "axe",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "axd",
+            "_type": "span",
+            "marks": [],
+            "text": "Tre vitigni coprono quasi tutto il vigneto della Champagne. In testa il pinot noir, seguito da meunier e chardonnay, quasi alla pari. Il pinot noir porta struttura, il meunier rotondità e frutto, lo chardonnay finezza e freschezza."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "axg",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "axf",
+            "_type": "span",
+            "marks": [],
+            "text": "Cinque vitigni più rari"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "axx",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "axh",
+            "_type": "span",
+            "marks": [],
+            "text": "Il disciplinare della denominazione ammette anche quattro vitigni antichi: il "
+          },
+          {
+            "_key": "axj",
+            "_type": "span",
+            "marks": [
+              "axi"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "axk",
+            "_type": "span",
+            "marks": [],
+            "text": ", il "
+          },
+          {
+            "_key": "axm",
+            "_type": "span",
+            "marks": [
+              "axl"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "axn",
+            "_type": "span",
+            "marks": [],
+            "text": ", l'"
+          },
+          {
+            "_key": "axp",
+            "_type": "span",
+            "marks": [
+              "axo"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "axq",
+            "_type": "span",
+            "marks": [],
+            "text": " e il "
+          },
+          {
+            "_key": "axs",
+            "_type": "span",
+            "marks": [
+              "axr"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "axt",
+            "_type": "span",
+            "marks": [],
+            "text": ". Dal 2025 se n'è aggiunto un ottavo: lo "
+          },
+          {
+            "_key": "axv",
+            "_type": "span",
+            "marks": [
+              "axu"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "axw",
+            "_type": "span",
+            "marks": [],
+            "text": ". Insieme occupano solo un piccolissimo spazio nel vigneto."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "axi",
+            "_type": "link",
+            "href": "/it/pinot-blanc-champagne/"
+          },
+          {
+            "_key": "axl",
+            "_type": "link",
+            "href": "/it/pinot-gris-fromenteau-champagne/"
+          },
+          {
+            "_key": "axo",
+            "_type": "link",
+            "href": "/it/arbane-cepage-champagne/"
+          },
+          {
+            "_key": "axr",
+            "_type": "link",
+            "href": "/it/petit-meslier-cepage-champagne/"
+          },
+          {
+            "_key": "axu",
+            "_type": "link",
+            "href": "/it/chardonnay-rose-champagne/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "axz",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "axy",
+            "_type": "span",
+            "marks": [],
+            "text": "Un vitigno, due terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ay7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ay0",
+            "_type": "span",
+            "marks": [],
+            "text": "Nella "
+          },
+          {
+            "_key": "ay2",
+            "_type": "span",
+            "marks": [
+              "ay1"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "ay3",
+            "_type": "span",
+            "marks": [],
+            "text": " domina il pinot noir, sulle marne del Kimmeridgiano. A "
+          },
+          {
+            "_key": "ay5",
+            "_type": "span",
+            "marks": [
+              "ay4"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "ay6",
+            "_type": "span",
+            "marks": [],
+            "text": " è lo chardonnay, sul gesso del Turoniano. Suolo, esposizione e clima danno a ogni vitigno una firma diversa. Il vignaiolo assembla poi i suoi vini per trovare l'equilibrio di ogni cuvée; alcune nascono persino da un solo vitigno."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "ay1",
+            "_type": "link",
+            "href": "/it/la-cote-des-bar/"
+          },
+          {
+            "_key": "ay4",
+            "_type": "link",
+            "href": "/it/montgueux/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "ay9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ay8",
+            "_type": "span",
+            "marks": [],
+            "text": "Assaggiarli"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ayh",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aya",
+            "_type": "span",
+            "marks": [],
+            "text": "Per assaggiare questi vitigni e incontrare chi li coltiva, partecipate a una delle "
+          },
+          {
+            "_key": "ayc",
+            "_type": "span",
+            "marks": [
+              "ayb"
+            ],
+            "text": "nostre degustazioni"
+          },
+          {
+            "_key": "ayd",
+            "_type": "span",
+            "marks": [],
+            "text": ", a Troyes o a casa vostra, oppure scoprite "
+          },
+          {
+            "_key": "ayf",
+            "_type": "span",
+            "marks": [
+              "aye"
+            ],
+            "text": "la Côte des Bar"
+          },
+          {
+            "_key": "ayg",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "ayb",
+            "_type": "link",
+            "href": "/it/tasting-troyes/"
+          },
+          {
+            "_key": "aye",
+            "_type": "link",
+            "href": "/it/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "nl": [
+      {
+        "_key": "avx",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "avw",
+            "_type": "span",
+            "marks": [],
+            "text": "Een wijnstokvariëteit"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "avz",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "avy",
+            "_type": "span",
+            "marks": [],
+            "text": "Een druivenras is een variëteit van de wijnstok. Net als bij appels lijken alle trossen van ver op elkaar, maar elke variëteit heeft haar eigen kleur, zuurgraad en aroma's. Een golden is geen granny smith; een pinot noir is geen chardonnay."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "aw1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aw0",
+            "_type": "span",
+            "marks": [],
+            "text": "Drie hoofdrassen"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "aw3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aw2",
+            "_type": "span",
+            "marks": [],
+            "text": "Drie rassen beslaan bijna de hele Champagne-wijngaard. Pinot noir staat bovenaan, gevolgd door meunier en chardonnay, bijna gelijk. Pinot noir brengt structuur, meunier rondheid en fruit, chardonnay finesse en frisheid."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "aw5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aw4",
+            "_type": "span",
+            "marks": [],
+            "text": "Vijf zeldzamere rassen"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "awm",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aw6",
+            "_type": "span",
+            "marks": [],
+            "text": "Het lastenboek van de appellatie staat ook vier oude rassen toe: "
+          },
+          {
+            "_key": "aw8",
+            "_type": "span",
+            "marks": [
+              "aw7"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "aw9",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "awb",
+            "_type": "span",
+            "marks": [
+              "awa"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "awc",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "awe",
+            "_type": "span",
+            "marks": [
+              "awd"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "awf",
+            "_type": "span",
+            "marks": [],
+            "text": " en "
+          },
+          {
+            "_key": "awh",
+            "_type": "span",
+            "marks": [
+              "awg"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "awi",
+            "_type": "span",
+            "marks": [],
+            "text": ". Sinds 2025 is er een achtste bij: "
+          },
+          {
+            "_key": "awk",
+            "_type": "span",
+            "marks": [
+              "awj"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "awl",
+            "_type": "span",
+            "marks": [],
+            "text": ". Samen nemen ze maar een heel klein deel van de wijngaard in."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "aw7",
+            "_type": "link",
+            "href": "/nl/pinot-blanc-champagne/"
+          },
+          {
+            "_key": "awa",
+            "_type": "link",
+            "href": "/nl/pinot-gris-fromenteau-champagne/"
+          },
+          {
+            "_key": "awd",
+            "_type": "link",
+            "href": "/nl/arbane-cepage-champagne/"
+          },
+          {
+            "_key": "awg",
+            "_type": "link",
+            "href": "/nl/petit-meslier-cepage-champagne/"
+          },
+          {
+            "_key": "awj",
+            "_type": "link",
+            "href": "/nl/chardonnay-rose-champagne/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "awo",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "awn",
+            "_type": "span",
+            "marks": [],
+            "text": "Eén ras, twee terroirs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "aww",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "awp",
+            "_type": "span",
+            "marks": [],
+            "text": "In de "
+          },
+          {
+            "_key": "awr",
+            "_type": "span",
+            "marks": [
+              "awq"
+            ],
+            "text": "Côte des Bar"
+          },
+          {
+            "_key": "aws",
+            "_type": "span",
+            "marks": [],
+            "text": " overheerst pinot noir op kimmeridgiaanse mergel. In "
+          },
+          {
+            "_key": "awu",
+            "_type": "span",
+            "marks": [
+              "awt"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "awv",
+            "_type": "span",
+            "marks": [],
+            "text": " is het chardonnay, op krijt uit het Turonien. Bodem, ligging en klimaat geven elk ras een eigen handtekening. De wijnmaker assembleert daarna zijn wijnen tot het evenwicht van elke cuvée; sommige komen zelfs van één ras."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "awq",
+            "_type": "link",
+            "href": "/nl/la-cote-des-bar/"
+          },
+          {
+            "_key": "awt",
+            "_type": "link",
+            "href": "/nl/montgueux/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "awy",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "awx",
+            "_type": "span",
+            "marks": [],
+            "text": "Ze proeven"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ax6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "awz",
+            "_type": "span",
+            "marks": [],
+            "text": "Om deze druivenrassen te proeven en de mensen te ontmoeten die ze telen: kom naar een van "
+          },
+          {
+            "_key": "ax1",
+            "_type": "span",
+            "marks": [
+              "ax0"
+            ],
+            "text": "onze proeverijen"
+          },
+          {
+            "_key": "ax2",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes of bij u thuis, of ontdek "
+          },
+          {
+            "_key": "ax4",
+            "_type": "span",
+            "marks": [
+              "ax3"
+            ],
+            "text": "de Côte des Bar"
+          },
+          {
+            "_key": "ax5",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "ax0",
+            "_type": "link",
+            "href": "/nl/tasting-troyes/"
+          },
+          {
+            "_key": "ax3",
+            "_type": "link",
+            "href": "/nl/la-cote-des-bar/"
+          }
+        ],
+        "style": "normal"
+      }
+    ]
+  },
+  "date": "2025-08-11",
+  "extrait": {
+    "_type": "localeText",
+    "en": "Pinot noir, meunier, chardonnay and five rarer grapes: what a grape variety is, and why it changes everything in your glass.",
+    "fr": "Pinot noir, meunier, chardonnay, et cinq cépages plus rares : ce qu'est un cépage, et pourquoi il change tout dans votre verre.",
+    "it": "Pinot noir, meunier, chardonnay e cinque vitigni più rari: che cos'è un vitigno e perché cambia tutto nel bicchiere.",
+    "nl": "Pinot noir, meunier, chardonnay en vijf zeldzamere rassen: wat een druivenras is, en waarom het alles verandert in uw glas."
+  },
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Bunch of pinot noir among autumn-coloured vine leaves",
+      "fr": "Grappe de pinot noir entre des feuilles de vigne aux couleurs d'automne"
+    },
+    "asset": {
+      "_ref": "image-0c682b4c0ac168ff54015780552b4daef38ea891-1350x2400-jpg",
+      "_type": "reference"
+    },
+    "credit": "© Champagne de l'Aube / Detectezmoi.com"
+  },
+  "rubrique": "comprendre",
+  "rubriquePrincipale": "tout-savoir",
+  "rubriques": [],
+  "seo": {
+    "_type": "seo",
+    "description": {
+      "_type": "localeText",
+      "en": "What is a grape variety? The 8 grapes permitted in Champagne, from pinot noir to chardonnay rose, and how they express themselves in the Côte des Bar.",
+      "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages autorisés en Champagne, du pinot noir au chardonnay rose, et leur expression dans la Côte des Bar et à Montgueux.",
+      "it": "Che cos'è un vitigno? Gli 8 vitigni ammessi in Champagne, dal pinot noir allo chardonnay rose, e la loro espressione nella Côte des Bar e a Montgueux.",
+      "nl": "Wat is een druivenras? De 8 toegestane rassen in de Champagne, van pinot noir tot chardonnay rose, en hun uitdrukking in de Côte des Bar en Montgueux."
+    },
+    "title": {
+      "_type": "localeString",
+      "en": "Champagne grapes: pinot noir, meunier, chardonnay and more",
+      "fr": "Les cépages du champagne : pinot noir, meunier, chardonnay",
+      "it": "I vitigni dello champagne: pinot noir, meunier, chardonnay e vitigni rari | Champagne de l'Aube",
+      "nl": "Druivenrassen van champagne: pinot noir, meunier, chardonnay en zeldzame rassen | Champagne de l'Aube"
+    }
+  },
+  "slug": {
+    "_type": "slug",
+    "current": "quest-ce-quun-cepage-comprendre-la-base-du-vin-et-du-champagne"
+  },
+  "titre": {
+    "_type": "localeString",
+    "en": "What is a grape variety? The 8 grapes of champagne",
+    "fr": "Qu'est-ce qu'un cépage ? Les 8 cépages du champagne",
+    "it": "Che cos'è un vitigno? Gli 8 vitigni dello champagne",
+    "nl": "Wat is een druivenras? De 8 druivenrassen van champagne"
+  }
+}

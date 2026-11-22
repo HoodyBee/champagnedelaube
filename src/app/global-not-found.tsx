@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- page 404 autonome, hors du gabarit du site : liens HTML simples voulus. */
 import type { Metadata } from "next";
 import { inter, vollkorn } from "@/styles/fonts";
 import "./globals.css";
@@ -29,7 +30,7 @@ export default function GlobalNotFound() {
             L&apos;adresse a peut-être changé avec la nouvelle version du site, ou la page n&apos;existe plus.
           </p>
           <nav aria-label="Liens utiles" className="mt-space-4 flex w-full flex-col items-stretch gap-space-2 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center">
-            <a href="/" className={lien.replace("border border-anthracite text-anthracite hover:bg-anthracite hover:text-blanc", "bg-anthracite text-blanc hover:bg-bleu-nuit")}>
+            <a href="/" className={lien.replace("border border-anthracite text-anthracite hover:bg-anthracite hover:text-blanc", "bg-anthracite text-blanc hover:bg-anthracite/85")}>
               Retour à l&apos;accueil
             </a>
             <a href="/le-terroir-de-laube/" className={lien}>Les terroirs de l&apos;Aube</a>

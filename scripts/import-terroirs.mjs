@@ -58,7 +58,8 @@ const rich = (fn) => ({ _type: "localeRichText", ...Object.fromEntries(LANGS.map
 
 function terroirDoc(d) {
   return {
-    accroche: str(d.accroche),
+    ...(d.accroche ? { accroche: str(d.accroche) } : {}),
+    ...(d.anecdote ? { anecdote: str(d.anecdote, "localeText") } : {}),
     intro: str(d.intro, "localeText"),
     chiffres: d.reperes.map((r) => ({ _type: "repere", _key: key(), label: str(r.label), valeur: str(r.valeur) })),
     villages: d.villages,

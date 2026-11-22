@@ -493,3 +493,63 @@ Recherches : 44 requêtes en anglais et en français, jusqu'à 3 pages chacune, 
 1. Téléchargez la photo depuis sa page (bouton « Télécharger gratuitement », taille originale).
 2. Dans le Studio, menu **Médiathèque**, glissez le fichier, puis ajoutez l'étiquette `banque-images-a-placer` et collez l'adresse de la page d'origine dans « Description ».
 3. Prévenez-moi : je la renomme, nettoie ses métadonnées, rédige le texte alternatif et le crédit, puis la place.
+
+
+## Banques d'images : lot Pixabay (21 novembre 2026, API officielle Pixabay)
+
+Recherches : environ 30 requêtes (anglais et français, plusieurs pages), photos seulement, filtre « tout public », sans images générées par IA, originaux de plus de 3 000 px. Tri à l'œil : tons chauds, pas de visage reconnaissable, pas de marque lisible, rien qui évoque l'ivresse, le sport, la conduite ou la séduction.
+
+| Page | Ancienne photo (gardée dans la Médiathèque) | Nouvelle photo | Pixabay | Auteur |
+|---|---|---|---|---|
+| Troyes : ouverture de la page Troyes, capitale de l'Aube. **Lieu validé par Julien** (22 novembre 2026 : c'est bien Troyes), remise en place après un retrait temporaire | bouteilles-champagne-degustation-privee-troyes.jpg (gardée sur Dégustations privées et Notre sélection) | `troyes-maisons-pans-de-bois-centre-historique.jpg` | [n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/) | derbocholter |
+| ~~Contact : photo de la page~~ **retirée** (n'est pas Troyes : ne pas la remettre). Contact montre maintenant la photo de Julien à l'ordinateur (comme Communication & marketing) | bouteilles-champagne-degustation-privee-troyes.jpg | `troyes-rue-maisons-a-colombages.jpg` | [n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/) | sergeboutrou |
+| Entreprises & CSE : photo d'ouverture | coffret-cadeau-dore-entreprise.jpg (Openverse, 1024 px) | `mains-coffret-cadeau-dore.jpg` | [n° 2458012](https://pixabay.com/photos/gift-box-gifts-packaging-box-2458012/) | faye_yuyun |
+| Entreprises & CSE : section coffrets | coffrets-cadeaux-et-flutes-de-champagne.jpg (Openverse, 960 px) | `coffret-cadeau-ruban-table-bois.jpg` | [n° 1420830](https://pixabay.com/photos/gift-present-wood-package-gift-box-1420830/) | image4you |
+| Entreprises & CSE : section animations | serveur-plateau-flutes-de-champagne.jpg (Openverse, 960 px) | `plateaux-flutes-de-champagne-reception.jpg` | [n° 1283608](https://pixabay.com/photos/drinks-alcohol-glasses-champagne-1283608/) | Pexels |
+| Restaurants, cavistes, hôtels : profil Restaurants | table-de-restaurant-verres-lumiere-chaude.jpg (Openverse, 1024 px) | `table-restaurant-bougies-lumiere-chaude.jpg` | [n° 1433494](https://pixabay.com/photos/dinner-table-home-table-setting-1433494/) | JillWellington |
+| Restaurants, cavistes, hôtels : profil Hôtels | hall-hotel-elegant-lumiere-doree.jpg (Openverse, 1024 px) | `hall-hotel-elegant-lumiere-chaude.jpg` | [n° 1837150](https://pixabay.com/photos/restaurant-furniture-interiors-1837150/) | Pexels |
+| Montgueux : photo d'ouverture (illustration) | rue de Troyes (Pixabay, sans rapport avec Montgueux) | `coteau-vignes-colline-illustration.jpg` | [n° 6399505](https://pixabay.com/photos/vineyard-field-rural-burgundy-6399505/) | Tama66 |
+| Article Labels du champagne : photo principale | bande de 2 560 × 427 px (pexels-photo-3876417), très mal recadrée | `coccinelle-fleur-jaune-nature.jpg` | [n° 4489864](https://pixabay.com/photos/insect-ladybug-entomology-species-4489864/) | nimrodins |
+| Article L'importance des accords mets et champagne : photo principale | sushis-et-champagne.webp (doublon de l'article sushis) | `verre-vin-pain-charcuterie-table.jpg` | [n° 2027177](https://pixabay.com/photos/wine-pair-aperitif-drink-glass-2027177/) | 3938030 |
+| Cépage meunier : photo principale (illustration) | aucune photo | `grappe-raisin-noir-vigne-lumiere.jpg` | [n° 3215625](https://pixabay.com/photos/grapes-fruits-food-fresh-healthy-3215625/) | jplenio |
+| Fiche Mennetrier : photo (illustration) | aucune photo | `chemin-vignes-coucher-de-soleil.jpg` | [n° 1835847](https://pixabay.com/photos/crops-dawn-road-path-farm-fences-1835847/) | Pexels |
+| Article Marronnier 2027 : photo principale | accord-crepe-champagne.jpg | `agenda-ouvert-fleurs-calendrier.jpg` | [n° 791939](https://pixabay.com/photos/new-year-background-organizer-791939/) | kaboompics |
+
+- **Taille** : l'API Pixabay ne donne, avec une clé standard, que des versions de **1 280 px au plus** (les fichiers plus grands demandent un « accès complet » validé par Pixabay). Je n'ai pas contourné cette limite. C'est déjà plus grand que les photos Openverse (960 à 1 024 px). Pour passer en 1 600 px ou plus : demander l'accès complet à Pixabay, ou télécharger vous-même l'original depuis chaque page ci-dessus et le déposer dans la Médiathèque avec l'étiquette `banque-images-a-placer`.
+- **Licence Pixabay** : utilisation gratuite, sans attribution obligatoire ; nous créditons quand même « Photo : [auteur] / Pixabay » (Sanity et mentions légales, automatiquement).
+- Fichiers ré-enregistrés sans métadonnées, noms SEO, textes alternatifs FR et EN, étiquettes `banque-images` et `banque-pixabay`.
+- **Honnêteté** : Montgueux, le meunier et la fiche Mennetrier portent la légende « Illustration » (ce ne sont ni Montgueux, ni du meunier, ni le domaine). Les deux photos de Troyes montrent bien Troyes (étiquetées « troyes » par leurs auteurs).
+- **Nos photos** de terroir, de vigneron et d'événement : aucune remplacée.
+- **Autre candidate pour le marronnier** : [vins, raisins et tonneau, n° 1761613](https://pixabay.com/photos/wines-glasses-wine-glasses-stemware-1761613/) (plus « vin », moins « calendrier »).
+
+## Article « Pourquoi les vignerons devraient s'intéresser au rap » : crédits
+
+- Les 7 images (pochettes, photos de presse, publicités) ont désormais le crédit **« D.R. »** (droits réservés), dans l'article et dans la Médiathèque : plus aucune mention de Detectezmoi.com. La source exacte de chaque image n'est pas connue avec certitude.
+- **Image principale** : la photo de Jay-Z et du Cristal remplace la sculpture lumineuse (Ville-sur-Arce), qui reste dans la Médiathèque. Elle a été **déplacée** du haut du texte vers l'image principale, pour ne pas apparaître deux fois de suite.
+- Sauvegarde : `docs/sauvegardes/sanity-avant-rap-credits.json`.
+
+## Série du 22 novembre 2026 : photos changées
+
+| Page | Ancienne photo (gardée dans la Médiathèque) | Nouvelle photo |
+|---|---|---|
+| Les terroirs de l'Aube (ouverture) | salle voûtée (`caves-voutees.jpg`) | rangs de vigne à Colombé-le-Sec (`rangs-vigne-colombe-le-sec-cote-des-bar-2026.jpg`, notre photo) |
+| Les Riceys (ouverture) | façade fleurie (gardée dans la galerie de la page) | rangs de vigne en été (`rangs-vigne-vallee-champagne-ete.jpg`, notre photo), légende « Illustration » |
+| Vignerons : devenez partenaire (ouverture) | aucune | grappe de pinot noir au-dessus des caisses, Polisy (`grappes-raisin-noir-vendanges-cote-des-bar-2026.jpg`, notre photo) |
+| Article « L'importance des accords » | verre de vin rouge et saucisson (Pixabay) | aumônière de boudin blanc et flûte de champagne (`Aumonieres-…-Fourrier-5.webp`, notre photo) |
+| Espace Pro & Entreprises (nouvelle page, 4 cartes) | — | rayon de champagnes rosés (notre photo), coffret doré (Pixabay), vendanges à Polisy (notre photo), bureau ordinateur/téléphone/carnet ([Pixabay n° 620817](https://pixabay.com/photos/office-notes-notepad-entrepreneur-620817/), Firmbee) |
+
+**Photos qui manquent** : des vignes **des Riceys** et de **Montgueux** (les deux pages utilisent une illustration), une vue du **coteau de Montgueux** depuis Troyes.
+
+**Article Instagram (brouillon), 3 photos possibles** pour l'image principale (rien n'est publié) :
+1. `coucher-soleil-vignes-merrey-sur-arce-2025.jpg` (notre photo : vignes au coucher du soleil, très « Instagram ») ;
+2. `vendanges-champagne-cote-des-bar-2026.jpg` (notre photo : caisses de pinot noir sur le tracteur, l'idée des coulisses) ;
+3. [Pixabay n° 792113](https://pixabay.com/photos/coffee-phone-paper-business-792113/) (téléphone, café, carnet sur bois : le thème réseaux sociaux, sans marque ni visage).
+
+**Autres articles vérifiés** : aucune image principale ne montre du vin rouge, de la bière ou un autre alcool. Les seules autres boissons visibles sont dans l'article rap (Cîroc, Moscato, Hennessy, Jack Daniel's) : ce sont les images d'origine, liées au sujet même de l'article.
+
+## Mission 2 (22 novembre 2026) : photos des articles en brouillon
+
+- **Lot `pixabay-4`** : 7 photos Pixabay (rosé de saignée, prosecco, brut, chaource, andouillette, cidre, brasseries). Toutes avec la légende « Illustration », un crédit et les étiquettes `banque-images` et `banque-pixabay`. Détail et liens : `docs/articles-sources.md`.
+- **Lot `illustrations-1`** : `formats-bouteilles-champagne.jpg`, une illustration originale (schéma à l'échelle des 14 formats, couleurs du brand book), crédit « Illustration : Champagne de l'Aube », étiquette `illustration-originale`. Elle est recréable avec `content/photos/formats-bouteilles-champagne.py`.
+- **Nos photos utilisées** : verre de rosé aux Riceys, véraison, vendanges 2026 chez Moutard*Dangin (Celles-sur-Ource, Polisy), jeune plantation (Mennetrier, légende « Illustration »), serveur et flûtes.
+- **Whisky** : aucune photo avec l'étiquette « whisky-soligny » dans la Médiathèque. L'emplacement est laissé vide dans l'article.

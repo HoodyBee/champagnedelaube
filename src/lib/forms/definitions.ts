@@ -153,7 +153,7 @@ export const forms = {
     profil: "occasion",
     contact: "email",
     fields: [
-      { name: "occasion", type: "select", required: true, half: true, options: ["amis", "famille", "anniversaire", "groupe", "sejour", "entreprise"] },
+      { name: "occasion", type: "select", required: true, half: true, options: ["amis", "famille", "anniversaire", "evjfEvjg", "groupe", "sejour", "entreprise"] },
       { name: "lieu", type: "select", half: true, options: ["domicile", "privatise", "partenaire", "troyes", "aDefinir"] },
       { name: "participants", type: "number", required: true, half: true, min: 1, max: 500 },
       { name: "dateSouhaitee", type: "date", half: true },

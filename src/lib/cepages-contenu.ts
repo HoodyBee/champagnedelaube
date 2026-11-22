@@ -213,8 +213,8 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     motCle: "meunier champagne",
     aussiAppele: { fr: "Longtemps appelé « pinot meunier »", en: "Long known as “pinot meunier”" },
     resume: {
-      fr: "Le troisième grand cépage champenois, plus discret dans l'Aube. Il apporte rondeur et fruit.",
-      en: "The third great Champagne grape, more discreet in the Aube. It brings roundness and fruit.",
+      fr: "Le troisième grand cépage champenois. Dans l'assemblage, il apporte la rondeur et le fruit.",
+      en: "The third great Champagne grape. In a blend, it brings roundness and fruit.",
     },
     accroche: {
       fr: "Un nom venu de la farine, un cépage robuste, et le fruit dans l'assemblage.",
@@ -295,7 +295,7 @@ export const cepagesContenu: Record<CepageKey, CepageContenu> = {
     },
     accroche: { fr: "Un cépage ancien et discret, qu'on appelle parfois « blanc vrai » dans l'Aube.", en: "A discreet old grape, sometimes called “blanc vrai” in the Aube." },
     seo: {
-      title: { fr: "Pinot blanc ou « blanc vrai » : un cépage rare de l'Aube", en: "Pinot blanc or “blanc vrai”: a rare grape of the Aube" },
+      title: { fr: "Pinot blanc ou « blanc vrai » : un cépage rare du champagne", en: "Pinot blanc or “blanc vrai”: a rare champagne grape" },
       description: {
         fr: "Le pinot blanc, cépage autorisé en Champagne mais rarement planté, appelé « blanc vrai » dans l'Aube et encore cultivé dans la Côte des Bar.",
         en: "Pinot blanc, a grape permitted in Champagne but rarely planted, known as “blanc vrai” in the Aube and still grown by a few winemakers in the Côte des Bar.",

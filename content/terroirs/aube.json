@@ -58,10 +58,10 @@
         "it": "Suoli del Giurassico e del Cretaceo"
       },
       "texte": {
-        "fr": "Dans la Côte des Bar, la vigne pousse sur des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur que l'on retrouve aussi à Chablis. À Montgueux, c'est une craie du Turonien qui forme la colline. Deux sous-sols, deux expressions : le pinot noir d'un côté, le chardonnay de l'autre.",
-        "en": "In the Côte des Bar, the vines grow on Kimmeridgian marl and limestone, a layer from the Upper Jurassic also found in Chablis. In Montgueux, the hill is made of Turonian chalk. Two subsoils, two expressions: pinot noir on one side, chardonnay on the other.",
-        "nl": "In de Côte des Bar groeien de wijnstokken op mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura die je ook in Chablis vindt. In Montgueux bestaat de heuvel uit krijt uit het Turonien. Twee ondergronden, twee uitdrukkingen: pinot noir aan de ene kant, chardonnay aan de andere.",
-        "it": "Nella Côte des Bar, la vite cresce su marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore che si ritrova anche a Chablis. A Montgueux la collina è fatta di gesso del Turoniano. Due sottosuoli, due espressioni: il pinot noir da una parte, lo chardonnay dall'altra."
+        "fr": "Dans la Côte des Bar, la vigne pousse sur d'anciens fonds marins : des marnes et des calcaires du Kimméridgien, déposés il y a environ 150 millions d'années et riches en petites huîtres fossiles. À Montgueux, c'est une craie du Turonien qui forme la colline. Deux sous-sols, deux expressions : le pinot noir d'un côté, le chardonnay de l'autre.",
+        "en": "In the Côte des Bar, the vines grow on ancient seabeds: Kimmeridgian marl and limestone, laid down some 150 million years ago and rich in tiny fossil oysters. In Montgueux, the hill is made of Turonian chalk. Two subsoils, two expressions: pinot noir on one side, chardonnay on the other.",
+        "nl": "In de Côte des Bar groeien de wijnstokken op oude zeebodems: mergel en kalksteen uit het Kimmeridgien, zo'n 150 miljoen jaar geleden afgezet en rijk aan kleine fossiele oesters. In Montgueux bestaat de heuvel uit krijt uit het Turonien. Twee ondergronden, twee uitdrukkingen: pinot noir aan de ene kant, chardonnay aan de andere.",
+        "it": "Nella Côte des Bar, la vite cresce su antichi fondali marini: marne e calcari del Kimmeridgiano, depositati circa 150 milioni di anni fa e ricchi di piccole ostriche fossili. A Montgueux la collina è fatta di gesso del Turoniano. Due sottosuoli, due espressioni: il pinot noir da una parte, lo chardonnay dall'altra."
       }
     },
     {
@@ -94,43 +94,43 @@
     }
   ],
   "cepagesTitre": {
-    "fr": "Les cépages de l'Aube",
-    "en": "The grape varieties of the Aube",
-    "nl": "De druivenrassen van de Aube",
-    "it": "I vitigni dell'Aube"
+    "fr": "Les cépages de l'appellation Champagne",
+    "en": "The grape varieties of the Champagne appellation",
+    "nl": "De druivenrassen van de appellatie Champagne",
+    "it": "I vitigni della denominazione Champagne"
   },
   "cepagesIntro": {
-    "fr": "Trois cépages principaux font le champagne de l'Aube : le pinot noir, le chardonnay et le meunier. Quelques vignerons cultivent aussi des cépages plus rares, comme le pinot blanc ou le petit meslier. Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
-    "en": "Three main grape varieties make the champagne of the Aube: pinot noir, chardonnay and meunier. A few winemakers also grow rarer varieties, such as pinot blanc or petit meslier. To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
-    "nl": "Drie hoofddruivenrassen maken de champagne van de Aube: pinot noir, chardonnay en meunier. Enkele wijnmakers telen ook zeldzamere rassen, zoals pinot blanc of petit meslier. Om ze te proeven: kom naar een van [onze proeverijen](/tasting-troyes) of ontdek [onze selectie](/vignerons).",
-    "it": "Tre vitigni principali fanno lo champagne dell'Aube: pinot noir, chardonnay e meunier. Alcuni vignaioli coltivano anche vitigni più rari, come il pinot blanc o il petit meslier. Per assaggiarli, partecipate a una delle [nostre degustazioni](/tasting-troyes) o scoprite [la nostra selezione](/vignerons)."
+    "fr": "Trois cépages principaux font le champagne : le [pinot noir](/cepages-champagne/pinot-noir), le [chardonnay](/cepages-champagne/chardonnay) et le [meunier](/cepages-champagne/meunier). D'autres, plus rares, sont aussi autorisés dans l'appellation : le [pinot blanc](/cepages-champagne/pinot-blanc), le [pinot gris](/cepages-champagne/pinot-gris), l'[arbane](/cepages-champagne/arbane), le [petit meslier](/cepages-champagne/petit-meslier) et le [chardonnay rose](/cepages-champagne/chardonnay-rose). Pour les découvrir, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
+    "en": "Three main grape varieties make champagne: [pinot noir](/cepages-champagne/pinot-noir), [chardonnay](/cepages-champagne/chardonnay) and [meunier](/cepages-champagne/meunier). Others, rarer, are also permitted in the appellation: [pinot blanc](/cepages-champagne/pinot-blanc), [pinot gris](/cepages-champagne/pinot-gris), [arbane](/cepages-champagne/arbane), [petit meslier](/cepages-champagne/petit-meslier) and [chardonnay rose](/cepages-champagne/chardonnay-rose). To get to know them, join one of [our tastings](/tasting-troyes) or explore [our selection](/vignerons).",
+    "nl": "Drie hoofddruivenrassen maken champagne: [pinot noir](/cepages-champagne/pinot-noir), [chardonnay](/cepages-champagne/chardonnay) en [meunier](/cepages-champagne/meunier). Andere, zeldzamere rassen zijn ook toegestaan in de appellatie: [pinot blanc](/cepages-champagne/pinot-blanc), [pinot gris](/cepages-champagne/pinot-gris), [arbane](/cepages-champagne/arbane), [petit meslier](/cepages-champagne/petit-meslier) en [chardonnay rose](/cepages-champagne/chardonnay-rose). Om ze te ontdekken: kom naar een van [onze proeverijen](/tasting-troyes) of ontdek [onze selectie](/vignerons).",
+    "it": "Tre vitigni principali fanno lo champagne: [pinot noir](/cepages-champagne/pinot-noir), [chardonnay](/cepages-champagne/chardonnay) e [meunier](/cepages-champagne/meunier). Altri, più rari, sono ammessi nella denominazione: [pinot blanc](/cepages-champagne/pinot-blanc), [pinot gris](/cepages-champagne/pinot-gris), [arbane](/cepages-champagne/arbane), [petit meslier](/cepages-champagne/petit-meslier) e [chardonnay rose](/cepages-champagne/chardonnay-rose). Per scoprirli, partecipate a una delle [nostre degustazioni](/tasting-troyes) o scoprite [la nostra selezione](/vignerons)."
   },
   "cepagesTextes": [
     {
       "cepage": "pinot-noir",
       "texte": {
-        "fr": "Le cépage roi de la Côte des Bar, où il couvre plus de 80 % des vignes.",
-        "en": "The leading grape of the Côte des Bar, where it covers more than 80% of the vines.",
-        "nl": "Het belangrijkste ras van de Côte des Bar, waar het meer dan 80% van de wijngaarden beslaat.",
-        "it": "Il vitigno re della Côte des Bar, dove copre oltre l'80% delle vigne."
+        "fr": "Le premier cépage de l'appellation. Dans l'assemblage, il donne au champagne sa structure : sa charpente et son ampleur.",
+        "en": "The leading grape of the appellation. In a blend, it gives champagne its structure: its backbone and body.",
+        "nl": "Het belangrijkste ras van de appellatie. In een assemblage geeft het de champagne structuur: ruggengraat en volume.",
+        "it": "Il primo vitigno della denominazione. Nell'assemblaggio dà allo champagne struttura: ossatura e ampiezza."
       }
     },
     {
       "cepage": "chardonnay",
       "texte": {
-        "fr": "Très majoritaire sur la colline de Montgueux et à Villenauxe-la-Grande.",
-        "en": "By far the main grape on the hill of Montgueux and in Villenauxe-la-Grande.",
-        "nl": "Veruit het belangrijkste ras op de heuvel van Montgueux en in Villenauxe-la-Grande.",
-        "it": "Nettamente maggioritario sulla collina di Montgueux e a Villenauxe-la-Grande."
+        "fr": "Le grand cépage blanc de la Champagne. Dans l'assemblage, il apporte la finesse et la fraîcheur ; seul, il donne les blancs de blancs.",
+        "en": "Champagne's great white grape. In a blend, it brings finesse and freshness; on its own, it makes blanc de blancs.",
+        "nl": "De grote witte druif van de Champagne. In een assemblage brengt hij finesse en frisheid; alleen maakt hij blanc de blancs.",
+        "it": "Il grande vitigno bianco della Champagne. Nell'assemblaggio porta finezza e freschezza; da solo dà i blanc de blancs."
       }
     },
     {
       "cepage": "meunier",
       "texte": {
-        "fr": "Le troisième grand cépage champenois, plus discret dans l'Aube.",
-        "en": "The third great Champagne grape, more discreet in the Aube.",
-        "nl": "Het derde grote champagneras, bescheidener in de Aube.",
-        "it": "Il terzo grande vitigno champenois, più discreto nell'Aube."
+        "fr": "Le troisième grand cépage champenois. Dans l'assemblage, il apporte la rondeur et le fruit, et donne de la souplesse au vin.",
+        "en": "The third great Champagne grape. In a blend, it brings roundness and fruit, and gives the wine suppleness.",
+        "nl": "Het derde grote champagneras. In een assemblage brengt hij rondheid en fruit, en maakt hij de wijn soepel.",
+        "it": "Il terzo grande vitigno champenois. Nell'assemblaggio porta rotondità e frutto, e rende il vino morbido."
       }
     }
   ],

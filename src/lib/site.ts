@@ -69,6 +69,9 @@ export const nav = {
 };
 
 /** Onglet « Espace Pro & Entreprises » : professionnels, entreprises, vignerons, communication. */
+/** Page d'accueil de l'Espace Pro & Entreprises (titre cliquable du menu). */
+export const proEntreprisesHub = "/espace-pro-entreprises" as const;
+
 export const proEntreprises: NavLink[] = [
   nav.pro[0],
   nav.entreprises,

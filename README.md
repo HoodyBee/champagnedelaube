@@ -57,7 +57,7 @@ Fond principal `blanc`. Touches de chaleur : classe `surface-chaude` (fond `crem
 
 À chaque demande, via **Brevo** :
 1. vous recevez un e-mail (en français) à l'« Adresse qui reçoit les formulaires » des Réglages du site ; « Répondre » écrit au visiteur ;
-2. le visiteur devient un **contact Brevo**, classé dans la liste de son profil (Professionnels, Entreprises & CSE, Particuliers, Vignerons), avec sa langue (`LANGUE`), la page d'origine (`PAGE_ORIGINE`), son profil (`PROFIL`) et son établissement (`ETABLISSEMENT`) ;
+2. le visiteur devient un **contact Brevo**, classé dans la liste de son profil (Professionnels, Entreprises & CSE, Particuliers, Vignerons), avec sa langue (`LANGUE`), la page d'origine (`PAGE_ORIGINE`), son profil (`PROFIL`), son établissement (`ETABLISSEMENT`) et, pour une dégustation privée, l’occasion choisie (`OCCASION`, en français, par exemple « Enterrement de vie de jeune fille ou de garçon (EVJF / EVJG) ») ;
 3. il reçoit un accusé de réception dans sa langue ;
 4. s'il a coché la case « actualités », il reçoit en plus l'e-mail de **double confirmation** de la newsletter.
 

@@ -27,11 +27,23 @@
   }
 
   /* Tailwind 4 ne met plus la main sur les boutons : on la remet partout. */
+  /* Main sur tout ce qui est cliquable, y compris le lien de la page en cours (aria-current)
+     et ce qu'il contient (texte, icônes, pastilles), dans tous les navigateurs. */
+  a[href],
+  a[href] *,
+  area[href],
   button:not(:disabled),
+  button:not(:disabled) *,
   [role="button"]:not([aria-disabled="true"]),
+  [role="link"],
   summary,
   select,
-  label[for] {
+  label[for],
+  label:has(input:not(:disabled)),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  input[type="submit"]:not(:disabled),
+  input[type="file"]:not(:disabled) {
     cursor: pointer;
   }
 
@@ -151,3 +163,39 @@ html[data-age-gate="open"] .age-gate-panel {
 [data-fond="chaude"] + [data-fond="chaude"] {
   padding-top: 0;
 }
+
+/* Carte des terroirs (accueil) : formes exactes des terroirs (SVG). Au survol ou au clavier,
+   la forme elle-même s'illumine (lueur dorée qui suit le contour, surbrillance de sa couleur). */
+.carte-terroirs a { cursor: pointer; outline: none; }
+.carte-terroirs .forme {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: fill 0.2s ease, stroke 0.2s ease, filter 0.2s ease;
+}
+.carte-terroirs .etiquette {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+  transition: stroke 0.2s ease, fill 0.2s ease;
+}
+.carte-terroirs .terroir:hover .forme,
+.carte-terroirs .terroir:focus-visible .forme {
+  fill: color-mix(in srgb, var(--teinte) 22%, transparent);
+  stroke: var(--color-or);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--color-or) 85%, transparent)) drop-shadow(0 0 14px color-mix(in srgb, var(--color-or) 55%, transparent));
+}
+.carte-terroirs .terroir:hover .etiquette,
+.carte-terroirs .terroir:focus-visible .etiquette,
+.carte-terroirs .ville:hover .etiquette,
+.carte-terroirs .ville:focus-visible .etiquette {
+  fill: color-mix(in srgb, var(--color-or) 16%, transparent);
+  stroke: var(--color-or);
+}
+.carte-terroirs .zone-doigt { fill: transparent; display: none; }
+@media (max-width: 640px), (pointer: coarse) {
+  .carte-terroirs .zone-doigt { display: inline; }
+}
+.carte-terroirs .coeur { fill: var(--color-azur-troyes); opacity: 0; transition: opacity 0.2s ease; }
+.carte-terroirs .ville:hover .coeur,
+.carte-terroirs .ville:focus-visible .coeur { opacity: 1; }

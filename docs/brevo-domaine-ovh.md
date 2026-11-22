@@ -1,5 +1,7 @@
 # Authentifier champagnedelaube.fr dans Brevo (DKIM, DMARC) depuis OVH
 
+> Résumé dans l'ordre du jour J : `docs/communication/05-checklist-mise-en-ligne.md` (étape « OVH : Brevo »). Le relevé de la zone DNS ci-dessous date du 19/11/2026 : **refaites un export de la zone avant toute modification**, car elle a pu changer.
+
 Objectif : que les e-mails envoyés par Brevo au nom de `@champagnedelaube.fr` (newsletter, confirmations des formulaires) arrivent en boîte de réception, sans rien casser :
 - l'ancien site reste en ligne jusqu'au lancement ;
 - vos e-mails actuels chez OVH continuent de fonctionner (réception et envoi).
