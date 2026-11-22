@@ -1,0 +1,20 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "page-contact",
+  "_rev": "R9dLj3QxhjzSE72fqYWHep",
+  "_type": "page",
+  "_updatedAt": "2026-11-21T22:14:35Z",
+  "cle": "contact",
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Sunset over the vines and the track at Merrey-sur-Arce, in the Côte des Bar",
+      "fr": "Coucher de soleil sur les vignes et le chemin, à Merrey-sur-Arce, dans la Côte des Bar"
+    },
+    "asset": {
+      "_ref": "image-33c5ab633f5c484cfd64806794c170ef30a4aa5a-1350x2400-jpg",
+      "_type": "reference"
+    }
+  }
+}

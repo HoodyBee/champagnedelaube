@@ -47,23 +47,22 @@ Calculés le 21 novembre 2026 avec le calcul d'itinéraire OpenStreetMap (OSRM, 
 
 ## Photos
 
-Règle (série 20) : **pour Troyes, seulement nos propres photos**. Une photo de banque d'images ne peut pas prouver qu'elle montre Troyes (la page Pixabay ne donne que des mots-clés) : les deux photos Pixabay de Troyes ont été retirées du site et **gardées dans la Médiathèque**.
+Règle : **pour Troyes, seulement nos propres photos ou une photo dont Julien a validé le lieu**.
 
-| Emplacement | Photo actuelle | Avant |
+| Emplacement | Photo actuelle | Remarque |
 |---|---|---|
-| Page Troyes, ouverture | Nos bouteilles et cartes de présentation lors d'une dégustation privée (`bouteilles-champagne-degustation-privee-troyes.jpg`), texte alternatif sans dire que c'est la ville | maisons à pans de bois, [Pixabay n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/) |
-| Page Troyes, « Depuis Troyes, les vignobles à portée de main » | Coteaux de Colombé-le-Sec, légende « Vignes de la Côte des Bar, à Colombé-le-Sec » | inchangé |
-| Page Troyes, gastronomie | Chou à la crème et verre de champagne, légende « (illustration) » | inchangé |
-| Page Contact | Nos vignes au coucher du soleil à Merrey-sur-Arce (`coucher-soleil-vignes-merrey-sur-arce-2025.jpg`) | rue à colombages, [Pixabay n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/) (pas Troyes de façon vérifiable) |
+| Page Troyes, ouverture | Maisons à pans de bois jaunes sous un ciel bleu (`troyes-maisons-pans-de-bois-centre-historique.jpg`, [Pixabay n° 3425145](https://pixabay.com/photos/half-timbered-house-france-troyes-3425145/), photo : derbocholter) | **lieu validé par Julien** le 22 novembre 2026 |
+| Page Troyes, « Depuis Troyes, les vignobles à portée de main » | Coteaux de Colombé-le-Sec, légende « Vignes de la Côte des Bar, à Colombé-le-Sec » | |
+| Page Troyes, gastronomie | Chou à la crème et verre de champagne, légende « (illustration) » | |
+| Page Contact | Julien à l'ordinateur (`julien-terrasse-ordinateur.jpg`), comme Communication & marketing | l'ancienne rue à colombages ([Pixabay n° 2005359](https://pixabay.com/photos/troyes-house-corbel-street-2005359/)) **n'est pas Troyes** : ne pas la remettre (gardée dans la Médiathèque) |
 
 **Emplacements qui attendent une vraie photo de Troyes (vos prochaines photos)** :
-1. Page Troyes, ouverture (idéalement en largeur) : le centre ancien, ses maisons à pans de bois.
-2. Page Troyes, section histoire (aujourd'hui sans photo) : la cathédrale, la ruelle des Chats ou une vue du « Bouchon ».
-3. Page Troyes, section gastronomie et magasins d'usine : les halles, un étal d'andouillettes ou de chaource.
-4. Page Dégustations privées, section « De passage à Troyes ? » (aujourd'hui du texte seul : une photo de Troyes y serait bienvenue).
-5. Bonus : une vue de la colline de Montgueux depuis Troyes.
+1. Page Troyes, section histoire (aujourd'hui sans photo) : la cathédrale, la ruelle des Chats ou une vue du « Bouchon ».
+2. Page Troyes, section gastronomie et magasins d'usine : les halles, un étal d'andouillettes ou de chaource.
+3. Page Dégustations privées, section « De passage à Troyes ? » (aujourd'hui du texte seul : une photo de Troyes y serait bienvenue).
+4. Bonus : une vue de la colline de Montgueux depuis Troyes.
 
-Nos photos réellement prises à Troyes (relevé GPS) et déjà en ligne : les rayons de champagnes chez un caviste (Espace Pro) et les bouteilles de la dégustation (Dégustations privées, Notre sélection, page Troyes).
+Nos photos réellement prises à Troyes (relevé GPS) et déjà en ligne : les rayons de champagnes chez un caviste (Espace Pro) et les bouteilles de la dégustation (Dégustations privées, Notre sélection).
 
 ## Cœur azur devant « Troyes, capitale de l'Aube »
 
