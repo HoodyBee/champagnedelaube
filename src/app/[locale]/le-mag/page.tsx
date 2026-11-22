@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArticlesEtiquette } from "@/components/mag/ArticlesEtiquette";
+import { MagCard } from "@/components/mag/MagCard";
 import { MagFiltres } from "@/components/mag/MagFiltres";
+import { UneAuHasard } from "@/components/mag/UneAuHasard";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
-import { Photo } from "@/components/ui/Photo";
 import { Section } from "@/components/ui/Section";
-import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { getRubriqueLabels, ordreRubriques, withDates } from "@/lib/mag";
-import { getArticles, getEtiquettes, rubriqueHref } from "@/sanity/content";
+import { CSS_UNE_DEFAUT, ID_LISTE_UNE, ID_STYLE_UNE, scriptUne } from "@/lib/une-hasard";
+import { getArticles } from "@/sanity/content";
+
+/** Nombre d'articles montrés dans « À la une ». */
+const UNE = 3;
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/le-mag">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
@@ -17,89 +20,51 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/le-mag">
   return pageMetadata({ locale, href: "/le-mag", title: t("metaTitle"), description: t("metaDescription") });
 }
 
-/** Le Mag : tous les articles, filtrables par rubrique. */
+/**
+ * Le Mag, direct et simple : titre et phrase d'intro, « À la une » (au hasard à chaque visite),
+ * puis « Tous les articles » avec les onglets de rubrique. Pas de section par thème ici :
+ * Champagne & art a sa propre page (menu du Mag), Marketing est dans l'Espace Pro.
+ */
 export default async function MagPage({ params }: PageProps<"/[locale]/le-mag">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
-  const t = await getTranslations("mag");
-  const [articles, labels, toutesEtiquettes] = await Promise.all([getArticles(locale), getRubriqueLabels(locale), getEtiquettes(locale)]);
-  // Étiquettes qui ont au moins un article publié (les autres sont masquées).
-  const etiquettes = toutesEtiquettes.filter((e) => articles.some((a) => a.etiquettes.includes(e.cle)));
+  const [t, tLegal] = await Promise.all([getTranslations("mag"), getTranslations("legal")]);
+  const [articles, labels] = await Promise.all([getArticles(locale), getRubriqueLabels(locale)]);
   const datees = withDates(articles, locale);
-  // « À la une » : l'article le plus récent, en grand, dès qu'il y en a au moins 3.
-  const une = datees.length >= 3 ? datees[0] : undefined;
-  const suite = une ? datees.slice(1) : datees;
+  // Candidats « À la une » : articles publiés avec une image (les plus récents d'abord, pour l'affichage sans script).
+  const candidats = datees.filter((a) => a.image);
+  const montres = Math.min(UNE, candidats.length);
 
   return (
     <>
       <Breadcrumb locale={locale} items={[{ label: t("h1") }]} />
-      {/* En-tête façon magazine : sur-titre, grand titre, double filet doré */}
-      <header className="mx-auto max-w-7xl px-space-2 pb-space-3 pt-space-4 text-center sm:px-space-4 lg:pt-space-5">
-        <p className="text-sur-titre text-bronze">{t("surTitre")}</p>
-        <h1 className="mt-space-1 text-titre-post sm:text-[3.25rem]">{t("h1")}</h1>
+      <header className="mx-auto max-w-7xl px-space-2 pb-space-2 pt-space-4 text-center sm:px-space-4 lg:pt-space-5">
+        <h1 className="text-titre-post sm:text-[3.25rem]">{t("h1")}</h1>
         <p className="mx-auto mt-space-2 max-w-2xl text-[1.125rem] text-gris-chaud">{t("intro")}</p>
         <div aria-hidden="true" className="mx-auto mt-space-3 flex max-w-xs flex-col gap-1">
           <span className="h-px bg-or" />
           <span className="h-px bg-or/40" />
         </div>
-        {/* Les rubriques, chacune avec sa page (liens explorables par Google) */}
-        <nav aria-label={t("rubriquesNav")} className="mt-space-3">
-          <ul className="flex flex-wrap justify-center gap-x-space-3 gap-y-space-1">
-            {ordreRubriques(labels)
-              .filter((r) => labels[r] && articles.some((x) => x.rubriques.includes(r)))
-              .map((r) => (
-                <li key={r}>
-                  <Link href={rubriqueHref(r)} className="text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
-                    {labels[r]}
-                  </Link>
-                </li>
-              ))}
-          </ul>
-        </nav>
-        {etiquettes.length > 0 && (
-          <nav aria-label={t("etiquettesNav")} className="mt-space-2">
-            <ul className="flex flex-wrap justify-center gap-space-1">
-              {etiquettes.map((e) => (
-                <li key={e.cle}>
-                  <a href={`#etiquette-${e.cle}`} className="inline-flex min-h-9 items-center rounded-etiquette border border-or px-space-2 text-sur-titre-petit hover:bg-champagne">
-                    {e.nom}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
       </header>
 
-      {une && (
-        <Section className="!pt-space-2" align="gauche">
-          <p className="text-sur-titre text-bronze">{t("aLaUne")}</p>
-          <Link
-            href={{ pathname: "/[article]", params: { article: une.slug } }}
-            className="group mt-space-2 grid items-center gap-space-3 lg:grid-cols-[1.4fr_1fr] lg:gap-space-5"
-          >
-            <div className="overflow-hidden rounded-carte">
-              <Photo image={une.image} ratio="16/9" sizes="(min-width: 1024px) 60vw, 100vw" />
-            </div>
-            <div>
-              <p className="text-sur-titre-petit text-bronze">{[une.rubriques.map((r) => labels[r]).filter(Boolean)[0], une.dateLabel].filter(Boolean).join(" · ")}</p>
-              <h2 className="mt-space-1 text-titre-section group-hover:text-bronze sm:text-[2.25rem]">{une.titre}</h2>
-              {une.extrait && <p className="mt-space-2 text-[1.0625rem] text-gris-chaud">{une.extrait}</p>}
-              <span className="mt-space-3 inline-flex items-center gap-space-1 text-sur-titre-petit">
-                {t("lire")} <span aria-hidden="true">→</span>
-              </span>
-            </div>
-          </Link>
+      {montres > 0 && (
+        <Section id="a-la-une" className="!pt-space-3" align="gauche" titre={t("aLaUne")}>
+          {/* Le script ci-dessous remplace ce style avant l'affichage : différence voulue avec le serveur. */}
+          <style id={ID_STYLE_UNE} suppressHydrationWarning dangerouslySetInnerHTML={{ __html: CSS_UNE_DEFAUT(montres) }} />
+          <ul id={ID_LISTE_UNE} className="grid gap-space-4 sm:grid-cols-2 lg:grid-cols-3">
+            {candidats.map((a, i) => (
+              <li key={a.slug} data-i={i}>
+                <MagCard article={a} labels={labels} lire={t("lire")} sponsored={tLegal("sponsored")} />
+              </li>
+            ))}
+          </ul>
+          <script dangerouslySetInnerHTML={{ __html: scriptUne(candidats.length, montres) }} />
+          <UneAuHasard total={candidats.length} montres={montres} />
         </Section>
       )}
 
-      {/* Une section par étiquette d'article (Champagne & art, Marketing…), juste après « À la une ». */}
-      {etiquettes.map((e, i) => (
-        <ArticlesEtiquette key={e.cle} cle={e.cle} locale={locale} fond={i % 2 === 0 ? "chaude" : "blanc"} lienMag={false} max={3} />
-      ))}
-
-      <Section className={une ? "" : "!pt-space-3"} align="gauche" titre={une && suite.length ? t("tousLesArticles") : undefined}>
-        <MagFiltres articles={une ? suite : datees} labels={labels} ordre={ordreRubriques(labels)} />
+      <Section fond={montres > 0 ? "chaude" : "blanc"} align="gauche" titre={t("tousLesArticles")}>
+        <MagFiltres articles={datees} labels={labels} ordre={ordreRubriques(labels)} />
       </Section>
     </>
   );

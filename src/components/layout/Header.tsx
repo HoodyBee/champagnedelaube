@@ -85,6 +85,8 @@ export function Header({ social, locales, rubriquesPubliees }: { social: Social;
     { href: "/tout-savoir-sur-le-champagne", cle: "/tout-savoir-sur-le-champagne", label: tMag("toutSavoir") },
     ...(publiee("portraits") ? [rubrique("portraits", tMag("portraits"))] : []),
     ...(publiee("autres-horizons") ? [rubrique("autres-horizons", tMag("autresHorizons"))] : []),
+    // Thème « Champagne & art » : sa page regroupe les articles qui portent ce thème.
+    { href: { pathname: "/le-mag/theme/[theme]", params: { theme: "champagne-art" } }, cle: "/le-mag/theme/champagne-art", label: tMag("champagneArt") },
   ];
   const proItems = proEntreprises.map(toItem);
 

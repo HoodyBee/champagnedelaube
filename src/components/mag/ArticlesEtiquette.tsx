@@ -4,10 +4,11 @@ import { Section } from "@/components/ui/Section";
 import { Link } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
+import { themeHref } from "@/lib/themes-mag";
 import { getArticles, getEtiquettes } from "@/sanity/content";
 
 /**
- * Articles qui portent une étiquette (ex. « marketing ») : nom de l'étiquette, phrase d'intro,
+ * Articles qui portent un thème (ex. « marketing ») : nom du thème, phrase d'intro,
  * cartes (photo, titre, résumé, lien). Rien n'est affiché tant qu'aucun article publié ne la porte.
  * Les liens mènent à l'adresse unique de chaque article (pas de doublon pour Google).
  */
@@ -21,11 +22,11 @@ export async function ArticlesEtiquette({
 }: {
   cle: string;
   locale: Locale;
-  /** Titre à la place du nom de l'étiquette (ex. « Nos articles marketing »). */
+  /** Titre à la place du nom du thème (ex. « Nos articles marketing »). */
   titre?: string;
   max?: number;
   fond?: "blanc" | "chaude";
-  /** Lien « Tous les articles … » vers la section du Mag (quand il y a plus d'articles que de cartes). */
+  /** Lien « Tous les articles du thème » vers sa page du Mag (s'il en a une et qu'il y a plus d'articles que de cartes). */
   lienMag?: boolean;
 }) {
   const [etiquettes, articles, labels] = await Promise.all([getEtiquettes(locale), getArticles(locale), getRubriqueLabels(locale)]);
@@ -43,8 +44,8 @@ export async function ArticlesEtiquette({
           </li>
         ))}
       </ul>
-      {lienMag && liste.length > max && (
-        <Link href={{ pathname: "/le-mag", hash: `etiquette-${cle}` }} className="mt-space-3 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+      {lienMag && liste.length > max && themeHref(cle)?.pathname === "/le-mag/theme/[theme]" && (
+        <Link href={{ pathname: "/le-mag/theme/[theme]", params: { theme: cle } }} className="mt-space-3 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
           {t("tousArticlesEtiquette", { etiquette: etiquette.nom })} <span aria-hidden="true">→</span>
         </Link>
       )}
@@ -52,7 +53,7 @@ export async function ArticlesEtiquette({
   );
 }
 
-/** Étiquettes d'un article, cliquables vers leur section dans Le Mag. */
+/** Thèmes d'un article (sous le chapeau) : Champagne & art vers sa page du Mag, Marketing vers l'Espace Pro. */
 export async function EtiquettesArticle({ codes, locale, className = "" }: { codes: string[]; locale: Locale; className?: string }) {
   if (!codes.length) return null;
   const [etiquettes, t] = await Promise.all([getEtiquettes(locale), getTranslations({ locale, namespace: "mag" })]);
@@ -60,16 +61,21 @@ export async function EtiquettesArticle({ codes, locale, className = "" }: { cod
   if (!liste.length) return null;
   return (
     <ul aria-label={t("etiquettesArticle")} className={`flex flex-wrap gap-space-1 ${className}`}>
-      {liste.map((e) => (
-        <li key={e.cle}>
-          <Link
-            href={{ pathname: "/le-mag", hash: `etiquette-${e.cle}` }}
-            className="inline-flex min-h-9 items-center rounded-etiquette border border-or px-space-2 text-sur-titre-petit text-anthracite transition-colors hover:bg-champagne"
-          >
-            {e.nom}
-          </Link>
-        </li>
-      ))}
+      {liste.map((e) => {
+        const href = themeHref(e.cle);
+        const classe = "inline-flex min-h-9 items-center rounded-etiquette border border-or px-space-2 text-sur-titre-petit text-anthracite";
+        return (
+          <li key={e.cle}>
+            {href ? (
+              <Link href={href} className={`${classe} transition-colors hover:bg-champagne`}>
+                {e.nom}
+              </Link>
+            ) : (
+              <span className={classe}>{e.nom}</span>
+            )}
+          </li>
+        );
+      })}
     </ul>
   );
 }

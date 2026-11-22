@@ -24,6 +24,7 @@ import {
 } from "@/sanity/content";
 import { urlFor } from "@/sanity/lib/image";
 import { PHOTOS_TROYES } from "@/lib/troyes-photos";
+import { THEMES_MAG } from "@/lib/themes-mag";
 import { PHOTOS_ESPACE_PRO } from "@/lib/espace-pro-photos";
 import type { Img } from "@/components/ui/types";
 import { getActiveLocales, getReglages } from "@/sanity/queries";
@@ -78,6 +79,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...ORDRE_CEPAGES.map((cepage) => ({ pathname: "/cepages-champagne/[cepage]", params: { cepage } }) as Href),
     ...vignerons.map((slug) => ({ pathname: "/vignerons/[slug]", params: { slug } }) as Href),
     ...rubriques.map((rubrique) => ({ pathname: "/le-mag/[rubrique]", params: { rubrique } }) as Href),
+    // Pages des thèmes du Mag (Champagne & art) : seulement celles qui ont des articles.
+    ...THEMES_MAG.filter((theme) => cartes.some((a) => a.etiquettes.includes(theme))).map((theme) => ({ pathname: "/le-mag/theme/[theme]", params: { theme } }) as Href),
     ...articles.map((article) => ({ pathname: "/[article]", params: { article } }) as Href),
   ];
   const url = (href: Href, locale: Locale) => SITE_URL + withSlash(getPathname({ href, locale }));

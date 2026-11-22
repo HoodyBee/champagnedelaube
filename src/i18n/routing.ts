@@ -125,6 +125,8 @@ export const routing = defineRouting({
     "/le-mag": "/le-mag",
     // Pages des rubriques sans adresse historique (/le-mag/terroirs-cepages/…)
     "/le-mag/[rubrique]": "/le-mag/[rubrique]",
+    // Page d'un thème du Mag (ex. Champagne & art) : /le-mag/theme/champagne-art/
+    "/le-mag/theme/[theme]": "/le-mag/theme/[theme]",
     // Articles du Mag : à la racine du site, adresses historiques conservées (/mon-article/)
     "/[article]": "/[article]",
     // Où trouver nos pépites ? (cachée tant que l'interrupteur des Réglages est éteint)
