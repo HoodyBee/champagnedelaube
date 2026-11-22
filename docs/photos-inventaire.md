@@ -546,3 +546,10 @@ Recherches : environ 30 requêtes (anglais et français, plusieurs pages), photo
 3. [Pixabay n° 792113](https://pixabay.com/photos/coffee-phone-paper-business-792113/) (téléphone, café, carnet sur bois : le thème réseaux sociaux, sans marque ni visage).
 
 **Autres articles vérifiés** : aucune image principale ne montre du vin rouge, de la bière ou un autre alcool. Les seules autres boissons visibles sont dans l'article rap (Cîroc, Moscato, Hennessy, Jack Daniel's) : ce sont les images d'origine, liées au sujet même de l'article.
+
+## Mission 2 (22 novembre 2026) : photos des articles en brouillon
+
+- **Lot `pixabay-4`** : 7 photos Pixabay (rosé de saignée, prosecco, brut, chaource, andouillette, cidre, brasseries). Toutes avec la légende « Illustration », un crédit et les étiquettes `banque-images` et `banque-pixabay`. Détail et liens : `docs/articles-sources.md`.
+- **Lot `illustrations-1`** : `formats-bouteilles-champagne.jpg`, une illustration originale (schéma à l'échelle des 14 formats, couleurs du brand book), crédit « Illustration : Champagne de l'Aube », étiquette `illustration-originale`. Elle est recréable avec `content/photos/formats-bouteilles-champagne.py`.
+- **Nos photos utilisées** : verre de rosé aux Riceys, véraison, vendanges 2026 chez Moutard*Dangin (Celles-sur-Ource, Polisy), jeune plantation (Mennetrier, légende « Illustration »), serveur et flûtes.
+- **Whisky** : aucune photo avec l'étiquette « whisky-soligny » dans la Médiathèque. L'emplacement est laissé vide dans l'article.

@@ -1,0 +1,21 @@
+{
+ "lot": "illustrations-1",
+ "photos": [
+  {
+   "fichier": "formats-bouteilles-champagne.jpg",
+   "alt": {
+    "fr": "Schéma des quatorze formats de bouteilles de champagne côte à côte, à l'échelle, du quart (20 cl) au Melchisédech (30 L)",
+    "en": "Diagram of the fourteen champagne bottle sizes side by side, to scale, from the quarter bottle (20 cl) to the Melchizedek (30 L)"
+   },
+   "etiquettes": [
+    "illustration-originale"
+   ],
+   "usage": "Article « Les tailles de bouteilles de champagne » (brouillon) : photo principale",
+   "credit": "Illustration : Champagne de l'Aube",
+   "source": {
+    "page": "Création originale (script content/photos/formats-bouteilles-champagne.py)",
+    "licence": "Champagne de l'Aube"
+   }
+  }
+ ]
+}
