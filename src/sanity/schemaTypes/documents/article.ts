@@ -61,8 +61,8 @@ export const article = defineType({
     }),
     defineField({
       name: "etiquettes",
-      title: "Étiquettes de l'article",
-      description: "Plusieurs possibles (ex. : Marketing, Champagne & art). Chaque étiquette a sa section dans Le Mag ; l'adresse de l'article ne change pas. Pour en créer une : Le Mag du Champagne > Étiquettes d'article.",
+      title: "Thèmes",
+      description: "Plusieurs possibles (ex. : Marketing, Champagne & art). Affichés sous le chapeau de l'article ; l'adresse de l'article ne change pas. Pour en créer un : Le Mag du Champagne > Thèmes.",
       type: "array",
       group: "contenu",
       of: [defineArrayMember({ type: "reference", to: [{ type: "etiquetteArticle" }] })],

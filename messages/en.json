@@ -821,10 +821,10 @@
       "texte": "Photography, video, social media: discover our communication services for winemakers, wine shops, bars and restaurants.",
       "bouton": "See Communication & marketing"
     },
-    "etiquette": "Tag",
-    "etiquettesArticle": "Article tags",
+    "etiquette": "Theme",
+    "etiquettesArticle": "Article themes",
     "tousArticlesEtiquette": "All “{etiquette}” articles",
-    "etiquettesNav": "Mag tags"
+    "etiquettesNav": "Mag themes"
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",

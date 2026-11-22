@@ -1,7 +1,7 @@
 # Article « 5 idées pour faire connaître son domaine viticole sur Instagram » : sources
 
 - **Statut : BROUILLON** dans le Studio (`drafts.article-5-idees-instagram-domaine-viticole`). Il n'est pas publié, donc absent du site.
-- Adresse prévue : `/5-idees-instagram-domaine-viticole/`. Rubrique principale : Actu (à changer si vous préférez). Étiquette : Marketing (l'encart vers Communication & marketing s'ajoute tout seul à la fin).
+- Adresse prévue : `/5-idees-instagram-domaine-viticole/`. Rubrique principale : Actu (à changer si vous préférez). Thème : Marketing (l'encart vers Communication & marketing s'ajoute tout seul à la fin).
 - Texte source : `content/articles/5-idees-instagram-domaine-viticole.json`. Environ 950 mots, en français seulement (pas encore de traduction anglaise).
 - **Pas de photo principale** : à choisir avant publication (une de vos photos de vigne ou de cave conviendrait).
 - **Aucun chiffre** de statistique ni de promesse de résultat.

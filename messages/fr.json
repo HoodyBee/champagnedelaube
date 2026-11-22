@@ -821,10 +821,10 @@
       "texte": "Photo, vidéo, réseaux sociaux : découvrez nos services de communication pour les vignerons, cavistes, bars et restaurants.",
       "bouton": "Voir Communication & marketing"
     },
-    "etiquette": "Étiquette",
-    "etiquettesArticle": "Étiquettes de l'article",
-    "tousArticlesEtiquette": "Tous les articles « {etiquette} »",
-    "etiquettesNav": "Les étiquettes du Mag"
+    "etiquette": "Thème",
+    "etiquettesArticle": "Thèmes de l'article",
+    "tousArticlesEtiquette": "Tous les articles du thème « {etiquette} »",
+    "etiquettesNav": "Les thèmes du Mag"
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
