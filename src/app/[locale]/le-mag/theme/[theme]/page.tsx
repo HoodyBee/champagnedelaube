@@ -33,8 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return pageMetadata({
     locale,
     href: { pathname: "/le-mag/theme/[theme]", params: { theme } },
-    title: `${c.fiche.nom} | ${t("h1")}`,
-    description: c.fiche.intro ?? t("metaDescription"),
+    // Titre et description dédiés (fichiers de traduction) s'ils existent, sinon nom et intro du thème.
+    title: t.has(`themesMeta.${theme}.title`) ? t(`themesMeta.${theme}.title` as "h1") : `${c.fiche.nom} | ${t("h1")}`,
+    description: t.has(`themesMeta.${theme}.description`) ? t(`themesMeta.${theme}.description` as "h1") : (c.fiche.intro ?? t("metaDescription")),
     // Thème encore vide : pas de page creuse dans Google.
     seo: c.liste.length ? undefined : { noIndex: true },
   });

@@ -824,7 +824,13 @@
     "etiquette": "Theme",
     "etiquettesArticle": "Article themes",
     "tousArticlesEtiquette": "All “{etiquette}” articles",
-    "etiquettesNav": "Mag themes"
+    "etiquettesNav": "Mag themes",
+    "themesMeta": {
+      "champagne-art": {
+        "title": "Champagne & art: music, film and culture | The Mag",
+        "description": "Champagne in music, film, art and culture: when the bubbles take the stage, the screen or the museum. All our articles on champagne and the arts, in one place."
+      }
+    }
   },
   "entreprisesPage": {
     "metaTitle": "Champagne gift boxes for companies and works councils | Champagne de l'Aube",

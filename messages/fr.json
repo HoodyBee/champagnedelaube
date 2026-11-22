@@ -824,7 +824,13 @@
     "etiquette": "Thème",
     "etiquettesArticle": "Thèmes de l'article",
     "tousArticlesEtiquette": "Tous les articles du thème « {etiquette} »",
-    "etiquettesNav": "Les thèmes du Mag"
+    "etiquettesNav": "Les thèmes du Mag",
+    "themesMeta": {
+      "champagne-art": {
+        "title": "Champagne & art : musique, cinéma et culture | Le Mag",
+        "description": "Le champagne dans la musique, le cinéma, l'art et la culture : quand les bulles s'invitent sur scène, à l'écran ou au musée. Tous nos articles sur le sujet."
+      }
+    }
   },
   "entreprisesPage": {
     "metaTitle": "Coffrets de champagne pour CSE et cadeaux d'entreprise | Champagne de l'Aube",
