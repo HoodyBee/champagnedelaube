@@ -1,10 +1,14 @@
 # Mise en ligne : indexation, mesure d'audience, Search Console
 
+> **Pour le jour J, suivez la checklist unique : `docs/communication/05-checklist-mise-en-ligne.md`.** Ce document garde le détail des explications.
+
 ## 1. Indexation par Google (automatique)
 
 - Le site est **indexable seulement sur le site en ligne** : Netlify fournit la variable `CONTEXT=production` lors de la construction du site principal. Les aperçus de PR restent en `noindex`.
 - Rien à faire : à la fusion, le site en ligne passe en `index, follow, max-image-preview:large`.
 - Restent toujours hors de Google : les langues masquées (NL, IT, DE), les rubriques vides du Mag, Nos partenaires, la confirmation d'inscription, les pages 404.
+- La page **« Qui suis-je ? »** reste introuvable (et hors de Google) tant que vous ne l'avez pas **publiée** dans le Studio ; dès sa publication, elle entre dans le plan du site et dans le pied de page.
+- Les **articles en brouillon** (mission 2) restent invisibles tant qu'ils ne sont pas publiés.
 
 ## 2. Mesure d'audience : ce que je recommande
 
