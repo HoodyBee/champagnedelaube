@@ -1,0 +1,27 @@
+{
+ "lot": "pixabay-5",
+ "photos": [
+  {
+   "fichier": "flutes-champagne-reception-mariage.jpg",
+   "alt": {
+    "fr": "Flûtes de champagne servies sur une table de réception",
+    "en": "Flutes of champagne served on a reception table"
+   },
+   "etiquettes": [
+    "banque-images",
+    "banque-pixabay"
+   ],
+   "usage": "Vos Grands Événements (champagne pour mariage) : photo d'ouverture",
+   "credit": "Photo : garten-gg / Pixabay",
+   "source": {
+    "page": "https://pixabay.com/photos/drink-sparkling-wine-champagne-3615178/",
+    "pixabay_id": 3615178,
+    "auteur": "garten-gg",
+    "licence": "Licence Pixabay",
+    "licence_url": "https://pixabay.com/service/license-summary/",
+    "taille_originale": "4724x2362",
+    "taille_importee": "1280x640"
+   }
+  }
+ ]
+}

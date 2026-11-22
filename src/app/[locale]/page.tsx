@@ -10,6 +10,7 @@ import { Chiffres } from "@/components/ui/Chiffres";
 import { Hero } from "@/components/ui/Hero";
 import { LineIcon } from "@/components/ui/LineIcon";
 import { Photo } from "@/components/ui/Photo";
+import { SanityImage as Image } from "@/components/ui/SanityImage";
 import { Section } from "@/components/ui/Section";
 import { getPathname, Link } from "@/i18n/navigation";
 import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
@@ -64,8 +65,39 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const dejaVus = new Set(portraits.map((p) => p.slug));
   const derniers = withDates(articles.filter((x) => !dejaVus.has(x.slug)), locale).slice(0, 3);
 
+  // Liste des terroirs de la section vidéo : petite photo ronde (celle de la page du terroir), nom,
+  // phrase courte et flèche ; le tout cliquable. Texte crème et or sur le fond sombre.
+  const listeTerroirs = (
+    <>
+      <ul className="max-w-md divide-y divide-creme/15 border-y border-creme/15">
+        {terroirPages.map((p, i) => {
+          const img = fiches[i].image;
+          return (
+            <li key={p.key}>
+              <Link href={p.href} className="group flex items-center gap-space-2 py-space-1">
+                <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-rond ring-2 ring-offset-2 ring-offset-[#112033]" style={{ ["--tw-ring-color" as string]: `var(--color-${terroirs[p.key].color})` }}>
+                  {img ? (
+                    <Image src={img.src} alt="" fill sizes="48px" className="object-cover" style={img.position ? { objectPosition: img.position } : undefined} />
+                  ) : null}
+                </span>
+                <span className="flex min-w-0 flex-1 flex-col">
+                  <span className="font-bold leading-snug text-creme group-hover:text-or">{p.label}</span>
+                  <span className="text-[0.875rem] leading-snug text-creme/75">{t(`terroirsCartes.${p.key}`)}</span>
+                </span>
+                <span aria-hidden="true" className="text-or transition-transform group-hover:translate-x-0.5">→</span>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      <Link href={nav.terroirHub.href} className="mt-space-2 inline-flex min-h-11 items-center gap-1 text-sur-titre-petit text-or underline decoration-or/60 underline-offset-4 hover:text-creme">
+        {t("terroirsCta")} <span aria-hidden="true">→</span>
+      </Link>
+    </>
+  );
+
   // Alternance blanc / crème clair, quelles que soient les sections affichées.
-  const sections = ["terroirs", "degustations", ...(portraits.length ? ["portraits"] : []), "pepites", "pro", "mag", "calendrier"] as const;
+  const sections = ["degustations", ...(portraits.length ? ["portraits"] : []), "pepites", "pro", "mag", "calendrier"] as const;
   const fond = (id: (typeof sections)[number]) => (sections.indexOf(id) % 2 === 1 ? "chaude" : "blanc");
 
   // Données structurées : l'organisation et son activité locale à Troyes.
@@ -126,17 +158,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
             <p className="text-sur-titre text-or">{t("terroirsSurTitre")}</p>
             <h2 id="carte-video-titre" className="mt-space-1 text-titre-section text-creme sm:text-[2rem]">{t("videoTitre")}</h2>
             <p className="mt-space-2 max-w-md text-[1.0625rem] text-creme/85">{t("videoPhrase")}</p>
-            <ul className="mt-space-3 hidden max-w-sm divide-y divide-creme/15 border-y border-creme/15 lg:block">
-              {terroirPages.map((p) => (
-                <li key={p.key}>
-                  <Link href={p.href} className="group flex min-h-11 items-center gap-space-2 py-space-1">
-                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />
-                    <span className="flex-1 font-bold group-hover:text-or">{p.label}</span>
-                    <span aria-hidden="true" className="text-or">→</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="hidden lg:block">{listeTerroirs}</div>
           </div>
           <div>
             <TerroirsVideo
@@ -147,55 +169,16 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
               troyes={{ label: t("videoTroyes"), url: withSlash(getPathname({ href: "/champagne-troyes", locale })) }}
               textes={{ revoir: t("videoRevoir"), consigne: t("videoConsigne"), voir: t.raw("videoVoir") as string }}
             />
-            {/* Mobile : la liste sous la carte */}
-            <ul className="mt-space-2 grid grid-cols-2 gap-x-space-2 border-t border-creme/15 pt-space-1 lg:hidden">
-              {terroirPages.map((p) => (
-                <li key={p.key}>
-                  <Link href={p.href} className="flex min-h-11 items-center gap-space-1 font-bold">
-                    <span aria-hidden="true" className="h-2.5 w-2.5 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />
-                    {p.short ?? p.label}
-                    <span aria-hidden="true" className="text-or">→</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Mobile : la carte, puis la liste enrichie en dessous */}
+            <div className="mt-space-3 lg:hidden">{listeTerroirs}</div>
           </div>
         </div>
       </section>
 
       <Chiffres items={chiffres} />
 
-      {/* 2. Les terroirs de l'Aube : 4 portes d'entrée (la carte est dans la vidéo, plus haut) */}
-      <Section id="terroirs" fond={fond("terroirs")}>
-        <div className="grid items-center gap-space-4 lg:grid-cols-[1fr_1fr] lg:gap-space-5">
-          <div className="flex flex-col">
-            <p className="text-sur-titre text-bronze">{t("terroirsSurTitre")}</p>
-            <h2 className="mt-space-1 text-titre-section sm:text-[2rem]">{t("terroirsTitre")}</h2>
-            <p className="mt-space-2 max-w-lg text-[1.0625rem] text-gris-chaud">{t("terroirsIntro")}</p>
-          </div>
-          <ul className="grid gap-space-2 sm:grid-cols-2">
-            {terroirPages.map((p, i) => (
-              <li key={p.key}>
-                <Link href={p.href} className="group flex h-full flex-col overflow-hidden rounded-carte border border-filet bg-blanc transition-colors hover:border-bronze">
-                  <Photo image={fiches[i].image} ratio="4/3" sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
-                  <span className="flex flex-1 flex-col p-space-2">
-                    <span className="inline-flex items-center gap-1.5 text-[1.25rem] font-bold leading-tight group-hover:text-bronze">
-                      <span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-rond" style={{ backgroundColor: `var(--color-${terroirs[p.key].color})` }} />
-                      {p.label}
-                    </span>
-                    <span className="mt-1 text-[0.9375rem] text-gris-chaud">{t(`terroirsCartes.${p.key}`)}</span>
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-space-4 text-center">
-          <ButtonLink href={nav.terroirHub.href} variant="secondaire">
-            {t("terroirsCta")}
-          </ButtonLink>
-        </div>
-      </Section>
+      {/* Les 4 cartes des terroirs sont maintenant dans la liste de la section vidéo, plus haut
+          (elles restent sur la page Les terroirs de l'Aube). */}
 
       {/* 3. Dégustations privées : section immersive, bien repérable */}
       <Section id="degustations-privees" fond={fond("degustations")}>
