@@ -1,0 +1,1481 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "terroir-cote-des-bar",
+  "_rev": "hei3rGJZplwTO6XvkXXhPe",
+  "_type": "terroir",
+  "_updatedAt": "2026-11-21T09:44:53Z",
+  "accroche": {
+    "_type": "localeString",
+    "en": "Did you know that the Côte des Bar shares its subsoil with Chablis?",
+    "fr": "Saviez-vous que la Côte des Bar partage son sous-sol avec Chablis ?",
+    "it": "Sapevate che la Côte des Bar condivide il suo sottosuolo con Chablis?",
+    "nl": "Wist u dat de Côte des Bar haar ondergrond deelt met Chablis?"
+  },
+  "cepagesDominants": [
+    "pinot-noir",
+    "meunier",
+    "chardonnay",
+    "pinot-blanc",
+    "pinot-gris",
+    "arbane",
+    "petit-meslier",
+    "chardonnay-rose"
+  ],
+  "cepagesMajoritaires": [
+    "pinot-noir"
+  ],
+  "chiffres": [
+    {
+      "_key": "t0",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Subsoil",
+        "fr": "Sous-sol",
+        "it": "Sottosuolo",
+        "nl": "Ondergrond"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Kimmeridgian marl and limestone",
+        "fr": "Marnes et calcaires du Kimméridgien",
+        "it": "Marne e calcari del Kimmeridgiano",
+        "nl": "Mergel en kalksteen uit het Kimmeridgien"
+      }
+    },
+    {
+      "_key": "t1",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Main grape",
+        "fr": "Cépage principal",
+        "it": "Vitigno principale",
+        "nl": "Belangrijkste ras"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Pinot noir, over 80%",
+        "fr": "Pinot noir, plus de 80 %",
+        "it": "Pinot noir, oltre l'80%",
+        "nl": "Pinot noir, meer dan 80%"
+      }
+    },
+    {
+      "_key": "t2",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Areas",
+        "fr": "Secteurs",
+        "it": "Settori",
+        "nl": "Gebieden"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Barséquanais and Barsuraubois",
+        "fr": "Barséquanais et Barsuraubois",
+        "it": "Barséquanais e Barsuraubois",
+        "nl": "Barséquanais en Barsuraubois"
+      }
+    },
+    {
+      "_key": "t3",
+      "_type": "repere",
+      "label": {
+        "_type": "localeString",
+        "en": "Appellations",
+        "fr": "Appellations",
+        "it": "Denominazioni",
+        "nl": "Appellaties"
+      },
+      "valeur": {
+        "_type": "localeString",
+        "en": "Champagne, Coteaux Champenois, Rosé des Riceys",
+        "fr": "Champagne, Coteaux champenois, Rosé des Riceys",
+        "it": "Champagne, Coteaux Champenois, Rosé des Riceys",
+        "nl": "Champagne, Coteaux Champenois, Rosé des Riceys"
+      }
+    }
+  ],
+  "cle": "cote-des-bar",
+  "contenu": {
+    "_type": "localeRichText",
+    "en": [
+      {
+        "_key": "t17",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t16",
+            "_type": "span",
+            "marks": [],
+            "text": "A vineyard in the south of Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t1f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t18",
+            "_type": "span",
+            "marks": [],
+            "text": "The Côte des Bar is the southernmost part of the Champagne vineyard. Its slopes are organised around two small towns, Bar-sur-Seine and Bar-sur-Aube. Together with "
+          },
+          {
+            "_key": "t1a",
+            "_type": "span",
+            "marks": [
+              "t19"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "t1b",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "t1d",
+            "_type": "span",
+            "marks": [
+              "t1c"
+            ],
+            "text": "Villenauxe-la-Grande"
+          },
+          {
+            "_key": "t1e",
+            "_type": "span",
+            "marks": [],
+            "text": ", it makes up the Aube vineyard: around 8,000 hectares, more than a fifth of the vineyard."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t19",
+            "_type": "link",
+            "href": "/en/montgueux/"
+          },
+          {
+            "_key": "t1c",
+            "_type": "link",
+            "href": "/en/villenauxe-la-grande/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t1h",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1g",
+            "_type": "span",
+            "marks": [],
+            "text": "Pinot noir country"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t1j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1i",
+            "_type": "span",
+            "marks": [],
+            "text": "Here, pinot noir covers more than 80% of the vines. On Kimmeridgian marl it gives generous champagnes, often made as blanc de noirs. Chardonnay and meunier complete the picture. The Côte des Bar also keeps most of Champagne's rare grape varieties: pinot blanc, pinot gris, known here as fromenteau, arbane and petit meslier. Winemakers in Buxeuil and Urville saved them from oblivion. Chardonnay rose, a natural mutation of chardonnay, joined the list of permitted varieties in 2025."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t1l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1k",
+            "_type": "span",
+            "marks": [],
+            "text": "A story of resistance"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t1q",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1m",
+            "_type": "span",
+            "marks": [],
+            "text": "In 1911, the winemakers of the Aube mobilised against their exclusion from the Champagne appellation. The law of 28 July 1927 gave them back their place. Today, many independent winemakers work in the Côte des Bar, some of them in "
+          },
+          {
+            "_key": "t1o",
+            "_type": "span",
+            "marks": [
+              "t1n"
+            ],
+            "text": "our selection"
+          },
+          {
+            "_key": "t1p",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t1n",
+            "_type": "link",
+            "href": "/en/winemakers/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t1s",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1r",
+            "_type": "span",
+            "marks": [],
+            "text": "On the Champagne Route"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t1u",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1t",
+            "_type": "span",
+            "marks": [],
+            "text": "The Champagne Tourist Route crosses the Côte des Bar for around 220 kilometres, starting from Bar-sur-Seine or Bar-sur-Aube. In Essoyes, where Renoir spent nearly thirty summers, you can visit the painter's studio. In Colombey-les-Deux-Églises, the Charles de Gaulle Memorial recalls another chapter of history."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t1w",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1v",
+            "_type": "span",
+            "marks": [],
+            "text": "Taste this terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t27",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t1x",
+            "_type": "span",
+            "marks": [],
+            "text": "The best way to understand this terroir is to taste it with the people who farm it. Join one of "
+          },
+          {
+            "_key": "t1z",
+            "_type": "span",
+            "marks": [
+              "t1y"
+            ],
+            "text": "our tastings"
+          },
+          {
+            "_key": "t20",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes or at your home, or discover "
+          },
+          {
+            "_key": "t22",
+            "_type": "span",
+            "marks": [
+              "t21"
+            ],
+            "text": "our selection"
+          },
+          {
+            "_key": "t23",
+            "_type": "span",
+            "marks": [],
+            "text": ". Are you a restaurant, wine shop or hotel? Discover "
+          },
+          {
+            "_key": "t25",
+            "_type": "span",
+            "marks": [
+              "t24"
+            ],
+            "text": "our trade offer"
+          },
+          {
+            "_key": "t26",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t1y",
+            "_type": "link",
+            "href": "/en/tasting-troyes/"
+          },
+          {
+            "_key": "t21",
+            "_type": "link",
+            "href": "/en/winemakers/"
+          },
+          {
+            "_key": "t24",
+            "_type": "link",
+            "href": "/en/champagne-for-hotels-restaurants-and-wine-shops/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "fr": [
+      {
+        "_key": "t5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t4",
+            "_type": "span",
+            "marks": [],
+            "text": "Un vignoble au sud de la Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "td",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t6",
+            "_type": "span",
+            "marks": [],
+            "text": "La Côte des Bar est la partie la plus méridionale du vignoble champenois. Ses coteaux s'organisent autour de deux petites villes, Bar-sur-Seine et Bar-sur-Aube. Avec "
+          },
+          {
+            "_key": "t8",
+            "_type": "span",
+            "marks": [
+              "t7"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "t9",
+            "_type": "span",
+            "marks": [],
+            "text": " et "
+          },
+          {
+            "_key": "tb",
+            "_type": "span",
+            "marks": [
+              "ta"
+            ],
+            "text": "Villenauxe-la-Grande"
+          },
+          {
+            "_key": "tc",
+            "_type": "span",
+            "marks": [],
+            "text": ", elle forme le vignoble de l'Aube : environ 8 000 hectares, soit plus d'un cinquième du vignoble."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t7",
+            "_type": "link",
+            "href": "/montgueux/"
+          },
+          {
+            "_key": "ta",
+            "_type": "link",
+            "href": "/villenauxe-la-grande/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "tf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "te",
+            "_type": "span",
+            "marks": [],
+            "text": "Le pays du pinot noir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "th",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tg",
+            "_type": "span",
+            "marks": [],
+            "text": "Ici, le pinot noir couvre plus de 80 % des vignes. Sur les marnes kimméridgiennes, il donne des champagnes généreux, souvent vinifiés en blanc de noirs. Le chardonnay et le meunier complètent l'encépagement. La Côte des Bar garde aussi l'essentiel des cépages rares de la Champagne : le pinot blanc, le pinot gris, que l'on appelle ici fromenteau, l'arbane et le petit meslier. Des vignerons de Buxeuil ou d'Urville les ont sauvés de l'oubli. Le chardonnay rose, mutation naturelle du chardonnay, a rejoint en 2025 la liste des cépages autorisés."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ti",
+            "_type": "span",
+            "marks": [],
+            "text": "Une histoire de résistance"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "to",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tk",
+            "_type": "span",
+            "marks": [],
+            "text": "En 1911, les vignerons de l'Aube se mobilisent contre leur exclusion de l'appellation Champagne. La loi du 28 juillet 1927 leur rend leur place. Aujourd'hui, de nombreux vignerons indépendants travaillent dans la Côte des Bar, dont certains de "
+          },
+          {
+            "_key": "tm",
+            "_type": "span",
+            "marks": [
+              "tl"
+            ],
+            "text": "notre sélection"
+          },
+          {
+            "_key": "tn",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "tl",
+            "_type": "link",
+            "href": "/vignerons/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "tq",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tp",
+            "_type": "span",
+            "marks": [],
+            "text": "Sur la Route du Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ts",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tr",
+            "_type": "span",
+            "marks": [],
+            "text": "La Route touristique du Champagne parcourt la Côte des Bar sur environ 220 kilomètres, au départ de Bar-sur-Seine ou de Bar-sur-Aube. À Essoyes, où Renoir a passé près de trente étés, l'atelier du peintre se visite. À Colombey-les-Deux-Églises, le Mémorial Charles de Gaulle rappelle une autre page d'histoire."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "tu",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tt",
+            "_type": "span",
+            "marks": [],
+            "text": "Goûter ce terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t15",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tv",
+            "_type": "span",
+            "marks": [],
+            "text": "Le meilleur moyen de comprendre ce terroir, c'est de le goûter avec ceux qui le cultivent. Rejoignez l'une de "
+          },
+          {
+            "_key": "tx",
+            "_type": "span",
+            "marks": [
+              "tw"
+            ],
+            "text": "nos dégustations"
+          },
+          {
+            "_key": "ty",
+            "_type": "span",
+            "marks": [],
+            "text": ", à Troyes ou chez vous, ou découvrez "
+          },
+          {
+            "_key": "t10",
+            "_type": "span",
+            "marks": [
+              "tz"
+            ],
+            "text": "notre sélection"
+          },
+          {
+            "_key": "t11",
+            "_type": "span",
+            "marks": [],
+            "text": ". Vous êtes restaurateur, caviste ou hôtelier ? Découvrez "
+          },
+          {
+            "_key": "t13",
+            "_type": "span",
+            "marks": [
+              "t12"
+            ],
+            "text": "notre offre pro"
+          },
+          {
+            "_key": "t14",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "tw",
+            "_type": "link",
+            "href": "/tasting-troyes/"
+          },
+          {
+            "_key": "tz",
+            "_type": "link",
+            "href": "/vignerons/"
+          },
+          {
+            "_key": "t12",
+            "_type": "link",
+            "href": "/champagne-hotel-restaurants-et-cavistes/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "it": [
+      {
+        "_key": "t3b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3a",
+            "_type": "span",
+            "marks": [],
+            "text": "Un vigneto nel sud della Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t3j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3c",
+            "_type": "span",
+            "marks": [],
+            "text": "La Côte des Bar è la parte più meridionale del vigneto champenois. Le sue colline si organizzano attorno a due cittadine, Bar-sur-Seine e Bar-sur-Aube. Con "
+          },
+          {
+            "_key": "t3e",
+            "_type": "span",
+            "marks": [
+              "t3d"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "t3f",
+            "_type": "span",
+            "marks": [],
+            "text": " e "
+          },
+          {
+            "_key": "t3h",
+            "_type": "span",
+            "marks": [
+              "t3g"
+            ],
+            "text": "Villenauxe-la-Grande"
+          },
+          {
+            "_key": "t3i",
+            "_type": "span",
+            "marks": [],
+            "text": ", forma il vigneto dell'Aube: circa 8.000 ettari, un buon quarto della Champagne."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t3d",
+            "_type": "link",
+            "href": "/it/montgueux/"
+          },
+          {
+            "_key": "t3g",
+            "_type": "link",
+            "href": "/it/villenauxe-la-grande/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t3l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3k",
+            "_type": "span",
+            "marks": [],
+            "text": "Il paese del pinot noir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t3n",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3m",
+            "_type": "span",
+            "marks": [],
+            "text": "Qui il pinot noir copre oltre l'80% delle vigne. Sulle marne kimmeridgiane dà champagne generosi, spesso vinificati in blanc de noirs. Chardonnay e meunier completano l'uvaggio. La Côte des Bar conserva anche la maggior parte dei vitigni rari della Champagne: pinot blanc, pinot gris, qui chiamato fromenteau, arbane e petit meslier. Vignaioli di Buxeuil e Urville li hanno salvati dall'oblio. Lo chardonnay rose, mutazione naturale dello chardonnay, è entrato nel 2025 nell'elenco dei vitigni ammessi."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t3p",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3o",
+            "_type": "span",
+            "marks": [],
+            "text": "Una storia di resistenza"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t3u",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3q",
+            "_type": "span",
+            "marks": [],
+            "text": "Nel 1911 i vignaioli dell'Aube si mobilitarono contro la loro esclusione dalla denominazione Champagne. La legge del 28 luglio 1927 restituì loro il loro posto. Oggi molti vignaioli indipendenti lavorano nella Côte des Bar, alcuni della "
+          },
+          {
+            "_key": "t3s",
+            "_type": "span",
+            "marks": [
+              "t3r"
+            ],
+            "text": "nostra selezione"
+          },
+          {
+            "_key": "t3t",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t3r",
+            "_type": "link",
+            "href": "/it/vignaioli/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t3w",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3v",
+            "_type": "span",
+            "marks": [],
+            "text": "Sulla Strada dello Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t3y",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3x",
+            "_type": "span",
+            "marks": [],
+            "text": "La Strada turistica dello Champagne attraversa la Côte des Bar per circa 220 chilometri, partendo da Bar-sur-Seine o da Bar-sur-Aube. A Essoyes, dove Renoir trascorse quasi trenta estati, si visita l'atelier del pittore. A Colombey-les-Deux-Églises, il Memoriale Charles de Gaulle ricorda un'altra pagina di storia."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t40",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t3z",
+            "_type": "span",
+            "marks": [],
+            "text": "Assaggiare questo terroir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t4b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t41",
+            "_type": "span",
+            "marks": [],
+            "text": "Il modo migliore per capire questo terroir è assaggiarlo con chi lo coltiva. Partecipate a una delle "
+          },
+          {
+            "_key": "t43",
+            "_type": "span",
+            "marks": [
+              "t42"
+            ],
+            "text": "nostre degustazioni"
+          },
+          {
+            "_key": "t44",
+            "_type": "span",
+            "marks": [],
+            "text": ", a Troyes o a casa vostra, oppure scoprite "
+          },
+          {
+            "_key": "t46",
+            "_type": "span",
+            "marks": [
+              "t45"
+            ],
+            "text": "la nostra selezione"
+          },
+          {
+            "_key": "t47",
+            "_type": "span",
+            "marks": [],
+            "text": ". Siete ristoratori, enotecari o albergatori? Scoprite "
+          },
+          {
+            "_key": "t49",
+            "_type": "span",
+            "marks": [
+              "t48"
+            ],
+            "text": "la nostra offerta per professionisti"
+          },
+          {
+            "_key": "t4a",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t42",
+            "_type": "link",
+            "href": "/it/tasting-troyes/"
+          },
+          {
+            "_key": "t45",
+            "_type": "link",
+            "href": "/it/vignaioli/"
+          },
+          {
+            "_key": "t48",
+            "_type": "link",
+            "href": "/it/champagne-per-hotel-ristoranti-ed-enoteche/"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "nl": [
+      {
+        "_key": "t29",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t28",
+            "_type": "span",
+            "marks": [],
+            "text": "Een wijngaard in het zuiden van de Champagne"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t2h",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2a",
+            "_type": "span",
+            "marks": [],
+            "text": "De Côte des Bar is het zuidelijkste deel van de Champagne-wijngaard. De hellingen liggen rond twee stadjes, Bar-sur-Seine en Bar-sur-Aube. Samen met "
+          },
+          {
+            "_key": "t2c",
+            "_type": "span",
+            "marks": [
+              "t2b"
+            ],
+            "text": "Montgueux"
+          },
+          {
+            "_key": "t2d",
+            "_type": "span",
+            "marks": [],
+            "text": " en "
+          },
+          {
+            "_key": "t2f",
+            "_type": "span",
+            "marks": [
+              "t2e"
+            ],
+            "text": "Villenauxe-la-Grande"
+          },
+          {
+            "_key": "t2g",
+            "_type": "span",
+            "marks": [],
+            "text": " vormt ze de wijngaard van de Aube: zo'n 8.000 hectare, een flink kwart van de Champagne."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t2b",
+            "_type": "link",
+            "href": "/nl/montgueux/"
+          },
+          {
+            "_key": "t2e",
+            "_type": "link",
+            "href": "/nl/villenauxe-la-grande/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t2j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2i",
+            "_type": "span",
+            "marks": [],
+            "text": "Het land van de pinot noir"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t2l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2k",
+            "_type": "span",
+            "marks": [],
+            "text": "Hier beslaat pinot noir meer dan 80% van de wijngaarden. Op kimmeridgiaanse mergel geeft hij royale champagnes, vaak als blanc de noirs. Chardonnay en meunier vullen het geheel aan. De Côte des Bar bewaart ook de meeste zeldzame druivenrassen van de Champagne: pinot blanc, pinot gris, hier fromenteau genoemd, arbane en petit meslier. Wijnmakers in Buxeuil en Urville hebben ze van de vergetelheid gered. Chardonnay rose, een natuurlijke mutatie van chardonnay, kwam in 2025 op de lijst van toegestane rassen."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t2n",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2m",
+            "_type": "span",
+            "marks": [],
+            "text": "Een verhaal van verzet"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t2s",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2o",
+            "_type": "span",
+            "marks": [],
+            "text": "In 1911 kwamen de wijnmakers van de Aube in verzet tegen hun uitsluiting uit de appellatie Champagne. De wet van 28 juli 1927 gaf hun hun plaats terug. Vandaag werken veel onafhankelijke wijnmakers in de Côte des Bar, sommigen uit "
+          },
+          {
+            "_key": "t2q",
+            "_type": "span",
+            "marks": [
+              "t2p"
+            ],
+            "text": "onze selectie"
+          },
+          {
+            "_key": "t2r",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t2p",
+            "_type": "link",
+            "href": "/nl/wijnmakers/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "t2u",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2t",
+            "_type": "span",
+            "marks": [],
+            "text": "Op de Champagneroute"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t2w",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2v",
+            "_type": "span",
+            "marks": [],
+            "text": "De toeristische Champagneroute doorkruist de Côte des Bar over zo'n 220 kilometer, vanuit Bar-sur-Seine of Bar-sur-Aube. In Essoyes, waar Renoir bijna dertig zomers doorbracht, kunt u het atelier van de schilder bezoeken. In Colombey-les-Deux-Églises herinnert het Mémorial Charles de Gaulle aan een ander stuk geschiedenis."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "t2y",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2x",
+            "_type": "span",
+            "marks": [],
+            "text": "Dit terroir proeven"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "t39",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "t2z",
+            "_type": "span",
+            "marks": [],
+            "text": "De beste manier om dit terroir te begrijpen, is het te proeven met wie het bewerkt. Kom naar een van "
+          },
+          {
+            "_key": "t31",
+            "_type": "span",
+            "marks": [
+              "t30"
+            ],
+            "text": "onze proeverijen"
+          },
+          {
+            "_key": "t32",
+            "_type": "span",
+            "marks": [],
+            "text": ", in Troyes of bij u thuis, of ontdek "
+          },
+          {
+            "_key": "t34",
+            "_type": "span",
+            "marks": [
+              "t33"
+            ],
+            "text": "onze selectie"
+          },
+          {
+            "_key": "t35",
+            "_type": "span",
+            "marks": [],
+            "text": ". Bent u restaurateur, wijnhandelaar of hotelier? Ontdek "
+          },
+          {
+            "_key": "t37",
+            "_type": "span",
+            "marks": [
+              "t36"
+            ],
+            "text": "ons aanbod voor professionals"
+          },
+          {
+            "_key": "t38",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "t30",
+            "_type": "link",
+            "href": "/nl/tasting-troyes/"
+          },
+          {
+            "_key": "t33",
+            "_type": "link",
+            "href": "/nl/wijnmakers/"
+          },
+          {
+            "_key": "t36",
+            "_type": "link",
+            "href": "/nl/champagne-voor-hotels-restaurants-en-wijnhandels/"
+          }
+        ],
+        "style": "normal"
+      }
+    ]
+  },
+  "galerie": [
+    {
+      "_key": "khd6eugnax",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Champagne vineyard slope in Spoy, in the Côte des Bar, in summer",
+        "fr": "Coteau de vignes de Champagne à Spoy, dans la Côte des Bar, en été"
+      },
+      "asset": {
+        "_ref": "image-296528de4e32dfe09c8b82df0de6df214313f8be-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "f69swjb1dg",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "« Vignoble de Champagne » sign pointing to the presses, in Spoy",
+        "fr": "Panneau « Vignoble de Champagne » et direction des pressoirs, à Spoy"
+      },
+      "asset": {
+        "_ref": "image-f4bb22ea93e4341c5dbdefba18193fe8aff313d1-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "mhkeu5ig6a",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Sheep grazing between the vine rows at sunset, in Merrey-sur-Arce",
+        "fr": "Moutons pâturant entre les rangs de vigne au coucher du soleil, à Merrey-sur-Arce"
+      },
+      "asset": {
+        "_ref": "image-6cf29afc688682b9f98587189c73049003273f32-1350x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "kpf4bnjee2",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Sunset over the vines and the track, in Merrey-sur-Arce",
+        "fr": "Coucher de soleil sur les vignes et le chemin, à Merrey-sur-Arce"
+      },
+      "asset": {
+        "_ref": "image-33c5ab633f5c484cfd64806794c170ef30a4aa5a-1350x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "mcus26v9yk",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
+        "fr": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été"
+      },
+      "asset": {
+        "_ref": "image-587e12618ba2f2e084e7a29a07dc47d291c618d7-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "hxslgk6ko3",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Vine rows in Colombé-le-Sec, in the Bar-sur-Aube area",
+        "fr": "Rangs de vigne à Colombé-le-Sec, dans le Barsuraubois"
+      },
+      "asset": {
+        "_ref": "image-4cf1ff3f907c1bacbbb9d7eee8c05b5cc4edaacc-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "n0z3ld4p2v",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Crates of pinot noir loaded on the tractor beside the vines, in Celles-sur-Ource",
+        "fr": "Caisses de pinot noir chargées sur le tracteur au bord des vignes, à Celles-sur-Ource"
+      },
+      "asset": {
+        "_ref": "image-a9136e1e9c658b4086ac773c14c6058b06b4b383-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "rvlj7pqmbf",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Crates filled with pinot noir during the 2026 harvest in Polisy",
+        "fr": "Caisses remplies de pinot noir pendant les vendanges 2026 à Polisy"
+      },
+      "asset": {
+        "_ref": "image-37c50371fbc7d6a127aa6c1c9252c17a45669d52-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    },
+    {
+      "_key": "nxaz18oskp",
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Bunch of pinot noir held above the harvest crates, in Polisy",
+        "fr": "Grappe de pinot noir tenue à la main au-dessus des caisses de vendange, à Polisy"
+      },
+      "asset": {
+        "_ref": "image-70917720f7666f367b84d5974e71fa70247d5a4c-1807x2400-jpg",
+        "_type": "reference"
+      },
+      "credit": "© Champagne de l'Aube / Detectezmoi.com"
+    }
+  ],
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Vine-covered slopes in the Côte des Bar",
+      "fr": "Coteaux plantés de vignes dans la Côte des Bar"
+    },
+    "asset": {
+      "_ref": "image-5331781ded5e8405a27409648e0ee167d728b6a3-1620x1080-webp",
+      "_type": "reference"
+    }
+  },
+  "intro": {
+    "_type": "localeText",
+    "en": "South-east of Troyes, the Côte des Bar holds most of the Aube vineyard. Two areas, the Barséquanais and the Barsuraubois, one Kimmeridgian soil, and one grape that dominates: pinot noir.",
+    "fr": "Au sud-est de Troyes, la Côte des Bar rassemble l'essentiel du vignoble de l'Aube. Deux secteurs, le Barséquanais et le Barsuraubois, un même sol kimméridgien, et un cépage qui domine : le pinot noir.",
+    "it": "A sud-est di Troyes, la Côte des Bar riunisce la maggior parte del vigneto dell'Aube. Due settori, il Barséquanais e il Barsuraubois, uno stesso suolo kimmeridgiano e un vitigno dominante: il pinot noir.",
+    "nl": "Ten zuidoosten van Troyes ligt het grootste deel van de wijngaard van de Aube: de Côte des Bar. Twee gebieden, het Barséquanais en het Barsuraubois, één kimmeridgiaanse bodem en één overheersend ras: pinot noir."
+  },
+  "nom": "Côte des Bar",
+  "secteurs": [
+    {
+      "_key": "t4c",
+      "_type": "blocTexte",
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "t4g",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4f",
+                "_type": "span",
+                "marks": [],
+                "text": "Around Bar-sur-Seine. Here you find Les Riceys and its three appellations, Essoyes and the memory of Renoir, and villages such as Polisy."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "t4e",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4d",
+                "_type": "span",
+                "marks": [],
+                "text": "Autour de Bar-sur-Seine. On y trouve Les Riceys et leurs trois appellations, Essoyes et le souvenir de Renoir, ou encore Polisy."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "t4k",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4j",
+                "_type": "span",
+                "marks": [],
+                "text": "Attorno a Bar-sur-Seine. Qui si trovano Les Riceys e le sue tre denominazioni, Essoyes e il ricordo di Renoir, o ancora Polisy."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "t4i",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4h",
+                "_type": "span",
+                "marks": [],
+                "text": "Rond Bar-sur-Seine. Hier liggen Les Riceys met zijn drie appellaties, Essoyes met de herinnering aan Renoir, en dorpen als Polisy."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "The Barséquanais",
+        "fr": "Le Barséquanais",
+        "it": "Il Barséquanais",
+        "nl": "Het Barséquanais"
+      }
+    },
+    {
+      "_key": "t4l",
+      "_type": "blocTexte",
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "t4p",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4o",
+                "_type": "span",
+                "marks": [],
+                "text": "Around Bar-sur-Aube, the wine villages stretch as far as the Haute-Marne. Baroville has one of the largest vineyards in the area."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "t4n",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4m",
+                "_type": "span",
+                "marks": [],
+                "text": "Autour de Bar-sur-Aube, les villages viticoles s'étirent jusqu'à la Haute-Marne. Baroville y possède l'un des vignobles les plus étendus du secteur."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "t4t",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4s",
+                "_type": "span",
+                "marks": [],
+                "text": "Attorno a Bar-sur-Aube, i villaggi viticoli si estendono fino alla Haute-Marne. Baroville possiede uno dei vigneti più estesi del settore."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "t4r",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "t4q",
+                "_type": "span",
+                "marks": [],
+                "text": "Rond Bar-sur-Aube strekken de wijndorpen zich uit tot in de Haute-Marne. Baroville heeft er een van de grootste wijngaarden."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "The Barsuraubois",
+        "fr": "Le Barsuraubois",
+        "it": "Il Barsuraubois",
+        "nl": "Het Barsuraubois"
+      }
+    }
+  ],
+  "seo": {
+    "_type": "seo",
+    "description": {
+      "_type": "localeText",
+      "en": "The Côte des Bar, in the south of Champagne: the Barséquanais and the Barsuraubois, Kimmeridgian soils, more than 80% pinot noir and independent winemakers.",
+      "fr": "La Côte des Bar, au sud de la Champagne : le Barséquanais et le Barsuraubois, des sols kimméridgiens, plus de 80 % de pinot noir et des vignerons indépendants.",
+      "it": "La Côte des Bar, nel sud della Champagne: il Barséquanais e il Barsuraubois, suoli kimmeridgiani, oltre l'80% di pinot noir e vignaioli indipendenti.",
+      "nl": "De Côte des Bar, in het zuiden van de Champagne: het Barséquanais en het Barsuraubois, kimmeridgiaanse bodems, meer dan 80% pinot noir en onafhankelijke wijnmakers."
+    },
+    "title": {
+      "_type": "localeString",
+      "en": "Côte des Bar champagne: terroir, villages and winemakers",
+      "fr": "Champagne de la Côte des Bar : terroir, villages, vignerons",
+      "it": "Champagne della Côte des Bar: terroir, villaggi e vignaioli | Champagne de l'Aube",
+      "nl": "Champagne uit de Côte des Bar: terroir, dorpen en wijnmakers | Champagne de l'Aube"
+    }
+  },
+  "sols": {
+    "_type": "localeText",
+    "en": "Kimmeridgian marl and limestone, a layer from the Upper Jurassic. The same subsoil is found in Chablis, in Burgundy.",
+    "fr": "Des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur. On retrouve ce même sous-sol à Chablis, en Bourgogne.",
+    "it": "Marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore. Lo stesso sottosuolo si ritrova a Chablis, in Borgogna.",
+    "nl": "Mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura. Dezelfde ondergrond vind je in Chablis, in Bourgondië."
+  },
+  "villages": [
+    "Bar-sur-Seine",
+    "Les Riceys",
+    "Essoyes",
+    "Polisy",
+    "Bar-sur-Aube",
+    "Baroville",
+    "Urville",
+    "Arrentières"
+  ]
+}

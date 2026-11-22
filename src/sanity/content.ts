@@ -854,6 +854,8 @@ export type TerroirPage = {
   cle: TerroirKey;
   nom: string;
   accroche?: string;
+  /** Encadré « Le saviez-vous ? » (facultatif). */
+  anecdote?: string;
   intro?: string;
   image: Img | null;
   reperes: { label: string; valeur: string }[];
@@ -885,6 +887,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
   const t = await sanityFetch<{
     nom?: string;
     accroche?: Localized;
+    anecdote?: Localized;
     intro?: Localized;
     image?: SanityImg;
     chiffres?: { label?: Localized; valeur?: Localized }[];
@@ -897,7 +900,7 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
     galerie?: SanityImg[];
     seo?: SeoRaw;
   } | null>({
-    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants, cepagesMajoritaires,
+    query: `*[_type == "terroir" && cle == $cle][0]{nom, accroche, anecdote, intro, image ${IMG}, chiffres, villages, contenu, sols, cepagesDominants, cepagesMajoritaires,
       secteurs[]{icone, surTitre, titre, texte, points, image ${IMG}}, galerie[] ${IMG}, seo}`,
     params: { cle },
     tags: ["terroir"],
@@ -906,11 +909,12 @@ export async function getTerroir(cle: TerroirKey, locale: Locale): Promise<Terro
   const d = terroirsContenu[cle];
   const contenuSanity = localize(t?.contenu, locale);
   // Fiche publiée et remplie : elle l'emporte ; sinon, textes du dépôt (image Sanity gardée si présente).
-  if (t && L(t.accroche, locale) && contenuSanity?.length) {
+  if (t && contenuSanity?.length) {
     return {
       cle,
       nom: t.nom ?? d.nom,
       accroche: L(t.accroche, locale),
+      anecdote: L(t.anecdote, locale),
       intro: L(t.intro, locale),
       image: toImg(t.image, locale),
       reperes: (t.chiffres ?? []).flatMap((c) => {

@@ -68,6 +68,12 @@ export async function TerroirView({ cle, locale }: { cle: TerroirKey; locale: Lo
         <div className="grid gap-space-5 lg:grid-cols-[1.6fr_1fr]">
           <RichText value={t.contenu} locale={locale} className="max-w-3xl" />
           <div className="space-y-space-4 lg:pt-space-2">
+            {t.anecdote && (
+              <aside aria-labelledby="le-saviez-vous" className="rounded-carte border border-or bg-creme-clair p-space-3">
+                <h2 id="le-saviez-vous" className="text-sur-titre text-bronze">{tT("saviezVous")}</h2>
+                <p className="mt-space-1 text-[1.0625rem]">{t.anecdote}</p>
+              </aside>
+            )}
             {t.sols && (
               <div className="surface-chaude rounded-carte p-space-3">
                 <h2 className="text-sur-titre text-bronze">{tT("sols")}</h2>
