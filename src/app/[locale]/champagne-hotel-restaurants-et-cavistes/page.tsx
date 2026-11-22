@@ -66,6 +66,7 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
         intro={p.hero.intro ?? t("intro")}
         image={p.hero.image}
         placeholderLabel={tUi("photoSoon")}
+        texteDabordMobile
         actions={
           <>
             <ButtonLink href={{ pathname: HREF, hash: "grille" }}>{t("ctaGrille")}</ButtonLink>
@@ -74,7 +75,15 @@ export default async function EspacePro({ params }: PageProps<"/[locale]/champag
             </ButtonLink>
           </>
         }
-      />
+      >
+        {/* Suite du texte d'ouverture (seulement si le Studio ne fournit pas sa propre intro). */}
+        {!p.hero.intro && (
+          <>
+            <p className="mt-space-2 max-w-lg text-pretty text-[1.0625rem] text-gris-chaud">{t("intro2")}</p>
+            <p className="mt-space-2 max-w-lg text-pretty text-[1.0625rem] font-bold text-bronze">{t("intro3")}</p>
+          </>
+        )}
+      </Hero>
 
       <Section id="arguments" titre={t("argumentsTitre")}>
         <Arguments items={args} />

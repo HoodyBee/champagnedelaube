@@ -530,7 +530,7 @@
     "metaTitle": "Champagne pour restaurants, cavistes et hôtels | Champagne de l'Aube",
     "metaDescription": "Des champagnes de vignerons indépendants de la Côte des Bar et de l'Aube pour votre carte : tarifs directs domaine, interlocuteur unique, dégustation dans votre établissement.",
     "h1": "Des champagnes de vignerons de l'Aube pour votre carte",
-    "intro": "Nous représentons des vignerons indépendants de l'Aube auprès des professionnels : nous les présentons, nous vous conseillons pour votre carte et nous développons leur présence chez vous. Tarifs pro, un interlocuteur unique et une dégustation avec votre équipe.",
+    "intro": "Vous n'avez pas le temps d'aller jusqu'en Champagne pour dénicher et trier les cuvées ? C'est notre métier. Nous représentons des vignerons indépendants de l'Aube et faisons la sélection pour vous : des champagnes de caractère, choisis selon l'identité de votre établissement (bistrot, restaurant gastronomique, caviste, hôtel ou palace), vos valeurs (bio, biodynamie…) et votre budget, du champagne d'apéritif à la cuvée d'exception.",
     "ctaGrille": "Recevoir notre sélection et ses tarifs pro",
     "ctaDegustation": "Organiser une dégustation",
     "profilsTitre": "Pour quels établissements ?",
@@ -570,7 +570,9 @@
     "etablissementTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "etablissementCta": "Proposer un partenariat",
     "contactTitre": "Une question ? Écrivez-nous",
-    "contactIntro": "Une carte des vins à composer, un échantillon, un rendez-vous : dites-nous ce qu'il vous faut, nous vous répondons rapidement."
+    "contactIntro": "Une carte des vins à composer, un échantillon, un rendez-vous : dites-nous ce qu'il vous faut, nous vous répondons rapidement.",
+    "intro2": "Concrètement : nous vous présentons les domaines, nous vous conseillons pour votre carte, nous organisons une dégustation avec votre équipe, et vous gardez un interlocuteur unique, avec des tarifs professionnels.",
+    "intro3": "Un champagne de vigneron sur votre carte, c'est une histoire à raconter à vos clients et une vraie différence."
   },
   "vigneronsPage": {
     "metaTitle": "Notre sélection : champagnes de vignerons de l'Aube",
@@ -583,7 +585,7 @@
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
     "count": "{count, plural, one {# domaine} other {# domaines}}",
     "domainesTitre": "Les domaines de la sélection",
-    "bientot": "Notre sélection s'enrichit au fil des rencontres. D'autres domaines nous rejoignent bientôt."
+    "bientot": "Notre sélection s'enrichit au fil des rencontres et de nos recherches ciblées."
   },
   "vigneronPage": {
     "metaTitle": "{nom}, vigneron à {village}, dans l'Aube",
@@ -606,8 +608,8 @@
     "metaTitle": "Vignerons de l'Aube : devenez partenaire | Champagne de l'Aube",
     "metaDescription": "Vigneron indépendant dans l'Aube ? Champagne de l'Aube présente une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "surTitre": "Vignerons de l'Aube",
-    "h1": "Vignerons : devenez partenaire",
-    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Nous présentons une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
+    "h1": "Vignerons : développons ensemble votre visibilité",
+    "intro": "Vous êtes vigneron indépendant dans l'Aube ? Votre place est dans vos vignes et dans votre cave, pas sur les routes à démarcher. Nous nous en chargeons : nous présentons une sélection courte de domaines aux restaurants, cavistes, hôtels, entreprises et particuliers.",
     "points": {
       "selection": {
         "titre": "Une sélection courte",
@@ -713,7 +715,7 @@
     "partenariatTitre": "Et si on travaillait ensemble ?",
     "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "partenariatCta": "Proposer un partenariat",
-    "presentation2": "Ici, pas de cours d'œnologie ni de jargon : on goûte, on échange, on rit, et chacun repart avec ses préférences. Nul besoin d'être connaisseur, juste l'envie de découvrir. Et si une cuvée vous fait craquer, vous pourrez commander vos bouteilles directement auprès du vigneron, sans pression ni obligation d'achat."
+    "presentation2": "Ici, pas de cours magistral ni de jargon : on goûte, on échange, on rit, et chacun repart avec ses préférences. Simple curieux, amoureux du champagne ou fin connaisseur : chacun y trouve son bonheur, et les passionnés auront de quoi discuter. Et à l'issue de la dégustation, si une cuvée vous fait craquer, c'est la meilleure occasion pour commander vos bouteilles en direct auprès du vigneron, sans pression ni obligation d'achat."
   },
   "evenementsPage": {
     "metaTitle": "Champagne de mariage à Troyes et dans l'Aube : nos conseils",
@@ -1022,7 +1024,7 @@
     "sourcesNote": "Chaque fait de cette page est recoupé par au moins deux sources. Les chiffres qui divergent d'une source à l'autre ne sont pas donnés.",
     "illustration": "Photo d'illustration",
     "intro": "Le champagne naît de huit cépages autorisés par l'appellation : trois grands, le pinot noir, le chardonnay et le meunier, et cinq plus rares. Dans l'Aube, le pinot noir est majoritaire dans la [Côte des Bar](/la-cote-des-bar), tandis que le chardonnay domine à [Montgueux](/montgueux) et à [Villenauxe-la-Grande](/villenauxe-la-grande). Pour les goûter, rejoignez l'une de [nos dégustations](/tasting-troyes) ou découvrez [notre sélection](/vignerons).",
-    "gouterTitre": "Envie de le goûter ?",
+    "gouterTitre": "Envie de le découvrir ?",
     "gouterTexte": "Recevez notre sélection de champagnes de vignerons de l'Aube : nous vous la présentons cuvée par cuvée.",
     "tousLien": "Tous les cépages de l'appellation"
   },

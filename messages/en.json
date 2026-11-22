@@ -529,8 +529,8 @@
   "proPage": {
     "metaTitle": "Champagne for restaurants, wine shops and hotels | Champagne de l'Aube",
     "metaDescription": "Champagnes from independent winemakers of the Côte des Bar and the Aube for your list: direct estate prices, a single point of contact, tastings at your venue.",
-    "h1": "Champagnes from Aube winemakers for your wine list",
-    "intro": "We represent independent Aube winemakers to trade professionals: we introduce them, advise you on your list and develop their presence with you. Trade prices, a single point of contact and a tasting with your team.",
+    "h1": "Growers' champagnes from the Aube for your wine list",
+    "intro": "No time to travel to Champagne to hunt down and sort through cuvées? That is our job. We represent independent winemakers from the Aube and make the selection for you: champagnes with character, chosen to suit the identity of your venue (bistro, fine-dining restaurant, wine shop, hotel or palace), your values (organic, biodynamic…) and your budget, from an aperitif champagne to an exceptional cuvée.",
     "ctaGrille": "Receive our selection and trade prices",
     "ctaDegustation": "Arrange a tasting",
     "profilsTitre": "For which businesses?",
@@ -570,7 +570,9 @@
     "etablissementTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
     "etablissementCta": "Suggest a partnership",
     "contactTitre": "A question? Write to us",
-    "contactIntro": "A wine list to build, a sample, a meeting: tell us what you need and we will get back to you quickly."
+    "contactIntro": "A wine list to build, a sample, a meeting: tell us what you need and we will get back to you quickly.",
+    "intro2": "In practice: we introduce you to the estates, advise you on your wine list, organise a tasting with your team, and you keep a single point of contact, with trade prices.",
+    "intro3": "A grower's champagne on your list is a story to tell your guests, and a real difference."
   },
   "vigneronsPage": {
     "metaTitle": "Our current selection: grower champagnes from the Aube",
@@ -583,7 +585,7 @@
     "aucun": "No estate matches this filter at the moment.",
     "count": "{count, plural, one {# estate} other {# estates}}",
     "domainesTitre": "The estates in the selection",
-    "bientot": "Our selection grows as we meet new winemakers. More estates will be joining us soon."
+    "bientot": "Our selection grows with every meeting and every targeted search."
   },
   "vigneronPage": {
     "metaTitle": "{nom}, winemaker in {village}, Aube",
@@ -606,8 +608,8 @@
     "metaTitle": "Aube winemakers: become a partner | Champagne de l'Aube",
     "metaDescription": "An independent winemaker in the Aube? Champagne de l'Aube presents a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
     "surTitre": "Aube winemakers",
-    "h1": "Winemakers: become a partner",
-    "intro": "Are you an independent winemaker in the Aube? We present a small selection of estates to restaurants, wine shops, hotels, companies and private clients.",
+    "h1": "Winemakers: let's grow your visibility together",
+    "intro": "Are you an independent winemaker in the Aube? Your place is in your vines and your cellar, not on the road chasing customers. We take care of that: we present a short selection of estates to restaurants, wine shops, hotels, businesses and private customers.",
     "points": {
       "selection": {
         "titre": "A small selection",
@@ -713,7 +715,7 @@
     "partenariatTitre": "Shall we work together?",
     "partenariatTexte": "You run a venue (bar, restaurant, wine shop, hotel) and would like to partner with us? Don't hesitate to get in touch: we'll gladly talk it over a glass… of champagne, of course.",
     "partenariatCta": "Suggest a partnership",
-    "presentation2": "No wine lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. No need to be an expert, just a wish to discover. And if a cuvée wins you over, you can order your bottles directly from the winemaker, with no pressure and no obligation to buy."
+    "presentation2": "No lectures and no jargon here: we taste, we chat, we laugh, and everyone leaves knowing what they like. Curious newcomer, champagne lover or seasoned connoisseur: there is something for everyone, and enthusiasts will find plenty to talk about. And once the tasting is over, if a cuvée wins you over, it is the perfect moment to order your bottles directly from the winemaker, with no pressure and no obligation to buy."
   },
   "evenementsPage": {
     "metaTitle": "Wedding champagne in Troyes and the Aube: our advice",
@@ -1022,7 +1024,7 @@
     "sourcesNote": "Every fact on this page is cross-checked against at least two sources. Figures that differ between sources are not given.",
     "illustration": "Illustrative photo",
     "intro": "Champagne is made from eight grapes permitted by the appellation: three major ones, pinot noir, chardonnay and meunier, and five rarer ones. In the Aube, pinot noir is the main grape in the [Côte des Bar](/la-cote-des-bar), while chardonnay dominates in [Montgueux](/montgueux) and [Villenauxe-la-Grande](/villenauxe-la-grande). To taste them, join one of [our tastings](/tasting-troyes) or discover [our selection](/vignerons).",
-    "gouterTitre": "Fancy tasting it?",
+    "gouterTitre": "Want to discover it?",
     "gouterTexte": "Receive our selection of growers' champagnes from the Aube: we present it to you cuvée by cuvée.",
     "tousLien": "All the grapes of the appellation"
   },
