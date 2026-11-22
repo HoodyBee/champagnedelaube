@@ -1,0 +1,1590 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "terroirAube",
+  "_rev": "R9dLj3QxhjzSE72fqYxnPJ",
+  "_type": "terroirAube",
+  "_updatedAt": "2026-11-22T10:30:37Z",
+  "cepagesIntro": {
+    "_type": "localeRichText",
+    "en": [
+      {
+        "_key": "j26rlq165s",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "50vbfgdulg",
+            "_type": "span",
+            "marks": [],
+            "text": "Three main grape varieties make champagne: "
+          },
+          {
+            "_key": "ewdpztahkx",
+            "_type": "span",
+            "marks": [
+              "ukh4nb24b6"
+            ],
+            "text": "pinot noir"
+          },
+          {
+            "_key": "nvtrerqx3f",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "1m5mb9ns2p",
+            "_type": "span",
+            "marks": [
+              "q9tlcehggw"
+            ],
+            "text": "chardonnay"
+          },
+          {
+            "_key": "52hf1vrnx9",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "ut4ok7dvw1",
+            "_type": "span",
+            "marks": [
+              "15yyy80g15"
+            ],
+            "text": "meunier"
+          },
+          {
+            "_key": "kj4x9gjqxe",
+            "_type": "span",
+            "marks": [],
+            "text": ". Others, rarer, are also permitted in the appellation: "
+          },
+          {
+            "_key": "ap61l06ogs",
+            "_type": "span",
+            "marks": [
+              "hapg9v9nam"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "u6jzlxe64d",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "ymkrc9danu",
+            "_type": "span",
+            "marks": [
+              "mijcad8eks"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "nwasalbcyy",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "qj1cs2esi6",
+            "_type": "span",
+            "marks": [
+              "vyr1kxratd"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "7e2yhtwh4z",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "6ws4cyeyyd",
+            "_type": "span",
+            "marks": [
+              "d98mqxstd7"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "izee7xk7ab",
+            "_type": "span",
+            "marks": [],
+            "text": " and "
+          },
+          {
+            "_key": "09l1kwssje",
+            "_type": "span",
+            "marks": [
+              "yaanqvswxk"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "fk0cxdaon0",
+            "_type": "span",
+            "marks": [],
+            "text": ". To get to know them, join one of "
+          },
+          {
+            "_key": "qrpr5tckvz",
+            "_type": "span",
+            "marks": [
+              "loh6kchvtk"
+            ],
+            "text": "our tastings"
+          },
+          {
+            "_key": "mnvt7seado",
+            "_type": "span",
+            "marks": [],
+            "text": " or explore "
+          },
+          {
+            "_key": "wk9h3syn7l",
+            "_type": "span",
+            "marks": [
+              "1799hrl9vw"
+            ],
+            "text": "our selection"
+          },
+          {
+            "_key": "voqi57n31l",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "ukh4nb24b6",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-noir"
+          },
+          {
+            "_key": "q9tlcehggw",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay"
+          },
+          {
+            "_key": "15yyy80g15",
+            "_type": "link",
+            "href": "/cepages-champagne/meunier"
+          },
+          {
+            "_key": "hapg9v9nam",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "mijcad8eks",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "vyr1kxratd",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "d98mqxstd7",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "yaanqvswxk",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          },
+          {
+            "_key": "loh6kchvtk",
+            "_type": "link",
+            "href": "/tasting-troyes"
+          },
+          {
+            "_key": "1799hrl9vw",
+            "_type": "link",
+            "href": "/vignerons"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "fr": [
+      {
+        "_key": "yinps2jzvr",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "480l0evriv",
+            "_type": "span",
+            "marks": [],
+            "text": "Trois cépages principaux font le champagne : le "
+          },
+          {
+            "_key": "0gzqj26j8p",
+            "_type": "span",
+            "marks": [
+              "rvipw2rfen"
+            ],
+            "text": "pinot noir"
+          },
+          {
+            "_key": "5b978x7a94",
+            "_type": "span",
+            "marks": [],
+            "text": ", le "
+          },
+          {
+            "_key": "0eytiuopv7",
+            "_type": "span",
+            "marks": [
+              "e99q9mwawl"
+            ],
+            "text": "chardonnay"
+          },
+          {
+            "_key": "8mdoxb9o5b",
+            "_type": "span",
+            "marks": [],
+            "text": " et le "
+          },
+          {
+            "_key": "3wamjwyget",
+            "_type": "span",
+            "marks": [
+              "oy4ef2yund"
+            ],
+            "text": "meunier"
+          },
+          {
+            "_key": "pe5wd61c7x",
+            "_type": "span",
+            "marks": [],
+            "text": ". D'autres, plus rares, sont aussi autorisés dans l'appellation : le "
+          },
+          {
+            "_key": "um8o4ag3b9",
+            "_type": "span",
+            "marks": [
+              "06wuktdbms"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "wxnwcqlzim",
+            "_type": "span",
+            "marks": [],
+            "text": ", le "
+          },
+          {
+            "_key": "hqp9dqiy5f",
+            "_type": "span",
+            "marks": [
+              "aeojuwkzvl"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "z6zt7f842h",
+            "_type": "span",
+            "marks": [],
+            "text": ", l'"
+          },
+          {
+            "_key": "gvgsowdt14",
+            "_type": "span",
+            "marks": [
+              "acg1nmk8qq"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "8gahafh30e",
+            "_type": "span",
+            "marks": [],
+            "text": ", le "
+          },
+          {
+            "_key": "wkm4g0ilq6",
+            "_type": "span",
+            "marks": [
+              "s0oyoiy8sr"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "wapanasg91",
+            "_type": "span",
+            "marks": [],
+            "text": " et le "
+          },
+          {
+            "_key": "uon6yksz0m",
+            "_type": "span",
+            "marks": [
+              "kvybls87ah"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "fqjdjg8f4z",
+            "_type": "span",
+            "marks": [],
+            "text": ". Pour les découvrir, rejoignez l'une de "
+          },
+          {
+            "_key": "qsd7dq8wpq",
+            "_type": "span",
+            "marks": [
+              "d5v791ehx7"
+            ],
+            "text": "nos dégustations"
+          },
+          {
+            "_key": "ya243l1xwx",
+            "_type": "span",
+            "marks": [],
+            "text": " ou découvrez "
+          },
+          {
+            "_key": "n3tumd6yer",
+            "_type": "span",
+            "marks": [
+              "4s9opi5e8h"
+            ],
+            "text": "notre sélection"
+          },
+          {
+            "_key": "hijpx2dxh5",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "rvipw2rfen",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-noir"
+          },
+          {
+            "_key": "e99q9mwawl",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay"
+          },
+          {
+            "_key": "oy4ef2yund",
+            "_type": "link",
+            "href": "/cepages-champagne/meunier"
+          },
+          {
+            "_key": "06wuktdbms",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "aeojuwkzvl",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "acg1nmk8qq",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "s0oyoiy8sr",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "kvybls87ah",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          },
+          {
+            "_key": "d5v791ehx7",
+            "_type": "link",
+            "href": "/tasting-troyes"
+          },
+          {
+            "_key": "4s9opi5e8h",
+            "_type": "link",
+            "href": "/vignerons"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "it": [
+      {
+        "_key": "46i963roc7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9xlipmjk16",
+            "_type": "span",
+            "marks": [],
+            "text": "Tre vitigni principali fanno lo champagne: "
+          },
+          {
+            "_key": "ndnyeumwxf",
+            "_type": "span",
+            "marks": [
+              "yuijaky1gu"
+            ],
+            "text": "pinot noir"
+          },
+          {
+            "_key": "00iuv5y5c0",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "e442d62bxl",
+            "_type": "span",
+            "marks": [
+              "ruteqtrspo"
+            ],
+            "text": "chardonnay"
+          },
+          {
+            "_key": "tv9m8axjhe",
+            "_type": "span",
+            "marks": [],
+            "text": " e "
+          },
+          {
+            "_key": "uynxtzn32q",
+            "_type": "span",
+            "marks": [
+              "xfy778rjed"
+            ],
+            "text": "meunier"
+          },
+          {
+            "_key": "y7al91ngse",
+            "_type": "span",
+            "marks": [],
+            "text": ". Altri, più rari, sono ammessi nella denominazione: "
+          },
+          {
+            "_key": "x04dejucli",
+            "_type": "span",
+            "marks": [
+              "b64oia7ar5"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "dtn3hg6ji8",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "mqxb93dkz8",
+            "_type": "span",
+            "marks": [
+              "1nlarsliz5"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "ofbiq4x8gy",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "5dc0yhvgva",
+            "_type": "span",
+            "marks": [
+              "5gw21pl7mj"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "nspy9w7g03",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "oy57cfcr2i",
+            "_type": "span",
+            "marks": [
+              "gwlpmph5yq"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "dllbbom4b4",
+            "_type": "span",
+            "marks": [],
+            "text": " e "
+          },
+          {
+            "_key": "6m5kkxho8v",
+            "_type": "span",
+            "marks": [
+              "3edf5ow710"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "qqledwgzwx",
+            "_type": "span",
+            "marks": [],
+            "text": ". Per scoprirli, partecipate a una delle "
+          },
+          {
+            "_key": "0m0p4ezq1q",
+            "_type": "span",
+            "marks": [
+              "15b6xqcmup"
+            ],
+            "text": "nostre degustazioni"
+          },
+          {
+            "_key": "a1q0mt9nwy",
+            "_type": "span",
+            "marks": [],
+            "text": " o scoprite "
+          },
+          {
+            "_key": "jvposecvlp",
+            "_type": "span",
+            "marks": [
+              "ht98hiu2y0"
+            ],
+            "text": "la nostra selezione"
+          },
+          {
+            "_key": "io8an5kk0o",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "yuijaky1gu",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-noir"
+          },
+          {
+            "_key": "ruteqtrspo",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay"
+          },
+          {
+            "_key": "xfy778rjed",
+            "_type": "link",
+            "href": "/cepages-champagne/meunier"
+          },
+          {
+            "_key": "b64oia7ar5",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "1nlarsliz5",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "5gw21pl7mj",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "gwlpmph5yq",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "3edf5ow710",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          },
+          {
+            "_key": "15b6xqcmup",
+            "_type": "link",
+            "href": "/tasting-troyes"
+          },
+          {
+            "_key": "ht98hiu2y0",
+            "_type": "link",
+            "href": "/vignerons"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "nl": [
+      {
+        "_key": "h8nvvdanaj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "hja03y8hsb",
+            "_type": "span",
+            "marks": [],
+            "text": "Drie hoofddruivenrassen maken champagne: "
+          },
+          {
+            "_key": "90wdipg417",
+            "_type": "span",
+            "marks": [
+              "cemk1eyiyw"
+            ],
+            "text": "pinot noir"
+          },
+          {
+            "_key": "5aav7zp32d",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "c4cldiklow",
+            "_type": "span",
+            "marks": [
+              "10tz5oxf9l"
+            ],
+            "text": "chardonnay"
+          },
+          {
+            "_key": "8bkg6i9i3s",
+            "_type": "span",
+            "marks": [],
+            "text": " en "
+          },
+          {
+            "_key": "e72o8ciegt",
+            "_type": "span",
+            "marks": [
+              "3kxs8tugea"
+            ],
+            "text": "meunier"
+          },
+          {
+            "_key": "ladka9p24h",
+            "_type": "span",
+            "marks": [],
+            "text": ". Andere, zeldzamere rassen zijn ook toegestaan in de appellatie: "
+          },
+          {
+            "_key": "ohx7j7kt8n",
+            "_type": "span",
+            "marks": [
+              "4vwjswo228"
+            ],
+            "text": "pinot blanc"
+          },
+          {
+            "_key": "2jd5b75a3t",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "g04dfx4pqi",
+            "_type": "span",
+            "marks": [
+              "rvpopumt0b"
+            ],
+            "text": "pinot gris"
+          },
+          {
+            "_key": "ut6yzcjt6g",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "uegldtbv3b",
+            "_type": "span",
+            "marks": [
+              "osjsbedauf"
+            ],
+            "text": "arbane"
+          },
+          {
+            "_key": "0vjifeol3j",
+            "_type": "span",
+            "marks": [],
+            "text": ", "
+          },
+          {
+            "_key": "k9hicf5hvi",
+            "_type": "span",
+            "marks": [
+              "5241qdng9f"
+            ],
+            "text": "petit meslier"
+          },
+          {
+            "_key": "8wnz59lq5l",
+            "_type": "span",
+            "marks": [],
+            "text": " en "
+          },
+          {
+            "_key": "45amxx2vbl",
+            "_type": "span",
+            "marks": [
+              "nbzjfcn6e4"
+            ],
+            "text": "chardonnay rose"
+          },
+          {
+            "_key": "qman6t8nbv",
+            "_type": "span",
+            "marks": [],
+            "text": ". Om ze te ontdekken: kom naar een van "
+          },
+          {
+            "_key": "i6v77ev9rl",
+            "_type": "span",
+            "marks": [
+              "25ms3cr51b"
+            ],
+            "text": "onze proeverijen"
+          },
+          {
+            "_key": "yj332n3brb",
+            "_type": "span",
+            "marks": [],
+            "text": " of ontdek "
+          },
+          {
+            "_key": "lq4xjcpdbl",
+            "_type": "span",
+            "marks": [
+              "w6hd90wyd8"
+            ],
+            "text": "onze selectie"
+          },
+          {
+            "_key": "dhrccg5sq8",
+            "_type": "span",
+            "marks": [],
+            "text": "."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "cemk1eyiyw",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-noir"
+          },
+          {
+            "_key": "10tz5oxf9l",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay"
+          },
+          {
+            "_key": "3kxs8tugea",
+            "_type": "link",
+            "href": "/cepages-champagne/meunier"
+          },
+          {
+            "_key": "4vwjswo228",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-blanc"
+          },
+          {
+            "_key": "rvpopumt0b",
+            "_type": "link",
+            "href": "/cepages-champagne/pinot-gris"
+          },
+          {
+            "_key": "osjsbedauf",
+            "_type": "link",
+            "href": "/cepages-champagne/arbane"
+          },
+          {
+            "_key": "5241qdng9f",
+            "_type": "link",
+            "href": "/cepages-champagne/petit-meslier"
+          },
+          {
+            "_key": "nbzjfcn6e4",
+            "_type": "link",
+            "href": "/cepages-champagne/chardonnay-rose"
+          },
+          {
+            "_key": "25ms3cr51b",
+            "_type": "link",
+            "href": "/tasting-troyes"
+          },
+          {
+            "_key": "w6hd90wyd8",
+            "_type": "link",
+            "href": "/vignerons"
+          }
+        ],
+        "style": "normal"
+      }
+    ]
+  },
+  "cepagesTextes": [
+    {
+      "_key": "ti4",
+      "_type": "cepageTexte",
+      "cepage": "pinot-noir",
+      "texte": {
+        "_type": "localeText",
+        "en": "The leading grape of the appellation. In a blend, it gives champagne its structure: its backbone and body.",
+        "fr": "Le premier cépage de l'appellation. Dans l'assemblage, il donne au champagne sa structure : sa charpente et son ampleur.",
+        "it": "Il primo vitigno della denominazione. Nell'assemblaggio dà allo champagne struttura: ossatura e ampiezza.",
+        "nl": "Het belangrijkste ras van de appellatie. In een assemblage geeft het de champagne structuur: ruggengraat en volume."
+      }
+    },
+    {
+      "_key": "ti5",
+      "_type": "cepageTexte",
+      "cepage": "chardonnay",
+      "texte": {
+        "_type": "localeText",
+        "en": "Champagne's great white grape. In a blend, it brings finesse and freshness; on its own, it makes blanc de blancs.",
+        "fr": "Le grand cépage blanc de la Champagne. Dans l'assemblage, il apporte la finesse et la fraîcheur ; seul, il donne les blancs de blancs.",
+        "it": "Il grande vitigno bianco della Champagne. Nell'assemblaggio porta finezza e freschezza; da solo dà i blanc de blancs.",
+        "nl": "De grote witte druif van de Champagne. In een assemblage brengt hij finesse en frisheid; alleen maakt hij blanc de blancs."
+      }
+    },
+    {
+      "_key": "ti6",
+      "_type": "cepageTexte",
+      "cepage": "meunier",
+      "texte": {
+        "_type": "localeText",
+        "en": "The third great Champagne grape. In a blend, it brings roundness and fruit, and gives the wine suppleness.",
+        "fr": "Le troisième grand cépage champenois. Dans l'assemblage, il apporte la rondeur et le fruit, et donne de la souplesse au vin.",
+        "it": "Il terzo grande vitigno champenois. Nell'assemblaggio porta rotondità e frutto, e rende il vino morbido.",
+        "nl": "Het derde grote champagneras. In een assemblage brengt hij rondheid en fruit, en maakt hij de wijn soepel."
+      }
+    }
+  ],
+  "cepagesTitre": {
+    "_type": "localeString",
+    "de": "Die Rebsorten der Appellation Champagne",
+    "en": "The grape varieties of the Champagne appellation",
+    "fr": "Les cépages de l'appellation Champagne",
+    "it": "I vitigni della denominazione Champagne",
+    "nl": "De druivenrassen van de appellatie Champagne"
+  },
+  "chapitres": [
+    {
+      "_key": "tf8",
+      "_type": "blocTexte",
+      "image": {
+        "_type": "imageAvecAlt",
+        "alt": {
+          "_type": "localeString",
+          "en": "Champagne vineyard slopes in Colombé-le-Sec under a summer sky",
+          "fr": "Coteaux de vignes de Champagne à Colombé-le-Sec, sous le ciel d'été"
+        },
+        "asset": {
+          "_ref": "image-587e12618ba2f2e084e7a29a07dc47d291c618d7-1807x2400-jpg",
+          "_type": "reference"
+        },
+        "credit": "© Champagne de l'Aube / Detectezmoi.com"
+      },
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "tfu",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tfk",
+                "_type": "span",
+                "marks": [],
+                "text": "The Champagne vineyard covers around 34,000 hectares. It lies mainly in the Marne and the Aube, then in the Aisne and, on a smaller scale, in the Haute-Marne and the Seine-et-Marne. The Aube has around 8,000 hectares of it, more than a fifth of the vineyard. Its vines are spread between the "
+              },
+              {
+                "_key": "tfm",
+                "_type": "span",
+                "marks": [
+                  "tfl"
+                ],
+                "text": "Côte des Bar"
+              },
+              {
+                "_key": "tfn",
+                "_type": "span",
+                "marks": [],
+                "text": ", around Bar-sur-Seine and Bar-sur-Aube, the hill of "
+              },
+              {
+                "_key": "tfp",
+                "_type": "span",
+                "marks": [
+                  "tfo"
+                ],
+                "text": "Montgueux"
+              },
+              {
+                "_key": "tfq",
+                "_type": "span",
+                "marks": [],
+                "text": ", on the edge of Troyes, and "
+              },
+              {
+                "_key": "tfs",
+                "_type": "span",
+                "marks": [
+                  "tfr"
+                ],
+                "text": "Villenauxe-la-Grande"
+              },
+              {
+                "_key": "tft",
+                "_type": "span",
+                "marks": [],
+                "text": ", in the north-west of the department."
+              }
+            ],
+            "markDefs": [
+              {
+                "_key": "tfl",
+                "_type": "link",
+                "href": "/en/la-cote-des-bar/"
+              },
+              {
+                "_key": "tfo",
+                "_type": "link",
+                "href": "/en/montgueux/"
+              },
+              {
+                "_key": "tfr",
+                "_type": "link",
+                "href": "/en/villenauxe-la-grande/"
+              }
+            ],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "tfj",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tf9",
+                "_type": "span",
+                "marks": [],
+                "text": "Le vignoble de Champagne couvre environ 34 000 hectares. Il s'étend essentiellement sur la Marne et l'Aube, puis sur l'Aisne et, plus modestement, sur la Haute-Marne et la Seine-et-Marne. L'Aube en compte environ 8 000 hectares, soit plus d'un cinquième du vignoble. Ses vignes se répartissent entre la "
+              },
+              {
+                "_key": "tfb",
+                "_type": "span",
+                "marks": [
+                  "tfa"
+                ],
+                "text": "Côte des Bar"
+              },
+              {
+                "_key": "tfc",
+                "_type": "span",
+                "marks": [],
+                "text": ", autour de Bar-sur-Seine et de Bar-sur-Aube, la colline de "
+              },
+              {
+                "_key": "tfe",
+                "_type": "span",
+                "marks": [
+                  "tfd"
+                ],
+                "text": "Montgueux"
+              },
+              {
+                "_key": "tff",
+                "_type": "span",
+                "marks": [],
+                "text": ", aux portes de Troyes, et "
+              },
+              {
+                "_key": "tfh",
+                "_type": "span",
+                "marks": [
+                  "tfg"
+                ],
+                "text": "Villenauxe-la-Grande"
+              },
+              {
+                "_key": "tfi",
+                "_type": "span",
+                "marks": [],
+                "text": ", au nord-ouest du département."
+              }
+            ],
+            "markDefs": [
+              {
+                "_key": "tfa",
+                "_type": "link",
+                "href": "/la-cote-des-bar/"
+              },
+              {
+                "_key": "tfd",
+                "_type": "link",
+                "href": "/montgueux/"
+              },
+              {
+                "_key": "tfg",
+                "_type": "link",
+                "href": "/villenauxe-la-grande/"
+              }
+            ],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "tgg",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tg6",
+                "_type": "span",
+                "marks": [],
+                "text": "Il vigneto della Champagne copre circa 34.000 ettari, su 319 comuni e cinque dipartimenti: Marne, Aube, Aisne, Haute-Marne e Seine-et-Marne. L'Aube ne rappresenta un buon quarto. Le sue vigne si dividono tra la "
+              },
+              {
+                "_key": "tg8",
+                "_type": "span",
+                "marks": [
+                  "tg7"
+                ],
+                "text": "Côte des Bar"
+              },
+              {
+                "_key": "tg9",
+                "_type": "span",
+                "marks": [],
+                "text": ", attorno a Bar-sur-Seine e Bar-sur-Aube, la collina di "
+              },
+              {
+                "_key": "tgb",
+                "_type": "span",
+                "marks": [
+                  "tga"
+                ],
+                "text": "Montgueux"
+              },
+              {
+                "_key": "tgc",
+                "_type": "span",
+                "marks": [],
+                "text": ", alle porte di Troyes, e "
+              },
+              {
+                "_key": "tge",
+                "_type": "span",
+                "marks": [
+                  "tgd"
+                ],
+                "text": "Villenauxe-la-Grande"
+              },
+              {
+                "_key": "tgf",
+                "_type": "span",
+                "marks": [],
+                "text": ", nel nord-ovest del dipartimento."
+              }
+            ],
+            "markDefs": [
+              {
+                "_key": "tg7",
+                "_type": "link",
+                "href": "/it/la-cote-des-bar/"
+              },
+              {
+                "_key": "tga",
+                "_type": "link",
+                "href": "/it/montgueux/"
+              },
+              {
+                "_key": "tgd",
+                "_type": "link",
+                "href": "/it/villenauxe-la-grande/"
+              }
+            ],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "tg5",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tfv",
+                "_type": "span",
+                "marks": [],
+                "text": "De Champagne-wijngaard beslaat zo'n 34.000 hectare, verspreid over 319 gemeenten en vijf departementen: de Marne, de Aube, de Aisne, de Haute-Marne en de Seine-et-Marne. De Aube vertegenwoordigt er een flink kwart van. Haar wijngaarden liggen in de "
+              },
+              {
+                "_key": "tfx",
+                "_type": "span",
+                "marks": [
+                  "tfw"
+                ],
+                "text": "Côte des Bar"
+              },
+              {
+                "_key": "tfy",
+                "_type": "span",
+                "marks": [],
+                "text": ", rond Bar-sur-Seine en Bar-sur-Aube, op de heuvel van "
+              },
+              {
+                "_key": "tg0",
+                "_type": "span",
+                "marks": [
+                  "tfz"
+                ],
+                "text": "Montgueux"
+              },
+              {
+                "_key": "tg1",
+                "_type": "span",
+                "marks": [],
+                "text": ", aan de rand van Troyes, en in "
+              },
+              {
+                "_key": "tg3",
+                "_type": "span",
+                "marks": [
+                  "tg2"
+                ],
+                "text": "Villenauxe-la-Grande"
+              },
+              {
+                "_key": "tg4",
+                "_type": "span",
+                "marks": [],
+                "text": ", in het noordwesten van het departement."
+              }
+            ],
+            "markDefs": [
+              {
+                "_key": "tfw",
+                "_type": "link",
+                "href": "/nl/la-cote-des-bar/"
+              },
+              {
+                "_key": "tfz",
+                "_type": "link",
+                "href": "/nl/montgueux/"
+              },
+              {
+                "_key": "tg2",
+                "_type": "link",
+                "href": "/nl/villenauxe-la-grande/"
+              }
+            ],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "Where is the Aube?",
+        "fr": "Situer l'Aube",
+        "it": "Dove si trova l'Aube",
+        "nl": "Waar ligt de Aube?"
+      }
+    },
+    {
+      "_key": "tgh",
+      "_type": "blocTexte",
+      "image": {
+        "_type": "imageAvecAlt",
+        "alt": {
+          "_type": "localeString",
+          "en": "Champagne vineyard slope in Spoy, in the Côte des Bar, in summer",
+          "fr": "Coteau de vignes de Champagne à Spoy, dans la Côte des Bar, en été"
+        },
+        "asset": {
+          "_ref": "image-296528de4e32dfe09c8b82df0de6df214313f8be-1807x2400-jpg",
+          "_type": "reference"
+        },
+        "credit": "© Champagne de l'Aube / Detectezmoi.com"
+      },
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "tgl",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgk",
+                "_type": "span",
+                "marks": [],
+                "text": "In the Côte des Bar, the vines grow on Kimmeridgian marl and limestone, a layer from the Upper Jurassic also found in Chablis. In Montgueux, the hill is made of Turonian chalk. Two subsoils, two expressions: pinot noir on one side, chardonnay on the other."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "tgj",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgi",
+                "_type": "span",
+                "marks": [],
+                "text": "Dans la Côte des Bar, la vigne pousse sur des marnes et des calcaires du Kimméridgien, une couche du Jurassique supérieur que l'on retrouve aussi à Chablis. À Montgueux, c'est une craie du Turonien qui forme la colline. Deux sous-sols, deux expressions : le pinot noir d'un côté, le chardonnay de l'autre."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "tgp",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgo",
+                "_type": "span",
+                "marks": [],
+                "text": "Nella Côte des Bar, la vite cresce su marne e calcari del Kimmeridgiano, uno strato del Giurassico superiore che si ritrova anche a Chablis. A Montgueux la collina è fatta di gesso del Turoniano. Due sottosuoli, due espressioni: il pinot noir da una parte, lo chardonnay dall'altra."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "tgn",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgm",
+                "_type": "span",
+                "marks": [],
+                "text": "In de Côte des Bar groeien de wijnstokken op mergel en kalksteen uit het Kimmeridgien, een laag uit het Boven-Jura die je ook in Chablis vindt. In Montgueux bestaat de heuvel uit krijt uit het Turonien. Twee ondergronden, twee uitdrukkingen: pinot noir aan de ene kant, chardonnay aan de andere."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "Soils from the Jurassic and the Cretaceous",
+        "fr": "Des sols venus du Jurassique et du Crétacé",
+        "it": "Suoli del Giurassico e del Cretaceo",
+        "nl": "Bodems uit het Jura en het Krijt"
+      }
+    },
+    {
+      "_key": "tgq",
+      "_type": "blocTexte",
+      "image": {
+        "_type": "imageAvecAlt",
+        "alt": {
+          "_type": "localeString",
+          "en": "Sunset over the vines and the track, in Merrey-sur-Arce",
+          "fr": "Coucher de soleil sur les vignes et le chemin, à Merrey-sur-Arce"
+        },
+        "asset": {
+          "_ref": "image-33c5ab633f5c484cfd64806794c170ef30a4aa5a-1350x2400-jpg",
+          "_type": "reference"
+        },
+        "credit": "© Champagne de l'Aube / Detectezmoi.com"
+      },
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "tgu",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgt",
+                "_type": "span",
+                "marks": [],
+                "text": "Like the whole of Champagne, the Aube lives under two influences. The oceanic one brings regular rainfall and temperatures without sharp contrasts. The continental one brings frosts that can be harsh, but also generous summer sunshine."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "tgs",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgr",
+                "_type": "span",
+                "marks": [],
+                "text": "Comme toute la Champagne, l'Aube vit sous une double influence. Océanique, elle apporte des pluies régulières et des températures sans grands écarts. Continentale, elle amène des gelées parfois rudes, mais aussi un bel ensoleillement en été."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "tgy",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgx",
+                "_type": "span",
+                "marks": [],
+                "text": "Come tutta la Champagne, l'Aube vive sotto una doppia influenza. Quella oceanica porta piogge regolari e temperature senza grandi sbalzi. Quella continentale porta gelate a volte rigide, ma anche un bel soleggiamento estivo."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "tgw",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "tgv",
+                "_type": "span",
+                "marks": [],
+                "text": "Zoals de hele Champagne staat de Aube onder een dubbele invloed. De oceanische brengt regelmatige regen en temperaturen zonder grote verschillen. De continentale brengt soms strenge vorst, maar ook veel zon in de zomer."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "A climate with two influences",
+        "fr": "Un climat à double influence",
+        "it": "Un clima a doppia influenza",
+        "nl": "Een klimaat met twee invloeden"
+      }
+    },
+    {
+      "_key": "tgz",
+      "_type": "blocTexte",
+      "image": {
+        "_type": "imageAvecAlt",
+        "alt": {
+          "_type": "localeString",
+          "en": "Cellar pillars engraved with inscriptions in praise of Aube wine",
+          "fr": "Piliers de cave gravés d'inscriptions à la gloire du vin de l'Aube"
+        },
+        "asset": {
+          "_ref": "image-99f7eece107943c847d8da4ad9fb9e63cc28d61c-2400x1600-jpg",
+          "_type": "reference"
+        }
+      },
+      "texte": {
+        "_type": "localeRichText",
+        "en": [
+          {
+            "_key": "th3",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "th2",
+                "_type": "span",
+                "marks": [],
+                "text": "In the early 20th century, the Aube was at first kept out of the Champagne appellation. In 1911, its winemakers mobilised to defend their place. The law of 28 July 1927 brought their vineyard back into Champagne."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "fr": [
+          {
+            "_key": "th1",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "th0",
+                "_type": "span",
+                "marks": [],
+                "text": "Au début du XXe siècle, l'Aube est d'abord tenue à l'écart de l'appellation Champagne. En 1911, ses vignerons se mobilisent pour défendre leur place. La loi du 28 juillet 1927 réintègre leur vignoble dans la Champagne."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "it": [
+          {
+            "_key": "th7",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "th6",
+                "_type": "span",
+                "marks": [],
+                "text": "All'inizio del Novecento, l'Aube fu dapprima tenuta fuori dalla denominazione Champagne. Nel 1911 i suoi vignaioli si mobilitarono per difendere il loro posto. La legge del 28 luglio 1927 reintegrò il loro vigneto nella Champagne."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ],
+        "nl": [
+          {
+            "_key": "th5",
+            "_type": "block",
+            "children": [
+              {
+                "_key": "th4",
+                "_type": "span",
+                "marks": [],
+                "text": "Begin 20e eeuw werd de Aube eerst buiten de appellatie Champagne gehouden. In 1911 kwamen de wijnmakers in actie om hun plaats te verdedigen. De wet van 28 juli 1927 bracht hun wijngaard terug in de Champagne."
+              }
+            ],
+            "markDefs": [],
+            "style": "normal"
+          }
+        ]
+      },
+      "titre": {
+        "_type": "localeString",
+        "en": "A story of winemakers",
+        "fr": "Une histoire de vignerons",
+        "it": "Una storia di vignaioli",
+        "nl": "Een verhaal van wijnmakers"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "_key": "ti7",
+      "_type": "faqItem",
+      "question": {
+        "_type": "localeString",
+        "en": "How many appellations does the Aube have?",
+        "fr": "Combien d'appellations compte l'Aube ?",
+        "it": "Quante denominazioni conta l'Aube?",
+        "nl": "Hoeveel appellaties telt de Aube?"
+      },
+      "reponse": {
+        "_type": "localeText",
+        "en": "Three: Champagne, Coteaux Champenois and Rosé des Riceys. All three meet in a single village, Les Riceys.",
+        "fr": "Trois : Champagne, Coteaux champenois et Rosé des Riceys. Les trois se rencontrent sur une seule commune, Les Riceys.",
+        "it": "Tre: Champagne, Coteaux Champenois e Rosé des Riceys. Tutte e tre si incontrano in un solo comune, Les Riceys.",
+        "nl": "Drie: Champagne, Coteaux Champenois en Rosé des Riceys. Alle drie komen samen in één gemeente, Les Riceys."
+      }
+    },
+    {
+      "_key": "ti8",
+      "_type": "faqItem",
+      "question": {
+        "_type": "localeString",
+        "en": "What is the main grape variety of the Aube?",
+        "fr": "Quel est le cépage principal de l'Aube ?",
+        "it": "Qual è il vitigno principale dell'Aube?",
+        "nl": "Wat is het belangrijkste druivenras van de Aube?"
+      },
+      "reponse": {
+        "_type": "localeText",
+        "en": "Pinot noir, which covers more than 80% of the vines in the Côte des Bar. In Montgueux and Villenauxe-la-Grande, chardonnay dominates.",
+        "fr": "Le pinot noir, qui couvre plus de 80 % des vignes de la Côte des Bar. À Montgueux et à Villenauxe-la-Grande, c'est le chardonnay qui domine.",
+        "it": "Il pinot noir, che copre oltre l'80% delle vigne della Côte des Bar. A Montgueux e a Villenauxe-la-Grande domina lo chardonnay.",
+        "nl": "Pinot noir, dat meer dan 80% van de wijngaarden in de Côte des Bar beslaat. In Montgueux en Villenauxe-la-Grande overheerst chardonnay."
+      }
+    },
+    {
+      "_key": "ti9",
+      "_type": "faqItem",
+      "question": {
+        "_type": "localeString",
+        "en": "Where can I taste the champagnes of the Aube?",
+        "fr": "Où goûter les champagnes de l'Aube ?",
+        "it": "Dove assaggiare gli champagne dell'Aube?",
+        "nl": "Waar kan ik de champagnes van de Aube proeven?"
+      },
+      "reponse": {
+        "_type": "localeText",
+        "en": "At our tastings, in Troyes or at your home, for 6 to 13 people. We introduce you to winemakers from our selection.",
+        "fr": "Lors de nos dégustations, à Troyes ou chez vous, de 6 à 13 personnes. Nous vous y présentons des vignerons de notre sélection.",
+        "it": "Durante le nostre degustazioni, a Troyes o a casa vostra, da 6 a 13 persone. Vi presentiamo dei vignaioli della nostra selezione.",
+        "nl": "Tijdens onze proeverijen, in Troyes of bij u thuis, voor 6 tot 13 personen. We stellen u wijnmakers uit onze selectie voor."
+      }
+    }
+  ],
+  "hero": {
+    "_type": "hero",
+    "image": {
+      "_type": "imageAvecAlt",
+      "alt": {
+        "_type": "localeString",
+        "en": "Rows of vines in Colombé-le-Sec, in the Côte des Bar, under a summer sky",
+        "fr": "Rangs de vigne à Colombé-le-Sec, dans la Côte des Bar, sous le ciel d'été"
+      },
+      "asset": {
+        "_ref": "image-4cf1ff3f907c1bacbbb9d7eee8c05b5cc4edaacc-1807x2400-jpg",
+        "_type": "reference"
+      }
+    },
+    "intro": {
+      "_type": "localeText",
+      "en": "In the south of Champagne, the Aube has around 8,000 hectares of vines, more than a fifth of the Champagne vineyard. Four terroirs, different soils, and winemakers we know one by one.",
+      "fr": "Au sud de la Champagne, l'Aube compte environ 8 000 hectares de vignes, soit plus d'un cinquième du vignoble champenois. Quatre terroirs, des sols différents, et des vignerons que nous connaissons un à un.",
+      "it": "Nel sud della Champagne, l'Aube conta circa 8.000 ettari di vigne, un buon quarto del vigneto champenois. Quattro terroir, suoli diversi e vignaioli che conosciamo uno per uno.",
+      "nl": "In het zuiden van de Champagne telt de Aube zo'n 8.000 hectare wijngaarden, een flink kwart van de Champagne. Vier terroirs, verschillende bodems, en wijnmakers die we één voor één kennen."
+    },
+    "surTitre": {
+      "_type": "localeString",
+      "en": "Our Terroir",
+      "fr": "Notre Terroir",
+      "it": "Il nostro terroir",
+      "nl": "Ons terroir"
+    },
+    "titre": {
+      "_type": "localeString",
+      "en": "The Aube terroirs",
+      "fr": "Les terroirs de l'Aube",
+      "it": "I terroir dell'Aube",
+      "nl": "De terroirs van de Aube"
+    }
+  },
+  "seo": {
+    "_type": "seo",
+    "description": {
+      "_type": "localeText",
+      "en": "The Aube terroir in Champagne: around 8,000 hectares of vines, Kimmeridgian and chalk soils, the pinot noir of the Côte des Bar and the chardonnay of Montgueux.",
+      "fr": "Le terroir de l'Aube en Champagne : environ 8 000 hectares de vignes, des sols kimméridgiens et crayeux, le pinot noir de la Côte des Bar et le chardonnay.",
+      "it": "Il terroir dell'Aube in Champagne: circa 8.000 ettari di vigne, suoli kimmeridgiani e gessosi, il pinot noir della Côte des Bar e lo chardonnay di Montgueux.",
+      "nl": "Het terroir van de Aube in de Champagne: zo'n 8.000 hectare wijngaarden, kimmeridgiaanse en krijtbodems, de pinot noir van de Côte des Bar en de chardonnay van Montgueux."
+    },
+    "title": {
+      "_type": "localeString",
+      "en": "The Aube terroir: Côte des Bar, Riceys, Montgueux and more",
+      "fr": "Le terroir de l'Aube : Côte des Bar, Riceys, Montgueux",
+      "it": "Il terroir dell'Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube",
+      "nl": "Het terroir van de Aube: Côte des Bar, Les Riceys, Montgueux, Villenauxe | Champagne de l'Aube"
+    }
+  }
+}

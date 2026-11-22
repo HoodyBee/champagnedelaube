@@ -1,0 +1,20 @@
+{
+  "_createdAt": "2026-11-20T10:08:04Z",
+  "_id": "page-mariage",
+  "_rev": "pJq64BDg0PZsjRe9EBWG4K",
+  "_type": "page",
+  "_updatedAt": "2026-11-20T10:08:04Z",
+  "cle": "mariage",
+  "image": {
+    "_type": "imageAvecAlt",
+    "alt": {
+      "_type": "localeString",
+      "en": "Outdoor champagne tasting around a barrel",
+      "fr": "Dégustation de champagne en plein air, autour d'un tonneau"
+    },
+    "asset": {
+      "_ref": "image-9c18fa430c46bb6ab3249fd5f8942402d0d4e7a6-2400x1600-jpg",
+      "_type": "reference"
+    }
+  }
+}
