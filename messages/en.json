@@ -132,7 +132,7 @@
     },
     "metaTitle": "Winemaker champagnes from the Côte des Bar | Champagne de l'Aube",
     "metaDescription": "A selection of independent winemakers from the Côte des Bar, Les Riceys, Montgueux and Villenauxe-la-Grande, with a single point of contact in Troyes.",
-    "heroIntro": "Meet the independent winemakers, the terroirs and the cuvées with character. A distinctive selection, led by an enthusiast at the heart of the Aube.",
+    "heroIntro": "Private tastings in Troyes or at your home, and a selection of champagnes from independent winemakers: I introduce you to the Aube's cuvées of character, and the people who make them.",
     "heroCtaTerroir": "Discover the terroir",
     "entreesTitre": "Who is it for?",
     "terroirSurTitre": "The terroir",
@@ -159,7 +159,6 @@
     "eventComplet": "Fully booked",
     "eventCta": "See the event",
     "heroSurTitre": "Côte des Bar · Les Riceys · Montgueux · Villenauxe",
-    "heroCtaTerroirs": "Discover the terroirs",
     "photoAVenir": "Photograph to come",
     "terroirsSurTitre": "Our Terroir",
     "terroirsTitre": "The Aube terroirs",
@@ -174,7 +173,6 @@
     "pepitesSurTitre": "Our current selection",
     "pepitesTitre": "Receive our selection",
     "pepitesIntro": "Tell us what you like: we will email you a selection of growers' champagnes from the Aube, chosen for you.",
-    "pepitesCta": "Discover our whole selection",
     "portraitsSurTitre": "The Champagne Mag",
     "portraitsTitre": "Encounters and winemaker portraits",
     "portraitsIntro": "The people who make Aube champagne, in their vines and their cellars.",
@@ -201,7 +199,6 @@
     "finalTexte": "A tasting, a wine list, gift boxes for your teams: write to us and we will get back to you very soon.",
     "finalCta": "Write to us",
     "heroCtaDegustation": "Book a tasting",
-    "pepitesLien": "Discover our whole selection",
     "instagram": "Follow us on Instagram",
     "videoTitre": "Our terroirs at a glance",
     "videoPhrase": "Four terroirs, from Villenauxe-la-Grande in the north-west to the Côte des Bar and Les Riceys in the south: pick the one you'd like to discover.",
@@ -209,7 +206,8 @@
     "videoRevoir": "Replay",
     "videoVoir": "{nom}: discover this terroir",
     "videoAlt": "Map of the Aube seen from above: the four champagne terroirs, Villenauxe-la-Grande in the north-west, Montgueux near Troyes, the Côte des Bar in the south-east and Les Riceys in the south. Google Earth imagery.",
-    "videoTroyes": "Troyes, capital of the Aube"
+    "videoTroyes": "Troyes, capital of the Aube",
+    "heroCtaDemarche": "Our approach"
   },
   "pro": {
     "arguments": {
@@ -1178,8 +1176,8 @@
   },
   "notreDemarchePage": {
     "titre": "Our approach",
-    "metaTitle": "Our approach: who I am and how I work",
-    "metaDescription": "Julien, based in Troyes, puts you in touch with independent winemakers from the Aube: you buy directly from them, at their prices. His story and the way he works.",
+    "metaTitle": "Our approach: who I am and how I work | Champagne de l'Aube",
+    "metaDescription": "Julien, in Troyes, puts you in touch with independent Aube winemakers: you buy from them, at their prices. His story and the way he works.",
     "liensTitre": "Find out more",
     "lienDegustations": "Our private tastings",
     "lienPro": "Trade & Business",

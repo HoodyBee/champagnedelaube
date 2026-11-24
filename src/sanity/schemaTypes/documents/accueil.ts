@@ -60,7 +60,7 @@ export const accueil = defineType({
 
     defineField({ name: "terroir", title: "Section « Le terroir de l'Aube »", type: "blocTexte", group: "sections" }),
     defineField({ name: "heroCtaDegustation", title: "Ouverture : bouton principal", description: "Vers les dégustations privées. Par défaut : « Réserver une dégustation ».", type: "localeString", group: "hero" }),
-    defineField({ name: "heroCtaTerroirs", title: "Ouverture : bouton secondaire", description: "Par défaut : « Découvrir les terroirs ».", type: "localeString", group: "hero" }),
+    defineField({ name: "heroCtaTerroirs", title: "Ouverture : bouton secondaire (plus affiché)", description: "N'est plus utilisé : le bouton secondaire est désormais « Notre démarche », affiché quand la page est publiée.", type: "localeString", group: "hero" }),
     defineField({ name: "pepitesTitre", title: "« Les pépites du moment » : titre", type: "localeString", group: "sections" }),
     defineField({ name: "pepitesIntro", title: "« Les pépites du moment » : introduction", description: "Les cuvées affichées sont les documents « Cuvée » cochés « Afficher sur l'accueil ».", type: "localeText", group: "sections" }),
     defineField({ name: "degustationTitre", title: "« Dégustations privées » : titre", type: "localeString", group: "sections" }),

@@ -17,6 +17,7 @@ import { pageMetadata, SITE_URL, withSlash } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
 import { terroirs } from "@/lib/brand";
 import { getRubriqueLabels, withDates } from "@/lib/mag";
+import { notreDemarchePubliee } from "@/lib/notre-demarche";
 import { nav, terroirPages } from "@/lib/site";
 import { CalendrierAccueil } from "@/components/calendrier/CalendrierAccueil";
 import { dateDuJourParis, getCalendrierVue } from "@/lib/calendrier-serveur";
@@ -45,7 +46,7 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
   const tLegal = await getTranslations("legal");
   const tSel = await getTranslations("selection");
   const tCal = await getTranslations("calendrier");
-  const [calendrier, slugMarronnier, aujourdhui] = await Promise.all([getCalendrierVue(locale), getSlugArticleMarronnier(), dateDuJourParis()]);
+  const [calendrier, slugMarronnier, aujourdhui, demarche] = await Promise.all([getCalendrierVue(locale), getSlugArticleMarronnier(), dateDuJourParis(), notreDemarchePubliee()]);
   const [a, reglages, cuvees, articles, labels, ...fiches] = await Promise.all([
     getAccueil(locale),
     getReglages(),
@@ -144,9 +145,12 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         actions={
           <>
             <ButtonLink href={{ pathname: nav.particuliers[0].href, hash: "organiser" }}>{a.heroCtaDegustation ?? t("heroCtaDegustation")}</ButtonLink>
-            <ButtonLink href={nav.terroirHub.href} variant="secondaire">
-              {a.heroCtaTerroirs ?? t("heroCtaTerroirs")}
-            </ButtonLink>
+            {/* « Notre démarche » : seulement une fois la page publiée dans le Studio. */}
+            {demarche && (
+              <ButtonLink href="/notre-demarche" variant="secondaire">
+                {t("heroCtaDemarche")}
+              </ButtonLink>
+            )}
           </>
         }
       />
@@ -241,9 +245,6 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
           </ul>
         )}
         <div className={`flex flex-col items-start gap-space-2 sm:flex-row sm:items-center sm:gap-space-3 ${cuvees.length ? "mt-space-4" : ""}`}>
-          <Link href={nav.vignerons.href} className="inline-flex min-h-11 items-center gap-space-1 text-sur-titre-petit text-anthracite hover:text-bronze">
-            {t("pepitesLien")} <span aria-hidden="true">→</span>
-          </Link>
           <CatalogueDialog variant="secondaire" />
         </div>
       </Section>

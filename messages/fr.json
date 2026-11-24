@@ -132,7 +132,7 @@
     },
     "metaTitle": "Champagnes de vignerons de la Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
-    "heroIntro": "À la rencontre des vignerons indépendants, des terroirs et des cuvées de caractère. Une sélection singulière, portée par un passionné au cœur de l'Aube.",
+    "heroIntro": "Dégustations privées à Troyes ou chez vous, sélection de champagnes de vignerons indépendants : je vous fais découvrir les cuvées de caractère de l'Aube, et ceux qui les font.",
     "heroCtaTerroir": "Découvrir le terroir",
     "entreesTitre": "Pour qui ?",
     "terroirSurTitre": "Le terroir",
@@ -159,7 +159,6 @@
     "eventComplet": "Complet",
     "eventCta": "Voir le rendez-vous",
     "heroSurTitre": "Côte des Bar · Les Riceys · Montgueux · Villenauxe",
-    "heroCtaTerroirs": "Découvrir les terroirs",
     "photoAVenir": "Photographie à venir",
     "terroirsSurTitre": "Notre Terroir",
     "terroirsTitre": "Les terroirs de l'Aube",
@@ -174,7 +173,6 @@
     "pepitesSurTitre": "Notre sélection du moment",
     "pepitesTitre": "Recevez notre sélection",
     "pepitesIntro": "Dites-nous ce que vous aimez : nous vous envoyons par e-mail une sélection de champagnes de vignerons de l'Aube, choisis pour vous.",
-    "pepitesCta": "Découvrir toute notre sélection",
     "portraitsSurTitre": "Le Mag du Champagne",
     "portraitsTitre": "Rencontres et portraits de vignerons",
     "portraitsIntro": "Ceux qui font le champagne de l'Aube, dans leurs vignes et dans leurs caves.",
@@ -201,7 +199,6 @@
     "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
     "finalCta": "Nous écrire",
     "heroCtaDegustation": "Réserver une dégustation",
-    "pepitesLien": "Découvrir toute notre sélection",
     "instagram": "Suivez-nous sur Instagram",
     "videoTitre": "Nos terroirs en un coup d'œil",
     "videoPhrase": "Quatre terroirs, de Villenauxe-la-Grande au nord-ouest jusqu'à la Côte des Bar et aux Riceys au sud : choisissez celui que vous voulez découvrir.",
@@ -209,7 +206,8 @@
     "videoRevoir": "Revoir",
     "videoVoir": "{nom} : découvrir ce terroir",
     "videoAlt": "Carte de l'Aube vue du ciel : les quatre terroirs de champagne, Villenauxe-la-Grande au nord-ouest, Montgueux près de Troyes, la Côte des Bar au sud-est et Les Riceys au sud. Images Google Earth.",
-    "videoTroyes": "Troyes, capitale de l'Aube"
+    "videoTroyes": "Troyes, capitale de l'Aube",
+    "heroCtaDemarche": "Notre démarche"
   },
   "pro": {
     "arguments": {
@@ -1069,7 +1067,7 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capitale de l'Aube : champagne et dégustations",
-    "metaDescription": "Troyes, capitale de l'Aube : son histoire, sa gastronomie, ses magasins d'usine, les vignobles à portée de main (Montgueux, la Côte des Bar) et nos dégustations.",
+    "metaDescription": "Troyes, capitale de l'Aube : son histoire, sa gastronomie, ses magasins d'usine, les vignobles tout proches (Montgueux, la Côte des Bar) et nos dégustations.",
     "fil": "Troyes, capitale de l'Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capitale de l'Aube",
@@ -1179,7 +1177,7 @@
   "notreDemarchePage": {
     "titre": "Notre démarche",
     "metaTitle": "Notre démarche : qui je suis et comment je travaille",
-    "metaDescription": "Julien, à Troyes, vous met en relation avec des vignerons indépendants de l'Aube : vous achetez directement chez eux, à leurs tarifs. Son parcours et sa façon de travailler.",
+    "metaDescription": "Julien, à Troyes, vous met en relation avec des vignerons indépendants de l'Aube : vous achetez chez eux, à leurs tarifs. Son parcours, sa méthode.",
     "liensTitre": "Pour aller plus loin",
     "lienDegustations": "Nos dégustations privées",
     "lienPro": "Espace Pro & Entreprises",

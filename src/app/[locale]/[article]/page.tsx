@@ -49,6 +49,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     type: "article",
     article: { publishedTime: a.date, modifiedTime: a.updatedAt },
   });
+  // hreflang : n'annoncer que les langues où l'article est réellement traduit (une version non
+  // traduite est en noindex et renvoie au français : la signaler à Google serait incohérent).
+  const langs = meta.alternates?.languages as Record<string, string> | undefined;
+  if (langs) {
+    const traduites = langues[slug] ?? ["fr"];
+    for (const l of Object.keys(langs)) if (l !== "x-default" && l !== "fr" && !traduites.includes(l)) delete langs[l];
+  }
   if (!traduit && locale !== "fr") {
     meta.robots = NOINDEX;
     meta.alternates = { canonical: withSlash(getPathname({ href: { pathname: "/[article]", params: { article: slug } }, locale: "fr" })) };
