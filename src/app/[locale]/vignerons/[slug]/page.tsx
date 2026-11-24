@@ -31,7 +31,8 @@ export const instant = false;
 /** Fiches générées à l'avance pour chaque langue (au moins une, exigence de Next.js). */
 export async function generateStaticParams() {
   const slugs = await getVigneronSlugs();
-  return routing.locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+  // Au moins une adresse (exigence de Next.js) : « bientot » répond « introuvable » tant qu'aucune fiche n'existe.
+  return routing.locales.flatMap((locale) => (slugs.length ? slugs : ["bientot"]).map((slug) => ({ locale, slug })));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

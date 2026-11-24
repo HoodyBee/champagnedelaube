@@ -27,6 +27,14 @@ export type FallbackVigneron = {
   photo?: { asset: string; fichier: string; alt: { fr: string; en: string }; legende?: { fr: string; en: string }; credit?: string };
 };
 
+/**
+ * Fiches par défaut affichées tant qu'aucun vigneron n'est publié dans le Studio.
+ * MASQUÉES (24 novembre 2026, demande de Julien : aucun vigneron encore partenaire). Leurs textes
+ * restent ci-dessous, rien n'est supprimé : pour les réafficher, passer cette valeur à `true`.
+ * Masquées : pas de page, pas de carte, hors du plan du site ; leur adresse répond 404.
+ */
+export const FICHES_PAR_DEFAUT_VISIBLES = false;
+
 export const fallbackVignerons: FallbackVigneron[] = [
   {
     slug: "moutard-dangin",
@@ -141,3 +149,6 @@ export const fallbackVignerons: FallbackVigneron[] = [
     siteWeb: "https://champagne-mennetrier.com/",
   },
 ];
+
+/** Les fiches par défaut réellement affichées (aucune tant qu'elles sont masquées). */
+export const fichesParDefaut: FallbackVigneron[] = FICHES_PAR_DEFAUT_VISIBLES ? fallbackVignerons : [];

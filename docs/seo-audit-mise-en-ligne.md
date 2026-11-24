@@ -35,7 +35,7 @@
 2. **hreflang des articles** : seules les langues réellement traduites sont annoncées.
 3. **Descriptions coupées** : Troyes (FR) et Notre démarche (FR et EN) raccourcies sous 160 caractères. Le titre anglais de Notre démarche est complété.
 
-## À valider : corrections dans Sanity (je ne touche à rien sans votre accord)
+## Corrections dans Sanity : validées par Julien et APPLIQUÉES le 24 novembre 2026 (sauvegarde faite avant)
 
 Champ concerné dans le Studio : onglet **Référencement** (titre Google, description) de chaque page.
 
@@ -87,7 +87,8 @@ Champ concerné dans le Studio : onglet **Référencement** (titre Google, descr
 - **Après la fusion** : vérifier sur le site en ligne une adresse inventée (`/xyz-test-404/` → page « introuvable »), puis un article et l'accueil.
 
 ### Utile dans le mois
-- **Fiches vignerons Moutard*Dangin et Mennetrier** : ce sont des fiches par défaut, affichées tant qu'aucun vigneron n'est publié. Elles sont indexables. Si ces domaines ne sont pas encore partenaires, à décider : les garder, les retirer du plan du site ou les passer en « noindex ».
+- **FAIT (24/11)** : fiches masquées (`FICHES_PAR_DEFAUT_VISIBLES = false` dans `src/lib/fallback-vignerons.ts`, rien de supprimé). Avant :
+  - **Fiches vignerons Moutard*Dangin et Mennetrier** : ce sont des fiches par défaut, affichées tant qu'aucun vigneron n'est publié. Elles sont indexables. Si ces domaines ne sont pas encore partenaires, à décider : les garder, les retirer du plan du site ou les passer en « noindex ».
 - **Pages peu liées** : « Actualités » du Mag, le thème « Champagne & art » et « Tout savoir sur le champagne » ne reçoivent presque aucun lien depuis le contenu (seulement les menus). Ajouter 1 ou 2 liens depuis des articles proches.
 - **Textes de page « visites de domaines »** : à relire sur la page Dégustations privées, pour la même raison que le haut de l'accueil.
 - **Poids des pages** : chaque page envoie toutes les traductions au navigateur (environ 70 Ko avant compression). Limiter aux textes utiles allégerait chaque page, mais ce changement touche de nombreux composants : à faire à part et tester page par page.

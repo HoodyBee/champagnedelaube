@@ -13,7 +13,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { apiVersion, dataset, isSanityConfigured, projectId } from "@/sanity/env";
 import { cepages, type CepageKey } from "./brand";
 import { CEPAGES_MASQUES } from "./cepages-contenu";
-import { fallbackVignerons } from "./fallback-vignerons";
+import { fichesParDefaut } from "./fallback-vignerons";
 import { RUBRIQUES_PAR_DEFAUT } from "./rubriques";
 import { formatsDegustationActifs } from "./site";
 import { THEMES_MAG } from "./themes-mag";
@@ -111,7 +111,7 @@ async function existe(sorte: Sorte, slug: string): Promise<boolean | undefined> 
       const d = await publies();
       if (!d) return undefined;
       // Aucune fiche publiée : le site affiche les fiches par défaut (comme getVigneron).
-      return d.vignerons.length ? d.vignerons.includes(slug) : fallbackVignerons.some((f) => f.slug === slug);
+      return d.vignerons.length ? d.vignerons.includes(slug) : fichesParDefaut.some((f) => f.slug === slug);
     }
     case "article": {
       const d = await publies();
