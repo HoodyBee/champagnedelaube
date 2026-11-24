@@ -13,8 +13,8 @@ const intl = createMiddleware(routing);
  */
 function introuvable(request: NextRequest, locale: Locale) {
   const url = request.nextUrl.clone();
-  // Adresse interne qui ne correspond à aucune page : Next.js y répond par la page 404 du site.
-  url.pathname = `/${locale}/page-introuvable/404/`;
+  // Page technique fabriquée à l'avance : page « introuvable » traduite, code 404.
+  url.pathname = `/${locale}/page-introuvable/`;
   const headers = new Headers(request.headers);
   headers.set("X-NEXT-INTL-LOCALE", locale);
   return NextResponse.rewrite(url, { request: { headers } });

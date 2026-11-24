@@ -122,6 +122,8 @@ async function existe(sorte: Sorte, slug: string): Promise<boolean | undefined> 
 
 /**
  * Renvoie la langue de la page si l'adresse est SÛREMENT introuvable, sinon `null`.
+ * Toutes les pages du site figurent dans routing.pathnames (src/i18n/routing.ts) : une adresse qui
+ * ne correspond à aucune d'elles n'existe pas.
  * `pathname` : l'adresse demandée (« /xyz/ », « /en/winemakers/abc/ »…).
  */
 export async function adresseIntrouvable(pathname: string): Promise<Locale | null> {
@@ -142,5 +144,6 @@ export async function adresseIntrouvable(pathname: string): Promise<Locale | nul
     const m = re.exec(chemin);
     if (m) return (await existe(sorte, m[1])) === false ? locale : null;
   }
-  return null;
+  // Aucune page du site n'a cette forme d'adresse (ex. /en/a/b/) : introuvable, dans la bonne langue.
+  return locale;
 }

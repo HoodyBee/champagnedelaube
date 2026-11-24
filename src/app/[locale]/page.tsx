@@ -213,7 +213,8 @@ export default async function Accueil({ params }: PageProps<"/[locale]">) {
         </Section>
       )}
 
-      {/* 5. Les pépites du moment : section secondaire, sobre (cuvées publiées dans Sanity ; sinon introduction et liens seuls) */}
+      {/* 5. « Recevez notre sélection » : section secondaire, sobre. Les cuvées publiées dans Sanity
+          (Cuvées) s'affichent ici dès qu'il y en a ; sinon, introduction, lien et bouton seuls. */}
       <Section id="pepites" fond={fond("pepites")} align="gauche" surTitre={t("pepitesSurTitre")} titre={a.pepitesTitre ?? t("pepitesTitre")} intro={a.pepitesIntro ?? t("pepitesIntro")}>
         {cuvees.length > 0 && (
           <ul className={`grid gap-space-4 sm:grid-cols-2 ${cuvees.length >= 3 ? "lg:grid-cols-3" : ""} ${cuvees.length === 1 ? "mx-auto max-w-md sm:grid-cols-1" : ""}`}>

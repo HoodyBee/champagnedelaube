@@ -172,8 +172,8 @@
       "villenauxe": "The discreet vineyard of the north-west, facing the Marne."
     },
     "pepitesSurTitre": "Our current selection",
-    "pepitesTitre": "Our current gems",
-    "pepitesIntro": "Cuvées chosen for their character, their story and the personality of the people who make them.",
+    "pepitesTitre": "Receive our selection",
+    "pepitesIntro": "Tell us what you like: we will email you a selection of growers' champagnes from the Aube, chosen for you.",
     "pepitesCta": "Discover our whole selection",
     "portraitsSurTitre": "The Champagne Mag",
     "portraitsTitre": "Encounters and winemaker portraits",
@@ -637,7 +637,7 @@
     "texte": "From the Côte des Bar to Montgueux, we meet new winemakers every season. Receive our current selection by email: the estates, their villages, their cuvées.",
     "bouton": "Receive our selection",
     "dialogTitre": "Receive our selection",
-    "dialogTexte": "The estates of the moment, their villages and their cuvées, in a document sent by email.",
+    "dialogTexte": "Tell us your tastes and what you are looking for: we will email you a selection of growers' champagnes from the Aube, with their villages and their cuvées.",
     "fermer": "Close",
     "decouvrirDomaine": "Discover the estate"
   },

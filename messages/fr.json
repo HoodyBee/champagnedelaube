@@ -172,8 +172,8 @@
       "villenauxe": "Le vignoble discret du nord-ouest, tourné vers la Marne."
     },
     "pepitesSurTitre": "Notre sélection du moment",
-    "pepitesTitre": "Les pépites du moment",
-    "pepitesIntro": "Des cuvées choisies pour leur caractère, leur histoire et la personnalité de ceux qui les élaborent.",
+    "pepitesTitre": "Recevez notre sélection",
+    "pepitesIntro": "Dites-nous ce que vous aimez : nous vous envoyons par e-mail une sélection de champagnes de vignerons de l'Aube, choisis pour vous.",
     "pepitesCta": "Découvrir toute notre sélection",
     "portraitsSurTitre": "Le Mag du Champagne",
     "portraitsTitre": "Rencontres et portraits de vignerons",
@@ -637,7 +637,7 @@
     "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
     "bouton": "Recevoir notre sélection",
     "dialogTitre": "Recevez notre sélection",
-    "dialogTexte": "Les domaines du moment, leurs villages et leurs cuvées, dans un document envoyé par e-mail.",
+    "dialogTexte": "Dites-nous vos goûts et vos envies : nous vous envoyons par e-mail une sélection de champagnes de vignerons de l'Aube, avec leurs villages et leurs cuvées.",
     "fermer": "Fermer",
     "decouvrirDomaine": "Découvrir le domaine"
   },
