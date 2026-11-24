@@ -12,6 +12,14 @@ import { getArticles, getEtiquettes } from "@/sanity/content";
 
 type Props = PageProps<"/[locale]/le-mag/theme/[theme]">;
 
+/**
+ * Contenus publiés APRÈS la mise en ligne (nouvel article, nouvelle fiche…) : sans ce réglage,
+ * Netlify tente de fabriquer la page à l'avance, échoue et répond « erreur 500 ». Avec lui, la
+ * page est construite à la première visite, puis gardée en cache. Les adresses inconnues
+ * reçoivent un vrai 404 grâce au proxy (src/lib/adresses-connues.ts).
+ */
+export const instant = false;
+
 export async function generateStaticParams() {
   return routing.locales.flatMap((locale) => THEMES_MAG.map((theme) => ({ locale, theme })));
 }

@@ -6,13 +6,13 @@ I have always been drawn to things with a story and roots. A product made close 
 
 That is the common thread running through every stage of my journey, even when, from a distance, they seem to have nothing to do with one another. Cooking, textiles, communication, champagne: each time, the same wish to showcase what is well made, and the people who make it.
 
-[TO BE COMPLETED BY JULIEN: your first memory of champagne]
+We all remember the first time a champagne surprised us. For me, it was first family meals and celebrations, then, as I grew up, Parisian café terraces, and later business dinners. Each time, champagne instantly brought that magic, that touch of elegance. I'm originally from the Paris region, yet my biggest surprise came when I arrived in Troyes: "Does everyone drink champagne here?" And there was nothing to celebrate… Then I got into the habit. Little by little, I learned to know it, its richness, its range of flavours, and I understood that champagne can be enjoyed throughout the meal, from the aperitif to dessert.
 
 ### From home catering to organic cotton
 
 I started out in home catering. I have always loved good food, and that job taught me a great deal. Cooking and serving in people's homes means stepping into their private world: adapting to their table, their guests and the occasion they are celebrating, and making sure everyone has a lovely time. That is where my taste for food and champagne pairings was born, along with my sense of hospitality. I also discovered the restaurant world from the inside, with its pace, its constraints and its generosity.
 
-[TO BE COMPLETED BY JULIEN: an anecdote from your years in home catering]
+We sometimes served great names, such as Cristal. But we were also always looking for independent winemakers, because every client, every dish and every occasion needed its own champagne. And each time, the same thought struck me: there are so many excellent, affordable growers' champagnes that have nothing to envy the best-known big brands. That is where I understood the true richness of our region: there is a champagne for everyone.
 
 Then I launched Hoody-B, a clothing brand made from organic, fair-trade cotton. A completely different adventure, but the same starting idea: offering products whose origin you know, and which make sense.
 
@@ -34,7 +34,7 @@ Meeting after meeting, I discovered passionate winemakers, wonderful, genuine pe
 
 What moves me about them is their consistency: it is often the same hands that prune the vines, harvest, make the wines and welcome you at the estate. When you taste their cuvées while listening to them talk about their plots, champagne never tastes quite the same again. That is the experience I want to share with you.
 
-[TO BE COMPLETED BY JULIEN: a memorable meeting with a winemaker]
+My first meeting with a winemaker remains a wonderful memory: simplicity, joie de vivre, and the feeling of being welcomed like a friend.
 
 With Champagne de l'Aube, I want to be a link: bringing their work to people who will appreciate it, while letting them stay where they are at their best, in their vineyards and their cellars.
 
@@ -47,7 +47,7 @@ I live in Troyes, and I run Champagne de l'Aube with Detectezmoi.com, which also
 - For [businesses and works councils](/cse-et-cadeaux-dentreprise): gift boxes and champagne events.
 - For [winemakers](/vignerons-de-laube-devenez-partenaire-de-nos-degustations): presenting your estate to new audiences.
 
-[TO BE COMPLETED BY JULIEN: a personal closing sentence]
+That is also what our logo tells: a bottle made of stained-glass fragments, a nod to Troyes, the capital of stained glass. Each fragment stands for a plot, a terroir, a grape variety, a winemaker or a craft. So many winemakers, so many plots, so many champagnes to discover: it is this diversity that I want to share with you.
 
 A question, an idea, a project? [Write to me](/contact): it will be a pleasure to share a glass and a few stories with you.
 

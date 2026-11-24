@@ -20,6 +20,14 @@ import { getArticles, getVigneron, getVigneronSlugs, getVignerons } from "@/sani
 
 type Props = PageProps<"/[locale]/vignerons/[slug]">;
 
+/**
+ * Contenus publiés APRÈS la mise en ligne (nouvel article, nouvelle fiche…) : sans ce réglage,
+ * Netlify tente de fabriquer la page à l'avance, échoue et répond « erreur 500 ». Avec lui, la
+ * page est construite à la première visite, puis gardée en cache. Les adresses inconnues
+ * reçoivent un vrai 404 grâce au proxy (src/lib/adresses-connues.ts).
+ */
+export const instant = false;
+
 /** Fiches générées à l'avance pour chaque langue (au moins une, exigence de Next.js). */
 export async function generateStaticParams() {
   const slugs = await getVigneronSlugs();

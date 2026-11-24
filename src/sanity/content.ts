@@ -8,6 +8,7 @@ import type { DomaineCardData } from "@/components/ui/DomaineCard";
 import type { Locale } from "@/i18n/routing";
 import type { CepageKey, PictoKey, TerroirKey } from "@/lib/brand";
 import { fallbackVignerons } from "@/lib/fallback-vignerons";
+import { RUBRIQUES_PAR_DEFAUT } from "@/lib/rubriques";
 import { typoFr } from "@/lib/typo";
 import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
@@ -481,8 +482,8 @@ export async function getPageContent(cle: string, locale: Locale) {
 // Le Mag : articles et rubriques
 // ---------------------------------------------------------------------------
 
-/** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
+/** Rubriques prêtes à l'emploi : la liste vit dans src/lib/rubriques.ts (aussi lue par le proxy). */
+export { RUBRIQUES_PAR_DEFAUT };
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",

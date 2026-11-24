@@ -16,6 +16,14 @@ import { getExperience, getExperiences, getExperienceSlugs, getVignerons } from 
 
 type Props = PageProps<"/[locale]/tasting-troyes/[slug]">;
 
+/**
+ * Contenus publiés APRÈS la mise en ligne (nouvel article, nouvelle fiche…) : sans ce réglage,
+ * Netlify tente de fabriquer la page à l'avance, échoue et répond « erreur 500 ». Avec lui, la
+ * page est construite à la première visite, puis gardée en cache. Les adresses inconnues
+ * reçoivent un vrai 404 grâce au proxy (src/lib/adresses-connues.ts).
+ */
+export const instant = false;
+
 /** Pages générées à l'avance (au moins un paramètre : exigence de Next.js). */
 export async function generateStaticParams() {
   const slugs = await getExperienceSlugs();
