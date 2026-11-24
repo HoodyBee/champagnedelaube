@@ -58,7 +58,7 @@ Détail pas à pas : `docs/brevo-domaine-ovh.md`.
 
 - [ ] **CORS** (sanity.io/manage > API > CORS origins) : ajouter `https://champagnedelaube.fr`.
 - [ ] **Webhook de mise à jour** : adresse `https://champagnedelaube.fr/api/revalidate/`, avec le même secret que `SANITY_REVALIDATE_SECRET`.
-- [ ] **Publier ce qui doit l'être** : la page « Qui suis-je ? » une fois relue, puis les articles relus (voir `docs/articles-sources.md`).
+- [ ] **Publier ce qui doit l'être** : la page « Notre démarche » (ancienne « Qui suis-je ? ») une fois votre parcours complété, puis les articles relus (voir `docs/articles-sources.md`).
 
 ## 5. Tests (le jour même)
 

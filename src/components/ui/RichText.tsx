@@ -14,6 +14,22 @@ function hauteurPour1600(ref?: string) {
   return m ? Math.round((1600 * Number(m[2])) / Number(m[1])) : 1067;
 }
 
+/**
+ * Ancre d'un grand titre, tirée de son texte : « Comment je travaille » -> « comment-je-travaille ».
+ * Permet de renvoyer vers une partie précise d'une page (/notre-demarche/#comment-je-travaille).
+ */
+export function ancreTitre(texte: string) {
+  return texte
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+const texteDuBloc = (bloc?: PortableTextBlock) =>
+  (bloc?.children ?? []).map((c) => (typeof c.text === "string" ? c.text : "")).join("");
+
 /** Affiche un texte enrichi saisi dans Sanity (paragraphes, H2/H3, listes, liens, images). */
 export function RichText({
   value,
@@ -37,7 +53,12 @@ export function RichText({
 
 const components = (locale: Locale, extras?: Record<string, ReactNode>): PortableTextComponents => ({
   block: {
-    h2: ({ children }) => <h2 className="pt-space-2 text-titre-section">{children}</h2>,
+    // scroll-mt : le titre visé par une ancre n'est pas caché sous l'en-tête fixe.
+    h2: ({ children, value }) => (
+      <h2 id={ancreTitre(texteDuBloc(value)) || undefined} className="scroll-mt-28 pt-space-2 text-titre-section">
+        {children}
+      </h2>
+    ),
     h3: ({ children }) => <h3 className="pt-space-1 text-[1.25rem] font-bold">{children}</h3>,
     blockquote: ({ children }) => <blockquote className="border-l-2 border-or pl-space-2 text-accroche">{children}</blockquote>,
     normal: ({ children }) => <p>{children}</p>,

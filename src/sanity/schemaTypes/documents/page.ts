@@ -13,7 +13,7 @@ export const pagesFixes = [
   { title: "Tout savoir sur le champagne (rubrique du Mag)", value: "tout-savoir" },
   { title: "Où trouver nos pépites ? (masquée)", value: "pepites" },
   { title: "Contact", value: "contact" },
-  { title: "Qui suis-je ? (visible seulement une fois publiée)", value: "qui-suis-je" },
+  { title: "Notre démarche (visible seulement une fois publiée)", value: "notre-demarche" },
   { title: "Mentions légales", value: "mentions-legales" },
   { title: "Politique de confidentialité", value: "confidentialite" },
 ];

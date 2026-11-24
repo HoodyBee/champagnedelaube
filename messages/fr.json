@@ -36,7 +36,7 @@
     "ouvrirSousMenu": "Ouvrir le sous-menu {menu}",
     "fermerSousMenu": "Fermer le sous-menu {menu}",
     "proEntreprisesHub": "Espace Pro & Entreprises",
-    "quiSuisJe": "Qui suis-je ?"
+    "notreDemarche": "Notre démarche"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -419,7 +419,7 @@
     },
     "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
     "metaTitle": "Nous contacter à Troyes : vignerons, pros et particuliers",
-    "quiSuisJeLien": "Qui suis-je ? Mon parcours"
+    "notreDemarcheLien": "Qui suis-je ? Mon parcours"
   },
   "newsletter": {
     "bar": {
@@ -587,7 +587,8 @@
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
     "count": "{count, plural, one {# domaine} other {# domaines}}",
     "domainesTitre": "Les domaines de la sélection",
-    "bientot": "Notre sélection s'enrichit au fil des rencontres et de nos recherches ciblées."
+    "bientot": "Notre sélection s'enrichit au fil des rencontres et de nos recherches ciblées.",
+    "demarcheLien": "Comment je travaille avec les vignerons"
   },
   "vigneronPage": {
     "metaTitle": "{nom}, vigneron à {village}, dans l'Aube",
@@ -718,7 +719,7 @@
     "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "partenariatCta": "Proposer un partenariat",
     "presentation2": "Ici, pas de cours magistral ni de jargon : on goûte, on échange, on rit, et chacun repart avec ses préférences. Simple curieux, amoureux du champagne ou fin connaisseur : chacun y trouve son bonheur, et les passionnés auront de quoi discuter. Et à l'issue de la dégustation, si une cuvée vous fait craquer, c'est la meilleure occasion pour commander vos bouteilles en direct auprès du vigneron, sans pression ni obligation d'achat.",
-    "quiSuisJeLien": "Qui suis-je ? Mon parcours"
+    "notreDemarcheLien": "Qui suis-je ? Mon parcours"
   },
   "evenementsPage": {
     "metaTitle": "Champagne de mariage à Troyes et dans l'Aube : nos conseils",
@@ -1175,13 +1176,14 @@
     "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "contactCta": "Nous écrire"
   },
-  "quiSuisJePage": {
-    "titre": "Qui suis-je ?",
-    "metaTitle": "Qui suis-je ? Julien, Champagne de l'Aube à Troyes",
-    "metaDescription": "Julien vit à Troyes et aime le local et l'authentique : son parcours, de la restauration à domicile au champagne, au service des vignerons de l'Aube.",
+  "notreDemarchePage": {
+    "titre": "Notre démarche",
+    "metaTitle": "Notre démarche : qui je suis et comment je travaille",
+    "metaDescription": "Julien, à Troyes, vous met en relation avec des vignerons indépendants de l'Aube : vous achetez directement chez eux, à leurs tarifs. Son parcours et sa façon de travailler.",
     "liensTitre": "Pour aller plus loin",
     "lienDegustations": "Nos dégustations privées",
     "lienPro": "Espace Pro & Entreprises",
-    "lienContact": "Me contacter"
+    "lienContact": "Me contacter",
+    "ancreCommentJeTravaille": "comment-je-travaille"
   }
 }

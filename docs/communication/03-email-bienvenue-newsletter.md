@@ -9,7 +9,7 @@ Envoyé automatiquement à chaque nouvel inscrit, **après** sa double confirmat
 
 **Liens** :
 - Tous les liens pointent vers le site. Brevo ajoute tout seul le lien de désinscription : gardez la balise `{{ unsubscribe }}` (ou le bloc « Désinscription » du modèle).
-- Le lien « Qui suis-je ? » ne fonctionne qu'une fois la page publiée dans le Studio : activez l'automation après l'avoir publiée, ou retirez ce lien en attendant.
+- Le lien « Notre démarche » ne fonctionne qu'une fois la page publiée dans le Studio : activez l'automation après l'avoir publiée, ou retirez ce lien en attendant.
 
 ---
 
@@ -47,7 +47,7 @@ Terroirs, dégustations, histoires de vignerons : voici ce qui vous attend.
 > [Lire Le Mag] → https://champagnedelaube.fr/le-mag/
 >
 > 👋 **Faire connaissance** : mon parcours, et pourquoi l'Aube me tient tant à cœur
-> [Qui suis-je ?] → https://champagnedelaube.fr/qui-suis-je/
+> [Notre démarche] → https://champagnedelaube.fr/notre-demarche/
 >
 > Une question, une envie, un projet ? Répondez simplement à cet e-mail : il arrive directement chez moi.
 >

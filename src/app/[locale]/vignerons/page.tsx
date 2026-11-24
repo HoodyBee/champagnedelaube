@@ -8,6 +8,8 @@ import { Photo } from "@/components/ui/Photo";
 import { Section } from "@/components/ui/Section";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
+import { notreDemarchePubliee } from "@/lib/notre-demarche";
 import { getPageContent, getVignerons } from "@/sanity/content";
 
 /**
@@ -29,7 +31,12 @@ export default async function VigneronsPage({ params }: PageProps<"/[locale]/vig
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("vigneronsPage");
-  const [page, vignerons] = await Promise.all([getPageContent("vignerons", locale), getVignerons(locale)]);
+  const [page, vignerons, demarche, tDemarche] = await Promise.all([
+    getPageContent("vignerons", locale),
+    getVignerons(locale),
+    notreDemarchePubliee(),
+    getTranslations("notreDemarchePage"),
+  ]);
   const titre = page.titre ?? t("h1");
   const cartes = vignerons.length >= SEUIL_CARTES;
 
@@ -44,6 +51,17 @@ export default async function VigneronsPage({ params }: PageProps<"/[locale]/vig
             <p className="mt-space-2 max-w-xl text-[1.125rem] text-gris-chaud">{page.intro ?? t("intro")}</p>
             <p className="mt-space-2 max-w-xl text-[1.125rem]">{t("bientot")}</p>
             <CatalogueDialog className="mt-space-3" />
+            {/* Lien discret vers « Comment je travaille » : seulement une fois « Notre démarche » publiée. */}
+            {demarche && (
+              <p className="mt-space-2">
+                <Link
+                  href={{ pathname: "/notre-demarche", hash: tDemarche("ancreCommentJeTravaille") }}
+                  className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze"
+                >
+                  {t("demarcheLien")} <span aria-hidden="true">→</span>
+                </Link>
+              </p>
+            )}
           </div>
           <Photo image={page.image} ratio="4/3" sizes="(min-width: 1024px) 50vw, 100vw" priority compactMobile placeholder="sobre" className="order-1 lg:order-2" />
         </div>
