@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Link } from "@/i18n/navigation";
-import { quiSuisJePubliee } from "@/lib/qui-suis-je";
+import { notreDemarchePubliee } from "@/lib/notre-demarche";
 import { DansLeMag } from "@/components/mag/DansLeMag";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -48,7 +48,7 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
   const t = await getTranslations("degustationsPage");
-  const quiSuisJe = await quiSuisJePubliee();
+  const notreDemarche = await notreDemarchePubliee();
   const tNav = await getTranslations("nav");
   const tUi = await getTranslations("ui");
   const tHome = await getTranslations("home");
@@ -95,10 +95,10 @@ export default async function DegustationsPage({ params }: PageProps<"/[locale]/
         <p className="mt-space-2 max-w-xl text-[1.0625rem] text-gris-chaud">
           <strong className="font-bold italic text-bronze">{t("signature")}</strong>
         </p>
-        {quiSuisJe && (
+        {notreDemarche && (
           <p className="mt-space-2 text-[1.0625rem]">
-            <Link href="/qui-suis-je" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
-              {t("quiSuisJeLien")} <span aria-hidden="true">→</span>
+            <Link href="/notre-demarche" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+              {t("notreDemarcheLien")} <span aria-hidden="true">→</span>
             </Link>
           </p>
         )}

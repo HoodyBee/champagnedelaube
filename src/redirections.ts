@@ -40,6 +40,9 @@ const pages: Redirect[] = [
   // Article remplacé par le marronnier 2027 (novembre 2026).
   r("/journees-du-champagne-et-des-cepages", "/marronnier-2027-calendrier-vin-gastronomie/"),
   r("/en/journees-du-champagne-et-des-cepages", "/en/marronnier-2027-calendrier-vin-gastronomie/"),
+  // « Qui suis-je ? » devient « Notre démarche » (novembre 2026).
+  r("/qui-suis-je", "/notre-demarche/"),
+  r("/en/about-me", "/en/our-approach/"),
 ];
 
 /** Liens courts WordPress (?p=123, ?page_id=456) -> adresse de l'article ou de la page. */

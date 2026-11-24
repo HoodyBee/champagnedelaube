@@ -6,3 +6,47 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# ---------------------------------------------------------------------------
+# Domaines (le site est servi sur https://champagnedelaube.fr, SANS www).
+# Netlify traite ces règles avant le site : « force = true » (le « ! ») les applique
+# même quand la page existe. Le chemin est conservé (:splat).
+# ---------------------------------------------------------------------------
+
+# www.champagnedelaube.fr -> champagnedelaube.fr
+[[redirects]]
+  from = "https://www.champagnedelaube.fr/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.champagnedelaube.fr/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true
+
+# champagnedelaube.com (alias de domaine) : ne jamais afficher le site, toujours renvoyer vers le .fr.
+[[redirects]]
+  from = "https://champagnedelaube.com/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://champagnedelaube.com/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.champagnedelaube.com/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.champagnedelaube.com/*"
+  to = "https://champagnedelaube.fr/:splat"
+  status = 301
+  force = true

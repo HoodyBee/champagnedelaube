@@ -7,7 +7,8 @@ import type { Img } from "@/components/ui/types";
 import type { DomaineCardData } from "@/components/ui/DomaineCard";
 import type { Locale } from "@/i18n/routing";
 import type { CepageKey, PictoKey, TerroirKey } from "@/lib/brand";
-import { fallbackVignerons } from "@/lib/fallback-vignerons";
+import { fallbackVignerons, fichesParDefaut } from "@/lib/fallback-vignerons";
+import { RUBRIQUES_PAR_DEFAUT } from "@/lib/rubriques";
 import { typoFr } from "@/lib/typo";
 import type { LineIconName } from "@/lib/line-icons";
 import { localize, type Localized } from "./lib/i18n";
@@ -199,7 +200,7 @@ const photoFallback = (f: (typeof fallbackVignerons)[number], locale: Locale, wi
 };
 
 const fallbackCards = (locale: Locale): Vigneron[] =>
-  fallbackVignerons.map((f) => ({
+  fichesParDefaut.map((f) => ({
     slug: f.slug,
     nom: f.nom,
     village: f.village,
@@ -278,7 +279,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
   // Aucune fiche publiée : fiche par défaut, seulement si aucun vigneron n'est publié.
   const published = await sanityFetch<number>({ query: `count(*[_type == "vigneron" && defined(slug.current)])`, tags: ["vigneron"] });
   if (published) return null;
-  const f = fallbackVignerons.find((x) => x.slug === slug);
+  const f = fichesParDefaut.find((x) => x.slug === slug);
   if (!f) return null;
   return {
     ...fallbackCards(locale).find((c) => c.slug === slug)!,
@@ -299,7 +300,7 @@ export async function getVigneron(slug: string, locale: Locale): Promise<Vignero
 /** Adresses des fiches vignerons, pour les générer à l'avance. */
 export async function getVigneronSlugs(): Promise<string[]> {
   const slugs = await sanityFetch<string[]>({ query: `*[_type == "vigneron" && defined(slug.current)].slug.current`, tags: ["vigneron"] });
-  return slugs?.length ? slugs : fallbackVignerons.map((f) => f.slug);
+  return slugs?.length ? slugs : fichesParDefaut.map((f) => f.slug);
 }
 
 // ---------------------------------------------------------------------------
@@ -481,8 +482,8 @@ export async function getPageContent(cle: string, locale: Locale) {
 // Le Mag : articles et rubriques
 // ---------------------------------------------------------------------------
 
-/** Rubriques prêtes à l'emploi (renommables en créant une rubrique du même code dans Sanity). */
-export const RUBRIQUES_PAR_DEFAUT = ["actualites", "accords", "tout-savoir", "portraits", "autres-horizons"] as const;
+/** Rubriques prêtes à l'emploi : la liste vit dans src/lib/rubriques.ts (aussi lue par le proxy). */
+export { RUBRIQUES_PAR_DEFAUT };
 /** Rubriques qui ont leur propre page (adresses historiques). */
 export const PAGES_RUBRIQUE = {
   "tout-savoir": "/tout-savoir-sur-le-champagne",

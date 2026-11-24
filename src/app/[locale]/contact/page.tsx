@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { LineIcon } from "@/components/ui/LineIcon";
 import { pageMetadata } from "@/i18n/metadata";
 import { Link } from "@/i18n/navigation";
-import { quiSuisJePubliee } from "@/lib/qui-suis-je";
+import { notreDemarchePubliee } from "@/lib/notre-demarche";
 import type { Locale } from "@/i18n/routing";
 import { nav } from "@/lib/site";
 import { getPageContent } from "@/sanity/content";
@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
   const t = await getTranslations("contactPage");
   const tSocial = await getTranslations("social");
   const tFooter = await getTranslations("footer");
-  const [page, reglages, contenu, quiSuisJe] = await Promise.all([getPage("contact"), getReglages(), getPageContent("contact", locale), quiSuisJePubliee()]);
+  const [page, reglages, contenu, notreDemarche] = await Promise.all([getPage("contact"), getReglages(), getPageContent("contact", locale), notreDemarchePubliee()]);
   const titre = localize(page?.titre, locale) ?? t("title");
 
   return (
@@ -50,10 +50,10 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/conta
               <Photo image={contenu.image} ratio="4/5" sizes="320px" />
             </div>
           )}
-          {quiSuisJe && (
+          {notreDemarche && (
             <p className="mt-space-2">
-              <Link href="/qui-suis-je" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
-                {t("quiSuisJeLien")} <span aria-hidden="true">→</span>
+              <Link href="/notre-demarche" className="inline-flex min-h-11 items-center gap-1 text-sur-titre-petit underline decoration-or underline-offset-4 hover:text-bronze">
+                {t("notreDemarcheLien")} <span aria-hidden="true">→</span>
               </Link>
             </p>
           )}

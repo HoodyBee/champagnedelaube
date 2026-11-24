@@ -7,28 +7,30 @@ import { Photo } from "@/components/ui/Photo";
 import { RichText } from "@/components/ui/RichText";
 import { pageMetadata } from "@/i18n/metadata";
 import type { Locale } from "@/i18n/routing";
-import { quiSuisJePubliee } from "@/lib/qui-suis-je";
+import { notreDemarchePubliee } from "@/lib/notre-demarche";
 import { nav } from "@/lib/site";
 import { getPageContent } from "@/sanity/content";
 
-const HREF = "/qui-suis-je" as const;
+const HREF = "/notre-demarche" as const;
 
-export async function generateMetadata({ params }: PageProps<"/[locale]/qui-suis-je">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/[locale]/notre-demarche">): Promise<Metadata> {
   const { locale } = (await params) as { locale: Locale };
-  if (!(await quiSuisJePubliee())) notFound();
-  const [p, t] = await Promise.all([getPageContent("qui-suis-je", locale), getTranslations({ locale, namespace: "quiSuisJePage" })]);
+  if (!(await notreDemarchePubliee())) notFound();
+  const [p, t] = await Promise.all([getPageContent("notre-demarche", locale), getTranslations({ locale, namespace: "notreDemarchePage" })]);
   return pageMetadata({ locale, href: HREF, seo: p.seo, title: t("metaTitle"), description: t("metaDescription"), image: p.image });
 }
 
 /**
- * Qui suis-je ? : le parcours de Julien. Texte, photo et référencement dans le Studio
- * (Contact et pages légales > Page Qui suis-je). Un seul bloc compact : la photo à côté du texte.
+ * Notre démarche : deux parties, « Qui suis-je ? » (le parcours de Julien) et « Comment je
+ * travaille ». Texte, photo et référencement dans le Studio (Contact et pages légales > Page
+ * Notre démarche). Chaque grand titre (H2) reçoit une ancre : la page « Notre sélection du
+ * moment » renvoie directement à « Comment je travaille ». Un seul bloc compact : la photo à côté du texte.
  */
-export default async function QuiSuisJePage({ params }: PageProps<"/[locale]/qui-suis-je">) {
+export default async function NotreDemarchePage({ params }: PageProps<"/[locale]/notre-demarche">) {
   const { locale } = (await params) as { locale: Locale };
   setRequestLocale(locale);
-  if (!(await quiSuisJePubliee())) notFound();
-  const [p, t] = await Promise.all([getPageContent("qui-suis-je", locale), getTranslations("quiSuisJePage")]);
+  if (!(await notreDemarchePubliee())) notFound();
+  const [p, t] = await Promise.all([getPageContent("notre-demarche", locale), getTranslations("notreDemarchePage")]);
   // Langue sans traduction : le texte français s'affiche (repli habituel du site).
   const titre = p.titre ?? t("titre");
 

@@ -10,6 +10,14 @@ import { getArticles, PAGES_RUBRIQUE, RUBRIQUES_PAR_DEFAUT } from "@/sanity/cont
 type Props = PageProps<"/[locale]/le-mag/[rubrique]">;
 
 /**
+ * Contenus publiés APRÈS la mise en ligne (nouvel article, nouvelle fiche…) : sans ce réglage,
+ * Netlify tente de fabriquer la page à l'avance, échoue et répond « erreur 500 ». Avec lui, la
+ * page est construite à la première visite, puis gardée en cache. Les adresses inconnues
+ * reçoivent un vrai 404 grâce au proxy (src/lib/adresses-connues.ts).
+ */
+export const instant = false;
+
+/**
  * Rubriques qui ont une page : celles du menu (même vides : « les premiers articles arrivent »,
  * page non indexée tant qu'elle est vide) et celles du Studio qui ont des articles.
  */

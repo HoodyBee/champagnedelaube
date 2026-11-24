@@ -1,10 +1,11 @@
 "use client";
 
+import NextLink from "next/link";
 import { useParams, usePathname as useNextPathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
 import { Flag } from "@/components/icons/Flag";
-import { Link, usePathname } from "@/i18n/navigation";
+import { getPathname, Link, usePathname } from "@/i18n/navigation";
 import { defaultActiveLocales, localeNames, routing, type Locale } from "@/i18n/routing";
 
 /**
@@ -76,11 +77,25 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
   void _ignored;
   const href = { pathname: pagePourLiens(pathname, brut, locale, routeParams), params: routeParams } as Parameters<typeof Link>[0]["href"];
 
-  const links = locales.map((l) => (
-    <Link
+  // Français (langue par défaut, sans préfixe) : lien direct vers l'adresse finale (/vignerons/),
+  // et non /fr/vignerons/ qui redirige (détour inutile pour Google). Sans risque : la détection
+  // automatique de la langue est désactivée (src/i18n/routing.ts).
+  const hrefParDefaut = (() => {
+    try {
+      const p = getPathname({ href, locale: routing.defaultLocale } as Parameters<typeof getPathname>[0]);
+      return p.endsWith("/") ? p : `${p}/`;
+    } catch {
+      return null;
+    }
+  })();
+
+  const links = locales.map((l) => {
+    const Lien = (l === routing.defaultLocale && hrefParDefaut ? NextLink : Link) as typeof Link;
+    return (
+    <Lien
       key={l}
-      href={href}
-      locale={l}
+      href={(l === routing.defaultLocale && hrefParDefaut ? hrefParDefaut : href) as Parameters<typeof Link>[0]["href"]}
+      {...(l === routing.defaultLocale && hrefParDefaut ? {} : { locale: l })}
       lang={l}
       hrefLang={l}
       aria-current={l === locale ? "true" : undefined}
@@ -118,8 +133,9 @@ export function LanguageSwitcher({ variant = "menu", onNavigate, label, locales 
         </>
       )}
       {variant === "menu" && <span className="text-sur-titre text-gris-chaud">{l.toUpperCase()}</span>}
-    </Link>
-  ));
+    </Lien>
+    );
+  });
 
   if (variant === "compact") {
     return (

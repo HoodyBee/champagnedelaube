@@ -36,7 +36,7 @@
     "ouvrirSousMenu": "Ouvrir le sous-menu {menu}",
     "fermerSousMenu": "Fermer le sous-menu {menu}",
     "proEntreprisesHub": "Espace Pro & Entreprises",
-    "quiSuisJe": "Qui suis-je ?"
+    "notreDemarche": "Notre démarche"
   },
   "langSwitcher": {
     "label": "Choisir la langue",
@@ -132,7 +132,7 @@
     },
     "metaTitle": "Champagnes de vignerons de la Côte des Bar | Champagne de l'Aube",
     "metaDescription": "Une sélection de vignerons indépendants de la Côte des Bar, des Riceys, de Montgueux et de Villenauxe-la-Grande, avec un interlocuteur unique à Troyes.",
-    "heroIntro": "À la rencontre des vignerons indépendants, des terroirs et des cuvées de caractère. Une sélection singulière, portée par un passionné au cœur de l'Aube.",
+    "heroIntro": "Dégustations privées à Troyes ou chez vous, sélection de champagnes de vignerons indépendants : je vous fais découvrir les cuvées de caractère de l'Aube, et ceux qui les font.",
     "heroCtaTerroir": "Découvrir le terroir",
     "entreesTitre": "Pour qui ?",
     "terroirSurTitre": "Le terroir",
@@ -159,7 +159,6 @@
     "eventComplet": "Complet",
     "eventCta": "Voir le rendez-vous",
     "heroSurTitre": "Côte des Bar · Les Riceys · Montgueux · Villenauxe",
-    "heroCtaTerroirs": "Découvrir les terroirs",
     "photoAVenir": "Photographie à venir",
     "terroirsSurTitre": "Notre Terroir",
     "terroirsTitre": "Les terroirs de l'Aube",
@@ -172,9 +171,8 @@
       "villenauxe": "Le vignoble discret du nord-ouest, tourné vers la Marne."
     },
     "pepitesSurTitre": "Notre sélection du moment",
-    "pepitesTitre": "Les pépites du moment",
-    "pepitesIntro": "Des cuvées choisies pour leur caractère, leur histoire et la personnalité de ceux qui les élaborent.",
-    "pepitesCta": "Découvrir toute notre sélection",
+    "pepitesTitre": "Recevez notre sélection",
+    "pepitesIntro": "Dites-nous ce que vous aimez : nous vous envoyons par e-mail une sélection de champagnes de vignerons de l'Aube, choisis pour vous.",
     "portraitsSurTitre": "Le Mag du Champagne",
     "portraitsTitre": "Rencontres et portraits de vignerons",
     "portraitsIntro": "Ceux qui font le champagne de l'Aube, dans leurs vignes et dans leurs caves.",
@@ -201,7 +199,6 @@
     "finalTexte": "Une dégustation, une carte des vins, des coffrets pour vos équipes : écrivez-nous, nous revenons vers vous très vite.",
     "finalCta": "Nous écrire",
     "heroCtaDegustation": "Réserver une dégustation",
-    "pepitesLien": "Découvrir toute notre sélection",
     "instagram": "Suivez-nous sur Instagram",
     "videoTitre": "Nos terroirs en un coup d'œil",
     "videoPhrase": "Quatre terroirs, de Villenauxe-la-Grande au nord-ouest jusqu'à la Côte des Bar et aux Riceys au sud : choisissez celui que vous voulez découvrir.",
@@ -209,7 +206,8 @@
     "videoRevoir": "Revoir",
     "videoVoir": "{nom} : découvrir ce terroir",
     "videoAlt": "Carte de l'Aube vue du ciel : les quatre terroirs de champagne, Villenauxe-la-Grande au nord-ouest, Montgueux près de Troyes, la Côte des Bar au sud-est et Les Riceys au sud. Images Google Earth.",
-    "videoTroyes": "Troyes, capitale de l'Aube"
+    "videoTroyes": "Troyes, capitale de l'Aube",
+    "heroCtaDemarche": "Notre démarche"
   },
   "pro": {
     "arguments": {
@@ -419,7 +417,7 @@
     },
     "vigneron": "Vous êtes vigneron ? Présentez-nous votre domaine",
     "metaTitle": "Nous contacter à Troyes : vignerons, pros et particuliers",
-    "quiSuisJeLien": "Qui suis-je ? Mon parcours"
+    "notreDemarcheLien": "Qui suis-je ? Mon parcours"
   },
   "newsletter": {
     "bar": {
@@ -587,7 +585,8 @@
     "aucun": "Aucun domaine ne correspond à ce filtre pour le moment.",
     "count": "{count, plural, one {# domaine} other {# domaines}}",
     "domainesTitre": "Les domaines de la sélection",
-    "bientot": "Notre sélection s'enrichit au fil des rencontres et de nos recherches ciblées."
+    "bientot": "Notre sélection s'enrichit au fil des rencontres et de nos recherches ciblées.",
+    "demarcheLien": "Comment je travaille avec les vignerons"
   },
   "vigneronPage": {
     "metaTitle": "{nom}, vigneron à {village}, dans l'Aube",
@@ -636,7 +635,7 @@
     "texte": "De la Côte des Bar à Montgueux, nous rencontrons chaque saison de nouveaux vignerons. Recevez la sélection du moment par e-mail : les domaines, leurs villages, leurs cuvées.",
     "bouton": "Recevoir notre sélection",
     "dialogTitre": "Recevez notre sélection",
-    "dialogTexte": "Les domaines du moment, leurs villages et leurs cuvées, dans un document envoyé par e-mail.",
+    "dialogTexte": "Dites-nous vos goûts et vos envies : nous vous envoyons par e-mail une sélection de champagnes de vignerons de l'Aube, avec leurs villages et leurs cuvées.",
     "fermer": "Fermer",
     "decouvrirDomaine": "Découvrir le domaine"
   },
@@ -706,7 +705,7 @@
     "touristesLien": "Que faire à Troyes autour du champagne",
     "presentation": "Chez Champagne de l'Aube, nous vous faisons découvrir les champagnes de vignerons indépendants de l'Aube, leurs terroirs et celles et ceux qui les élaborent. Entre amis, en famille, pour un anniversaire ou un rendez-vous professionnel, je compose avec vous un moment sur mesure, à Troyes, ailleurs dans l'Aube ou chez vous.",
     "passageTitre": "De passage à Troyes ?",
-    "passageTexte1": "Pas le temps de filer jusqu'à la Côte des Bar ? Ou alors trop de villages, trop de maisons, et aucune idée de laquelle choisir ? Vous savez quoi ? Je vous fais la visite, sans que vous ayez à bouger, avec un échange en direct avec les vignerons.",
+    "passageTexte1": "Pas le temps de filer jusqu'à la Côte des Bar ? Ou alors trop de villages, trop de maisons, et aucune idée de laquelle choisir ? Vous savez quoi ? C'est la Côte des Bar qui vient à vous : je vous fais découvrir les cuvées des vignerons et leur histoire, sans que vous ayez à bouger, et parfois même avec les vignerons en personne.",
     "passageTexte2": "Vous ne saviez pas qu'on faisait du champagne dans le coin ? Personne ne vous en voudra… à condition de ne pas repartir sans avoir découvert nos pépites, que j'ai soigneusement choisies pour vous.",
     "passageCta": "Organiser ma dégustation",
     "proSurTitre": "Bars · Restaurants · Entreprises · Organisateurs",
@@ -718,7 +717,7 @@
     "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "partenariatCta": "Proposer un partenariat",
     "presentation2": "Ici, pas de cours magistral ni de jargon : on goûte, on échange, on rit, et chacun repart avec ses préférences. Simple curieux, amoureux du champagne ou fin connaisseur : chacun y trouve son bonheur, et les passionnés auront de quoi discuter. Et à l'issue de la dégustation, si une cuvée vous fait craquer, c'est la meilleure occasion pour commander vos bouteilles en direct auprès du vigneron, sans pression ni obligation d'achat.",
-    "quiSuisJeLien": "Qui suis-je ? Mon parcours"
+    "notreDemarcheLien": "Qui suis-je ? Mon parcours"
   },
   "evenementsPage": {
     "metaTitle": "Champagne de mariage à Troyes et dans l'Aube : nos conseils",
@@ -1068,7 +1067,7 @@
   },
   "troyesPage": {
     "metaTitle": "Troyes, capitale de l'Aube : champagne et dégustations",
-    "metaDescription": "Troyes, capitale de l'Aube : son histoire, sa gastronomie, ses magasins d'usine, les vignobles à portée de main (Montgueux, la Côte des Bar) et nos dégustations.",
+    "metaDescription": "Troyes, capitale de l'Aube : son histoire, sa gastronomie, ses magasins d'usine, les vignobles tout proches (Montgueux, la Côte des Bar) et nos dégustations.",
     "fil": "Troyes, capitale de l'Aube",
     "surTitre": "Troyes · Aube",
     "titre": "Troyes, capitale de l'Aube",
@@ -1175,13 +1174,14 @@
     "partenariatTexte": "Vous êtes un établissement (bar, restaurant, caviste, hôtel) et vous souhaitez faire un partenariat avec nous ? N'hésitez pas à nous contacter : on en parle volontiers autour d'un verre… de champagne, évidemment.",
     "contactCta": "Nous écrire"
   },
-  "quiSuisJePage": {
-    "titre": "Qui suis-je ?",
-    "metaTitle": "Qui suis-je ? Julien, Champagne de l'Aube à Troyes",
-    "metaDescription": "Julien vit à Troyes et aime le local et l'authentique : son parcours, de la restauration à domicile au champagne, au service des vignerons de l'Aube.",
+  "notreDemarchePage": {
+    "titre": "Notre démarche",
+    "metaTitle": "Notre démarche : qui je suis et comment je travaille",
+    "metaDescription": "Julien, à Troyes, vous met en relation avec des vignerons indépendants de l'Aube : vous achetez chez eux, à leurs tarifs. Son parcours, sa méthode.",
     "liensTitre": "Pour aller plus loin",
     "lienDegustations": "Nos dégustations privées",
     "lienPro": "Espace Pro & Entreprises",
-    "lienContact": "Me contacter"
+    "lienContact": "Me contacter",
+    "ancreCommentJeTravaille": "comment-je-travaille"
   }
 }

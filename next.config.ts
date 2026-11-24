@@ -3,6 +3,10 @@ import createNextIntlPlugin from "next-intl/plugin";
 import { redirections } from "./src/redirections";
 
 const nextConfig: NextConfig = {
+  // Indexation décidée à la construction : Netlify fournit CONTEXT=production pendant la
+  // construction du site en ligne, mais pas aux pages calculées à la visite. La valeur est
+  // donc figée ici (voir SITE_INDEXABLE dans src/i18n/metadata.ts).
+  env: { SITE_INDEXABLE_BUILD: process.env.CONTEXT === "production" || process.env.SITE_INDEXABLE === "1" ? "1" : "0" },
   cacheComponents: true,
   partialPrefetching: true,
   // Page 404 pour les adresses qui ne correspondent à aucune page (src/app/global-not-found.tsx).

@@ -28,8 +28,13 @@ export async function localizedAlternates(href: AppPathname | Href, locale: Loca
 /**
  * Indexation : les pages ne sont proposées à Google que sur le site en ligne (Netlify, contexte
  * « production »), jamais sur les aperçus de PR. Pour forcer en local : SITE_INDEXABLE=1.
+ *
+ * La décision est prise À LA CONSTRUCTION (next.config.ts, variable SITE_INDEXABLE_BUILD) :
+ * sur Netlify, CONTEXT n'existe que pendant la construction, pas quand une page est
+ * calculée à la visite (c'était le cas de l'accueil, resté en noindex).
+ * Les adresses en .netlify.app reçoivent en plus un « X-Robots-Tag: noindex » (src/proxy.ts).
  */
-export const SITE_INDEXABLE = process.env.CONTEXT === "production" || process.env.SITE_INDEXABLE === "1";
+export const SITE_INDEXABLE = process.env.SITE_INDEXABLE_BUILD === "1" || process.env.SITE_INDEXABLE === "1";
 
 /** Pages publiques : indexées, grandes images autorisées dans Google (Discover, Images). */
 const INDEX: Metadata["robots"] = {
